@@ -26,7 +26,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **smtp.host** ：your SMTP host    
 *  **smtp.port** ：your SMTP port    
 *  **email.from** ：sender Email address 
-*  **spring.activemq.broker-url** ：the IP and Port of embedded ActiveMQ. It is only needed when you integrate Keter with BPM DEF[1] to have the monitoring feature.
+*  **spring.activemq.broker-url** ：the IP and Port of embedded ActiveMQ. It is only needed when you integrate Keter with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the Keter deployment server.
 
  For the other properties, you can leave them as default values.
  
@@ -95,7 +95,7 @@ When you finish updating the properties, run **package.bat** to update the Keter
 ```  
     
 
-* Copy **bpm-keter-web.war** application into the /usr/servers/<yourservername>/apps directory.
+* Copy **keter-web.war** application into the /usr/servers/*yourservername*/apps directory.
 
 * Start Liberty server and visit the url like http://serverip:port/keter (port is defined in the server.xml).
 
