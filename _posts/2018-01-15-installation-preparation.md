@@ -13,13 +13,13 @@ order: 1
   
 * MySQL  5.x
 * [WAS Liberty 17.0.0.4](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.4/wlp-javaeeClient7-17.0.0.4.zip)
-* SMTP Server
+
 
 
 **Optional installation**  
 
-
-* ODM Server 8.8.X 
+* SMTP Server
+* IBM ODM Server 8.5 Above
   
 ### Setup Installation Package
 Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below structure:
