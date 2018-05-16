@@ -2,10 +2,11 @@
 layout: page
 title: "Prerequisites"
 category: installation
+date: 2018-01-05 15:17:55
 order: 1
 ---
 
-Last update: date: Sys.time()
+
 ### Software Requirement
   
 **Required installation**  
