@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 2
 ---
 
-### Add a Bpm server
+### Add a BPM server
   1. Click **Administrator** tab, then switch to  **BPM configurtaion** tab to manage BPM server.  
   
   2. Click **add new row** icon to add a new BPM server.  
