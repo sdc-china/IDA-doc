@@ -6,20 +6,52 @@ date: 2018-01-05 15:17:55
 order: 1
 ---
 
-Last update: '`r format(Sys.Date(), "%B %d, %Y")`'
-### Software Requirement
-  
-**Required installation**  
-  
-* MySQL  5.x
+### Supported Plaftforms
+
+- Ubuntu
+- CentOS
+- Red Hat Enterprise Linux 
+- Win7
+- Win10
+
+### Software
+
+#### JDK versions
+
+- JDK1.8 (64 bit)
+
+#### Database
+
+- MySQL 5.X
+
+#### BPM 
+
+Currently we support below BPM versions.
+
+* IBM BPM v8.5
+* IBM BPM v8.5.5
+* IBM BPM v8.5.6
+* IBM BPM v8.5.7
+* IBM BPM v8.6.0
+
+#### ODM
+
+- IBM ODM 8.5.x above
+
+#### Browser
+We support firefox and chrome.
+* Firefox v52+ (64bit)
+* Chrome  v57+ (64bit)
+
+
+#### Application Server  
+
 * [WAS Liberty 17.0.0.4](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.4/wlp-javaeeClient7-17.0.0.4.zip)
-
-
 
 **Optional installation**  
 
 * SMTP Server
-* IBM ODM 8.5 or above
+
   
 ### Installation Package
 Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below:
