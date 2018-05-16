@@ -48,7 +48,7 @@ order: 3
   
   2. Click edit button to edit this test case.
   
-  3. Choose the csv data file name you want to bind from "Bind External File" selectbox.
+  3. Bind the csv data file name from "Bind External File" selectbox.
   
      ![][testcase_data_binding]
      
@@ -57,11 +57,11 @@ order: 3
 
   1. Choose the test case step you want to bind csv data.
   
-  2. Choose the selectbox value you want to bind and click the save button.   
+  2. Choose the csv binding variable  from the selectbox value.
   
-   ![][testcase_parameter_binding] 
-   
-      
+     ![][testcase_parameter_binding] 
+  
+  3. Click save button.  
     
 [testcase_file]: ../images/test/test_case_csv.PNG
 [testcase_data_upload]: ../images/test/test_case_data_upload.PNG    
