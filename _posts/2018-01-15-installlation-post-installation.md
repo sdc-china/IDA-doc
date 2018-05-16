@@ -14,16 +14,15 @@ Keter integrates with remote testing automation based on Selenium Grid.
 
 **Local installation**
 
-Download Selenium Grid server jar:  
-http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar 
-
 Selenium Grid setup guidance:  
 https://github.com/SeleniumHQ/selenium/wiki/Grid2  
 
-Start Selenium Grid Hub   
+1. [Download](http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar )Selenium Grid server jar.  
+
+2. Start Selenium Grid Hub   
 java -jar selenium-server-standalone-3.7.1.jar -role hub -port 4444  
 
-Start Selenium Grid Node  
+3. Start Selenium Grid Node  
 java -jar selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -port 4444
 
 **Docker installation**
