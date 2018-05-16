@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Keter Documentation"
+title: "IBM Keter Docs"
 ---
 
 ## Overview
