@@ -31,7 +31,7 @@ The below link is a step-by-step introduction to using the official Selenium Doc
 
 [How to get started selenium hub and node](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Hub-and-Nodes)
 
-### Install BPM Testing Asset Toolkit
+### Install Keter Toolkit
 
 1. Import the Keter_Toolkit - 8.6.0_v1.0.twx from toolkit folder into the proces center.
 2. Add this toolkit dependency for your Process App
