@@ -29,6 +29,6 @@ order: 1
 
    
 [checkstyle_checkstyleform]: ../images/checkstyle/checkstyle_checkstyleform.PNG
-[tutorial_checkstyle_report]: ../images/tutorial/tutorial_checkstyle_button.PNG
+[tutorial_checkstyle_report]: ../images/tutorial/tutorial_checkstyle_report.PNG
 
 [1]: ../administration/administration-bpm-configuration.html
