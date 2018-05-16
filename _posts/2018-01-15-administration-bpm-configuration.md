@@ -35,7 +35,7 @@ order: 2
   Select the server in the **BPM Configuration** table, then click the	**edit** icon to edit a BPM server. 
 
 
-### Delete bpm server
+### Delete BPM server
   Select the server in the **BPM Configuration** table, then click the **delete** icon to delete BPM server. 
 
 ### Add user to bpm server
