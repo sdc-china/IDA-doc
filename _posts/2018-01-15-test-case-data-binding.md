@@ -35,7 +35,7 @@ order: 3
   
 ### Delete test case data  
 
-  1. Click ![][test_project_delete_button] button to delete this test data.  
+  1. Click delete button to delete this test data.  
   
    **Notes:**
      
@@ -55,7 +55,7 @@ order: 3
      
 ### Bind data item to the case step parameter
 
-  1. Choose the test case step you want to bind csv data.
+  1. Edit the test case step which you want to use csv data.
   
   2. Choose the csv binding variable  from the selectbox value.
   
