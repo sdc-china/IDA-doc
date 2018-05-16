@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 3
 ---
 ### How to configure selenium hub
-   You need to setup the [selenium hub] before this step.
+   You need to setup the [Post Installation Setup] before this step.
 ### Add selenium hub 
   1. Click **Administrator** tab, then switch to  **Selemium Hub Configuration** table to manage hubs.  
   2. Click **add new row** icon to add new selenium hub.  
@@ -28,4 +28,4 @@ order: 3
   Select the hub in the **Selemium Hub Configuration** table, then click the 	**delete** icon to delete selenium hub. 	 
 	 
 [administrator_hub]: ../images/administrator/administrator_hub.png
-[selenium hub]: ../installation/installation-preparation.html
+[Post Installation Setup]: ../installation/installlation-post-installation.html
