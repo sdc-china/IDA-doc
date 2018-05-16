@@ -38,7 +38,7 @@ order: 2
 ### Delete BPM server
   Select the server in the **BPM Configuration** table, then click the **delete** icon to delete BPM server. 
 
-### Add user to bpm server
+### Add user to a BPM server
   1. Select the server in the **BPM Configuration** table, then click the **Bpm User** icon to add user. Then you can see the bpm user list table. 
   
   2. Click **add new row** icon from bpm user table to add a new bpm user.  
