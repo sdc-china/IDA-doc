@@ -49,7 +49,7 @@ To record a test case:
   
      ![][test_case_step_table]
   
-  2. Click **Record**  button on the right top of page. You will enter record page.
+  2. Click **Record**  button on the right top of page. It will the launch UI record page.
   
      ![][test_case_step_table2]
      
@@ -59,11 +59,11 @@ To record a test case:
    
      ![][test_case_record_plugin]
   
-  4. Record according to the business process, you can see each step you have done in tool bar.
+  4. Record every UI actions, you can see each step you have done in tool bar.
   
       ![][test_case_record_plugin2]
   
-  5. Click ![][test_record_stop] button to finish the record. The operations you done are showed in case step list table.
+  5. Click ![][test_record_stop] button to finish the recording. You can see the recorded case step in the list table.
   
      ![][test_record_steps]
   
