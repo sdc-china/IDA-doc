@@ -7,16 +7,13 @@ order: 1
 ---
 
 
-### Software Requirement
-  
-**Required installation**  
-  
+### Prerequisites
+    
 * MySQL  5.x
+* IBM BPM 8.5 or above
 * [WAS Liberty 17.0.0.4](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.4/wlp-javaeeClient7-17.0.0.4.zip)
 
-
-
-**Optional installation**  
+### Optional  
 
 * SMTP Server
 * IBM ODM 8.5 or above
