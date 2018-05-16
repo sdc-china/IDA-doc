@@ -19,7 +19,7 @@ order: 1
 **Optional installation**  
 
 * SMTP Server
-* IBM ODM Server 8.5 above
+* IBM ODM 8.5 or above
   
 ### Installation Package
 Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below:
