@@ -14,7 +14,7 @@ Keter integrates with remote testing automation based on Selenium Grid.
 
 **Local installation**
 
-[Selenium Grid setup guidance]:(https://github.com/SeleniumHQ/selenium/wiki/Grid2  )  
+[Selenium Grid setup guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
 
 1. [Download](http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar ) Selenium Grid server jar.  
