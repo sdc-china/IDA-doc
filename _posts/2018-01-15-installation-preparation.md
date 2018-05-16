@@ -21,7 +21,7 @@ order: 1
 * SMTP Server
 * IBM ODM Server 8.5 above
   
-### Setup Installation Package
+### Installation Package
 Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below:
 
 *  **build** : contains the Keter war file that needs to be deployed in WAS Liberty.
