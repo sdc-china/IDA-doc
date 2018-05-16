@@ -17,7 +17,7 @@ order: 2
 
 ### Software
 
-### JDK versions
+#### JDK versions
 
 - JDK1.8 (64 bit)
 
