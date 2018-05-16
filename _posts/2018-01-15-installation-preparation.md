@@ -26,9 +26,7 @@ order: 1
 
 #### BPM 
 
-Currently we support below BPM versions.
-
-* IBM BPM v8.5
+* IBM BPM v8.5.0
 * IBM BPM v8.5.5
 * IBM BPM v8.5.6
 * IBM BPM v8.5.7
@@ -39,7 +37,7 @@ Currently we support below BPM versions.
 - IBM ODM 8.5.x above
 
 #### Browser
-We support firefox and chrome.
+
 * Firefox v52+ (64bit)
 * Chrome  v57+ (64bit)
 
