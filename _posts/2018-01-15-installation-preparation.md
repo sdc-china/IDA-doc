@@ -2,11 +2,11 @@
 layout: page
 title: "Prerequisites"
 category: installation
-date: 2018-01-05 15:17:55
+date: date: "`r format(Sys.time(), '%d %B, %Y')`"
 order: 1
 ---
 
-
+Last update: date: "`r format(Sys.time(), '%d %B, %Y')`"
 ### Software Requirement
   
 **Required installation**  
