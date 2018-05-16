@@ -6,10 +6,10 @@ date: 2018-01-05 15:17:55
 order: 2
 ---
 
-### Add bpm server
+### Add a Bpm server
   1. Click **Administrator** tab, then switch to  **BPM configurtaion** tab to manage BPM server.  
   
-  2. Click **add new row** icon to add new BPM server.  
+  2. Click **add new row** icon to add a new BPM server.  
   
      ![][administrator_bpmserver]  
 
@@ -32,11 +32,11 @@ order: 2
 
 
 ### Edit BPM server
-  Select the server in the **BPM Configuration** table, then click the	**edit** icon to edit BPM server. 
+  Select the server in the **BPM Configuration** table, then click the	**edit** icon to edit a BPM server. 
 
 
 ### Delete bpm server
-  Select the server in the **BPM Configuration** table, then click the **delete** icon to delete bpm server. 
+  Select the server in the **BPM Configuration** table, then click the **delete** icon to delete BPM server. 
 
 ### Add user to bpm server
   1. Select the server in the **BPM Configuration** table, then click the **Bpm User** icon to add user. Then you can see the bpm user list table. 
