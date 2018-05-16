@@ -21,7 +21,6 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **server.context-path** : default as  "/keter"  
 *  **server.full-context-path** :
     "http://keterServerip:port/keter", this url should be same with the your keter application url
-*  **checkstyle.dir**: your checkstyle report folder  
 *  **engineConfig.screenshotDir** :  screenshot folder  
 *  **smtp.host** ：your SMTP host    
 *  **smtp.port** ：your SMTP port    
@@ -36,6 +35,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **resPassword** : rule execution server password  
 *  **resUrl** : rule execution server url  
 *  **resPort** : rule execution server port  
+*  **checkstyle.dir**: your checkstyle report folder  
 
 **#monitoring.properties (Only for BPM DEF Integration)**
 	
