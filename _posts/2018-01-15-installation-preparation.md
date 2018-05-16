@@ -22,11 +22,14 @@ order: 1
 * IBM ODM Server 8.5 above
   
 ### Setup Installation Package
-Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below structure:
+Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below:
 
 *  **build** : contains the Keter war file that needs to be deployed in WAS Liberty.
 *  **conf** : contains the Keter properties file.
 *  **lib** : contains the required Java library for Keter packaging and setup.  
 *  **sql** : contains the SQL files to create Keter database and tables.
 *  **toolkit** : contains the Keter required Toolkit TWX file.
-*  **package.bat** : contains the command to update Keter war file with client settings.
+*  **package.bat** : Windows command to update Keter war file with client settings.
+*  **package.sh** : Linux script to update Keter war file with client settings.
+*  **README.html** : README file.
+*  **ReleaseNotes.html** : Release notes.
