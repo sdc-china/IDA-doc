@@ -29,7 +29,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 
  For the other properties, you can leave them as default values.
  
-**#checkstyle.properties (Only for ODM installed)**
+**#checkstyle.properties (For BPM Check Style purpose)**
 	
 *  **resUser** : rule execution server username  
 *  **resPassword** : rule execution server password  
@@ -37,12 +37,14 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **resPort** : rule execution server port  
 *  **checkstyle.dir**: your checkstyle report folder  
 
-**#monitoring.properties (Only for BPM DEF Integration)**
+It is only needed when you want to have BPM Check Style feature. If you don't need it, you can leave them as-is.
+
+**#monitoring.properties (For BPM Monitoring purpose)**
 	
 *  **event_type** : event types to be stored in Keter database  
 *  **track_serviceflow** : default as true  
 
-It is only needed when you want to configure monitoring[1] to have the monitoring feature. You can leave them as default values.
+It is only needed when you want to configure monitoring[1] to have the monitoring feature. If you don't need it, you can leave them as-is.
 
 When you finish updating the properties, run **package.bat** to update the Keter war (e,g, *keter-web.war*) file under **build** folder. You need to define the **JAVA_HOME** variable and add the **$JAVA_HOME/bin** directory to your path before executing **package.bat**.
 	
