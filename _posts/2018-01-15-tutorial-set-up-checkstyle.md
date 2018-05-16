@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Task 3: Set up checkstyle"
+title: "Task 3: Set up Checkstyle"
 category: tutorial
 date: 2018-01-05 15:17:55
 order: 3
