@@ -15,20 +15,20 @@ order: 2
 
       |   Field                | Description                                                             |
       | ---------------------- |-------------------------------------------------------------------------|                                          
-      | Server Name            | BPM server name                                                                        |  
+      | Server Name            | the BPM server name                                                                        |  
       | Type                   | DEV, QA, STG, PRO                                                          |
-      | BPM Version            | BPM version                                                                        |
-      | Server Url             | BPM server URL, eg: https://bpmserver:9443                     |                                                                        
+      | BPM Version            | the BPM server version                                                                        |
+      | Server Url             | the BPM server URL, eg: https://bpmserver:9443                     |                                                                        
       | SOAP port              | soap port defined in Was console                                |
       | SSH User Name          | used for snapshot deployment from PC to PS                            | 
       | SSH key                | used for snapshot deployment from PC to PS                           |
       | WAS admin Command      | the path of wsadmin.sh  in linux server                                 |      
-      | Rest User Name         | bpm server rest api username                                            |
-      | Rest Password          | bpm server rest api password                                            |   
-      | WAS Admin username     | was admin name                                                                        |
-      | WAS Admin password     | was admin password                                                                        |  
+      | Rest User Name         | BPM server rest api username                                            |
+      | Rest Password          | BPM server rest api password                                            |   
+      | WAS Admin username     | WAS admin name                                                                        |
+      | WAS Admin password     | WAS admin password                                                                        |  
       | Connected Server Name  | online PS server name               |
-      | Rest Uri               | bpm rest uri, eg: /rest/bpm/wle/v1                                                           |   
+      | Rest Uri               | BPM rest uri, eg: /rest/bpm/wle/v1                                                           |   
 
 
 ### Edit BPM server
