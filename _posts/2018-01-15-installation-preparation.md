@@ -14,9 +14,9 @@ order: 1
 - Win7
 - Win10
 
-### Software
+### Supported Softwares
 
-#### JDK versions
+#### JDK version
 
 - JDK1.8 (64 bit)
 
@@ -24,23 +24,18 @@ order: 1
 
 - MySQL 5.X
 
-#### BPM 
+#### IBM BPM 
 
-* IBM BPM v8.5.0
-* IBM BPM v8.5.5
-* IBM BPM v8.5.6
-* IBM BPM v8.5.7
-* IBM BPM v8.6.0
+- BPM 8.5.x or above
 
-#### ODM
+#### IBM ODM
 
-- IBM ODM 8.5.x above
+- ODM 8.5.x or above
 
-#### Browser
+#### Web Browser
 
 * Firefox v52+ (64bit)
 * Chrome  v57+ (64bit)
-
 
 #### Application Server  
 
