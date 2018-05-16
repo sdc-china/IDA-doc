@@ -42,9 +42,9 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **event_type** : event types to be stored in Keter database  
 *  **track_serviceflow** : default as true  
 
-It is only needed when you integrate Keter with BPM DEF[1] to have the monitoring feature. You can leave them as default values.
+It is only needed when you want to configure monitoring[1] to have the monitoring feature. You can leave them as default values.
 
-When you finish updating the properties, run **package.bat** to update the Keter war (e,g, *bpm-keter-web.war*) file under **build** folder. You need to define the **JAVA_HOME** variable and add the **$JAVA_HOME/bin** directory to your path before executing **package.bat**.
+When you finish updating the properties, run **package.bat** to update the Keter war (e,g, *keter-web.war*) file under **build** folder. You need to define the **JAVA_HOME** variable and add the **$JAVA_HOME/bin** directory to your path before executing **package.bat**.
 	
 **Configure WAS Liberty**  
 
