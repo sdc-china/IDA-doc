@@ -11,11 +11,11 @@ Keter enables developers to perform static analysis on the BPM application, whic
 
 ### About this task
 
-  In this task,you can set up checkstyle of the project that you created in the previous task.
+  In this task,you can set up Checkstyle of the project that you created in the previous task.
   
 ### Procedure
 
-To set up checkstyle of a project:
+Setup Checkstyle of a project:
 
   1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in project list page and the report will show in a few seconds. The analyzing of checkstyle is asynchronous, and you can do other things when it is performing the checkstyle.
   
