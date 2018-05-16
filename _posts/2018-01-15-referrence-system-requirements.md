@@ -7,45 +7,38 @@ order: 2
 ---
 
 
-### Hardware
-
-#### Supported Linux OS
+### Supported Plaftforms
 
 - Ubuntu
 - CentOS
 - Red Hat Enterprise Linux 
-
-#### Supported Windows OS
-
 - Win7
 - Win10
-- Win2008
-
-#### Memory
-
-You need at least 8GB of memory to install and use Keter.
 
 ### Software
 
 ### JDK versions
-You must set up the Java environment in your environment.A **Java 8 JDK** (64bit) is required.  
-You can download and install Java JDK from http://www.oracle.com/technetwork/java/javase/downloads/index.html  
-After installation, set JAVA_HOME to JDK 8 installation location as system variable
+
+- JDK1.8 (64 bit)
 
 #### Database
 
 Currently we support the below database.
 
-- MySQL
+- MySQL 5.X
 
 #### BPM 
 
 Currently we support below BPM versions.
-* BPM v8.0
-* BPM v8.5
-* BPM v8.5.5
-* BPM v8.5.6
-* BPM v8.5.7
+
+* IBM BPM v8.5
+* IBM BPM v8.5.5
+* IBM BPM v8.5.6
+* IBM BPM v8.5.7
+* IBM BPM v8.6.0
+
+#### ODM
+- IBM ODM 8.5.x above
 
 #### Browser
 We support firefox and chrome.
