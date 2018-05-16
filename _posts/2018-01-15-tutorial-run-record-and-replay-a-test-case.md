@@ -10,11 +10,11 @@ Keter provides a browser plugin recorder, which allows user to record their test
 
 ### About this task
 
-  In this task, you record, replay and run a test case that you generated in the previous task.
+  In this task, you can record, replay and run a test case that you generated in the previous task.
   
 ### Step 1: Set up assignee for case steps
 
-  In this step, you need to assign the bpm tasks users for case steps. Take the case1 of **Create Position Request CSHS** as an example.
+  In this step, you need to assign the BPM tasks users for case steps. Take the case1 of **Create Position Request CSHS** as an example.
   
 #### Procedure
 
@@ -89,11 +89,13 @@ To replay a test case:
 
 To run a test case:
 
-Click **Run** button on the right of case name.
+ 1. Click **Run** button on the right of case name.
   
-* Click **report** button to see detail report including process execution flow.  
-* Check every case step result status with "PASSED" or "FAILED" in case step list table.  
-* Click the **screenshot** icon link to see the capture screenshot.
+ 2. Click **report** button to see detail report including process execution flow.  
+ 
+ 3. Check every case step result status with "PASSED" or "FAILED" in case step list table. 
+ 
+ 4. Click the **Screenshots** icon link to see the captured screenshot.
   
 ![][tutorial_running_result]
   
