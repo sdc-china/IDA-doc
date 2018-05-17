@@ -7,7 +7,7 @@ order: 2
 ---
 ### Prerequisite
 
-   You have installed **Rule Designer** in your local environment and **Checkstyle Rule Projects** have been in your local workspace. If you want to get the checkstyle rule projects, you can contact the keter team.
+   You have installed **Rule Designer** in your local environment and **Checkstyle Rule Projects** have been in your local workspace. If you want to get the checkstyle rule projects, please contact Keter development team (sdchelp@cn.ibm.com).
    
 ### BPM checkstyle rule projects overview
 
