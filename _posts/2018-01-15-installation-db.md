@@ -31,7 +31,7 @@ mysql> source  yoursqlpath\data-mysql.sql ;
 ```  
 
 **Notes:**     
-You might need to change **data-mysql.sql** script for the your organization name. Please  replace 'keter' to your company name occur in the below script.
+You might need to change **data-mysql.sql** script for the your organization name. Please  replace 'keter' to your company name occur in the below script.The default keter login name and password is "KeterAdmin"/"KeterAdmin".Pls don't change this username and password in the sql file.
 
 ``` 
 INSERT INTO organization (company_name, active) VALUES ('keter', true);
