@@ -14,7 +14,7 @@ Before you start the tutorial, you need to setup below configurations.You need t
 You need to setup user account, permission for the Keter login credentials.
 
 [BPM configuration][2]   
-You need to setup bpm server, bpm account for the bpm server. 
+You need to setup BPM server, BPM account for the BPM server. 
 
 [Selenium hub configuration][3]   
 You need to setup selenium node url for the remote testing.
