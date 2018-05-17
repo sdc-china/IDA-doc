@@ -42,7 +42,7 @@ The below link is a step-by-step introduction to using the official Selenium Doc
    ![][service]
    
 ### Plug-in
-You need to install this plug-in to record the UI.By now we only support Chrome browser to record test case.
+You need to install Chrome plug-in to record the UI.
 
 1. Download the Chrome plug-in from Keter Home page.
 2. Open the Chrome browser and input the **chrome://extensions/**
