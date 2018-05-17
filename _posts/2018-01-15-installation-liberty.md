@@ -90,7 +90,7 @@ When you finish updating the properties, run **package.bat** to update the Keter
                   
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	<application type="war" id="keter" name="keter" location="${server.config.dir}/apps/bpm-keter-web.war">
+	<application type="war" id="keter" name="keter" location="${server.config.dir}/apps/keter-web.war">
 		<classloader delegation="parentLast" />
     </application>
 	
