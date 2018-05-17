@@ -45,12 +45,12 @@ We support firefox and chrome.
 #### Selenium Hub
 
 * Use docker images "selenium/hub" to provide Selenium Grid Hub.
-You can reference the  **[Post Installation Setup]** to setup it.
+You can refer to **[Post Installation Setup]** to setup it.
  
 [link]: ../installation/installation-preparation.html
 
 #### Active MQ Client
-You can reference the **[Integrate BPM with Keter]** to setup it.
+You can refer to **[Integrate BPM with Keter]** to setup it.
 
 [Integrate BPM with Keter]: ../operation/operation-configure-def.html
 [Post Installation Setup]:  ../installation/installlation-post-installation.html
