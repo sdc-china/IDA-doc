@@ -9,9 +9,9 @@ order: 1
 
 ### Prerequisites
     
-* MySQL  5.x
-* IBM BPM 8.5 or above
-* [WAS Liberty 17.0.0.4](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.4/wlp-javaeeClient7-17.0.0.4.zip)
+* MySQL 5.x
+* IBM BPM 8.5.x or 8.6.0
+* [IBM WAS Liberty 17.0.0.4](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.4/wlp-javaeeClient7-17.0.0.4.zip)
 
 ### Optional  
 
