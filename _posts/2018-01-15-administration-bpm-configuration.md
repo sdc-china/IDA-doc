@@ -58,7 +58,7 @@ order: 2
   ![][administrator_bpmuserlist]    
 	
 **Notes:**   
-You need to well define the **Display name** of the BPM user,you can choose the **assignee** display name from test case step command.
+You need to well define the **Display name** of the BPM user,you can choose the **Assignee** display name from test case step command.
 
   ![][administrator_assignee]   
   
