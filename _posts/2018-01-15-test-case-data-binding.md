@@ -8,7 +8,7 @@ order: 3
     
 ### Create a csv test data file 
 
-  1. Open the excel and edit data like below format.The first column is the key name of data.
+  1. Open the excel and edit data like below format. The first column is the key name of data.
     
      ![][testcase_file]   
   
@@ -39,7 +39,7 @@ order: 3
   
    **Notes:**
      
-   If the test case data has already binded some test cases,you need to remove the data reference of these test cases,then remove this test data.   
+   If the test case data has already binded some test cases, you need to remove the data reference of these test cases, then remove this test data.   
 
 
 ### Bind data to the test case
