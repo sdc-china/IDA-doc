@@ -31,10 +31,7 @@ Currently we support the below database.
 
 Currently we support below BPM versions.
 
-* IBM BPM v8.5
-* IBM BPM v8.5.5
-* IBM BPM v8.5.6
-* IBM BPM v8.5.7
+* IBM BPM v8.5.X
 * IBM BPM v8.6.0
 
 #### ODM
@@ -48,7 +45,7 @@ We support firefox and chrome.
 #### Selenium Hub
 
 * Use docker images "selenium/hub" to provide Selenium Grid Hub.
-You can reference the  **[installation preparation]** to setup it.
+You can reference the  **[Post Installation Setup]** to setup it.
  
 [link]: ../installation/installation-preparation.html
 
@@ -56,3 +53,4 @@ You can reference the  **[installation preparation]** to setup it.
 You can reference the **[Integrate BPM with Keter]** to setup it.
 
 [Integrate BPM with Keter]: ../operation/operation-configure-def.html
+[Post Installation Setup]:  ../installation/installlation-post-installation.html
