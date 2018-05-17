@@ -47,7 +47,7 @@ You need to install this plug-in to record the UI.By now we only support Chrome 
 1. Download the Chrome plug-in from Keter Home page.
 2. Open the Chrome browser and input the **chrome://extensions/**
 3. Drag and drop the .CRX file onto the Chrome extension page
-4. Click the **Add extension** button in the prompt at the bottom of the screen.You can see the icon on the Chrome toolbar.
+4. Click the **Add extension** button in the prompt at the bottom of the screen.You can see the icon on the Chrome address bar.
   
    ![][keter]
   
