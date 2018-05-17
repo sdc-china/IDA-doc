@@ -20,7 +20,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **spring.datasource.url** : MySQL database connection URL
 *  **server.context-path** : default as  "/keter"  
 *  **server.full-context-path** :
-    "http://keterServerip:port/keter", this url should be same with the your keter application url
+    "http://keterServerip:port/keter", this url should be same as your Keter application url
 *  **engineConfig.screenshotDir** :  screenshot folder  
 *  **smtp.host** ：your SMTP host    
 *  **smtp.port** ：your SMTP port    
@@ -29,7 +29,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 
  For the other properties, you can leave them as default values.
  
-**#checkstyle.properties (For BPM Check Style purpose)**
+**#checkstyle.properties (For BPM Checkstyle purpose)**
 	
 *  **resUser** : rule execution server username  
 *  **resPassword** : rule execution server password  
@@ -37,9 +37,9 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **resPort** : rule execution server port  
 *  **checkstyle.dir**: your checkstyle report folder  
 
-It is only needed when you want to have BPM Check Style feature. If you don't need it, you can leave them as-is.
+It is only needed when you want to have BPM Checkstyle feature. If you don't need it, you can leave them as-is.
 
-Please note that to enable BPM Check Style feature, you need to have IBM ODM installed because the BPM Check Style feature is running against ODM rule engine. You need to locate the jrules-engine.jar in your ODM installation and copy it to **lib** folder, before executing **package.bat**.
+Please note that to enable BPM Checkstyle feature, you need to have IBM ODM installed because the BPM Checkstyle feature is running against ODM rule engine. You need to locate the jrules-engine.jar in your ODM installation and copy it to **lib** folder, before executing **package.bat**.
 
 **#monitoring.properties (For BPM Monitoring purpose)**
 	
@@ -52,7 +52,7 @@ When you finish updating the properties, run **package.bat** to update the Keter
 	
 **Configure WAS Liberty**  
 
-* Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both httpPort and httpsPort are unique.
+* Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both **httpPort** and **httpsPort** are unique.
 
 ```    
  <!-- Enable features -->
