@@ -29,8 +29,11 @@ order: 1
      
      **Notes:**     
      
-     The Project App and Toolkit must fill at least one and only one.
-     We only support development enviornment migration from eclipse version.
+     The Project App and Toolkit must fill at least one and only one.     
+     You need to upload eclipse test project workspace zip file when you check the "Migrate an old project".  
+     **Known Limitions:**   
+     Only supports test project migration in development environment.  
+      
         
   3. Click **Create** button, you will enter into project dashboard page.
 
