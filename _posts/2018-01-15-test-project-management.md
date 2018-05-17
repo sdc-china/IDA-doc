@@ -25,10 +25,12 @@ order: 1
      Snapshot              |The snapshot of selected branch
      [Selenium Hub][2]     |Support chrome, firefox selenium node 
      Tip                   |Using the latest snapshot 
+     Migrate an old project|Support test case project migration from Eclipse Version
      
      **Notes:**     
      
      The Project App and Toolkit must fill at least one and only one.
+     We only support development enviornment migration from eclipse version.
         
   3. Click **Create** button, you will enter into project dashboard page.
 
