@@ -23,7 +23,7 @@ Developers can perform static analysis on the BPM application, which enforces de
 
 Tester can automate their test scenarios and boost their productivity easily. They can generate the test project and case template from BPM server, then edit and record their test scenarios without coding. They can use 60+ built-in automation test commands to support BPM application test.
 
-Tester can create a monitor to monitor the bpm service metric with alerts. It can send alert message through email for the issue service.
+Tester can create a monitor to monitor BPM service metric with alerts. It can send alert message through email for the issue service.
 
 Keter offers detailed reports including screenshots, execution process flow and coverage to improve communications between testers and developers on every test case. 
 
