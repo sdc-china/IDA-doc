@@ -25,12 +25,13 @@ order: 1
      Snapshot              |The snapshot of selected branch
      [Selenium Hub][2]     |Support chrome, firefox selenium node 
      Tip                   |Using the latest snapshot 
-     Migrate an old project|Support test case project migration from Eclipse Version
+     Migrate an old project|Support test case project migration from eclipse version
      
      **Notes:**     
      
      The Project App and Toolkit must fill at least one and only one.     
-     You need to upload eclipse test project workspace zip file when you check the "Migrate an old project".  
+     You need to upload eclipse test project zip file when you check the "Migrate an old project".  
+     
      **Known Limitions:**   
      Only supports test project migration in development environment.  
       
