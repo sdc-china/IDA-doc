@@ -21,7 +21,7 @@ order: 2
 
 To rewrite any core checkstyle rule, please do not update the core rule itself. Instead you should copy the rule into the **checksOverride** rule package of project CheckstyleRulesCustomized and then update the copy. Take overriding a core checkstyle rule **check-app-with-too-many-bpd** as an example:
 
-1. Review the content of the core rule **check-app-with-too-many-bpd**. if the process app references more than 5 bpds, then a checkstyle warning message will be generated.
+1. Review the content of the core rule **check-app-with-too-many-bpd**. if the process app has more than 5 bpds, then a checkstyle warning message will be generated.
 
     ![][checkstyle_override_step_one]
     
