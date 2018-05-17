@@ -5,7 +5,7 @@ category: administration
 date: 2018-01-05 15:17:55
 order: 2
 ---
-{{ page.last_modified_at }}
+
 ### Add a BPM server
   1. Click **Administrator** tab, then switch to  **BPM configurtaion** tab to manage BPM server.  
   
