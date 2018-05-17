@@ -7,5 +7,5 @@ layout: default
         {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
     </h2>
 </div>
-Last Updated: {% last_modified_at %}
+Last Updated: {{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
 {{ content }}
