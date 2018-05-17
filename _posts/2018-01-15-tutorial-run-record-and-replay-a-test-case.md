@@ -69,7 +69,7 @@ To record a test case:
   
 ### Step 3: Replay a test case
 
-  In this step, you can replay a test case that you record in the previous step.
+  In this step, you can replay a test case that you record in the previous steps.
  
 #### Procedure 
 
@@ -83,7 +83,7 @@ To replay a test case:
   
 ### Step 4: Run a test case
 
-   In this step, you run a test case.The running of automated testing is asynchronous.
+   In this step, you can run a test case.The running of automated testing is asynchronous.
    
 #### Procedure
 
