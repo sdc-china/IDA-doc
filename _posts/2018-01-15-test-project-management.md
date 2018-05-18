@@ -34,6 +34,7 @@ order: 1
      
      **Known Limitions:**   
      Only supports test project migration in development environment.  
+     Don't support java/js customization test project.
       
         
   3. Click **Create** button, you will enter into project dashboard page.
