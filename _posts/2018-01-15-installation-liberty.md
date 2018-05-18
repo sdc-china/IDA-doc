@@ -20,7 +20,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **spring.datasource.url** : MySQL database connection URL
 *  **server.context-path** : default as  "/keter"  
 *  **server.full-context-path** :
-    "http://keterServerip:port/keter", this should be the URL for users to access Keter web application. Please update it with the actual protocol, Keter server ip, Keter server port and context URI.
+    "https://keterServerip:port/keter", this should be the URL for users to access Keter web application. Please update it with the actual protocol, Keter server ip, Keter server port and context URI.
 *  **engineConfig.screenshotDir** :  screenshot folder  
 *  **smtp.host** ：your SMTP host    
 *  **smtp.port** ：your SMTP port    
