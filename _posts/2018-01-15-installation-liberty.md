@@ -40,7 +40,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 
 It is only needed when you want to have BPM Checkstyle feature. If you don't need it, you can leave them as-is.
 
-Please note that to enable BPM Checkstyle feature, you need to have IBM ODM installed because the BPM Checkstyle feature is running against ODM rule engine. You need to locate the jrules-engine.jar in your ODM installation and copy it to **lib** folder, before executing **package.bat**.
+Please note that to enable BPM Checkstyle feature, you need to have IBM ODM installed because the BPM Checkstyle feature is running against ODM rule engine. You need to locate the **jrules-engine.jar** in your ODM installation and copy it to **lib** folder, before executing **package.bat**.
 
 **#monitoring.properties (For BPM Monitoring purpose)**
 	
