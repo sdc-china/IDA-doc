@@ -15,7 +15,7 @@ We use MySQL as the default database. You can get these sql scripts from **sql**
 
 Connect to the MySQL server and use MySQL command to create database. 
 ``` 
-mysql> create database keter ;
+mysql> create database keter;
 ```  
 
 **Execute DB scripts**  
@@ -26,8 +26,8 @@ You can execute the script with the mysql source command to execute script.Pls r
 
 ``` 
 mysql> use keter ;
-mysql> source yoursqlpath\schema-mysql.sql ;
-mysql> source  yoursqlpath\data-mysql.sql ;
+mysql> source yoursqlpath\schema-mysql.sql;
+mysql> source yoursqlpath\data-mysql.sql;
 ```  
 
 In MySQL 8.0, the default authentication plugin has changed from **mysql_native_password** to **caching_sha2_password**, and the 'root'@'localhost' administrative account uses caching_sha2_password by default. Please execute below script to use the previous default authentication plugin (**mysql_native_password**) in order to work with Keter.
