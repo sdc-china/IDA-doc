@@ -30,7 +30,14 @@ mysql> source yoursqlpath\schema-mysql.sql ;
 mysql> source  yoursqlpath\data-mysql.sql ;
 ```  
 
-**Notes:**     
+In MySQL 8.0, the default authentication plugin has changed from **mysql_native_password** to **caching_sha2_password**, and the 'root'@'localhost' administrative account uses caching_sha2_password by default. Please execute below script to use the previous default authentication plugin (**mysql_native_password**) in order to work with Keter.
+
+``` 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+**Notes:**   
+
 You might need to change **data-mysql.sql** script for the your organization name. Please  replace 'keter' to your company name occur in the below script.The default keter login name and password is "KeterAdmin"/"KeterAdmin".Pls don't change this username and password in the sql file.
 
 ``` 
@@ -38,10 +45,4 @@ INSERT INTO organization (company_name, active) VALUES ('keter', true);
 INSERT INTO user (user_name, password, role, active, organization_id) 
 VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT id FROM organization where company_name = 'keter'));
 ```  
-
-In MySQL 8.0, the default authentication plugin has changed from **mysql_native_password** to **caching_sha2_password**, and the 'root'@'localhost' administrative account uses caching_sha2_password by default. Please execute below script to use the previous default authentication plugin (**mysql_native_password**) in order to work with Keter.
-
-``` 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-```
 
