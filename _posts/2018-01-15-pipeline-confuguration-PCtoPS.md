@@ -17,7 +17,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
 
     ```  
   
-2. Accect the default setting you can see below output.
+2. After key generation process, you can see below output.
 
    ![][pipeline_sshkey]
  
