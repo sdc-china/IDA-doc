@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 1
 ---
 
-Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easily automate their test case projects on ps side to do the testing.
+Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily test projects on PS side.
 
 ### Create SSH Key
 
@@ -46,7 +46,12 @@ Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easil
 
   ![][pipeline_snapshotnaming]
   
+2. Run the pipeline,you can see the snapshot is deployed from PC to PS side.
+
+   ![][pipeline_pcdeployps]
+
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png
 [pipeline_snapshotnaming]: ../images/pipeline/pipeline_snapshotnaming.png
+[pipeline_pcdeployps]: ../images/pipeline/pipeline_pcdeployps.png
