@@ -10,7 +10,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
 
 ### Create SSH Key
 
-1. Login into the keter server.The first step is to create the key pair on the Keter machine. 
+1. Login into the keter server and create the key pair on the Keter machine. 
 
     ```  
      $ssh-keygen -t rsa
@@ -42,11 +42,11 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
 
    ![][pipeline_pstops]
    
-2. Choose the snapshot naming convention ,then save the pipeline.
+2. Choose the snapshot naming convention then save the pipeline.
 
   ![][pipeline_snapshotnaming]
   
-2. Run the pipeline,you can see the snapshot is deployed from PC to PS side.
+2. Run the pipeline,you can check the pipeline build status.If sucessful,it means the snapshot is deployed from PC to PS side.
 
    ![][pipeline_pcdeployps]
 
