@@ -28,13 +28,11 @@ The public key is now located in /root/.ssh/id_rsa.pub. The private key (identif
    ```  
     $ssh-copy-id root@your pc/ps server ip    
 
-  ```  
+   ```  
 
 4.Use cat ~/.ssh/id_rsa to print your private key and copythis key into your BPM PC ans PS configuration settings.
  
      ![][pipeline_bpmconfiguration]
-
-
 
 
 
