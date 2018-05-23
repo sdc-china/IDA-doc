@@ -20,8 +20,19 @@ Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easil
 
    ![][pipeline_sshkey]
  
+The public key is now located in /root/.ssh/id_rsa.pub. The private key (identification) is now located in  /root/.ssh/id_rsa.
 
 
+3. Copy the public key to the PC Server and PS.You can copy the public key into the new machine's authorized_keys file with the ssh-copy-id command. Make sure to replace the example username and IP address below.
+
+   ```  
+    $ssh-copy-id root@your pc/ps server ip    
+
+  ```  
+
+4.Use cat ~/.ssh/id_rsa to print your private key and copythis key into your BPM PC ans PS configuration settings.
+ 
+     ![][pipeline_bpmconfiguration]
 
 
 
@@ -30,4 +41,4 @@ Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easil
 
 
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
-
+[pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
