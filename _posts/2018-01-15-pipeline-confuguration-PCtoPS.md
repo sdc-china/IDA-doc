@@ -53,6 +53,10 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
 
    ![][pipeline_pcdeployps]
 
+ **Known Limitions:**     
+     
+ Keter machine,PC Server,PS server should be linux server.  
+
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png
