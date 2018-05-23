@@ -12,10 +12,10 @@ Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easil
 
 1. Login into the keter server.The first step is to create the key pair on the Keter machine. 
 
-   ```  
-    $ssh-keygen -t rsa
+    ```  
+     $ssh-keygen -t rsa
 
-   ```   
+    ```  
   
 2. Accect the default setting you can see below output.
 
@@ -24,7 +24,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easil
    The public key is now located in /root/.ssh/id_rsa.pub. The private key (identification) is now located in  /root/.ssh/id_rsa.
 
 
-3. Copy the public key to the PC Server and PS.You can copy the public key into the new machine's authorized_keys file with the ssh-copy-id command. Make sure to replace the  username and IP address below.
+3. Copy the public key to the PC Server and PS.You can copy the public key into PC/PS machine's authorized_keys file with the ssh-copy-id command. Make sure to replace the  username and IP address below.
 
    ```  
     $ssh-copy-id root@your pc/ps server ip    
