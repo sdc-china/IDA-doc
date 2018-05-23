@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "PC to PS pipeline configuration"
+title: "Deploy snapshot from PC to PS"
 category: pipeline
 date: 2018-01-05 15:17:55
 order: 1
