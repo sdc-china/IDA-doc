@@ -12,10 +12,10 @@ Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easil
 
 1. Login into the keter server.The first step is to create the key pair on the Keter machine. 
 
-  ```  
+   ```  
     $ssh-keygen -t rsa
 
-  ```  
+   ```   
   
 2. Accect the default setting you can see below output.
 
