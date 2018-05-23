@@ -44,9 +44,9 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
    
 2. Choose the snapshot naming convention then save the pipeline.
 
-  ![][pipeline_snapshotnaming]
+   ![][pipeline_snapshotnaming]
   
-2. Run the pipeline,you can check the pipeline build status.If sucessful,it means the snapshot is deployed from PC to PS side.
+3. Run the pipeline,you can check the pipeline build status.If sucessful,it means the snapshot is deployed from PC to PS side.
 
    ![][pipeline_pcdeployps]
 
