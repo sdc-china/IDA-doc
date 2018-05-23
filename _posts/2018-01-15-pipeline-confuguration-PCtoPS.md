@@ -38,10 +38,15 @@ Keter pipeline allow you deploy your snapshot from PC to PS.So testers can easil
 
 ### Define pipeline from PC to PS
 
-1. You can easily define the pipeline for deployment snapshot from PC to PS.
+1. Define the pipeline for deployment snapshot from PC to PS.
 
    ![][pipeline_pstops]
+   
+2. Choose the snapshot naming convention ,then save the pipeline.
 
+  ![][pipeline_snapshotnaming]
+  
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png
+[pipeline_snapshotnaming]: ../images/pipeline/pipeline_snapshotnaming.png
