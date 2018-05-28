@@ -98,7 +98,12 @@ To run a test case:
  4. Click the **Screenshots** icon link to see the captured screenshot.
   
 ![][tutorial_running_result]
-  
+
+**Notes**
+
+When you fist record and play your test case you might see the below error.This is becasue IBM Business Process Manager uses default certificates that are not issued by a trusted certificate authority (CA). This means that when a user accesses a IBM Business Process Manager URL over HTTPS, the certificate might not be trusted by the user’s browser, depending on the browser the user has and on the browser security settings. The untrusted certificate can cause errors in the user’s browser and possibly block the functions of the OpenPages integration, including the Process Portal home page.In order to slove this issue,you need to copy the  url from below screenshot and launch this url from the browser and accept the ssl warning,then replay again.
+
+   ![][test_record_issue]
   
 **[<Previous][2] [\| Next>][3]**
 
@@ -119,3 +124,4 @@ To run a test case:
 [test_record_steps]: ../images/test/test_record_steps.PNG
 [test_case_record_button]: ../images/test/test_case_record_button.PNG
 [test_record_page]: ../images/test/test_record_page.PNG
+[test_record_issue]: ../images/tutorial/tuorial_recordissue.png
