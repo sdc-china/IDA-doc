@@ -50,6 +50,26 @@ Please note that to enable BPM Checkstyle feature, you need to have IBM ODM inst
 It is only needed when you want to configure monitoring[1] to have the monitoring feature. If you don't need it, you can leave them as-is.
 
 When you finish updating the properties, run **package.bat** to update the Keter war (e,g, *keter-web.war*) file under **build** folder. You need to define the **JAVA_HOME** variable and add the **$JAVA_HOME/bin** directory to your path before executing **package.bat**.
+
+**Create a Liberty server manually ** 
+
+You can create a server from the command line.
+
+**Procedure**
+1. Open a command line, then change directory to the wlp/bin directory.
+Where path_to_liberty is the location you installed Liberty on your operating system.
+``` 
+cd path_to_liberty/wlp/bin
+``` 
+2. Run the following command to create a server. If you do not specify a server name, defaultServer is used.
+Where server_name is the name you want to give your server.
+
+``` 
+server create server_name
+``` 
+server_name must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
+
+If the server is created successfully, you receive message: Server server_name created.
 	
 **Configure WAS Liberty**  
 
