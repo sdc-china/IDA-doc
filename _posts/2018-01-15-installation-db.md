@@ -7,7 +7,8 @@ order: 2
 ---
 ### Install MySQL
 
-We use MySQL as our database. You can install mysql community edition based on the below link.
+We use MySQL as our database. You can install mysql community edition based on the below link.  
+
 [MySQL download](https://dev.mysql.com/downloads/mysql/)
    
 
