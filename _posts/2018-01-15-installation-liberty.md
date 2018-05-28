@@ -55,13 +55,12 @@ When you finish updating the properties, run **package.bat** to update the Keter
 
 You can create a server from the command line.
 
-**Procedure**
-1. Open a command line, then change directory to the wlp/bin directory.
+* Open a command line, then change directory to the wlp/bin directory.
 Where path_to_liberty is the location you installed Liberty on your operating system.
 ``` 
 cd path_to_liberty/wlp/bin
 ``` 
-2. Run the following command to create a server. If you do not specify a server name, defaultServer is used.
+* Run the following command to create a server. If you do not specify a server name, defaultServer is used.
 Where server_name is the name you want to give your server.
 
 ``` 
