@@ -5,11 +5,11 @@ category: installation
 date: 2018-01-05 15:17:55
 order: 2
 ---
+### Install MySQL
 
+We use MySQL as our database. You can install mysql community edition based on the below link.
+[MySQL download](https://dev.mysql.com/downloads/mysql/)
    
-### DB Deployment
-
-We use MySQL as the default database. You can get these sql scripts from **sql** folder from installation package.
 
 **Create DB**   
 
