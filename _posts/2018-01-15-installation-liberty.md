@@ -36,7 +36,9 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **resPassword** : rule execution server password  
 *  **resUrl** : rule execution server url  
 *  **resPort** : rule execution server port  
-*  **checkstyle.dir**: your checkstyle report folder  
+*  **resPort** : rule execution server port  
+*  **restUrl** : business rule service execution REST url  
+*  **ruleExecutionMode**: rule execution mode, there are 2 choices: **0**  Ruleset executed using local rule engine; **2**  Ruleset executed by invoking REST rule service.
 
 It is only needed when you want to have BPM Checkstyle feature. If you don't need it, you can leave them as-is.
 
