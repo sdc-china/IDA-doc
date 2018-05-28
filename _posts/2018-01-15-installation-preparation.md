@@ -18,7 +18,8 @@ order: 1
 * SMTP Server
 * IBM ODM 8.5 or above
 
-**Notes:**
+**Notes:**  
+
 If customer does not have a IBM ODM license,he should not able to use the checkystyle feature.
   
 ### Installation Package
