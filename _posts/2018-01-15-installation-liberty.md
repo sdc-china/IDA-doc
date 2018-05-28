@@ -51,7 +51,7 @@ It is only needed when you want to configure monitoring[1] to have the monitorin
 
 When you finish updating the properties, run **package.bat** to update the Keter war (e,g, *keter-web.war*) file under **build** folder. You need to define the **JAVA_HOME** variable and add the **$JAVA_HOME/bin** directory to your path before executing **package.bat**.
 
-**Create a Liberty server manually ** 
+**Create a Liberty server manually** 
 
 You can create a server from the command line.
 
