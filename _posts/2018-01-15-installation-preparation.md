@@ -17,6 +17,9 @@ order: 1
 
 * SMTP Server
 * IBM ODM 8.5 or above
+
+**Notes:**
+If customer does not have a IBM ODM license,he should not able to use the checkystyle feature.
   
 ### Installation Package
 Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below:
