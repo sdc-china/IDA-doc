@@ -65,8 +65,13 @@ cd path_to_liberty/wlp/bin
 * Run the following command to create a server. If you do not specify a server name, defaultServer is used.
 Where server_name is the name you want to give your server.
 
+Windows  
 ``` 
-server create server_name
+server create server_name  
+``` 
+Linux  
+``` 
+./server create server_name  
 ``` 
 server_name must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
 
