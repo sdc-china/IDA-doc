@@ -20,16 +20,17 @@ order: 1
 
 **Notes:**  
 
-If customer does not have a IBM ODM license,he should not able to use the checkystyle feature.
+If customer does not have IBM ODM license, he should not use the Checkystyle feature.
   
 ### Installation Package
 Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below:
 
-*  **build** : contains the Keter war file that needs to be deployed in WAS Liberty.
-*  **conf** : contains the Keter properties file.
+*  **build** : contains Keter war file that needs to be deployed in WAS Liberty.
+*  **conf** : contains Keter properties file.
 *  **lib** : contains the required Java library for Keter packaging and setup.  
 *  **sql** : contains the SQL files to create Keter database and tables.
-*  **toolkit** : contains the Keter required Toolkit TWX file.
+*  **toolkit** : contains Keter required Toolkit TWX file.
+*  **workspace** : contains the Checkstyle rule projects.
 *  **package.bat** : Windows command to update Keter war file with client settings.
 *  **package.sh** : Linux script to update Keter war file with client settings.
 *  **README.html** : README file.
