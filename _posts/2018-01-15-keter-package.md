@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Keter Deployment Package"
+title: "Update Deployment Configuration"
 category: installation
 date: 2018-01-05 15:17:55
 order: 3
