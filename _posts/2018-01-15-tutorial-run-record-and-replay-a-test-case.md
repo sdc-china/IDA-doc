@@ -99,6 +99,17 @@ To run a test case:
   
 ![][tutorial_running_result]
 
+
+### Step 5: Stop a test case
+
+   In this step, you can stop a test case.   
+   
+#### Procedure
+
+Click **Stop** button on the right of case name.
+
+[tutorial_case_stop_button]
+
 **Notes**
 
 When you fist record and play your test case you might see the below error.
@@ -115,6 +126,7 @@ In order to slove this issue,you need to copy the  url from below screenshot and
 [test_case_step_table]: ../images/test/test_case_step_table.PNG
 [test_case_step_table2]: ../images/test/test_case_step_table2.PNG
 [tutorial_case_run_button]: ../images/tutorial/tutorial_case_run_button.PNG
+[tutorial_case_stop_button]: ../images/tutorial/tutorial_case_stop.PNG
 [tutorial_running_result]: ../images/tutorial/tutorial_running_result.PNG
 [1]: ../test/test-record-and-replay-a-test-case.html
 [2]: tutorial-create-a-test-project-and-generate-test-cases.html
