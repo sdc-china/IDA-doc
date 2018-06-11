@@ -10,7 +10,7 @@ order: 5
 
 1. Navigate to **Custom Command** in the left-side menu bar, click + button to generate a group command.
 
-  ![][test_group_command]
+  ![][test_js_command]
   
 2. Enter the javascript command info.
 
@@ -30,7 +30,7 @@ order: 5
 
 6. In new case step reference your js command result variable.
 
-  [test_group_command]: ../images/test/test_group_command.PNG
+  [test_js_command]: ../images/test/test_js_command.PNG
   [test_js_command_info]: ../images/test/test_js_command_info.PNG
   [test_js_command_parameter]: ../images/test/test_js_command_parameter.PNG
   [test_js_command_logic]: ../images/test/test_js_command_logic.PNG
