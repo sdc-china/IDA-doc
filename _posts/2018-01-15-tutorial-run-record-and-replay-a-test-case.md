@@ -108,7 +108,7 @@ To run a test case:
 
 Click **Stop** button on the right of case name.
 
-[tutorial_case_stop_button]
+![][tutorial_case_stop_button]
 
 **Notes**
 
