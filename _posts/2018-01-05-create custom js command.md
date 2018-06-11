@@ -10,11 +10,11 @@ order: 5
 
 1. Navigate to **Custom Command** in the left-side menu bar, click + button to generate a group command.
 
-  ![][test_js_command]
+   ![][test_js_command]
   
 2. Enter the javascript command info.
 
-  ![][test_js_command_info]
+   ![][test_js_command_info]
   
 3. Define the js command parameter.
 
