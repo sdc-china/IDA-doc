@@ -28,11 +28,14 @@ order: 5
 
    ![][test_add_js_command]
 
-6. In new case step reference your js command result variable.
+6. Add new case step reference your js command result variable.
+
+   ![][test_js_casestep]
 
   [test_js_command]: ../images/test/test_js_command.PNG
   [test_js_command_info]: ../images/test/test_js_command_info.PNG
   [test_js_command_parameter]: ../images/test/test_js_command_parameter.PNG
   [test_js_command_logic]: ../images/test/test_js_command_logic.PNG
   [test_add_js_command]: ../images/test/test_js_command_add.PNG
+  [test_js_casestep]: ../images/test/test_js_casestep.PNG
   
