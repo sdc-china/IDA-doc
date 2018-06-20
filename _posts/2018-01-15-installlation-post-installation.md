@@ -25,6 +25,14 @@ java -jar selenium-server-standalone-3.7.1.jar -role hub -port 4444
 3. Start Selenium Grid Node  
 java -jar selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -port 4444
 
+**Notes:**
+
+In order to use IE browser or chrome for replay the test case, you need to set the driver path for the selenium server.See below example.
+
+java -Dwebdriver.ie.driver="C:\XXX\IEDriverServer.exe"
+-Dwebdriver.chrome.driver="C:\XXX\chromedriver.exe" -jar 
+selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -port 4444
+
 **Docker installation**
 
 The below link is a step-by-step introduction to using the official Selenium Docker images using a basic hub/node configuration.
