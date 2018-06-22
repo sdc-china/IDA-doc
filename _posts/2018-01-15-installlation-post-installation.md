@@ -50,7 +50,7 @@ The below link is a step-by-step introduction to using the official Selenium Doc
    ![][service]
    
 ### Plug-in
-You need to install Chrome plug-in to record the UI.
+If you use chrome browser,pls follower the below steps.
 
 1. Download the Chrome plug-in from Keter Home page.
 2. Open the Chrome browser and input the **chrome://extensions/**
@@ -58,7 +58,16 @@ You need to install Chrome plug-in to record the UI.
 4. Click the **Add extension** button in the prompt at the bottom of the screen.You can see the icon on the Chrome address bar.
   
    ![][keter]
-  
+
+You can also install plug-in from https://chrome.google.com/webstore/search/keter 
+
+If you use firefox browser,pls follower the below steps.
+1. Install firefox plug-in from https://addons.mozilla.org/en-US/firefox/addon/keter
+2. Open the firefox browser and input the **about:config**
+3. Make sure the preference name "dom.allow_scripts_to_close_windows" value is true.
+4. Restart the firefox.
+
+
 [toolkit]: ../images/install/toolkit.png 
 [service]: ../images/install/service.png 
 [keter]: ../images/install/keter.png 
