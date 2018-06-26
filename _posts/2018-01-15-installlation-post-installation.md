@@ -52,10 +52,8 @@ The below link is a step-by-step introduction to using the official Selenium Doc
 ### Plug-in
 If you use chrome browser,pls follower the below steps.
 
-1. Download the Chrome plug-in from Keter Home page.
-2. Open the Chrome browser and input the **chrome://extensions/**
-3. Drag and drop the .CRX file onto the Chrome extension page
-4. Click the **Add extension** button in the prompt at the bottom of the screen.You can see the icon on the Chrome address bar.
+Install the Chrome plug-in from https://chrome.google.com/webstore/search/keter
+
   
    ![][keter]
 
