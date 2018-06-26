@@ -59,7 +59,7 @@ Install the Chrome [plug-in](https://chrome.google.com/webstore/search/keter)
 
 
 If you use Firefox browser,pls follower the below steps.
-1. Install Firefox [Add-ons] (https://addons.mozilla.org/en-US/firefox/addon/keter)
+1. Install Firefox [Add-ons](https://addons.mozilla.org/en-US/firefox/addon/keter)
 2. Open the Firefox browser and input the **about:config**
 3. Make sure the preference name "dom.allow_scripts_to_close_windows" value is true.
 
