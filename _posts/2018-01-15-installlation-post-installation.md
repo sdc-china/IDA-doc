@@ -50,18 +50,17 @@ The below link is a step-by-step introduction to using the official Selenium Doc
    ![][service]
    
 ### Plug-in
-If you use chrome browser,pls follower the below steps.
+If you use Chrome browser,pls follower the below steps.
 
-Install the Chrome plug-in from https://chrome.google.com/webstore/search/keter
+Install the Chrome [plug-in](https://chrome.google.com/webstore/search/keter)
 
   
    ![][keter]
 
-You can also install plug-in from https://chrome.google.com/webstore/search/keter 
 
-If you use firefox browser,pls follower the below steps.
-1. Install firefox plug-in from https://addons.mozilla.org/en-US/firefox/addon/keter
-2. Open the firefox browser and input the **about:config**
+If you use Firefox browser,pls follower the below steps.
+1. Install Firefox [Add-ons] (https://addons.mozilla.org/en-US/firefox/addon/keter)
+2. Open the Firefox browser and input the **about:config**
 3. Make sure the preference name "dom.allow_scripts_to_close_windows" value is true.
 
   ![][firefox]
