@@ -20,7 +20,7 @@ order: 5
 
    ![][test_js_command_parameter]
    
-4. Wrote your js command logic.
+4. Define your js command logic.
 
    ![][test_js_command_logic]
     
@@ -28,13 +28,11 @@ order: 5
 
    ![][test_add_js_command]
 
-6. Add new case step reference your js command reference variable.
+6. In new case step reference js variable
 
    ![][test_js_casestep]
 
-  If you check the console,it will print the actual value for the specfied key name you filled. See below samples.  
-
-  Keter 16:47:30.973 [CaseExecutor-1] INFO  com.ibm.cte.sdc.bpm.testing.command.utility.Debug - Debug log: myValue
+ 
 
   [test_js_command]: ../images/test/test_js_command.PNG
   [test_js_command_info]: ../images/test/test_js_command_info.PNG
