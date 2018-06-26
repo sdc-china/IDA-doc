@@ -31,6 +31,7 @@ order: 5
 6. You can  reference previoius js variable in the following case steps
 
    ![][test_js_casestep]
+   ![][test_js_commandlist]
 
  
 
@@ -40,4 +41,4 @@ order: 5
   [test_js_command_logic]: ../images/test/test_js_command_logic.PNG
   [test_add_js_command]: ../images/test/test_js_command_add.PNG
   [test_js_casestep]: ../images/test/test_js_casestep.PNG
-  
+  [test_js_commandlist]: ../images/test/test_js_commandlist.PNG
