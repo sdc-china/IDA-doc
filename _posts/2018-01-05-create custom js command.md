@@ -28,7 +28,7 @@ order: 5
 
    ![][test_add_js_command]
 
-6. You can in the following new added case step reference previoius js variable
+6. You can  reference previoius js variable in the following case steps
 
    ![][test_js_casestep]
 
