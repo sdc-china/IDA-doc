@@ -16,19 +16,19 @@ order: 5
 
    ![][test_js_command_info]
   
-3. Define the js command parameter.
+3. Define the javascript command parameter.
 
    ![][test_js_command_parameter]
    
-4. Define your js command logic.
+4. Define your javascript command logic.
 
    ![][test_js_command_logic]
     
-5. Add your js command in your test case.
+5. Add your javascript command in your test case.
 
    ![][test_add_js_command]
 
-6. You can  reference previoius js variable in the following case steps
+6. You can  reference js variable in the case step
 
    ![][test_js_casestep]
    ![][test_js_commandlist]
