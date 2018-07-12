@@ -58,7 +58,7 @@ order: 1
 * UI  
 
   |   Field                          | Parameters                          |Description                                                             |
-  | ------------------------------   |-------------------------------------------------------------------------|                                          
+  | --------------------------------------- |------------------------------------------------------------------ ------- ------- ------- - ------- -------  |                                      
   | bpmFileUploader                  |  Control  ID: the id of the control<br>Default Value: the filename       | upload file                                    | 
   | bpmFileDropzone                  |  value: the value of the BPM file<br>control ID: the control id of BPM file drop zone<br>Default value: the value of default | BPM file drop zone                                   | 
   | select                           |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of select control                                  | 
@@ -79,7 +79,7 @@ order: 1
 * UI Assertion  
 
   |   Field                | Parameters                          |Description                                                             |
-  | ---------------------- |-------------------------------------------------------------------------|                                          
+  | --------------------------------------- |------------------------------------------------------------------ ------- ------- ------- - ------- -------  |                                    
   | assertSelect           | controlId : control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check select value   |  
   | assertInputText        | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check coach text field value       |                                    
   | assertOutputText       | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check coach output text  value     |
@@ -90,7 +90,7 @@ order: 1
   | assertRadio            | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Checked: the radio box is checked or not   |assert radio box is on or off                                 |                                      
   | assertTableRows        | Control ID: the id of table<br>Expected Rows: the row number of the table |     assert row number of the table                               |   
   | assertTableContent     | Control ID: the id of table<br>Column: the name of the column <br> Row Number: the row number of table<br>Expected value: the cell value of the table   |    assert the cell value of the table                                | 
-  | assertElement              |  Element ID: the id of element<br>Element css: the css of element <br> Xpath: the xpath of element<br>Expected value: the expected value of the element<br>Expected visibility: the visibility  of element <br> Ignore Element XPATHs: ignore the element xpath   |   assert the value of the element  |  assert the value of the element
+  | assertElement              |  Element ID: the id of element<br>Element css: the css of element <br> Xpath: the xpath of element<br>Expected value: the expected value of the element<br>Expected visibility: the visibility  of element <br> Ignore Element XPATHs: ignore the element xpath   |   assert the value of the element |
   | assertTextPresent          | Text: the text on the UI           |   assert text is appear on UI                                 |  
   | assertTextNotPresent       | Text: the text on the UI         |   assert text is not appear on UI                                
   | assertValidationPassed                  | errorMessage : error message       |  Check whether the coach page is passed the validation or not.                  |
