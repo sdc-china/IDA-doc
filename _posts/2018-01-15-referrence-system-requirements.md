@@ -29,7 +29,7 @@ Currently we support the below database.
 
 #### BPM 
 
-Currently we support below BPM versions.
+Currently we support below BPM versions and BPM on cloud.
 
 * IBM BPM v8.5.X
 * IBM BPM v8.6.0
