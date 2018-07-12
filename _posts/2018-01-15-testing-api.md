@@ -57,7 +57,7 @@ order: 1
   
 * UI  
 
-  |   Field                          | Parameters                          |Description                                                             |
+  |   Field                          | Parameters                          |Description  
   | --------------------------------------- |------------------------------------------------------------------ ------- ------- ------- - ------- -------  |                                      
   | bpmFileUploader                  |  Control  ID: the id of the control<br>Default Value: the filename       | upload file                                    | 
   | bpmFileDropzone                  |  value: the value of the BPM file<br>control ID: the control id of BPM file drop zone<br>Default value: the value of default | BPM file drop zone                                   | 
@@ -78,7 +78,7 @@ order: 1
      
 * UI Assertion  
 
-  |   Field                | Parameters                          |Description                                                             |
+  |   Field                | Parameters                          |Description  |                                                         
   | --------------------------------------- |------------------------------------------------------------------ ------- ------- ------- - ------- -------  |                                    
   | assertSelect           | controlId : control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check select value   |  
   | assertInputText        | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check coach text field value       |                                    
