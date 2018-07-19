@@ -15,7 +15,7 @@ To integrate BPM DEF with with ActiveMQ embedded in Keter,  the version of IBM B
 
 ### Integrate BPM with Keter
 
-  1. Copy below three jar files from **lib** folder to **%BPM_HOME%/lib/ext** folder. 
+  1. Copy below three jar files from  Keter release  **lib** folder to **%BPM_HOME%/lib/ext** folder. 
   
      ![][op_def_mq_lib] 
   
