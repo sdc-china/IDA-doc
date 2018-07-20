@@ -18,9 +18,10 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **spring.datasource.username** : MySQL username  
 *  **spring.datasource.password** : MySQL password  
 *  **spring.datasource.url** : MySQL database connection URL
+*  **server.server.host** :  the Keter server ip or name
 *  **server.context-path** : default as  "/keter"  
-*  **server.full-context-path** :
-    "https://keterServerip:port/keter", this should be the HTTPS URL for users to access Keter web application. Please update it with the actual Keter server ip, Keter server port and context URI.
+*  **http.port** : the liberty http port define in the server.xml,default 9080
+*  **https.port** : the liberty https port define in the server.xml, default 9443
 *  **engineConfig.screenshotDir** :  screenshot folder
 *  **engineConfig.tempDir** :  temp folder for Keter internal use 
 *  **smtp.host** ：your SMTP host    
