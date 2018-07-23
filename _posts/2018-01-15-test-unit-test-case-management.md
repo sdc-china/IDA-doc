@@ -55,6 +55,18 @@ order: 2
       
   3. Click **Update** button.
   
+#### Migrate test case 
+
+1. Click **...** link on the right of suite name and popup the menu.
+
+2. Click "Migrate Test Cases" link on the popup menu.
+
+   ![][test_case_migration_menu]
+ 
+3. Upload the  migrated test cases zips.
+
+   ![][test_case_migration_form]
+  
 #### Add a case step
 
   1. Click **Add** button when add the first case step to a test case, otherwise click **+** button on case step list table.
@@ -114,3 +126,5 @@ order: 2
 [test_case_step_down_button]: ../images/test/test_case_step_down_button.PNG
 [test_case_step_delete_button]: ../images/test/test_case_step_delete_button.PNG
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
+[test_case_migration_menu]:../images/test/test_case_migration_menu.PNG
+[test_case_migration_form]:../images/test/test_case_migration_form.PNG
