@@ -63,7 +63,7 @@ order: 2
 
    ![][test_case_migration_menu]
  
-3. Upload the  migrated test cases zips.
+3. Click the  "Add file" button to upload the zip file then click the "Migrate" button to migrate test cases.
 
    ![][test_case_migration_form]
   
