@@ -18,7 +18,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **spring.datasource.username** : MySQL username  
 *  **spring.datasource.password** : MySQL password  
 *  **spring.datasource.url** : MySQL database connection URL
-*  **server.server.host** :  the Keter server ip or name
+*  **server.host** :  the Keter server ip or name
 *  **server.context-path** : default as  "/keter"  
 *  **http.port** : the liberty http port define in the server.xml,default 9080
 *  **https.port** : the liberty https port define in the server.xml, default 9443
@@ -36,9 +36,7 @@ Edit **keter.properties** under **conf** folder. This properties file contains t
 *  **resUser** : rule execution server username  
 *  **resPassword** : rule execution server password  
 *  **resUrl** : rule execution server url  
-*  **resPort** : rule execution server port  
-*  **resPort** : rule execution server port  
-*  **restUrl** : business rule service execution REST url  
+*  **resPort** : rule execution server port 
 *  **ruleExecutionMode**: rule execution mode, there are 2 choices: **0**  Ruleset executed using local rule engine; **2**  Ruleset executed by invoking REST rule service.
 
 It is only needed when you want to have BPM Checkstyle feature. If you don't need it, you can leave them as-is.
