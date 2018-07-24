@@ -55,15 +55,15 @@ order: 2
       
   3. Click **Update** button.
   
-#### Migrate test case 
+#### Import test case 
 
 1. Click **...** link on the right of suite name and popup the menu.
 
-2. Click "Migrate Test Cases" link on the popup menu.
+2. Click "Import" link on the popup menu.
 
    ![][test_case_migration_menu]
  
-3. Click the  "Add file" button to upload the zip file then click the "Migrate" button to migrate test cases.
+3. Click the  "Add file" button to upload the zip file then click the "Import" button to migrate test cases.
 
    ![][test_case_migration_form]
   
