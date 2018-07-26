@@ -56,24 +56,24 @@ order: 1
   | assertServiceData                       | expectedValue : expected value of the data<br>                                   |      check the currenct service data                                                 |   
   
 * UI  
+  | Field   |     Parameters     |  Description |
+  |----------|:-------------:|------:|
+  | bpmFileUploader | Control  ID: the id of the control<br>Default Value: the filename       | upload file             
+  |bpmFileDropzone |   value: the value of the BPM file<br>control ID: the control id of BPM file drop zone<br>Default value: the value   of default | BPM file drop zone                                
+  | select | Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of select control                            
+  | radio |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of radio control                      |
+  | checkbox | Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of checkbox control |
+  | text | Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of text control |
+  | coachControl | value : coach value <br>label : control label <br>controlId : coach control id <br>elementId : element id of the control<br>xPath : xpath of the control   |  Set the value of coach control  |
+  | saveOutputText |  Key : the value of key<br>controlId : coach control id<br>Setion:the section of the control<br>Label:the label of the control|  put the control value into a key  |
+  | click |  elementId : element id<br>elementCss : CSS<br>xpath : element xpath     |   Click an element by id , CSS or xpath. |
+  | dbclick | elementId : element id<br>elementCss : CSS style of the element on the coach view<br>xpath : element xpath| Double click an element by id, CSS or xpath  |
+  | confirmOK|  N/A                                   |   Click ok button |
+  | confirmCancel | N/A                                   |   Click the cancel button |
+  | open| url: the browser url               |    Open an URL   |
+  | selectWindow | selectWindow           |  info : window info                 |    Select window by window info |
+  | file | value : key value <br>elementId : element id <br>elementCss : element css<br>xpath- element xpath |  Set file element |
 
-| Field   |     Parameters     |  Description |
-|----------|:-------------:|------:|
-| bpmFileUploader | Control  ID: the id of the control<br>Default Value: the filename       | upload file             
-|bpmFileDropzone |   value: the value of the BPM file<br>control ID: the control id of BPM file drop zone<br>Default value: the value of default | BPM file drop zone                                
-| select | Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of select control                            
-| radio |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of radio control                      |
-| checkbox | Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of checkbox control |
-| text | Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of text control |
-| coachControl | value : coach value <br>label : control label <br>controlId : coach control id <br>elementId : element id of the control<br>xPath : xpath of the control   |  Set the value of coach control  |
-| saveOutputText |  Key : the value of key<br>controlId : coach control id<br>Setion:the section of the control<br>Label:the label of the control|  put the control value into a key  |
-| click |  elementId : element id<br>elementCss : CSS<br>xpath : element xpath     |   Click an element by id , CSS or xpath. |
-| dbclick | elementId : element id<br>elementCss : CSS style of the element on the coach view<br>xpath : element xpath| Double click an element by id, CSS or xpath  |
-| confirmOK|  N/A                                   |   Click ok button |
-| confirmCancel | N/A                                   |   Click the cancel button |
-| open| url: the browser url               |    Open an URL   |
-| selectWindow | selectWindow           |  info : window info                 |    Select window by window info |
-| file | value : key value <br>elementId : element id <br>elementCss : element css<br>xpath- element xpath |  Set file element |
  
      
 * UI Assertion  
