@@ -52,5 +52,5 @@ You can refer to **[Post Installation Setup]** to setup it.
 #### Active MQ Client
 You can refer to **[Integrate BPM with Keter]** to setup it.
 
-[Integrate BPM with Keter]: ../operation/operation-configure-def.html
+[Integrate BPM with Keter]: ../installation/installation-integrate-def.html
 [Post Installation Setup]:  ../installation/installlation-post-installation.html
