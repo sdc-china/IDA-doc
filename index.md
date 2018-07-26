@@ -7,7 +7,7 @@ title: "IBM Keter Docs"
 
 Keter redefines BPM innovation with tools and methodologies from IBM. It is a single all-in-one web application  for both BPM process development team and testing teams.
 
-[Introduction Demo](https://www.youtube.com/watch?v=qVPLEc-YEek)
+[Introduction Demo](https://youtu.be/6LJhP7LedU0 )
 
 ### Development Team
 
