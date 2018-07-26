@@ -60,6 +60,10 @@ order: 1
   |   Field                | Parameters                          | Description                                                             |
   | ---------------------- |-------------------------------------------------------------------------|                                
   | bpmFileDropzone           | value: the value of the BPM file<br>control ID: the control id of BPM file drop zone<br>Default value: the value of default |  BPM file drop zone   |  
+  | select                           |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of select control                                  | 
+  | radio                            |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of radio control                                   |    
+  | checkbox                         |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of checkbox control                                                    |                                   
+  | text                             |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of text control                                                    |  
 
  
      
