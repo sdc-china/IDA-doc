@@ -64,7 +64,15 @@ order: 1
   | radio                            |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of radio control                                   |    
   | checkbox                         |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of checkbox control                                                    |                                   
   | text                             |  Control ID :  control id<br>Value: the value of control<br>Setion:the section ID of the control<br>Label:the label of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the control<br>Default value: the default value  |  set the value of text control                                                    |  
-
+  | coachControl           | value : coach value <br>label : control label <br>controlId : coach control id <br>elementId : element id of the control<br>xPath : xpath of the control   |  Set the value of coach control                                  |  
+  | saveCoachControl       | Key : the value of key<br>controlId : coach control id<br>Setion:the section of the control<br>Label:the label of the control|  put the control value into a key                                  |  
+  | saveOutputText         | Key : the value of key<br>controlId : coach control id<br>Setion:the section of the control<br>Label:the label of the control    |  put the output text value to a key                                  |  
+  | click                  |  elementId : element id<br>elementCss : CSS<br>xpath : element xpath     |   Click an element by id , CSS or xpath.                                 |      
+  | dblclick               |  elementId : element id<br>elementCss : CSS style of the element on the coach view<br>xpath : element xpath| Double click an element by id, CSS or xpath                                   |                                    | 
+  | confirmOK              |  N/A                                   |   Click ok button                                 | 
+  | confirmCancel          |  N/A                                   |   Click the cancel button                                 |   
+  | open                   |  url: the browser url               |    Open an URL                                |
+  | selectWindow           |  info : window info                 |    Select window by window info                                 |  
  
      
 * UI Assertion  
