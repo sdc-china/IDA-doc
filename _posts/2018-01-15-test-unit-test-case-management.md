@@ -109,7 +109,7 @@ order: 2
 
   Click ![][test_project_delete_button] button in test case list from left-side menu.
     
-[1]: ../references/referrence-api-reference.html
+[1]: ../references/testing-command.html
 [test_unit_test_add_form]: ../images/test/test_unit_test_add_form.PNG
 [test_group_command_edit_button]: ../images/test/test_group_command_edit_button.PNG
 [test_unit_test_case_list]: ../images/test/test_unit_test_case_list.PNG
