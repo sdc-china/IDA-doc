@@ -72,7 +72,8 @@ order: 1
   | confirmOK              |  N/A                                   |   Click ok button                                 | 
   | confirmCancel          |  N/A                                   |   Click the cancel button                                 |   
   | open                   |  url: the browser url               |    Open an URL                                |
-  | selectWindow           |  info : window info                 |    Select window by window info                                 |  
+  | selectWindow           |  info : window info                 |    Select window by window info                                 | 
+  | file                   | value : key value <br>elementId : element id <br>elementCss : element css<br>xpath- element xpath |  Set file element   |
  
      
 * UI Assertion  
