@@ -81,8 +81,8 @@ order: 1
      
 * UI Assertion  
 
-  |   Field                | Parameters                          |Description  |                                                         
-  | --------------------------------------- |------------------------------------------------------------------ ------- ------- ------- - ------- -------  |                                    
+  |   Field                | Parameters                          | Description                                                             |
+  | ---------------------- |-------------------------------------------------------------------------|                                
   | assertSelect           | controlId : control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check select value   |  
   | assertInputText        | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check coach text field value       |                                    
   | assertOutputText       | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check coach output text  value     |
