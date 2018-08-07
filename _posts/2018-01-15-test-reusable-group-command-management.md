@@ -39,6 +39,13 @@ order: 4
       ![][test_group_command]
   
   10. Click **Exit Edit** button.
+  
+  **Notes**
+  
+  You can also add group command through the custom command menu.   
+  
+    ![][test_group_command_add]
+    ![][test_group_command_create] 
 
 ### Add group command
 
@@ -129,6 +136,8 @@ order: 4
   [test_group_command_caselist_table]: ../images/test/test_group_command_caselist_table.PNG
   [test_group_command_caselist_table2]: ../images/test/test_group_command_caselist_table2.PNG
   [test_group_command]: ../images/test/test_group_command.PNG
+  [test_group_command_add]: ../images/test/test_group_command_add.PNG
+  [test_group_command_create]: ../images/test/test_group_command_create.PNG
   [test_group_command_edit_button]: ../images/test/test_group_command_edit_button.PNG
   [test_group_command_delete_button]: ../images/test/test_group_command_delete_button.PNG
   [test_group_command_bar]: ../images/test/test_group_command_bar.PNG
