@@ -40,10 +40,8 @@ order: 4
   
   10. Click **Exit Edit** button.
   
-  **Notes**
-  
-  You can also add group command through the custom command menu.   
-  
+  **Notes**  
+  You can also add group command through the custom command menu.     
     ![][test_group_command_add]
     ![][test_group_command_create] 
 
