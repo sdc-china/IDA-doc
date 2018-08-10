@@ -19,11 +19,16 @@ Keter integrates with remote testing automation based on Selenium Grid.
 
 1. [Download](http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar ) Selenium Grid server jar.  
 
-2. Start Selenium Grid Hub   
-java -jar selenium-server-standalone-3.7.1.jar -role hub -port 4444  
+2. Copy below script to startNode.bat file .You need copy the selenium web driver to  selenium-java-3.7.1 folder.The file strcture shoule like below.
 
-3. Start Selenium Grid Node  
-java -jar selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -port 4444
+   ![][seleniumGrid]
+
+java -Dwebdriver.gecko.driver="./selenium-java-3.7.1/geckodriver.exe" -Dwebdriver.chrome.driver="./selenium-java-3.7.1/chromedriver.exe" -Dwebdriver.ie.driver="./selenium-java-3.7.1/IEDriverServer.exe" -jar selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -timeout 30 -browserTimeout 30   
+
+3. Copy below script to startHub.bat file.
+java -jar selenium-server-standalone-3.7.1.jar -role hub -newSessionWaitTimeout 10 -timeout 30 -browserTimeout 30    
+
+4.Run the startNode.bat and startHub.bat to start the Node and Hub.
 
 **Notes:**
 
@@ -71,6 +76,7 @@ If you use Firefox browser,pls follower the below steps.
 [service]: ../images/install/service.png 
 [keter]: ../images/install/keter.png 
 [firefox]: ../images/install/firefox.png
+[seleniumGrid]: ../images/install/seleniumGrid.png
 
 
 
