@@ -18,23 +18,25 @@ Keter integrates with remote testing automation based on Selenium Grid.
 
 
 1. [Download](http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar ) Selenium Grid server jar.  
-   [Download](https://www.seleniumhq.org/download/) selenium web driver and copy the selenium web driver to  selenium-java-3.7.1        folder.The file strcture shoule like below.
 
-  ![][seleniumGrid]
+    ![][seleniumGrid]  
+2. [Download](https://www.seleniumhq.org/download/) selenium web driver and copy the selenium web driver to  selenium-java-3.7.1        folder.The file strcture shoule like below.
+    
+    ![][webDriver]   
 
-2. Copy below script to startNode.bat file . 
+3. Copy below script to startNode.bat file . 
    
 ```
 java -Dwebdriver.gecko.driver="./selenium-java-3.7.1/geckodriver.exe" -Dwebdriver.chrome.driver="./selenium-java-3.7.1/chromedriver.exe" -Dwebdriver.ie.driver="./selenium-java-3.7.1/IEDriverServer.exe" -jar selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -timeout 30 -browserTimeout 30   
 ```
 
-3. Copy below script to startHub.bat file.  
+4. Copy below script to startHub.bat file.  
 
 ```
 java -jar selenium-server-standalone-3.7.1.jar -role hub -newSessionWaitTimeout 10 -timeout 30 -browserTimeout 30    
 ```
 
-4.Run the startNode.bat and startHub.bat to start the Node and Hub.
+5.Run the startNode.bat and startHub.bat to start the Node and Hub.
 
 **Notes:**
 
@@ -83,7 +85,7 @@ If you use Firefox browser,pls follower the below steps.
 [keter]: ../images/install/keter.png 
 [firefox]: ../images/install/firefox.png
 [seleniumGrid]: ../images/install/seleniumGrid.png
-
+[webDriver]: ../images/install/webdriver.png
 
 
 
