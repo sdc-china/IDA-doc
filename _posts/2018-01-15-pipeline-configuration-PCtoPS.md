@@ -50,7 +50,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
 
      ![][pipeline_servername]
      
-### Vertify SSH Key     
+### Vertify SSH Key (Optional)    
 
 1. If you are in linux env, you can use below command to vertify the connection.Pls replace your ip address instead.
 
@@ -60,8 +60,8 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
    ```
 2. If you are in windows env,you can use putty tools to vertify it.
 
-   Putty: https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe
-   Puttygen: https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe
+   Putty: https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe   
+   Puttygen: https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe    
 
 a. Open puttygen.exe
 b. Open Conversions -> Import Key
