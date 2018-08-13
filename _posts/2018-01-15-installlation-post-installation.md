@@ -18,7 +18,7 @@ Keter integrates with remote testing automation based on Selenium Grid.
 
 
 1. [Download](http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar ) Selenium Grid server jar.  
-Copy the selenium web driver to  selenium-java-3.7.1 folder.The file strcture shoule like below.
+   [Download](https://www.seleniumhq.org/download/) selenium web driver andcopy the selenium web driver to  selenium-java-3.7.1        folder.The file strcture shoule like below.
 
   ![][seleniumGrid]
 
