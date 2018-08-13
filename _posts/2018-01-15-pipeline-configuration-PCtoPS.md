@@ -69,11 +69,12 @@ b. Open Conversions -> Import Key
    ![][puttyKeyGen]   
 c. Select id_rsa file
 
-   ![][PrivateKeyGen]
-d. Click Save private key button, save as keter.ppk   
-e. Open putty.exe, For example enter PC IP address 15.128.83.32   
+   ![][PrivateKeyGen]   
+   
+d. Click Save private key button, save as keter.ppk .   
+e. Open putty.exe, For example enter PC IP address 15.128.83.32       
 
-   ![][putty]
+   ![][putty]     
 f. Select category: Connection -> SSH -> Auth, and set the private key file, then click Open button.   
 
    ![][puttyAuth]
