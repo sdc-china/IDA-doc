@@ -28,7 +28,7 @@ Keter integrates with remote testing automation based on Selenium Grid.
    
 ```
 java -Dwebdriver.gecko.driver="./selenium-java-3.7.1/geckodriver.exe" -Dwebdriver.chrome.driver="./selenium-java-3.7.1/chromedriver.exe" -Dwebdriver.ie.driver="./selenium-java-3.7.1/IEDriverServer.exe" -jar selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -timeout 30 -browserTimeout 30   
-```
+```   
 
 4. Copy below script to startHub.bat file.  
 
