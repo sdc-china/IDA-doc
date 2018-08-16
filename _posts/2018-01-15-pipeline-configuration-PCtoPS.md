@@ -32,7 +32,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
    cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys   
 
    ```
-   ** Notes:
+   #### Notes:
    
    **The linux operator user should can execute “wsadmin.sh”**
 
