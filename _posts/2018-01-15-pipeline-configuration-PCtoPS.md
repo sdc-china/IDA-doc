@@ -71,11 +71,11 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
    e. Open putty.exe, For example enter PC IP address 192.168.0.10     
 
      ![][putty]     
-  f. Select category: Connection -> SSH -> Auth, and set the private key file, then click Open button.   
+   f. Select category: Connection -> SSH -> Auth, and set the private key file, then click Open button.   
 
      ![][puttyAuth]
    
-  g. You can find you can use ssh to login into that server,
+   g. You can find you can use ssh to login into that server,
      
 ### Define pipeline from PC to PS
 
