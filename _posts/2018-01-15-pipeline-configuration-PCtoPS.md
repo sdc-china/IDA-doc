@@ -34,7 +34,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
    ```
    ** Notes:
    
-   ** The linux operator user should can execute “wsadmin.sh”.
+   **The linux operator user should can execute “wsadmin.sh”**
 
 
 4. Use cat ~/.ssh/id_rsa to print your private key.Copythis key content into your BPM PC ans PS configuration settings.Also you need to fill the  WAS admin command path.
@@ -47,10 +47,9 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
      
 ### Vertify SSH Key
 
-1. If you are in linux env, you can use below command to vertify the connection.Pls replace your ip address instead.
+1. If you are in linux env, copy the id_rsa to bpm server /tmp folder.you can use below command to vertify the connection.Pls replace your ip address instead.
 
-    ```  
-   copy the id_rsa to /tmp folder.
+    ```     
    chmod 600 /tmp/id_rsa
    ssh -i /tmp/id_rsa root@192.168.0.10
    ```
