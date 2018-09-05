@@ -17,34 +17,24 @@ Keter integrates with remote testing automation based on Selenium Grid.
 [Selenium Grid setup guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
 
-1. [Download](http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar ) Selenium Grid server jar.  
+1. Download Selenium 3.14.0 from [https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar](https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar)  
 
-    ![][seleniumGrid]  
-2. [Download](https://www.seleniumhq.org/download/) selenium web driver and copy the selenium web driver to  selenium-java-3.7.1        folder.The file strcture shoule like below.
-    
-    ![][webDriver]   
+2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
+- [IE Driver](http://selenium-release.storage.googleapis.com/3.14/IEDriverServer_Win32_3.14.0.zip)
+- [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-win64.zip)
+- [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux64.tar.gz)
+- [Chrome Driver Win32](https://chromedriver.storage.googleapis.com/2.41/chromedriver_win32.zip)  
+- [Chrome Driver Linux64](https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip)    
 
-3. Copy below script to startNode.bat file . 
-   
-    ```
-   java -Dwebdriver.gecko.driver="./selenium-java-3.7.1/geckodriver.exe" -Dwebdriver.chrome.driver="./selenium-java-                        3.7.1/chromedriver.exe" -Dwebdriver.ie.driver="./selenium-java-3.7.1/IEDriverServer.exe" -jar selenium-server-standalone-3.7.1.jar -    role   node -hub http://localhost:4444/grid/register/ -timeout 30 -browserTimeout 30   
-   ```   
+3. Start the Hub
+	```
+	java -jar selenium-server-standalone-3.14.0.jar -role hub -newSessionWaitTimeout 10000 -timeout 60 -browserTimeout 60
+	```
 
-4. Copy below script to startHub.bat file.  
-
-     ```
-     java -jar selenium-server-standalone-3.7.1.jar -role hub -newSessionWaitTimeout 10 -timeout 30 -browserTimeout 30    
-     ```
-
-5. Run the startNode.bat and startHub.bat to start the Node and Hub.
-
-**Notes:**
-
-In order to use IE browser or chrome for replay the test case, you need to set the driver path for the selenium server.See below example.
-
-java -Dwebdriver.ie.driver="C:\XXX\IEDriverServer.exe"
--Dwebdriver.chrome.driver="C:\XXX\chromedriver.exe" -jar 
-selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -port 4444
+4. Start the Node  
+	```
+	java -jar selenium-server-standalone-3.14.0.jar -role node -hub http://localhost:4444/grid/register/ -timeout 60 -browserTimeout 60
+	```
 
 **Docker installation**
 

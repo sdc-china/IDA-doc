@@ -28,7 +28,6 @@ order: 2
       | WAS Admin username     | WAS admin name                                                                        |
       | WAS Admin password     | WAS admin password                                                                        |  
       | Connected Server Name  | online PS server name               |
-      | Rest Uri               | BPM rest uri, eg: /rest/bpm/wle/v1                                                           |   
 
 
 ### Edit BPM server

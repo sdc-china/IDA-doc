@@ -60,5 +60,5 @@ redcarpet:
     ]
 
 theme: jekyll-theme-architect
-gems:
+plugins:
   - jekyll-last-modified-at
