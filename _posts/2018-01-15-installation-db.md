@@ -49,14 +49,15 @@ VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT
 
 ### Install DB2
 
-If customer has db2 license,he can choose DB2 as our default database.  Suppose you have already installed DB2.
+Keter also support DB2.If customer has db2 license,he can install Keter with DB2 10.X.  The following commands are based on you hava already 
+create DB2 instance.
 
 **Create DB**   
 
 Login into the DB2 server and use DB2 command to create database. 
 ``` 
 db2 create database KETER automatic storage yes using codeset UTF-8 territory US pagesize 32768
-db2 connect to RTSDB
+db2 connect to KETER
 db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOCKPAGES 0 PAGESIZE 32 K
 ``` 
 
