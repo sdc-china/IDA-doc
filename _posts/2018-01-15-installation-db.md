@@ -73,3 +73,6 @@ db2 connect reset
 ```  
 
 You can use DB2 client tool(Data Studio) to vertify db table and data is in the database or not.
+![][db2]   
+
+[db2]: ../images/install/dbtable.png 
