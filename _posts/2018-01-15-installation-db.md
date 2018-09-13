@@ -63,7 +63,7 @@ db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOC
 
 **Execute DB scripts**  
 
-Start DB2 server and switch to the **keter** DB and execute DB scripts **schema-mysql.sql**, **data-mysql.sql** to create the database tables and populate data.You can change the schema name in the  **schema-mysql.sql** if your schema name is not same with the provided sql.
+Start DB2 server and switch to the **keter** DB and execute DB scripts **schema-db2.sql**, **data-db2.sql** to create the database tables and populate data.You can change the schema name in the  **schema-db2.sql** if your db2 schema name is not same with the provided schema name you can change the corresponding schema name for your script.
 
 
 ``` 
