@@ -51,3 +51,7 @@ Please note that to enable BPM Checkstyle feature, you need to have IBM ODM inst
 It is only needed when you want to configure monitoring[1] to have the monitoring feature. If you don't need it, you can leave them as-is.
 
 When you finish updating the properties, run **package.bat** to update the Keter war (e,g, *keter-web.war*) file under **build** folder. You need to define the **JAVA_HOME** variable and add the **$JAVA_HOME/bin** directory to your path before executing **package.bat**.
+
+**Notes** 
+
+If you want to use db2 as Keter database,you can uncomment DB2 property configuration and comment mysql property configuration.
