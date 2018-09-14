@@ -49,8 +49,7 @@ VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT
 
 ### Install DB2
 
-Keter also support DB2.If customer has db2 license,he can install Keter with DB2 10.X.  The following commands are based on you hava already 
-create DB2 instance.
+Keter also support DB2.If customer has db2 license,he can install Keter with DB2 10.X+.  The following commands are based on you hava already create DB2 instance.
 
 **Create DB**   
 
@@ -74,18 +73,25 @@ db2 connect reset
 ```  
 
 You can use DB2 client tool(Data Studio) to vertify db table and data is in the database or not.
+
 ![][db2]   
 
 **DB2 Driver**  
-Differenct DB2 version has differenct driver.You can download jdbc version from below links.   
-http://www-01.ibm.com/support/docview.wss?uid=swg21363866   
-The IBM Data Server Driver for JDBC and SQLJ package includes two JDBC drivers:    
-db2jcc.jar - This driver is based on the JDBC 3 specification   
-db2jcc4.jar - This driver is based on the JDBC 4 or later specifications   
+Differenct DB2 version has differenct driver.You can download jdbc version from below links.
+http://www-01.ibm.com/support/docview.wss?uid=swg21363866(http://www-01.ibm.com/support/docview.wss?uid=swg21363866)
+The IBM Data Server Driver for JDBC and SQLJ package includes two JDBC drivers:
+db2jcc.jar - This driver is based on the JDBC 3 specification
+db2jcc4.jar - This driver is based on the JDBC 4 or later specifications
 
-In Keter deployment we only need  db2jcc4.jar.Copy the db2jcc4.jar from specfied driver package to the release package lib folder.When you run the package.bat it will copy this lib into the keter-web.war lib folder.
+In Keter deployment we only need  db2jcc4.jar.Extract the db2jcc4.jar from driver package and copy into the release package lib folder.When you run the package.bat it will copy this lib into the keter-web.war lib folder.
 
 ![][db2driver]  
 
+**Config DB2 in keter.property**  
+In order to use db2 ,you must change the the keter.properties file to use correct setting for db2.You can comment the mysql part of property and uncomment db2 properties and change the correct value for the DB2.
+
+![][db2config]
+
 [db2]: ../images/install/dbtable.png 
 [db2driver]: ../images/install/db2driver.png 
+[db2config]: ../images/install/db2configuration.png
