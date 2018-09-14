@@ -68,8 +68,8 @@ Start DB2 server and switch to the **keter** DB and execute DB scripts **schema-
 
 ``` 
 db2 connect to KETER
-db2 -stvf schema-mysql.sql
-db2 -stvf data-mysql.sql
+db2 -stvf schema-db2.sql
+db2 -stvf data-db2.sql
 db2 connect reset
 ```  
 
