@@ -76,4 +76,16 @@ db2 connect reset
 You can use DB2 client tool(Data Studio) to vertify db table and data is in the database or not.
 ![][db2]   
 
+**DB2 Driver**  
+Differenct DB2 version has differenct driver.You can download jdbc version from below links.
+http://www-01.ibm.com/support/docview.wss?uid=swg21363866
+The IBM Data Server Driver for JDBC and SQLJ package includes two JDBC drivers:
+db2jcc.jar - This driver is based on the JDBC 3 specification
+db2jcc4.jar - This driver is based on the JDBC 4 or later specifications
+
+In Keter deployment we only need  db2jcc4.jar.Copy the db2jcc4.jar from specfied driver package to the release package lib folder.When you run the package.bat it will copy this lib into the keter-web.war lib folder.
+
+![][db2driver]  
+
 [db2]: ../images/install/dbtable.png 
+[db2driver]: ../images/install/db2driver.png 
