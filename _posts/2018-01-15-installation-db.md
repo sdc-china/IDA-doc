@@ -62,6 +62,15 @@ db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOC
 
 **Execute DB scripts**  
 
+If you have created table before,you can use below script to remove all the db table.
+
+``` 
+db2 connect to KETER
+db2 "Select 'DROP TABLE', TABLE_NAME from sysibm.tables WHERE TABLE_SCHEMA = UPPER('$USER')" | grep DROP | db2
+``` 
+
+
+
 Start DB2 server and switch to the **keter** DB and execute DB scripts **schema-db2.sql**, **data-db2.sql** to create the database tables and populate data.You can change the schema name in the  **schema-db2.sql** if your db2 schema name is not same with the provided schema name you can change the corresponding schema name for your script.
 
 
