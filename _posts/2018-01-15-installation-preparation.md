@@ -2,7 +2,7 @@
 layout: page
 title: "Prerequisites"
 category: installation
-date: 2018-01-05 15:17:55
+date: 2018-09-18 15:17:55
 order: 1
 ---
 
@@ -11,7 +11,8 @@ order: 1
 
 * IBM BPM 8.5.x or 8.6.0
 * [IBM WAS Liberty 17.0.0.4](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.4/wlp-javaeeClient7-17.0.0.4.zip)
-* [MySQL 5.x or above](https://dev.mysql.com/downloads/mysql/)
+* [MySQL 5.x or above](https://dev.mysql.com/downloads/mysql/) or [DB2] (#) 
+* [Selenium](https://sdc-china.github.io/keter-doc/administration/administration-selenium-hub-configuration.html)
 
 ### Optional  
 
@@ -20,7 +21,7 @@ order: 1
 
 **Notes:**  
 
-If customer does not have IBM ODM license, he should not use the Checkystyle feature.
+IBM ODM license is needed to use the Checkystyle feature.
   
 ### Installation Package
 Extract the Keter Installation archive file to your temporary folder. After extraction, the installation package should have below:
