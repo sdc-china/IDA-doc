@@ -49,7 +49,7 @@ VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT
 
 ### Install DB2
 
-Keter also support DB2.If customer has db2 license,he can install Keter with DB2 10.X+.  The following commands are based on you hava already create DB2 instance.
+Keter also supports DB2.If customer has db2 license,he can install Keter with DB2 10.X+.  The following commands are based on you have already created DB2 instance.
 
 **Create DB**   
 
