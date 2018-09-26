@@ -8,15 +8,15 @@ order: 2
 
 
 
-* startSQLQuery
+### startSQLQuery
 
-You can add a startSQLQuery bpm command in your test case.You need to provide sql,jndi datasource,max row(optional) field value in the below window
+  1.You can add a startSQLQuery bpm command in your test case.You need to provide sql,jndi datasource,max row(optional) field value in the below window
 
-![][startsqlquery] 
+  ![][startsqlquery] 
 
-After you run the hub,you can see the report section with sql trace result. 
+  2.After you run the hub,you can see the report section with sql trace result. 
 
-![][sqlresult]
+  ![][sqlresult]
 
 
 [sqlresult]: ../images/command/sqlresult.png 
