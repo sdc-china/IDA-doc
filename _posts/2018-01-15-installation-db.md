@@ -49,7 +49,7 @@ VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT
 
 ### Install DB2
 
-Keter also supports DB2.If customer has db2 license,he can install Keter with DB2 10.X+.  The following commands are based on you have already created DB2 instance.
+Keter also supports DB2.If customer has db2 license,he can install Keter with DB2 10.X+.  We suppose that on you have already created DB2 instance.
 
 **Create DB**   
 
@@ -62,7 +62,7 @@ db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOC
 
 **Execute DB scripts**  
 
-If you have created table before,you can use below script to remove all the db table.
+If you have created table before,you can use below script to remove all the db table.Also you can drop whole db and recreate db.
 
 ``` 
 db2 connect to KETER
