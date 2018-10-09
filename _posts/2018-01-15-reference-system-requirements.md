@@ -7,13 +7,16 @@ order: 2
 ---
 
 
-### Supported Plaftforms
+### Supported Operation System
 
 - Ubuntu
 - CentOS
 - Red Hat Enterprise Linux 
 - Win7
 - Win10
+
+### Minimal Hardware Requirements
+- 2 core CPU, 4 GB memory and 10 GB disk space.
 
 ### Software
 
