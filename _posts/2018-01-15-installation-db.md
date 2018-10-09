@@ -78,7 +78,7 @@ You can use DB2 client tool(Data Studio) to vertify db table and data is in the 
 ![][db2]   
 
 **DB2 Driver**  
- We only tested Db2 11.1 version.You can download jdbc version from below links. 
+ We only tested DB2 11.1 version.You can download jdbc version from below links. 
 [http://www-01.ibm.com/support/docview.wss?uid=swg21363866](http://www-01.ibm.com/support/docview.wss?uid=swg21363866)       
 The IBM Data Server Driver for JDBC and SQLJ package includes two JDBC drivers:   
 db2jcc.jar - This driver is based on the JDBC 3 specification   
