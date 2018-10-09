@@ -89,7 +89,7 @@ In Keter deployment we only need  db2jcc4.jar.Extract the db2jcc4.jar from drive
 ![][db2driver]  
 
 **Config DB2 in keter.property**  
-In order to use db2 ,you must change the the keter.properties file to use correct setting for db2.You can comment the mysql part of property and uncomment db2 properties and change the correct value for the DB2.
+In order to use DB2 ,you must change the the keter.properties file to use correct setting for db2.You can comment the mysql part of property and uncomment db2 properties and change the correct value for the DB2.
 
 ![][db2config]
 
