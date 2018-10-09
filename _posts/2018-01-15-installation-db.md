@@ -49,7 +49,7 @@ VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT
 
 ### Install DB2
 
-Keter also supports DB2.If customer has db2 license,he can install Keter with DB2 10.X+.  We suppose that on you have already created DB2 instance.
+Keter also supports DB2.It supports with DB2 10.X+.  We suppose that on you have already created DB2 instance.
 
 **Create DB**   
 
@@ -61,14 +61,6 @@ db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOC
 ``` 
 
 **Execute DB scripts**  
-
-If you have created table before,you can use below script to remove all the db table.Also you can drop whole db and recreate db.
-
-``` 
-db2 connect to KETER
-db2 "Select 'DROP TABLE', TABLE_NAME from sysibm.tables WHERE TABLE_SCHEMA = UPPER('$USER')" | grep DROP | db2
-``` 
-
 
 
 Start DB2 server and switch to the **keter** DB and execute DB scripts **schema-db2.sql**, **data-db2.sql** to create the database tables and populate data.You can change the schema name in the  **schema-db2.sql** if your db2 schema name is not same with the provided schema name you can change the corresponding schema name for your script.
@@ -86,7 +78,7 @@ You can use DB2 client tool(Data Studio) to vertify db table and data is in the 
 ![][db2]   
 
 **DB2 Driver**  
-Differenct DB2 version has differenct driver.You can download jdbc version from below links.   
+ We only tested Db2 11.1 version.You can download jdbc version from below links. 
 [http://www-01.ibm.com/support/docview.wss?uid=swg21363866](http://www-01.ibm.com/support/docview.wss?uid=swg21363866)       
 The IBM Data Server Driver for JDBC and SQLJ package includes two JDBC drivers:   
 db2jcc.jar - This driver is based on the JDBC 3 specification   
