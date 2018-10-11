@@ -77,6 +77,8 @@ You can use DB2 client tool (Data Studio) to verify database tables are created 
 
 ![][db2]   
 
+---
+
 **Download DB2 Driver**  
 You can download JDBC for DB2 version 11.1 from below link. 
 [https://www-01.ibm.com/marketing/iwm/iwm/web/download.do?source=swg-idsdjs&pageType=urx&S_PKG=dl](https://www-01.ibm.com/marketing/iwm/iwm/web/download.do?source=swg-idsdjs&pageType=urx&S_PKG=dl) 
