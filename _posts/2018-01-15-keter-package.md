@@ -15,10 +15,10 @@ order: 3
 Edit **keter.properties** under **conf** folder. This properties file contains three sections.
 
 **#application-prod.yml**   
-*  **spring.datasource.username** : MySQL username  
-*  **spring.datasource.password** : MySQL password  
-*  **spring.datasource.url** : MySQL database connection URL
-*  **server.host** :  the Keter server ip or name
+*  **spring.datasource.username** : Database connection username  
+*  **spring.datasource.password** : Database connection password  
+*  **spring.datasource.url** : Database connection URL
+*  **server.host** :  Keter server IP or host name
 *  **server.context-path** : default as  "/keter"  
 *  **http.port** : the liberty http port define in the server.xml,default 9080
 *  **https.port** : the liberty https port define in the server.xml, default 9443
@@ -54,4 +54,8 @@ When you finish updating the properties, run **package.bat** to update the Keter
 
 **Notes** 
 
-If you want to use db2 as Keter database,you can uncomment DB2 property configuration and comment mysql property configuration.
+If you want to use DB2 as Keter database, you can uncomment DB2 property configuration and comment MySQL property configuration.
+
+![][db2config]
+
+[db2config]: ../images/install/db2configuration.png
