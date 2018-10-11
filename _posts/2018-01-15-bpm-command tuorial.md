@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "BPM Command Case tuorial"
+title: "BPM Command Case Tutorial"
 category: references
 date: 2018-01-05 15:17:55
 order: 2
@@ -10,7 +10,7 @@ order: 2
 
 ### startSQLQuery
 
-  1.You can add a startSQLQuery bpm command in your test case.You need to provide sql,jndi datasource,max row(optional) field value in the below window
+  1.You can add a startSQLQuery bpm command in your test case. You need to provide sql, jndi datasource, max row(optional) field value in the below window
 
   ![][startsqlquery] 
 
