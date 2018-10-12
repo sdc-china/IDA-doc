@@ -10,7 +10,7 @@ order: 1
 ### Prerequisites
 
 * IBM BPM 8.5.x or 8.6.0
-* [IBM WAS Liberty 17.0.0.4](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/17.0.0.4/wlp-javaeeClient7-17.0.0.4.zip)
+* [Open Liberty 18.0.0.3](https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2018-09-05_2337/openliberty-18.0.0.3.zip)
 * [MySQL 5.x or above](https://dev.mysql.com/downloads/mysql/) or [DB2] (#) 
 * [Selenium](https://sdc-china.github.io/keter-doc/administration/administration-selenium-hub-configuration.html)
 
