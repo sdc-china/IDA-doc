@@ -15,19 +15,19 @@ order: 3
 Edit **keter.properties** under **conf** folder. This properties file contains three sections.
 
 **#application-prod.yml**   
-*  **spring.datasource.username** : MySQL username  
-*  **spring.datasource.password** : MySQL password  
-*  **spring.datasource.url** : MySQL database connection URL
-*  **server.host** :  the Keter server ip or name
+*  **spring.datasource.username** : Database connection username  
+*  **spring.datasource.password** : Database connection password  
+*  **spring.datasource.url** : Database connection URL
+*  **server.host** :  Keter server IP or host name
 *  **server.context-path** : default as  "/keter"  
-*  **http.port** : the liberty http port define in the server.xml,default 9080
-*  **https.port** : the liberty https port define in the server.xml, default 9443
-*  **engineConfig.screenshotDir** :  screenshot folder
-*  **engineConfig.tempDir** :  temp folder for Keter internal use 
-*  **smtp.host** ：your SMTP host    
-*  **smtp.port** ：your SMTP port    
-*  **email.from** ：sender Email address 
-*  **spring.activemq.broker-url** ：the IP and Port of embedded ActiveMQ. It is only needed when you integrate Keter with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the Keter deployment server.
+*  **http.port** : Liberty http port defined in the server.xml
+*  **https.port** : Liberty https port defined in the server.xml
+*  **engineConfig.screenshotDir** :  Screenshot folder
+*  **engineConfig.tempDir** :  Temporal folder for Keter internal use 
+*  **smtp.host** ：SMTP host    
+*  **smtp.port** ：SMTP port    
+*  **email.from** ：Sender Email address 
+*  **spring.activemq.broker-url** ：IP and Port of embedded ActiveMQ. It is only needed when you integrate Keter with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the Keter deployment server.
 
  For the other properties, you can leave them as default values.
  
@@ -54,4 +54,8 @@ When you finish updating the properties, run **package.bat** to update the Keter
 
 **Notes** 
 
-If you want to use db2 as Keter database,you can uncomment DB2 property configuration and comment mysql property configuration.
+If you want to use DB2 as Keter database, you can uncomment DB2 property configuration and comment MySQL property configuration.
+
+![][db2config]
+
+[db2config]: ../images/install/db2configuration.png
