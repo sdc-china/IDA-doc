@@ -128,17 +128,21 @@ ___
 
 **Assignee:** When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration of the Test Project which is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1].
 
-**Label:** The label of the control.
-
 **Value:** The value of the control.
 
 **Contorl ID:** The ID of the control. Control ID is the PATH control IDs leading to the selected control id. 
 
+**Label:** The label of the control.
+
 **Element ID:** The ID of the element.
+
+**Element CSS:** The CSS of the element.
 
 **XPATH:** The xpath of the control.
 
 **Comment:** Optional. Not part of any command and can be used for documenting test case step.
+
+***Notes:** The element is first obtained through the Control ID. If is failed, the label, Element ID and Element CSS are then used in turn. Finally is XPATH. If is successful, the rest will not be used.* 
 
 ___
    
@@ -146,7 +150,7 @@ ___
   | ---------------------- |-------------------------------------------------------------------------|                                
   | bpmFileDropzone        | Value: the value of the BPM file.<br>Control ID: the control id of BPM file drop zone.<br>Default value: the value of default. |  BPM file drop zone.   |  
   |bpmFileUploader         | Value: the value of the BPM file.<br>Control ID: the control id of BPM file that needs to be Uploaded. <br>Default value: the value of default. | BPM file uploader.|
-  | checkbox               |Refer to common statement.  |Set the value of checkbox control. To clear checkbox, leave Value blank.To check the box, value should be the same as Label of the Checkbox CV.<br>*e.g:*<br>![][command_UI_Checkbox]<br> The value should be set to *Bool1*.|  
+  | checkbox               |Refer to common statements.  |Set the value of checkbox control. To clear checkbox, leave Value blank.To check the box, value should be the same as Label of the Checkbox CV.<br>*e.g:*<br>![][command_UI_Checkbox]<br> The value should be set to *Bool1*.|  
   | click                  |Value: Click text.<br>Type: *Link* or *Button*.|   Click an element by id , CSS or xpath.<br>**Notes:**<br>BPM UI toolkit has *id* on a button and Coach v8 and BP3 do not. Thus the later two can only be identified by XPATH. Moving the coach view around the page may change its xpath and break the use case.| 
   | coachControl           |value type: select type from drop down. <br>Default Value: default value of the control.|  Set the value of coach control. This is a generic setter. Value should match the selected control type.|  
   | confirmOK              |  N/A                                   |   Click ok button.                                 | 
@@ -154,57 +158,93 @@ ___
   | doubleClick            |Value: Click text.| Double click an element by id, CSS or xpath. Be similar to **click**.| 
   |file                    |Value: file name that needs to be uploaded.|  Upload file.|
   | open                   |  URL: the URL of browser.              |Open an browser. Should always follow by **selectWindow**.|
-  | cleanCookies           |  Refer to common statement.            |Close selected user's cookies.|
-  | close                  |  Refer to common statement.            |Close current opened browser.|
-  | radio                  |  Refer to common statement.            |Set the value of radio control. Value should be the LABEL on the CV control.<br>*e.g:*<br>![][command_UI_radio]<br> Value should be set to *Make a selection*.|
+  | cleanCookies           |  Refer to common statements.            |Close selected user's cookies.|
+  | close                  |  Refer to common statements.            |Close current opened browser.|
+  | radio                  |  Refer to common statements.            |Set the value of radio control. Value should be the LABEL on the CV control.<br>*e.g:*<br>![][command_UI_radio]<br> Value should be set to *Make a selection*.|
   | saveCoachControl       | Key : Key is a name of a variable, which can later be referenced as ${key} in a value field of any command. |  Put the control value into a key. <br>Tip:<br> a) record a step to set the value of the control;<br>b) edit the recorded step in Command Editor and change the command to saveCoachControl;<br>c) set the Key.<br> If the control you try to save is read only, record any other control in the located at the same level ( e.g in the container ).  Modify the Control ID path to match the control you are trying to save.|  
   | saveText               | Key : Key is a name of a variable, which can later be referenced as ${key} in a value field of any command. |  Put the output text value to a key.                                  |   
-  | select                 |Refer to common statement.              |  Set the value of select (drop down) control. Value is a json list of selected display values for this Select or Multi Select CV. <br>*e.g:*``["Selected value1","Selected value2"] ``| 
-  | selectWindow           |  info : window information.                 |    Select window by window info.|                                      
-  | text                   |Refer to common statement.                   |Set the value of any control, which UI accepts textual input. Example: input text CV, Integer CV, Date Picker.|    
- 
+  | select                 |Refer to common statements.              |  Set the value of select (drop down) control. Value is a json list of selected display values for this Select or Multi Select CV. <br>*e.g:*``["Selected value1","Selected value2"] ``| 
+  | selectWindow           |Info: window information.                 |    Select window by window info.|                                      
+  | text                   |Refer to common statements.                   |Set the value of any control, which UI accepts textual input. Example: input text CV, Integer CV, Date Picker.|    
+  | waitElement            |Type: select the element type from drop down. *Visible*, *Hidden*, *Enabled* and *Disabled*.<br>Timeout: the maximum time that wait for the element. If the element is not fetched during this time, a timeout exception is thrown.| Set the timeout for waiting on an element.|
+  | waitTextPresent        |Text: t that waits for displaying on the page.<br>Timeout: the maximum time that wait for the text. If the text is not appearing during this time, a timeout exception is thrown.| Set the timeout for waiting on displaying a text.|
+  
 ___
      
      
 ### **UI Assertion** 
 
-___
+ Record a command to populate the field you want to assert. Then edit the generated test case step and change command to assert. The edit would pick up matching fields from the recorded command. 
  
+ Here are statements of common input fields.
+ 
+___
+
+**Assignee:** When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration of the Test Project which is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1].
+
+**Contorl ID:** The ID of the control. Control ID is the PATH control IDs leading to the selected control id. 
+
+**Label:** The label of the control.
+
+**Element ID:** The ID of the element.
+
+**Element CSS:** The CSS of the element.
+
+**XPATH:** The xpath of the control.
+
+**Expected Value:** The expected value of the control.
+
+**Comment:** Optional. Not part of any command and can be used for documenting test case step.
+
+***Notes:** The element is first obtained through the Control ID. If is failed, the label, Element ID and Element CSS are then used in turn. Finally is XPATH. If is successful, the rest will not be used.* 
+
+___
+  
 
   |   Field                | Parameters                          | Description                                                             |
   | ---------------------- |-------------------------------------------------------------------------|                                
-  | assertSelect           | controlId : control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check select value   |  
-  | assertInputText        | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check coach text field value       |                                    
-  | assertOutputText       | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Check coach output text  value     |
-  | assertTextarea         | controlId :  control id             |    assert the textarea value                                |                                                                         
-  | assertDatePicker       | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Expected Value: the expected value of the control<br> |  Assert the date picker value     |
-  | assertCheckbox         | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Checked: the checkbox is checked or not  |     assert checkbox is checked or not                               |      
-  | assertSwitch           | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Checked: the Switch box is on or off |  assert Switch box is on or off                                   |                                   
-  | assertRadio            | controlId :  control id<br>Setion:the section ID of the control<br>Label:the label name of the control<br>Element ID:the ID of the element<br>Element CSS:the css of the Element<br>XPATH: the xpath of the coach control<br>Checked: the radio box is checked or not   |assert radio box is on or off                                 |                                      
-  | assertTableRows        | Control ID: the id of table<br>Expected Rows: the row number of the table |     assert row number of the table                               |   
-  | assertTableContent     | Control ID: the id of table<br>Column: the name of the column <br> Row Number: the row number of table<br>Expected value: the cell value of the table   |    assert the cell value of the table                                | 
-  | assertElement              |  Element ID: the id of element<br>Element css: the css of element <br> Xpath: the xpath of element<br>Expected value: the expected value of the element<br>Expected visibility: the visibility  of element <br> Ignore Element XPATHs: ignore the element xpath   |   assert the value of the element |
-  | assertTextPresent          | Text: the text on the UI           |   assert text is appear on UI                                 |  
-  | assertTextNotPresent       | Text: the text on the UI         |   assert text is not appear on UI                                
-  | assertValidationPassed                  | errorMessage : error message       |  Check whether the coach page is passed the validation or not.                  |
-  | assertCoachControl                      |  value : coach value <br>label - control label <br>controlId : coach control id <br>elementId : element id of the control<br>xPath : xpath of the control <br>Expected Value: the expected value of the control <br>Expected Value Tyep: the  value Type of the control (Integer,String) <br>Expected Visibility:the visibility of the control|  assert the control value,type,visibility                   |
+  | Buttons          | Texts: texts of buttons that you want to render.<br>*e.g:*<br>![][command_UIAssert_buttons]<br>If you want to check that all the buttons are rendered in this form, you can fill like this:<br>``Save``<br>``Cancel``<br>**Notes:** texts are separated by the line break.<br>Expected Visibility: the visibility of the control. Select from drop down. *EDITABLE*, *READONLY,* and *HIDDEN*.| Check the buttons are rendered or not.|
+  | assertCheckbox         |Checked Labels: labels of checkboxs that are expected to be checked.<br>*e.g:* <br>![][command_UIAssert_checkbox]<br>To verify the options in this page, fill in like this: <br>``Create Position Request CSHS``<br>``GM Approval CSHS``<br>Expected Options: labels of checkboxs that are expected to be rendered. <br>*e.g:* If you want to check that all the checkbox options are rendered in the figure above, you can fill in like this:<br>``Create Position Request CSHS``<br>``Find Candidates CSHS``<br>``GM Approval CSHS``<br>**Notes:** labels are separated by the line break. |Assert the checkboxs are checked and the options of all checkboxs  are rendered or not.|  
+  | assertCoachControl     |Expected Value Type: the  value Type of the control, select from drop down. *String*, *Number*, *Date(MM/dd/yyyy)* and *Boolean*.<br>Expected Visibility: the visibility of the control. Select from drop down. *EDITABLE*, *READONLY,* and *HIDDEN*.|  Assert Coach Control binding value and visibility, it only supports String, Number, Date and Boolean type of binding value now. Either of Control ID or label is required. The Control ID is the coach view Control ID, label is the coach view label.|
+  | assertDatePicker       | Expected Date: the expected date of the DatePicker.<br> |  Assert the date picker value.    |
+  | assertElement          | Expected visibility: the visibility  of element. Select from drop down. *EDITABLE*, *READONLY,* and *HIDDEN*.|   assert the value of the element |
+  | assertInputText        |Expected Max Length: expected max length of the text.|  Check coach text field value. If you check the regular expression, it will use expected value as regular expression to match the actual value.      |
+  | assertOutputText       |Refer to common statements.                          |  Check coach output text value.     |
+  | assertRadio            | Checked Label: the radio box is checked or not.<br> Expected Options: labels of radio boxes that are expected to be rendered. Refer to the statements of *Expected Options* in **assertCheckbox**.|Assert radio box is on or off and the labels of all radio boxes are rendered or not.| 
+  | assertSelect           | Expected Value: the expected value of the control. If is multiSelect, the value is separated by the line break.<br>Expected Options: labels of select options that are expected to be rendered. Refer to the statements of *Expected Options* in **assertCheckbox**.|  Check selected value and the labels of all options are rendered or not.  |
+  | assertSwitch           | Refer to common statements. |  Assert Switch box.|  
+  | assertTableContent     |Column Name: the name of the column where the value needs to be asserted. <br> Row Number: the number of row where the value needs to be validated.<br>Expected value: the cell value that needs to be checked.   |Assert the cell value of the table.                                | 
+  | assertTableRows        |Expected Rows: the expected total number of rows in the table.|Assert the total number of rows in the table.|    
+  | assertTextarea         |Refer to common statements.|    Assert the textarea value.                                |
+  | assertTextNotPresent   | Text: the text that is not expected to appear on the UI.        |   Assert text is not appear on UI. |                                                                                                             
+  | assertTextPresent          | Text: the text that is expected to appear on the UI.           |   Assert text is appear on UI.                               |                          
+  | assertValidationPassed                  |Refer to common statements.|  Check whether the coach page is passed the validation or not.|
   
 ___  
   
 ### **Utility**
 
-___  
+This category provides utility commands. Here are statements of common input fields.
+
+___
+
+**Assignee:** When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration of the Test Project which is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1].
+
+**Comment:** Optional. Not part of any command and can be used for documenting test case step.
+
+___
+
 
 
   |   Field                | Parameters                          | Description                                                             |
   | ---------------------- |-------------------------------------------------------------------------|                                          
-  | debug                  |  log - log text will be shown in console  |   Command for debug, case will stop at this step                                 |      
-  | wait                   | time - the seconds to be wait  |   Wait for specify seconds                                 |     
-  | putContext             |  key - name of key <br>value - name of value |  Put a key-value pair to context                                  |     
-  | addContext             |   key - name of key <br>value - name of value | Add a key-value pair to list of context                                   |                                    |     
-  | randomString           |    length : length of the generated random string |Generate a specified length random string.                                |                                     
-  | randomNumber           |    length : length of the generated random string |Generate a specified length random number                                |                                       
-  | dateString             |   key : key for save data string <br>Days:  Use currenct date add the number of days <br>Format: Formate of date   |      Calculate a new date String                               |  
+  | addContext             |   Key: name of key.<br>Value: name of value. | Add a key-value pair to list of context.|
+  | dateString             |   Key: key for save data string.<br>Days: the number of days from the current date that you want to convert to a string. Negative number of days means before today, while positive number of days means after today. <br>*e.g:* **-1** means generating string of the date of yesterday.<br>Format: Format of date.|Generate date string before/after number of days of today. If the key is not specified, then the default key is "DATE_STRING". You can use the date string by ${context.DATE_STRING}.|   
+  | debug                  |  Log: log text will be shown in console.|Command for debug, recording of the case will stop at this step. During playback a message is written to console log.|     
+  | putContext             |  Key: name of key.<br>Value : the name of value. |  Put a key-value pair to context.                                 | 
+  | wait                   | Time: the seconds to be wait.  |   Wait for specify seconds.                                |     
+  | randomString           |    Length : length of the generated random string.|Generate a specified length random string.                                |                                     
+  | randomNumber           |    Length : length of the generated random string. |Generate a specified length random number.                                |                                       
 
 ___  
 
@@ -218,3 +258,5 @@ ___
 [command_service_data_template]: ../images/command/command_service_data_template.png
 [command_UI_radio]: ../images/command/command_UI_radio.png
 [command_UI_Checkbox]: ../images/command/command_UI_Checkbox.png
+[command_UIAssert_buttons]: ../images/command/command_UIAssert_buttons.png
+[command_UIAssert_checkbox]: ../images/command/command_UIAssert_checkbox.png
