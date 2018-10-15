@@ -53,17 +53,8 @@ The below link is a step-by-step introduction to using the official Selenium Doc
    ![][service]
    
 ### Plug-in
-Install the Chrome [plug-in](https://chrome.google.com/webstore/search/keter)
-
-  
-   ![][keter]
-
-
-Install Firefox [Add-ons](https://addons.mozilla.org/en-US/firefox/addon/keter)
-
-
-  ![][firefox]
-
+- Chrome [plug-in](https://chrome.google.com/webstore/search/keter)
+- Firefox [Add-ons](https://addons.mozilla.org/en-US/firefox/addon/keter)
 
 
 [toolkit]: ../images/install/toolkit.png 
