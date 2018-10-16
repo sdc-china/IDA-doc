@@ -19,11 +19,11 @@ Developers can perform static analysis on the BPM application, which enforces de
 1. As a developer, I want to create unit test cases against the services and coach UI, so that I can run the test cases in CI server to ensure the code quality.
 2. As a developer, I want to extend the auto testing tool functionalities using customized commands, so that I reduce the testing effort and improve the test coverage.
 3. As a developer, I want to analyze my BPM project with the static analysis tool regularly, so that I can enforce the coding standard and best practice in my project and ensure the quality of the deliverables.
-4. As an architect, I want to be able to customize the code quality rules, so that our specific policies can be applied.
+4. As a developer, I want to compare the different versions of the BPM project, so that I can understand what changes are to be delivered,  what changes are causing issues.
 5. As a developer, I want to analyze the code quality of a specific snapshot, so that I can control the code quality of all snapshots in my deployment cycle.
 6. As a developer, I want to get the code analysis result organized by categories, so that I understand and assign code quality issues to the Dev team.
 7. As a developer, I want to get the code analysis result with suggestions, so that I know how to solve every issue.
-8. As a developer, I want to compare the different versions of the BPM project, so that I can understand what changes are to be delivered,  what changes are causing issues.
+8. As an architect, I want to be able to customize the code quality rules for static analysis, so that our specific check list can be applied.
 
 ### Testing Team
 
