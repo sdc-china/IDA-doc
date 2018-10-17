@@ -58,9 +58,10 @@ The below link is a step-by-step introduction to using the official Selenium Doc
 
 **Plug-in Configuration**
 
-If you want to use the checkstyle and codereivew feature on web PD, then you need to set the Keter url and creds for the plug-in options.   
-URL example: https://9.30.255.220:9443/keter   
-the username and password is the Keter login username and password.   
+If you want to use the checkstyle and codereivew feature on web PD, then you need to set the Keter url and user credentials for the plug-in options. 
+the Keter URL: https://9.30.255.220:9443/keter   
+the username: the Keter login username 
+the password: the Keter login password.   
 
    ![][keterOption]
 
