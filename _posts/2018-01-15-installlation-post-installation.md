@@ -56,6 +56,14 @@ The below link is a step-by-step introduction to using the official Selenium Doc
 - Chrome [plug-in](https://chrome.google.com/webstore/search/keter)
 - Firefox [Add-ons](https://addons.mozilla.org/en-US/firefox/addon/keter)
 
+**Plug-in Configuration**
+
+If you want to use the checkstyle and codereivew feature on web PD, then you need to set the Keter url and creds for the plug-in options.
+URL example: https://9.30.255.220:9443/keter
+the username and password is the Keter login username and password.
+
+   ![][keterOption]
+
 
 [toolkit]: ../images/install/toolkit.png 
 [service]: ../images/install/service.png 
@@ -63,6 +71,7 @@ The below link is a step-by-step introduction to using the official Selenium Doc
 [firefox]: ../images/install/firefox.png
 [seleniumGrid]: ../images/install/seleniumGrid.png
 [webDriver]: ../images/install/webdriver.png
+[keterOption]: ../images/install/keterOption.png
 
 
 
