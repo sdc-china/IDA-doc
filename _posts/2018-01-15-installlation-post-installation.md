@@ -60,8 +60,7 @@ The below link is a step-by-step introduction to using the official Selenium Doc
 
 #### Firefox
 - Download firefox plugin [keter-1.22-fx.xpi](../plugins/keter-1.22-fx.xpi)
-- Open "about:addons" in new tab
-- Drag the "keter-1.22-fx.xpi" file into the "about:addons" tab
+- Drag the "keter-1.22-fx.xpi" file into firefox window
 - Click "Add" button
 
 **Plug-in Configuration**
