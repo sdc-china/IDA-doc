@@ -3,7 +3,7 @@ Keter Documentation https://sdc-china.github.io/keter-doc/
 ## Set up environment
 - install [Ruby](https://www.ruby-lang.org/en/downloads/)(Ruby 2.4.3) and [RubyGems](https://rubygems.org/pages/download);
 - use RubyGems to install Jekyll: `$ gem install jekyll`;
-- enter local directory of keter-doc and execute command  `$ jekyll serve` to start server;
+- enter local directory of keter-doc and execute command  `$ bundle exec jekyll serve` to start server;
 - a development server will run in http://localhost:4000/.
 
 ## Reference
