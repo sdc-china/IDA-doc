@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "test 001"
-category: test001
+category: test
 date: 2018-01-05 15:17:55
 order: 1
 ---
