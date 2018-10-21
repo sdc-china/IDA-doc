@@ -5,16 +5,11 @@ title: "IBM Keter Docs"
 
 ## Overview
 
-[Keter](https://youtu.be/6LJhP7LedU0 ) redefines BPM innovation with tools and methodologies from IBM Cloud Labs. It is a single all-in-one web application for both BPM process development team and testing team.
+[Keter](https://youtu.be/6LJhP7LedU0 ) IBM Business Process Manager (BPM) innovation with tools and methodologies from IBM. It is a single all-in-one web application for both BPM process development and testing teams.Developers can easily define or schedule a pipeline. The pipeline provides a build-in continuous integration and deployment pipeline that contains testing, checkstyle, snapshots and deployment.
 
-### Development Team
+Developers can monitor the status and overall report through the pipeline dashboard. If there are any error with the build, they will be notified by mail.
 
-
-Developers can easily define or schedule a pipeline. It provides a build-in continuous integration and deployment pipeline that contains testing, checkstyle, snapshot taking and deployment. 
-
-Developers can monitor the building status and overall report through the pipeline dashboard.  If there is any error with the build, they will be notified by mail. 
-
-Developers can perform static analysis on the BPM application, which enforces design convention and processes development standard.There are 80+ checkstyle rules are already defined based on BPM development best practices and anti-patterns . They can find the modification advises for each BPM application artifact. It helps them to improve the coding quality continually. 
+Developers can perform static analysis on the BPM process application, which enforces design convention and processes development standards.  There are 80+ checkstyle rules built-in which are based on BPM development best practices and anti-patterns. 
 
 1. As a developer, I want to create unit test cases against the services and coach UI, so that I can run the test cases in CI server to ensure the code quality.
 2. As a developer, I want to extend the auto testing tool functionalities using customized commands, so that I reduce the testing effort and improve the test coverage.
@@ -27,11 +22,11 @@ Developers can perform static analysis on the BPM application, which enforces de
 
 ### Testing Team
 
-Tester can automate their test scenarios and boost their productivity easily. They can generate the test project and case template from BPM server, then edit and record their test scenarios without coding. They can use 60+ built-in automation test commands to support BPM application test.
+Testers can automate their test scenarios and boost their productivity by generating the test project and case template from a BPM server, then edit and record their test scenarios without coding. They can use 60+ built-in automation test commands to support BPM application testing.
 
-Tester can create a monitor to monitor BPM service metric with alerts. It can send alert message through email for the issue service.
+Testers can create a monitor to monitor BPM service metrics with alerts. The alerts can be configured to be sent using email.
 
-Keter offers detailed reports including screenshots, execution process flow and coverage to improve communications between testers and developers on every test case. 
+Keter offers detailed reports including screenshots, execution process flow and coverage to improve communications between testers and developers on each test case. 
 
 1. As a tester, I want to easily create functional test cases, so that the regressive test can be automatically performed against each new version of the BPM project.
 2. As a tester, I want to have comprehensive testing reports, so that we could know the testing coverage of my BPM test project and troubleshooting if any test failed.
