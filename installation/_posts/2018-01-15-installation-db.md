@@ -1,18 +1,16 @@
 ---
 layout: page
-title: "Database Configuration"
+title: "Database Installation and Configuration"
 category: installation
 date: 2018-01-05 15:17:55
 order: 2
 ---
-### Install MySQL
+### Install and Congigure MySQL
 
-We use MySQL as our default database. You can install MySQL community edition based on the below link.  
+Keter We useuses MySQL as our the default database. You can install [MySQL](https://dev.mysql.com/downloads/mysql/) community edition.  
 
-[MySQL download](https://dev.mysql.com/downloads/mysql/)
-   
 
-**Create DB**   
+**Create Database**   
 
 Connect to the MySQL server and use MySQL command to create database. 
 ``` 
@@ -20,6 +18,10 @@ mysql> create database keter;
 ```  
 
 **Execute DB Scripts**  
+
+##### Notes:
+- You will want to change [Keter_HOME]/sql/data-mysql.sql script so that  the organization matches your companies name. Please replace ‘keter’ with your company name as outlined below.  The default keter login name and password is “KeterAdmin”/”KeterAdmin”.  
+
 
 Connect to the MySQL server and switch to the **keter** DB and execute DB scripts **schema-mysql.sql**, **data-mysql.sql** to create the database tables and populate data. These 2 SQL scripts can be found in the **sql** folder of Keter installation package.
 
@@ -47,11 +49,11 @@ INSERT INTO user (user_name, password, role, active, organization_id)
 VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT id FROM organization where company_name = 'keter'));
 ```  
 
-### Install DB2
+### Install and Congigure DB2
 
-Keter is certified on DB2  version 11.1. 
+In addition to MySQL, Keter also supports DB2 v10.x+.  Please see the following documentation on how to install DB2 within your environment. 
 
-**Create DB**   
+**Create DB Database**   
 
 Login into the DB2 server and execute below DB2 commands to create database. 
 ``` 
@@ -76,6 +78,9 @@ db2 connect reset
 You can use DB2 client tool (Data Studio) to verify database tables are created and populated with data.
 
 ![][db2]   
+
+##### Notes:
+- You will want to change [Keter_HOME]/sql/data-db2.sql script so that   the organization matches your companies name. Please replace ‘Keter’ with your company name as outlined below.  The default keter login name and password is “KeterAdmin”/”KeterAdmin”.  
 
 
 
