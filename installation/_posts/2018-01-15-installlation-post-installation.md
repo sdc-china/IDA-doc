@@ -10,14 +10,14 @@ order: 5
 
 ### Selenium Grid
 
-Keter integrates with remote testing automation based on Selenium Grid.
+Keter integrates with remote testing automation framework based on Selenium Grid.
+
+##### Notes
+- [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
 **Local installation**
 
-[Selenium Grid setup guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
-
-
-1. Download Selenium 3.14.0 from [https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar](https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar)  
+1. Download [Selenium 3.14.0](https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar)  
 
 2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
 - [IE Driver](http://selenium-release.storage.googleapis.com/3.14/IEDriverServer_Win32_3.14.0.zip)
@@ -38,15 +38,16 @@ Keter integrates with remote testing automation based on Selenium Grid.
 
 **Docker installation**
 
-The below link is a step-by-step introduction to using the official Selenium Docker images using a basic hub/node configuration.
+The followingThe below link is shows a step-by-step introduction to using the official Selenium Docker images using a basic selemium hub and selenium/ node configuration.
 
 [How to get started selenium hub and node](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Hub-and-Nodes)
 
 ### Install Keter Toolkit
+The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the Keter Toolkit.
 
-1. Import the Keter_Toolkit - 8.6.0_v1.0.twx from toolkit folder into the proces center.
-2. Add this toolkit dependency for your Process App
-3. Right click the "Keter Utility" service flow and copy item to your process app.  
+1. Import the Keter_Toolkit - 8.6.0_v1.0.twx from Keter toolkit folder into the proces center.
+2. Add the keter toolkit as a this toolkit dependency for within your process application.
+3. Right click the "Keter Utility" service flow and copy the item to your process app.  
 
    ![][toolkit]
 4. Make sure the service is installed in your process app.  
