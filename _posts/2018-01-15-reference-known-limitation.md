@@ -11,3 +11,4 @@ order: 3
 - Keter firefox plugin doesn't support self-sign certification very well, please use http protocol if you want to use Keter firefox plugin.
 - BPM Deployment feature only supports Linux server via SSH (or install SSH server on Windows server).
 - Complex parameters can not be passed to the human service.
+- Global variables declared in Server Managed files .JS are flagged as "was used before" it was defined in checkstyle report.
