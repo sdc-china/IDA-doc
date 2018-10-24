@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Monitoring Configuration"
-category: installation
+category: administration
 date: 2018-01-05 15:17:55
 order: 5
 ---
