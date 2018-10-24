@@ -1,18 +1,18 @@
 ---
 layout: page
-title: "Update Deployment Configuration"
+title: "Repacking Keter Application"
 category: installation
 date: 2018-01-05 15:17:55
 order: 3
 ---
 
    
-### Deployment
+### Properties Configuration
 
 
-**Configure Keter parameters** 
+**Configure Keter properties** 
  
-Edit **keter.properties** under **conf** folder. This properties file contains three sections.
+Edit [KETER_HOME]/conf/**keter.properties** under **conf** folder. This properties file contains three main sections.
 
 **#application-prod.yml**   
 *  **spring.datasource.username** : Database connection username  
@@ -50,8 +50,6 @@ Please note that to enable BPM Checkstyle feature, you need to have IBM ODM inst
 
 It is only needed when you want to configure monitoring[1] to have the monitoring feature. If you don't need it, you can leave them as-is.
 
-When you finish updating the properties, run **package.bat** to update the Keter war (e,g, *keter-web.war*) file under **build** folder. You need to define the **JAVA_HOME** variable and add the **$JAVA_HOME/bin** directory to your path before executing **package.bat**.
-
 **Notes** 
 
 If you want to use DB2 as Keter database, you can uncomment DB2 property configuration and comment MySQL property configuration.
@@ -59,3 +57,9 @@ If you want to use DB2 as Keter database, you can uncomment DB2 property configu
 ![][db2config]
 
 [db2config]: ../images/install/db2configuration.png
+
+#### Repacking keter-web with configuration
+
+Once all the properties in [KETER_HOME]/conf/keter.properties file have been update you can then re-package the [KETER_HOME]/build/**keter-web.war** file.  
+
+Before running the [KETER_HOME]/**package.bat** or [KETER_HOME]/**package.sh** you will need to set the environment variable for JAVA_HOME and ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set and your path contains the [JAVA_HOME]/bin diectory you can then execute the package script.
