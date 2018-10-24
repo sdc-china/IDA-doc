@@ -137,3 +137,6 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [chrome_error]: ../images/install/installation_self_signed_sertificates_chrome_error.png
    [proceed]: ../images/install/installation_self_signed_sertificates_proceed.png
 
+### Monitoring configuration
+
+You could refer to [Monitoring configuration](../administration/administration_monitoring configuration.html) to enable monitoring feature of Keter.
