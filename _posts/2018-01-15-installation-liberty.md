@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Installing on Open Liberty"
+title: "Installing on Liberty"
 category: installation
 date: 2018-01-05 15:17:55
 order: 4

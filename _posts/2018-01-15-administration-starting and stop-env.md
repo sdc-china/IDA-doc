@@ -1,12 +1,11 @@
 ---
 layout: page
 title: "Start and Stop Keter environment"
-category: installation
+category: administration
 date: 2018-01-05 15:17:55
-order: 9
+order: 4
 ---
 
-##	Starting your environment
 
 ### Start MySQL
 Start the MySQL server by calling the following command:
