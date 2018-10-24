@@ -5,11 +5,15 @@ title: "IBM Keter Docs"
 
 ## Overview
 
-[Keter](https://youtu.be/6LJhP7LedU0 ) IBM Business Process Manager (BPM) innovation with tools and methodologies from IBM. It is a single all-in-one web application for both BPM process development and testing teams.Developers can easily define or schedule a pipeline. The pipeline provides a build-in continuous integration and deployment pipeline that contains testing, checkstyle, snapshots and deployment.
+[Keter](https://youtu.be/6LJhP7LedU0 ) redefines IBM Business Process Manager (BPM) innovation with tools and methodologies from IBM. It is a single all-in-one web application for both BPM process development and testing teams.Developers can easily define or schedule a pipeline. The pipeline provides a build-in continuous integration and deployment pipeline that contains testing, checkstyle, snapshots and deployment.
 
-Developers can monitor the status and overall report through the pipeline dashboard. If there are any error with the build, they will be notified by mail.
+![ddddddd]images/administrator/administrator_bpmserver.png
 
-Developers can perform static analysis on the BPM process application, which enforces design convention and processes development standards.  There are 80+ checkstyle rules built-in which are based on BPM development best practices and anti-patterns. 
+[administrator_bpmserver]: /images/administrator/administrator_bpmserver.png
+
+### Development Team
+
+Developers can perform static analysis on the BPM process application, which enforces design convention and processes development standards.  There are 80+ checkstyle rules built-in which are based on BPM development best practices and anti-patterns. Also, developers can monitor the status and overall report through the pipeline dashboard. If there are any error with the build, they will be notified by mail.
 
 1. As a developer, I want to create unit test cases against the services and coach UI, so that I can run the test cases in CI server to ensure the code quality.
 2. As a developer, I want to extend the auto testing tool functionalities using customized commands, so that I reduce the testing effort and improve the test coverage.
