@@ -49,7 +49,7 @@ INSERT INTO user (user_name, password, role, active, organization_id)
 VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT id FROM organization where company_name = 'keter'));
 ```  
 
-### Install and Congigure DB2
+### Install and Configure DB2
 
 In addition to MySQL, Keter also supports DB2 v10.x+.  Please see the following documentation on how to install DB2 within your environment. 
 
