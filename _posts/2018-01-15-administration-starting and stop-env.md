@@ -6,6 +6,7 @@ date: 2018-01-05 15:17:55
 order: 4
 ---
 
+##	Starting your environment
 
 ### Start MySQL
 Start the MySQL server by calling the following command:
