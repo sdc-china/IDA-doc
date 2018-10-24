@@ -7,7 +7,7 @@ order: 2
 ---
 ### Install and Congigure MySQL
 
-Keter We useuses MySQL as our the default database. You can install [MySQL](https://dev.mysql.com/downloads/mysql/) community edition.  
+Keter uses MySQL as our the default database. You can install [MySQL](https://dev.mysql.com/downloads/mysql/) community edition.  
 
 
 **Create Database**   
