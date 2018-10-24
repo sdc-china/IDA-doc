@@ -7,10 +7,6 @@ title: "IBM Keter Docs"
 
 [Keter](https://youtu.be/6LJhP7LedU0 ) redefines IBM Business Process Manager (BPM) innovation with tools and methodologies from IBM. It is a single all-in-one web application for both BPM process development and testing teams.Developers can easily define or schedule a pipeline. The pipeline provides a build-in continuous integration and deployment pipeline that contains testing, checkstyle, snapshots and deployment.
 
-![ddddddd]images/administrator/administrator_bpmserver.png
-
-[administrator_bpmserver]: /images/administrator/administrator_bpmserver.png
-
 ### Development Team
 
 Developers can perform static analysis on the BPM process application, which enforces design convention and processes development standards.  There are 80+ checkstyle rules built-in which are based on BPM development best practices and anti-patterns. Also, developers can monitor the status and overall report through the pipeline dashboard. If there are any error with the build, they will be notified by mail.
@@ -56,15 +52,18 @@ Keter offers detailed reports including screenshots, execution process flow and 
 5. As a Project Manager, I want to review the build history of my BPM project, so that I can push the team to handle the outstanding issues during development and deployment.
 
 ### Features & Capabilities
-* Case generation
+* Test Case generation
 * Record and playback BPM UI
 * Static code analysis for BPM application
 * Continues delivery BPM application through visualize pipeline
-* Schedule BPM pipeline and Email notification 
 * Code review for BPM application
 * Monitor BPM service with alert in real time
 * Support tools for BPM instance migration
   
+### Architecture
+![architecture](/images/architecture/architecture.png)
+### Integration Architecture
+![architecture](/images/architecture/integration_architecture.png)
 
 
 
