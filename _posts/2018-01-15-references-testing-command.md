@@ -28,7 +28,7 @@ This category of commands are for calling server side components. There are a lo
 
 ___
 
-**Assignee:** When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration of the Test Project which is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1].
+**Assignee:** When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1].
 
 **Exception:** is an exception case. Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case.
 
