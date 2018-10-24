@@ -36,6 +36,8 @@ The BPM Checkstyle tool can only be used if you have a license for IBM Operation
 * Firefox v52+ (64-bit)
 * Chrome v57+ (64-bit)
 
+### Minimal Hardware/VM/Docker Requirements
+- 2 core CPU, 4 GB memory and 10 GB disk space.
 
 ### Install Keter Package
 Extract the Keter Installation archive file to a specific location.  The Keter archive file contains the following directories and artifacts: 
