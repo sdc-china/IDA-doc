@@ -8,7 +8,7 @@ order: 1
 
 
 ### Architecture Overview
-![architecture](/images/architecture/architecture.png)
+![architecture overview](../images/architecture/architecture.png)
 ### Integration Architecture Reference
 Refer to diagram below about how to integrate Keter with as-is CI/CD products/solutions
-![architecture](/images/architecture/integration_architecture.png)
+![integration reference](../images/architecture/integration_architecture.png)
