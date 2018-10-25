@@ -3,7 +3,7 @@ layout: page
 title: "Known Limitation"
 category: references
 date: 2018-01-05 15:17:55
-order: 3
+order: 4
 ---
 
 - The Keter plugin only supports Firefox and Chrome.

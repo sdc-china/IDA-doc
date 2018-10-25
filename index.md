@@ -60,10 +60,7 @@ Keter offers detailed reports including screenshots, execution process flow and 
 * Monitor BPM service with alert in real time
 * Support tools for BPM instance migration
   
-### Architecture
-![architecture](/images/architecture/architecture.png)
-### Integration Architecture
-![architecture](/images/architecture/integration_architecture.png)
+
 
 
 
