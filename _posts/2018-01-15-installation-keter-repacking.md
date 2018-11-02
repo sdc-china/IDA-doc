@@ -46,10 +46,9 @@ http://www.jasypt.org/download.html
 
 [offlineencrypt]: ../images/install/offline.png
 
-Once you get the encrypt password,you need to change spring.datasource.password like below format.As a general rule, jasypt expects encrypted configuration parameters to appear surrounded by "ENC(...)".
-spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
+Once you get the encrypt password,you need to change spring.datasource.password like below format.As a general rule, jasypt expects encrypted configuration parameters to appear surrounded by "ENC(...)".    
+spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)     
 
- For the other properties, you can leave them as default values.
  
 **#checkstyle.properties (For BPM Checkstyle purpose)**
 	
