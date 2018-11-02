@@ -88,8 +88,18 @@ If the server is created successfully, you receive message: Server server_name c
 * Start Liberty server and visit the url like http://serverip:port/keter (port is defined in the server.xml).
 
 For example:  
-In Liberty installation bin folder you can use below command to start the server
+In Liberty installation bin folder you can use below command to start the server.
 **server start default** (default is your server name).
+
+**Support http proxy(optional)**   
+We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.See below procedure.  
+
+* Create a text file named jvm.options.Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
+* Add following lines based on your acutal proxy setting. You can change https to http as well.    
+-Dhttps.proxyHost=host     
+-Dhttps.proxyPort=port     
+-Dhttps=proxyUser=user     
+-Dhttps.proxyPassword=password    
 
 [1]: ../installation/installation-integrate-def.html
 
