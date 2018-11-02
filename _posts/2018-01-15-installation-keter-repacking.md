@@ -32,14 +32,15 @@ Edit [KETER_HOME]/conf/**keter.properties** under **conf** folder. This properti
 
 **Notes** 
 If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
-1. You can use online web or tools to generated encrypted password.
-https://www.devglan.com/online-tools/jasypt-online-encryption-decryption
+1. You can use online web or tools to generated encrypted password.    
+https://www.devglan.com/online-tools/jasypt-online-encryption-decryption    
 
 ![][onlineencrypt]
 
 [onlineencrypt]: ../images/install/online.png
 
-2. Download tool from jasypt offical site.http://www.jasypt.org/download.html
+2. Download tool from jasypt offical site.   
+http://www.jasypt.org/download.html    
 
 ![][offlineencrypt]
 
