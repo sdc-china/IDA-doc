@@ -67,7 +67,9 @@ You can download JDBC for mysql version  from below link. We recommand you to us
 
 [http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) 
 
-After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of Keter installation package.    
+After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of Keter installation package.      
+
+![][mysqldriver]    
 
 **Execute DB Scripts**  
 
@@ -101,3 +103,4 @@ After download, extract the **db2jcc4.jar** from driver package and copy it to t
 
 [db2]: ../images/install/dbtable.png 
 [db2driver]: ../images/install/db2driver.png 
+[mysqldriver]: ../images/install/mysqldriver.png 
