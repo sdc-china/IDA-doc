@@ -62,6 +62,13 @@ db2 connect to KETER
 db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOCKPAGES 0 PAGESIZE 32 K
 ``` 
 
+**Download mysql Driver**  
+You can download JDBC for mysql version  from below link. We recommand you to use mysql-connector-java-5.1.44.jar since it is a tested verson.   
+
+[http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) 
+
+After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of Keter installation package.    
+
 **Execute DB Scripts**  
 
 
@@ -88,7 +95,7 @@ You can use DB2 client tool (Data Studio) to verify database tables are created 
 You can download JDBC for DB2 version 11.1 from below link. 
 [https://www-01.ibm.com/marketing/iwm/iwm/web/download.do?source=swg-idsdjs&pageType=urx&S_PKG=dl](https://www-01.ibm.com/marketing/iwm/iwm/web/download.do?source=swg-idsdjs&pageType=urx&S_PKG=dl) 
 
-After downloading, extract the **db2jcc4.jar** from driver package and copy it to the lib folder of Keter installation package. Please note that you can also get the **db2jcc4.jar** from your DB2 server.
+After download, extract the **db2jcc4.jar** from driver package and copy it to the lib folder of Keter installation package. Please note that you can also get the **db2jcc4.jar** from your DB2 server.
 
 ![][db2driver]  
 
