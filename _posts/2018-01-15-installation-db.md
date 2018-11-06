@@ -48,6 +48,15 @@ INSERT INTO organization (company_name, active) VALUES ('keter', true);
 INSERT INTO user (user_name, password, role, active, organization_id) 
 VALUES ('keterAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT id FROM organization where company_name = 'keter'));
 ```  
+**Download mysql Driver**  
+You can download JDBC for mysql version  from below link. We recommand you to use mysql-connector-java-5.1.44.jar since it is a tested verson.   
+
+[http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) 
+
+After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of Keter installation package.      
+
+![][mysqldriver]    
+
 
 ### Install and Configure DB2
 
@@ -61,15 +70,6 @@ db2 create database KETER automatic storage yes using codeset UTF-8 territory US
 db2 connect to KETER
 db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOCKPAGES 0 PAGESIZE 32 K
 ``` 
-
-**Download mysql Driver**  
-You can download JDBC for mysql version  from below link. We recommand you to use mysql-connector-java-5.1.44.jar since it is a tested verson.   
-
-[http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) 
-
-After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of Keter installation package.      
-
-![][mysqldriver]    
 
 **Execute DB Scripts**  
 
