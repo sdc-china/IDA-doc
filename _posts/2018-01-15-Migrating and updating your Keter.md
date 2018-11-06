@@ -1,3 +1,4 @@
+---
 layout: page
 title: "Migrating and updating your Keter"
 category: installation
