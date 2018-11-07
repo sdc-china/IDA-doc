@@ -8,33 +8,43 @@ order: 6
 
 ## Migrating and updating Keter
 
-Before you want to migrate your keter into a new version,please make sure you have stop the libery server and mysql server.  
+### Preparing your migration
 
-**Update DB** 
+To prepare your migration, take the following steps:  
 
-Backup the mysql db.  
-Start the mysql Server.  
-Find migrate-mysql.sql in the sql folder.    
+1. Download the lastested keter version.
+2. Stop the libery server.  
+3. Stop the mysql server.  
+4. Backup the mysql db.    
+
+### Update DB
+
+To update DB, take the following steps: 
+
+1. Start the mysql Server.  
+2. Find migrate-mysql.sql in the sql folder. Copy the corresponding version sql into clipboard.   
 
 ![][mysqlmigration]   
 
-Connect to the MySQL server and use keter database.You can execute the script with the MySQL source command to execute script. Pls replace yoursqlpath to path of the SQL folder location.      
+3. Connect to the MySQL server and use keter database.You can execute the script from the  clipboard. 
 
 ``` 
-mysql> use keter ;
-mysql> source yoursqlpath\migrate-mysql.sql;
-```  
+mysql> use keter ;   
+mysql> paste your sql here   
+```    
 
-**Update Keter.war**     
+### Update Keter.war   
 
-Extract the  application-prod.yml in the deployed keter.war.
+To update Keter.war, take the following steps: 
+
+1. Extract the  application-prod.yml in the deployed keter.war.
 
 ![][yamlmigration] 
 
-Replace the  application-prod.yml in the new deployed keter.war from build foler.     
-Remove the deployed war from wlp installation\usr\servers\default\apps folder.     
-Copy the new keter.war into the wlp installation\usr\servers\default\apps folder.    
-Start the Liberty Server.  
+2. Replace the  application-prod.yml in the new keter.war from build foler.     
+3. Remove the deployed war from wlp installation\usr\servers\default\apps folder.     
+4. Copy the new keter.war into the wlp installation\usr\servers\default\apps folder.    
+5. Start the Liberty Server.  
 
 **Notes:**   
 
