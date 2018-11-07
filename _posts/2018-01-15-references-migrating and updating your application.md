@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Migrating and updating your Keter"
+title: "Migrating and updating Keter Application"
 category: references
 date: 2018-11-06 15:17:55
 order: 5
