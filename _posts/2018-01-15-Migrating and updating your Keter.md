@@ -40,5 +40,5 @@ Start the Liberty Server.
 
 You might need to change the application-prod.yml manully if new property is added in a new version.   
 
-[yamlmigration]: ../images/install/yamlmigration.png
+[yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
