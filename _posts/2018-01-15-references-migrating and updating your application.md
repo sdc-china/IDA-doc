@@ -6,8 +6,6 @@ date: 2018-11-06 15:17:55
 order: 5
 ---
 
-## Migrating and updating Keter
-
 ### Preparing your migration
 
 To prepare your migration, take the following steps:  
