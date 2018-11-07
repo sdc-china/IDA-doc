@@ -27,10 +27,18 @@ mysql> source yoursqlpath\migrate-mysql.sql;
 
 **Update Keter.war**     
 
-Extract the  application-prod.yml in the deployed keter.war.   
-Replace the  application-prod.yml in the new deployed keter.war from build foler.   
-Remove the deployed war from wlp installation\usr\servers\default\apps folder.   
-Copy the new keter.war into the wlp installation\usr\servers\default\apps folder.   
-Start the Liberty Server.
+Extract the  application-prod.yml in the deployed keter.war.
 
+![][yamlmigration] 
+
+Replace the  application-prod.yml in the new deployed keter.war from build foler.     
+Remove the deployed war from wlp installation\usr\servers\default\apps folder.     
+Copy the new keter.war into the wlp installation\usr\servers\default\apps folder.    
+Start the Liberty Server.  
+
+**Notes:**   
+
+You might need to change the application-prod.yml manully if new property is added in a new version.   
+
+[yamlmigration]: ../images/install/yamlmigration.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
