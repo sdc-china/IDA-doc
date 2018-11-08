@@ -35,23 +35,23 @@ order: 3
 
 ### Script Supported Parameters
   
-  Keter supports below parameters in Script.
+  Keter supports below parameters in Script. They can be used in Script to represent Pipeline related attributes.
   
-  ${PIPELINE_NAME}
+  **${PIPELINE_NAME}**: current pipeline name
   <br>
-  ${PIPELINE_ID}
+  **${PIPELINE_ID}**: current pipeline ID
   <br>
-  ${STAGE_NAME}
+  **${STAGE_NAME}**: current stage name
   <br>
-  ${STEP_NAME}
+  **${STEP_NAME}**: current step name
   <br>
-  ${BUILD_ID}
+  **${BUILD_ID}**: current build id
   <br>
-  ${BUILD_REPORT_URL}
+  **${BUILD_REPORT_URL}**: current build report URL
   <br>
-  ${PROCESSAPP_ACRONYM}
+  **${PROCESSAPP_ACRONYM}**: current processApp acronym name
   <br>
-  ${SNAPSHOT_ACRONYM}
+  **${SNAPSHOT_ACRONYM}**: current snapshot acronym name
 	
 	
 [pipeline_create_script]: ../images/pipeline/pipeline_create_script.png
