@@ -22,17 +22,17 @@ order: 3
   
 ### Script samples
 
-  1. You can use **curl** to call a RESTful service or Web Service in Script. For example, below script calls a BPM REST API by curl.
+1. You can use **curl** to call a RESTful service or Web Service in Script. For example, below script calls a BPM REST API by curl.
   
   *curl -H "Accept:application/json" -H "Authorization:Basic YWRtaW46UGFzc3cwcmQ=" -k https://9.30.160.68:9444/rest/bpm/wle/v1/systems*
   
-  2. You can execute a wsadmin command in Script. The wsadmin command is running against the BPM server associated to the Stage BPM configuration. For example,
+2. You can execute a wsadmin command in Script. The wsadmin command is running against the BPM server associated to the Stage BPM configuration. For example,
   
   *ssh AdminTask.BPMSetEnvironmentVariable('[-containerAcronym ${PROCESSAPP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -containerTrackAcronym Main -environmentVariableName TEST_KEY -environmentVariableValue 8899]')*
   
   This Script first logon BPM server using ssh, then execute the wsadmin commmand there to update the BPM environment variable. The format of the Script to call wsadmin command is 
 
-***ssh** + space + **wsadmin command***
+**ssh** + space + **wsadmin command**
 
 ### Script supported sarameters
   
