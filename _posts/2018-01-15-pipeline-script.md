@@ -34,7 +34,7 @@ order: 3
 
 **ssh** + space + **wsadmin command**
 
-### Script supported sarameters
+### Script supported parameters
   
   Keter supports below parameters in Script. They can be used in Script to represent Pipeline related attributes.
   
