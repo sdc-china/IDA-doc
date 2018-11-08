@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Pipeline Script"
+title: "Pipeline script"
 category: pipeline
 date: 2018-01-05 15:17:55
 order: 3
@@ -8,35 +8,42 @@ order: 3
 ### Pipeline script summary
 
   In pipeline stage step definition, there is a step called script, which allows users to execute script in the server where Keter is deployed.
-  
-  ![][pipeline_summary]
 
-### Test build trend
+### Define script
 
-  In pipeline dashboard, you can see three kind of test build trend: **Unit Test Build Trend**, **Functional Test Build Trend(QA)** and **Staging Functional Test Build Trend**. It supports conversion to data view, line chart and pie chart. You can also download the image by clicking **SaveASImage** icon in tool bar.
+  In **Edit Step** modal, select **Script** as **Type** then you can define one or more scripts in **Script** text area. For multiple scripts, each of them need to start from a new line.
   
-  ![][pipeline_chart]
+  ![][pipeline_create_script]
+  
+  After the pipeline is executed, you can view the script execution result.
+  
+  ![][pipeline_script_result]  
+  
+### Script Sample
 
-### Pipeline report  
+  1. You can use **curl** to call a RESTful service or Web Service in Script. For example, below script calls a BPM REST API by curl.
   
-  Every successful step will have a report in **Test Reports** page. You can read the report you want by clicking links.
+  curl -H "Accept:application/json" -H "Authorization:Basic YWRtaW46UGFzc3cwcmQ=" -k https://9.30.160.68:9444/rest/bpm/wle/v1/systems
   
-  ![][pipeline_fullreport]  
+  2. You can execute a wsadmin command in Script. The wsadmin command is running against the BPM server associated to the Stage BPM configuration. For example,
   
-   
-  Click the **Unit Test Report** link,you can read the whole unit testing report of this project. It includes
-  test summary statistic of every test suite, test case, test step.  
+  ssh AdminTask.BPMSetEnvironmentVariable('[-containerAcronym ${PROCESSAPP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -containerTrackAcronym Main -environmentVariableName TEST_KEY -environmentVariableValue 8899]')
   
-  ![][pipeline_unitreport]  
+  This Script first logon BPM server using ssh, then execute the wsadmin commmand there to update the BPM environment variable. The format of the Script to call wsadmin command is **ssh** + space + **wsadmin command**.
+
+### Script Supported Parameters
   
-  Click the **[checkstyle report][2]** link to see the result. The same way to read other reports.
+  Keter supports below parameters in Script.
+  
+  ${PIPELINE_NAME}
+  ${PIPELINE_ID}
+  ${STAGE_NAME}
+  ${STEP_NAME}
+  ${BUILD_ID}
+  ${BUILD_REPORT_URL}
+  ${PROCESSAPP_ACRONYM}
+  ${SNAPSHOT_ACRONYM}
 	
 	
-	
-[pipeline_summary]: ../images/pipeline/pipeline_build_summary.PNG
-[pipeline_report]: ../images/pipeline/pipeline_report.png 
-[pipeline_chart]: ../images/pipeline/pipeline_chart.png
-[pipeline_fullreport]: ../images/pipeline/pipeline_fullreport.png 
-[pipeline_unitreport]: ../images/pipeline/pipeline_unit_report.png 
-[1]: ../test/test-import_execute-sample-test-project.html
-[2]: ../checkstyle/checkstyle-report.html
+[pipeline_create_script]: ../images/pipeline/pipeline_create_script.PNG
+[pipeline_script_result]: ../images/pipeline/pipeline_script_result.png 
