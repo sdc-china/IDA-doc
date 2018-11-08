@@ -45,5 +45,5 @@ order: 3
   ${SNAPSHOT_ACRONYM}
 	
 	
-[pipeline_create_script]: ../images/pipeline/pipeline_create_script.PNG
+[pipeline_create_script]: ../images/pipeline/pipeline_create_script.png
 [pipeline_script_result]: ../images/pipeline/pipeline_script_result.png 
