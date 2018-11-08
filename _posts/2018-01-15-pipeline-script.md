@@ -14,7 +14,7 @@ order: 3
   In **Edit Step** modal, select **Script** as **Type** then you can define one or more scripts in **Script** text area. For multiple scripts, each of them need to start from a new line.
   
   ![][pipeline_create_script]
-  
+  <br>
   After the pipeline is executed, you can view the script execution result.
   
   ![][pipeline_script_result]  
@@ -29,7 +29,9 @@ order: 3
   
   *ssh AdminTask.BPMSetEnvironmentVariable('[-containerAcronym ${PROCESSAPP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -containerTrackAcronym Main -environmentVariableName TEST_KEY -environmentVariableValue 8899]')*
   
-  This Script first logon BPM server using ssh, then execute the wsadmin commmand there to update the BPM environment variable. The format of the Script to call wsadmin command is ***ssh** + space + **wsadmin command***.
+  This Script first logon BPM server using ssh, then execute the wsadmin commmand there to update the BPM environment variable. The format of the Script to call wsadmin command is 
+
+***ssh** + space + **wsadmin command***.
 
 ### Script Supported Parameters
   
