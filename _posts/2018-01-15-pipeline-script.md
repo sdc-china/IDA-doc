@@ -31,7 +31,7 @@ order: 3
   
   This Script first logon BPM server using ssh, then execute the wsadmin commmand there to update the BPM environment variable. The format of the Script to call wsadmin command is 
 
-***ssh** + space + **wsadmin command***.
+***ssh** + space + **wsadmin command***
 
 ### Script Supported Parameters
   
