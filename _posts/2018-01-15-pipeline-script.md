@@ -36,6 +36,7 @@ order: 3
   Keter supports below parameters in Script.
   
   ${PIPELINE_NAME}
+  <br>
   ${PIPELINE_ID}
   ${STAGE_NAME}
   ${STEP_NAME}
