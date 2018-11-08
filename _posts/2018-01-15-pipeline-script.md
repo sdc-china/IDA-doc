@@ -20,7 +20,7 @@ order: 3
   
   ![][pipeline_script_result]  
   
-### Script Sample
+### Script samples
 
   1. You can use **curl** to call a RESTful service or Web Service in Script. For example, below script calls a BPM REST API by curl.
   
@@ -34,7 +34,7 @@ order: 3
 
 ***ssh** + space + **wsadmin command***
 
-### Script Supported Parameters
+### Script supported sarameters
   
   Keter supports below parameters in Script. They can be used in Script to represent Pipeline related attributes.
   
