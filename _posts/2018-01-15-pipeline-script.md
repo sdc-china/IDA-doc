@@ -15,6 +15,7 @@ order: 3
   
   ![][pipeline_create_script]
   <br>
+  <br>
   After the pipeline is executed, you can view the script execution result.
   
   ![][pipeline_script_result]  
