@@ -38,11 +38,17 @@ order: 3
   ${PIPELINE_NAME}
   <br>
   ${PIPELINE_ID}
+  <br>
   ${STAGE_NAME}
+  <br>
   ${STEP_NAME}
+  <br>
   ${BUILD_ID}
+  <br>
   ${BUILD_REPORT_URL}
+  <br>
   ${PROCESSAPP_ACRONYM}
+  <br>
   ${SNAPSHOT_ACRONYM}
 	
 	
