@@ -11,43 +11,48 @@ order: 1
 1. Click **Create Pipeline** button in pipeline page. 
 
    ![][pipeline_create]
-  
-2. Fill pipeline configurable parameters values according to following table.
-
-     |Parameter              | Description
+   
+ 2. Click ![][pipeline_add_stage] icon to add a new stage.
+ 
+    ![][pipeline_first_stage]
+    
+	The values according to following table.
+	
+     |Label                  | Description
      |---------------------- |-------------
-     |Process Center         | Process center server environment
-     |Description            | The description of pipeline
+     |Name                   | The stage name
+     |Type                   | The options are Development, Test, Stage, Production and Utility
+     |Server                 | The server environment based on the stage type, the Utility stage type doesn't have server
      |Process App            | Process apps of the selected server
-     |QA Process Server      | The server environment of QA process
-     |Branch                 | The branch of selected process app
-     |Staging Process Server | The server environment of staging process 
-     |Schedule               | The crob job time setting
-     |Stage Configuration    | Constituent steps of pipeline flow check  
+     |Branch                 | The branch of the selected process app
+     |Snapshot               | The snapshot of the selected branch
      
- 3. Select steps for pipeline flow.
+     Only the first stage can choose the type **Development**.
+     
+ 3. Click ![][pipeline_add_stage] icon below the stage step to add a new step in the stage.
  
-    In **Dev**, you can select **Unit**, **Snapshot** and **checkstyle**.
+    ![][pipeline_create_step]
     
-    In **QA** and **Staging**, you can choose **Deployment** and **Functional Test**. However, you must fill the **QA Process Server** or **Staging Process Server** filed and check the **Snapshot** before. 
+    The values according to following table.
+	
+     |Label                  | Description
+     |---------------------- |-------------
+     |Name                   | The stage name
+     |Type                   | The options are Snapshot, Deployment, Checkstyle, Test and Script.
     
-    In **Post Actions**, you can decide whether to make an email notification if pipeline build fail.
+    In **Development** type of stage, you can choose the step type Snapshot, Deployment, Checkstyle, Test and Script.
     
-    If you check all, the pipe flow will be as follows.
+    In **Test**, **Stage** and **Production** type of stages, you can choose the step type Deployment, Test and Script.
     
-    ![][pipeline_pipeline_flow]
+    In **Utility** type of stage, you can only choose the step type Script.
     
- 4. Do steps configuration.
+ 4. Click ![][pipeline_add_stage] icon to add more stages, a typical stages as below.
  
-    ![][pipeline_steps_configuration]
+    ![][pipeline_stages]
     
-    In the **Unit Test**, **Functional Test(QA)**, and **Functional Test(Staging)** tab, choose the test project.
+    You can't change the sequence of the first stage, but you can adjust the other stages sequence by drag and drop. 
     
-    In the **Snapshot** tab, select the snapshot for functional test.
-    
-    In the **Checkstyle** tab, include **Ignore Empty Documentation** and **Ignore JS Coding Style Check**. If check, it will ignore empty document or JS coding style when perform checkstyle in building pipeline.
-    
-    In the **Email** tab, enter your email address for failure notification.
+    You can adjust the steps sequence in a stage by drag and drop.
     
     
 ### Edit a pipeline 
@@ -80,6 +85,10 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 
   
   [pipeline_create]: ../images/pipeline/pipeline_create.png
+  [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
+  [pipeline_first_stage]: ../images/pipeline/pipeline_first_stage.png
+  [pipeline_create_step]: ../images/pipeline/pipeline_create_step.png
+  [pipeline_stages]: ../images/pipeline/pipeline_stages.png
   [pipeline_pipeline_flow]: ../images/pipeline/pipeline_pipeline_flow.png
   [pipeline_steps_configuration]: ../images/pipeline/pipeline_steps_configuration.png
   [pipeline_edit_icon]: ../images/test/test_project_edit_button.PNG
