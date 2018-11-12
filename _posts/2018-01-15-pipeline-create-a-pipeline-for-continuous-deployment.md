@@ -76,8 +76,12 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
     When you run the build, the pipeline build view will appear with every stage building status. Blue color means running, grey means waiting, green means success and red means failure.
      
    ![][pipeline_build_view]   
+   
+    Click the build time text in first block, you will see the build logs in popup dialog.
 
-    When you hover on **enlargement** icon of build step, you will see the build step details. It will include build time, duration etc information. 
+   ![][pipeline_build_logs]
+
+    Click ![][pipeline_zoom_in] icon of the build step, you will see the build step details. It will include build time, duration etc information. 
 
    ![][pipeline_step]
 
@@ -88,7 +92,9 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
   [pipeline_first_stage]: ../images/pipeline/pipeline_first_stage.png
   [pipeline_create_step]: ../images/pipeline/pipeline_create_step.png
+  [pipeline_build_logs]: ../images/pipeline/pipeline_build_logs.png
   [pipeline_stages]: ../images/pipeline/pipeline_stages.png
+  [pipeline_zoom_in]: ../images/pipeline/pipeline_zoom_in.png
   [pipeline_pipeline_flow]: ../images/pipeline/pipeline_pipeline_flow.png
   [pipeline_steps_configuration]: ../images/pipeline/pipeline_steps_configuration.png
   [pipeline_edit_icon]: ../images/test/test_project_edit_button.PNG
