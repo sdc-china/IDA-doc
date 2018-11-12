@@ -29,7 +29,7 @@ order: 3
   <br>  
    You can execute a wsadmin command in Script. The wsadmin command is running against the BPM server associated to the Stage BPM configuration. For example,
   
-  *ssh AdminTask.BPMSetEnvironmentVariable('[-containerAcronym ${PROCESSAPP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -containerTrackAcronym Main -environmentVariableName TEST_KEY -environmentVariableValue 8899]')*
+  *ssh AdminTask.BPMSetEnvironmentVariable('[-containerAcronym ${APP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -containerTrackAcronym Main -environmentVariableName TEST_KEY -environmentVariableValue 8899]')*
   
   This Script first logon BPM server using ssh, then execute the wsadmin commmand there to update the BPM environment variable. The format of the Script to call wsadmin command is 
 
@@ -51,7 +51,7 @@ order: 3
   <br>
   **${BUILD_REPORT_URL}**: current build report URL
   <br>
-  **${PROCESSAPP_ACRONYM}**: current processApp acronym name
+  **${APP_ACRONYM}**: current processApp acronym name
   <br>
   **${SNAPSHOT_ACRONYM}**: current snapshot acronym name
 	
