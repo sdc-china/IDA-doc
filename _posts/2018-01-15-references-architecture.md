@@ -10,5 +10,4 @@ order: 1
 ### Architecture Overview
 ![architecture overview](../images/architecture/architecture.png)
 ### Integration Architecture Reference
-Refer to diagram below about how to integrate Keter with as-is CI/CD products/solutions
 ![integration reference](../images/architecture/integration_architecture.png)
