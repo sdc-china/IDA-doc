@@ -42,8 +42,8 @@ To update Keter.war, take the following steps:
 5. Copy the new keter.war into the wlp installation\usr\servers\default\apps folder.    
 6. Start the Liberty Server.  
 
- **Notes** 
- Please not overwrite keter.properties from previous version since property values will change in some version.
+ **Notes**     
+ Please not overwrite keter.properties from previous version since property values will change in some versions.   
 
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
