@@ -22,8 +22,7 @@ Edit [KETER_HOME]/conf/**keter.properties** under **conf** folder. This properti
 *  **server.context-path** : default as  "/keter"  
 *  **http.port** : Liberty http port defined in the server.xml
 *  **https.port** : Liberty https port defined in the server.xml
-*  **engineConfig.screenshotDir** :  Screenshot folder
-*  **engineConfig.tempDir** :  Temporal folder for Keter internal use 
+*  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc
 *  **smtp.host** ：SMTP host    
 *  **smtp.port** ：SMTP port    
 *  **email.from** ：Sender Email address 
