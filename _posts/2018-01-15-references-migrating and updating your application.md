@@ -36,13 +36,14 @@ mysql> paste your sql here
 To update Keter.war, take the following steps: 
 
 1. Find  keter.properties under conf folder in the previous version.
-2. Copy the previous  keter.properties to overwrite  keter.propertie in the currenct version.
+2. Find the previous version keter.properties property values and reconfigure  keter.propertie in the currenct version.
 3. Click the package.bat command to repackage the keter.war file.
 4. Remove the old keter.war from wlp installation\usr\servers\default\apps folder.     
 5. Copy the new keter.war into the wlp installation\usr\servers\default\apps folder.    
 6. Start the Liberty Server.  
 
-  
+ **Notes** 
+ Please not overwrite keter.properties from previous version since property values will change in some version.
 
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
