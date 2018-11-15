@@ -8,9 +8,9 @@ order: 7
 
 This document refers to  JavaScript API to write a custome JS command. 
 
-| JS API NAME    |      Parameters    | Sample            |
-|----------|:-------------:|------:|
-| bta.util.getCoachView  |  JSON | var coachView = bta.util.getCoachView(this.jsonObject);<br>	jsonObject.controlId;<br> jsonObject.section;<br>jsonObject.label;<br>jsonObject.elementId;<br>jsonObject.elementCss;<br>	jsonObject.xpath; |
+| JS API NAME    |      Parameters    |       Sample            |
+|----------|:-------------:|:------|
+| bta.util.getCoachView  |  JSON | var coachView = bta.util.getCoachView(this.jsonObject);<ul><li>controlId</li><li>section</li><li>label</li><li>elementId</li><li>elementCss</li></ul> |
 | bta.util.getCoachViewByControlId |  String   | var tableCoachView = bta.util.getCoachViewByControlId(controlId); |
 | bta.util.getElementText | Element |   var actualValue = bta.util.getElementText(textElement); |
 | bta.util.hasClass | Element,String |   bta.util.hasClass(actualCell, "Output_Text") |
