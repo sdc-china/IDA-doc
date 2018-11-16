@@ -40,7 +40,7 @@ Keter offers detailed reports including screenshots, execution process flow and 
 10. As a tester, I want to run a test script with multiple test data, so I can reduce my testing effort, make test cases reusable and increase the test coverage.
 
 ### Ops Team:
-1. As a BPM Administrator, I want to be notified upon the status change or abnormal execution time of specific services, so that I can be take immediate actions on any outrage.
+1. As a BPM Administrator, I want to be notified upon the status change or abnormal execution time of specific services, so that I can be take immediate actions on any outage.
 2. As a BPM Administrator, I want to manipulate the in-flight instances more efficiently, so that I do the run-time deggub to fix the issue reported by business users easily. 
 
 
@@ -48,14 +48,14 @@ Keter offers detailed reports including screenshots, execution process flow and 
 1. As a Deployer, I want to construct an automatic release process, so that I can deliver the BPM releases more frequently and in good quality.
 2. As a Developer, I want to deploy my BPM application in TEST env through creating a snapshot or one-click, so that it is available for testing. 
 3. As a Deployer, I want to be notified when a deployment is finished, so that I take action when the deployment fails.
-4. As a Deployer, I want to able to schedule pipelines to execute, so that I can assure that deployment be executed without human involved.
+4. As a Deployer, I want to able to schedule pipelines to execute, so that I can assure that deployment be executed without human involvement.
 5. As a Project Manager, I want to review the build history of my BPM project, so that I can push the team to handle the outstanding issues during development and deployment.
 
 ### Features & Capabilities
 * Test Case generation
 * Record and playback BPM UI
 * Static code analysis for BPM application
-* Continues delivery BPM application through visualize pipeline
+* Continuous delivery of BPM application through visualize pipeline
 * Code review for BPM application
 * Monitor BPM service with alert in real time
 * Support tools for BPM instance migration
