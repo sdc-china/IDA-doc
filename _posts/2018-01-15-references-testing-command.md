@@ -13,7 +13,7 @@ This document refers to the Command Editor options and not JavaScript API to cal
   
   ![][command_start_process_editor] 
 
-There are four category of commands:
+There are five(5) categories of commands:
 
 * [BPM](#bpm)
 * [BPM Assertion](#bpm-assertion)
@@ -21,8 +21,17 @@ There are four category of commands:
 * [UI assertion](#ui-assertion)
 * [Utility](#utility)
 
-**Notes:** 
-You could download our samples from [Keter samples](https://github.com/sdc-china/keter-samples) Git repository.
+**Notes:**  You could download our samples from Git [samples](https://github.com/sdc-china/keter-samples) repository.
+- Testing samples list
+    - Testing sample (BPM, assertion and utility commands)  
+    - UI command sample for BPM v8 Coach UI - Coach Sample
+    - UI command sample for BPM responsive Coach toolkit - Responsive Coach Sample
+    - UI command sample for BPM UI toolkit - BPM UI Sample
+    - UI command sample for BP3 toolkit 
+    - JS custom command sample 
+    - Java custom command sample - Java Command Sample
+    - Headless sample - How to test headless process application
+    - BPMoC sample - How to test the BPMoC process
 ___
 
 ### **BPM** 
