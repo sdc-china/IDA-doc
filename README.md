@@ -1,4 +1,5 @@
-IBM Deployment Accelerator for Business Automation Workflow (aka Keter) Documentation https://sdc-china.github.io/keter-doc/
+# IBM Deployment Accelerator for Business Automation Workflow (aka Keter) 
+- Documentation https://sdc-china.github.io/keter-doc/
 
 ## Set up environment
 - install [Ruby](https://www.ruby-lang.org/en/downloads/)(Ruby 2.4.3) and [RubyGems](https://rubygems.org/pages/download);
