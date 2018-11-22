@@ -18,7 +18,7 @@ order: 3
      | Server Name            | Hub name                                                            |  
      | Server URL             | Hub URL name                                                        |
      | Node number            | Number of browser instances can run over the Remote System.        |  
-     | Browser                | Support Firefox, Chrome                                              |	
+     | Browser                | Support Firefox, Chrome and IE                                             |	
  
 	
 ### Edit selenium hub 
