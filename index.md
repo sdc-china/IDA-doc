@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "IBM Keter Docs"
+title: "IBM Deployment Accelerator for Business Automation Workflow Docs"
 ---
 
 ## Overview
