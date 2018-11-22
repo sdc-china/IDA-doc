@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Custom JS API Reference"
+title: "Javascript API Reference"
 category: references
 date: 2018-11-15 15:17:55
 order: 7
 ---
 
-This document refers to  JavaScript API to write a custome JS command. 
+## OOTB Javascript API
 
-| JS API NAME    |      Parameters    |       Sample            |
+| JS API     |      Parameters    |       Sample            |
 |----------|:-------------:|:------|
 | bta.util.getCoachView  |  JSON | var coachView = bta.util.getCoachView(this.jsonObject);<ul><li>controlId</li><li>section</li><li>label</li><li>elementId</li><li>elementCss</li></ul> |
 | bta.util.getCoachViewByControlId |  String   | var tableCoachView = bta.util.getCoachViewByControlId(controlId); |
@@ -27,5 +27,5 @@ This document refers to  JavaScript API to write a custome JS command.
 |bta.util.isRespCoachView | Element |  if (bta.util.isRespCoachView(coachView))<br> {//add your logic } |
 
 **Notes**    
-User still can use BPM coach view JS api.See below sample.   
-var rows = tableCoachView.context.element.querySelectorAll("div.SPARKTable table.table tbody tr");     
+Beside these OOTB JS API, user can also use standard BPM coach view JS API when writing the custom JS. e.g 
+- var rows = tableCoachView.context.element.querySelectorAll("div.SPARKTable table.table tbody tr");     
