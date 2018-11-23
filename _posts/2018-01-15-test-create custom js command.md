@@ -24,7 +24,7 @@ order: 5
 
    ![][test_js_command_logic]
 
-  - Refer to [JS API Reference](references/references-js-api.html) for OOTB Javascript functions   
+
 5. Add your javascript command in your test case.
 
    ![][test_add_js_command]
@@ -35,6 +35,8 @@ order: 5
    ![][test_js_commandlist]
 
  
+7. Refer to [Javascript API Reference](references/references-js-api.html) for OOTB 
+Javascript functions   
 
   [test_js_command]: ../images/test/test_js_command.PNG
   [test_js_command_info]: ../images/test/test_js_command_info.PNG
