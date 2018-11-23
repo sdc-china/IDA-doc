@@ -1,5 +1,5 @@
 # IBM Deployment Accelerator for Business Automation Workflow (aka Keter) 
-- Documentation https://sdc-china.github.io/keter-doc/
+- Documentation https://sdc-china.github.io/ida-doc/
 
 ## Set up environment (Windows)
 - install [RubyInstallers](https://rubyinstaller.org/downloads/) with MSYS2 (Ruby+Devkit 2.5.3-1 (x64)) and [RubyGems](https://rubygems.org/pages/download) or upgrate to the lastest RubyGems by executing command`$ gem update --system`;
