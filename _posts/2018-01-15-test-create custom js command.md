@@ -23,7 +23,8 @@ order: 5
 4. Define your javascript command logic.
 
    ![][test_js_command_logic]
- - Refer to [JS API Reference](references/references-js-api.html) for OOTB Javascript functions   
+
+  - Refer to [JS API Reference](references/references-js-api.html) for OOTB Javascript functions   
 5. Add your javascript command in your test case.
 
    ![][test_add_js_command]
