@@ -3,7 +3,7 @@ layout: page
 title: "Start and Stop Keter environment"
 category: administration
 date: 2018-01-05 15:17:55
-order: 4
+order: 10
 ---
 
 ##	Starting your environment
