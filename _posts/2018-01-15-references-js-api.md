@@ -10,7 +10,7 @@ order: 7
 
 | JS API     |      Parameters    |       Sample            |
 |----------|:-------------:|:------|
-| bta.util.getCoachView  |  JSON | var coachView = bta.util.getCoachView(this.jsonObject);<ul><li>controlId</li><li>section</li><li>label</li><li>elementId</li><li>elementCss</li></ul> |
+| bta.util.getCoachView  |  JSON | var coachView = bta.util.getCoachView(this.jsonObject);Support below Json name of fields <br>controlId<br>section<br>label<br>elementId<br>elementCss<br> |
 | bta.util.getCoachViewByControlId |  String   | var tableCoachView = bta.util.getCoachViewByControlId(controlId); |
 | bta.util.getElementText | Element |   var actualValue = bta.util.getElementText(textElement); |
 | bta.util.hasClass | Element,String |   bta.util.hasClass(actualCell, "Output_Text") |
