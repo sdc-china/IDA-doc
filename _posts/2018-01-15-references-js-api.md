@@ -8,23 +8,14 @@ order: 7
 
 ## OOTB Javascript API
 
-| JS API     |      Parameters    |       Sample            |
+| JS API |      Parameters    |       Comments            |       Sample            |
 |----------|:-------------:|:------|
-| bta.util.getCoachView  |  JSON | var coachView = bta.util.getCoachView(this.jsonObject);Support below Json name of fields <br>controlId<br>section<br>label<br>elementId<br>elementCss<br> |
-| bta.util.getCoachViewByControlId |  String   | var tableCoachView = bta.util.getCoachViewByControlId(controlId); |
-| bta.util.getElementText | Element |   var actualValue = bta.util.getElementText(textElement); |
-| bta.util.hasClass | Element,String |   bta.util.hasClass(actualCell, "Output_Text") |
-| bta.util.getBindingValue | Element |  var coachView = bta.util.getCoachView(this.jsonObject);<br>var bindingValue = bta.util.getBindingValue(coachView); |
-| bta.util.setBindingValue | Element,String |      bta.util.setBindingValue(coachView, Number(value)); |
-| bta.util.isEquals | expected, actual, message, regexp |    var msg=  bta.util.isEquals( expected, actual,"is equal", false); |
-| bta.util.isContains | expected, actual, message |     var msg= bta.util.isEquals( expected, actual,message); |
-| bta.util.isArrayEquals | expected, actual, message |     varmsg = bta.util.isArrayEquals(expected, actual, message); |
-| bta.util.assertTrue | bool condition, message |  	var containExpectedValue = (actualValue.indexOf(expectedValue) != -1);<br>	return bta.util.assertTrue(containExpectedValue, errorMessage);|
-| bta.util.assertFalse | bool condition, message |   var containExpectedValue = (actualValue.indexOf(expectedValue) != -1);<br>	return bta.util.assertTrue(containExpectedValue, errorMessage); |
-|bta.util.getElementsVisibility | Element |  	var visibility = bta.util.getElementsVisibility(element);<br>	return bta.util.assertTrue((visibility!=="HIDDEN"), errorMessage); |
-|bta.util.debug | String |  	var actualValue = bta.util.getElementText(outputControl);<br>	bta.util.debug("The output text value: " + actualValue); |
-|bta.util.isBPMUICoachView | Element |  if (bta.util.isBPMUICoachView(coachView))<br> {//add your logic } |
-|bta.util.isRespCoachView | Element |  if (bta.util.isRespCoachView(coachView))<br> {//add your logic } |
+| bta.util.getCoachView  |  JSON |Get the coach view object|var coachView = bta.util.getCoachView({controlId: "Coach Control ID", label: "Coach Label Text", elementId: "The element ID", elementCss: "The element CSS", xpath: "The element xpath" });|
+| bta.util.getElementText | DOM Element |Get the DOM element text|  var text = bta.util.getElementText(textElement); |
+| bta.util.assertTrue | condition(boolean), message(string)|Asserts that a condition is true. If it isn't it throws an error with the given message. | bta.util.assertTrue(true, "The condition is not true!"); |
+| bta.util.assertFalse| condition(booelan), message(string)| Asserts that a condition is false. If it isn't it throws an error with the given message.|  bta.util.assertFalse(false, "The condition is not false!"); |
+| bta.util.assertEquals | expected(string), actual(string), message(string) |Asserts that two objects are equal. If they are not, an error is thrown with the given message.|bta.util.assertEquals("The expected value", "The actual value", "The values aren't equal"); |
+| bta.util.throwError (as know as "bta.util.assertFail") | message(string), retry(boolean, default is true) |Throw error with the given message|  bta.util.throwError("error message", true); |
 
 **Notes**    
 Beside these OOTB JS API, user can also use standard BPM coach view JS API when writing the custom JS. e.g 
