@@ -17,7 +17,7 @@ order: 1
 
 ### Software Prerequisites
 
-* [IBM® Business Process Manager](https://www.ibm.com/support/knowledgecenter/SSFTBX_8.5.7/com.ibm.wbpm.main.doc/topics/ibmbmp_overview.html) 8.5.x and 8.6.x or [IBM® Business Automation Workflow V18.X](https://www.ibm.com/support/knowledgecenter/en/SS8JB4_18.0.0/com.ibm.wbpm.workflow.main.doc/kc-homepage-workflow.html) 
+* [IBM® Business Process Manager](https://www.ibm.com/support/knowledgecenter/SSFTBX_8.5.7/com.ibm.wbpm.main.doc/topics/ibmbmp_overview.html) V8.5.x+ or [IBM® Business Automation Workflow V18.X](https://www.ibm.com/support/knowledgecenter/en/SS8JB4_18.0.0/com.ibm.wbpm.workflow.main.doc/kc-homepage-workflow.html) 
 * [Open Liberty 18.0.0.3](https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2018-09-05_2337/openliberty-18.0.0.3.zip) or other Application server
 * [IBM® Db2](https://www.ibm.com/analytics/us/en/db2/) 
 or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)  
@@ -25,7 +25,7 @@ or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)
 
 ### Optional  
 
-* SMTP Server
+* A SMTP Server
 
 
 ### Browser Support
@@ -40,11 +40,11 @@ or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)
 Extract the IDA Installation archive file to a specific location. The IDA archive file contains the following directories and artifacts: 
 
 *  **build** : contains IDA war file that needs to be deployed in Open Liberty.
-*  **conf** : contains Keter properties file.
+*  **conf** : contains properties file.
 *  **lib** : contains the required Java library for Keter packaging and setup.  
 *  **sql** : contains the SQL files to create  database and tables.
 *  **toolkit** : contains a required Toolkit TWX file.
-*  **workspace** : contains the Checkstyle rule projects, which is based on IBM Operational Decision Manager.
+*  **workspace** : contains the Checkstyle rule projects, which is builded on IBM Operational Decision Manager.
 *  **package.bat** : Windows command to update IDA war file with client settings.
 *  **package.sh** : Linux script to update IDA war file with client settings.
 *  **README.html** : README file.

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "IBM Deployment Accelerator for Business Automation Workflow Docs"
+title: "IBM Deployment Accelerator for Business Automation Workflow (IDA)"
 ---
 
 ## Overview
 
-[Keter](https://youtu.be/6LJhP7LedU0 ) redefines IBM Business Process Manager (BPM) innovation with tools and methodologies from IBM. It is a single all-in-one web application for both BPM process development and testing teams.Developers can easily define or schedule a pipeline. The pipeline provides a build-in continuous integration and deployment pipeline that contains testing, checkstyle, snapshots and deployment.
+[IBM Deployment Accelerator for Business Automation Workflow](https://youtu.be/6LJhP7LedU0 ) redefines IBM Business Process Manager (BPM)/IBM Business Automation Workflow(BAW) innovation with tools and methodologies from IBM. It is a single all-in-one web application for both BPM process development and testing teams.Developers can easily define or schedule a pipeline. The pipeline provides a build-in continuous integration and deployment pipeline that contains testing, checkstyle, snapshots and deployment.
 
 ### Development Team
 

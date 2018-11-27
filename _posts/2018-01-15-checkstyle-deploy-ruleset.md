@@ -5,7 +5,11 @@ category: checkstyle
 date: 2018-01-05 15:17:55
 order: 4
 ---
-### Deploy ruleset to Decision Server
+### Software Prerequisites
+
+* [IBM® Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
+
+### Deploy ruleset to IBM® Operational Decision Manager Decision Server
 
 #### If you want to execute ruleset through Decision Server, you should deploy your ruleset to Decision Server like IBM Cloud or on-premise Rule Execution Server.
 	
@@ -14,7 +18,7 @@ order: 4
   
 #### 2. Deploy your ruleset
 
-  * Open deploymentOperation in rule project CheckstyleRules. On the Deployment Target Servers tab, add a target server using the Connection Settings found in Decision Server.
+  * Open deployment Operation in rule project CheckstyleRules. On the Deployment Target Servers tab, add a target server using the Connection Settings found in Decision Server.
 
     ![][checkstyle_deploy_ruleset_cloud_two_1]
   
