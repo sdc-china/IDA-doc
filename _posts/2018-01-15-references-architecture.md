@@ -7,7 +7,10 @@ order: 1
 ---
 
 
-### Architecture Overview
+### Reference Architecture 
 ![architecture overview](../images/architecture/architecture.png)
 ### Integration Architecture Reference
-![integration reference](../images/architecture/integration_architecture.png)
+![integration architecture reference](../images/architecture/integration_architecture
+.png)
+
+- [IBM Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager) will be used to replace OOTB static analysis POJO engine so that all static analysis rules could be customized and managed outside IDA solution.
