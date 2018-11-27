@@ -7,7 +7,7 @@ order: 1
 ---
 
 ### Add new user 
-  Use super account (keterAdmin/keterAdmin) login into Keter application.
+  Use super account (idaAdmin/idaAdmin) login into IDA application.
   1. Click **Administrator** tab, then switch to  **user management** tab to add user.  
   2. Click **add new row** icon to add new users.  
   3. After adding user, you can click **Reset password** button to reset password. The default password is **123456**.

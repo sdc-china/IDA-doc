@@ -26,7 +26,7 @@ Testers can automate their test scenarios and boost their productivity by genera
 
 Testers can create a monitor to monitor BPM service metrics with alerts. The alerts can be configured to be sent using email.
 
-Keter offers detailed reports including screenshots, execution process flow and coverage to improve communications between testers and developers on each test case. 
+IDA offers detailed reports including screenshots, execution process flow and coverage to improve communications between testers and developers on each test case. 
 
 1. As a tester, I want to easily create functional test cases, so that the regressive test can be automatically performed against each new version of the BPM project.
 2. As a tester, I want to have comprehensive testing reports, so that we could know the testing coverage of my BPM test project and troubleshooting if any test failed.

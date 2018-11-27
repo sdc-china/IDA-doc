@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Installing Keter Application"
+title: "Installing IDA Application"
 category: installation
 date: 2018-01-05 15:17:55
 order: 4
@@ -74,18 +74,18 @@ If the server is created successfully, you receive message: Server server_name c
                   
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	<application type="war" id="keter" name="keter" location="${server.config.dir}/apps/keter-web.war">
+	<application type="war" id="IDA" name="IDA" location="${server.config.dir}/apps/IDA-web.war">
 		<classloader delegation="parentLast" />
     </application>
 	
-	<keyStore id="defaultKeyStore" password="keterAdmin" />
+	<keyStore id="defaultKeyStore" password="idaAdmin" />
 
 ```  
     
 
-* Copy **keter-web.war** application into the /usr/servers/*yourservername*/apps directory.
+* Copy **IDA-web.war** application into the /usr/servers/*yourservername*/apps directory.
 
-* Start Liberty server and visit the url like http://serverip:port/keter (port is defined in the server.xml).
+* Start Liberty server and visit the url like http://serverip:port/IDA (port is defined in the server.xml).
 
 For example:  
 In Liberty installation bin folder you can use below command to start the server.

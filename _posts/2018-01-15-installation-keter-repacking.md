@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Repacking Keter Application"
+title: "Repacking IDA Application"
 category: installation
 date: 2018-01-05 15:17:55
 order: 3
@@ -10,23 +10,23 @@ order: 3
 ### Properties Configuration
 
 
-**Configure Keter properties** 
+**Configure IDA properties** 
  
-Edit [KETER_HOME]/conf/**keter.properties** under **conf** folder. This properties file contains three main sections.
+Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties file contains three main sections.
 
 **#application-prod.yml**   
 *  **spring.datasource.username** : Database connection username  
 *  **spring.datasource.password** : Database connection password  
 *  **spring.datasource.url** : Database connection URL
-*  **server.host** :  Keter server IP or host name
-*  **server.context-path** : default as  "/keter"  
+*  **server.host** :  IDA server IP or host name
+*  **server.context-path** : default as  "/IDA"  
 *  **http.port** : Liberty http port defined in the server.xml
 *  **https.port** : Liberty https port defined in the server.xml
 *  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc
 *  **smtp.host** ：SMTP host    
 *  **smtp.port** ：SMTP port    
 *  **email.from** ：Sender Email address 
-*  **spring.activemq.broker-url** ：IP and Port of embedded ActiveMQ. It is only needed when you integrate Keter with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the Keter deployment server.
+*  **spring.activemq.broker-url** ：IP and Port of embedded ActiveMQ. It is only needed when you integrate IDA with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the IDA deployment server.
 *  **jasypt.encryptor.password** : default value password
 
 **Notes** 
@@ -63,7 +63,7 @@ Please note that to enable BPM Checkstyle feature, you need to have IBM ODM inst
 
 **#monitoring.properties (For BPM Monitoring purpose)**
 	
-*  **event_type** : event types to be stored in Keter database  
+*  **event_type** : event types to be stored in IDA database  
 *  **track_serviceflow** : default as true  
 
 
@@ -72,14 +72,14 @@ It is only needed when you want to configure monitoring[1] to have the monitorin
 
 **Notes** 
 
-If you want to use DB2 as Keter database, you can uncomment DB2 property configuration and comment MySQL property configuration.
+If you want to use DB2 as IDA database, you can uncomment DB2 property configuration and comment MySQL property configuration.
 
 ![][db2config]
 
 [db2config]: ../images/install/db2configuration.png
 
-#### Repacking keter-web with configuration
+#### Repacking IDA-web with configuration
 
-Once all the properties in [KETER_HOME]/conf/keter.properties file have been update you can then re-package the [KETER_HOME]/build/**keter-web.war** file.  
+Once all the properties in [IDA_HOME]/conf/ida.properties file have been update you can then re-package the [IDA_HOME]/build/**IDA-web.war** file.  
 
-Before running the [KETER_HOME]/**package.bat** or [KETER_HOME]/**package.sh** you will need to set the environment variable for JAVA_HOME and ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set and your path contains the [JAVA_HOME]/bin diectory you can then execute the package script.
+Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the environment variable for JAVA_HOME and ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set and your path contains the [JAVA_HOME]/bin diectory you can then execute the package script.

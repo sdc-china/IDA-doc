@@ -7,7 +7,7 @@ order: 3
 ---
 ### Pipeline script summary
 
-  In pipeline stage step definition, there is a step called script, which allows users to execute script in the server where Keter is deployed.
+  In pipeline stage step definition, there is a step called script, which allows users to execute script in the server where IDA is deployed.
 
 ### Define script
 
@@ -37,7 +37,7 @@ order: 3
 
 ### Script supported parameters
   
-  Keter supports below parameters in Script. They can be used in Script to represent Pipeline related attributes.
+  IDA supports below parameters in Script. They can be used in Script to represent Pipeline related attributes.
   
   **${PIPELINE_NAME}**: current pipeline name
   <br>

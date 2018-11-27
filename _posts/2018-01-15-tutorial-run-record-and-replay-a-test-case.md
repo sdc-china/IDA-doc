@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 2
 ---
 
-Keter provides a browser plugin recorder, which allows user to record their test scenarios without coding.
+IDA provides a browser plugin recorder, which allows user to record their test scenarios without coding.
 
 ### About this task
 

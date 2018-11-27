@@ -21,7 +21,7 @@ There are five(5) categories of commands:
 * [UI assertion](#ui-assertion)
 * [Utility](#utility)
 
-**Notes:**  You could download our samples from Git [samples](https://github.com/sdc-china/keter-samples) repository.
+**Notes:**  You could download our samples from Git [samples](https://github.com/sdc-china/IDA-samples) repository.
 - Testing samples list
     - Testing sample (BPM, assertion and utility commands)  
     - UI command sample for BPM v8 Coach UI - Coach Sample
@@ -72,11 +72,11 @@ ___
   | loginPortal                      |Assignee: select a user defined in BPM Configuration.|Login into BPM portal. As a result BPM Portal page is opened.                                                                   | 
   | loginBPMoC                  	 |Assignee: select a user defined in BPM Configuration.|  Login into BPM on cloud.As a result BPM on cloud page is opened.  
   | openInstanceDetail               |Assignee: select a user defined in BPM Configuration.|Open the instance detail page for current instance in the context.|
-  | startProcess                     |Process : name of the process to be started.<br>Params: : (optional) input parameters in JSON format. Tip: when creating a case from the Test case menu for a Process, the default parameters are generated.<br>|Start a BPM process by REST API, only exposed process are supported by default. Install Keter Toolkit to support all processes. |                                                                        
+  | startProcess                     |Process : name of the process to be started.<br>Params: : (optional) input parameters in JSON format. Tip: when creating a case from the Test case menu for a Process, the default parameters are generated.<br>|Start a BPM process by REST API, only exposed process are supported by default. Install IDA Toolkit to support all processes. |                                                                        
   | startHumanService                |Service : name of a human service to be started.Select from drop down.<br>Params: human service input list. Only simple input arguments are supported.|Tests Human Service in stand alone mode.| 
   | startExposedHertiageHumanService |Service : name of a human service to be started.Select from drop down.<br>Params: human service input list. Only simple input arguments are supported.|Tests Human Service in stand alone mode, please make sure the human service is exposed to a specify team
   | startAjaxService                 |Exception: is an exception case.<br>Service: service name, select from drop down.<br>Params: service input list.<br>Expected Output: expected service output in JSON.Tip: first, execute the case step with out expectedOutput set. If passed, edit the step and click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|Start an ajax service edited in Eclipse PD by REST API.To call services created in Web PD, use startServiceFlow command.|
-  | startSystemService               |Exception: is an exception case.<br>Service: service name, select from drop down.<br>Params: service input list.<br>Expected Output: expected service output in JSON.Tip: click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the example output.|Starts a Generic or Integration service edited in Eclipse PD,please install Keter Toolkit to support system service.To call services created in Web PD, use startServiceFlow command|      
+  | startSystemService               |Exception: is an exception case.<br>Service: service name, select from drop down.<br>Params: service input list.<br>Expected Output: expected service output in JSON.Tip: click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the example output.|Starts a Generic or Integration service edited in Eclipse PD,please install IDA Toolkit to support system service.To call services created in Web PD, use startServiceFlow command|      
   | saveSQLQueryResult               |SQL: sql statement. <br>Data Source Name: data source JNDI name as defined in target BPM environment. Default dataSourceName is jdbc/TeamWorksDB.<br>Key: key name.|Save the SQL query result into context.|
   | startSQLQuery                    |SQL: sql statement. <br>maxRows: max rows<br>Data Source Name: data source JNDI name as defined in target BPM environment. Default dataSourceName is jdbc/TeamWorksDB.<br>Expected Output: expected output.<br>Json Path: json path to a variable in the output.|Perform SQL Query by REST API, please install BPM Testing Asset Toolkit to support SQL Query.|   
   | startUCA                         | UCA: uca name, select from drop down.<br>Params: UCA inputs.|Start message UCA.                               |    
@@ -85,7 +85,7 @@ ___
   | runAdHocActivity                 | Ad Hoc Activity Name: ad Hoc activity name,select from drop down. |Starts AdHoc Activity, can be executed in a context of a business process instance. Can be added to a test case created based on a process or bpd.|    
   | runTaskByDisplayName             |Task Name: task name, select from drop down. |  Run task by display name.       |    
   | runTaskByActivityName            |Task Name: task name, select from drop down.|Run task by Activity name. Can only be used in a context of process instance execution.|                                 
-  | assignTask                       |Task Name: task name, select from drop down.<br>To User: select from drop down list of users defined in Keter/BPM Admin for target BPM server. |  Assign task. Can only be used in a context of process instance execution .|
+  | assignTask                       |Task Name: task name, select from drop down.<br>To User: select from drop down list of users defined in IDA/BPM Admin for target BPM server. |  Assign task. Can only be used in a context of process instance execution .|
   | claimTask                        |Task Name: task name, select from drop down.|   Claim task.                   | 
   | finishTask                       |Task Name: task name, select from drop down.<br>Output: task output, json format. Set this value to the output of the task.|Complete a given task and set output for the task. Can only be used in a context of process instance execution.| 
   | addInstanceId                    |Instance ID: instance id of the process.|Add the process instance id to context. Use this command if the process was not started as part of the current use case.                                | 
@@ -131,9 +131,9 @@ ___
 
 ### **UI**  
 
-In most cases, the UI commands are recorded using the Keter plug in. If you find a need to add a command manually, for example, validation command, look at the recorded command for the element and copy the location information from it. 
+In most cases, the UI commands are recorded using the IDA plug in. If you find a need to add a command manually, for example, validation command, look at the recorded command for the element and copy the location information from it. 
 <br>*e.g:*
-Any one or combination of the recorded values can be used to identify the control:  Control ID, Element ID or XPATH. If Label is unique on the page, it can be used as well. Enough location arguments are required to uniquely identify an element on the page. **Keter** cycles through available ids until it finds the element. For example, if you recorded a select step and later moved the control around on the page, the Control ID and XPATH are probably different from the recorded step, but Element ID is still the same.
+Any one or combination of the recorded values can be used to identify the control:  Control ID, Element ID or XPATH. If Label is unique on the page, it can be used as well. Enough location arguments are required to uniquely identify an element on the page. **IDA** cycles through available ids until it finds the element. For example, if you recorded a select step and later moved the control around on the page, the Control ID and XPATH are probably different from the recorded step, but Element ID is still the same.
 
 Here are statements of common input fields.
 

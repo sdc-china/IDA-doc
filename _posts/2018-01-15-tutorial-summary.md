@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 6
 ---
 
-In this tutorial you know how to use keter for a working CI/CD solution for BPM process applications.
+In this tutorial you know how to use IDA for a working CI/CD solution for BPM process applications.
 
 The tutorial showed you the following modules:
 

@@ -38,11 +38,11 @@ order: 4
 
     ![][checkstyle_deploy_ruleset_cloud_two_7]
 		
-#### 3. Change configurations in keter.properties
+#### 3. Change configurations in ida.properties
  
-  * Make sure the value of ruleExecutionMode in keter.properties is 2.
+  * Make sure the value of ruleExecutionMode in ida.properties is 2.
 	
-  * Configure the values of resUser, resPassword, resUrl, restUrl and resPort in keter.properties.
+  * Configure the values of resUser, resPassword, resUrl, restUrl and resPort in ida.properties.
 	
 ### Deploy ruleset in local
 
@@ -54,11 +54,11 @@ order: 4
   
     ![][checkstyle_deploy_ruleset_local_1]
 		
-  * After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in keter.war(keter-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one. 
+  * After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in IDA.war(IDA-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one. 
 
-#### 2. Change configurations in keter.properties
+#### 2. Change configurations in ida.properties
 
-  * Make sure the value of ruleExecutionMode in keter.properties is 0.
+  * Make sure the value of ruleExecutionMode in ida.properties is 0.
 
      
 

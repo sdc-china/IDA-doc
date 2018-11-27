@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Start and Stop Keter environment"
+title: "Start and Stop IDA environment"
 category: administration
 date: 2018-01-05 15:17:55
 order: 10
@@ -37,10 +37,10 @@ Start the Selenium Node by calling the following command:
 ### Start WebSphere Liberty
 Start the WebSphere Liberty server by calling the following command:
 
-- Linux: [Keter_HOME]/bin/server start [SERVER_NAME] 
+- Linux: [IDA_HOME]/bin/server start [SERVER_NAME] 
 
 
-- Windows: [Keter_HOME]\bin\server.bat start [SERVER_NAME]   
+- Windows: [IDA_HOME]\bin\server.bat start [SERVER_NAME]   
 
 
 ##	Stopping your environment
@@ -48,10 +48,10 @@ Start the WebSphere Liberty server by calling the following command:
 ###	Stop WebSphere Liberty
 Stop the WebSphere Liberty server by calling the following command:
 
-- Linux: [Keter_HOME]/bin/server stop [SERVER_NAME] 
+- Linux: [IDA_HOME]/bin/server stop [SERVER_NAME] 
 
 
-- Windows: [Keter_HOME]\bin\server.bat stop [SERVER_NAME]   
+- Windows: [IDA_HOME]\bin\server.bat stop [SERVER_NAME]   
 
 ###	Stop Selenium Node
 Stop the Selenium Node by terminating the corresponding java process.

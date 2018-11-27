@@ -21,7 +21,7 @@ order: 1
 * [Open Liberty 18.0.0.3](https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2018-09-05_2337/openliberty-18.0.0.3.zip) or other Application server
 * [IBM® Db2](https://www.ibm.com/analytics/us/en/db2/) 
 or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)  
-* [Selenium v3.14+](https://sdc-china.github.io/keter-doc/administration/administration-selenium-hub-configuration.html)
+* [Selenium v3.14+](https://sdc-china.github.io/IDA-doc/administration/administration-selenium-hub-configuration.html)
 
 ### Optional  
 
@@ -41,7 +41,7 @@ Extract the IDA Installation archive file to a specific location. The IDA archiv
 
 *  **build** : contains IDA war file that needs to be deployed in Open Liberty.
 *  **conf** : contains properties file.
-*  **lib** : contains the required Java library for Keter packaging and setup.  
+*  **lib** : contains the required Java library for IDA packaging and setup.  
 *  **sql** : contains the SQL files to create  database and tables.
 *  **toolkit** : contains a required Toolkit TWX file.
 *  **workspace** : contains the Checkstyle rule projects, which is builded on IBM Operational Decision Manager.

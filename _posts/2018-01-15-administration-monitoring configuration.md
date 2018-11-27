@@ -8,14 +8,14 @@ order: 20
 
 ### About this task
 
-In this task, you will integration BPM DEF with ActiveMQ embedded in Keter, so that Keter monitor can receive BPM performance data and present as chart to Keter users.
+In this task, you will integration BPM DEF with ActiveMQ embedded in IDA, so that IDA monitor can receive BPM performance data and present as chart to IDA users.
 
 ### Prerequisite
-To integrate BPM DEF with with ActiveMQ embedded in Keter,  the version of IBM BPM should be **8.6 CF2017.12** or above.
+To integrate BPM DEF with with ActiveMQ embedded in IDA,  the version of IBM BPM should be **8.6 CF2017.12** or above.
 
-### Integrate BPM with Keter
+### Integrate BPM with IDA
 
-  1. Copy below three jar files from  Keter release  **lib** folder to **%BPM_HOME%/lib/ext** folder. 
+  1. Copy below three jar files from  IDA release  **lib** folder to **%BPM_HOME%/lib/ext** folder. 
   
      ![][op_def_mq_lib] 
   
@@ -28,7 +28,7 @@ To integrate BPM DEF with with ActiveMQ embedded in Keter,  the version of IBM B
      External initial context factory	|org.apache.activemq.jndi.ActiveMQInitialContextFactory
      External provider URL           |tcp://mqhost:61616
    
-     **Please replace mqhost with the actual IP address where Keter is deployed.**
+     **Please replace mqhost with the actual IP address where IDA is deployed.**
   
        ![][op_def_mq_provider] 
   

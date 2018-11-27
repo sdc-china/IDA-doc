@@ -6,13 +6,13 @@ date: 2018-01-05 15:17:55
 order: 1
 ---
 
-Keter enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support BPM application test.
+IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support BPM application test.
 
 ### Pre-requisites
-Before you start the tutorial, you need to setup below configurations with super account ("keterAdmin"/"keterAdmin").
+Before you start the tutorial, you need to setup below configurations with super account ("idaAdmin"/"idaAdmin").
 
 [Users management][1]  
-You need to setup user account, permission for the Keter login credentials.
+You need to setup user account, permission for the IDA login credentials.
 
 [BPM configuration][2]   
 You need to setup BPM server, BPM account for the BPM server. 

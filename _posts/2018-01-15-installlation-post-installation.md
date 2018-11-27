@@ -10,7 +10,7 @@ order: 6
 
 ### Selenium Grid
 
-Keter integrates with remote testing automation framework based on Selenium Grid.
+IDA integrates with remote testing automation framework based on Selenium Grid.
 
 ##### Notes
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
@@ -42,21 +42,21 @@ The followingThe below link is shows a step-by-step introduction to using the of
 
 [How to get started selenium hub and node](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Hub-and-Nodes)
 
-### Install Keter Toolkit
-The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the Keter Toolkit.
+### Install IDA Toolkit
+The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
 
-1. Import the Keter_Toolkit - 8.6.0_v1.0.twx from Keter toolkit folder into the proces center.
-2. Add the keter toolkit as a this toolkit dependency for within your process application.
-3. Right click the "Keter Utility" service flow and copy the item to your process app.  
+1. Import the IDA_Toolkit - 8.6.0_v1.0.twx from IDA toolkit folder into the proces center.
+2. Add the IDA toolkit as a this toolkit dependency for within your process application.
+3. Right click the "IDA Utility" service flow and copy the item to your process app.  
 
    ![][toolkit]
 4. Make sure the service is installed in your process app.  
    ![][service]
    
-### Install Keter Plug-in
+### Install IDA Plug-in
 
 #### Chrome
-- Open the url <a href="https://chrome.google.com/webstore/search/keter" target="_blank">https://chrome.google.com/webstore/search/keter</a>
+- Open the url <a href="https://chrome.google.com/webstore/search/IDA" target="_blank">https://chrome.google.com/webstore/search/IDA</a>
 - Click "Add to Chrome" button to install plug-in
 
 #### Firefox
@@ -66,25 +66,25 @@ The testing capability can only start exposed Business Process, Human Services a
 
 **Plug-in Configuration**
 
-If you want to use the checkstyle and codereivew feature on web PD, then you need to set the Keter url and user credentials for the plug-in options. 
-the Keter URL: https://9.30.255.220:9443/keter   
-the username: the Keter login username 
-the password: the Keter login password.   
+If you want to use the checkstyle and codereivew feature on web PD, then you need to set the IDA url and user credentials for the plug-in options. 
+the IDA URL: https://9.30.255.220:9443/IDA   
+the username: the IDA login username 
+the password: the IDA login password.   
 
-   ![][keterOption]
+   ![][IDAOption]
 
 
 [toolkit]: ../images/install/toolkit.png 
 [service]: ../images/install/service.png 
-[keter]: ../images/install/keter.png 
+[IDA]: ../images/install/IDA.png 
 [firefox]: ../images/install/firefox.png
 [seleniumGrid]: ../images/install/seleniumGrid.png
 [webDriver]: ../images/install/webdriver.png
-[keterOption]: ../images/install/keterOption.png
+[IDAOption]: ../images/install/IDAOption.png
 
 ### Self-Signed SSL Certificates Installation
 
-The Keter recorder plugin can't support website with self sign certification by default. In this case, a warning like this:
+The IDA recorder plugin can't support website with self sign certification by default. In this case, a warning like this:
    
 ![][error]
    
@@ -139,4 +139,4 @@ Chrome browsers can save your data for a short time, and the warning page will n
 
 ### Monitoring configuration
 
-You could refer to [Monitoring configuration](../administration/administration_monitoring configuration.html) to enable monitoring feature of Keter.
+You could refer to [Monitoring configuration](../administration/administration_monitoring configuration.html) to enable monitoring feature of IDA.

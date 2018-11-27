@@ -6,12 +6,12 @@ date: 2018-01-05 15:17:55
 order: 1
 ---
 
-Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily test projects on PS side.Here we assume bpm server ip is 
+IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily test projects on PS side.Here we assume bpm server ip is 
 192.168.0.10
 
 ### Create SSH Key
 
-1. Login into the keter server and create the key pair on the Keter machine. 
+1. Login into the IDA server and create the key pair on the IDA machine. 
 
     ```  
      $ssh-keygen -t rsa
@@ -66,7 +66,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
 
      ![][PrivateKeyGen]   
    
-   d. Click Save private key button, save as keter.ppk .   
+   d. Click Save private key button, save as IDA.ppk .   
    e. Open putty.exe, For example enter PC IP address 192.168.0.10     
 
      ![][putty]     
@@ -92,7 +92,7 @@ Keter pipeline allow you deploy your snapshot from PC to PS.Testers can easily t
 
  **Known Limitions:**     
      
- Keter machine,PC Server,PS server should be linux server.  
+ IDA machine,PC Server,PS server should be linux server.  
 
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
