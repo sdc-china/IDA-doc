@@ -3,7 +3,7 @@ layout: page
 title: "Javascript API"
 category: references
 date: 2018-11-15 15:17:55
-order: 5
+order: 3
 ---
 
 ## OOTB Javascript API
