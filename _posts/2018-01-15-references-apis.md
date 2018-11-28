@@ -32,14 +32,14 @@ ___
 |----------------|------------|--------------|
 | `pipelineId`   | yes          | Pipeline ID. <br>You could get the pipeline ID from the URL path of pipeline dashboard page. |
 | `userToken`   | yes          | User token. <br>You could get the token from user profile page.|
-| `snapshotAcronym`   | no          | Snapshot acronym name |
+| `snapshotAcronym`   | no          | BPM snapshot acronym name. <br>If it's set, pipeline build will bypass the Snapshot step, and the Test/Checkstyle/Deployment steps will use this snapshot. |
 
 
 #### **Example:**
 
 **Request**
 
-	curl -X POST http://<SERVER>/keter/rest/v1/pipeline/build?pipelineId=1 --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+	curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineId=1 --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -69,14 +69,14 @@ ___
 |----------------|------------|--------------|
 | `pipelineName`   | yes          | Pipeline name. |
 | `userToken`   | yes          | User token. <br>You could get the token from user profile page. |
-| `snapshotAcronym`   | no          | Snapshot acronym name |
+| `snapshotAcronym`   | no     | BPM snapshot acronym name. <br>If it's set, pipeline build will bypass the Snapshot step, and the Test/Checkstyle/Deployment steps will use this snapshot. |
 
 
 #### **Example:**
 
 **Request**
 
-    curl -X POST http://<SERVER>/keter/rest/v1/pipeline/build?pipelineName=pipeline%20sample --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+    curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineName=pipeline%20sample --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -111,13 +111,13 @@ ___
 
 **Request**
 
-    curl http://<SERVER>/keter/rest/v1/builds/1314
+    curl http://<SERVER>/ida/rest/v1/builds/1314
 
 
 **Response**
 ``` json
 {
-    "report": "http://<SERVER>/keter/rest/v1/pipelines/1/builds/1314",
+    "report": "http://<SERVER>/ida/rest/v1/pipelines/1/builds/1314",
     "buildId": 1314,
     "status": "RUNNING"
 }
