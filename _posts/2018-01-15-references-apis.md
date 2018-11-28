@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "APIs"
+title: "REST APIs"
 category: references
 date: 2018-11-15 15:17:55
 order: 8
