@@ -10,8 +10,8 @@ IDA REST API reference.
 
 ### Pipeline
 
-- **[<code>POST /rest/v1/pipelines/:pipelineId/build</code>  Trigger build by ID](#trigger-build-by-id)**
-- **[<code>POST /rest/v1/pipelines/:pipelineName/orgs/:orgName/build</code>  Trigger build by name](#trigger-pipeline-build-by-name)**
+- **[<code>POST /rest/v1/pipeline/build?pipelineId=:id</code>  Trigger build by ID](#trigger-build-by-id)**
+- **[<code>POST /rest/v1/pipeline/build?pipelineName=:name</code>  Trigger build by name](#trigger-pipeline-build-by-name)**
 - **[<code>GET /rest/v1/builds/:buildId</code>  Get build status](#get-build-status)**
 
 ### **Trigger build by id**
@@ -20,7 +20,7 @@ ___
 #### **URL:** 
 
 ```
-/rest/v1/pipelines/:pipelineId/build
+/rest/v1/pipeline/build?pipelineId=:id
 ```
 
 #### **Method:**  ```POST```
@@ -39,7 +39,7 @@ ___
 
 **Request**
 
-	curl -X POST http://<SERVER>/keter/rest/v1/pipelines/1/build --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+	curl -X POST http://<SERVER>/keter/rest/v1/pipeline/build?pipelineId=1 --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -57,7 +57,7 @@ ___
 #### **URL:** 
 
 ```
-/rest/v1/pipelines/:pipelineName/orgs/:orgName/build
+/rest/v1/pipeline/build?pipelineName=:name
 ```
 
 #### **Method:**  ```POST```
@@ -67,7 +67,6 @@ ___
 
 | Name | Required                        | Description        |
 |----------------|------------|--------------|
-| `orgName`   | yes          | Orgnization name. <br>You could get the orgnization name from user management page. |
 | `pipelineName`   | yes          | Pipeline name. |
 | `userToken`   | yes          | User token. <br>You could get the token from user profile page. |
 | `snapshotAcronym`   | no          | Snapshot acronym name |
@@ -77,14 +76,13 @@ ___
 
 **Request**
 
-    curl -X POST http://<SERVER>/keter/rest/v1/pipelines/pipeline%20sample/orgs/SDC/build --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+    curl -X POST http://<SERVER>/keter/rest/v1/pipeline/build?pipelineName=pipeline%20sample --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
 ``` json
 {
     "pipelineName": "pipeline sample",
-    "organizationName": "SDC",
     "buildId": 1315,
     "status": "RUNNING"
 }
