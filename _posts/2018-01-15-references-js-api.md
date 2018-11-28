@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Javascript API Reference"
+title: "Javascript API"
 category: references
 date: 2018-11-15 15:17:55
 order: 7
