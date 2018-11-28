@@ -3,7 +3,7 @@ layout: page
 title: "Migrating and updating IDA Application"
 category: references
 date: 2018-11-06 15:17:55
-order: 6
+order: 4
 ---
 
 ### Preparing your migration
