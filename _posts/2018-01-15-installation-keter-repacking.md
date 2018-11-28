@@ -19,7 +19,7 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **spring.datasource.password** : Database connection password  
 *  **spring.datasource.url** : Database connection URL
 *  **server.host** :  IDA server IP or host name
-*  **server.context-path** : default as  "/IDA"  
+*  **server.context-path** : default as  "/ida"  
 *  **http.port** : Liberty http port defined in the server.xml
 *  **https.port** : Liberty https port defined in the server.xml
 *  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc
