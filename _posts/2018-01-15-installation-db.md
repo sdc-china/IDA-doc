@@ -46,7 +46,7 @@ You might need to change **data-mysql.sql** script for the your organization nam
 ``` 
 INSERT INTO organization (company_name, active) VALUES ('IDA', true);
 INSERT INTO user (user_name, password, role, active, organization_id) 
-VALUES ('idaAdmin', '12d9f16eff974ae7730525b0dda228e2', 'ADMIN', true, (SELECT id FROM organization where company_name = 'IDA'));
+VALUES ('idaAdmin', 'b1d2e11b343783a14f6f8362b294bb22', 'ADMIN', true, (SELECT id FROM organization where company_name = 'IDA'));
 ```  
 **Download mysql Driver**  
 You can download JDBC for mysql version  from below link. We recommand you to use mysql-connector-java-5.1.44.jar since it is a tested verson.   
