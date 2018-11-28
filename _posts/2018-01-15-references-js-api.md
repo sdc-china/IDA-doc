@@ -14,8 +14,8 @@ order: 5
 | bta.util.getElementText | DOM Element |Get the DOM element text|  var text = bta.util.getElementText(textElement); |
 | bta.util.assertTrue | condition(boolean), message(string)|Asserts that a condition is true. If it isn't it throws an error with the given message. | bta.util.assertTrue(true, "The condition is not true!"); |
 | bta.util.assertFalse| condition(booelan), message(string)| Asserts that a condition is false. If it isn't it throws an error with the given message.|  bta.util.assertFalse(false, "The condition is not false!"); |
-| bta.util.assertEquals | expected(string), actual(string), message(string) |Asserts that two objects are equal. If they are not, an error is thrown with the given message.|bta.util.assertEquals("The expected value", "The actual value", "The values aren't equal"); |
-| bta.util.throwError (as know as "bta.util.assertFail") | message(string), retry(boolean, default is true) |Throw error with the given message|  bta.util.throwError("error message", true); |
+| bta.util.assertEquals | expected(string), actual(string), message(string) |Asserts that two objects are equal. If they are not, an error is thrown with the given message.|bta.util.assertEquals("The expected value", "The actual value", "error message"); |
+| bta.util.throwError  | message(string), retry(boolean, default is true) |Throw error with the given message|  bta.util.throwError("error message", true); |
 
 **Notes**    
 Beside these OOTB JS API, user can also use standard BPM coach view JS API when writing the custom JS. e.g 
