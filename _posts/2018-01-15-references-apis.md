@@ -39,7 +39,7 @@ ___
 
 **Request**
 
-	curl -X POST http://<SERVER>/keter/rest/v1/pipeline/build?pipelineId=1 --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+	curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineId=1 --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -76,7 +76,7 @@ ___
 
 **Request**
 
-    curl -X POST http://<SERVER>/keter/rest/v1/pipeline/build?pipelineName=pipeline%20sample --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+    curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineName=pipeline%20sample --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -111,13 +111,13 @@ ___
 
 **Request**
 
-    curl http://<SERVER>/keter/rest/v1/builds/1314
+    curl http://<SERVER>/ida/rest/v1/builds/1314
 
 
 **Response**
 ``` json
 {
-    "report": "http://<SERVER>/keter/rest/v1/pipelines/1/builds/1314",
+    "report": "http://<SERVER>/ida/rest/v1/pipelines/1/builds/1314",
     "buildId": 1314,
     "status": "RUNNING"
 }
