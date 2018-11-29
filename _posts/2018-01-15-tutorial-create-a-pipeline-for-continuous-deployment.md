@@ -18,18 +18,37 @@ IDA provides a build-incontinuous  integration  and deployment  pipeline orchest
   1. Click **Create Pipeline** button in pipeline page. Fill the values like below. Check the **unit test**, **Snapshot**, **Checkstyle** for the dev env configuration.
   
      ![][pipeline_define]  
+     
+  2. Click ![][pipeline_add_stage] button. Then fill **Create Stage** form like the screenshot and **Submit**. Select the latest snapshot, and the snapshot in the screenshot is the latest at the time the document was written.
   
- 2. Do steps configuration. 
-   
-     ![][pipeline_configuration]
+     ![][pipeline_create_stage]
+     
+     More details of the parameters in the table. See **[Create a pipeline for continuous deployment][2]**.
+  
+  3. Click ![][pipeline_add_stage] button shown below. 
+  
+     ![][pipeline_add_step]
+     
+     Fill in the form like below and **Submit**.
+     
+     ![][pipeline_create_test_step]
  
-    In the **Unit Test** tab, choose the **Hiring Sample** as your test project.
-    
-    In the **Snapshot** tab, choose the snapshot naming convention to "AppName_YYYYMMDD".
-    
-    In the **Checkstyle** tab, check the "Ignore Empty Documentation".
-    
-    In the **Email** tab, enter your email address for failure notification.
+  4. Repeat the step 3 to add **Snapshot** and **Checkstyle** step and fill out the forms according to the table below. The ![][pipeline_add_stage] button clicked is the one below the stage step.
+  
+     |    |Snapshot               | Checkstyle|
+     |----|---------------------- |-------------|
+     |Name |Snapshot               | Checkstyle|
+     |Type |Snapshot               | Checkstyle|
+     |Naming Pattern|{APP_ACRONYM}_{TRACK}_{yyyyMMddHHmmss}_{BUILD_ID}|N/A|
+     |Health Score Threshold|N/A   |20|
+     |Warnings Threshold|N/A|200|
+     |Ignore Empty Documentation|N/A| Check|
+     
+     Finally, the stage will like this.
+     
+     ![][pipeline_stages_tutorial]
+     
+  5. Click **Save** button.
 
 ###  Step 2: Run the pipeline
 
@@ -53,10 +72,16 @@ IDA provides a build-incontinuous  integration  and deployment  pipeline orchest
   **[<Previous][1]**
 
 [pipeline_define]: ../images/pipeline/pipeline_define.png
-[pipeline_configuration]: ../images/pipeline/pipeline_stepconfiguration.png
+[pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
+[pipeline_create_stage]: ../images/pipeline/pipeline_create_stage.png
+[pipeline_add_step]: ../images/pipeline/pipeline_add_step.png
+[pipeline_create_test_step]: ../images/pipeline/pipeline_create_test_step.png
+[pipeline_stages_tutorial]: ../images/pipeline/pipeline_stages_tutorial.png
+[pipeline_add_step_below_test]: ../images/pipeline/pipeline_add_step_below_test.png
 [pipeline_run]: ../images/pipeline/pipeline_build.png
 [pipeline_build]: ../images/pipeline/pipeline_build.png
 [pipeline_step]: ../images/pipeline/pipeline_stepdetail.png
 [pipeline_flow]: ../images/pipeline/pipeline_flow.png
 [Details of the report]: ../pipeline/pipeline-report.html
 [1]: ../tutorial/tutorial-set-up-checkstyle.html
+[2]: ../pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html
