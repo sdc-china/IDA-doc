@@ -39,7 +39,7 @@ ___
 
 **Request**
 
-	curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineId=1 --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+	curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineId=1 -k --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -76,7 +76,7 @@ ___
 
 **Request**
 
-    curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineName=pipeline%20sample --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+    curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineName=pipeline%20sample -k --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
