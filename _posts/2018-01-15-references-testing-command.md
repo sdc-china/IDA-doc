@@ -55,7 +55,7 @@ The ![][command_params_error_icon] icon will appears below *Expected Output* inp
 ___
 
 
-  |   Field                          |Parameters                          | Description                                                                       |
+  |   Command Name                          |Parameters                          | Description                                                                       |
   | -------------------------------- |-----------------------------------------------------------------------------------|                                          
   | loginPortal                      |Assignee: select a user defined in BPM Configuration.|Login into BPM portal. As a result BPM Portal page is opened.                                                                   | 
   | loginBPMoC                  	 |Assignee: select a user defined in BPM Configuration.|  Login into BPM on cloud.As a result BPM on cloud page is opened.  
@@ -103,7 +103,7 @@ ___
  
 ___
 
-  |   Field                                 | Parameters                                |Description                                                        |
+  |   Command Name                               | Parameters                                |Description                                                        |
   | --------------------------------------- |------------------------------------------------------------------ ------- ------- ------- - ------- -------  |                                          
   | assertProcessInstanceStatus             |Instance Status: expected status of the current process instance.|Check current process instance status. <br>Possible values: <br>*Active*<br>*Completed*<br>*Failed*<br>*Terminated*<br>*Suspended*|                                                         
   | assertProcessInstanceData               |Expected Value: JSON object, expected value of the data.<br>**Notes:** <br>  Before adding this step, run the test case and look at the report. In the **Process Instance** section, click on the **click to show full data** link. <br>![][command_instance_data_template]<br>Copy the shown JSON into the **Expected Value** as data template. Then change the value as you need. If your data has auto generated fields, like current dates, instance ids or some other unique identifiers, they have to be removed from the JSON.| Assert the data of current process instance. Can only be used in a context of process instance execution.|  
@@ -146,7 +146,7 @@ ___
 
 ___
    
-  |   Field                | Parameters                          | Description                       |
+  |   Command Name         | Parameters                          | Description                       |
   | ---------------------- |-------------------------------------------------------------------------|                                
   | bpmFileDropzone        | Value: the value of the BPM file.<br>Control ID: the control id of BPM file drop zone.<br>Default value: the value of default. |  BPM file drop zone.   |  
   |bpmFileUploader         | Value: the value of the BPM file.<br>Control ID: the control id of BPM file that needs to be Uploaded. <br>Default value: the value of default. | BPM file uploader.|
@@ -201,7 +201,7 @@ ___
 ___
   
 
-  |   Field                | Parameters                          | Description                                                             |
+  |   Command Name         | Parameters                          | Description                                                             |
   | ---------------------- |-------------------------------------------------------------------------|                                
   | Buttons          | Texts: texts of buttons that you want to render.<br>*e.g:*<br>![][command_UIAssert_buttons]<br>If you want to check that all the buttons are rendered in this form, you can fill like this:<br>``Save``<br>``Cancel``<br>**Notes:** texts are separated by the line break.<br>Expected Visibility: the visibility of the control. Select from drop down. *EDITABLE*, *READONLY,* and *HIDDEN*.| Check the buttons are rendered or not.|
   | assertCheckbox         |Checked Labels: labels of checkboxs that are expected to be checked.<br>*e.g:* <br>![][command_UIAssert_checkbox]<br>To verify the options in this page, fill in like this: <br>``Create Position Request CSHS``<br>``GM Approval CSHS``<br>Expected Options: labels of checkboxs that are expected to be rendered. <br>*e.g:* If you want to check that all the checkbox options are rendered in the figure above, you can fill in like this:<br>``Create Position Request CSHS``<br>``Find Candidates CSHS``<br>``GM Approval CSHS``<br>**Notes:** labels are separated by the line break. |Assert the checkboxs are checked and the options of all checkboxs  are rendered or not.|  
@@ -236,7 +236,7 @@ ___
 
 
 
-  |   Field                | Parameters                          | Description                                                             |
+  |   Command Name        | Parameters                          | Description                                                             |
   | ---------------------- |-------------------------------------------------------------------------|                                          
   | addContext             |   Key: name of key.<br>Value: name of value. | Add a key-value pair to list of context.|
   | dateString             |   Key: key for save data string.<br>Days: the number of days from the current date that you want to convert to a string. Negative number of days means before today, while positive number of days means after today. <br>*e.g:* **-1** means generating string of the date of yesterday.<br>Format: Format of date.|Generate date string before/after number of days of today. If the key is not specified, then the default key is "DATE_STRING". You can use the date string by ${context.DATE_STRING}.|   
