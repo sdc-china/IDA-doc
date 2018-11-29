@@ -39,7 +39,7 @@ IDA provides a build-incontinuous  integration  and deployment  pipeline orchest
      |----|---------------------- |-------------|
      |Name |Snapshot               | Checkstyle|
      |Type |Snapshot               | Checkstyle|
-     |Naming Pattern|{APP_ACRONYM}_{TRACK}_{yyyyMMddHHmmss}_{BUILD_ID}|N/A|
+     |Naming Pattern|{MAJOR_MINOR.PATCH}-{APP_ACRONYM}{TRACK}{yyyyMMddHHmmss}|N/A|
      |Health Score Threshold|N/A   |20|
      |Warnings Threshold|N/A|200|
      |Ignore Empty Documentation|N/A| Check|
