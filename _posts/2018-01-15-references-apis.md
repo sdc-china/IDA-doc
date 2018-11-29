@@ -123,3 +123,17 @@ ___
 }
 ```
 
+
+### Response Status
+Each response will be returned with one of the following status:
+
+#### **Build Status:**
+* `RUNNING` The pipeline build is running
+* `FAILED` There was a problem with pipeline build (step failed, etc.)
+* `SUCCESS` The pipeline build was successful
+
+#### **Other Status:**
+* `unauthorized` The token provided do not have permission to access the requested resource
+* `pipeline not found` An attempt was made to access a pipeline that does not exist
+* `build not found` An attempt was made to access a build that does not exist
+
