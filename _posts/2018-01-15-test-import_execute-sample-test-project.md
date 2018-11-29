@@ -33,17 +33,19 @@ order: 6
   
 ###  Execute sample a test project
 
-  1. Click ![][tutorial_case_run_button] button on the right of project name in project dashboard.
+  1. Select all the test cases in the dashboard and click **Run** button.
   
-      The test result and basic information of hiring sample project can be viewed in project dashboard.
+     ![][test_import_run]
   
-      ![][test_import_project_info]
+     The test result and basic information of hiring sample project can be viewed in project dashboard.
+  
+     ![][test_import_project_info]
   
   2. You can see report of a test case by clicking case name ,then clicking **report**.[More details.][3]
   
 [test_import_form]: ../images/test/test_import_form.PNG
 [test_import_project_info]: ../images/test/test_import_project_info.PNG
-[tutorial_case_run_button]: ../images/tutorial/tutorial_case_run_button.PNG
+[test_import_run]: ../images/test/test_import_run.png
 [test_import_left_side_bar]: ../images/test/test_import_left_side_bar.PNG
 [test_hiring_sample_project]: ../images/test/test_hiring_sample_project.PNG
 [1]: ../administration/administration-bpm-configuration.html
