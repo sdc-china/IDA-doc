@@ -31,7 +31,7 @@ order: 6
   
        ![][test_import_left_side_bar]
   
-###  Execute sample a test project
+###  Execute a sample test project
 
   1. Select all the test cases in the dashboard and click **Run** button.
   
