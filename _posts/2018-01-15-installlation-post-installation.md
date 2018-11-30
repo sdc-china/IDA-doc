@@ -45,7 +45,7 @@ The followingThe below link is shows a step-by-step introduction to using the of
 ### Install IDA Toolkit
 The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
 
-1. Import the IDA_Toolkit - 8.6.0_v1.0.twx from IDA toolkit folder into the proces center.
+1. Import the IDA_Toolkit - 8.6.0_v1.1.twx from IDA toolkit folder into the proces center.
 2. Add the IDA toolkit as a this toolkit dependency for within your process application.
 3. Right click the "IDA Utility" service flow and copy the item to your process app.  
 
