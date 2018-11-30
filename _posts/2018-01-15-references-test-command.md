@@ -163,8 +163,8 @@ ___
   | select                 |Refer to common statements.              |  Set the value of select (drop down) control. Value is a json list of selected display values for this Select or Multi Select CV. <br>*e.g:*``["Selected value1","Selected value2"] ``| 
   | selectWindow           |Info: window information.                 |    Select window by window info.|                                      
   | text                   |Refer to common statements.                   |Set the value of any control, which UI accepts textual input. Example: input text CV, Integer CV, Date Picker. This event is captured when the control loses focus. So it is possible for some controls like Date Picker to record 2 steps. One for empty value and the other for actual value. It is because the first empty data is captured when the mouse focus moves from control to the Data select popup. Users can remove the first recorded case step or just keep them as-is.|    
-  | waitElement            |Type: select the element type from drop down. *Visible*, *Hidden*, *Enabled* and *Disabled*.<br>Timeout: the maximum time that wait for the element. If the element is not fetched during this time, a timeout exception is thrown.| Set the timeout for waiting on an element.|
-  | waitTextPresent        |Text: t that waits for displaying on the page.<br>Timeout: the maximum time that wait for the text. If the text is not appearing during this time, a timeout exception is thrown.| Set the timeout for waiting on displaying a text.|
+  | waitElement            |Type: select the element type from drop down. *Visible*, *Hidden*, *Enabled* and *Disabled*.<br>Timeout: the maximum time that wait for the element.| Wait for an element until timeout|
+  | waitTextPresent        |Text: t that waits for displaying on the page.<br>Timeout: the maximum time that wait for the text. | Wait for displaying a text until timeout.|
   
 ___
      
