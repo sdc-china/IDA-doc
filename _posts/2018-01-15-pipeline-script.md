@@ -42,18 +42,21 @@ order: 3
   
 ### Script samples
 **Call RESTFul service**
+  <br>
+  <br>
    You can use **curl** to call a RESTful service or Web Service in Script. For example, below script calls a BPM REST API by curl.
   
   *curl -H "Accept:application/json" -H "Authorization:Basic YWRtaW46UGFzc3cwcmQ=" -k https://9.30.160.68:9444/rest/bpm/wle/v1/systems*
   <br>
   <br>
   **Call Web Service** 
+  <br>
+  <br>
   You can also use **curl** to call a Web Service.  For example, you can call a Web Service to send email notification during pipeline creation. Assume the Web Service is based on SOAP 1.2 and its WSDL URL is: http://enact1.fyre.ibm.com:9081/teamworks/webservices/HSS/SendEmailWS.tws?wsdl, you can use below curl script to call it.
 
 *curl -H "Content-Type: application/soap+xml;charset=utf-8" -d "<soap:Envelope xmlns:soap='http://www.w3.org/2003/05/soap-envelope' xmlns:sen='https://enact1.fyre.ibm.com:9444/teamworks/webservices/HSS/SendEmailWS.tws'><soap:Header/><soap:Body><sen:send><sen:subject>${PIPELINE_NAME} result</sen:subject><sen:content>Please refer to ${BUILD_REPORT_URL}</sen:content><sen:to>ida@cn.ibm.com</sen:to><sen:cc>ida@cn.ibm.com</sen:cc></sen:send></soap:Body></soap:Envelope>" http://enact1.fyre.ibm.com:9081/teamworks/webservices/HSS/SendEmailWS.tws*
 ![][pipeline_email_script]
 
-   <br>
   <br> 
   **Call wsadmin command**
    You can execute a wsadmin command in Script. The wsadmin command is running against the BPM server associated to the Stage BPM configuration. For example,
