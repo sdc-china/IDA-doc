@@ -18,7 +18,6 @@ order: 1
      | --------------|---------------------------                                              | 
      | User Name     | Use email address as user name                                          | 
      | Role          | Only admin role user can configure settings                  |
-     | Active        | If false, user is deactivated and can't login into the system  | 
                
 
 ### Edit new user 
