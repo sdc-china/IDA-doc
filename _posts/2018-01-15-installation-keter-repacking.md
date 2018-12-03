@@ -22,9 +22,9 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **server.context-path** : default as  "/ida"  
 *  **http.port** : Liberty http port defined in the server.xml
 *  **https.port** : Liberty https port defined in the server.xml
-*  **engineConfig.connectionTimeout** :  set page load timeout       
-*  **engineConfig.waitTimeout** :  waitTextPresent and waitElement timeout value      
-*  **engineConfig.retryTimes** :  If assertion failed repeat this command for defined times. 
+*  **engineConfig.connectionTimeout** :  page load timeout
+*  **engineConfig.waitTimeout** :  waitTextPresent and waitElement command default timeout value      
+*  **engineConfig.retryTimes** :  retry the failed command by the given times.
 *  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc
 *  **smtp.host** ：SMTP host    
 *  **smtp.port** ：SMTP port    
