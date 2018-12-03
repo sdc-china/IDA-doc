@@ -53,12 +53,12 @@ spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
 
  
 **#checkstyle.properties (For BPM Checkstyle purpose)**
-	
+*  **checkstyle.engine**: The checkstyle engine options can be EMBEDDED and ODM, If it's ODM, then you need configure the following ODM server and rules configuration, otherwise you can ignore the following the ODM configuration.
 *  **resUser** : rule execution server username  
 *  **resPassword** : rule execution server password  
 *  **resUrl** : rule execution server url  
 *  **resPort** : rule execution server port 
-*  **ruleExecutionMode**: rule execution mode, there are 2 choices: **0**  Ruleset executed using local rule engine; **2**  Ruleset executed by invoking REST rule service.
+*  **restUrl** : The checkstyle rule ODM REST url
 
 It is only needed when you want to have BPM Checkstyle feature. If you don't need it, you can leave them as-is.
 
