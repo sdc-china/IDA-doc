@@ -23,7 +23,7 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **http.port** : Liberty http port defined in the server.xml
 *  **https.port** : Liberty https port defined in the server.xml
 *  **engineConfig.connectionTimeout** :  set page load timeout       
-*  **engineConfig.waitTimeout** :  wait element visibility timeout        
+*  **engineConfig.waitTimeout** :  waitTextPresent and waitElement timeout value      
 *  **engineConfig.retryTimes** :  If assertion failed repeat this command for defined times. 
 *  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc
 *  **smtp.host** ：SMTP host    
