@@ -83,6 +83,6 @@ If you want to use DB2 as IDA database, you can uncomment DB2 property configura
 
 #### Repacking IDA-web with configuration
 
-Once all the properties in [IDA_HOME]/conf/ida.properties file have been update you can then re-package the [IDA_HOME]/build/**IDA-web.war** file.  
+Once all the properties in [IDA_HOME]/conf/ida.properties file have been update you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
 
 Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the environment variable for JAVA_HOME and ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set and your path contains the [JAVA_HOME]/bin diectory you can then execute the package script.
