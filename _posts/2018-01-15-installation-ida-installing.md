@@ -74,7 +74,7 @@ If the server is created successfully, you receive message: Server server_name c
                   
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	<application type="war" id="IDA" name="IDA" location="${server.config.dir}/apps/IDA-web.war">
+	<application type="war" id="IDA" name="IDA" location="${server.config.dir}/apps/ida-web.war">
 		<classloader delegation="parentLast" />
     </application>
 	
@@ -85,7 +85,7 @@ If the server is created successfully, you receive message: Server server_name c
 
 * Copy **IDA-web.war** application into the /usr/servers/*yourservername*/apps directory.
 
-* Start Liberty server and visit the url like http://serverip:port/IDA (port is defined in the server.xml).
+* Start Liberty server and visit the url like http://serverip:port/ida (port is defined in the server.xml).
 
 For example:  
 In Liberty installation bin folder you can use below command to start the server.

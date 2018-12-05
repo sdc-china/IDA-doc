@@ -56,12 +56,12 @@ The testing capability can only start exposed Business Process, Human Services a
 ### Install IDA Plug-in
 
 #### Chrome
-- Open the url <a href="https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp" target="_blank">https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp</a>
+- Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in
 
 #### Firefox
-- Download firefox plugin [ida-1.23-fx.xpi](../plugins/ida-1.23-fx.xpi)
-- Drag the "ida-1.23-fx.xpi" file into firefox window
+- Download firefox plugin [ida-1.24-fx.xpi](../plugins/ida-1.24-fx.xpi)
+- Drag the "ida-1.24-fx.xpi" file into firefox window
 - Click "Add" button
 
 **Plug-in Configuration**

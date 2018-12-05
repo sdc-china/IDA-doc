@@ -81,11 +81,7 @@ IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily tes
 1. Define the pipeline for deployment snapshot from PC to PS.
 
    ![][pipeline_pstops]
-   
-2. Choose the snapshot naming convention then save the pipeline.
-
-   ![][pipeline_snapshotnaming]
-  
+     
 3. Run the pipeline,you can check the pipeline build status.If sucessful,it means the snapshot is deployed from PC to PS side.
 
    ![][pipeline_pcdeployps]
@@ -97,7 +93,6 @@ IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily tes
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png
-[pipeline_snapshotnaming]: ../images/pipeline/pipeline_snapshotnaming.png
 [pipeline_pcdeployps]: ../images/pipeline/pipeline_pcdeployps.png
 [pipeline_servername]: ../images/pipeline/pipeline_serverName.png
 [puttyKeyGen]: ../images/pipeline/PuttyKeyGen.png
