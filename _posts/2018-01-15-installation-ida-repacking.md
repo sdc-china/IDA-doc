@@ -34,15 +34,14 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 
 **Notes** 
 If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
-You can use online web or tools to generated encrypted password.    
-https://www.devglan.com/online-tools/jasypt-online-encryption-decryption    
+You can use [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generated encrypted password.    
 
 ![][onlineencrypt]
 
 [onlineencrypt]: ../images/install/online.png
 
-Also you can use offline tool from jasypt offical site to generate.
-http://www.jasypt.org/download.html    
+Also you can use offline tool from [jasypt] (http://www.jasypt.org/download.html) offical site to generate.
+
 
 ![][offlineencrypt]
 
@@ -52,36 +51,29 @@ Once you get the encrypt password,you need to change spring.datasource.password 
 spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)     
 
  
-**#checkstyle.properties (For BPM Checkstyle purpose)**
-*  **checkstyle.engine**: The checkstyle engine options can be EMBEDDED and ODM, If it's ODM, then you need configure the following ODM server and rules configuration, otherwise you can ignore the following the ODM configuration.
-*  **resUser** : rule execution server username  
-*  **resPassword** : rule execution server password  
-*  **resUrl** : rule execution server url  
-*  **resPort** : rule execution server port 
-*  **restUrl** : The checkstyle rule ODM REST url
-
-It is only needed when you want to have BPM Checkstyle feature. If you don't need it, you can leave them as-is.
-
-Please note that to enable BPM Checkstyle feature, you need to have IBM ODM installed because the BPM Checkstyle feature is running against ODM rule engine. You need to locate the **jrules-engine.jar** in your ODM installation and copy it to **lib** folder, before executing **package.bat**.
+**#checkstyle.properties**
+*  **checkstyle.engine**: The checkstyle engine property can be EMBEDDED or ODM. By default, it's *EMBEDDED*. You need configure the following ODM server and rules configuration if you use ODM as checkstyle engine.
+- *  **resUser** : rule execution server username  
+- *  **resPassword** : rule execution server password  
+- *  **resUrl** : rule execution server url  
+- *  **resPort** : rule execution server port 
+- *  **restUrl** : The checkstyle rule ODM REST url
 
 **#monitoring.properties (For BPM Monitoring purpose)**
 	
 *  **event_type** : event types to be stored in IDA database  
 *  **track_serviceflow** : default as true  
 
-
-
 It is only needed when you want to configure monitoring[1] to have the monitoring feature. If you don't need it, you can leave them as-is.
 
-**Notes** 
-
-If you want to use DB2 as IDA database, you can uncomment DB2 property configuration and comment MySQL property configuration.
+#### Configure Database properties
+You can uncomment DB2 property configuration and comment MySQL property configuration.
 
 ![][db2config]
 
 [db2config]: ../images/install/db2configuration.png
 
-#### Repacking IDA-web with configuration
+### Repacking IDA-web with configuration
 
 Once all the properties in [IDA_HOME]/conf/ida.properties file have been update you can then re-package the [IDA_HOME]/build/**IDA-web.war** file.  
 
