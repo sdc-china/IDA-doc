@@ -34,13 +34,13 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 
 **Notes** 
 If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
-You can use [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generated encrypted password.    
+You can use [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generate encrypted password.    
 
 ![][onlineencrypt]
 
 [onlineencrypt]: ../images/install/online.png
 
-Also you can use offline tool from [jasypt] (http://www.jasypt.org/download.html) offical site to generate.
+Also you can use command line tool from [jasypt](http://www.jasypt.org/download.html) to generate.
 
 
 ![][offlineencrypt]
