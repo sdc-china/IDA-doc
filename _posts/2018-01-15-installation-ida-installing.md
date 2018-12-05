@@ -74,7 +74,7 @@ If the server is created successfully, you receive message: Server server_name c
                   
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	<application type="war" id="IDA" name="IDA" location="${server.config.dir}/apps/ida-web.war">
+	<application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
 		<classloader delegation="parentLast" />
     </application>
 	
