@@ -3,7 +3,7 @@ layout: page
 title: "Deploy snapshot from PC to PS"
 category: pipeline
 date: 2018-01-05 15:17:55
-order: 1
+order: 3
 ---
 
 IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily test projects on PS side.Here we assume bpm server ip is 

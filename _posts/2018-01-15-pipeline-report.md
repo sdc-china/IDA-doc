@@ -3,7 +3,7 @@ layout: page
 title: "Pipeline report"
 category: pipeline
 date: 2018-01-05 15:17:55
-order: 2
+order: 5
 ---
 ### Pipeline build summary
 

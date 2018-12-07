@@ -3,7 +3,7 @@ layout: page
 title: "Create a pipeline for continuous deployment"
 category: pipeline
 date: 2018-01-05 15:17:55
-order: 1
+order: 2
 ---
 
 ### Create a pipeline
