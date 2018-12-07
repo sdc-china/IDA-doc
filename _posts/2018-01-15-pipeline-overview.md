@@ -7,6 +7,6 @@ order: 1
 ---
 ### Pipeline overview
  You could easily define pipeline as figure below
-  ![][pipeline_overview]  
+![][pipeline_overview]  
 
-[pipeline_overview]: ../images/pipeline/pipeline_overview.PNG
+[pipeline_overview]: ../images/pipeline/pipeline_overview.png
