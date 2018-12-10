@@ -14,19 +14,22 @@ order: 4
 You can create a server from the command line.
 
 * Unzip the liberty installation package.Open a command line, then change directory to the wlp/bin directory.
-Where path_to_liberty is the location you installed Liberty on your operating system.
+Where path_to_liberty is the location you installed Liberty on your operating system.  
 
 ``` 
 cd path_to_liberty/wlp/bin
 ``` 
-* Run the following command to create a server. If you do not specify a server name, defaultServer is used.
-Where server_name is the name you want to give your server.
 
-  Windows  
+* Run the following command to create a server. If you do not specify a server name, defaultServer is used.
+Where server_name is the name you want to give your server.  
+
+*Windows*
+
 ``` 
 server create server_name  
 ``` 
-  Linux  
+*Linux*
+
 ``` 
 ./server create server_name  
 ``` 
