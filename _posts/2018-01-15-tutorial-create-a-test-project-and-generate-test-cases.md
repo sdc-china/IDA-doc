@@ -21,11 +21,6 @@ You need to setup BPM server, BPM account for the BPM server.
 You need to setup selenium node url for the remote testing.
 
 
-
-[1]: ../administration/administration-users-management.html
-[2]: ../administration/administration-bpm-configuration.html
-[3]: ../administration/administration-selenium-hub-configuration.html
-
 ### About this task
 
 In this task, you will create a new test project. After that you create test cases based on this test project.
@@ -74,13 +69,16 @@ To generate a process test case and a user interface test case:
 
       ![][tutorial_case_basic_info]
 
-**[<Previous ][1][\| Next>][2]**
+**[< Next>][4]**
   
 
 [tutorial_case_items_form]: ../images/tutorial/tutorial_case_items_form.PNG
 [tutorial_case_items_form2]: ../images/tutorial/tutorial_case_items_form2.PNG
 [tutorial_case_basic_info]: ../images/tutorial/tutorial_case_basic_info.PNG
-[1]: tutorial-configuration.html
-[2]: tutorial-run-record-and-replay-a-test-case.html
+
+[1]: ../administration/administration-users-management.html
+[2]: ../administration/administration-bpm-configuration.html
+[3]: ../administration/administration-selenium-hub-configuration.html
+[4]: tutorial-run-record-and-replay-a-test-case.html
 [tutorial_createproject]: ../images/tutorial/tuorial_project_create.PNG 
 [tutorial_project_info]: ../images/tutorial/tutorial_project_info.PNG
