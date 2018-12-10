@@ -42,6 +42,28 @@ To update IDA.war, take the following steps:
 5. Copy the new IDA.war into the wlp installation\usr\servers\default\apps folder.    
 6. Start the Liberty Server.  
 
+
+### Step 3: Update Keter 1.3.x to IDA 2.0.0(optional)
+
+If you want to migrate keter to to IDA version, take the following steps:     
+
+1. Open the server.xml of liberty and make sure keter-web.war is changed to ida-web.war and application id and name is also changed 
+to ida. If you have already setup keyStore for use,you can still use keyStore old password for that.           
+   
+
+```                     
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
+	<application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+		<classloader delegation="parentLast" />
+    </application>
+	
+	<keyStore id="defaultKeyStore" password="idaAdmin" />
+
+``` 
+2. Use IDA toolkit to replace Keter toolkit for the BPM.Both toolkit are compatible for usage.    
+3. Use latested chrome and fixfox plug-in.       
+
  **Notes**     
  Please not overwrite ida.properties from previous version since property values will change in some versions.   
 
