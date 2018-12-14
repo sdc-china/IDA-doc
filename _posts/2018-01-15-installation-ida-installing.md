@@ -39,7 +39,7 @@ If the server is created successfully, you receive message: Server server_name c
 	
 **Configure WAS Liberty**  
 
-* Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both **httpPort** and **httpsPort** are unique.
+* Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both **httpPort** and **httpsPort** are unique and not same with BPM server port.  
 
 ```    
  <!-- Enable features -->
