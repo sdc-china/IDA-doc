@@ -48,7 +48,7 @@ To update IDA.war, take the following steps:
 If you want to migrate keter to to IDA version, take the following steps:     
 
 1. Open the server.xml of liberty and make sure keter-web.war is changed to ida-web.war and application id and name is also changed 
-to ida. If you have already setup keyStore for use,you can still use keyStore old password for that.           
+to ida. If your liberty has setup keyStore password before,you don;t need to change defaultKeyStore password, just keep orignal one,otherwise you need to create a passowrd for the defaultKeyStore.            
    
 
 ```                     
@@ -61,7 +61,7 @@ to ida. If you have already setup keyStore for use,you can still use keyStore ol
 	<keyStore id="defaultKeyStore" password="idaAdmin" />
 
 ``` 
-2. Use IDA toolkit to replace Keter toolkit for the BPM.Both toolkit are compatible for usage.    
+2. Use IDA toolkit to replace Keter toolkit for the BPM.Both toolkit are compatible for usage.      
 3. Use latested chrome and fixfox plug-in.       
 
  **Notes**     
