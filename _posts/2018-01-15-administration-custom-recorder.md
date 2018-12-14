@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 8
 ---
 ### Overview
-  To support the various modern UI frameworks, we can extend the IDA recorder script. The page can be accessed by the menu **Administration -> Custom Recorder**.
+  To support the various modern UI frameworks, we can extend the IDA recorder script. The page can be accessed by the menu **Administration -> Custom Recorder**.Usually we use this feature to provide a hot fix to customer if record feature need to be enchanced.
 
 ![][administrator_default_script]
 
