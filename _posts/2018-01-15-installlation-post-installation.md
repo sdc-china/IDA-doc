@@ -21,88 +21,88 @@ IDA integrates with remote testing automation framework based on Selenium Grid.
 
 2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
 
-- [IE Driver](http://selenium-release.storage.googleapis.com/3.14/IEDriverServer_Win32_3.14.0.zip)
-- [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win64.zip)
-- [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz)
-- [Chrome Driver Win32](https://chromedriver.storage.googleapis.com/2.41/chromedriver_win32.zip)  
-- [Chrome Driver Linux64](https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip)    
-
+	- [IE Driver](http://selenium-release.storage.googleapis.com/3.14/IEDriverServer_Win32_3.14.0.zip)
+	- [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win64.zip)
+	- [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz)
+	- [Chrome Driver Win32](https://chromedriver.storage.googleapis.com/2.41/chromedriver_win32.zip)  
+	- [Chrome Driver Linux64](https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip) 
+   
 3. Start the Hub
 
-- Create hubconfig.json
-	```
-	{
-	  "port": 4444,
-	  "newSessionWaitTimeout": 10000,
-	  "servlets" : [],
-	  "withoutServlets": [],
-	  "custom": {},
-	  "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
-	  "registry": "org.openqa.grid.internal.DefaultGridRegistry",
-	  "throwOnCapabilityNotPresent": true,
-	  "cleanUpCycle": 5000,
-	  "role": "hub",
-	  "debug": false,
-	  "browserTimeout": 60,
-	  "timeout": 60
-	}
-	```
-- Run the command
-	```
-	java -jar selenium-server-standalone-3.14.0.jar -role hub -hubConfig hubconfig.json
-	```
+	- Create hubconfig.json
+		```
+		{
+		  "port": 4444,
+		  "newSessionWaitTimeout": 10000,
+		  "servlets" : [],
+		  "withoutServlets": [],
+		  "custom": {},
+		  "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+		  "registry": "org.openqa.grid.internal.DefaultGridRegistry",
+		  "throwOnCapabilityNotPresent": true,
+		  "cleanUpCycle": 5000,
+		  "role": "hub",
+		  "debug": false,
+		  "browserTimeout": 60,
+		  "timeout": 60
+		}
+		```
+	- Run the command
+		```
+		java -jar selenium-server-standalone-3.14.0.jar -role hub -hubConfig hubconfig.json
+		```
 
 4. Start the Node  
 
-- Create nodeconfig.json
-	```
-	{
-	  "capabilities":
-	  [
-	    {
-	      "browserName": "firefox",
-	      "marionette": true,
-	      "maxInstances": 5,
-	      "seleniumProtocol": "WebDriver",
-		  "version": 57
-	    },
-	    {
-	      "browserName": "chrome",
-	      "maxInstances": 5,
-	      "seleniumProtocol": "WebDriver",
-		  "version": 68
-	    },
-	    {
-	      "browserName": "internet explorer",
-	      "platform": "WINDOWS",
-	      "maxInstances": 1,
-	      "seleniumProtocol": "WebDriver",
-		  "version": 11
-	    }
-	  ],
-	  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-	  "maxSession": 5,
-	  "port": -1,
-	  "register": true,
-	  "registerCycle": 5000,
-	  "hub": "http://localhost:4444",
-	  "nodeStatusCheckTimeout": 5000,
-	  "nodePolling": 5000,
-	  "role": "node",
-	  "unregisterIfStillDownAfter": 60000,
-	  "downPollingLimit": 2,
-	  "debug": false,
-	  "servlets" : [],
-	  "withoutServlets": [],
-	  "custom": {},
-	  "browserTimeout": 60,
-	  "timeout": 60
-	}
-	```
-- Run the command
-	```
-	java -jar selenium-server-standalone-3.14.0.jar -role node -nodeConfig nodeconfig.json
-	```
+	- Create nodeconfig.json
+		```
+		{
+		  "capabilities":
+		  [
+		    {
+		      "browserName": "firefox",
+		      "marionette": true,
+		      "maxInstances": 5,
+		      "seleniumProtocol": "WebDriver",
+			  "version": 57
+		    },
+		    {
+		      "browserName": "chrome",
+		      "maxInstances": 5,
+		      "seleniumProtocol": "WebDriver",
+			  "version": 68
+		    },
+		    {
+		      "browserName": "internet explorer",
+		      "platform": "WINDOWS",
+		      "maxInstances": 1,
+		      "seleniumProtocol": "WebDriver",
+			  "version": 11
+		    }
+		  ],
+		  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+		  "maxSession": 5,
+		  "port": -1,
+		  "register": true,
+		  "registerCycle": 5000,
+		  "hub": "http://localhost:4444",
+		  "nodeStatusCheckTimeout": 5000,
+		  "nodePolling": 5000,
+		  "role": "node",
+		  "unregisterIfStillDownAfter": 60000,
+		  "downPollingLimit": 2,
+		  "debug": false,
+		  "servlets" : [],
+		  "withoutServlets": [],
+		  "custom": {},
+		  "browserTimeout": 60,
+		  "timeout": 60
+		}
+		```
+	- Run the command
+		```
+		java -jar selenium-server-standalone-3.14.0.jar -role node -nodeConfig nodeconfig.json
+		```
 
 **Docker installation**
 
