@@ -20,6 +20,7 @@ IDA integrates with remote testing automation framework based on Selenium Grid.
 1. Download [Selenium 3.14.0](https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar)  
 
 2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
+
 - [IE Driver](http://selenium-release.storage.googleapis.com/3.14/IEDriverServer_Win32_3.14.0.zip)
 - [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win64.zip)
 - [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz)
@@ -27,6 +28,7 @@ IDA integrates with remote testing automation framework based on Selenium Grid.
 - [Chrome Driver Linux64](https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip)    
 
 3. Start the Hub
+
 - Create hubconfig.json
 	```
 	{
