@@ -133,7 +133,7 @@ docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium
 docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox-debug:3.14.0-gallium 
 
 ``` 
-After that you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node  installation.    
+After that you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node  installation status.    
 
   ![][selenium_node]
 
