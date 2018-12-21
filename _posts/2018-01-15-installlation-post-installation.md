@@ -112,6 +112,31 @@ The followingThe below link is shows a step-by-step introduction to using the of
 
 [How to get started selenium hub and node](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Hub-and-Nodes)
 
+Below is our recommand way to install selenium-grid and selenium-hub for the docker version.We recommand you to install debug image version so you can visually see what the browser is doing you will want to run the debug variant of node or standalone images.
+
+``` 
+docker pull selenium/hub:3.14.0-gallium    
+docker pull selenium/node-firefox-debug:3.14.0-gallium 
+docker pull selenium/node-chrome-debug:3.14.0-gallium    
+
+
+docker network create grid
+docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.14.0-gallium    
+docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome-debug:3.14.0-gallium 
+docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox-debug:3.14.0-gallium 
+
+``` 
+You can do the below command mutiple times,it will create mutiple chrome/firefox node for the grid remote testing.   
+
+``` 
+docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome-debug:3.14.0-gallium 
+docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox-debug:3.14.0-gallium 
+
+``` 
+So you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node  installation.    
+
+  ![][selenium_node]
+
 ### Install IDA Toolkit
 The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
 
@@ -206,6 +231,7 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [success]: ../images/install/installation_self_signed_sertificates_success.png 
    [chrome_error]: ../images/install/installation_self_signed_sertificates_chrome_error.png
    [proceed]: ../images/install/installation_self_signed_sertificates_proceed.png
+   [selenium_node]: ../images/install/selenium_node.png
 
 ### Monitoring configuration
 
