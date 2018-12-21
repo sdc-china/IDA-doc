@@ -13,6 +13,8 @@ order: 6
 IDA integrates with remote testing automation framework based on Selenium Grid.
 
 ##### Notes
+
+Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
 **Local installation**
