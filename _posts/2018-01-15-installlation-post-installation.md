@@ -112,7 +112,7 @@ The followingThe below link is shows a step-by-step introduction to using the of
 
 [How to get started selenium hub and node](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Hub-and-Nodes)
 
-Below is our recommand way to install selenium-grid and selenium-hub for the docker version.We recommand you to install debug image version so you can visually see what the browser is doing you will want to run the debug variant of node or standalone images.
+You can follow below script to install Selenium Hub and Node on docker.We recommand you to install debug image version so you can visually see what the browser is doing.
 
 ``` 
 docker pull selenium/hub:3.14.0-gallium    
