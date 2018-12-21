@@ -126,14 +126,14 @@ docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium
 docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox-debug:3.14.0-gallium 
 
 ``` 
-You can do the below command mutiple times,it will create mutiple chrome/firefox node for the grid remote testing.   
+You can do the below command mutiple times,it will create mutiple chrome/firefox node for the grid remote testing. It can provide you to run the  selenium tesing parallel in the Grid.We recommand you to create above  5 node number for chrome/firefox each.   
 
 ``` 
 docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome-debug:3.14.0-gallium 
 docker run -d --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox-debug:3.14.0-gallium 
 
 ``` 
-So you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node  installation.    
+After that you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node  installation.    
 
   ![][selenium_node]
 
