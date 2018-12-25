@@ -137,90 +137,6 @@ After that you can open the browser http://dockerhostIP:4444/grid/console to che
 
   ![][selenium_node]
 
-### Install IDA Toolkit
-The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
-
-1. Import the IDA_Toolkit - 8.6.0_v1.1.twx from IDA toolkit folder into the proces center.
-2. Add the IDA toolkit as a this toolkit dependency for within your process application.
-3. Right click the "IDA Utility" service flow and copy the item to your process app.  
-
-   ![][toolkit]
-4. Make sure the service is installed in your process app.  
-   ![][service]
-   
-### Install IDA Plug-in
-
-#### Chrome
-- Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
-- Click "Add to Chrome" button to install plug-in
-
-#### Firefox
-- Download firefox plugin [ida-1.25-fx.xpi](../plugins/ida-1.25-fx.xpi)
-- Drag the "ida-1.25-fx.xpi" file into firefox window
-- Click "Add" button
-
-**Plug-in Configuration**
-
-If you want to use the checkstyle and codereivew feature on web PD, then you need to set the IDA url and user credentials for the plug-in options. 
-the IDA URL: https://9.30.255.220:9443/IDA   
-the username: the IDA login username 
-the password: the IDA login password.   
-
-   ![][IDAOption]
-
-
-[toolkit]: ../images/install/toolkit.png 
-[service]: ../images/install/service.png 
-[IDA]: ../images/install/IDA.png 
-[firefox]: ../images/install/firefox.png
-[seleniumGrid]: ../images/install/seleniumGrid.png
-[webDriver]: ../images/install/webdriver.png
-[IDAOption]: ../images/install/IDAOption.png
-
-### Self-Signed SSL Certificates Installation
-
-The IDA recorder plugin can't support website with self sign certification by default. In this case, a warning like this:
-   
-![][error]
-   
-   This warning will block the recording of test case. To resolve this problem, we need to make the browsers to accept self-signed certificate.    
-   
-#### FireFox - Add a Security Exception
-
-1. In FireFox, go to Tools -> Options.
-
-    ![][tool]
-
-2. Click the **Privaty & Security** tab,  then the **View Certificates** button.
-
-    ![][security_tab]
-    
-3. Go to the **Services** tab and press the **Add Exception** button.
-    
-    ![][servers_tab]
-    
-4.  Enter the host and port in **Add Security Exception** dialog, press  **Get Certificate** button, check the box near the bottom **Permanently store this exception** and press **Confirm Security Exception** .
-
-     ![][add_security]
-     
-    From this point on, FireFox won't show SSL-related errors. when visiting the website, it will like this:
-    
-    ![][success]
-    
-#### Chrome - Visit in unsafe mode
-
-Chrome browsers can save your data for a short time, and the warning page will not appear and block recording if you visit the testing website in unsafe mode before recording.
-
-1. Click **ADVANCE** in warning page.
-
-    ![][chrome_error]
-    
-2. Click **Proceed to 9.30.160.68(unsafe)**.
-
-    ![][proceed]
-     
-
-
 
    
    [error]: ../images/install/installation_self_signed_sertificates_error.png 
@@ -233,6 +149,6 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [proceed]: ../images/install/installation_self_signed_sertificates_proceed.png
    [selenium_node]: ../images/install/selenium_node.png
 
-### Monitoring configuration
+### Monitoring configuration (Optional)
 
 You could refer to [Monitoring configuration](../administration/administration_monitoring configuration.html) to enable monitoring feature of IDA.
