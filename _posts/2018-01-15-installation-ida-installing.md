@@ -5,11 +5,11 @@ category: installation
 date: 2018-01-05 15:17:55
 order: 4
 ---
-# Installing IDA Application components
+# Installing IDA Application Components
 There are three components for IDA application we need install and configure, included (1) *IDA web application*, (2) *IDA Browser Plugin* and (3) *IDA BPM toolkit*.
 
 
-# Step 1: Installing IDA web application
+## Step 1: Installing IDA Web Application
 
 ## Installing on Liberty
 
@@ -121,7 +121,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 
 
-# Step 2: Installing IDA bBPM Toolkit
+## Step 2: Installing IDA BPM Toolkit
 The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
 
 1. Import the IDA_Toolkit - 8.6.0_v1.1.twx from IDA toolkit folder into the proces center.
@@ -132,7 +132,7 @@ The testing capability can only start exposed Business Process, Human Services a
 4. Make sure the service is installed in your process app.  
    ![][service]
    
-# Step 3: Installing IDA browser Plug-in
+## Step 3: Installing IDA Browser Plug-in
 
 #### Chrome
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
