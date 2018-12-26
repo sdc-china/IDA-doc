@@ -6,8 +6,7 @@ date: 2018-01-05 15:17:55
 order: 3
 ---
 
-IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily test projects on PS side.Here we assume bpm server ip is 
-192.168.0.10
+IDA pipeline allows you to deploy your snapshot from PC to PS. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the BPM server IP is 192.168.0.10.
 
 ### Create SSH Key
 
@@ -34,10 +33,10 @@ IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily tes
    ```
    #### Notes:
    
-   **The linux operator user should can execute “wsadmin.sh”**
+   **The Linux operator user should can execute “wsadmin.sh”**
 
 
-4. Use cat ~/.ssh/id_rsa to print your private key.Copythis key content into your BPM PC ans PS configuration settings.Also you need to fill the  WAS admin command path.
+4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content into your BPM PC ans PS configuration settings. Also you need to fill the  WAS admin command path.
  
     ![][pipeline_bpmconfiguration]
 
@@ -47,13 +46,13 @@ IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily tes
      
 ### Vertify SSH Key
 
-1. If you are in linux env, copy the id_rsa to bpm server /tmp folder.you can use below command to vertify the connection.Pls replace your ip address instead.
+1. If you are in Linux environment, copy the id_rsa to BPM server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
 
     ```     
    chmod 600 /tmp/id_rsa
    ssh -i /tmp/id_rsa root@192.168.0.10
    ```
-2. If you are in windows env,you can use putty tools to vertify it.
+2. If you are in Windows environment, you can use Putty tool to vertify it.
 
    Putty: https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe   
    Puttygen: https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe    
@@ -74,7 +73,7 @@ IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily tes
 
      ![][puttyAuth]
    
-   g. You can find you can use ssh to login into that server,
+   g. You can find you can use ssh to login into that server.
      
 ### Define pipeline from PC to PS
 
@@ -82,13 +81,13 @@ IDA pipeline allow you deploy your snapshot from PC to PS.Testers can easily tes
 
    ![][pipeline_pstops]
      
-3. Run the pipeline,you can check the pipeline build status.If sucessful,it means the snapshot is deployed from PC to PS side.
+3. Run the pipeline, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to PS side.
 
    ![][pipeline_pcdeployps]
 
  **Known Limitions:**     
      
- IDA machine,PC Server,PS server should be linux server.  
+ IDA machine, PC Server, PS server should be Linux server.  
 
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
