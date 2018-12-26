@@ -106,7 +106,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    
 3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to offline PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to offline PS.
 
-   ![][pipeline_run_offline_deploy]
+   ![][pipeline_run_online_deploy]
      
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to offline PS.
 
