@@ -39,13 +39,13 @@ order: 2
      |Name                   | The stage name
      |Type                   | The options are Snapshot, Deployment, Checkstyle, Test and Script.
     
-    In **Development** type of stage, you can choose the step type Snapshot, Checkstyle, Test and Script.
+    In **Development** type of stage, you can choose the step type as **Snapshot**, **Checkstyle**, **Test** and **Script**.
     
-    In **Test**, **Stage** and **Production** type of stages, you can choose the step type Deployment, Test and Script.
+    In **Test**, **Stage** and **Production** type of stages, you can choose the step type as **Deployment**, **Test** and **Script**.
     
-    In **Utility** type of stage, you can only choose the step type Script.
+    In **Utility** type of stage, you can only choose the step type as **Script**.
     
- 4. Click ![][pipeline_add_stage] icon to add more stages, a typical stages as below.
+ 4. Click ![][pipeline_add_stage] icon to add more stages, a typical stage looks like below.
  
     ![][pipeline_stages]
     
