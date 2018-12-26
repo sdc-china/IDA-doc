@@ -16,7 +16,7 @@ order: 2
  
     ![][pipeline_first_stage]
     
-	The values according to following table.
+	The fields to create a stage is explained as below.
 	
      |Label                  | Description
      |---------------------- |-------------
@@ -27,20 +27,19 @@ order: 2
      |Branch                 | The branch of the selected process app
      |Snapshot               | The snapshot of the selected branch
      
-     Only the first stage can choose the type **Development**.
      
  3. Click ![][pipeline_add_stage] icon below the stage step to add a new step in the stage.
  
     ![][pipeline_create_step]
     
-    The values according to following table.
+    The fields to create a step is explained as below.
 	
      |Label                  | Description
      |---------------------- |-------------
      |Name                   | The stage name
      |Type                   | The options are Snapshot, Deployment, Checkstyle, Test and Script.
     
-    In **Development** type of stage, you can choose the step type Snapshot, Deployment, Checkstyle, Test and Script.
+    In **Development** type of stage, you can choose the step type Snapshot, Checkstyle, Test and Script.
     
     In **Test**, **Stage** and **Production** type of stages, you can choose the step type Deployment, Test and Script.
     
