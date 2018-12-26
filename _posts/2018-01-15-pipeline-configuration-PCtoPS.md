@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 3
 ---
 
-IDA pipeline allows you to deploy your snapshot from PC to PS. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the BPM server IP is 192.168.0.10.
+IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the BPM server IP is 192.168.0.10.
 
 ### Create SSH Key
 
@@ -76,11 +76,15 @@ IDA pipeline allows you to deploy your snapshot from PC to PS. Testers can easil
    
    g. You can find you can use ssh to login into that server.
      
-### Define pipeline from PC to PS
+### Define pipeline from PC to PS through online deployment
 
-1. Define the pipeline for deployment snapshot from PC to PS.
+1. Define the pipeline for deployment snapshot from PC to an online PS.
 
    ![][pipeline_pstops]
+   
+2. For the Deloyment step, you need to select **Online Install** for it.
+
+   ![][pipeline_online_deploy]
      
 3. Run the pipeline, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to PS side.
 
@@ -99,3 +103,5 @@ IDA pipeline allows you to deploy your snapshot from PC to PS. Testers can easil
 [PrivateKeyGen]: ../images/pipeline/privateKey.png
 [putty]: ../images/pipeline/putty.png
 [puttyAuth]: ../images/pipeline/puttyAuth.png
+[pipeline_online_deploy]: ../images/pipeline/pipeline_online_deployment.png
+[pipeline_offline_deploy]: ../images/pipeline/pipeline_offline_deployment.png
