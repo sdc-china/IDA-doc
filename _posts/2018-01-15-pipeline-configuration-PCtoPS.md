@@ -85,8 +85,12 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 2. For the Deloyment step, you need to select **Online Install** for it.
 
    ![][pipeline_online_deploy]
+   
+3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to online PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to online PS.
+
+   ![][pipeline_run_online_deploy]
      
-3. Run the pipeline, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to PS side.
+4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to online PS.
 
    ![][pipeline_pcdeployps]
 
@@ -105,3 +109,5 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 [puttyAuth]: ../images/pipeline/puttyAuth.png
 [pipeline_online_deploy]: ../images/pipeline/pipeline_online_deployment.png
 [pipeline_offline_deploy]: ../images/pipeline/pipeline_offline_deployment.png
+[pipeline_run_online_deploy]: ../images/pipeline/pipeline_run_online_deploy.png
+[pipeline_run_offline_deploy]: ../images/pipeline/pipeline_run_offline_deploy.png
