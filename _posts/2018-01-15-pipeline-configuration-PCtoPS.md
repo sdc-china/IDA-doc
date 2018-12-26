@@ -58,6 +58,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS. Testers can easil
    Puttygen: https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe    
 
    a. Open puttygen.exe
+   
    b. Open Conversions -> Import Key
 
      ![][puttyKeyGen]   
