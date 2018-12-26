@@ -93,6 +93,24 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to online PS.
 
    ![][pipeline_pcdeployps]
+   
+### Define pipeline from PC to PS through offline deployment
+
+1. Define the pipeline for deployment snapshot from PC to an offline PS.
+
+   ![][pipeline_pc_to_ps_offline]
+   
+2. For the Deloyment step, you need to select **Offline Install** for it.
+
+   ![][pipeline_offline_deploy]
+   
+3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to offline PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to offline PS.
+
+   ![][pipeline_run_offline_deploy]
+     
+4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to offline PS.
+
+   ![][pipeline_pcdeployps_offline]
 
  **Known Limitions:**     
      
@@ -111,3 +129,5 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 [pipeline_offline_deploy]: ../images/pipeline/pipeline_offline_deployment.png
 [pipeline_run_online_deploy]: ../images/pipeline/pipeline_run_online_deploy.png
 [pipeline_run_offline_deploy]: ../images/pipeline/pipeline_run_offline_deploy.png
+[pipeline_pc_to_ps_offline]: ../images/pipeline/pipeline_pc_to_ps_offline.png
+[pipeline_pcdeployps_offline]: ../images/pipeline/pipeline_pcdeployps_offline.png
