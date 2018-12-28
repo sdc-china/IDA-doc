@@ -75,6 +75,10 @@ You can uncomment DB2 property configuration and comment MySQL property configur
 
 ### Repacking IDA-web with configuration
 
-Once all the properties in [IDA_HOME]/conf/ida.properties file have been update you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
+The purpose of repackage  is to update your application-product.yaml in the war to make sure it loads the recent configuration.Once all the properties in [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
 
-Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the environment variable for JAVA_HOME and ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set and your path contains the [JAVA_HOME]/bin diectory you can then execute the package script.
+Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the JAVA_HOME environment variable and make ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set , you can then execute the package shell command to repackage the **ida-web.war**.
+
+![][package]
+
+[package]: ../images/install/package.png
