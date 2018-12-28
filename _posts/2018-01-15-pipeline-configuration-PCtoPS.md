@@ -44,7 +44,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
      ![][pipeline_servername]
      
-### Vertify SSH Key
+### Verify SSH Key
 
 1. If you are in Linux environment, copy the id_rsa to BPM server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
 
