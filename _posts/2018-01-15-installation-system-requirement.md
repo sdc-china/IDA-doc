@@ -13,6 +13,7 @@ order: 1
 * Red Hat Enterprise Linux
 * Windows 7
 * Windows 10
+* Docker
 
 
 ### Software Prerequisites
