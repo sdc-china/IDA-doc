@@ -7,8 +7,9 @@ order: 5
 ---
 ### Pipeline step reference
 
-| Step     |      Parameters      |  Description |
+| Step     |      Parameters       |  Description |
 |----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| Snapshot |  Naming Pattern: the naming pattern for the created snapshot | The Snapshot step is used to create a snpshot by specified naming pattern. This step is only available in BPM DEV environment. |
+| Checkstyle |    centered   |   $12 |
+| Test | right-aligned |    $1 |
+| Script | right-aligned |    $1 |
