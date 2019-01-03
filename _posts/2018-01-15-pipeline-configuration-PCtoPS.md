@@ -10,7 +10,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
 ### Create SSH Key
 
-1. Login into the IDA server and create the key pair on the IDA machine. 
+1. Login into the IDA server and create the key pair in IDA server. 
 
     ```  
      $ssh-keygen -t rsa
@@ -33,7 +33,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    ```
    #### Notes:
    
-   **The Linux operator user should can execute “wsadmin.sh”**
+   **The Linux operator user should have the permission to run "wsadmin.sh"**
 
 
 4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content into your BPM PC ans PS configuration settings. Also you need to fill the  WAS admin command path.
