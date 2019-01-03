@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 3
 ---
 
-IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the BPM server IP is 192.168.0.10.
+IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the BPM Process Center IP is 192.168.0.10.
 
 ### Create SSH Key
 
@@ -36,7 +36,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    **The Linux operator user should have the permission to run "wsadmin.sh"**
 
 
-4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content into your BPM PC ans PS configuration settings. Also you need to fill the  WAS admin command path.
+4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content to your BPM PC and PS configuration in IDA. Also you need to fill the  WAS admin command path.
  
     ![][pipeline_bpmconfiguration]
 
