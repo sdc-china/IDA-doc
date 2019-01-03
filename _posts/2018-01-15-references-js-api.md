@@ -37,6 +37,6 @@ The following table shows the keywords and reserved words in IDA.
 |dataSourceName|expectedRows|uca|key
 |value|days|format|time
 |length|templatePath|script|caseId
-|serverHost|next||
+|serverHost|next|process|
 
 
