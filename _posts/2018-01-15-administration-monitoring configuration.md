@@ -58,13 +58,14 @@ To integrate BPM DEF with with ActiveMQ embedded in IDA,  the version of IBM BPM
      External JNDI Name           |dynamicQueues/myQueue
 
      ![][op_def_queue] 
-	 
+	
+	
    8. In BPM server, from the *install_root/profiles/Dmgr01/bin* directory, run the following command.
    
      wsadmin -lang jython -f <Install_Root>/BPM/Lombardi/tools/def/SampleConfigureJSONEventsToJMS.py
 	 
 	 
-9. In BPM server, from the *install_root/profiles/Dmgr01/bin* directory, run the following command.
+   9. In BPM server, from the *install_root/profiles/Dmgr01/bin* directory, run the following command.
    
      wsadmin -lang jython -f <Install_Root>/BPM/Lombardi/tools/def/SampleReloadDEF.py
 	 
