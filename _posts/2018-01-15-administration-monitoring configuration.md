@@ -66,7 +66,7 @@ To integrate BPM DEF with with ActiveMQ embedded in IDA,  the version of IBM BPM
      	wsadmin -lang jython -f <Install_Root>/BPM/Lombardi/tools/def/SampleConfigureJSONEventsToJMS.py
    
    
-   9. In BPM server, from the *install_root/profiles/Dmgr01/bin* directory, run the following command.
+    9. In BPM server, from the *install_root/profiles/Dmgr01/bin* directory, run the following command.
    
    
      	wsadmin -lang jython -f <Install_Root>/BPM/Lombardi/tools/def/SampleReloadDEF.py
@@ -78,7 +78,7 @@ To integrate BPM DEF with with ActiveMQ embedded in IDA,  the version of IBM BPM
    11. In BPM WAS Administrative console, from System administration -> Nodes, select all nodes then click **Full Resynchronize** button to synchronize the changes to node profiles.
    
    
-   12. Restart BPM1.
+   12. Restart BPM.
    
   
 [op_def_mq_lib]: ../images/operation/operation_def_mq_lib.PNG
