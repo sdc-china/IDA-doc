@@ -22,9 +22,9 @@ Beside these OOTB JS API, user can also use standard BPM coach view JS API when 
 - var rows = tableCoachView.context.element.querySelectorAll("div.SPARKTable table.table tbody tr");   
 
 
-## IDA Keywords and Reserved Words
+## IDA System variables
 
-The following table shows the keywords and reserved words in IDA.
+The following table lists all system variable names and JS comand could not use these as variable name.
 
 |----------|:-------------:|:------|
 |instanceId|bpmUser|processConfig|bpmConfig
