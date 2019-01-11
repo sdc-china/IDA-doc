@@ -10,7 +10,7 @@ order: 6
 Pipeline stage is like a milestone which contains one or more pipeline steps. Each stage has a **Type** attribute, which impacts the supported pipeline steps. There are 3 types of stage, which is listed as below.
 
   |   Stage Type        | Supported Steps                          |  Description |
-  | ---------------------- |---------------------------------------|      
+  | ---------------------- |---------------------------------------|---------------|    
   | Development         | Snapshot, Checkstyle, Test, Script       | The stage is associated to BPM PC, where users can run Snapshot, Checkstyle, Test, Script. When you define the **Development** stage, you need to select the BPM server, ProcessApp, and Snapshot. The snapshot can be overridden if there is a **Snapshot** step in this Stage, or users specify another snapshot when running the pipeline. If is not overridden, this snapshot will be used for Checkstyle, Test and Deployment.|
   | Test, Stage, Production | Checkstyle, Test, Script             | The stage is associated to BPM PS, where users can run Checkstyle, Test, Script. Please note that the Snapshot step can only be run from Development stage. If it is the first stage in pipeline, it means there is no associated PC environment thus no new snapshot will be created during the pipeline execution. So when you run the pipeline, you need to specify an existing snapshot name to execute Checkstyle, Test, and Deployment steps.|
   | Utility         | Script                 | The stage is not associated to BPM environment. It is associated to IDA server, which you can run Script. |
