@@ -1,10 +1,20 @@
 ---
 layout: page
-title: "Pipeline step reference"
+title: "Pipeline stage & step reference"
 category: pipeline
 date: 2018-01-05 15:17:55
 order: 6
 ---
+### Pipeline stage reference
+
+Pipeline stage is like a milestone which contains one or more pipeline steps. Each stage has a **Type** attribute, which impacts the supported pipeline steps. There are 3 types of stage, which is listed as below.
+
+  |   Stage Type        | Description                          |  Description |
+  | ---------------------- |
+  | Development         | sdfsdf                               | sdf |
+  | Non-Development         | sdfsdf                               | sdf |
+  | Utility         | sdfsdf                               | sdf |
+
 ### Pipeline step reference
 
 
