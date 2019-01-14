@@ -10,7 +10,7 @@ order: 3
 
 | JS API |      Parameters    |       Comments            |       Sample            |
 |----------|:-------------:|:------|
-| bta.util.callBack  | callbackFunc, parameter |A callback function that is passed to another function |    return bta.util.callback();return bta.util.callback("sendKey", parameter); |      
+| bta.util.callback  | |Default callback for Javascript command |return bta.util.callback(); |      
 | bta.util.getCoachView  |  JSON |Get the coach view object|var coachView = bta.util.getCoachView({controlId: "Coach Control ID", label: "Coach Label Text", elementId: "The element ID", elementCss: "The element CSS", xpath: "The element xpath" });|
 | bta.util.getElementText | DOM Element |Get the DOM element text|  var text = bta.util.getElementText(textElement); |
 | bta.util.assertTrue | condition(boolean), message(string)|Asserts that a condition is true. If it isn't it throws an error with the given message. | bta.util.assertTrue(true, "The condition is not true!"); |
