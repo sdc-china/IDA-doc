@@ -20,7 +20,40 @@ order: 5
 
 * [Docker CE](https://docs.docker.com/install/)   
 * [Docker Compose](https://docs.docker.com/compose/install/)  
-* [Docker Script]   
+* Docker Script   
+* IDA release package
 ##### Notes:
 - Your installation need to access internetes.    
 - We don't provide docker scripts for release version.Pls ask for it internally.   
+
+### Procedure
+
+IDA supports Docker installatopm.Download docker script from the BOX folder.    
+1. Unzip the docker package into your machine.
+2. Manually copy the [mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) into the ida-web.war\WEB-INF\lib\ folder.You can get ida-web.war from the release package build folder.   
+3. Copy the ida-web.war into the web folder from the docker package.   
+4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with 5 Firefox nodes and 5 Chrome nodes.Run below command to setup the selenium  gird.  
+
+``` 
+cd selenium
+docker-compose up -d
+```  
+After that,you can open the url to check the selenium grid is setup or not.   
+
+5.Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
+6. Dokcer build your compose files,after that you can see docker images are generated.   
+
+``` 
+docker-compose build
+```  
+7. Start the IDA
+
+``` 
+docker-compose up -d
+```  
+You can launch the url for https://yourip:yourhttpsport/ida       
+You can stop the ida use docker-compose down command.   
+
+``` 
+docker-compose down -d
+```  
