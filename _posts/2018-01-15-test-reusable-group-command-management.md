@@ -30,6 +30,8 @@ order: 4
   
   8. Fill group command name and description in the form.
   
+     **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.
+  
       ![][test_group_command_save_form]
   
   9. Click **Save** button.

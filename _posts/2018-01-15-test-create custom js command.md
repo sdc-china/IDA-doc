@@ -14,6 +14,8 @@ order: 5
   
 2. Enter the javascript command info.
 
+   **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.
+
    ![][test_js_command_info]
   
 3. Define the javascript command parameter.
