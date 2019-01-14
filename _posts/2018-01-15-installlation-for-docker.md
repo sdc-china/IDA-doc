@@ -47,14 +47,17 @@ After that, open the browser http://dockerhostIP:4444/grid/console to check sele
 
 ![seleniumNode] 
 
-5.Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.   
+5. Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
+
+![dockerEnv]   
  
-6. Run Docker compose build command,after that you can see docker images are generated.      
+6. Run Docker compose build command,after that check docker images are generated or not.          
 
 ``` 
 docker-compose build
 ```  
-7. Start the IDA
+
+7. Start the IDA   
 
 ``` 
 docker-compose up -d
