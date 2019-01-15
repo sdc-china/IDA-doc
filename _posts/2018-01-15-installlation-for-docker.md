@@ -23,12 +23,12 @@ order: 5
 * Docker Script   
 * IDA release package
 ##### Notes:
-- Your installation need to access internetes.    
-- We don't provide docker scripts for release version.Pls ask for it internally.   
+- Your installation need to access internet.    
+
 
 ### Procedure
 
-IDA supports Docker installatopm.Download docker script from the [BOX folder](https://ibm.ent.box.com/folder/63828584060)          
+IDA supports Docker installatopm.Download docker script from the [Link](https://github.com/sdc-china/IDA-ondocker/blob/master/IDADockerScript.zip)          
 1. Unzip the docker package into your machine.  
 
 2. Manually copy the [mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) into the ida-web.war\WEB-INF\lib\ folder.You can get ida-web.war from the release package build folder.  
