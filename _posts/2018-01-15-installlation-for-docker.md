@@ -23,7 +23,8 @@ order: 5
 * Docker Script   
 * IDA release package
 ##### Notes:
-- Your installation need to access internet.    
+- Your installation need to access internet. 
+- IDA Docker installation only for DEV testing purpose.       
 
 
 ### Procedure
@@ -43,32 +44,36 @@ IDA supports Docker installatopm.Download docker script from the [Link](https://
 cd selenium
 docker-compose up -d
 ```  
-After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.  
+5. After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.  
 
-     ![seleniumNode]  
+    ![seleniumNode]  
 
-5. Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
+6. Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
 
      ![dockerEnv]   
  
-6. Run Docker compose build command,after that check docker images are generated or not.          
+7. Run Docker compose build command,after that check docker images are generated or not.          
 
 ``` 
 docker-compose build
 ```  
 
-7. Start the IDA   
+8. Start the IDA   
 
 ``` 
 docker-compose up -d
 ```  
-You can launch the url for https://yourip:yourhttpsport/ida       
+You can launch the url for https://yourip:yourhttpsport/ida     
+
+9. Stop the IDA   
+  
 You can stop the ida use docker-compose down command.   
 
 ``` 
 docker-compose down -d
 ```  
-
+Notes:
+You can backup mysql data at /var/mysql/demo_data directory.You can reuse the IDA database data even your container is destroy.
 [dockerpackage]: ../images/install/dockerpackage.png 
 [seleniumNode]: ../images/install/selenium_node.png
 [dockerEnv]: ../images/install/dockerenv.png
