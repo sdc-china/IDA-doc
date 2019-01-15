@@ -45,11 +45,11 @@ docker-compose up -d
 ```  
 After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.  
 
-  ![seleniumNode]  
+     ![seleniumNode]  
 
 5. Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
 
-   ![dockerEnv]   
+     ![dockerEnv]   
  
 6. Run Docker compose build command,after that check docker images are generated or not.          
 
