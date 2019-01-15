@@ -80,8 +80,7 @@ docker-compose down -d
 ``` 
 docker ps|grep  selenium
 ```  
-    
-    ![seleniumPort]   
+   ![seleniumPort]   
 You can acquire the port by looking at the container details Like from the Image above we can see the VNC server is listening on the Port No: 5906  
   
 3. Open real VNC viewer,connect with docker ip and port no to connect.
