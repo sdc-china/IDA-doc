@@ -35,7 +35,7 @@ IDA supports Docker installatopm.Download docker script from the [Link](https://
 
 3. Copy the ida-web.war into the web folder from the docker package.   
 
- ![dockerpackage]
+    ![dockerpackage]
  
 4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with 5 Firefox nodes and 5 Chrome nodes.Run below command to setup the selenium  gird.  
 
@@ -45,11 +45,11 @@ docker-compose up -d
 ```  
 After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.  
 
- ![seleniumNode]  
+  ![seleniumNode]  
 
 5. Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
 
- ![dockerEnv]   
+   ![dockerEnv]   
  
 6. Run Docker compose build command,after that check docker images are generated or not.          
 
