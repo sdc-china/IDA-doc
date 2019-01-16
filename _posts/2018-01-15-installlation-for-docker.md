@@ -75,18 +75,21 @@ You can stop the ida use docker-compose down command.
    ```  
 ### Debug Selenium Container with RealVNC Viewer
 
+Sometimes you want to troubleshooting the selenium backend browser running status,you can use below procedures to do that.
+
 1. You can download the [real-vnc](https://www.realvnc.com/en/connect/download/viewer). and Install as per your operating system.  
 2. Check  the selenium container we should verify the Container Process and Port Details. Use below command to check selenium port.
-
-``` 
-docker ps|grep  selenium
-```  
+ 
+   ``` 
+   docker ps|grep  selenium
+   ```      
    ![seleniumPort]   
-You can acquire the port by looking at the container details Like from the Image above we can see the VNC server is listening on the Port No: 5906  
+   You can acquire the port by looking at the container details Like from the Image above we can see the VNC server is listening on the port no 5906 .    
   
 3. Open real VNC viewer,connect with docker ip and port no to connect.
 
     ![vncviewer]  
+    
 4. When you are prompted for the password pls eneter secret.     
 5. Running Our Test on the correct Port number will Open the Google in our Container and We can see the Browser running in our VNC Server.   
     ![vncviewerbrowser] 
