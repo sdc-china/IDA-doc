@@ -38,41 +38,41 @@ IDA supports Docker installatopm.Git Clone the  docker script from the [Link](ht
 
     ![dockerpackage]
  
-4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with 5 Firefox nodes and 5 Chrome nodes.Run below command to setup the selenium  gird.     
+4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with five Firefox nodes and five Chrome nodes.Run below command to setup the selenium  gird.        
 
-```    
-cd selenium
-docker-compose up -d
-```     
+   ```        
+   cd selenium
+   docker-compose up -d
+   ```          
  
-5. After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.    
+5. After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.        
 
     ![seleniumNode]  
     
-6. Update docker environment variable.Open the "docker-compose.yml" replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
+6. Update docker environment variable.Open the "docker-compose.yml" at "script" level folder.Replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
 
      ![dockerEnv]   
  
-7. Run Docker compose build command,after that check docker images are generated or not.          
+7. Run Docker compose build command,after that check docker images are generated or not.             
 
-``` 
-docker-compose build
-```  
+   ``` 
+   docker-compose build
+   ```    
 
-8. Start the IDA   
+8. Start the IDA,use below command to start    
 
-``` 
-docker-compose up -d
-```  
-After start the You can launch the ida application through the url for https://yourip:yourhttpsport/ida     
+   ``` 
+   docker-compose up -d
+   ```  
+   After start the You can launch the ida application through the url for https://yourip:yourhttpsport/ida     
 
 9. Stop the IDA   
   
 You can stop the ida use docker-compose down command.   
 
-``` 
-docker-compose down -d
-```  
+   ``` 
+   docker-compose down -d
+   ```  
 ### Debug Selenium Container with RealVNC Viewer
 
 1. You can download the [real-vnc](https://www.realvnc.com/en/connect/download/viewer). and Install as per your operating system.  
