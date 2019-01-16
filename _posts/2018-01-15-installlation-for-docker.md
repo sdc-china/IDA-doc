@@ -29,21 +29,22 @@ order: 5
 
 ### Procedure
 
-IDA supports Docker installatopm.Download docker script from the [Link](https://github.com/sdc-china/IDA-ondocker/raw/master/IDADockerScript.zip)          
-1. Unzip the docker package IDADockerScript.zip into your machine.  
+IDA supports Docker installatopm.Git Clone the  docker script from the [Link](https://github.com/sdc-china/IDA-ondocker)          
+1. Git clone the docker script into your machine.  
 
-2. Manually copy the [mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) into the ida-web.war\WEB-INF\lib\ folder.You can get ida-web.war from the release package build folder.  
+2. Manually copy the [mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) into the ida-web.war\WEB-INF\lib\ folder.You can get ida-web.war from  build folder into the release package.  
 
 3. Copy the ida-web.war into the web folder from the docker package.   
 
     ![dockerpackage]
  
-4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with 5 Firefox nodes and 5 Chrome nodes.Run below command to setup the selenium  gird.  
+4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with 5 Firefox nodes and 5 Chrome nodes.Run below command to setup the selenium  gird.     
 
-``` 
+```    
 cd selenium
 docker-compose up -d
-```  
+```     
+ 
 5. After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.    
 
     ![seleniumNode]  
