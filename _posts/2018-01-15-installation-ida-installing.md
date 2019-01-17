@@ -140,20 +140,25 @@ After finishing the installation of the fix packs, the next step is to deploy th
 1. Login to the WebSphere Integrated Solutions Console as an administrator (URL: https://host:port/ibm/console/login.do?action=secure).
 
 2. In left navigation bar, click the **New Application>>New Enterprise Application**.
+
    ![][wasappnew]
 
 3. In the **Path to the new application** section, check the **Local file system** and select the ida-web.war in your local file system. When the war package is uploaded, click **Next** button.
+
    ![][wasselectapp]  
 
 4. Choose the **Fast Path** option.  click **Next** button.
 
 5. Now the current page is used to specify options for installing enterprise application and modules. In step 1, you can change the application name, click **Next** button after changing the application name. 
+
    ![][waschangeappname]
 
 6. There is nothing to change in step 2 and step3. And step 4 is used to configure values for contexts root in web modules, we should set the **Context Root** as **/ida** as shown below.
+
    ![][wassetcontextroot]
 
 7. There is nothing to change in step 5. In step 6, click **finish** button and wait for the server to complete the installation of IDA web application. When finished, click the **WebSphere enterprise application** in left navigation bar, you can see that the IDA web application is in Enterprise Applications table. 
+
    ![][wasapplist]
 
 **Confige the Class Loader Order** 
