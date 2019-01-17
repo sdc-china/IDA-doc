@@ -3,7 +3,7 @@ layout: page
 title: "Group command management"
 category: test
 date: 2018-01-05 15:17:55
-order: 4
+order: 40
 ---
 
 ### Create a group command
