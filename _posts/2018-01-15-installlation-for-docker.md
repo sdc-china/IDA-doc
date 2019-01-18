@@ -34,7 +34,7 @@ IDA supports Docker installatopm.Git Clone the  docker script from the [Link](ht
 
 2. Manually copy the [mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) into the ida-web.war\WEB-INF\lib\ folder.You can get ida-web.war from  build folder into the release package.  
 
-3. Copy the ida-web.war into the web folder from the docker package.   
+3. Copy the ida-web.war into the web folder from the docker package. Copy the schema-mysql.sql,data-mysql.sql script from release package into the mysql folder.   
 
     ![dockerpackage]
  
