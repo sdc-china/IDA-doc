@@ -11,7 +11,7 @@ There are three components for IDA application we need install and configure, in
 
 ## Step 1: Installing IDA Web Application
 
-IDA Web Application can be installed on WebSphere Application Server (WAS), and can also be installed on liberty. First, let's introduce the way to install IDA on liberty.
+IDA Web Application can be installed on IBM WebSphere Application Server (WAS), and can also be installed on liberty. First, let's introduce the way to install IDA on liberty.
 
 ## Installing on Liberty
 
@@ -120,22 +120,32 @@ We might need proxy server to visit the application,the proxy settings can be pa
 Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
-## Installing on WAS V9
+## Installing on WebSphere Application Server V9
 
-**Check the WAS version** 
+**Check the WebSphere Application Server version** 
 
-If the WAS version is **9.0** (not 9.0.0.7, 9.0.0.8, 9.0.0.9), it may occur some problems when install the IDA web application, so fisrtly, we should check the WAS version. 
-1. Login the WAS console, in the **Welcome** part, you can see the version of WAS. 
+Since an IBM WebSphere Application Server known issues:
+
+[PI89708: THE LOG4J-API-2.9.1.JAR CONTAINS CLASSES UNDER THE META-INF DIRECTORY CAUSE AN EXCEPTION DURING STARTUP.](https://www-01.ibm.com/support/docview.wss?uid=swg1PI89708)
+
+The IDA web application must be deployment on those versions.
+- 9.0.0.7
+- 9.0.0.8
+- 9.0.0.9
+
+ So fisrtly, we should check the WebSphere Application Server version. 
+
+1. Login the WebSphere Application Server console, in the **Welcome** part, you can see the version of WebSphere Application Server. 
 ![][wasversion]
-2. If the WAS version is 9.0, you should install the Fix Packs, here are the available fix packs:
+2. If the WebSphere Application Server version is 9.0, you should install the Fix Packs, here are the available fix packs:
 - [9.0.0.7: WebSphere Application Server traditional V9.0 Fix Pack 7](http://www-01.ibm.com/support/docview.wss?uid=swg24044620)
 - [9.0.0.8: WebSphere Application Server traditional V9.0 Fix Pack 8](http://www-01.ibm.com/support/docview.wss?uid=swg24044965)
 
 3. When finished the fix packs installation, the version will changed to 9.0.0.7, 9.0.0.8 or 9.0.0.9.
 
-**Deploy a New Application on WAS**
+**Deploy a New Application on WebSphere Application Server**
 
-After finishing the installation of the fix packs, the next step is to deploy the IDA war to WAS.
+After finishing the installation of the fix packs, the next step is to deploy the IDA war to WebSphere Application Server.
 
 1. Login to the WebSphere Integrated Solutions Console as an administrator (URL: https://host:port/ibm/console/login.do?action=secure).
 
