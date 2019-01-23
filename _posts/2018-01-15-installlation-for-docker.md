@@ -38,11 +38,12 @@ IDA supports Docker installatopm.Git Clone the  docker script from the [Link](ht
 
     ![dockerpackage]
  
-4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with five Firefox nodes and five Chrome nodes.Run below command to setup the selenium  gird.        
+4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with one Firefox nodes and one Chrome nodes.Run below command to setup the selenium  gird and  use docker compose scale command to create firefox and chrome node instance.          
 
    ```        
    cd selenium
    docker-compose up -d
+   docker-compose scale chrome=3 firefox=3
    ```          
  
 5. After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.        
