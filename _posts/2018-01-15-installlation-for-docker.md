@@ -72,7 +72,7 @@ IDA supports Docker installatopm.Git Clone the  docker script from the [Link](ht
 You can stop the ida use docker-compose down command.   
 
    ``` 
-   docker-compose down -d
+   docker-compose down 
    ```  
 ### Debug Selenium Container with RealVNC Viewer
 
