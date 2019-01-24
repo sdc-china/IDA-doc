@@ -57,14 +57,12 @@ IDA supports Docker installatopm.Git Clone the  docker script from the [Link](ht
    You can launch the ida application through the url for https://yourip:yourhttpsport/ida     
    You can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.           
    
-7.  The default setting is start one Selenium Hub with one Firefox nodes and one Chrome nodes.Run below command to scale  firefox and chrome node.   
+7.  The default setting is start one Selenium Hub with one Firefox nodes and one Chrome nodes.Run below command to scale  firefox and chrome node.You can check the gride node number from the web console.       
 
-   ```  
-   docker-compose scale chrome=3 firefox=3
-   ```          
-   
-     ![seleniumNode]              
-
+    ```  
+    docker-compose scale chrome=3 firefox=3
+    ```          
+    ![seleniumNode]        
 8. Stop the IDA   
   
 You can stop the ida use docker-compose down command.   
