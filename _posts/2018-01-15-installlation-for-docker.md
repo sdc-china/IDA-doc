@@ -63,7 +63,7 @@ IDA supports Docker installatopm.Git Clone the  docker script from the [Link](ht
    docker-compose scale chrome=3 firefox=3
    ```          
    
-   ![seleniumNode]
+     ![seleniumNode]              
 
 8. Stop the IDA   
   
