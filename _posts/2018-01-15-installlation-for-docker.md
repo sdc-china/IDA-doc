@@ -38,36 +38,34 @@ IDA supports Docker installatopm.Git Clone the  docker script from the [Link](ht
 
     ![dockerpackage]
  
-4. Into the selenium folder ,adjust the Selenium hub node number update "docker-compose.yml",. The default setting is start one Selenium Hub with one Firefox nodes and one Chrome nodes.Run below command to setup the selenium  gird and  use docker compose scale command to create firefox and chrome node instance.          
-
-   ```        
-   cd selenium
-   docker-compose up -d
-   docker-compose scale chrome=3 firefox=3
-   ```          
- 
-5. After that, open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.        
-
-    ![seleniumNode]  
     
-6. Update docker environment variable.Open the "docker-compose.yml" at "script" level folder.Replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
+4. Update docker environment variable.Open the "docker-compose.yml" at "script" level folder.Replace the environment variables SERVER_HOST, HTTP_PORT and HTTPS_PORT with your actaul values.    
 
      ![dockerEnv]   
  
-7. Run Docker compose build command,after that check docker images are generated or not.             
+5. Run Docker compose build command,after that check docker images are generated or not.             
 
    ``` 
    docker-compose build
    ```    
 
-8. Start the IDA,use below command to start    
+6. Start the IDA,use below command to start    
 
    ``` 
    docker-compose up -d
    ```  
-   After start the You can launch the ida application through the url for https://yourip:yourhttpsport/ida     
+   You can launch the ida application through the url for https://yourip:yourhttpsport/ida 
+   You can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.       
+   
+7.  The default setting is start one Selenium Hub with one Firefox nodes and one Chrome nodes.Run below command to scale  firefox and chrome node.   
 
-9. Stop the IDA   
+   ```  
+   docker-compose scale chrome=3 firefox=3
+   ```          
+   
+   ![seleniumNode]
+
+8. Stop the IDA   
   
 You can stop the ida use docker-compose down command.   
 
