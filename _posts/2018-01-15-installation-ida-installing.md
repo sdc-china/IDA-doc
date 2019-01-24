@@ -11,7 +11,7 @@ There are three components for IDA application we need install and configure, in
 
 ## Step 1: Installing IDA Web Application
 
-IDA Web Application can be installed on WebSphere Application Server (WAS), and can also be installed on liberty. First, let's introduce the way to install IDA on liberty.
+IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. First, let's introduce the way to install IDA on liberty.
 
 ## Installing on Liberty
 
@@ -185,6 +185,8 @@ After finishing the installation of the fix packs, the next step is to deploy th
 
    ![][wasstartapp]
 
+## Installing on Docker platform
+Refer to [IDA-ondocker](https://github.com/sdc-china/IDA-ondocker) for deployment steps.
 
 ## Step 2: Installing IDA BPM Toolkit
 The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
