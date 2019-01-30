@@ -29,10 +29,11 @@ or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)
 * A SMTP Server
 
 
-### Browser Support
+### Browsers Support
 
 * Firefox v52+ (64-bit)
 * Chrome v57+ (64-bit)
+* IE v11+ (Supports exection only)
 
 ### Minimal Hardware/VM/Docker Requirements
 - 2 core CPU, 4 GB memory and 10 GB disk space.
