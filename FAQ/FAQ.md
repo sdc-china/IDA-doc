@@ -38,5 +38,7 @@
     - Answer: All have been published on Git [doc](https://sdc-china.github.io/IDA-doc/)
 1. FAQ: Is there number of users limitation on the IDA?
     - Answer: No limitation on # of users. The IDA asset license is granted to setup one IDA env.
-1. How does Checkstyle of IDA compare with IBM App Scan ? 
+1. FAQ: How does Checkstyle of IDA compare with IBM App Scan ? 
     - Answer: The app scan only check for security vulnerability and the checkstyle is do statci code analysis in BPM TWX.
+1. FAQ: Shall I record all test cases again if I add a new field or change its position?
+    - Answer: You could use [group command](https://sdc-china.github.io/IDA-doc/test/test-group-command-management.html) to manage test cases. In that case, you could just manualy modify the group command if adding one new field. Or record group command steps again and not need update all test cases one by one.
