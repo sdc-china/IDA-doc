@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "FAQ"
+title: "Frequently asked questions"
 category: references
 date: 2019-02-14 15:17:55
 order: 9
 ---
 
-# Frequently asked questions (FAQ) about IDA
+# FAQ about IDA
 
 1. FAQ: Where can I get information about hardware and software requirements of IDA? 
     - Answer: See [System requirement doc](https://sdc-china.github.io/IDA-doc/installation/installation-system-requirement.html)
