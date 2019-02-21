@@ -23,7 +23,7 @@ order: 1
 * [IBM® Db2 v10.x+](https://www.ibm.com/analytics/us/en/db2/) 
 or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)  
 * [Selenium v3.14+](https://sdc-china.github.io/IDA-doc/administration/administration-selenium-hub-configuration.html)
-* JDK v8+
+* JDK v8+ (64-bit)
 
 ### Optional  
 
