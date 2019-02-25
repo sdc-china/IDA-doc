@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 3
 ---
 
-IDA enables developers to perform static analysis on the BPM application, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on BPM development best practices and anti-patterns. The rules are designed by IBM Operation Decision Manager business rule, which is easy to customize and extend.
+IDA enables developers to perform static analysis on the BPM application, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on BPM development best practices and anti-patterns. The rules have been implemended with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
 
 
 ### About this task

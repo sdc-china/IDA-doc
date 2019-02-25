@@ -11,6 +11,8 @@ There are three components for IDA application we need install and configure, in
 
 ## Step 1: Installing IDA Web Application
 
+IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. First, let's introduce the way to install IDA on liberty.
+
 ## Installing on Liberty
 
 
@@ -118,8 +120,73 @@ We might need proxy server to visit the application,the proxy settings can be pa
 Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
+## Installing on WAS V9
 
+**Check the WAS version** 
 
+If the WAS version is **9.0** (not 9.0.0.7, 9.0.0.8, 9.0.0.9), it may occur some problems when install the IDA web application, so fisrtly, we should check the WAS version. 
+1. Login the WAS console, in the **Welcome** part, you can see the version of WAS. 
+![][wasversion]
+2. If the WAS version is 9.0, you should install the Fix Packs, here are the available fix packs:
+- [9.0.0.7: WebSphere Application Server traditional V9.0 Fix Pack 7](http://www-01.ibm.com/support/docview.wss?uid=swg24044620)
+- [9.0.0.8: WebSphere Application Server traditional V9.0 Fix Pack 8](http://www-01.ibm.com/support/docview.wss?uid=swg24044965)
+
+3. When finished the fix packs installation, the version will changed to 9.0.0.7, 9.0.0.8 or 9.0.0.9.
+
+**Deploy a New Application on WAS**
+
+After finishing the installation of the fix packs, the next step is to deploy the IDA war to WAS.
+
+1. Login to the WebSphere Integrated Solutions Console as an administrator (URL: https://host:port/ibm/console/login.do?action=secure).
+
+2. In left navigation bar, click the **New Application>>New Enterprise Application**.
+
+   ![][wasappnew]
+
+3. In the **Path to the new application** section, check the **Local file system** and select the ida-web.war in your local file system. When the war package is uploaded, click **Next** button.
+
+   ![][wasselectapp]  
+
+4. Choose the **Fast Path** option.  click **Next** button.
+
+5. Now the current page is used to specify options for installing enterprise application and modules. In step 1, you can change the application name, click **Next** button after changing the application name. 
+
+   ![][waschangeappname]
+
+6. There is nothing to change in step 2 and step3. And step 4 is used to configure values for contexts root in web modules, we should set the **Context Root** as **/ida** as shown below.
+
+   ![][wassetcontextroot]
+
+7. There is nothing to change in step 5. In step 6, click **finish** button and wait for the server to complete the installation of IDA web application. When finished, click the **WebSphere enterprise application** in left navigation bar, you can see that the IDA web application is in Enterprise Applications table. 
+
+   ![][wasapplist]
+
+**Confige the Class Loader Order** 
+
+1. Click the link of the **ida-web** in the table and go to the app confiugration page. 
+
+2. Click the **Class loading and update detection** link as shown below.
+
+   ![][wasclassloadlink]
+
+3. Change the class loader order to **Classes loaded with local class loader first (parent last)**.
+
+   ![][wasclassloadorder]
+
+4. Then go back to the configuration page, and then click the **Manage Modules** link.
+
+   ![][wasmanagemodules]
+
+5. Click the link of **ida-web.war**, in the configuration page, change the class loader order to  **Classes loaded with local class loader first (parent last)**.
+
+   ![][wasmoduleclassloadorder]
+
+6. Save the changes and start the IDA web applicaiton. when the status of the IDA web applicaiton changes to **started**, you can visit the url like http://serverip:port/ida to access IDA web application.
+
+   ![][wasstartapp]
+
+## Installing on Docker platform
+Refer to [IDA-ondocker](https://github.com/sdc-china/IDA-ondocker) for deployment steps.
 
 ## Step 2: Installing IDA BPM Toolkit
 The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
@@ -139,8 +206,8 @@ The testing capability can only start exposed Business Process, Human Services a
 - Click "Add to Chrome" button to install plug-in
 
 #### Firefox
-- Download firefox plugin [ida-1.25-fx.xpi](../plugins/ida-1.25-fx.xpi)
-- Drag the "ida-1.25-fx.xpi" file into firefox window
+- Download firefox plugin [ida-1.28-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.28-fx.xpi)
+- Drag the "ida-1.28-fx.xpi" file into firefox window
 - Click "Add" button
 
 **Plug-in Configuration**
@@ -160,6 +227,17 @@ the password: the IDA login password.
 [seleniumGrid]: ../images/install/seleniumGrid.png
 [webDriver]: ../images/install/webdriver.png
 [IDAOption]: ../images/install/IDAOption.png
+[wasversion]: ../images/install/wasversion.png 
+[wasappnew]: ../images/install/wasappnew.png 
+[wasselectapp]: ../images/install/wasselectapp.png 
+[waschangeappname]: ../images/install/waschangeappname.png 
+[wassetcontextroot]: ../images/install/wassetcontextroot.png 
+[wasapplist]: ../images/install/wasapplist.png 
+[wasclassloadlink]: ../images/install/wasclassloadlink.png 
+[wasclassloadorder]: ../images/install/wasclassloadorder.png 
+[wasmanagemodules]: ../images/install/wasmanagemodules.png 
+[wasmoduleclassloadorder]: ../images/install/wasmoduleclassloadorder.png 
+[wasstartapp]: ../images/install/wasstartapp.png 
 
 ### Self-Signed SSL Certificates Installation
 

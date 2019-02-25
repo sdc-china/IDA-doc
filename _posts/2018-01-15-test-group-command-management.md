@@ -3,7 +3,7 @@ layout: page
 title: "Group command management"
 category: test
 date: 2018-01-05 15:17:55
-order: 4
+order: 40
 ---
 
 ### Create a group command
@@ -29,6 +29,8 @@ order: 4
   7. Click **Save as Group Command** button.
   
   8. Fill group command name and description in the form.
+  
+     **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.
   
       ![][test_group_command_save_form]
   

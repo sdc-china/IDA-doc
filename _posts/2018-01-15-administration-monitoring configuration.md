@@ -58,8 +58,24 @@ To integrate BPM DEF with with ActiveMQ embedded in IDA,  the version of IBM BPM
      External JNDI Name           |dynamicQueues/myQueue
 
      ![][op_def_queue] 
-     
-8. Restart BPM.
+	
+	
+   8. In BPM server, from the *install_root/profiles/Dmgr01/bin* directory, run the following command.  
+      ```
+      wsadmin -lang jython -f <Install_Root>/BPM/Lombardi/tools/def/SampleConfigureJSONEventsToJMS.py
+      ```
+   9. In BPM server, from the *install_root/profiles/Dmgr01/bin* directory, run the following command.
+      ```
+      wsadmin -lang jython -f <Install_Root>/BPM/Lombardi/tools/def/SampleReloadDEF.py
+      ```
+   10. After you run the sample script, a **defconfig.xml** file is created in the *dmgr_profile_home/config/cells/cellName* directory. Edit this file to update the value of *JMS_QUEUE_JNDI* to **queue/myQueue**, and the value of *JMS_QUEUE_CF_JNDI* to **jms/myQueueConnectionFactory**. Please note that the **jms/myQueueConnectionFactory** and **queue/myQueue** are the JDNI name created in step #6 and #7.
+   
+   
+   11. In BPM WAS Administrative console, from System administration -> Nodes, select all nodes then click **Full Resynchronize** button to synchronize the changes to node profiles.
+   
+   
+   12. Restart BPM.
+   
   
 [op_def_mq_lib]: ../images/operation/operation_def_mq_lib.PNG
 [op_def_mq_provider]: ../images/operation/operation_def_mq_provider.PNG

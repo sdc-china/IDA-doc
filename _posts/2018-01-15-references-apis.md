@@ -33,7 +33,7 @@ ___
 | `pipelineId`   | yes          | Pipeline ID. <br>You could get the pipeline ID from the URL path of pipeline dashboard page. |
 | `userToken`   | yes          | User token. <br>You could get the token from user profile page.|
 | `snapshotAcronym`   | no          | BPM snapshot acronym name. <br>If it's set, pipeline build will bypass the Snapshot step, and the Test/Checkstyle/Deployment steps will use this snapshot. |
-
+| `twxFileName`   | no          | The BPM installation package file name of Process APP.|
 
 #### **Example:**
 
@@ -70,7 +70,7 @@ ___
 | `pipelineName`   | yes          | Pipeline name. |
 | `userToken`   | yes          | User token. <br>You could get the token from user profile page. |
 | `snapshotAcronym`   | no     | BPM snapshot acronym name. <br>If it's set, pipeline build will bypass the Snapshot step, and the Test/Checkstyle/Deployment steps will use this snapshot. |
-
+| `twxFileName`   | no          | The BPM installation package file name of Process APP.|
 
 #### **Example:**
 

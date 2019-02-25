@@ -3,7 +3,7 @@ layout: page
 title: "Test Report"
 category: test
 date: 2018-01-05 15:17:55
-order: 7
+order: 70
 ---
 
 IDA offers detailed reports including screenshots, execution process flow and coverage to improve communication between testers and developers on every test case. 

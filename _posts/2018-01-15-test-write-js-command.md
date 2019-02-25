@@ -3,7 +3,7 @@ layout: page
 title: "Write a Javascript command"
 category: test
 date: 2018-01-05 15:17:55
-order: 5
+order: 55
 ---
 
 ### Create a javascript command
@@ -13,6 +13,8 @@ order: 5
    ![][test_js_command]
   
 2. Enter the javascript command info.
+
+   **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.
 
    ![][test_js_command_info]
   
