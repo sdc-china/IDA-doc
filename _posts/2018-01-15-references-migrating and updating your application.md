@@ -47,29 +47,20 @@ For IDA version migration,you need to update IDA.war, take the following steps:
  You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
 
 
-### Step 3: Update Keter 1.3.x to IDA 2.0.0(optional)
+### Step 3: Update IDA2.1.1 to IDA 2.2
 
-If you want to migrate keter to to IDA version, take the following steps:     
+If you want to migrate IDA2.1.1 to to IDA2.2 version, you need to first create team then configure the team permission.        
 
-1. Open the server.xml of liberty and make sure keter-web.war is changed to ida-web.war and application id and name is also changed 
-to ida. If your liberty has setup keyStore password before,you don;t need to change defaultKeyStore password, just keep orignal one,otherwise you need to create a passowrd for the defaultKeyStore.            
-   
+1. Navigation to the Administration tab and click the *Team Configuration* link then click the add button to reate a team name and description.        
+2. Choose the team you want to do the permission setting for users,processApp,selenium grid setting.   
 
-```                     
-    <!-- Automatically expand WAR files and EAR files -->
-    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	<application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
-		<classloader delegation="parentLast" />
-    </application>
-	
-	<keyStore id="defaultKeyStore" password="idaAdmin" />
+![][teampermission]     
 
-``` 
-2. Use IDA toolkit to replace Keter toolkit for the BPM.Both toolkit are compatible for usage.      
-3. Use latested chrome and fixfox plug-in.       
+3. You can create project to check the team permission is created or not.     
 
  **Notes**     
  Please not overwrite ida.properties from previous version since we might add new some new property name  in some versions.   
 
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
+[teampermission]: ../images/install/teampermission.png
