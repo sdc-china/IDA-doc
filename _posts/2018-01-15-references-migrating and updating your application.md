@@ -56,11 +56,11 @@ If you want to migrate IDA2.1.1 to to IDA2.2 version, you need to first create t
 
 ![][teampermission]     
 
-3. After create the team permission,you can use this team to create project.       
+3. After create the team permission,you can use this team to create project.          
 
- **Notes**     
- Please not overwrite ida.properties from previous version since we might add new some new property name  in some versions.   
+ ![][teamproject]   
 
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
 [teampermission]: ../images/install/teampermission.png
+[teamproject]: ../images/install/teamproject.png
