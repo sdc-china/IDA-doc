@@ -52,11 +52,11 @@ For IDA version migration,you need to update IDA.war, take the following steps:
 If you want to migrate IDA2.1.1 to to IDA2.2 version, you need to first create team then configure the team permission.        
 
 1. Navigation to the Administration tab and click the *Team Configuration* link then click the add button to reate a team name and description.        
-2. Choose the team you want to do the permission setting for users,processApp,selenium grid setting.   
+2. Select the team and click the button to set the appropriate permission setting for users,processApp,selenium grid.   
 
 ![][teampermission]     
 
-3. You can create project to check the team permission is created or not.     
+3. After create the team permission,you can use this team to create project.       
 
  **Notes**     
  Please not overwrite ida.properties from previous version since we might add new some new property name  in some versions.   
