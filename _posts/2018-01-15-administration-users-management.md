@@ -33,7 +33,7 @@ order: 1
   
 ### Activate/Deactivate users
   
-   Select users in the **Users Management** table, then click **Active** button to activate the selected inactive users. And click **Inactive** button to deactivate the selected active users.
+   Select users in the **Users Management** table, then click **Activate** button to activate the selected inactive users. And click **Deactivate** button to deactivate the selected active users.
    
    	![][administrator_active_user]
   
