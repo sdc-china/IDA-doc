@@ -9,10 +9,12 @@ order: 1
 ### Add new user 
   Use super account (idaAdmin/idaAdmin) login into IDA application.
   1. Click **Administrator** tab, then switch to  **user management** tab to add user.  
-  2. Click **add new row** icon to add new users.  
+  2. Click **add** button to add new users.  
+     
+     ![][administrator_add]  
   3. After adding user, you can click **Reset password** button to reset password. The default password is **123456**.
 	
-     ![][administrator_add]  
+     ![][administrator_reset]  
 	
      |   Field       | Description                                                             |
      | --------------|---------------------------                                              | 
@@ -41,6 +43,7 @@ order: 1
   
   
 [administrator_add]: ../images/administrator/Administrator_add.png
+[administrator_reset]: ../images/administrator/Administrator_reset.png
 [administrator_profile]: ../images/administrator/administrator_profile.PNG
 [administrator_profile_page]: ../images/administrator/administrator_profile_page.PNG
 [administrator_password]: ../images/administrator/administrator_password.png
