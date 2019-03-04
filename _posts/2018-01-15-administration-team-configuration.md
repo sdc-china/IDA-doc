@@ -64,10 +64,6 @@ order: 4
   
   3. After finishing step 2, the selected server in step 1 will be selected in the left modal and the removed process apps will in the lists which belong to the server but do not belong to the team.
   
-### Delete teams
-
-  Select the teams in the **Teams Management** table, then click the **delete** icon to delete teams. 
-  
 ### Assign selenium grids to a team/ Remove selenium grids from a team
 
   1. Click **Selenium Grid Assignment** icon on the right of the team that you want to assign or remove selenium grids.
