@@ -19,11 +19,20 @@ order: 4
 ### User Assignment
   Choose the team in the **Team Configuration** tab, then click the **User Assignment** link to assign user to the team.    
   
+  ![][team_user_assignment]  
+  
 ### Process App Assignment
   Choose the team in the **Team Configuration** tab, then click the **Process App Assignment** link to assign user to the team.  
+  
+  ![][team_processapp_assignment]  
   
 ### Selenium Grid Assignment
   Choose the team in the **Team Configuration** tab, then click the **User Assignment** link to assign user to the team.    
   
+  ![][team_selenium_assignment]  
+  
   
 [team_add]: ../images/administrator/team_add.png
+[team_user_assignment]: ../images/administrator/team_userassignment.png
+[team_processapp_assignment]: ../images/administrator/team_appassignment.png
+[team_selenium_assignment]: ../images/administrator/team_seleniumgridassignment.png
