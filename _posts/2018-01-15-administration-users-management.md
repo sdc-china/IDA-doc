@@ -9,7 +9,7 @@ order: 1
 ### Add a new user 
   Use super account (idaAdmin/idaAdmin) login into IDA application.
   1. Click **Administrator** tab, then switch to  **Users management** tab to add user.  
-  2. Click ![][add_icon] icon which is on the right of **Users manager** to add new users. 
+  2. Click ![][add_icon] icon which is on the right of **Users Management** to add new users. 
   3. Fill out the form below. Then click **Create** button.
   
      ![][administrator_add]  
@@ -30,6 +30,12 @@ order: 1
      ![][administrator_edit_user]
      
   2. Change roles of the user. Then click **Save**.
+  
+### Activate/Deactivate users
+  
+   Select users in the **Users Management** table, then click **Active** button to activate the selected inactive users. And click **Inactive** button to deactivate the selected active users.
+   
+   	![][administrator_active_user]
   
 ### User profile 
   
@@ -56,4 +62,7 @@ order: 1
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_reset_password]: ../images/administrator/administrator_reset_password.png
 [administrator_edit_user]: ../images/administrator/administrator_edit_user.png
+[administrator_active_user]: ../images/administrator/administrator_active_user.png
+
+
 
