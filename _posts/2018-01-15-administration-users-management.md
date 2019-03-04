@@ -49,6 +49,7 @@ order: 1
   
   
 [administrator_add]: ../images/administrator/Administrator_add.png
+[administrator_reset]: ../images/administrator/Administrator_reset.png
 [administrator_profile]: ../images/administrator/administrator_profile.PNG
 [administrator_profile_page]: ../images/administrator/administrator_profile_page.PNG
 [administrator_password]: ../images/administrator/administrator_password.png

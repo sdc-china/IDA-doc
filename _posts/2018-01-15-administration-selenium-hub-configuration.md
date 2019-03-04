@@ -34,7 +34,7 @@ order: 3
   2. Change configurations of the selenium grid. Then click **Save**.
 	 
 ### Delete selenium hub 
-  Select the hub in the **Selemium Hub Configuration** table, then click the 	**delete** icon to delete selenium hub. 	 
+  Select the hub in the **Selemium Hub Configuration** table, then click the 	**Delete** button to delete selenium hub. 	 
 	 
 [administrator_hub]: ../images/administrator/administrator_hub.png
 [Post Installation Setup]: ../installation/installlation-post-installation.html
