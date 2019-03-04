@@ -50,20 +50,7 @@ order: 10
      ![][test_project_edit_form]
      
   2. Update project form according to the table showed in creating session.
-
-
-### Sharing a test project
-
-1. Click ![][test_sharing_project] button in project list page.
-
-2. Choose the BPM users that you want to share your project.
-
-     ![][test_sharing_project_form]
-  
-3. Click **Share** button.When the shared user is logged in, the user can edit suites and case steps for the project, but can not modify the project information or share the project.
-
-     ![][test_sharing_project_list]  
-     
+   
 ### Delete a test project
 
   Click ![][test_project_delete_button] button on the project list page.
