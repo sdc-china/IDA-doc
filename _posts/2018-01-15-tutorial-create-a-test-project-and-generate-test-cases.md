@@ -33,7 +33,7 @@ In this task, you will create a new test project. After that you create test cas
 
 To create a new test project:
 
-  1. In the project list page, click **Create Project** button. Name the project name to **Hiring Sample**. Choose the values like below screenshot.
+  1. In the project list page, click **Create Project** button. Name the project name to **Hiring Sample**. Choose the values like below screenshot.For the visibility,you can choose private or team you belong to.
     
      ![][tutorial_createproject] 
   
