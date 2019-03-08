@@ -22,4 +22,4 @@ In this task, you can runtime set log level in IDA, after that you can see the l
 **Notes:** 
 If you restart the server,the log level configuration will restore to orignal configuration.  
 
-[administrator_loglevel]: ../images/administrator/Administrator_loglevel.png
+[administrator_loglevel]: ../images/install/Administrator_loglevel.png
