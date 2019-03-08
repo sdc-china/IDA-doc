@@ -38,7 +38,7 @@ order: 3
   
 ### Test selenium hub   
   Click **Test Connection** icon on the right of the Selenium Grid Configuration that you want to test.If connection is wrong,it will 
-  report warning info.  
+ popup warning info.  
   
    ![][administrator_selenium_grid_test]
 
