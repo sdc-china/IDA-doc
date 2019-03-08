@@ -42,6 +42,11 @@ order: 2
 
 ### Delete BPM server
   Select the servers in the **BPM Configuration** table, then click the **delete** icon to delete BPM server. 
+  
+### Test BPM server
+  Select  **Test Connection** icon on the right of the BPM server that you want to test.If test connection is failed,it will popup warning message.   
+  
+  ![][administrator_test_bpm_server]
 
 ### Add user to a BPM server
   1. Click **Edit BPM User** icon on the right of the BPM server. Then you can see then BPM user list of the server.
@@ -77,4 +82,5 @@ What's more, you can also edit a bpm user in a similar way to editing a user.
 [administrator_assignee]: ../images/administrator/administrator_asignee.png
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_edit_bpm_server]: ../images/administrator/administrator_edit_bpm_server.png
+[administrator_test_bpm_server]: ../images/administrator/administrator_test_bpm_server.png
 [administrator_edit_bpm_user]: ../images/administrator/administrator_edit_bpm_user.png
