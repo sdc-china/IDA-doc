@@ -18,11 +18,18 @@ order: 1
      | --------------|---------------------------| 
      | User Name     | Use email address as user name| 
      | Role          | A user can have multiple roles, only Admin role user can configure settings|
+     
+     Permissions for each role are shown in the following figure:
+     
+     ![][administrator_role_permission]
+     
+     **Notes:**
+     
+     Role and role privileges can be customized according to client needs.
                 
   4. Click **Reset password** button can reset password of one user. The default password is **123456**.
   
      ![][administrator_reset_password]  
-	
 
 ### Edit a user 
   1. Click **Edit** icon on the right of the user that you want to edit.
@@ -63,6 +70,7 @@ order: 1
 [administrator_reset_password]: ../images/administrator/administrator_reset_password.png
 [administrator_edit_user]: ../images/administrator/administrator_edit_user.png
 [administrator_active_user]: ../images/administrator/administrator_active_user.png
+[administrator_role_permission]: ../images/administrator/administrator_role_permission.png
 
 
 

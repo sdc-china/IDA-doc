@@ -19,6 +19,14 @@ order: 4
      |------------------------|-------------|                                          
      | Team    Name           | the name of the created team|  
      | Description            | more description or information of the created team|
+     | Access All BPM Server  | If check, then the users in this team can access all bpm serers without assignment.|
+     | Access All Selenium Server  | If check, then the users in this team can access all selenium serers without assignment.|
+     
+     **Notes:**
+   
+     If checkboxes *Access All BPM Server* and *Access All Selenium Server* are checked, then the team is an administration team. Its users can access all bpm servers, process apps and selenium grids, which does not have to assign. *Process App Assignment* and *Selenium Grid Assignment* buttons are not available.
+     
+     ![][administration_super_team]
  
 ### Edit a team
 
@@ -91,4 +99,5 @@ order: 4
 [administrator_assign_selenium_grid]: ../images/administrator/administrator_assign_selenium_grid.png
 [administrator_assign_seleniumgrds]: ../images/administrator/administrator_assign_seleniumgrds.png
 [administrator_assign_process_apps]: ../images/administrator/administrator_assign_process_apps.png
+[administration_super_team]: ../images/administrator/administration_super_team.png
 
