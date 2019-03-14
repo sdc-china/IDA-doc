@@ -99,8 +99,27 @@ order: 20
   
   2. Click ![][test_case_step_up_button] and ![][test_case_step_down_button] button to adjust the order of a case step.
   
-  3. click **Exit Edit** button on the right of suite name. 
-  
+  3. click **Exit Edit** button on the right of suite name.
+
+#### Copy case steps
+
+  1. Click **Edit** button on the right of suite name.
+
+  2. Select the case steps to be copied, then click the ![][test_case_step_copy_button]  
+    ![][test_case_step_copy]
+
+#### Cut case steps
+
+  1. Click **Edit** button on the right of suite name.
+
+  2. Select the case steps to be cut, then click the ![][test_case_step_cut_button]  
+
+#### Paste case steps
+
+  1. Click **Edit** button on the right of suite name.
+
+  2. Click the ![][test_case_step_operation_button] then click the ![][test_case_step_paste_button]. The copied case steps will be insert before the editing case step.
+
 #### Delete a case step
 
   Click ![][test_case_step_delete_button] button in the operation column of the case step you want to delete.
@@ -121,10 +140,15 @@ order: 20
 [test_case_step_add_form]: ../images/test/test_case_step_add_form.PNG
 [test_case_step_table_add]: ../images/test/test_case_step_table_add.PNG
 [test_case_step_edit_button]: ../images/test/test_case_step_edit_button.PNG
+[test_case_step_operation_button]: ../images/test/test_case_step_operation_button.PNG
 [test_case_step_edit_form]: ../images/test/test_case_step_edit_form.PNG
 [test_case_step_up_button]: ../images/test/test_case_step_up_button.PNG
 [test_case_step_down_button]: ../images/test/test_case_step_down_button.PNG
 [test_case_step_delete_button]: ../images/test/test_case_step_delete_button.PNG
+[test_case_step_copy_button]: ../images/test/test_case_step_copy_button.PNG
+[test_case_step_paste_button]: ../images/test/test_case_step_paste_button.PNG
+[test_case_step_cut_button]: ../images/test/test_case_step_cut_button.PNG
+[test_case_step_copy]: ../images/test/test_case_step_copy.PNG
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
 [test_case_migration_menu]:../images/test/test_case_migration_menu.PNG
 [test_case_migration_form]:../images/test/test_case_migration_form.PNG
