@@ -118,7 +118,7 @@ order: 20
 
   1. Click **Edit** button on the right of suite name.
 
-  2. Click the ![][test_case_step_operation_button] then click the ![][test_case_step_paste_button]. The copied case steps will be insert before the editing case step.
+  2. Click the ![][test_case_step_operation_button] then click the ![][test_case_step_paste_button]. The copied/cut case steps will be insert before the editing case step.
 
 #### Delete a case step
 
