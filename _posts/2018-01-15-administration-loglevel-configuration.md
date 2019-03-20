@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Custom Log Level"
+title: "logging configuration"
 category: administration
 date: 2018-03-08 15:17:55
 order: 15
@@ -20,6 +20,6 @@ In this task, you can runtime set log level in IDA, after that you can see the l
   3. After that you can find the log level is changed in the console,log file etc.   
  
 **Notes:** 
-If you restart the server,the log level configuration will restore to orignal configuration.  
+If you restart the server,the log configuration will restore to orignal configuration.  
 
 [administrator_loglevel]: ../images/install/Administrator_loglevel.png
