@@ -14,7 +14,8 @@ order: 3
  
 Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties file contains three main sections.
 
-**#application-prod.yml**   
+**application-prod.yml configuration**
+   
 *  **spring.datasource.username** : Database connection username  
 *  **spring.datasource.password** : Database connection password  
 *  **spring.datasource.url** : Database connection URL
@@ -27,10 +28,12 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **engineConfig.retryTimes** :  retry the failed command by the given times
 *  **engineConfig.retryInterval** : the interval time  between the retry.The default is 3 seconds    
 *  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc  
-*  **smtp.host** ：SMTP host    
-*  **smtp.port** ：SMTP port    
-*  **email.from** ：Sender Email address 
-*  **spring.activemq.broker-url** ：IP and Port of embedded ActiveMQ. It is only needed when you integrate IDA with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the IDA deployment server.
+*  **smtp.host** : SMTP host    
+*  **smtp.port** : SMTP port    
+*  **email.from** : Sender Email address 
+*  **spring.activemq.broker-url** : IP and Port of embedded ActiveMQ. It is only needed when you integrate IDA with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the IDA deployment server.
+*  **deployment.timeout** : The timeout in seconds for REST API call to check if snapshot is installed on PS and set as default snapshot
+*  **deployment.interval** : The interval in seconds for REST API call to check if snapshot is installed on PS and set as default snapshot
 *  **jasypt.encryptor.password** : default value password
 
 **Notes** 
@@ -52,15 +55,16 @@ Once you get the encrypt password,you need to change spring.datasource.password 
 spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)     
 
  
-**#checkstyle.properties**
-*  **checkstyle.engine**: The checkstyle engine property can be EMBEDDED or ODM. By default, it's *EMBEDDED*. You need configure the following ODM server and rules configuration if you use ODM as checkstyle engine.
-- *  **resUser** : rule execution server username  
-- *  **resPassword** : rule execution server password  
-- *  **resUrl** : rule execution server url  
-- *  **resPort** : rule execution server port 
-- *  **restUrl** : The checkstyle rule ODM REST url
+**checkstyle.properties configuration**
 
-**#monitoring.properties (For BPM Monitoring purpose)**
+*  **checkstyle.engine**: The checkstyle engine property can be EMBEDDED or ODM. By default, it's *EMBEDDED*. You need configure the following ODM server and rules configuration if you use ODM as checkstyle engine.
+*  **resUser** : rule execution server username  
+*  **resPassword** : rule execution server password  
+*  **resUrl** : rule execution server url  
+*  **resPort** : rule execution server port 
+*  **restUrl** : The checkstyle rule ODM REST url
+
+**monitoring.properties configuration (For BPM Monitoring purpose)**
 	
 *  **event_type** : event types to be stored in IDA database  
 *  **track_serviceflow** : default as true  
