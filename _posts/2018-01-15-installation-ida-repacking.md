@@ -14,7 +14,7 @@ order: 3
  
 Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties file contains three main sections.
 
-**application-prod.yml configuration**
+**application configuration**
    
 *  **spring.datasource.username** : Database connection username  
 *  **spring.datasource.password** : Database connection password  
@@ -55,7 +55,7 @@ Once you get the encrypt password,you need to change spring.datasource.password 
 spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)     
 
  
-**checkstyle.properties configuration**
+**checkstyle properties configuration**
 
 *  **checkstyle.engine**: The checkstyle engine property can be EMBEDDED or ODM. By default, it's *EMBEDDED*. You need configure the following ODM server and rules configuration if you use ODM as checkstyle engine.
 *  **resUser** : rule execution server username  
@@ -64,7 +64,7 @@ spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
 *  **resPort** : rule execution server port 
 *  **restUrl** : The checkstyle rule ODM REST url
 
-**monitoring.properties configuration (For BPM Monitoring purpose)**
+**monitoring properties configuration (For BPM Monitoring purpose)**
 	
 *  **event_type** : event types to be stored in IDA database  
 *  **track_serviceflow** : default as true  
