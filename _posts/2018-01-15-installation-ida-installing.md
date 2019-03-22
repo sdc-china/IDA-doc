@@ -219,6 +219,10 @@ the password: the IDA login password.
 
    ![][IDAOption]
 
+##### Notes
+
+If you want to install chrome plug-in offline,you can use online https://chrome-extension-downloader.com/  tools,then enter the url
+https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp to download crx ,then install crx.  
 
 [toolkit]: ../images/install/toolkit.png 
 [service]: ../images/install/service.png 
