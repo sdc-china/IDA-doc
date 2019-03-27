@@ -20,4 +20,4 @@ The samples are available on Git [samples](https://github.com/sdc-china/IDA-samp
     - BPMoC sample - How to test the BPMoC process
 
 ## Online demos
-1. Youtube demos: [IBM Deployment Accelerator for Business Automation Workflow - IDA Playlist](https://www.youtube.com/playlist?list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg)
+1. YouTube demos: [IBM Deployment Accelerator for Business Automation Workflow - IDA Playlist](https://www.youtube.com/playlist?list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg)

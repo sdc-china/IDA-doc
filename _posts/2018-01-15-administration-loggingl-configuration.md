@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "logging configuration"
+title: "Logging configuration"
 category: administration
 date: 2018-03-08 15:17:55
 order: 15
