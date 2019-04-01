@@ -56,21 +56,19 @@ if (controlId) {
     coachView = bta.util.getCoachViewByControlId(controlId);     
 }   
 var selectElement;   
-if (bta.util.isBPMUICoachView(coachView)) {   
+if (coachView) {   
 	selectElement = coachView.context.element.querySelector("select.form-control");     
 	if (bta.util.isElementTag(selectElement, "select")) {   
 	    var selectOptions = selectElement.options;   
 	    for (var i=0; i<selectOptions.length; i++) {   
 	    	 if (selectOptions[i].selected) {                 
 	    		if (selectOptions[i].text=='Sales'){                 
-                   var textView = bta.util.getCoachViewByControlId(textId);    
-                   if (bta.util.isBPMUICoachView(textView) || bta.util.isRespCoachView(textView)) {   
-	                 // BPM UI and Responsive Coach View   
-	                 inputElement = textView.context.element.querySelector("input.form-control");	   
+                   var textView = bta.util.getCoachViewByControlId(textId);                 
+	           inputElement = textView.context.element.querySelector("input.form-control");	   
                     if (inputElement) {        
                       inputElement.value=3 ;   
                       }    
-                 }   
+                 
  	    	 }   
       	       }   
            }      
