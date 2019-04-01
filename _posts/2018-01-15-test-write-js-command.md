@@ -76,17 +76,15 @@ if (bta.util.isBPMUICoachView(coachView)) {
        }      
 	}   
 }    
-
-
 return bta.util.callback();
 ``` 
 3. Insert this js command in the **Submit position request**  task UI.
 
-   ![][commandsample]
+   ![][test_js_commandsample]
 
 4. When you record/replay this case again,you will find when you recorded  department value is **sales** ,the number of employee value is **3**.
 
-   ![][commandresult]
+   ![][test_js_commandresult]
 
 
   [test_js_command]: ../images/test/test_js_command.PNG
