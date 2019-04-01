@@ -46,36 +46,36 @@ Javascript functions
 1. We create a js testCommand name **change sales number**    
 2. Copy the below js command content into this js command.
 ```   
-var controlId='Section1.Section4.Requisition_CV1.Section1.Single_Select2';
-var textId='Section1.Section4.Requisition_CV1.Section1.Text3';
-var coachView;
-var inputElement;
-var selectedValue = [];
-if (controlId) {
-	coachView = bta.util.getCoachViewByControlId(controlId); 
-    console.log("find coachView");
-}
-var selectElement;
-if (bta.util.isBPMUICoachView(coachView)) {
-	selectElement = coachView.context.element.querySelector("select.form-control");  
-	if (bta.util.isElementTag(selectElement, "select")) {
-	    var selectOptions = selectElement.options;
-	    for (var i=0; i<selectOptions.length; i++) {
-	    	 if (selectOptions[i].selected) {               
-	    		if (selectOptions[i].text=='Sales'){              
-                   var textView = bta.util.getCoachViewByControlId(textId); 
-                   if (bta.util.isBPMUICoachView(textView) || bta.util.isRespCoachView(textView)) {
-	                 // BPM UI and Responsive Coach View
-	                 inputElement = textView.context.element.querySelector("input.form-control");	
-                    if (inputElement) {     
-                      inputElement.value=3 ;
-                    }
-                }
-	    	 }
-	       }
-       }   
-	}
-}
+var controlId='Section1.Section4.Requisition_CV1.Section1.Single_Select2';   
+var textId='Section1.Section4.Requisition_CV1.Section1.Text3';   
+var coachView;   
+var inputElement;   
+var selectedValue = [];  
+if (controlId) {   
+	coachView = bta.util.getCoachViewByControlId(controlId);    
+    console.log("find coachView");   
+}   
+var selectElement;   
+if (bta.util.isBPMUICoachView(coachView)) {   
+	selectElement = coachView.context.element.querySelector("select.form-control");     
+	if (bta.util.isElementTag(selectElement, "select")) {   
+	    var selectOptions = selectElement.options;   
+	    for (var i=0; i<selectOptions.length; i++) {   
+	    	 if (selectOptions[i].selected) {                 
+	    		if (selectOptions[i].text=='Sales'){                 
+                   var textView = bta.util.getCoachViewByControlId(textId);    
+                   if (bta.util.isBPMUICoachView(textView) || bta.util.isRespCoachView(textView)) {   
+	                 // BPM UI and Responsive Coach View   
+	                 inputElement = textView.context.element.querySelector("input.form-control");	   
+                    if (inputElement) {        
+                      inputElement.value=3 ;   
+                    }    
+                }   
+	    	 }   
+	       }   
+       }      
+	}   
+}    
 
 
 return bta.util.callback();
