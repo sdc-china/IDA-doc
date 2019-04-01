@@ -46,7 +46,7 @@ Javascript functions
 1. We create a js testCommand name **change sales number**    
 2. Copy the below js command content into this js command.
 
-```   
+``` 
 var controlId='Section1.Section4.Requisition_CV1.Section1.Single_Select2';   
 var textId='Section1.Section4.Requisition_CV1.Section1.Text3';   
 var coachView;   
@@ -78,7 +78,7 @@ if (bta.util.isBPMUICoachView(coachView)) {
 }    
 return bta.util.callback();
 
-``` 
+```
 3. Insert this js command in the **Submit position request**  task UI.
 
    ![][test_js_commandsample]
