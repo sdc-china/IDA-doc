@@ -45,6 +45,7 @@ Javascript functions
 
 1. We create a js testCommand name **change sales number**    
 2. Copy the below js command content into this js command.
+
 ```   
 var controlId='Section1.Section4.Requisition_CV1.Section1.Single_Select2';   
 var textId='Section1.Section4.Requisition_CV1.Section1.Text3';   
@@ -52,8 +53,7 @@ var coachView;
 var inputElement;   
 var selectedValue = [];  
 if (controlId) {   
-	coachView = bta.util.getCoachViewByControlId(controlId);    
-    console.log("find coachView");   
+    coachView = bta.util.getCoachViewByControlId(controlId);     
 }   
 var selectElement;   
 if (bta.util.isBPMUICoachView(coachView)) {   
@@ -69,14 +69,15 @@ if (bta.util.isBPMUICoachView(coachView)) {
 	                 inputElement = textView.context.element.querySelector("input.form-control");	   
                     if (inputElement) {        
                       inputElement.value=3 ;   
-                    }    
-                }   
-	    	 }   
-	       }   
-       }      
-	}   
+                      }    
+                 }   
+ 	    	 }   
+      	       }   
+           }      
+        }   
 }    
 return bta.util.callback();
+
 ``` 
 3. Insert this js command in the **Submit position request**  task UI.
 
