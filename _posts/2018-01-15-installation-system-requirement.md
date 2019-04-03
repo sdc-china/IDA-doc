@@ -38,7 +38,10 @@ or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)
 * IE v11+ (Supports exection only)
 
 ### Minimal Hardware/VM/Docker Requirements
-- 2 core CPU, 4 GB memory and 10 GB disk space.
+- 2 core CPU, 4 GB memory and 50 GB disk space.
+
+### Recommended Hardware/VM/Docker Requirements
+- 2 core CPU, 8 GB memory and 200 GB disk space.
 
 ### Install IDA Package
 Extract the IDA Installation archive file to a specific location. The IDA archive file contains the following directories and artifacts: 
