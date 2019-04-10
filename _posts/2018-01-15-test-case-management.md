@@ -81,9 +81,11 @@ order: 20
   
 #### Edit a case step
 
-  1. Click **Edit** button on the right of suite name.
+  1. Select the case step you want to edit.   
    
-  2. Click ![][test_case_step_edit_button] button in the operation column of the case step you want to edit.
+  2. In the popup menu click the  edit link.    
+  
+     ![][test_case_step_edit_button]
   
   3. Update case step.
   
@@ -95,9 +97,9 @@ order: 20
   
 #### Adjust the order of case step.
 
-  1. Click **Edit** button on the right of suite name.
+  1.  Select the case step you want to move.
   
-  2. Click ![][test_case_step_up_button] and ![][test_case_step_down_button] button to adjust the order of a case step.
+  2.  In the popup menu, click **Move UP** or  **Move down** to adjust the order of a case step.
   
   3. click **Exit Edit** button on the right of suite name.
 
