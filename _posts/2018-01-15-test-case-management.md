@@ -69,7 +69,7 @@ order: 20
   
 #### Add a case step
 
-  1. Click **Add** button when add the first case step to a test case, otherwise click **+** button on case step list table.
+  1. Select the test case step position you want to insert.In the popup menu choose  **Add**  link to insert.   
   
        ![][test_case_step_table_add]
   
@@ -99,7 +99,9 @@ order: 20
 
   1.  Select the case step you want to move.
   
-  2.  In the popup menu, click **Move UP** or  **Move down** to adjust the order of a case step.
+  2.  In the popup menu, click **Move UP** or  **Move down** to adjust the order of a case step.   
+     
+      ![][test_case_step_updown_button]   
   
   3. click **Exit Edit** button on the right of suite name.
 
@@ -107,7 +109,7 @@ order: 20
 
   1. Click **Edit** button on the right of suite name.
 
-  2. Select the case steps to be copied, then click the ![][test_case_step_copy_button]  
+  2. Select the case steps to be copied
     ![][test_case_step_copy]
 
 #### Cut case steps
@@ -146,6 +148,7 @@ order: 20
 [test_case_step_edit_form]: ../images/test/test_case_step_edit_form.PNG
 [test_case_step_up_button]: ../images/test/test_case_step_up_button.PNG
 [test_case_step_down_button]: ../images/test/test_case_step_down_button.PNG
+[test_case_step_updown_button]: ../images/test/test_case_step_updown_button.PNG
 [test_case_step_delete_button]: ../images/test/test_case_step_delete_button.PNG
 [test_case_step_copy_button]: ../images/test/test_case_step_copy_button.PNG
 [test_case_step_paste_button]: ../images/test/test_case_step_paste_button.PNG
