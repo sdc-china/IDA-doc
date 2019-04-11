@@ -99,7 +99,7 @@ order: 20
 
   1.  Select the case step you want to move.
   
-  2.  In the popup menu, click **Move UP** or  **Move down** to adjust the order of a case step.   
+  2.  In the popup menu, click **MoveUP** or  **Movedown** link to adjust the order of a case step.   
      
       ![][test_case_step_updown_button]   
   
@@ -109,14 +109,14 @@ order: 20
 
   1. Click **Edit** button on the right of suite name.
 
-  2. Select the case steps to be copied
+  2. Select the case steps to be copied,in the popup menu  click **Copy** link.
     ![][test_case_step_copy]
 
 #### Cut case steps
 
   1. Click **Edit** button on the right of suite name.
 
-  2. Select the case steps to be cut, then click the
+  2. Select the case steps to be cut, in the popup menu  click **Cut** link.
   
      ![][test_case_step_cut_button]  
 
@@ -129,7 +129,8 @@ order: 20
 
 #### Delete a case step
 
-  Click ![][test_case_step_delete_button] button in the operation column of the case step you want to delete.
+  Select the test case steps in the test case step table.In the popup menu  click **delete** link.  
+  ![][test_case_step_delete]
   
 ### Delete a test case
 
