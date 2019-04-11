@@ -116,13 +116,16 @@ order: 20
 
   1. Click **Edit** button on the right of suite name.
 
-  2. Select the case steps to be cut, then click the ![][test_case_step_cut_button]  
+  2. Select the case steps to be cut, then click the
+  
+     ![][test_case_step_cut_button]  
 
 #### Paste case steps
 
   1. Click **Edit** button on the right of suite name.
 
-  2. Click the ![][test_case_step_operation_button] then click the ![][test_case_step_paste_button]. The copied/cut case steps will be insert before the editing case step.
+  2. Choose the test case step position you want to paste then click the **Paste** link,The copied/cut case steps will be insert before the editing case step.      
+  ![][test_case_step_paste_button]. 
 
 #### Delete a case step
 
@@ -150,6 +153,7 @@ order: 20
 [test_case_step_down_button]: ../images/test/test_case_step_down_button.PNG
 [test_case_step_updown_button]: ../images/test/test_case_step_updown_button.PNG
 [test_case_step_delete_button]: ../images/test/test_case_step_delete_button.PNG
+[test_case_step_delete]: ../images/test/test_case_step_delete.PNG
 [test_case_step_copy_button]: ../images/test/test_case_step_copy_button.PNG
 [test_case_step_paste_button]: ../images/test/test_case_step_paste_button.PNG
 [test_case_step_cut_button]: ../images/test/test_case_step_cut_button.PNG
