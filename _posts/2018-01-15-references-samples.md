@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Samples and Demos"
+title: "Samples"
 category: references
 date: 2018-01-05 15:17:55
 order: 6
