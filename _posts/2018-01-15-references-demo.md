@@ -7,7 +7,7 @@ order: 10
 ---
 
 ## YouTube demos
-1. YouTube demo playlist: [IBM Deployment Accelerator for Business Automation Workflow - IDA Playlist](https://www.youtube.com/playlist?list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg)
+1. [IBM Deployment Accelerator for Business Automation Workflow - IDA Playlist](https://www.youtube.com/playlist?list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg)
 2. [IDA Introduction](https://www.youtube.com/watch?v=CjX-n3Eze6A&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=2&t=0s)
 3. [IDA Tutorial: BPM Testing - Creating and Generating Process Test Cases](https://www.youtube.com/watch?v=lN9ciwzepJM&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=3&t=0s)
 4. [IDA Tutorial: BPM Testing - Recording and Replaying Process Test Cases](https://www.youtube.com/watch?v=ez10ENQoKzU&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=4&t=0s)
