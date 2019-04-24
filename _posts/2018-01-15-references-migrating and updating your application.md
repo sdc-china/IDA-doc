@@ -24,8 +24,7 @@ To update DB, take the following steps:
 
 ![][mysqlmigration]   
 
-3. Connect to the MySQL server and use IDA database.You can execute the script from the  clipboard. 
-
+3. Connect to the MySQL server and use IDA database. Execute the script for each consecutive version.
 ``` 
 mysql> use IDA ;   
 mysql> paste your sql here   
@@ -45,25 +44,6 @@ For IDA version migration,you need to update IDA.war, take the following steps:
  **Notes**     
  Please not overwrite ida.properties from previous version, since we might add new some new property name  in some versions.  
  You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
-
-
-### Step 3: Update IDA v2.1.1 to IDA v2.2 
-
-If you want to migrate IDA v2.1.1 to to IDA v2.2 version, you need to first create team then configure the team permission.        
-
-1. Navigation to the Administration tab and click the *Team Configuration* link then click the add button to reate a team name and description.        
-2. Select the team and click the button to set the appropriate permission setting for users,processApp,selenium grid.   
-
-![][teampermission]     
-
-3. After create the team permission,you can use this team to create project.          
-
-### Update IDA v2.2 to v2.2.1 or higher version
-
-If you want to migrate IDA v2.2 to to the newer version, e.g. v2.2.1 You could check the sql file in release package. See figure below,
-![][sqlfolder]  
-Then you could find migrate-mysql.sql, search version number (2.2.2) and then execute migration sql script for each consecutive version.
-![][migration-sql]  
 
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
