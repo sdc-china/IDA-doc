@@ -47,9 +47,9 @@ For IDA version migration,you need to update IDA.war, take the following steps:
  You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
 
 
-### Step 3: Update IDA2.1.1 to IDA 2.2
+### Step 3: Update IDA v2.1.1 to IDA v2.2 
 
-If you want to migrate IDA2.1.1 to to IDA2.2 version, you need to first create team then configure the team permission.        
+If you want to migrate IDA v2.1.1 to to IDA v2.2 version, you need to first create team then configure the team permission.        
 
 1. Navigation to the Administration tab and click the *Team Configuration* link then click the add button to reate a team name and description.        
 2. Select the team and click the button to set the appropriate permission setting for users,processApp,selenium grid.   
@@ -58,9 +58,16 @@ If you want to migrate IDA2.1.1 to to IDA2.2 version, you need to first create t
 
 3. After create the team permission,you can use this team to create project.          
 
- ![][teamproject]   
+### Update IDA v2.2 to v2.2.1 or higher version
+
+If you want to migrate IDA v2.2 to to the newer version, e.g. v2.2.1 You could check the sql file in release package. See figure below,
+![][sqlfolder]  
+Then you could find migrate-mysql.sql, search version number (2.2.2) and then execute migration sql script for each consecutive version.
+![][migration-sql]  
 
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
 [teampermission]: ../images/install/teampermission.png
 [teamproject]: ../images/install/teamproject.png
+[sqlfolder]: ../images/reference/sql-folder.png
+[migration-sql]: ../images/reference/migration-sql-example.png
