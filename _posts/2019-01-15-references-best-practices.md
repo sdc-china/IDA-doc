@@ -16,5 +16,21 @@ order: 8
 
    ![][references-wait-element]
 
+### IDA plug-in troubleshooting
+* When you run IDA plug-in for replay you might meet isssue for the plug-in. You should see the  the step with highlighted red color.When you move the mouse the red icon,it will show the detail issue.
+
+   ![][references-idarecorder]
+
+* You can also use the browser console to see the logs for plug-in console.You can check the plug-in console for detail error message.
+
+   ![][references-pluginConsole]
+
+* You can also use the browser console to see the logs for BPM UI console.You can check the BPM UI console message for detail error message.
+
+   ![][references-browserconsole]
+
 
   [references-wait-element]: ../images/references/references-wait-element.png
+  [references-idarecorder]: ../images/references/IDARecorder.png
+  [references-browserconsole]: ../images/references/Browserconsole.png
+  [references-pluginConsole]: ../images/references/PluginConsole.png
