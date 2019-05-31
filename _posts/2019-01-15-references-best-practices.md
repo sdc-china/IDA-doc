@@ -17,20 +17,31 @@ order: 8
    ![][references-wait-element]
 
 ### IDA plug-in troubleshooting
-* When you run IDA plug-in for replay you might meet isssue for the plug-in. You should see the  the step with highlighted red color.When you move the mouse the red icon,it will show the detail issue.
+* When you run IDA plug-in for replay you might meet issue for the plug-in. You should see the step with highlighted red color.When you move the mouse the red icon,it will show the detail issue.
 
    ![][references-idarecorder]
 
-* You can also use the browser console to see the logs for plug-in console.You can check the plug-in console for detail error message.
+* You can use below ways to get detail logs of plug-in issues.
 
-   ![][references-pluginConsole]
+1. You can use the browser console to see the logs for plug-in console.You can check the plug-in console for detail error message.
 
-* You can also use the browser console to see the logs for BPM UI console.You can check the BPM UI console message for detail error message.
+   ![][references-pluginConsole] 
+
+2. You can use the browser console to see the logs for BPM UI console.You can check the BPM UI console message for detail error message.
 
    ![][references-browserconsole]
+   
+3.  Manage the extension of IDA plug-in.Click the Inspect views "background page" to see background.js console info.
+
+   ![][references-plugin] 
+   ![][references-backgroundconsole]
+
+4.  You can also check server side console to see any log with this step.
 
 
   [references-wait-element]: ../images/references/references-wait-element.png
   [references-idarecorder]: ../images/references/IDARecorder.png
   [references-browserconsole]: ../images/references/Browserconsole.png
   [references-pluginConsole]: ../images/references/PluginConsole.png
+  [references-plugin]: ../images/references/Plugin.png
+  [references-backgroundconsole]: ../images/references/IDABackgroud.png
