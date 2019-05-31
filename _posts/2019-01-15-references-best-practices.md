@@ -21,20 +21,22 @@ order: 8
 
    ![][references-idarecorder]
 
-* You can use below ways to get detail logs of plug-in issues.
+You can use below ways to collect logs of plug-in.
 
 1. You can use the browser console to see the logs for plug-in console.You can check the plug-in console for detail error message.
 
    ![][references-pluginConsole] 
 
-2. You can use the browser console to see the logs for BPM UI console.You can check the BPM UI console message for detail error message.
+2. You can use the browser console to see the logs for  UI console.You can check the  UI console message for detail error message.
 
    ![][references-browserconsole]
    
-3.  Manage the extension of IDA plug-in.Click the Inspect views "background page" to see background.js console info.
+3.  Manage the extension of IDA plug-in.Then click the Inspect views "background page" to see background.js console message.
 
-   ![][references-plugin] 
-   ![][references-backgroundconsole]
+    ![][references-plugin] 
+    
+    
+    ![][references-backgroundconsole]
 
 4.  You can also check server side console to see any log with this step.
 
