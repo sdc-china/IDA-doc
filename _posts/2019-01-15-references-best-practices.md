@@ -23,11 +23,11 @@ order: 8
 
 You can use below ways to collect logs of plug-in.
 
-1. You can use the browser console to see the logs for plug-in console.You can check the plug-in console for detail error message.
+1. You can use the browser console to see the logs for plug-in console.
 
    ![][references-pluginConsole] 
 
-2. You can use the browser console to see the logs for  UI console.You can check the  UI console message for detail error message.
+2. You can use the browser console to see the logs for  UI console.
 
    ![][references-browserconsole]
    
@@ -38,7 +38,7 @@ You can use below ways to collect logs of plug-in.
     
     ![][references-backgroundconsole]
 
-4.  You can also check server side console to see any log with this step.
+4.  You can also check server side console to see any logs with this step.
 
 
   [references-wait-element]: ../images/references/references-wait-element.png
