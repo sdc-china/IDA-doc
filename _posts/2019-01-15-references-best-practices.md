@@ -31,7 +31,7 @@ You can use below ways to collect logs of plug-in.
 
    ![][references-browserconsole]
    
-3.  Manage the extension of IDA plug-in.Then click the Inspect views "background page" to see background.js console message.
+3.  Manage the extension of IDA plug-in.Switch the "Developer mode" on the right top page.Then click the Inspect views "background page" to see background.js console message.
 
     ![][references-plugin] 
     
