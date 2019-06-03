@@ -23,7 +23,7 @@ order: 8
 
 You can use below ways to collect logs of plug-in.
 
-1. You can use the browser console to see the logs for plug-in console.
+1. You can use the browser console to see the logs for IDA recorder plug-in console.
 
    ![][references-pluginConsole] 
 
