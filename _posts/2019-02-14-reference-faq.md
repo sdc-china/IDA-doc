@@ -52,3 +52,5 @@ order: 9
     - Answer: You could use [group command](https://sdc-china.github.io/IDA-doc/test/test-group-command-management.html) to manage test cases. In that case, you could just manualy modify the group command if adding one new field. Or record group command steps again and not need update all test cases one by one.
 1. FAQ: Does IDA support migration from versions which are not previous to the current release? For example, 2.2.1 to 2.2.4?
     - Answer: YES. though the intermediary sql scripts must be executed for each consecutive version we skip. Refer to [step one](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) in migration doc
+1. FAQ: Why can't I launch the BP3 human services on firefox grid?
+    - Answer: The firefox selenium driver that we used(geckodriver-v0.23.0) cannot launch the BP3 human services when the selenium version is 3.14.0. This will be fixed in the next release.
