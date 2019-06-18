@@ -36,7 +36,7 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **deployment.interval** : The interval in seconds for REST API call to check if snapshot is installed on PS and set as default snapshot
 *  **jasypt.encryptor.password** : default value password  
 *  **enable_case_history** : Enable save test case history function, default value is true.  
-*  **max_case_history** : Set latest test case history max number of each test case, default value is 100.  
+*  **max_case_history** : Set latest test case history max number of each test case, default value is 100.    
 
 **Notes** 
 If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
