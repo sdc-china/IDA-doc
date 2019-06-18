@@ -34,7 +34,9 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **spring.activemq.broker-url** : IP and Port of embedded ActiveMQ. It is only needed when you integrate IDA with BPM DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the IDA deployment server.
 *  **deployment.timeout** : The timeout in seconds for REST API call to check if snapshot is installed on PS and set as default snapshot
 *  **deployment.interval** : The interval in seconds for REST API call to check if snapshot is installed on PS and set as default snapshot
-*  **jasypt.encryptor.password** : default value password
+*  **jasypt.encryptor.password** : default value password  
+*  **enable_case_history** : Enable save test case history function, default value is true.  
+*  **max_case_history** : Set latest test case history max number of each test case, default value is 100.  
 
 **Notes** 
 If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
