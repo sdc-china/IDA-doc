@@ -31,6 +31,11 @@ order: 2
       | WAS Admin password     | WAS admin password                                                                        |  
       | Connected Server Name  | online PS server name               |
 
+**Notes:**  
+
+If you need to add bpmoc server,you don't need to fill everything only add bpm server url,server type,hostname and rest username(function id) and password.
+  
+   ![][administrator_bpmoc]
 
 ### Edit BPM server
   1. Click **Edit** icon on the right of the BPM server that you want to edit.
@@ -77,6 +82,7 @@ Pls make sure the added user  exist in your selected BPM server.Also You need to
 What's more, you can also edit a bpm user in a similar way to editing a user.
   
 [administrator_bpmserver]: ../images/administrator/administrator_bpmserver.png
+[administrator_bpmoc]: ../images/administrator/bpmoc.png
 [administrator_bpmuser]: ../images/administrator/administrator_bpmuser.png
 [administrator_bpmuserlist]: ../images/administrator/administrator_bpmuserlist.png
 [administrator_assignee]: ../images/administrator/administrator_asignee.png
