@@ -18,7 +18,7 @@ order: 1
 
 ### Software Prerequisites
 
-* [IBM® Business Process Manager](https://www.ibm.com/support/knowledgecenter/SSFTBX_8.5.7/com.ibm.wbpm.main.doc/topics/ibmbmp_overview.html) V8.5.x+ or [IBM® Business Automation Workflow V18.X](https://www.ibm.com/support/knowledgecenter/en/SS8JB4_18.0.0/com.ibm.wbpm.workflow.main.doc/kc-homepage-workflow.html) 
+* [IBM® Business Process Manager 8.5.x,8.6.0](https://www.ibm.com/support/knowledgecenter/en/SSFPJS), [IBM® Business Automation Workflow V18.X](https://www.ibm.com/support/knowledgecenter/en/SS8JB4_18.0.0/com.ibm.wbpm.workflow.main.doc/kc-homepage-workflow.html) and [IBM® Business Automation Workflow V19.0.0.1](https://www.ibm.com/support/knowledgecenter/SS8JB4/com.ibm.wbpm.workflow.main.doc/kc-homepage-workflow.html) 
 * [Open Liberty 18.0.0.3](https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2018-09-05_2337/openliberty-18.0.0.3.zip) or [IBM WebSphere Application Server Version  v9.x](https://www.ibm.com/support/knowledgecenter/en/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/welcome_ndmp.html)
     - The appserver JDK is JDK v8+ (64-bit) 
 * [IBM® Db2 v10.x+](https://www.ibm.com/analytics/us/en/db2/) 
