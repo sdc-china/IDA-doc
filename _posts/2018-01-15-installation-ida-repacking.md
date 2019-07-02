@@ -28,6 +28,7 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **engineConfig.retryTimes** :  retry the failed command by the given times
 *  **engineConfig.retryInterval** : the interval time  between the retry.The default is 3 seconds    
 *  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc  
+*  **engineConfig.headless** :  defaut false,if you set true means it run  headless UI on selenium grid   
 *  **smtp.host** : SMTP host    
 *  **smtp.port** : SMTP port    
 *  **email.from** : Sender Email address 
