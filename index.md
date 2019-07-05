@@ -13,6 +13,8 @@ title: "IBM Deployment Accelerator for Business Automation Workflow (IDA)"
 
 Developers can perform static analysis on the BPM process application, which enforces design convention and processes development standards.  There are 80+ checkstyle rules built-in which are based on BPM development best practices and anti-patterns. Also, developers can monitor the status and overall report through the pipeline dashboard. If there are any error with the build, they will be notified by mail.
 
+Here are some user stories.
+
 1. As a developer, I want to create unit test cases against the services and coach UI, so that I can run the test cases in CI server to ensure the code quality.
 2. As a developer, I want to extend the auto testing tool functionalities using customized commands, so that I reduce the testing effort and improve the test coverage.
 3. As a developer, I want to analyze my BPM project with the static analysis tool regularly, so that I can enforce the coding standard and best practice in my project and ensure the quality of the deliverables.
