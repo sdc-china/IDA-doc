@@ -46,11 +46,17 @@ Here are some user stories.
 10.	As a tester, I want to run a test script with multiple test data, so I can reduce my testing effort and make test cases reusable and increase the test coverage.
 
 ### Ops Team:
+
+The user stories are as below:
+
 1.	As a BPM Administrator, I want to be notified upon the status change or abnormal execution time of specific services that could help me take immediate actions on any outage.
 2.	As a BPM Administrator, I want to manipulate the in-flight instances more efficiently to do the run-time debug to fix the issues reported by business users easily.
 
 
 ### CICD Pipeline
+
+The user stories are as below:
+
 1.	As a Deployer, I want to construct an automatic release process to deliver the BPM releases more frequently and also in good quality.
 2.	As a Deployer, I want to deploy my BPM application in TEST env through creating a snapshot or one-click to make it available for testing.
 3.	As a Deployer, I want to be notified when a deployment is finished that could remind me to take action when the deployment fails.
@@ -66,7 +72,7 @@ Here are some user stories.
 * Monitor BPM service with alert in real time
 * Support tools for BPM instance migration
   
-  
+
 
 
 [ida-devops]: ./images/install/ida-devops.png
