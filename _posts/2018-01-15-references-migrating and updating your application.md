@@ -20,7 +20,13 @@ To prepare your migration, take the following steps:
 To update DB, take the following steps: 
 
 1. Start the mysql Server.  
-2. Find migrate-mysql*.sql in the migrate\mysql folder. Copy the corresponding version upgrade sql into clipboard.   
+2. You can find migrate-mysql*.sql in the sql\migrate\mysql folder. Copy the corresponding version upgrade sql into clipboard.     
+For example: If your previous version is v2.2.2.You need to pick below sql script to run one by one.Make sure the migrate sql version name is bigger than your previous version.
+* migrate-mysql-v2.2.2-v2.2.3.sql
+* migrate-mysql-v2.2.3-v2.2.4.sql
+* migrate-mysql-v2.3.0-v2.3.1.sql
+* migrate-mysql-v2.3.1-v2.3.2.sql
+
 
 ![][mysqlmigration]   
 
