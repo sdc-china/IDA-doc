@@ -19,12 +19,33 @@ order: 3
      | -------------------    |---------------------------                                          | 
      | Server Name            | Hub name                                                            |  
      | Server URL             | Hub URL name                                                        |
-     | Node number            | Number of browser instances can run over the Remote System.        |  
-     | Browser                | Support Firefox, Chrome and IE |	
+     | Browser                | Support Firefox, Chrome and IE                                      |  
+     | Configuration          | Customize browser options for selenium	
      
 **Notes:** 
-*Server URL* and *Browser* are the unique key of each data.
- 
+You can customize the selenium configuration based on the template.Currenctly we support below types of configuration.  
+
+**Headless** for chrome and firefox
+``` 
+arguments:
+## Enable headless mode
+- "--headless"
+```  
+
+**experimentalOption** for chrome setting
+``` 
+experimentalOptions:
+## Fix issue "Loading of unpacked extensions is disabled by administrator."
+  useAutomationExtension: false
+``` 
+
+**Window Size**
+``` 
+arguments:
+## Change windows szie
+- "window-size=1920,1080"
+```  
+
 	
 ### Edit selenium hub 
   1. Click **Edit** icon on the right of the Selenium Grid Configuration that you want to edit.
