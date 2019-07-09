@@ -9,13 +9,13 @@ order: 1
 IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support BPM application test.
 
 ### Pre-requisites
-Before you start the tutorial, you need to setup below configurations with super account ("idaAdmin"/"idaAdmin").
+Before you start the tutorial, you need to setup below configurations with the administrative account ("idaAdmin"/"idaAdmin").
 
 [Users management][1]  
-You need to setup user account, permission for the IDA login credentials.
+You need to setup user account for the IDA login credentials.
 
 [BPM configuration][2]   
-You need to setup BPM server, BPM account for the BPM server. 
+You need to setup BPM server and make the BPM account be ready.
 
 [Selenium hub configuration][3]   
 You need to setup selenium node url for the remote testing.
@@ -23,17 +23,17 @@ You need to setup selenium node url for the remote testing.
 
 ### About this task
 
-In this task, you will create a new test project. After that you create test cases based on this test project.
+In this task, you will create a new test project after you create test cases based on this test project.
 
 ### Step 1: Create a test project
 
-  In this step, you create an empty project.   
+  In this step, you will create an empty project.   
   
 #### Procedure
 
 To create a new test project:
 
-  1. In the project list page, click **Create Project** button. Name the project name to **Hiring Sample**. Choose the values like below screenshot.For the visibility,you can choose private or team you belong to.
+  1. In this project list page, click **Create Project** button. Name the project name as **Hiring Sample**. Choose the values like below screenshot. For the visibility, you can choose private or team you belong to.
     
      ![][tutorial_createproject] 
   
@@ -45,11 +45,11 @@ To create a new test project:
    
 ### Step 2: Generate test cases
 
-  In this step, you generate test cases based on new created test project. You can create cases based on the  **Artifact** Type.
+  In this step, you'll generate test cases based on new created test project. You can create cases based on the  **Artifact** Type.
    
 #### Procedure
  
-To generate a process test case and a user interface test case:
+To generate a process test case and an user interface test case:
 
  1. In the left-side menu bar, click **+** button on the right of project name.
 
