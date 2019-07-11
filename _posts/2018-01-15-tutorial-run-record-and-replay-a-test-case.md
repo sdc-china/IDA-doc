@@ -6,19 +6,19 @@ date: 2018-01-05 15:17:55
 order: 2
 ---
 
-IDA provides a browser plugin recorder, which allows user to record their test scenarios without coding.
+IDA provides a browser plugin recorder, which allows users to record their test scenarios without coding.
 
 ### About this task
 
   In this task, you can record, replay and run a test case that you generated in the previous task.
   
-### Step 1: Set up assignee for case steps
+### Step 1: Set up assignees for case steps
 
-  In this step, you need to assign the BPM tasks users for case steps. Take the case1 of **Create Position Request CSHS** as an example.
+  In this step, you need to assign the BPM task users for case steps. Take the case1 of **Create Position Request CSHS** as an example.
   
 #### Procedure
 
-To set up assignee for case steps:
+To set up assignees for case steps:
 
  1. Click **Create Position Request CSHS** in left-side menu bar.
  
@@ -59,7 +59,7 @@ To record a test case:
    
      ![][test_case_record_plugin]
   
-  4. Record every UI actions, you can see each step you have done in tool bar.
+  4. Record every UI action, you can see each step you have done in tool bar.
   
       ![][test_case_record_plugin2]
   
@@ -69,7 +69,7 @@ To record a test case:
   
 ### Step 3: Replay a test case
 
-  In this step, you can replay a test case that you record in the previous steps.
+  In this step, you can replay a test case that you record in the previous step.
  
 #### Procedure 
 
@@ -116,7 +116,7 @@ When you fist record and play your test case you might see the below error.
 
    ![][test_record_issue]
    
-This is becasue IBM Business Process Manager uses default certificates that are not issued by a trusted certificate authority (CA).  The untrusted certificate can cause errors in the user’s browser and possibly block the functions of the OpenPages integration, including the Process Portal home page.  
+This is becasue IBM Business Process Manager uses default certificates that are not issued by a trusted certificate authority (CA).  The untrusted certificate can cause errors in the user’s browser and possibly block the functions of the OpenPages' integration, including the Process Portal home page.  
 
 In order to slove this issue,you need to copy the  url from below screenshot and launch this url from the browser and accept the ssl security warning,then try to record/replay again.   
   
