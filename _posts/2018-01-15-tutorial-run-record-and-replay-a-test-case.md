@@ -28,11 +28,12 @@ To set up assignees for case steps:
  
     ![][test_case_step_table]
  
- 4. Click ![][test_case_step_edit_button] button of case step which includes "Assignee" in **actions** column.
+ 4. Click button of case step which includes "Assignee" in **actions** column.
+    ![][test_case_step_edit_button]
  
-    ![][test_case_step_table2]
  
  5. Select **administrator** in **Assignee** field in order to specify other BPM users to help you complete the business process.
+    ![][test_case_step_table2]
  
  6. Click **Exit Edit** button to finish edit.
  
@@ -118,7 +119,7 @@ When you fist record and play your test case you might see the below error.
    
 This is becasue IBM Business Process Manager uses default certificates that are not issued by a trusted certificate authority (CA).  The untrusted certificate can cause errors in the user’s browser and possibly block the functions of the OpenPages' integration, including the Process Portal home page.  
 
-In order to slove this issue,you need to copy the  url from below screenshot and launch this url from the browser and accept the ssl security warning,then try to record/replay again.   
+In order to slove this issue,you need to copy the  url from above screenshot and launch this url from the browser and accept the ssl security warning,then try to record/replay again.   
   
 **[<Previous][2] [\| Next>][3]**
 
