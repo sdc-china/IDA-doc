@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 4
 ---
 
-IDA provides a build-incontinuous  integration  and deployment  pipeline orchestrate  testing, checkstyle,  snapshot  taking and deployment.
+IDA provides a build-incontinuous  integration  and deployment  pipeline to orchestrate  testing, checkstyle,  snapshot  taking and deployment.
 ### About this task
   Before you start,make sure you have set up the test project. 
 ### Step 1: Create a pipeline
@@ -44,7 +44,7 @@ IDA provides a build-incontinuous  integration  and deployment  pipeline orchest
      |Warnings Threshold|N/A|200|
      |Ignore Empty Documentation|N/A| Check|
      
-     Finally, the stage will like this.
+     Finally, the stage will be like this.
      
      ![][pipeline_stages_tutorial]
      
@@ -59,15 +59,15 @@ IDA provides a build-incontinuous  integration  and deployment  pipeline orchest
   
      ![][pipeline_build] 
   
-     When you run the build, the pipeline build view will appear with every stage building status. Blue color means running, grey means waiting, green means success and red means failure.
+     When you run the build, the pipeline build view will appear with every stage's building status. Blue color means running, grey means waiting, green means success and red means failure.
      
      ![][pipeline_flow]   
 
-     When you hover on **enlargement** icon of build step, you will see the build step details. It will include build time, duration etc information. 
+     When you click on **enlargement** icon of build step, you will see the build step details. It will include build time, duration etc information. 
 
      ![][pipeline_step]
 
-  2. When the pipeline build is over, click the **build no** link to see the whole report. [Details of the report] .
+  2. When the pipeline build is over, click the **build no.** link to see the whole report. [Details of the report] .
   
   **[<Previous][1]**
 

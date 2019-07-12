@@ -17,7 +17,7 @@ IDA enables developers to perform static analysis on the BPM application, which 
 
 Setup Checkstyle of a project:
 
-  1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in project list page and the report will show in a few seconds. The analyzing of checkstyle is asynchronous, and you can do other things when it is performing the checkstyle.
+  1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in project list page and the report will show in a few seconds. The analyzing of checkstyle is asynchronous taht you could do other things when it is performing the checkstyle.
   
      ![][tutorial_project_list]
       
@@ -27,7 +27,7 @@ Setup Checkstyle of a project:
   
        You can also analyze any of your BPM projects in the **Checkstyle** tab. [More Detailed.][2]
   
-  2. When the analysis is over, the analysis report will be displayed. [Details of the report.][1]
+  2. When the analysis is over, the analysis report will be displayed as below. [Details of the report.][1]
   
       ![][tutorial_checkstyle_report]
   
