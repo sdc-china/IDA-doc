@@ -30,7 +30,7 @@ order: 10
      **Notes:**     
      
      Remember to select the process app or toolkit, which can't be both selected.
-     You need to upload eclipse test project zip file when you check the "Migrate an old project".  
+     You need to upload Eclipse test project zip file when you check the "Migrate an old project".  
      
      **Known Limitions:**   
      The test project migration in only supported under development environment.  
