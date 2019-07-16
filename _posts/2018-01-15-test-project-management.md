@@ -12,7 +12,7 @@ order: 10
   
      ![][tutorial_createproject] 
   
-  2. Fill project form according to the following table.
+  2. Fill in the project form according to the following table.
   
      Parameter             | Description       
      ----------------------|-------------------
@@ -29,12 +29,12 @@ order: 10
      
      **Notes:**     
      
-     The Project App and Toolkit must fill at least one and only one.     
+     Remember to select the process app or toolkit, which can't be both selected.
      You need to upload eclipse test project zip file when you check the "Migrate an old project".  
      
      **Known Limitions:**   
-     Only supports test project migration in development environment.  
-     Don't support java/js customization test project.
+     The test project migration in only supported under development environment.  
+     It doesn't support the java/js customization test project.
       
         
   3. Click **Create** button, you will enter into project dashboard page.
@@ -49,7 +49,7 @@ order: 10
      
      ![][test_project_edit_form]
      
-  2. Update project form according to the table showed in creating session.
+  2. Update project form according to the table showed in the creation session.
    
 ### Delete a test project
 
