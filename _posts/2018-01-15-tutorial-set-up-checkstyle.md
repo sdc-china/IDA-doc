@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 3
 ---
 
-IDA enables developers to perform static analysis on the BPM application, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on BPM development best practices and anti-patterns. The rules have been implemended with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
+IDA enables developers to perform static analysis on the BPM application, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on BPM development best practices and anti-patterns. The rules have been implemented with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
 
 
 ### About this task
@@ -15,13 +15,13 @@ IDA enables developers to perform static analysis on the BPM application, which 
   
 ### Procedure
 
-Setup Checkstyle of a project:
+Set up Checkstyle of a project:
 
-  1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in project list page and the report will show in a few seconds. The analyzing of checkstyle is asynchronous taht you could do other things when it is performing the checkstyle.
+  1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in project list page and the report will be shown in a few seconds. The analyzing of checkstyle is asynchronous that you could do other things when it is performing the checkstyle.
   
      ![][tutorial_project_list]
       
-       Once completion, the notification will appear in the lower right corner of the screen. 
+       Once completed, the notification will be appeared in the lower right corner of the screen. 
      
       ![][checkstyle_notification]
   
