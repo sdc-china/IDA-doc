@@ -19,11 +19,11 @@ IDA provides a build-incontinuous  integration  and deployment  pipeline to orch
   
      ![][pipeline_define]  
      
-  2. Click ![][pipeline_add_stage] button. Then fill **Create Stage** form like the screenshot and **Submit**. Select the latest snapshot, and the snapshot in the screenshot is the latest at the time the document was written.
+  2. Click ![][pipeline_add_stage] button. Then fill in **Create Stage** form like the screenshot and **Submit**. Remember to select the first option under snapshot column as it's the latest snapshot.
   
      ![][pipeline_create_stage]
      
-     More details of the parameters in the table. See **[Create a pipeline for continuous deployment][2]**.
+     More details of the parameters in the table, pls see **[Create a pipeline for continuous deployment][2]**.
   
   3. Click ![][pipeline_add_stage] button shown below. 
   
@@ -52,7 +52,7 @@ IDA provides a build-incontinuous  integration  and deployment  pipeline to orch
 
 ###  Step 2: Run the pipeline
 
-  You can run the pipeline.
+  Now you can run the pipeline.
 
 #### Procedure
  1. In the pipeline page, click **Run** icon at the top right corner of the pipeline section.  
