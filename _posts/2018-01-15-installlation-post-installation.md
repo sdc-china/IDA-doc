@@ -67,13 +67,13 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 		      "marionette": true,
 		      "maxInstances": 5,
 		      "seleniumProtocol": "WebDriver",
-			  "version": 57
+			  "version": 67
 		    },
 		    {
 		      "browserName": "chrome",
 		      "maxInstances": 5,
 		      "seleniumProtocol": "WebDriver",
-			  "version": 68
+			  "version": 75
 		    },
 		    {
 		      "browserName": "internet explorer",
