@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Post Installation Setup"
 category: installation
 date: 2018-01-05 15:17:55
 order: 5
+permalink: /installation/installlation-post-installation.html
 ---
 
 

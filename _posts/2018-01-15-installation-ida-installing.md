@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Installing IDA Application"
 category: installation
 date: 2018-01-05 15:17:55
 order: 4
+permalink: /installation/installation-ida-installing.html
 ---
 # Installing IDA Application Components
 There are three components for IDA application we need install and configure, included (1) *IDA web application*, (2) *IDA Browser Plugin* and (3) *IDA BPM toolkit*.

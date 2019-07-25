@@ -1,6 +1,8 @@
 ---
-layout: default
-title: "IBM Deployment Accelerator for Business Automation Workflow (IDA)"
+layout: home
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 ## Overview

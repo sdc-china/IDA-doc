@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Users management"
 category: administration
 date: 2018-01-05 15:17:55
 order: 1
+permalink: /administration/administration-bpm-configuration.html
 ---
 
 ### Add a new user 

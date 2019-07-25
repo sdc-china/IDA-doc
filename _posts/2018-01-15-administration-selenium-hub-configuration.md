@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Selenium Hub configuration"
 category: administration
 date: 2018-01-05 15:17:55
 order: 3
+permalink: /administration/administration-selenium-hub-configuration.html
 ---
 ### How to configure selenium hub
    You need to setup the [Post Installation Setup] before this step.

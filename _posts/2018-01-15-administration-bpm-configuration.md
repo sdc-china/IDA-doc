@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "BPM configuration"
 category: administration
 date: 2018-01-05 15:17:55
 order: 2
+permalink: /administration/administration-users-management.html
 ---
 
 ### Add a BPM server

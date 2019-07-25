@@ -1,9 +1,10 @@
 ---
-layout: page
 title: "System Requirement"
 category: installation
 date: 2018-09-18 15:17:55
+last_modified_at: 2019-07-25 15:17:55
 order: 1
+permalink: /installation/system-requirement.html
 ---
 
 ### Supported Platforms

@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Repacking IDA Application"
 category: installation
 date: 2018-01-05 15:17:55
 order: 3
+permalink: /installation/installation-ida-repacking.html
 ---
 
    

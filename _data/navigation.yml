@@ -1,0 +1,35 @@
+# main links
+main:
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+docs:
+  - title: Installation
+    children:
+      - title: "System Requirement"
+        url: /installation/system-requirement.html
+      - title: "Database Installation and Configuration"
+        url: /installation/installation-db.html
+      - title: "Repacking IDA Application"
+        url: /installation/installation-ida-repacking.html
+      - title: "Installing IDA Application"
+        url: /installation/installation-ida-installing.html
+      - title: "Post Installation Setup"
+        url: /installation/installlation-post-installation.html
+
+  - title: Tutorial
+    children:
+      - title: "Task 1: Create a test project and generate test cases"
+        url: /tutorial/tutorial-create-a-test-project-and-generate-test-cases.html
+      - title: "Task 2: Record, replay and run a test case"
+        url: /tutorial/tutorial-run-record-and-replay-a-test-case.html
+
+  

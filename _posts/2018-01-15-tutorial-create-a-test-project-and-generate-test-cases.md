@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Task 1: Create a test project and generate test cases"
 category: tutorial
 date: 2018-01-05 15:17:55
 order: 1
+permalink: /tutorial/tutorial-create-a-test-project-and-generate-test-cases.html
 ---
 
 IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support BPM application test.

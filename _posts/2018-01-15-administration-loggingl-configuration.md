@@ -2,7 +2,7 @@
 layout: page
 title: "Logging configuration"
 category: administration
-date: 2018-03-08 15:17:55
+date: 2019-03-08 15:17:55
 order: 15
 ---
 

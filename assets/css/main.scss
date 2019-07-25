@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$sans-serif: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial, sans-serif !default;
+
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+html {
+    font-size: 18px;
+}
+
+.page__title {
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+.page__content {
+    padding-left: 2.5rem;
+}
+
+.page__taxonomy {
+    display: none;
+}
