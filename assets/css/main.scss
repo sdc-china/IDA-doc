@@ -14,15 +14,94 @@ html {
     font-size: 18px;
 }
 
+body {
+    color: #152935;
+}
+
 .page__title {
     margin-top: 2rem;
     padding-left: 2rem;
 }
 
 .page__content {
-    padding-left: 2.5rem;
+    padding-left: 2rem;
+    font-size: 0.9rem;
+    font-weight: 350;
 }
 
 .page__taxonomy {
     display: none;
+}
+
+.sidebar .nav__list a {
+    padding: 0.4rem 0;
+    display: flex;
+    position: relative;
+}
+
+.pagination {
+    grid-template-columns: 1fr 20rem 20rem 1fr;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pagination .previous {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: flex-end;
+    box-shadow: inset -1px 0px 0px 0px #f3f3f3;
+    z-index: 1;
+}
+
+.pagination .previous, .pagination .next {
+    background-color: white;
+    height: 10rem;
+    display: inline;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.pagination .previous .container, .pagination .next .container {
+    flex-basis: 20rem;
+}
+
+.pagination .previous .container, .pagination .next .container {
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: inline;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 0rem;
+} 
+
+.pagination .previous .container .pagination--pager, .pagination .next .container .pagination--pager {
+    display: block;
+    margin-top: 1rem;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #68737c;
+    flex-grow: 0;
+}
+
+.pagination .previous .container .titlePreview, .pagination .next .container .titlePreview {
+    flex-grow: 1;
+    display: block;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 0.5rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.pagination--pager {
+    border: 1px solid #f3f3f3;
+}
+
+.pagination--pager:hover {
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 1px #8897a2;
+    z-index: 1;
 }

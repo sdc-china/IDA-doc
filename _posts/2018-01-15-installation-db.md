@@ -1,9 +1,9 @@
 ---
 title: "Database Installation and Configuration"
 category: installation
-date: 2018-01-05 15:17:55
+date: 2018-09-19 15:17:55
+last_modified_at: 2019-07-25 21:28:00
 order: 2
-permalink: /installation/installation-db.html
 ---
 
 

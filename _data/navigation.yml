@@ -15,7 +15,7 @@ docs:
   - title: Installation
     children:
       - title: "System Requirement"
-        url: /installation/system-requirement.html
+        url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
         url: /installation/installation-db.html
       - title: "Repacking IDA Application"
@@ -31,5 +31,25 @@ docs:
         url: /tutorial/tutorial-create-a-test-project-and-generate-test-cases.html
       - title: "Task 2: Record, replay and run a test case"
         url: /tutorial/tutorial-run-record-and-replay-a-test-case.html
+      - title: "Task 3: Set up Checkstyle"
+        url: /tutorial/tutorial-set-up-checkstyle.html
+      - title: "Task 4: Create a pipeline for continuous deployment"
+        url: /tutorial/tutorial-create-a-pipeline-for-continuous-deployment.html
+      - title: "Summary"
+        url: /tutorial/tutorial-summary.html
+
+  - title: Test
+    children:
+      - title: "Test project management"
+        url: /test/test-project-management.html
+      - title: "Test case management"
+        url: /test/test-case-management.html
+      - title: "Test Case data binding"
+        url: /test/test-case-data-binding.html
+      - title: "Group command management"
+        url: /test/test-group-command-management.html
+      - title: "Record and replay a test case"
+        url: /test/test-record-and-replay-a-test-case.html
+
 
   
