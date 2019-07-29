@@ -141,3 +141,13 @@ html {
 .sidebar.sticky {
   border-right: 1px solid #f3f3f3;
 }
+
+.page__footer footer {
+  font-size: 0.75rem;
+  margin-top: 1em;
+  padding: 0 1em 1em;
+}
+
+.page__footer {
+  z-index: -1;
+}
