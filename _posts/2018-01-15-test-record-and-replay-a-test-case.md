@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Record and replay a test case"
 category: test
-date: 2018-01-05 15:17:55
+date: 2018-10-01 15:17:55
+last_modified_at: 2019-07-26 16:32:00
 order: 50
 ---
 ### Record a test case

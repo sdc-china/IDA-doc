@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Installing IDA Application"
 category: installation
-date: 2018-01-05 15:17:55
+date: 2018-09-21 15:17:55
+last_modified_at: 2019-07-25 21:37:00
 order: 4
 ---
 # Installing IDA Application Components

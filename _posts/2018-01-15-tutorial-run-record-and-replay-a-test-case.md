@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Task 2: Record, replay and run a test case"
 category: tutorial
-date: 2018-01-05 15:17:55
+date: 2018-09-23 15:17:55
+last_modified_at: 2019-07-25 21:41:00
 order: 2
 ---
 
@@ -121,7 +121,7 @@ This is because IBM Business Process Manager uses default certificates that are 
 
 In order to slove this issue,you need to copy the  url from above screenshot and launch this url from the browser and accept the ssl security warning,then try to record/replay again.   
   
-**[<Previous][2] [\| Next>][3]**
+<!-- **[<Previous][2] [\| Next>][3]** -->
 
 [test_case_step_edit_button]: ../images/test/test_case_step_edit_button.PNG
 [test_case_step_table]: ../images/test/test_case_step_table.PNG

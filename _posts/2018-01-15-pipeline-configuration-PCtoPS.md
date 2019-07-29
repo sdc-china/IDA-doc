@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Deploy snapshot from PC to PS"
 category: pipeline
-date: 2018-01-05 15:17:55
+date: 2018-10-12 15:17:55
+last_modified_at: 2019-07-29 15:52:00
 order: 3
 ---
 
@@ -10,40 +10,40 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
 ### Create SSH Key
 
-1. Login into the IDA server and create the key pair in IDA server. 
+1. Login into the IDA server and create the key pair in IDA server.
 
     ```  
      $ssh-keygen -t rsa
 
     ```  
-  
+
 2. After key generation process, you can see below output.
 
    ![][pipeline_sshkey]
- 
+
    The public key is now located in /root/.ssh/id_rsa.pub. The private key (identification) is now located in  /root/.ssh/id_rsa.
 
 
 3. Copy the public key to the PC Server and PS Server. Copy id_rsa.pub file to BPM Server (PC/PS) /tmp folder, and execute below command.
 
-    
+
    ```  
    cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys   
 
    ```
    #### Notes:
-   
+
    **The Linux operator user should have the permission to run "wsadmin.sh"**
 
 
 4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content to your BPM PC and PS configuration in IDA. Also you need to fill the  WAS admin command path.
- 
+
     ![][pipeline_bpmconfiguration]
 
 5. In PS Server configuraion, you need to fill the connect server name.
 
      ![][pipeline_servername]
-     
+
 ### Verify SSH Key
 
 1. If you are in Linux environment, copy the id_rsa to BPM server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
@@ -58,14 +58,14 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    Puttygen: https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe    
 
    a. Open puttygen.exe
-   
+
    b. Open Conversions -> Import Key
 
      ![][puttyKeyGen]   
    c. Select id_rsa file
 
      ![][PrivateKeyGen]   
-   
+
    d. Click Save private key button, save as IDA.ppk .   
    e. Open putty.exe, For example enter PC IP address 192.168.0.10     
 
@@ -73,47 +73,47 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    f. Select category: Connection -> SSH -> Auth, and set the private key file, then click Open button.   
 
      ![][puttyAuth]
-   
+
    g. You can find you can use ssh to login into that server.
-     
+
 ### Define pipeline from PC to PS through online deployment
 
 1. Define the pipeline for deployment snapshot from PC to an online PS.
 
    ![][pipeline_pstops]
-   
+
 2. For the Deloyment step, you need to select **Online Install** for it.
 
    ![][pipeline_online_deploy]
-   
+
 3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to online PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to online PS.
 
    ![][pipeline_run_online_deploy]
-     
+
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to online PS.
 
    ![][pipeline_pcdeployps]
-   
+
 ### Define pipeline from PC to PS through offline deployment
 
 1. Define the pipeline for deployment snapshot from PC to an offline PS.
 
    ![][pipeline_pc_to_ps_offline]
-   
+
 2. For the Deloyment step, you need to select **Offline Install** for it.
 
    ![][pipeline_offline_deploy]
-   
+
 3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to offline PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to offline PS.
 
    ![][pipeline_run_online_deploy]
-     
+
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to offline PS.
 
    ![][pipeline_pcdeployps_offline]
 
  **Known Limitions:**     
-     
+
  IDA machine, PC Server, PS server should be Linux server.  
 
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png

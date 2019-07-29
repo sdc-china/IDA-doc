@@ -98,3 +98,9 @@ td, th {
 img {
 	border: 1px solid #ccc;
 	}
+
+
+    .pageSpacing {
+        padding-left:2rem !important;
+        padding-right:2rem !important;
+    }

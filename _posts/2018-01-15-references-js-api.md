@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Javascript API"
 category: references
-date: 2018-11-15 15:17:55
+date: 2018-10-28 15:17:55
+last_modified_at: 2019-07-29 16:44:00
 order: 3
 ---
 
@@ -12,7 +12,7 @@ order: 3
 |----------|:-------------:|:------|
 | bta.util.callback  | |Default callback for Javascript command |return bta.util.callback(); |       
 | bta.util.debug | message |add debug info on the browser console | bta.util.debug("msg")  |   
-| bta.util.putContext|key, value| add key,value into the memory| bta.util.putContext(key,value); | 
+| bta.util.putContext|key, value| add key,value into the memory| bta.util.putContext(key,value); |
 | bta.util.getCoachView  |  JSON |Get the coach view object|var coachView = bta.util.getCoachView({controlId: "Coach Control ID", label: "Coach Label Text", elementId: "The element ID", elementCss: "The element CSS", xpath: "The element xpath" });|
 | bta.util.getElementText | DOM Element |Get the DOM element text|  var text = bta.util.getElementText(textElement); |
 | bta.util.assertTrue | condition(boolean), message(string)|Asserts that a condition is true. If it isn't it throws an error with the given message. | bta.util.assertTrue(true, "The condition is not true!"); |
@@ -21,7 +21,7 @@ order: 3
 | bta.util.throwError  | message(string), retry(boolean, default is true) |Throw error with the given message|  bta.util.throwError("error message", true); |    
 
 **Notes**    
-Beside these OOTB JS API, user can also use standard BPM coach view JS API when writing the custom JS. e.g 
+Beside these OOTB JS API, user can also use standard BPM coach view JS API when writing the custom JS. e.g
 - var rows = tableCoachView.context.element.querySelectorAll("div.SPARKTable table.table tbody tr");      
 
 
@@ -41,4 +41,3 @@ The following table lists all system variable names and JS comand could not use 
 |value|days|format|time
 |length|templatePath|script|caseId
 |serverHost|next|process|
-
