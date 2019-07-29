@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "IBM Deployment Accelerator for Business Automation Workflow (IDA) Docs"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : 
-description              : 
+name                     :
+description              :
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/IDA-doc" # the subpath of your site, e.g. "/blog"""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -295,10 +295,11 @@ defaults:
       comments: # true
       share: # true
       related: # true
-      classes: wide
+      classes: #wide
+      toc: true
       sidebar:
         nav: "docs"
-      
+
 # URL to source code, used in _includes/footer.html
 
 codeurl: 'https://sdc-china.github.io/IDA-doc/'

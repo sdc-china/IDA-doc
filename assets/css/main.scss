@@ -74,7 +74,7 @@ body {
     justify-content: space-between;
     height: 100%;
     padding-bottom: 0rem;
-} 
+}
 
 .pagination .previous .container .pagination--pager, .pagination .next .container .pagination--pager {
     display: block;
@@ -104,4 +104,34 @@ body {
     background-color: white;
     box-shadow: inset 0px 0px 0px 1px #8897a2;
     z-index: 1;
+}
+
+.masthead__inner-wrap {
+    max-width: 100%;
+    background: #000;
+}
+
+#site-nav {
+  background: #000;
+}
+
+.site-title {
+  color: #fff !important;
+  font-size: 0.875rem;
+}
+
+.search__toggle {
+  color: #fff;
+}
+
+#main {
+   margin-left: 1.5rem;
+   max-width: 100% !important;
+}
+
+.toc {
+  position: fixed;
+  top: 118px;
+  width: 15.5rem;
+  max-width: 15.5rem;
 }
