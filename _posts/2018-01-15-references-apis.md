@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "REST APIs"
 category: references
-date: 2018-11-15 15:17:55
+date: 2018-10-29 15:17:55
+last_modified_at: 2019-07-29 16:44:00
 order: 4
 ---
 
@@ -17,7 +17,7 @@ IDA REST API reference.
 ### **Trigger build by id**
 ___
 
-#### **URL:** 
+#### **URL:**
 
 ```
 /rest/v1/pipeline/build?pipelineId=:id
@@ -54,7 +54,7 @@ ___
 ### **Trigger pipeline build by name**
 ___
 
-#### **URL:** 
+#### **URL:**
 
 ```
 /rest/v1/pipeline/build?pipelineName=:name
@@ -91,7 +91,7 @@ ___
 ### **Get build status**
 ___
 
-#### **URL:** 
+#### **URL:**
 
 ```
 /rest/v1/builds/:buildId
@@ -136,4 +136,3 @@ Each response will be returned with one of the following status:
 * `unauthorized` The token provided do not have permission to access the requested resource
 * `pipeline not found` An attempt was made to access a pipeline that does not exist
 * `build not found` An attempt was made to access a build that does not exist
-

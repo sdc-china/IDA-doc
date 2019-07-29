@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Start and Stop IDA environment"
 category: administration
-date: 2018-01-05 15:17:55
+date: 2018-10-23 15:17:55
+last_modified_at: 2019-07-29 16:23:00
 order: 10
 ---
 
@@ -37,7 +37,7 @@ Start the Selenium Node by calling the following command:
 ### Start WebSphere Liberty
 Start the WebSphere Liberty server by calling the following command:
 
-- Linux: [IDA_HOME]/bin/server start [SERVER_NAME] 
+- Linux: [IDA_HOME]/bin/server start [SERVER_NAME]
 
 
 - Windows: [IDA_HOME]\bin\server.bat start [SERVER_NAME]   
@@ -48,14 +48,14 @@ Start the WebSphere Liberty server by calling the following command:
 ###	Stop WebSphere Liberty
 Stop the WebSphere Liberty server by calling the following command:
 
-- Linux: [IDA_HOME]/bin/server stop [SERVER_NAME] 
+- Linux: [IDA_HOME]/bin/server stop [SERVER_NAME]
 
 
 - Windows: [IDA_HOME]\bin\server.bat stop [SERVER_NAME]   
 
 ###	Stop Selenium Node
 Stop the Selenium Node by terminating the corresponding java process.
- 
+
 
 ###	Stop Selenium Hub
 

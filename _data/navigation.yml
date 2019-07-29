@@ -50,6 +50,86 @@ docs:
         url: /test/test-group-command-management.html
       - title: "Record and replay a test case"
         url: /test/test-record-and-replay-a-test-case.html
+      - title: "Write a Javascript command"
+        url: /test/test-write-js-command.html
+      - title: "Write a Java command"
+        url: /test/test-write-java-command.html
+      - title: "Import and execute sample test project"
+        url: /test/test-import-execute-sample-test-project.html
+      - title: "Test Report"
+        url: /test/test-case-report.html
 
+  - title: Checkstyle
+    children:
+      - title: "Analyze BPM projects with checkstyle"
+        url: /checkstyle/checkstyle-analyze-BPM-projects-with-checkstyle.html
+      - title: "Customize Checkstyle rules"
+        url: /checkstyle/checkstyle-customize-checkstyle-rules.html
+      - title: "Checkstyle report"
+        url: /checkstyle/checkstyle-report.html
+      - title: "Deploy Checkstyle ruleset"
+        url: /checkstyle/checkstyle-deploy-ruleset.html
 
-  
+  - title: Pipeline
+    children:
+      - title: "Pipeline overview"
+        url: /pipeline/pipeline-overview.html
+      - title: "Create a pipeline for continuous deployment"
+        url: /pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html
+      - title: "Deploy snapshot from PC to PS"
+        url: /pipeline/pipeline-configuration-PCtoPS.html
+      - title: "Pipeline script"
+        url: /pipeline/pipeline-script.html
+      - title: "Pipeline report"
+        url: /pipeline/pipeline-report.html
+      - title: "Pipeline stage & step reference"
+        url: /pipeline/pipeline-step-reference.html
+
+  - title: Operation
+    children:
+      - title: "Monitor Management"
+        url: /operation/operation-monitor-management.html
+      - title: "Supporting Tool"
+        url: /operation/operation-supporting-tool.html
+
+  - title: Administration
+    children:
+      - title: "Users management"
+        url: /administration/administration-users-management.html
+      - title: "BPM configuration"
+        url: /administration/administration-bpm-configuration.html
+      - title: "Selenium Hub configuration"
+        url: /administration/administration-selenium-hub-configuration.html
+      - title: "Team configuration"
+        url: /administration/administration-team-configuration.html
+      - title: "Custom recorder"
+        url: /administration/administration-custom-recorder.html
+      - title: "Start and Stop IDA environment"
+        url: /administration/administration-starting-and-stop-env.html
+      - title: "Logging configuration"
+        url: /administration/administration-loggingl-configuration.html
+      - title: "Monitoring Configuration"
+        url: administration/administration-monitoring-configuration.html
+
+  - title: References
+    children:
+      - title: "Architecture"
+        url: /references/references-architecture.html
+      - title: "Test Commands"
+        url: /references/references-test-command.html
+      - title: "Javascript API"
+        url: /references/references-js-api.html
+      - title: "REST APIs"
+        url: /references/references-apis.html
+      - title: "Migrating and updating IDA Application"
+        url: /references/references-migrating-and-updating-your-application.html
+      - title: "Samples"
+        url: /references/references-samples.html
+      - title: "Known Limitation"
+        url: /references/reference-known-limitation.html
+      - title: "Best Practices"
+        url: /references/references-best-practices.html
+      - title: "Frequently asked questions"
+        url: /references/reference-faq.html
+      - title: "Demos"
+        url: /references/references-demo.html

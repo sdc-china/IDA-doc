@@ -5,17 +5,13 @@
 @charset "utf-8";
 
 $sans-serif: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial, sans-serif !default;
-
+$text-color: #152935;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 html {
     font-size: 18px;
-}
-
-body {
-    color: #152935;
 }
 
 .page__title {
@@ -43,6 +39,7 @@ body {
     grid-template-columns: 1fr 20rem 20rem 1fr;
     margin: 0 !important;
     padding: 0 !important;
+    border-top: 0px !important;
 }
 
 .pagination .previous {
@@ -84,6 +81,7 @@ body {
     text-transform: uppercase;
     color: #68737c;
     flex-grow: 0;
+    height: 6rem;
 }
 
 .pagination .previous .container .titlePreview, .pagination .next .container .titlePreview {
@@ -132,6 +130,14 @@ body {
 .toc {
   position: fixed;
   top: 118px;
-  width: 15.5rem;
-  max-width: 15.5rem;
+  width: 13.5rem;
+  max-width: 13.5rem;
+}
+
+.page {
+  padding-right: 250px;
+}
+
+.sidebar.sticky {
+  border-right: 1px solid #f3f3f3;
 }

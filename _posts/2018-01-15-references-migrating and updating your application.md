@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Migrating and updating IDA Application"
 category: references
-date: 2018-11-06 15:17:55
+date: 2018-10-30 15:17:55
+last_modified_at: 2019-07-29 16:44:00
 order: 5
 ---
 
@@ -17,7 +17,7 @@ To prepare your migration, take the following steps:
 
 ### Step 1: Update DB
 
-To update DB, take the following steps: 
+To update DB, take the following steps:
 
 1. Start the mysql Server.  
 2. You can find migrate-mysql*.sql in the sql\migrate\mysql folder. Copy the corresponding version upgrade sql into clipboard.     
@@ -31,14 +31,14 @@ For example: If your previous version is v2.2.2.You need to pick below sql scrip
 ![][mysqlmigration]   
 
 3. Connect to the MySQL server and use IDA database. Execute the script for each consecutive version.
-``` 
+```
 mysql> use IDA ;   
 mysql> paste your sql here   
 ```    
 
 ### Step 2: Update IDA.war   
 
-For IDA version migration,you need to update IDA.war, take the following steps: 
+For IDA version migration,you need to update IDA.war, take the following steps:
 
 1. Find  ida.properties under conf folder in the previous version.
 2. Reconfigure  ida.properties file in the new version.Make sure you have copy the every propertie value from old version to new version. After you finish the properties value changes,you need to double check these properties values are set in new version files.   
