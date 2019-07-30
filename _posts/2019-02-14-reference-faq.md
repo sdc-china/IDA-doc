@@ -54,3 +54,9 @@ order: 9
     - Answer: YES. though the intermediary sql scripts must be executed for each consecutive version we skip. Refer to [step one](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) in migration doc
 1. FAQ: Why can't I launch the BP3 human services on firefox grid?
     - Answer: The firefox selenium driver that we used(geckodriver-v0.23.0) cannot launch the BP3 human services when the selenium version is 3.14.0. This will be fixed in the next release.
+1. FAQ: Do we need the BPM admin to execute WAS commands permanently or we can use another user with similar/less permissions in configuration?
+    - Answer: We need WAS admin role to execute WAS commands to do deployment if the version is BAW v18 less. If it's BAW v18.0.0.2 or better, there is no need to configure WAS Admin in IDA.    
+1. FAQ: There are only user and admin two roles in doc. Can we define more roles?
+    - Answer: Yes. e.g You need an infrustrure ADMIN role to do all servers configuartion. It could be done thru  custimzation for role permission control.  
+1. FAQ: Can we use a different user for the REST API configuration?
+    - Answer: YES. Please make sure the user is in group either tw_authors or tw_admins. 
