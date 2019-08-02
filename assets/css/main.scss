@@ -37,7 +37,7 @@ html {
 
 .pagination {
     grid-template-columns: 1fr 20rem 20rem 1fr;
-    margin: 0 !important;
+    margin: 0 0 1rem 0rem !important;
     padding: 0 !important;
     border-top: 0px !important;
 }
@@ -140,4 +140,18 @@ html {
 
 .sidebar.sticky {
   border-right: 1px solid #f3f3f3;
+}
+
+.page__footer footer {
+  font-size: 0.8rem;
+  margin-top: 1em;
+  padding: 0 1em 1em;
+}
+
+.page__footer {
+  z-index: -1;
+}
+
+.layout--single {
+  margin-bottom: 4rem !important;
 }
