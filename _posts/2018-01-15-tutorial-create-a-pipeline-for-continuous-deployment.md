@@ -6,7 +6,7 @@ date: 2018-01-05 15:17:55
 order: 4
 ---
 
-IDA provides a build-incontinuous  integration  and deployment  pipeline to orchestrate  testing, checkstyle,  snapshot  taking and deployment.
+IDA provides a build-in continuous  integration  and deployment  pipeline to orchestrate  testing, checkstyle,  snapshot  taking and deployment.
 ### About this task
   Before you start,make sure you have set up the test project. 
 ### Step 1: Create a pipeline
