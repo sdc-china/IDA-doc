@@ -8,9 +8,9 @@ order: 6
 
 In this tutorial you know how to use IDA for a working CI/CD solution for BPM process applications.
 
-The tutorial showed you the following modules:
+The tutorials have shown the following modules to you:
 
-* **Test**: An web-based UI editor for user to record BPM UI and test BPM application.
+* **Test**: An web-based UI editor for users to record BPM UI and test BPM application.
 * **CheckStyle**: Static code analysis for BPM application.
 * **Pipeline**: A build-in continuous integration pipeline for testing, checkstyle, snapshot , artifact deployment(online and offline deployment.
 

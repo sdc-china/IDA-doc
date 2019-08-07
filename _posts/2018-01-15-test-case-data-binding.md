@@ -28,7 +28,7 @@ order: 30
     
      ![][testcase_data_upload]
  
-  3. After upload,new test case data files appears on the left menu side bar.
+  3. After upload,new test case data files will appear on the left menu side bar.
   
   4. You can also click download icon to download it and check the content.
   
@@ -39,12 +39,12 @@ order: 30
   
    **Notes:**
      
-   If the test case data has already binded some test cases, you need to remove the data reference of these test cases, then remove this test data.   
+   If the test case data has already bound some test cases, you need to remove the data reference of these test cases, then remove this test data.   
 
 
 ### Bind data to the test case
 
-  1. Click the test case name to see detail case step page.
+  1. Click the test case name to see the detailed case step page.
   
   2. Click edit button to edit this test case.
   

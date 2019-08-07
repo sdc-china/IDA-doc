@@ -9,7 +9,7 @@ order: 20
 
 1. In the left-side menu bar, click **+** button on the right of project name.
 
-2. Click **Artifact Type** field, you can see there are three kinds of artifact: Process, User Interface and System Service. Choose **User Interface** or **System Service** to generate a unit test case and choose **Process** to generate a BPD test case.
+2. Click **Artifact Type** field, you can see three kinds of artifacts: Process, User Interface and System Service. Choose **User Interface** or **System Service** to generate a unit test case and choose **Process** to generate a BPD test case.
 
    ![][test_unit_test_add_form]
    
@@ -27,7 +27,7 @@ order: 20
 
     ![][test_unit_test_case_add_form]
   
-3. Click **Add** button. You can see new test case showed in left-side menu bar. When your mouse hover on ![][test_unit_test_case_info_button] button, you can see the description of the test case.
+3. Click **Add** button. You can see new test case shown in left-side menu bar. When your mouse hover on ![][test_unit_test_case_info_button] button, you can see the description of the test case.
 
      ![][test_unit_test_case]
 
@@ -124,7 +124,7 @@ order: 20
 
   1. Click **Edit** button on the right of suite name.
 
-  2. Choose the test case step position you want to paste then click the **Paste** link,The copied/cut case steps will be insert before the editing case step.      
+  2. Choose the test case step position you want to paste then click the **Paste** link,The copied/cut case steps will be inserted before the editing case step.      
   ![][test_case_step_paste_button]. 
 
 #### Delete a case step

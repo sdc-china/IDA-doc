@@ -33,7 +33,7 @@ order: 10
      You need to upload Eclipse test project zip file when you check the "Migrate an old project".  
      
      **Known Limitions:**   
-     The test project migration in only supported under development environment.  
+     The test project migration is only supported under development environment.  
      It doesn't support the java/js customization test project.
       
         
