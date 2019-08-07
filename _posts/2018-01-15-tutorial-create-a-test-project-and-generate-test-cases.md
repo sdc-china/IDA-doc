@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Task 1: Create a test project and generate test cases"
 category: tutorial
-date: 2018-01-05 15:17:55
+date: 2018-09-23 15:17:55
+last_modified_at: 2019-07-25 21:40:00
 order: 1
 ---
 
@@ -69,7 +69,7 @@ To generate a process test case and an user interface test case:
 
       ![][tutorial_case_basic_info]
 
-**[< Next>][4]**
+<!-- **[< Next>][4]** -->
   
 
 [tutorial_case_items_form]: ../images/tutorial/tutorial_case_items_form.PNG

@@ -1,23 +1,23 @@
 ---
-layout: page
 title: "Create a pipeline for continuous deployment"
 category: pipeline
-date: 2018-01-05 15:17:55
+date: 2018-10-11 15:17:55
+last_modified_at: 2019-07-29 15:51:00
 order: 2
 ---
 
 ### Create a pipeline
 
-1. Click **Create Pipeline** button in pipeline page. 
+1. Click **Create Pipeline** button in pipeline page.
 
    ![][pipeline_create]
-   
+
  2. Click ![][pipeline_add_stage] icon to add a new stage.
- 
+
     ![][pipeline_first_stage]
-    
+
 	The fields to create a stage is explained as below.
-	
+
      |Label                  | Description
      |---------------------- |-------------
      |Name                   | The stage name
@@ -26,40 +26,40 @@ order: 2
      |Process App            | Process apps of the selected server
      |Branch                 | The branch of the selected process app
      |Snapshot               | The snapshot of the selected branch
-     
-     
+
+
  3. Click ![][pipeline_add_stage] icon below the stage step to add a new step in the stage.
- 
+
     ![][pipeline_create_step]
-    
+
     The fields to create a step is explained as below.
-	
+
      |Label                  | Description
      |---------------------- |-------------
      |Name                   | The stage name
      |Type                   | The options are Snapshot, Deployment, Checkstyle, Test and Script.
-    
+
     In **Development** type of stage, you can choose the step type as **Snapshot**, **Checkstyle**, **Test** and **Script**.
-    
+
     In **Test**, **Stage** and **Production** type of stages, you can choose the step type as **Deployment**, **Test** and **Script**.
-    
+
     In **Utility** type of stage, you can only choose the step type as **Script**.
-    
+
  4. Click ![][pipeline_add_stage] icon to add more stages, a typical stage looks like below.
- 
+
     ![][pipeline_stages]
-    
-    You can't change the sequence of the first stage, but you can adjust the other stages sequence by drag and drop. 
-    
+
+    You can't change the sequence of the first stage, but you can adjust the other stages sequence by drag and drop.
+
     You can adjust the steps sequence in a stage by drag and drop.
-    
-    
-### Edit a pipeline 
+
+
+### Edit a pipeline
 
 1. In the pipeline list page, click ![][pipeline_edit_icon] button.
-  
+
     ![][pipeline_build]
-    
+
 2. Update pipeline form according to the table showed in creating session.
 
 ### Delete a pipeline
@@ -73,20 +73,20 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
     ![][pipeline_dashboard]
 
     When you run the build, the pipeline build view will appear with every stage building status. Blue color means running, grey means waiting, green means success and red means failure.
-     
+
    ![][pipeline_build_view]   
-   
+
     Click the build time text in first block, you will see the build logs in popup dialog.
 
    ![][pipeline_build_logs]
 
-    Click ![][pipeline_zoom_in] icon of the build step, you will see the build step details. It will include build time, duration etc information. 
+    Click ![][pipeline_zoom_in] icon of the build step, you will see the build step details. It will include build time, duration etc information.
 
    ![][pipeline_step]
 
-2. When the pipeline build is over, the summary information will appear in pipeline dashboard. The step which is failed will not run and there is not report. You can click the **build no** link to see the whole report. [Details of the report] 
+2. When the pipeline build is over, the summary information will appear in pipeline dashboard. The step which is failed will not run and there is not report. You can click the **build no** link to see the whole report. [Details of the report]
 
-  
+
   [pipeline_create]: ../images/pipeline/pipeline_create.png
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
   [pipeline_first_stage]: ../images/pipeline/pipeline_first_stage.png
@@ -103,5 +103,3 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
   [pipeline_step]: ../images/pipeline/pipeline_stepdetail.png
   [pipeline_build_view]: ../images/pipeline/pipeline_build_view.PNG
   [Details of the report]: ../pipeline/pipeline-report.html
-
-

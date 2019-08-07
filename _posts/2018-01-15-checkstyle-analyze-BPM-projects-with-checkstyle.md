@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Analyze BPM projects with checkstyle"
 category: checkstyle
-date: 2018-01-05 15:17:55
+date: 2018-10-06 15:17:55
+last_modified_at: 2019-07-29 15:26:00
 order: 1
 ---
 
@@ -13,7 +13,7 @@ order: 1
       **Use BPM server**, fill the below field values for the checkstyle form.
 
       ![][checkstyle_checkstyleform]
-    
+
       |   Parameter   | Description    |
       | ------------- |----------------|
       | [Server][1]   |Server environment|
@@ -24,20 +24,20 @@ order: 1
       |Tip            |The tip snapshot of the process app|
       |Ignore Empty Documentation|Ignoring empty documentation check|
       |Ignore JS Coding Style Check|Ignore JS coding style check check|
-      
+
       **Upload a TWX file**, choose the TWX tab.
-    
+
       ![][checkstyle_checkstyleupload]
 
       You can choose or drop a TWX file.
-      
+
       ![][checkstyle_checkstyleupload_drop] ![][checkstyle_checkstyleupload_done]
 
    2. Click **Analyze** Button to see the CheckStyle report.
-   
+
       ![][tutorial_checkstyle_report]
 
-   
+
 [checkstyle_checkstyleform]: ../images/checkstyle/checkstyle_checkstyleform.PNG
 [checkstyle_checkstyleupload]: ../images/checkstyle/checkstyle_checkstyleupload.PNG
 [checkstyle_checkstyleupload_drop]: ../images/checkstyle/checkstyle_checkstyleupload_drop.PNG

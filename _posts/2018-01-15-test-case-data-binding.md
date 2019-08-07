@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Test Case data binding"
 category: test
-date: 2018-01-05 15:17:55
+date: 2018-09-29 15:17:55
+last_modified_at: 2019-07-26 16:26:00
 order: 30
 ---
     

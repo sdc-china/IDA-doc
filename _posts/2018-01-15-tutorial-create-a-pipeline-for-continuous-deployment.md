@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Task 4: Create a pipeline for continuous deployment"
 category: tutorial
-date: 2018-01-05 15:17:55
+date: 2018-09-25 15:17:55
+last_modified_at: 2019-07-26 16:14:00
 order: 4
 ---
 
@@ -69,7 +69,7 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
 
   2. When the pipeline build is over, click the **build no.** link to see the whole report. [Details of the report] .
   
-  **[<Previous][1]**
+  <!-- **[<Previous][1]** -->
 
 [pipeline_define]: ../images/pipeline/pipeline_define.png
 [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png

@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Group command management"
 category: test
-date: 2018-01-05 15:17:55
+date: 2018-09-30 15:17:55
+last_modified_at: 2019-07-26 16:28:00
 order: 40
 ---
 
@@ -131,7 +131,7 @@ order: 40
   
           
   
-  [1]: test-import_execute-sample-test-project.html
+  [1]: test-import-execute-sample-test-project.html
   [2]: test-unit-test-case-management.html
   [test_group_command_caselist_table]: ../images/test/test_group_command_caselist_table.PNG
   [test_group_command_caselist_table2]: ../images/test/test_group_command_caselist_table2.PNG

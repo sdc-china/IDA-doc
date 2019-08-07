@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Post Installation Setup"
 category: installation
-date: 2018-01-05 15:17:55
+date: 2018-09-22 15:17:55
+last_modified_at: 2019-07-25 21:39:00
 order: 5
 ---
 
@@ -20,15 +20,15 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Local installation**
 
-1. Download [Selenium 3.14.0](https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar)  
+1. Download [Selenium 3.141.59](https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar)  
 
 2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
 
-	- [IE Driver](http://selenium-release.storage.googleapis.com/3.14/IEDriverServer_Win32_3.14.0.zip)
-	- [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win64.zip)
-	- [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz)
-	- [Chrome Driver Win32](https://chromedriver.storage.googleapis.com/2.41/chromedriver_win32.zip)  
-	- [Chrome Driver Linux64](https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip) 
+	- [IE Driver](https://selenium-release.storage.googleapis.com/3.14/IEDriverServer_x64_3.14.0.zip)
+	- [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-win64.zip)
+	- [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz)
+	- [Chrome Driver Win32](https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_win32.zip)  
+	- [Chrome Driver Linux64](https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip) 
    
 3. Start the Hub
 
@@ -52,7 +52,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 		```
 	- Run the command
 		```
-		java -jar selenium-server-standalone-3.14.0.jar -role hub -hubConfig hubconfig.json
+		java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json
 		```
 
 4. Start the Node  
@@ -67,13 +67,13 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 		      "marionette": true,
 		      "maxInstances": 5,
 		      "seleniumProtocol": "WebDriver",
-			  "version": 57
+			  "version": 67
 		    },
 		    {
 		      "browserName": "chrome",
 		      "maxInstances": 5,
 		      "seleniumProtocol": "WebDriver",
-			  "version": 68
+			  "version": 75
 		    },
 		    {
 		      "browserName": "internet explorer",
@@ -104,7 +104,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 		```
 	- Run the command
 		```
-		java -jar selenium-server-standalone-3.14.0.jar -role node -nodeConfig nodeconfig.json
+		java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
 		```
 
 **Docker installation**
@@ -116,22 +116,22 @@ The followingThe below link is shows a step-by-step introduction to using the of
 You can follow below script to install Selenium Hub and Node on docker.We recommand you to install debug image version so you can visually see what the browser is doing.
 
 ``` 
-docker pull selenium/hub:3.14.0-gallium    
-docker pull selenium/node-firefox:3.14.0 
-docker pull selenium/node-chrome:3.14.0   
+docker pull selenium/hub:3.141.59-palladium    
+docker pull selenium/node-firefox:3.141.59-palladium
+docker pull selenium/node-chrome:3.141.59-palladium   
 
 
 docker network create grid
-docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.14.0-gallium    
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.14.0
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.14.0 
+docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.141.59-palladium    
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-palladium
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium
 
 ``` 
 You can do the below command mutiple times,it will create mutiple chrome/firefox node for the grid remote testing. It can provide you to run the  selenium tesing parallel in the Grid.We recommand you to create above  5 node number for chrome/firefox each.   
 
 ``` 
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.14.0 
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.14.0 
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-palladium
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium 
 
 ``` 
 After that you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node  installation status.    

@@ -1,8 +1,8 @@
 ---
-layout: page
 title: "Pipeline stage & step reference"
 category: pipeline
-date: 2018-01-05 15:17:55
+date: 2018-10-15 15:17:55
+last_modified_at: 2019-07-29 15:55:00
 order: 6
 ---
 ### Pipeline stage reference
