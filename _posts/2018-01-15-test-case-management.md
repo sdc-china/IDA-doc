@@ -160,5 +160,5 @@ order: 20
 [test_case_step_cut_button]: ../images/test/test_case_step_cut_button.PNG
 [test_case_step_copy]: ../images/test/test_case_step_copy.PNG
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
-[test_case_migration_menu]:../images/test/test_case_migration_menu.PNG
-[test_case_migration_form]:../images/test/test_case_migration_form.PNG
+[test_case_migration_menu]: ../images/test/test_case_migration_menu.PNG
+[test_case_migration_form]: ../images/test/test_case_migration_form.PNG

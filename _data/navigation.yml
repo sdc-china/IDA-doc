@@ -54,6 +54,8 @@ docs:
         url: /test/test-write-js-command.html
       - title: "Write a Java command"
         url: /test/test-write-java-command.html
+      - title: "Test Smart Comparison"
+        url: /test/test-smart-comparison.html
       - title: "Import and execute sample test project"
         url: /test/test-import-execute-sample-test-project.html
       - title: "Test Report"
