@@ -38,7 +38,7 @@ order: 59
   
       ![][trace]
       
-  9. Click the screenshot, the comparison area will be set with different background color, and the differences between the expected image has been set in smart comparison page and current screenshot will be outlined in red line. Hover the mouse over the **Expected Image** can get the expected image :
+  9. Click the screenshot, the comparison area will be set with different background color, and the differences between the expected image has been set in smart comparison page and current screenshot will be highlighted in red line. Hover the mouse over the **Expected Screenshot** can get the expected screenshot :
   
   
       ![][test_result]   
@@ -47,7 +47,7 @@ order: 59
       
       If there is nothing different, the current screenshot will be shown and status is **Passed**. 
   
-  10. Click ![][toggle] in front of the case step again to enable image comparison.
+  10. Click ![][toggle] in front of the case step again to disable image comparison.
   
 ### Fetch Screenshots from Latest Report
 
