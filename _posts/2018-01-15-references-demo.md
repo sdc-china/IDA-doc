@@ -17,3 +17,5 @@ order: 10
 8. [IDA Tutorial: Pipeline - Building Your CI/CD Pipeline for IBM BPM in 5 Minutes](https://www.youtube.com/watch?v=LCe4EV9qXSo&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=8&t=0s)
 9. [IDA Tutorial: Pipeline - REST API Introduction](https://www.youtube.com/watch?v=fuBPye0EJ4A&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=9&t=0s)
 10. [IDA Tutorial: Pipeline - Integrating IDA with Jenkins](https://www.youtube.com/watch?v=h1QQwvZFHVE&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=10&t=0s)
+11. [IDA Tutorial: Configuration - Introduction of Permission Management](https://www.youtube.com/watch?v=smWC4G8jpBY&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=11&t=0s)
+12. [IDA Tutorial: Configuration - Introduction of Team Management](https://www.youtube.com/watch?v=JfvJc_ttpT0&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=12&t=0s)
