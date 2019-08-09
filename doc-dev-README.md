@@ -17,3 +17,8 @@
 - http://bruth.github.io/jekyll-docs-template
 - http://jekyllcn.com
 - https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+
+## Export Docx
+- Install pandoc first. Then enter local directory of IDA-doc.
+- $ chmod 777 docxAndPdf.sh
+- $ ./docxAndPdf.sh
