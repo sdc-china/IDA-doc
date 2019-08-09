@@ -6,6 +6,8 @@ last_modified_at: 2019-07-25 21:40:00
 order: 1
 ---
 
+# Task 1: Create a test project and generate test cases
+***
 IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support BPM application test.
 
 ### Pre-requisites

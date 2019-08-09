@@ -6,6 +6,8 @@ last_modified_at: 2019-07-25 21:41:00
 order: 2
 ---
 
+# Task 2: Record, replay and run a test case
+***
 IDA provides a browser plugin recorder, which allows users to record their test scenarios without coding.
 
 ### About this task

@@ -6,6 +6,8 @@ last_modified_at: 2019-07-26 16:21:00
 order: 6
 ---
 
+# Summary
+***
 In this tutorial you know how to use IDA for a working CI/CD solution for BPM process applications.
 
 The tutorials have shown the following modules to you:

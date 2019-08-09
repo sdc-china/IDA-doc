@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:44:00
 order: 5
 ---
 
+# Migrating and updating IDA Application
+***
 ### Preparing your migration
 
 To prepare your migration, take the following steps:  

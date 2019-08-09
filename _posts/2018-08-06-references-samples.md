@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:48:00
 order: 6
 ---
 
+# Samples
+***
 ## Samples
 The samples are available on Git [samples](https://github.com/sdc-china/IDA-samples) repository.
 - Testing samples list

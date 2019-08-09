@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:44:00
 order: 4
 ---
 
+# REST APIs
+***
 IDA REST API reference.
 
 ### Pipeline

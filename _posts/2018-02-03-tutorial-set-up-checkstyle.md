@@ -6,6 +6,8 @@ last_modified_at: 2019-07-26 16:12:00
 order: 3
 ---
 
+# Task 3: Set up Checkstyle
+***
 IDA enables developers to perform static analysis on the BPM application, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on BPM development best practices and anti-patterns. The rules have been implemented with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
 
 

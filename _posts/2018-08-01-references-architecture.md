@@ -6,7 +6,8 @@ last_modified_at: 2019-07-29 16:40:00
 order: 1
 ---
 
-
+# Architecture
+***
 ### Reference Architecture
 ![architecture overview](../images/architecture/architecture.png)
 ### Integration Architecture Reference

@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:15:00
 order: 2
 ---
 
+# Monitor Management
+***
 ### About this task
 
 In this task, you will create a new BPM monitor, edit monitor, delete monitor, disable/enable monitor and view monitor charts.

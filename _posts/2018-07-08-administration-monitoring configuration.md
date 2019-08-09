@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:31:00
 order: 20
 ---
 
+# Monitoring Configuration
+***
 ### About this task
 
 In this task, you will integration BPM DEF with ActiveMQ embedded in IDA, so that IDA monitor can receive BPM performance data and present as chart to IDA users.

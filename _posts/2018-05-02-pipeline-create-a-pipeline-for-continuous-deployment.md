@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 15:51:00
 order: 2
 ---
 
+# Create a pipeline for continuous deployment
+***
 ### Create a pipeline
 
 1. Click **Create Pipeline** button in pipeline page.

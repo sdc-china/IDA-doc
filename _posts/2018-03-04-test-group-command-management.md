@@ -6,6 +6,8 @@ last_modified_at: 2019-07-26 16:28:00
 order: 40
 ---
 
+# Group command management
+***
 ### Create a group command
 
   Navigate to **Hiring sample** -> **Create Position Request CSHS** -> **Case1** to generate a group command.

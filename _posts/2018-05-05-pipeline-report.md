@@ -5,6 +5,9 @@ date: 2018-10-14 15:17:55
 last_modified_at: 2019-07-29 15:53:00
 order: 5
 ---
+
+# Pipeline report
+***
 ### Pipeline build summary
 
   In pipeline dashboard, you can see the pipeline build summary. **Ratio** is the success rate of pipeline build, **Running** is the number of running pipeline build, **Failed** is the number of failed pipeline build, **Passed** is the number of successful pipeline build and **Total** means the number of total pipeline build.

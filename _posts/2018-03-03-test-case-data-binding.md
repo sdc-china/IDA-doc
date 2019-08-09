@@ -5,7 +5,9 @@ date: 2018-09-29 15:17:55
 last_modified_at: 2019-07-26 16:26:00
 order: 30
 ---
-    
+
+# Test Case data binding
+***   
 ### Create a csv test data file 
 
   1. Open the excel and edit data like below format. The first column is the key name of data.

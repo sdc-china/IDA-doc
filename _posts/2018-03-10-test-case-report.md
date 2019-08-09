@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 15:24:00
 order: 70
 ---
 
+# Test Report
+***
 IDA offers detailed reports including screenshots, execution process flow and coverage to improve communication between testers and developers on every test case.
 
 ### Test Case Report  

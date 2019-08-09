@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 15:17:00
 order: 55
 ---
 
+# Write a Javascript command
+***
 ### Create a javascript command
 
 1. Navigate to **Custom Command** in the left-side menu bar, click + button to generate a group command.

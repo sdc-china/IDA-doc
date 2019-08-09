@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:25:00
 order: 15
 ---
 
+# Logging configuration
+***
 ### About this task
 
 In this task, you can runtime set log level in IDA, after that you can see the logs in real time based on the log level changes.

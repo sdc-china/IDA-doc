@@ -6,8 +6,8 @@ last_modified_at: 2019-07-25 21:39:00
 order: 5
 ---
 
-
-
+# Post Installation Setup
+***
 ### Selenium Grid
 
 IDA integrates with remote testing automation framework based on Selenium Grid.

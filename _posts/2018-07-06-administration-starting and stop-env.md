@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:23:00
 order: 10
 ---
 
+# Start and Stop IDA environment
+***
 ##	Starting your environment
 
 ### Start MySQL

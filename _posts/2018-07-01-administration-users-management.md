@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:18:00
 order: 1
 ---
 
+# Users management
+***
 ### Add a new user
   Use super account (idaAdmin/idaAdmin) login into IDA application.
   1. Click **Administrator** tab, then switch to  **Users management** tab to add user.  

@@ -5,15 +5,18 @@ date: 2018-09-21 15:17:55
 last_modified_at: 2019-07-25 21:37:00
 order: 4
 ---
-# Installing IDA Application Components
+
+# Installing IDA Application
+***
+## Installing IDA Application Components
 There are three components for IDA application we need install and configure, included (1) *IDA web application*, (2) *IDA Browser Plugin* and (3) *IDA BPM toolkit*.
 
 
-## Step 1: Installing IDA Web Application
+### Step 1: Installing IDA Web Application
 
 IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. First, let's introduce the way to install IDA on liberty.
 
-## Installing on Liberty
+### Installing on Liberty
 
 
 **Create a Liberty server manually** 
@@ -120,7 +123,7 @@ We might need proxy server to visit the application,the proxy settings can be pa
 Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
-## Installing on WAS V9
+### Installing on WAS V9
 
 **Check the WAS version** 
 
@@ -185,10 +188,10 @@ After finishing the installation of the fix packs, the next step is to deploy th
 
    ![][wasstartapp]
 
-## Installing on Docker platform
+### Installing on Docker platform
 Refer to [IDA-ondocker](https://github.com/sdc-china/IDA-ondocker) for deployment steps.
 
-## Step 2: Installing IDA BPM Toolkit
+### Step 2: Installing IDA BPM Toolkit
 The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
 
 1. Import the IDA_Toolkit - 8.6.0_v1.1.twx from IDA toolkit folder into the proces center.
@@ -199,7 +202,7 @@ The testing capability can only start exposed Business Process, Human Services a
 4. Make sure the service is installed in your process app.  
    ![][service]
    
-## Step 3: Installing IDA Browser Plug-in
+### Step 3: Installing IDA Browser Plug-in
 
 #### Chrome
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>

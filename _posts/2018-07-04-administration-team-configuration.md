@@ -6,6 +6,8 @@ last_modified_at: 2019-07-29 16:21:00
 order: 4
 ---
 
+# Team configuration
+***
 ### Add a team
   1. Click **Administrator** tab, then switch to  **Team Configurtaion** tab to manage team.  
 
