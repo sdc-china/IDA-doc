@@ -8,7 +8,7 @@ order: 59
 
 ### How does smart comparison work
 
-  Smart comparison works on case steps which have screenshot in test report. It compares current screenshot with the saved screenshot in smart comparison. If result is **MISMATCH**, testing result of this case step is **Failed**, reports *Screenshot does not match the expected image in smart comparison* error.
+  Smart comparison is an image assertion. Smart comparison works on case steps which have screenshot in test report. It compares current screenshot with the saved screenshot in smart comparison. If result is **MISMATCH**, testing result of this case step is **Failed**, reports *Screenshot does not match the expected image in smart comparison* error. 
     
 ### Start Smart Comparison
 
