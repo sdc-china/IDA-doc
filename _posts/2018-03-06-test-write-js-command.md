@@ -16,7 +16,7 @@ order: 55
 
 2. Enter the javascript command info.
 
-   **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.You can pass the {Parameters.XXX} as part of verblization  which you define  the parameter in this js.
+   **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.You can pass the {Parameters.XXX} as part of verblization  which you define  the parameter in this js.XXX is the parameter name you define in this custom js.
 
    ![][test_js_command_info]
 
