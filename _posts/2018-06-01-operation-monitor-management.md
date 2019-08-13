@@ -85,4 +85,4 @@ To use Monitor feature, target BPM system to be monitored has to integrate with 
 [op_click_monitor]: ../images/operation/operation_click_monitor_name.PNG
 [op_monitor_chart]: ../images/operation/operation_monitor_chart.PNG
 [1]: ../administration/administration-bpm-configuration.html
-[2]: ../installation/installation-integrate-def.html
+[2]: ../administration/administration-monitoring-configuration.html
