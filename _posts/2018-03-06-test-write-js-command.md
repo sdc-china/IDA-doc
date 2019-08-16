@@ -39,7 +39,7 @@ order: 55
    ![][test_js_commandlist]
 
 
-7. Refer to [Javascript API Reference](references/references-js-api.html) for OOTB
+7. Refer to [Javascript API Reference](../references/references-js-api.html) for OOTB
 Javascript functions   
 
 ### Javascript Command sample
