@@ -24,7 +24,7 @@ order: 1
 * [Open Liberty 18.0.0.3](https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2018-09-05_2337/openliberty-18.0.0.3.zip) or [IBM WebSphere Application Server Version  v9.x](https://www.ibm.com/support/knowledgecenter/en/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/welcome_ndmp.html)
     - The appserver JDK is JDK v8+ (64-bit) 
 * [IBM® Db2 v10.x+](https://www.ibm.com/analytics/us/en/db2/) 
-or [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/)  
+， [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/) or [Oracle 12.2](https://sdc-china.github.io/IDA-doc/installation/installation-db.html#install-and-configure-oracle)
 * [Selenium v3.14+](https://sdc-china.github.io/IDA-doc/administration/administration-selenium-hub-configuration.html)
 
 
