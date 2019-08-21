@@ -10,23 +10,25 @@ order: 59
 ***
 ### How does smart comparison work
 
- Smart comparison is an image based assertion, which is a new and easy way for regression test assertion using pixel-by-pixel comparison.
-  - run and record your test case as usual,
-  - review screenshots, if it's the expected result, enable it as a base image,
-  - run test case again and then the smart comparison engine will diff the new screenshot with the base image. Any difference, the test step will be marked as failed and reports **Screenshot does not match the expected image in smart comparison** error. 
+ Smart comparison is an image based assertion, which is a new and easy way for regression test assertion by using pixel-by-pixel comparison.
+
+ Here are the steps:
+  - Run and record your test case as usual.
+  - Review screenshots and enable it as the base image if it's the expected result.
+  - Run test case again and then the smart comparison engine will compare the new screenshot with the base image. The test step will be marked as failed with the report showing **Screenshot does not match the expected image in smart comparison** error if there's any difference after comparison.
     
 ### Enable Smart Comparison
 
    **Notes:**
-  Before starting smart comparison, please make sure that the test case already finish running and has a report. The status of the report is **Passed** and there is at least one case step with screenshot.
+  Before starting smart comparison, please make sure that the test case has already finished running with a report whose status shows as **Passed**. And be sure that there is at least one case step has the screenshot.
 
   1. Go to test case edit page.
    
   2. Click **Edit** button.
    
-  3. Click **Smart Comparison** Button. You can see that all comparable case steps of this test case are listed on the left. And click one, its screenshot shows on the right.
+  3. Click **Smart Comparison** Button. You can see that all comparable case steps are listed on the left. Choose one and click, you could see its screenshot on the right.
    
-  4. Click ![][toggle] in front of the case step to enable image comparison. The whole image will be compared as default. If you don't want to compare the whole image, you can specify the area to compare by moving the mouse over the screenshot, then clicking, dragging and select the area you want to compare. Release the mouse and can see the selected part is shown: 
+  4. Click ![][toggle] in front of the case step to enable image comparison. The whole image will be compared by default. If comparing the whole image is not what you need, you can specify the area to compare by moving the mouse over the screenshot, then clicking, dragging to select the area you need to compare. Release the mouse, you can see the selected part is shown: 
   
       ![][cropped_image]
     
