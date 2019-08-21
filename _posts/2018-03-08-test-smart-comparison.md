@@ -32,7 +32,7 @@ order: 59
   
       ![][cropped_image]
     
-  5. If you want to unselect the selected area, click the other area. The confirm form will be shown, and click **OK**. It will switch back to the whole image comparison.
+  5. If you want to unselect area, just click any area not being selectd. The confirm form will be shown soon, and click **OK**. It will switch back to the whole image comparison.
   
   6. Click **<<** button and you can go back to test case edit page. 
   
@@ -40,7 +40,7 @@ order: 59
   
   7. Click **Run** button and wait for report.
   
-  8. The comparison result is shown in the report. If **MISMATCH**, the trace:
+  8. The comparison result will be shown in the report. If **MISMATCH**, the trace will be:
   
   
       ![][trace]
@@ -54,7 +54,7 @@ order: 59
       
       If there is nothing different, current screenshot will be shown and status is **Passed**. 
   
-  10. Click ![][toggle_on] in front of the case step again to disable image comparison.
+  10. If you want to disable image comparison, just Click ![][toggle_on] in front of the case step again.
   
 ### Refresh new screenshots from the latest testing report
 
