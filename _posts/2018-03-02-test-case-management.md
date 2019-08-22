@@ -114,6 +114,17 @@ order: 20
 
   2. Select the case steps to be copied,in the popup menu  click **Copy** link.
     ![][test_case_step_copy]
+  
+#### Copy/Cut case steps with group commands
+  
+  1. Click **Edit** button on the top right of the case editor table.
+  2. Select the case steps with group commands, then click **Copy** link in the popup menu.
+    ![][group_command_copy]
+
+  ##### Notes
+  You could only paste the copied case steps with group command to test cases, if you paste the case steps to group commands. You will get a warning:
+     ![][group_command_copy_warning]
+
 
 #### Cut case steps
 
@@ -162,6 +173,8 @@ order: 20
 [test_case_step_paste_button]: ../images/test/test_case_step_paste_button.PNG
 [test_case_step_cut_button]: ../images/test/test_case_step_cut_button.PNG
 [test_case_step_copy]: ../images/test/test_case_step_copy.PNG
+[group_command_copy]: ../images/test/group_command_copy.PNG
+[group_command_copy_warning]: ../images/test/group_command_copy_warning.PNG
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
 [test_case_migration_menu]: ../images/test/test_case_migration_menu.PNG
 [test_case_migration_form]: ../images/test/test_case_migration_form.PNG
