@@ -121,10 +121,10 @@ order: 20
   2. Select the case steps with group commands, then click **Copy** link in the popup menu.
     ![][group_command_copy]
 
-  ##### Notes
+##### Notes
 
-  You could only paste the copied case steps with group command to test cases, if you paste the case steps to group commands. You will get a warning:
-     ![][group_command_copy_warning]
+You could only paste the copied case steps with group command to test cases, if you paste the case steps to group commands. You will get a warning:
+  ![][group_command_copy_warning]
 
 
 #### Cut case steps
