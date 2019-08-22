@@ -175,7 +175,7 @@ You could only paste the copied case steps with group command to test cases, if 
 [test_case_step_cut_button]: ../images/test/test_case_step_cut_button.PNG
 [test_case_step_copy]: ../images/test/test_case_step_copy.PNG
 [group_command_copy]: ../images/test/group_command_copy.PNG
-[group_command_copy_warning]: ../images/test/group_command_copy_warning.PNG
+[group_command_copy_warning]: ../images/test/group_command_copy_warning.png
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
 [test_case_migration_menu]: ../images/test/test_case_migration_menu.PNG
 [test_case_migration_form]: ../images/test/test_case_migration_form.PNG
