@@ -122,6 +122,7 @@ order: 20
     ![][group_command_copy]
 
   ##### Notes
+
   You could only paste the copied case steps with group command to test cases, if you paste the case steps to group commands. You will get a warning:
      ![][group_command_copy_warning]
 
