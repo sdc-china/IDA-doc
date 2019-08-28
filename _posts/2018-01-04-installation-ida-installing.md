@@ -112,7 +112,17 @@ We might need proxy server to visit the application,the proxy settings can be pa
 -Dhttps.proxyHost=host     
 -Dhttps.proxyPort=port     
 -Dhttps=proxyUser=user     
--Dhttps.proxyPassword=password    
+-Dhttps.proxyPassword=password  
+
+**Customizing the Liberty environment(optional)**   
+Customize JVM options by using jvm.options files.
+
+* Create a text file named jvm.options.Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
+* You can use jvm.options files at the runtime and server levels to specify more server startup options, for example, -X arguments. The options are applied when the start, run, and debug actions are started through the server management script. Be sure to specify only one option per line. For example:
+-D# Set the maximum heap size to 1024m.
+-D-Xmx1024m
+-D# Set the minimum heap size to 512m.
+-D-Xms512m
 
 [1]: ../installation/installation-integrate-def.html
 
