@@ -104,10 +104,24 @@ For example:
 In Liberty installation bin folder you can use below command to start the server.
 **server start default** (default is your server name).
 
+**Customizing the Liberty environment(optional)**   
+Customize JVM options by using jvm.options files.
+
+* Create a text file named jvm.options. Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
+* Be sure to specify only one option per line. For example:
+```   
+# Set the maximum heap size to 1024m.
+-Xmx1024m
+
+# Set the minimum heap size to 512m.
+-Xms512m
+```   
+If the heap size is not big enough, checkstyle may crashed with out-of-memory exception, increase the heap size and restart server can fix this issue.
+
 **Support http proxy(optional)**   
 We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.See below procedure.  
 
-* Create a text file named jvm.options.Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
+* Create a text file named jvm.options. Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
 * Add following lines based on your acutal proxy setting. You can change https to http as well.    
 -Dhttps.proxyHost=host     
 -Dhttps.proxyPort=port     
@@ -117,19 +131,6 @@ We might need proxy server to visit the application,the proxy settings can be pa
 [1]: ../installation/installation-integrate-def.html
 
  with remote testing automation framework based on Selenium Grid.
- 
- **Customizing the Liberty environment(optional)**   
-Customize JVM options by using jvm.options files.
-
-* Create a text file named jvm.options.Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
-* The options are applied when the start, run, and debug actions are started through the server management script. Be sure to specify only one option per line. For example:
-```   
-# Set the maximum heap size to 1024m.
--Xmx1024m
-
-# Set the minimum heap size to 512m.
--Xms512m
-```   
 
 ##### Notes
 
