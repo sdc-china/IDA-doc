@@ -114,11 +114,15 @@ We might need proxy server to visit the application,the proxy settings can be pa
 -Dhttps=proxyUser=user     
 -Dhttps.proxyPassword=password  
 
-**Customizing the Liberty environment(optional)**   
+[1]: ../installation/installation-integrate-def.html
+
+ with remote testing automation framework based on Selenium Grid.
+ 
+ **Customizing the Liberty environment(optional)**   
 Customize JVM options by using jvm.options files.
 
 * Create a text file named jvm.options.Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
-* You can use jvm.options files at the runtime and server levels to specify more server startup options, for example, -X arguments. The options are applied when the start, run, and debug actions are started through the server management script. Be sure to specify only one option per line. For example:
+* The options are applied when the start, run, and debug actions are started through the server management script. Be sure to specify only one option per line. For example:
 ```   
 # Set the maximum heap size to 1024m.
 -Xmx1024m
@@ -126,9 +130,6 @@ Customize JVM options by using jvm.options files.
 # Set the minimum heap size to 512m.
 -Xms512m
 ```   
-[1]: ../installation/installation-integrate-def.html
-
- with remote testing automation framework based on Selenium Grid.
 
 ##### Notes
 
