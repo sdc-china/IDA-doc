@@ -108,14 +108,13 @@ In Liberty installation bin folder you can use below command to start the server
 Customize JVM options by using jvm.options files.
 * Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
 
-#### Update heap size setting
-Add below to jvm.options 
-**set the maximum heap size to 1024m.**
+**Update heap size setting**
+Add below to jvm.options. e.g set the maximum heap size to 1024m
 -Xmx1024m
 
 If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
-#### Support http proxy
+**Support http proxy**
 We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.
 * Add following lines to jvm.options based on your acutal proxy setting. You can change https to http as well.    
 -Dhttps.proxyHost=host     
@@ -127,7 +126,7 @@ We might need proxy server to visit the application,the proxy settings can be pa
 
  with remote testing automation framework based on Selenium Grid.
 
-##### Notes
+**Notes**
 
 Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
@@ -231,7 +230,7 @@ the password: the IDA login password.
 
    ![][IDAOption]
 
-### Notes
+**Notes**
 
 If you want to install chrome plug-in offline,you can use online https://chrome-extension-downloader.com/  tools,then enter the url
 https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp to download crx ,then install crx.  
