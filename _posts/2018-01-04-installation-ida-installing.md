@@ -12,11 +12,11 @@ order: 4
 There are three components for IDA application we need install and configure, included (1) *IDA web application*, (2) *IDA Browser Plugin* and (3) *IDA BPM toolkit*.
 
 
-### Step 1: Installing IDA Web Application
+# Step 1: Installing IDA Web Application
 
 IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. First, let's introduce the way to install IDA on liberty.
 
-### Installing on Liberty
+## Installing on Liberty
 
 
 **Create a Liberty server manually** 
@@ -104,29 +104,24 @@ For example:
 In Liberty installation bin folder you can use below command to start the server.
 **server start default** (default is your server name).
 
-**Customizing the Liberty environment(optional)**   
+### Customizing the Liberty environment with jvm.optioins - optional
 Customize JVM options by using jvm.options files.
+* Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
 
-* Create a text file named jvm.options. Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
-* Be sure to specify only one option per line. For example:
-```   
-# Set the maximum heap size to 1024m.
+#### Update heap size setting
+Add below to jvm.options 
+**set the maximum heap size to 1024m.**
 -Xmx1024m
 
-# Set the minimum heap size to 512m.
--Xms512m
-```   
-If the heap size is not big enough, checkstyle may crashed with out-of-memory exception, increase the heap size and restart server can fix this issue.
+If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
-**Support http proxy(optional)**   
-We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.See below procedure.  
-
-* Create a text file named jvm.options. Put it under path_to_liberty/wlp/usr/servers/*yourservername* directory.      
-* Add following lines based on your acutal proxy setting. You can change https to http as well.    
+#### Support http proxy
+We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.
+* Add following lines to jvm.options based on your acutal proxy setting. You can change https to http as well.    
 -Dhttps.proxyHost=host     
 -Dhttps.proxyPort=port     
 -Dhttps=proxyUser=user     
--Dhttps.proxyPassword=password  
+-Dhttps.proxyPassword=your password  
 
 [1]: ../installation/installation-integrate-def.html
 
@@ -137,7 +132,7 @@ We might need proxy server to visit the application,the proxy settings can be pa
 Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
-### Installing on WAS V9
+## Installing on WAS V9
 
 **Check the WAS version** 
 
@@ -202,10 +197,10 @@ After finishing the installation of the fix packs, the next step is to deploy th
 
    ![][wasstartapp]
 
-### Installing on Docker platform
+## Installing on Docker platform
 Refer to [IDA-ondocker](https://github.com/sdc-china/IDA-ondocker) for deployment steps.
 
-### Step 2: Installing IDA BPM Toolkit
+# Step 2: Installing IDA BPM Toolkit
 The testing capability can only start exposed Business Process, Human Services and AJAX Services.  If you wish to directly test other services such as system services, integration services or business processes which are not exposed then you need to install the IDA Toolkit.
 
 1. Import the IDA_Toolkit - 8.6.0_v1.1.twx from IDA toolkit folder into the proces center.
@@ -216,13 +211,13 @@ The testing capability can only start exposed Business Process, Human Services a
 4. Make sure the service is installed in your process app.  
    ![][service]
    
-### Step 3: Installing IDA Browser Plug-in
+# Step 3: Installing IDA Browser Plug-in
 
-#### Chrome
+### Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in
 
-#### Firefox
+### Firefox plugin
 - Download firefox plugin [ida-1.35-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.35-fx.xpi)
 - Drag the "ida-1.35-fx.xpi" file into firefox window
 - Click "Add" button
@@ -236,7 +231,7 @@ the password: the IDA login password.
 
    ![][IDAOption]
 
-##### Notes
+### Notes
 
 If you want to install chrome plug-in offline,you can use online https://chrome-extension-downloader.com/  tools,then enter the url
 https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp to download crx ,then install crx.  
