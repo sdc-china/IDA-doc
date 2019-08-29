@@ -106,15 +106,19 @@ In Liberty installation bin folder you can use below command to start the server
 
 ### Customizing the Liberty environment with jvm.optioins - optional
 Customize JVM options by using jvm.options files.
+
 * Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
 
 **Update heap size setting**
+
 Add below to jvm.options. e.g set the maximum heap size to 1024m
--Xmx1024m
+
+* -Xmx1024m
 
 If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
 **Support http proxy**
+
 We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.
 * Add following lines to jvm.options based on your acutal proxy setting. You can change https to http as well.    
 -Dhttps.proxyHost=host     
