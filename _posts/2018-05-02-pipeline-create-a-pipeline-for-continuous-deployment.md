@@ -66,7 +66,7 @@ order: 2
 3. There are five build-in templates, you could choose one from the dropdown list.
     ![][pipeline_create]
 
-4. Input the missing value labeled by  ![][pipeline_missing_value]
+4. Input the missing value labeled by  ![][pipeline_missing_value].
 
 ### Edit a pipeline
 
@@ -82,23 +82,23 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 
 ### Run a pipeline
 
-1. You have two ways to run the pipeline. Firstly, click **Run** button at the top right corner of the pipeline section. Secondly, enter the pipeline dashboard page, click **Build now** button.
+1. You have two ways to run the pipeline. Firstly, click **Run** button at the top right corner of the pipeline section. Secondly, enter the pipeline dashboard page, click **Build** button.
 
     ![][pipeline_dashboard]
 
-    When you run the build, the pipeline build view will appear with every stage building status. Blue color means running, grey means waiting, green means success and red means failure.
+    In the statistics section, you could view each build step avg time and ratio of the pipeline completed builds.
 
-   ![][pipeline_build_view]   
+    ![][pipeline_build_statistic]
 
-    Click the build time text in first block, you will see the build logs in popup dialog.
+    When you run the build, the pipeline build history section will appear with every stage building status. You could see the build status and running step or failed step of each build.
 
-   ![][pipeline_build_logs]
+    ![][pipeline_build_view]   
 
-    Click ![][pipeline_zoom_in] icon of the build step, you will see the build step details. It will include build time, duration etc information.
+    Click the ![][pipeline_build_log_icon] at the ending of each row, you will see the build logs in popup dialog.
 
-   ![][pipeline_step]
+    ![][pipeline_step]
 
-2. When the pipeline build is over, the summary information will appear in pipeline dashboard. The step which is failed will not run and there is not report. You can click the **build no** link to see the whole report. [Details of the report]
+2. When the pipeline build is over, the summary information will appear in pipeline dashboard. The step which is failed will not run and there is not report. You can click the **build name** link to see the whole report. [Details of the report]
 
 
   [pipeline_create]: ../images/pipeline/pipeline_create.png
@@ -120,3 +120,5 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
   [pipeline_step]: ../images/pipeline/pipeline_stepdetail.png
   [pipeline_build_view]: ../images/pipeline/pipeline_build_view.PNG
   [Details of the report]: ../pipeline/pipeline-report.html
+  [pipeline_build_log_icon]: ../images/pipeline/pipeline_build_log_icon.png
+  [pipeline_build_statistic]: ../images/pipeline/pipeline_build_statistic.png
