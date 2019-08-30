@@ -55,6 +55,18 @@ order: 2
 
     You can adjust the steps sequence in a stage by drag and drop.
 
+### Create a pipeline from template
+
+1. Click **Create Pipeline** button in pipeline page.
+
+   ![][pipeline_create]
+
+2. Click ![][pipeline_import_stage] icon to create a pipeline from a template.
+
+3. There are five build-in templates, you could choose one from the dropdown list.
+    ![][pipeline_create]
+
+4. Input the missing value labeled by  ![][pipeline_missing_value]
 
 ### Edit a pipeline
 
@@ -91,6 +103,9 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 
   [pipeline_create]: ../images/pipeline/pipeline_create.png
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
+  [pipeline_import_stage]: ../images/pipeline/pipeline_import_stage.png
+  [pipeline_templates]: ../images/pipeline/pipeline_templates.png
+  [pipeline_missing_value]: ../images/pipeline/pipeline_missing_value.png
   [pipeline_first_stage]: ../images/pipeline/pipeline_first_stage.png
   [pipeline_create_step]: ../images/pipeline/pipeline_create_step.png
   [pipeline_build_logs]: ../images/pipeline/pipeline_build_logs.png
