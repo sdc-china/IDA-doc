@@ -96,8 +96,6 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 
     Click the ![][pipeline_build_log_icon] at the ending of each row, you will see the build logs in popup dialog.
 
-    ![][pipeline_step]
-
 2. When the pipeline build is over, the summary information will appear in pipeline dashboard. The step which is failed will not run and there is not report. You can click the **build name** link to see the whole report. [Details of the report]
 
 
