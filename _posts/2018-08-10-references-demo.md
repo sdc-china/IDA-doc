@@ -21,3 +21,4 @@ order: 10
 10. [IDA Tutorial: Pipeline - Integrating IDA with Jenkins](https://www.youtube.com/watch?v=h1QQwvZFHVE&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=10&t=0s)
 11. [IDA Tutorial: Configuration - Introduction of Permission Management](https://www.youtube.com/watch?v=smWC4G8jpBY&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=11&t=0s)
 12. [IDA Tutorial: Configuration - Introduction of Team Management](https://www.youtube.com/watch?v=JfvJc_ttpT0&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=12&t=0s)
+13. [IDA Tutorial: Introduction of Smart Comparison](https://www.youtube.com/watch?v=Gprvr0TR1PQ&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=13&t=0s)
