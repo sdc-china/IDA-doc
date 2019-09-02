@@ -59,7 +59,7 @@ order: 9
 1. FAQ: Do we need the BPM admin to execute WAS commands permanently or we can use another user with similar/less permissions in configuration?
     - Answer: We need WAS admin role to execute WAS commands to do deployment if the version is BAW v18 less. If it's BAW v18.0.0.2 or better, there is no need to configure WAS Admin in IDA.    
 1. FAQ: There are only user and admin two roles in doc. Can we define more roles?
-    - Answer: Yes. e.g You need an infrustrure ADMIN role to do all servers configuartion. It could be done thru  custimzation for role permission control.  
+    - Answer: Yes. e.g You need an infrustrure ADMIN role to do all servers configuration. It could be done thru  customization for role permission control.  
 1. FAQ: Can we use a different user for the REST API configuration?
     - Answer: YES. Please make sure the user is in group either tw_authors or tw_admins. 
 1. FAQ: IDA doesn't support confirmOK and confirmCancle in plugin, what should I do If the result of window.confirm influences the business logic?
