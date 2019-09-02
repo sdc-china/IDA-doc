@@ -153,8 +153,8 @@ ___
   | checkbox               |Refer to common statements.  |Set the value of checkbox control. To clear checkbox, leave Value blank.To check the box, value should be the same as Label of the Checkbox CV.<br>*e.g:*<br>![][command_UI_Checkbox]<br> The value should be set to *Bool1*.|  
   | click                  |Value: Click text.<br>Type: *Link* or *Button*.|   Click an element by id , CSS or xpath.<br>**Notes:**<br>BPM UI toolkit has *id* on a button and Coach v8 and BP3 do not. Thus the later two can only be identified by XPATH. Moving the coach view around the page may change its xpath and break the use case.|
   | coachControl           |value type: select type from drop down. <br>Default Value: default value of the control.|  Set the value of coach control. This is a generic setter. Value should match the selected control type.|  
-  | confirmOK              |  N/A                                   |   Click ok button.                                 |
-  | confirmCancel          |  N/A                                   |   Click the cancel button. |  
+  | confirmOK              |  N/A                                   |   Click OK button for window.confirm and return *true*.                                |
+  | confirmCancel          |  N/A                                   |   Click the Cancel button for window.confirm and return *false*.|  
   | doubleClick            |Value: Click text.| Double click an element by id, CSS or xpath. Be similar to **click**.|
   |file                    |Value: file name that needs to be uploaded.|  Upload file.|
   | open                   |  URL: the URL of browser.              |Open an browser. Should always follow by **selectWindow**.|
