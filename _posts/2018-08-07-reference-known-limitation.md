@@ -16,5 +16,5 @@ order: 7
 - Global variables declared in Server Managed files .JS are flagged as "was used before" it was defined in checkstyle report.
 - The file upload commands UI.file and UI.bpmFileUploader can't be replayed on IDA Plugin due to browser security issue, but these commands can work on Selenium Grid. So you can record the file upload commands by IDA Plugin, but replay them on Selenium Grid.
 - The command UI.close is disabled in IDA plugin which may caused issue in plugin.
-- The command UI.confirmOK and UI.confirmCancle aren't supported in IDA plugin which may caused issue in plugin.
+- The command UI.confirmOK and UI.confirmCancel aren't supported in IDA plugin which may caused issue in plugin.
 - BP3 Richtext control replay not working if no value is binding for this control.   
