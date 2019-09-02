@@ -62,6 +62,6 @@ order: 9
     - Answer: Yes. e.g You need an infrustrure ADMIN role to do all servers configuration. It could be done thru  customization for role permission control.  
 1. FAQ: Can we use a different user for the REST API configuration?
     - Answer: YES. Please make sure the user is in group either tw_authors or tw_admins. 
-1. FAQ: IDA doesn't support confirmOK and confirmCancle in plugin, what should I do If the result of window.confirm influences the business logic?
-     - Answer: They work in selenium hub but not plugin. You need to click OK or Cancel button manually when replay in plugin, then add command confirmOK or confirmCancel to the test case. The command comfirmOK can return *true* for window.comfirm in selenium hub. And the command comfirmCancel can return *false*. 
+1. FAQ: Does IDA support window.confirm in plugin? If not, what should I do If the result of window.confirm influences the business logic?
+    - Answer: No. They are't support in IDA plugin and work in server by adding confirmOk and confirmCancel command. About replaying in plugin, need to click OK or Cancel button manually.
     
