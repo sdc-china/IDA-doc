@@ -69,6 +69,7 @@ search                   : true # true, false (default)
 search_full_content      : true
 search_provider          : algolia # lunr (default), algolia, google
 algolia:
+  files_to_exclude       : []
   application_id         : V2DW4BASXQ # YOUR_APPLICATION_ID
   index_name             : IDA_doc_index # YOUR_INDEX_NAME
   search_only_api_key    : 449551266cc70c23ea0e11fa13db5d93 # YOUR_SEARCH_ONLY_API_KEY
