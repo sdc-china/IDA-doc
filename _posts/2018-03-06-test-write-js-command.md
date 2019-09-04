@@ -16,16 +16,16 @@ order: 55
 
 2. Enter the javascript command info.
 
-   **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.You can pass the {Parameters.XXX} as part of verblization  which you define  the parameter in this js.XXX is the parameter key name you define in this custom js.
+   **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default, the value is private. You can input the {Parameters.XXX} as verbalization. The parameter is defined in this JS. XXX is the parameter key name you defined in this custom js.
 
    ![][test_js_command_info]
 
-3. Define the javascript command parameter. You can reference these parameter value through verblization.
+3. Define the javascript command parameter. You can refer these parameters' value through verbalization.
 For example: {Parameters.myKey}
 
    ![][test_js_command_parameter]
 
-4. Define your javascript command logic.
+4. Define your javascript command content.
 
    ![][test_js_command_logic]
 
@@ -34,7 +34,7 @@ For example: {Parameters.myKey}
 
    ![][test_add_js_command]
 
-6. You can  reference js variable in the case step
+6. You can  refer js variable in the case step.
 
    ![][test_js_casestep]
    ![][test_js_commandlist]
@@ -44,9 +44,10 @@ For example: {Parameters.myKey}
 Javascript functions   
 
 ### Javascript Command sample
-   In Hiring sample Standard_HR_Open_New_Position/case2,we will create a addition logic if choose position Request department is **Sales**, we will change the number of employees to value 3 no matter the value we choose before.   
+   In Hiring sample Standard_HR_Open_New_Position/case2, we will change the number of employees to value 3 if we choose Position Request Department as **Sales**.
 
-1. We create a js testCommand name **change sales number**    
+   Here are the steps:
+1. We create a js testCommand named **change sales number**    
 2. Copy the below js command content into this js command.
 
 ```
@@ -84,7 +85,7 @@ return bta.util.callback();
 
    ![][test_js_commandsample]
 
-4. When you record/replay this case again,you will find when you recorded  department value is **sales** ,the number of employee value is **3**.
+4. When you record/replay this case again, you will find when you select the department value as **sales** , the number of employee value is **3**.
 
    ![][test_js_commandresult]
 
