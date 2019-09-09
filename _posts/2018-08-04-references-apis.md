@@ -10,11 +10,15 @@ order: 4
 ***
 IDA REST API reference.
 
+### Swagger URL
+    http://<SERVER>/ida/swagger-ui.html
+    http://<SERVER>/ida/v2/api-docs
+
 ### Pipeline
 
-- **[<code>POST /rest/v1/pipeline/build?pipelineId=:id</code>  Trigger build by ID](#trigger-build-by-id)**
-- **[<code>POST /rest/v1/pipeline/build?pipelineName=:name</code>  Trigger build by name](#trigger-pipeline-build-by-name)**
-- **[<code>GET /rest/v1/builds/:buildId</code>  Get build status](#get-build-status)**
+- **[<code>POST /rest/v1/pipeline/build/id?pipelineId=:id</code>  Trigger build by ID](#trigger-build-by-id)**
+- **[<code>POST /rest/v1/pipeline/build/name?pipelineName=:name</code>  Trigger build by name](#trigger-pipeline-build-by-name)**
+- **[<code>GET /rest/v1/pipeline/builds/:buildId</code>  Get build status](#get-build-status)**
 
 ### **Trigger build by id**
 ___
@@ -22,7 +26,7 @@ ___
 #### **URL:**
 
 ```
-/rest/v1/pipeline/build?pipelineId=:id
+/rest/v1/pipeline/build/id?pipelineId=:id
 ```
 
 #### **Method:**  ```POST```
@@ -41,7 +45,7 @@ ___
 
 **Request**
 
-	curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineId=1 -k --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+	curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build/id?pipelineId=1 -k --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -59,7 +63,7 @@ ___
 #### **URL:**
 
 ```
-/rest/v1/pipeline/build?pipelineName=:name
+/rest/v1/pipeline/build/name?pipelineName=:name
 ```
 
 #### **Method:**  ```POST```
@@ -78,7 +82,7 @@ ___
 
 **Request**
 
-    curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build?pipelineName=pipeline%20sample -k --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
+    curl -X POST http://<SERVER>/ida/rest/v1/pipeline/build/name?pipelineName=pipeline%20sample -k --data-urlencode "snapshotAcronym=0.00.96" --data-urlencode "userToken=kBYf/PfN6B5aQsXyEZaNHBH/aIezRtwjm4w5EcEEqy+CfBmE/7OCQ6HGYnaSKBFw"
 
 
 **Response**
@@ -96,7 +100,7 @@ ___
 #### **URL:**
 
 ```
-/rest/v1/builds/:buildId
+/rest/v1/pipeline/builds/:buildId
 ```
 
 #### **Method:**  ```GET```
@@ -113,7 +117,7 @@ ___
 
 **Request**
 
-    curl http://<SERVER>/ida/rest/v1/builds/1314
+    curl http://<SERVER>/ida/rest/v1/pipeline/builds/1314
 
 
 **Response**
