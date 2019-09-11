@@ -28,7 +28,8 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **engineConfig.waitTimeout** :  default wait timeout, used in waitTextPresent and waitElement commands    
 *  **engineConfig.retryTimes** :  retry the failed command by the given times
 *  **engineConfig.retryInterval** : the interval time  between the retry.The default is 3 seconds    
-*  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc  
+*  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc 
+*  **engineConfig.installationPackageRemoteDir** :  Temp folder to keep exported installation packages in PC/PS server
 *  **smtp.host** : SMTP host    
 *  **smtp.port** : SMTP port    
 *  **email.from** : Sender Email address 
