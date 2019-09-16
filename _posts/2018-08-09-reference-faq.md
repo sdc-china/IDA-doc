@@ -21,7 +21,7 @@ order: 9
 5. FAQ: Could IDA WAR be deployed on the BPM WAS server?
     - Answer: NO. The BPM WAS server COULD be only used by BPM application if it's not a license WAS server.
 6. FAQ: Could we use IE to record testing?
-    - Answer: NO. the recording feature only supports on Chrome and Firefox. IE could be used to replay the recorded test case. Just need setup a Selenium server on Windows to run regression testing.
+    - Answer: NO. the recording feature only supports on Chrome or Firefox. IE could be used to replay the recorded test case. Just need setup a Selenium server on Windows to run regression testing.
 6. FAQ: Could we import Selenium test projects to IDA?
     - Answer: NO.     
 6. FAQ: Does IDA support BPM adv (BPEL) testing and static analysis?

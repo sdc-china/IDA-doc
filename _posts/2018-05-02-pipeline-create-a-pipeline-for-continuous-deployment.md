@@ -41,19 +41,18 @@ order: 2
      |Name                   | The stage name
      |Type                   | The options are Snapshot, Deployment, Checkstyle, Test and Script.
 
-    In **Development** type of stage, you can choose the step type as **Snapshot**, **Checkstyle**, **Test** and **Script**.
+    In **Development** stage, you can choose the step type as **Snapshot**, **Checkstyle**, **Test** and **Script**.
 
-    In **Test**, **Stage** and **Production** type of stages, you can choose the step type as **Deployment**, **Test** and **Script**.
+    In the stages of **Test**, **Stage** and **Production**, you can choose the step type as **Deployment**, **Test** and **Script**.
 
-    In **Utility** type of stage, you can only choose the step type as **Script**.
+    In **Utility** stage, you can only choose the step type as **Script**.
 
- 4. Click ![][pipeline_add_stage] icon to add more stages, a typical stage looks like below.
+ 4. Click ![][pipeline_add_stage] icon to add more stages, here's a typical stage's look.
 
     ![][pipeline_stages]
 
-    You can't change the sequence of the first stage, but you can adjust the other stages sequence by drag and drop.
+    For the first stage, it's not allowed to chenge the sequence. However, you can adjust other stages' sequence by dragging and dropping.
 
-    You can adjust the steps sequence in a stage by drag and drop.
 
 ### Create a pipeline from template
 
@@ -74,7 +73,7 @@ order: 2
 
     ![][pipeline_build]
 
-2. Update pipeline form according to the table showed in creating session.
+2. Update pipeline form according to the table shown in creation session.
 
 ### Delete a pipeline
 
@@ -90,13 +89,13 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 
     ![][pipeline_build_statistic]
 
-    When you run the build, the pipeline build history section will appear with every stage building status. You could see the build status and running step or failed step of each build.
+    When you run the build, the pipeline build history section will appear with building status for each stage. You could see the build status, running step or failed step of each build.
 
     ![][pipeline_build_view]   
 
     Click the ![][pipeline_build_log_icon] at the ending of each row, you will see the build logs in popup dialog.
 
-2. When the pipeline build is over, the summary information will appear in pipeline dashboard. The step which is failed will not run and there is not report. You can click the **build name** link to see the whole report. [Details of the report]
+2. When the pipeline build is over, the summary information will be appeared in pipeline dashboard. The failed step will not be running and won't have any report. You can click the **build name** link to see the whole report. [Details of the report]
 
 
   [pipeline_create]: ../images/pipeline/pipeline_create.png
