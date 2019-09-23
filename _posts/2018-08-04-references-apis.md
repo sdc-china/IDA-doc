@@ -123,9 +123,15 @@ ___
 **Response**
 ``` json
 {
+    "currentStep": "step1",
+    "pipelineName": "TEST",
+    "currentStage": "stage1",
     "report": "http://<SERVER>/ida/rest/v1/pipelines/1/builds/1314",
+    "errorMessage": null,
     "buildId": 1314,
+    "logs": "logs",
     "status": "RUNNING"
+    "pipelineId": 24
 }
 ```
 
