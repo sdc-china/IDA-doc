@@ -72,7 +72,7 @@ spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
 **Notes** 
 
 - If you enable LDAP authencation configuration, You could not add users by idaAdmin.    
-- When a user login the ida at the first time, the user is not belong to any teams. The user need to ask the idaAdmin to assign him/her to a team, then the user could create projects and pipelines.  
+- When a user sign in IDA at the first time, the user is not belong to any teams. The user need to ask the idaAdmin to assign him/her to a team, then the user could create projects and pipelines.  
 
  
 **checkstyle properties configuration**
