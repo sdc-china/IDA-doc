@@ -39,12 +39,6 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **jasypt.encryptor.password** : default value password  
 *  **enable_case_history** : Enable save test case history function, default value is true.  
 *  **max_case_history** : Set latest test case history max number of each test case, default value is 100.    
-*  **ldap.enable** : If set flag to true, it will authenticate the ida users by ldap protocol.    
-*  **ldap.url** : Set LDAP server url.    
-*  **ldap.username** : Set LDAP server login user name.    
-*  **ldap.password** : Set LDAP server login user password.    
-*  **ldap.basedn** : Set LDAP server base dn.    
-*  **ldap.user.filter** : Set LDAP server user fileter pattern, use '#' to split multiple user filter patterns.    
 
 
 **Notes** 
@@ -63,7 +57,22 @@ Also you can use command line tool from [jasypt](http://www.jasypt.org/download.
 [offlineencrypt]: ../images/install/offline.png
 
 Once you get the encrypt password,you need to change spring.datasource.password like below format.As a general rule, jasypt expects encrypted configuration parameters to appear surrounded by "ENC(...)".    
-spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)     
+spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)   
+
+
+**LDAP properties configuration**
+
+*  **ldap.enable** : If set flag to true, it will authenticate the ida users by ldap protocol.    
+*  **ldap.url** : Set LDAP server url.    
+*  **ldap.username** : Set LDAP server login user name.    
+*  **ldap.password** : Set LDAP server login user password.    
+*  **ldap.basedn** : Set LDAP server base dn.    
+*  **ldap.user.filter** : Set LDAP server user fileter pattern, use '#' to split multiple user filter patterns.    
+
+**Notes** 
+
+- If you enable LDAP authencation configuration, You could not add users by idaAdmin.    
+- When a user login the ida at the first time, the user is not belong to any teams. The user need to ask the idaAdmin to assign him/her to a team, then the user could create projects and pipelines.  
 
  
 **checkstyle properties configuration**
