@@ -67,7 +67,8 @@ spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
 *  **ldap.username** : Set LDAP server login user name.    
 *  **ldap.password** : Set LDAP server login user password.    
 *  **ldap.basedn** : Set LDAP server base dn.    
-*  **ldap.user.filter** : Set LDAP server user fileter pattern, use '#' to split multiple user filter patterns.    
+*  **ldap.user.filter** : Set LDAP server user fileter pattern, use '#' to split multiple user filter patterns.   
+*  **ldap.default.role** : Set the default LDAP user role name.
 
 **Notes** 
 
