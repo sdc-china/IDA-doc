@@ -24,7 +24,11 @@ order: 3
 
 **Notes**    
 Beside these OOTB JS API, user can also use standard BPM coach view JS API when writing the custom JS. e.g
-- var rows = tableCoachView.context.element.querySelectorAll("div.SPARKTable table.table tbody tr");      
+- var rows = tableCoachView.context.element.querySelectorAll("div.SPARKTable table.table tbody tr");     
+
+Also you can reference internal variable.eg.    
+${context.currentInstanceId}  //get currenct process instance ID .    
+${context.url}  //get currenctTask URL .    
 
 
 ## IDA System variables

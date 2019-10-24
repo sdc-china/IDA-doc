@@ -33,6 +33,11 @@ ___
 
 **Assignee:** When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1].
 
+##### **Notes**   
+Currently all the commands, unless manually modified are run as "default user".     
+If your recorded commands come from "BPM" command category(these commands will invoke BPM rest api),you need to choose proper assignee based on business logic, recorded commands come from "UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands,you can leave blank or "default user".  
+
+
 **Exception:** is an exception case. Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case.
 
 **Comment:** Optional. Not part of any command and can be used for documenting test case step.
