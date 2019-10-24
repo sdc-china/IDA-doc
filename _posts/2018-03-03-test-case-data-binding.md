@@ -68,9 +68,9 @@ order: 30
 
   **Notes:**
 
-  If you upload a csv file suffixed with "_<YOUR BPM SERVER NAME>.csv", you need not to change the bind csv file from the test case editor page when you run the test case with a different BPM server. The IDA will automatically select the corresponding csv file to run the test case. If the IDA does not find the corresponding csv file, it uses the binded csv file.
+  If you upload a csv file suffixed with "_\<YOUR BPM SERVER NAME\>.csv", you need not to change the bind csv file from the test case editor page when you run the test case with a different BPM server. The IDA will automatically select the corresponding csv file to run the test case. If the IDA does not find the corresponding csv file, it uses the binded csv file.
 
-  
+
     
 [testcase_file]: ../images/test/test_case_csv.PNG
 [testcase_data_upload]: ../images/test/test_case_data_upload.PNG    
