@@ -14,7 +14,7 @@ order: 3
 |----------|:-------------:|:------|
 | bta.util.callback  | |Default callback for Javascript command |return bta.util.callback(); | true|  
 | bta.util.putContext|key, value| add key,value into the memory| bta.util.putContext(key,value); | true |
-| bta.util.putContexts|JSON| add key-value pairs into the memory| bta.util.putContexts({"key":"value","key2":"value2"...}); | true|
+| bta.util.putContexts|JSON| add key-value pairs into the memory| bta.util.putContexts({"key":"value","key2":"value2"}); | true|
 | bta.util.assertTrue | condition(boolean), message(string)|Asserts that a condition is true. If it isn't it throws an error with the given message. | bta.util.assertTrue(true, "The condition is not true!"); | true|
 | bta.util.assertFalse| condition(booelan), message(string)| Asserts that a condition is false. If it isn't it throws an error with the given message.|  bta.util.assertFalse(false, "The condition is not false!"); | true|
 | bta.util.assertEquals | expected(string), actual(string), message(string) |Asserts that two objects are equal. If they are not, an error is thrown with the given message.|bta.util.assertEquals("The expected value", "The actual value", "error message"); |true|

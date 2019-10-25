@@ -94,18 +94,23 @@ return bta.util.callback();
 
   This feature allow you to inject a custom JS command to the case steps in bulk.
   
-  The classic using:
-  In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the project to fail. The customized command waiting for the response to complete needs to be injected after the case step that triggers the request. Then, there will be plenty of operations. This feature can simplify them.
+  The classic use case:
+  
+  Issue:
+  In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the test case to fail. 
+  
+  Solution:
+  Add a customized javascript which waits for the request to complete as post script and insert it after the case steps that trigger the request.
   
 Here is the steps:
   
 1. Create Post Custom Command:
 
-   Global level: Create a javascript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will shown in the case step edit table. And allow all projects of your system to insert post script after UI/JS command.
+   Global level: Create a javascript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will shown in the case step edit table. And allow all projects of your system to insert post script after UI/JS commands.
   
-   Project level: Create a javascript command named `ida_post_script` in one project. Then the post script toggle will shown in the case step edit table of this project. And allow this project to insert post script after UI/JS command. And it will overwrite the global level post script.
+   Project level: Create a javascript command named `ida_post_script` in one project. Then the post script toggle will shown in the case step edit table of this project. And allow this project to insert post script after UI/JS commands. It will overwrite the global level post script.
    
-   Test Case level: Create a javascript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post script toggle will shown in the case step edit table of this test case. And allow this test case to insert post script after UI/JS command. And it will overwrite global level and project level post script.
+   Test Case level: Create a javascript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post script toggle will shown in the case step edit table of this test case. And allow this test case to insert post script after UI/JS commands. It will overwrite global level and project level post script.
    
    Default post script:
    
