@@ -8,13 +8,15 @@ order: 71
 
 # Dynamic Assignee
 ***
-Sometimes you may want to run a test case with different bpm users on different BPM servers. The IDA make it possiable that you need not modify the test case and run it with different bpm user.
+If the assignee with same display name, then the IDA could select right bpm user when run the test case on different BPM Servers.
 
-For example:
 
-There is a case step need the a bpm user named devTester on the BPM 860 DEV server and another bpm user named qaTester on the BPM 860 QA server.
+## Overview
 
-All you need to do as below:
+Sometimes you may want to run a test case with different bpm users on different BPM servers. The IDA make it possiable that you need not modify the test case when run it with different bpm users.For example, there is a case step need the a bpm user named devTester on the BPM 860 DEV server and another bpm user named qaTester on the BPM 860 QA server, the IDA could select right bpm user when running the test case according the selected BPM server.
+
+
+## BPM User Configuration
 
 1. Go to "Administration -> BPM Configuration". Select BPM 860 DEV Server and click "Edit BPM User" to add a new BPM User as below:  
 
