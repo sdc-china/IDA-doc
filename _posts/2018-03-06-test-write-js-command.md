@@ -88,7 +88,78 @@ return bta.util.callback();
 4. When you record/replay this case again, you will find when you select the department value as **sales** , the number of employee value is **3**.
 
    ![][test_js_commandresult]
+   
+   
+### Post Custom JS Command
 
+  This feature allow you to inject a custom JS command to the case steps in bulk.
+  
+  The classic use case:
+  
+  Issue:
+  In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the test case to fail. 
+  
+  Solution:
+  Add a customized javascript which waits for the request to complete as post script and insert it after the case steps that trigger the request.
+  
+Here is the steps:
+  
+1. Create Post Custom Command:
+
+   Global level: Create a javascript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will shown in the case step edit table. And allow all projects of your system to insert post script after UI/JS commands.
+  
+   Project level: Create a javascript command named `ida_post_script` in one project. Then the post script toggle will shown in the case step edit table of this project. And allow this project to insert post script after UI/JS commands. It will overwrite the global level post script.
+   
+   Test Case level: Create a javascript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post script toggle will shown in the case step edit table of this test case. And allow this test case to insert post script after UI/JS commands. It will overwrite global level and project level post script.
+   
+   Default post script:
+   
+   ```
+	console.log("Start to run post script!");
+	var timeout = 10;
+	var interval = 2;
+	var parameter = {
+		elementId: "",
+		elementCss: "img[alt='Loading']",
+		xpath: ""
+	};
+	bta.util.waitElement(parameter, {
+		 visibility: "Visible",
+	     timeout: timeout,
+	     interval: interval
+	}, function(status){
+	  if (status === "success") {
+	    bta.util.waitElement(parameter, {
+	         visibility: "Hidden",
+	         timeout: timeout,
+	         interval: interval
+	    }, function(){
+	      bta.util.callback();
+	    });
+	  } else {
+	    bta.util.callback();
+	  }
+	});
+
+   ```
+   
+   You can configure **timeout**, **interval**, **elementId**, **elementCss** and **xpath** as you need.
+   
+2. Insert Post Script to Case Step
+
+   If you have created any level of the post script then the layout of case step table:
+   
+   ![][test_post_script_look]
+    
+   Click the toggle can insert post script after the command.
+   
+   Batch operation:
+   
+   Select the case steps, right click then click **On**/**Off** button.
+   
+   ![][test_operation_post_script]
+  
+  
 
   [test_js_command]: ../images/test/test_js_command.PNG
   [test_js_command_info]: ../images/test/test_js_command_info.PNG
@@ -99,3 +170,5 @@ return bta.util.callback();
   [test_js_commandlist]: ../images/test/test_js_commandlist.PNG
   [test_js_commandsample]: ../images/test/test_js_commandsample.PNG
   [test_js_commandresult]: ../images/test/test_js_commandresult.PNG
+  [test_post_script_look]: ../images/test/test_post_script_look.PNG
+  [test_operation_post_script]: ../images/test/test_operation_post_script.png

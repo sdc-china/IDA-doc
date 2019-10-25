@@ -26,8 +26,8 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **https.port** : Liberty https port defined in the server.xml
 *  **engineConfig.connectionTimeout** :  page load timeout
 *  **engineConfig.waitTimeout** :  default wait timeout, used in waitTextPresent and waitElement commands    
-*  **engineConfig.retryTimes** :  retry the failed command by the given times
-*  **engineConfig.retryInterval** : the interval time  between the retry.The default is 3 seconds    
+*  **engineConfig.defaultRetryTimes** :  the default retry times of the failed command. Can be overwritten by project properties.
+*  **engineConfig.defaultRetryInterval** : the default interval time between the retry. If not be set, the default is 3. Can be overwritten by project properties.    
 *  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc 
 *  **engineConfig.installationPackageRemoteDir** :  Temp folder to keep exported installation packages in PC/PS server
 *  **smtp.host** : SMTP host    
