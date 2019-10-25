@@ -147,7 +147,7 @@ Here is the steps:
    
 2. Insert Post Script to Case Step
 
-   If you have created any level of the post script then the layout of case step script:
+   If you have created any level of the post script then the layout of case step table:
    
    ![][test_post_script_look]
     
