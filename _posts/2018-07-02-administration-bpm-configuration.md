@@ -19,19 +19,20 @@ order: 2
 
       |   Field                | Description                                                             |
       | ---------------------- |-------------------------------------------------------------------------|                                          
-      | Server Name            | the BPM server name                                                                        |  
-      | Type                   | DEV, QA, STG, PRO                                                          |
-      | BPM Version            | the BPM server version                                                                        |
-      | Server Url             | the BPM server URL, eg: https://bpmserver:9443                     |                                                                        
-      | SOAP port              | soap port defined in Was console                                |
-      | SSH User Name          | used for snapshot deployment from PC to PS                            |
-      | SSH key                | used for snapshot deployment from PC to PS                           |
-      | WAS admin Command      | the path of wsadmin.sh  in linux server                                 |      
-      | Rest User Name         | BPM server rest api username                                            |
-      | Rest Password          | BPM server rest api password                                            |   
-      | WAS Admin username     | WAS admin name                                                                        |
-      | WAS Admin password     | WAS admin password                                                                        |  
-      | Connected Server Name  | online PS server name               |
+      | Server Name            | the BPM server display name                                                                          |  
+      | Type                   | Options: DEV, QA, STG, PRO. If the BPM server is Process Center, please select DEV, if your server is Process Server, you should choose QA, STG or PRO, it depends on your actual environment  |
+      | Server Url             | the BPM server URL, eg: https://bpmserver:9443, you can get it from the BPM Process Admin Url or Process Portal Url, but only keep the protocol, hostname and port, do not type other words after port, in HA environment, server url is the load balancer Url.  |                                        
+      | REST User Name         | BPM server rest api username, REST user should be added to tw_admins group, and need to have the Read permission to access the process application that your want to test in IDA (If your want to take process app snapshot in IDA, you need to add Write permission to this REST user) |
+      | REST Password          | BPM server rest api password                                            |   
+      | Connected Server Name  | online PS server name, only need to be filled when this server is Process Server, this server is connected to the Process Center. Authorized users can install snapshots of process applications on connected Process Servers, we can get this name from Process Center under Servers tab  ((login WebPD, click Servers) ![][connected_server_name]           |
+      | Server Host            | the BPM server host, the IP of Process Server Url, it is used to for snapshot deployment from PC to PS, in HA environment, server url is the load balancer Url. |
+      | SOAP port              | soap port defined in Was console. To determine the correct port number, see the WebSphere administrative console Ports collection page (click Servers > Server Types > WebSphere application servers > server_name > Communications > Ports and find the value for SOAP_CONNECTOR_ADDRESS) , in HA environment, use the port configured for the application cluster member.|
+      | WAS admin Command      | the path of wsadmin.sh in linux server, in HA environment, use the path of wsadmin.sh in application cluster member. |      
+      | WAS Admin username     | WAS admin name, the Administrative user who manages the product resources and user accounts in WebSphere Application Server, in HA environment, use the Admin username in application cluster member. |
+      | WAS Admin password     | WAS admin password  | 
+      | SSH User Name          | used for snapshot deployment from PC to PS, this user should have the permission to exeute wsadmin.sh, in HA environment, use the SSH user in application cluster member.  |
+      | SSH key                | used for snapshot deployment from PC to PS, the way to generate ssh key is here: [Link](https://sdc-china.github.io/IDA-doc/pipeline/pipeline-configuration-PCtoPS.html) |
+       
 
 **Notes:**  
 
@@ -93,3 +94,4 @@ What's more, you can also edit a bpm user in a similar way to editing a user.
 [administrator_edit_bpm_server]: ../images/administrator/administrator_edit_bpm_server.png
 [administrator_test_bpm_server]: ../images/administrator/administrator_test_bpm_server.png
 [administrator_edit_bpm_user]: ../images/administrator/administrator_edit_bpm_user.png
+[connected_server_name]: ../images/administrator/connected_server_name.png
