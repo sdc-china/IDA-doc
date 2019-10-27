@@ -72,6 +72,11 @@ docs:
       - title: "Deploy Checkstyle ruleset"
         url: /checkstyle/checkstyle-deploy-ruleset.html
 
+  - title: Analyzer
+    children:
+      - title: "Analyze BPM projects with analyzer"
+        url: /analyzer/analyzer-analyze-BPM-projects-with-analyzer.html
+
   - title: Pipeline
     children:
       - title: "Pipeline overview"
