@@ -1,8 +1,8 @@
 ---
 title: "Analyze BPM projects with analyzer"
 category: analyzer
-date: 2018-10-10 14:17:55
-last_modified_at: 2019-07-29 14:50:00
+date: 2018-10-10 13:17:55
+last_modified_at: 2019-07-29 13:50:00
 order: 1
 ---
 
