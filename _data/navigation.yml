@@ -60,6 +60,8 @@ docs:
         url: /test/test-import-execute-sample-test-project.html
       - title: "Test Report"
         url: /test/test-case-report.html
+      - title: "Dynamic Assignee"  
+        url: /test/test-case-dynamic-assignee.html
 
   - title: Checkstyle
     children:
