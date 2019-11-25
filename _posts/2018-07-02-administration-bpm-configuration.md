@@ -19,19 +19,19 @@ order: 2
 
       |   Field                | Description                                                             |
       | ---------------------- |-------------------------------------------------------------------------|                                          
-      | Server Name            | the BPM server display name                                                                          |  
-      | Type                   | Options: DEV, QA, STG, PRO. If the BPM server is Process Center, please select DEV, if your server is Process Server, you should choose QA, STG or PRO, it depends on your actual environment  |
-      | Server Url             | the BPM server URL, eg: https://bpmserver:9443, you can get it from the BPM Process Admin Url or Process Portal Url, but only keep the protocol, hostname and port, do not type other words after port, in HA environment, server url is the load balancer Url.  |                                        
-      | REST User Name         | BPM server rest api username, REST user should be added to tw_admins group, and need to have the Read permission to access the process application that your want to test in IDA (If your want to take process app snapshot in IDA, you need to add Write permission to this REST user) |
-      | REST Password          | BPM server rest api password                                            |   
-      | Connected Server Name  | online PS server name, only need to be filled when this server is Process Server, this server is connected to the Process Center. Authorized users can install snapshots of process applications on connected Process Servers, we can get this name from Process Center under Servers tab  ((login WebPD, click Servers) ![][connected_server_name]           |
-      | Server Host            | the BPM server host, the IP of Process Server Url, it is used to for snapshot deployment from PC to PS, in HA environment, server url is the load balancer Url. |
-      | SOAP port              | soap port defined in Was console. To determine the correct port number, see the WebSphere administrative console Ports collection page (click Servers > Server Types > WebSphere application servers > server_name > Communications > Ports and find the value for SOAP_CONNECTOR_ADDRESS) , in HA environment, use the port configured for the application cluster member.|
-      | WAS admin Command      | the path of wsadmin.sh in linux server, in HA environment, use the path of wsadmin.sh in application cluster member. |      
-      | WAS Admin username     | WAS admin name, the Administrative user who manages the product resources and user accounts in WebSphere Application Server, in HA environment, use the Admin username in application cluster member. |
-      | WAS Admin password     | WAS admin password  | 
-      | SSH User Name          | used for snapshot deployment from PC to PS, this user should have the permission to exeute wsadmin.sh, in HA environment, use the SSH user in application cluster member.  |
-      | SSH key                | used for snapshot deployment from PC to PS, the way to generate ssh key is here: [Link](https://sdc-china.github.io/IDA-doc/pipeline/pipeline-configuration-PCtoPS.html) |
+      | Server Name            | The display name of this BPM server.                                                                        |  
+      | Type                   | Options: DEV, QA, STG, PRO. If the BPM server is Process Center, please select DEV, if your server is Process Server, you should choose QA, STG or PRO, it depends on your actual environment.  |
+      | Server Url             | The BPM server URL, eg: https://bpmserver:9443. It is the prefix of BPM Process Admin Url or Process Portal Url. In BPM HA environment, this field should be the Url of the load balancer.  |                                        
+      | REST User Name         | The name of the user who is a member of tw_admins group and has the Read permission to the target process application (If your want to catch a new snapshot for this process application in IDA, you need to have the Write permission). |
+      | REST Password          | The Password of the user.                                            |   
+      | Connected Server Name  | Connected Server Name is the online PS server name, authorized users can install snapshots of process applications on connected Process Servers. This field only needs to be filled when this server is Process Server and is connected to the Process Center. It can be obtained from Process Center under Servers tab (login WebPD, click Servers) ![][connected_server_name].           |
+      | Server Host            | The BPM server host, the IP or the hostname of Process Server, it is used for snapshot deployment from PC to PS. In BPM HA environment, you can get this value from one of the application cluster members. |
+      | SOAP port              | Soap port id defined in Was console. To determine the correct port number, see the WebSphere administrative console Ports collection page (click Servers > Server Types > WebSphere application servers > server_name > Communications > Ports and find the value for SOAP_CONNECTOR_ADDRESS). In BPM HA environment, use the port configured for the application cluster member.|
+      | WAS admin Command      | It is the path of wsadmin.sh in linux server, in BPM HA environment, use the path of wsadmin.sh in application cluster member. |      
+      | WAS Admin username     | The name of the WAS Administrative user who can login the WAS console and can manages the product resources and user accounts in WebSphere Application Server. In BPM HA environment, use the WAS Admin user configured for the application cluster member. |
+      | WAS Admin password     | The password of WAS admin user.  | 
+      | SSH User Name          | The user who can access PC and PS by SSH key, this field is used for snapshot deployment from PC to PS. This user should have the permission to exeute wsadmin.sh, in BPM HA environment, use the SSH user configured for application cluster member.  |
+      | SSH key                | Used for snapshot deployment from PC to PS. The way to generate ssh key is here: [Link](https://sdc-china.github.io/IDA-doc/pipeline/pipeline-configuration-PCtoPS.html). |
        
 
 **Notes:**  

@@ -236,8 +236,8 @@ You can define the same environment variable "BPMTAT_ACCESS" in your BPM applica
 - Click "Add to Chrome" button to install plug-in
 
 ### Firefox plugin
-- Download firefox plugin [ida-1.37-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.37-fx.xpi)
-- Drag the "ida-1.37-fx.xpi" file into firefox window
+- Download firefox plugin [ida-1.38-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.38-fx.xpi)
+- Drag the "ida-1.38-fx.xpi" file into firefox window
 - Click "Add" button
 
 **Plug-in Configuration**
