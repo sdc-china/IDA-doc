@@ -63,6 +63,8 @@ order: 59
   **Notes:**
   
   The **Refresh** button is only displayed when the status of latest report is **Passed** and there is at least one case step with screenshot in this test case.
+  
+  Smart Comparison does not support comparing screenshot taken from different selenium hubs unless the properties of the selenium hubs are the same.
 
   
 [toggle]: ../images/test/test_smart_comparison_toggle.PNG
