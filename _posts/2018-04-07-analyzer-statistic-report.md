@@ -1,16 +1,16 @@
 ---
-title: "Analyzer report"
+title: "Analyzer - Statistic report"
 category: analyzer
 date: 2018-10-10 14:17:55
-last_modified_at: 2019-07-29 14:50:00
-order: 2
+last_modified_at: 2019-11-26 14:50:00
+order: 3
 ---
 
-# Analyzer report
+# Analyzer - Statistic report
 ***
 ## Basic information
    
-   After finishing the analysis, the basic information for this application will be displayed in this section, including process application details, specific information of branch and snapshot. More details, see the following screenshot.
+   After finishing the statistic analysis, the basic information for this application will be displayed in this section, including process application details, specific information of branch and snapshot. More details, see the following screenshot.
 
    ![][basic_info]
 
