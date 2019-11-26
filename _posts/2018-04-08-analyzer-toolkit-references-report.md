@@ -35,7 +35,7 @@ order: 4
 
 ## Referenced By Table (Toolkit Only)
 
-   When you analyze a toolkit, this part will be displayed.This table shows the details of the referenced by.We can know which artifact of this toolkit is used by which apps in detail.
+   When you analyze a toolkit, this part will be displayed.This table shows the details of the referenced by.We can know which artifact of this toolkit is used by which applications in detail.
 
    ![][analyzer_toolkit_references_report_referenced_by_report]
 

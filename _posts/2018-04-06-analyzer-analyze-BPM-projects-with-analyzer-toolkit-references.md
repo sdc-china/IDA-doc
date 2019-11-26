@@ -10,13 +10,13 @@ order: 2
 ***
 ### Setting up the BPM project and perform it.
 
- 1. Switch to the **Analyzer** tab, then you can use BPM server to analyze.
+   1. Switch to the **Analyzer** tab, then you can use BPM server to analyze.
 
       **Use BPM server**, choose the toolkit - references tab, fill the below field values for the analyzer toolkit references form.
 
       ![][analyzer_toolkit_references]
 
-     |   Parameter   | Description    |
+      |   Parameter   | Description    |
       | ------------- |----------------|
       | [Server][1]   |Server environment|
       | Process App   |Process app list on the selected server|
@@ -34,3 +34,4 @@ order: 2
 [analyzer_toolkit_references]: ../images/analyzer/analyzer_toolkit_references.PNG
 [analyzer_toolkit_references_report]: ../images/analyzer/analyzer_toolkit_references_report.PNG
 
+[1]: ../administration/administration-bpm-configuration.html
