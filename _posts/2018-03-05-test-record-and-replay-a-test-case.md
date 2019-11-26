@@ -18,9 +18,9 @@ order: 50
   
      ![][test_case_step_table2]
      
-     ![][test_record_page]
+      ![][test_record_page]
   
-  3. In the **Debug \{\{log\}\}** step, the process will be stopped. You need to click ![][test_case_record_resume] button to resume.
+  3. In the **Debug** step which has ![][test_debug_point] in front of it, the process will be stopped. If you need to resume, you can click ![][test_case_record_resume].
    
      ![][test_case_record_plugin]
   
@@ -34,17 +34,27 @@ order: 50
 
 ### Replay a test case 
 
-  1. Click ![][test_case_record_button] button on the right of case name to replay it.
+  1. Click **Record** button on the right of case name to replay it.
   
   2. Click ![][test_record_stop] button to finish the replay.
   
-  3. In the **Debug \{\{log\}\}** step, the record will be stopped. You need to click ![][test_case_record_resume] button to resume.
+  3. In the **Debug** step which has ![][test_debug_point] in front of it, the record will be stopped. You need to click ![][test_case_record_resume] button to resume. 
   
   4. Click **Exit Edit** button on the right of suite name.
   
   **Notes**: 
   
-  If you need to  record to a  test case, you can add **debug** command. When replay to the **debug** command, you can prepare to record your operation.
+  If you need to  record to a  test case, you can add **debug** command by double clicking the following commands. When replay to the **debug** command, you can prepare to record your operation.
+  
+  Here are the description of buttons:
+  
+   | Button   |Description      |Can click while running|
+   |----|---------------------- |-----------------------|
+   |![][test_case_record_resume] |Run test case until break point step.| False, can click on debug steps.|
+   |![][test_case_break_point_button]|Skip all break points.|True|
+   |![][test_case_skip_break_point]|Enable all break points.|True|
+   |![][test_case_disabled_record_button]|Disable record case steps.|False, can click on debug steps.|
+   |![][test_case_enable_record_button]|Enable record case steps.|False, can click on debug steps.|
   
 ### Record a test case with group command
 
@@ -75,6 +85,11 @@ order: 50
 [test_record_stop]: ../images/test/test_record_stop.PNG
 [test_record_steps]: ../images/test/test_record_steps.PNG
 [test_case_record_button]: ../images/test/test_case_record_button.PNG
+[test_case_break_point_button]: ../images/test/test_case_break_point_button.PNG
+[test_case_disabled_record_button]: ../images/test/test_case_disabled_record_button.PNG
+[test_case_skip_break_point]: ../images/test/test_case_skip_break_point.PNG
+[test_case_enable_record_button]: ../images/test/test_case_enable_record_button.PNG
+[test_debug_point]: ../images/test/test_debug_point.png
 [test_record_page]: ../images/test/test_record_page.PNG
 [test_record_and_record_group_command]: ../images/test/test_record_and_record_group_command.PNG
 [test_record_and_replay_example_group_command]: ../images/test/test_record_and_replay_example_group_command.PNG
