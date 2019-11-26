@@ -44,6 +44,8 @@ docs:
         url: /test/test-project-management.html
       - title: "Test case management"
         url: /test/test-case-management.html
+      - title: "Test case label management"
+        url: /test/test-case-label-management.html
       - title: "Test Case data binding"
         url: /test/test-case-data-binding.html
       - title: "Group command management"
