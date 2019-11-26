@@ -18,3 +18,4 @@ order: 7
 - The command UI.close is disabled in IDA plugin which may caused issue in plugin.
 - The command UI.confirmOK and UI.confirmCancel aren't supported in IDA plugin.
 - BP3 Richtext control replay not working if no value is binding for this control.   
+- Some earlier firefox browser version(eg:60.9.0esr) is not automaticlly scrollable when replay the coach case in IDA plug-in, you should install latest firefox browser instead.        

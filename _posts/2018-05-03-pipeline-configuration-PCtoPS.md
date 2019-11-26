@@ -105,7 +105,12 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 2. For the Deloyment step, you need to select **Offline Install** for it.
 
    ![][pipeline_offline_deploy]
+   The fields to create a step is explained as below.
 
+     |Label                  | Description
+     |---------------------- |-------------
+     |Deploy From Local File System Of Process Server                   | Jump over the export step and use the package in PS server directly
+     
 3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to offline PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to offline PS.
 
    ![][pipeline_run_online_deploy]

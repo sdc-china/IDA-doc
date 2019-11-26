@@ -15,11 +15,11 @@ order: 58
 
 ### Prerequisite
 
-   You have installed **Eclipse IDE** and **Maven** in your local environment.
+  Make sure you have installed **Eclipse IDE** and **Maven** in your local environment.
 
 ### Java command customization
 
-#### Import CustomJavaCommand Java project
+Import CustomJavaCommand Java project
 
 1. Unzip the file **workspace/custom-java-command.zip** in release package.
 
@@ -33,7 +33,7 @@ order: 58
 
    ![][test_maven_update]
 
-#### Write custom Java command
+Write custom Java command
 
 1. Create a Java class **MyJavaCommand** under the source folder **src/main/java**.
 
@@ -46,15 +46,15 @@ order: 58
 2. Add annotations **@CustomCommand** and **@Parameter** on the class, so that the IDA can recognize the Java command. And add private variables based on the parameter definition.
 
 	**@CustomCommand**
-	*  **name** : The name shows on the test command selection box.
-	*  **verbalization** : The text shows on the test case detail table.
-	*  **description** : The text shows on the add/update command dialog.
+	*  **name** : The name showing on the test command selection box.
+	*  **verbalization** : The text showing on the test case detail table.
+	*  **description** : The text showing on the add/update command dialog.
 	*  **takeScreenshot** : Indicate whether it will take screenshot after command execution.
 
 	**@Parameter**
-	*  **name** : The name to get the parameter from Java code.
-	*  **displayName** : The name shows on the add/update command dialog.
-	*  **type** : The control type shows on the add/update command dialog. It supports four kinds of type: text, textarea, combo and checkbox.
+	*  **name** : The name getting the parameter from Java code.
+	*  **displayName** : The name showing on the add/update command dialog.
+	*  **type** : The control type shows on the add/update command dialog. It supports four kinds of types: text, textarea, combo and checkbox.
 
 	```
 	import org.slf4j.Logger;
@@ -107,9 +107,9 @@ order: 58
 	    return valid;
 	  }
 	```
-4. By overriding the **parseArgs** method, you could read the inputs from a **Map** object and assign the value to the pre-defined private variables. You could also add your own validation logic in the method, and return **false** if the arguments is invalid.
+4. By overriding the **parseArgs** method, you could read the inputs from a **Map** object and assign the value to the pre-defined private variables. You could also add your own validation logic in the method, and it will be returned as  **false** if the arguments is invalid.
 
-5. By overriding the **execute** method, you could add your own execution logic. An example of **execute** method as below:
+5. By overriding the **execute** method, you could add your own execution content. An example of **execute** method as below:
 
 	```
 	  @Override
@@ -136,12 +136,12 @@ order: 58
 	  }
 	```
 
-	* **this.driver**: It is the object can handler browser UI.
-	* **this.getTeamworksAPI()**: This method return an object which can invoke the BPM server REST API.
+	* **this.driver**: It is the object can handle browser UI.
+	* **this.getTeamworksAPI()**: This method returns an object that can invoke the BPM server REST API.
 	* **this.result**: The result of the Java command, and the values in the result will pass to the following test commands in a test case.
 
 
-6. Below is a completed example of Java command, you could also found it in the package **com.ibm.cte.sdc.bpm.testing.command.customized.MyJavaCommand**
+6. Below is a completed example of Java command, you could also find it in the package **com.ibm.cte.sdc.bpm.testing.command.customized.MyJavaCommand**
 
 	```
 	package com.ibm.cte.sdc.bpm.testing.command.customized;
@@ -211,10 +211,10 @@ order: 58
 	}
 	```
 
-#### Unit test custom Java command
+Unit test custom Java command
 1. Configure **test.properties** under **src/test/resources**.
 
-	* **selenium_hub_url**: It's the selenium grid hub url. If you don't have selenium grid, then you can setup one by the [link][selenium_grid_url].
+	* **selenium_hub_url**: It's the selenium grid hub url. If you don't have selenium grid, then you can set up one by the [link][selenium_grid_url].
 	* **selenium_hub_browser**: The browser type, the value could be **iexplore**, **firefox** or **chrome**, please make sure the selenium hub can support the configured browser type.
 	* **bpm_server_url**: The BPM server URL
 	* **bpm_server_user_name**: The BPM REST call user name
@@ -265,9 +265,9 @@ order: 58
    ![][test_unit_test_java_command]
 
 
-#### Package custom Java command
+Package custom Java command
 
-1. Once all unit test cases are passed, then you could package the Java command by right-click the project and choose **Run As** -> **Maven build...**.
+1. Once all unit test cases are passed, then you could package the Java command by right clicking the project and choose **Run As** -> **Maven build...**.
 
    ![][test_maven_build]
 
@@ -279,7 +279,7 @@ order: 58
 
 - Notes: If you use any java lib which are not existed in as-is IDA.war/lib folder, you need copy it to lib folder and repack the IDA web so that the customer java command jar could find reference in class loader.
 
-#### Upload custom Java command in IDA
+Upload custom Java command in IDA
 
 1. Open the page in **Administration** -> **Custom Java Command**.
 
@@ -294,13 +294,13 @@ order: 58
    ![][test_upload_java_command_3]
 
 
-#### Use custom Java command in IDA test case
+Use custom Java command in IDA test case
 
-1. Edit your test case, and open the add/update command dialog. You will see the Java command shows under the **Custom** category.
+1. Edit your test case, and open the add/update command dialog. You will see the Java command showing under the **Custom** category.
 
    ![][test_insert_java_command]
 
-2. The parameters defined by Java annotation are also shows on the command dialog.
+2. The parameters defined by Java annotation are also showed on the command dialog.
 
    ![][test_java_command_parameter]
 

@@ -26,9 +26,10 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **https.port** : Liberty https port defined in the server.xml
 *  **engineConfig.connectionTimeout** :  page load timeout
 *  **engineConfig.waitTimeout** :  default wait timeout, used in waitTextPresent and waitElement commands    
-*  **engineConfig.retryTimes** :  retry the failed command by the given times
-*  **engineConfig.retryInterval** : the interval time  between the retry.The default is 3 seconds    
-*  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc  
+*  **engineConfig.defaultRetryTimes** :  the default retry times of the failed command. Can be overwritten by project properties.
+*  **engineConfig.defaultRetryInterval** : the default interval time between the retry. If not be set, the default is 3. Can be overwritten by project properties.    
+*  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc 
+*  **engineConfig.installationPackageRemoteDir** :  Temp folder to keep exported installation packages in PC/PS server
 *  **smtp.host** : SMTP host    
 *  **smtp.port** : SMTP port    
 *  **email.from** : Sender Email address 
@@ -38,6 +39,7 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **jasypt.encryptor.password** : default value password  
 *  **enable_case_history** : Enable save test case history function, default value is true.  
 *  **max_case_history** : Set latest test case history max number of each test case, default value is 100.    
+
 
 **Notes** 
 If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
@@ -55,7 +57,24 @@ Also you can use command line tool from [jasypt](http://www.jasypt.org/download.
 [offlineencrypt]: ../images/install/offline.png
 
 Once you get the encrypt password,you need to change spring.datasource.password like below format.As a general rule, jasypt expects encrypted configuration parameters to appear surrounded by "ENC(...)".    
-spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)     
+spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)   
+
+
+**LDAP properties configuration**
+
+*  **ldap.enable** : If set flag to true, it will authenticate the ida users by ldap protocol.    
+*  **ldap.url** : Set LDAP server url.    
+*  **ldap.username** : Set LDAP server login user name.    
+*  **ldap.password** : Set LDAP server login user password.    
+*  **ldap.basedn** : Set LDAP server base dn.    
+*  **ldap.user.filter** : Set LDAP server user fileter pattern, use '#' to split multiple user filter patterns.   
+*  **ldap.default.role** : Set the default LDAP user role name.  
+*  **ldap.username.case-insensitive** : Set LDAP server is case insensitive or not.
+
+**Notes** 
+
+- If you enable LDAP authencation configuration, You could not add users by idaAdmin.    
+- When a user sign in IDA at the first time, the user is not belong to any teams. The user need to ask the idaAdmin to assign him/her to a team, then the user could create projects and pipelines.  
 
  
 **checkstyle properties configuration**

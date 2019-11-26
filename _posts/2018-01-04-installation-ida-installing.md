@@ -213,6 +213,21 @@ The testing capability can only start exposed Business Process, Human Services a
    ![][toolkit]
 4. Make sure the service is installed in your process app.  
    ![][service]
+
+5. Modify toolkit access permission (Optional)
+
+For security concern, we suggest to disable the toolkit in BPM production environment. 
+It allows user to modify the toolkit access permission by setting up the environment variable "BPMTAT_ACCESS". (true means enable the access, false means disable the access)
+
+By default, the toolkit can only be invoked on Development and Test environment:
+    ![][default_toolkit_setting]
+
+You can define the same environment variable "BPMTAT_ACCESS" in your BPM application which will override the default setting in toolkit, for example:
+    ![][custom_toolkit_setting]
+
+
+
+
    
 # Step 3: Installing IDA Browser Plug-in
 
@@ -221,8 +236,8 @@ The testing capability can only start exposed Business Process, Human Services a
 - Click "Add to Chrome" button to install plug-in
 
 ### Firefox plugin
-- Download firefox plugin [ida-1.35-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.35-fx.xpi)
-- Drag the "ida-1.35-fx.xpi" file into firefox window
+- Download firefox plugin [ida-1.38-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.38-fx.xpi)
+- Drag the "ida-1.38-fx.xpi" file into firefox window
 - Click "Add" button
 
 **Plug-in Configuration**
@@ -240,6 +255,8 @@ If you want to install chrome plug-in offline,you can use online https://chrome-
 https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp to download crx ,then install crx.  
 
 [toolkit]: ../images/install/toolkit.png 
+[default_toolkit_setting]: ../images/install/default_toolkit_setting.png  
+[custom_toolkit_setting]: ../images/install/custom_toolkit_setting.png  
 [service]: ../images/install/service.png 
 [IDA]: ../images/install/IDA.png 
 [firefox]: ../images/install/firefox.png

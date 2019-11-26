@@ -13,6 +13,10 @@ order: 10
   1. In the project list page, click **Create Project** button.
   
      ![][tutorial_createproject] 
+     
+     Click Advance: 
+     
+     ![][tutorial_createproject_advance] 
   
   2. Fill in the project form according to the following table.
   
@@ -20,13 +24,16 @@ order: 10
      ----------------------|-------------------
      Project Name          |Name of project    
      Project Description   |Description of project
+     Visibility            |Team of project
      Server                |Server environment
      Process App           |Process apps of the selected server
      Toolkit               |Toolkits of  selected server
-     Branch                |The branch of selected process app or toolkit
+     Trace                 |The branch of selected process app or toolkit
      Snapshot              |The snapshot of selected branch
      [Selenium Hub][2]     |Support chrome, firefox selenium node 
-     Tip                   |Using the latest snapshot 
+     Tip                   |Use the latest snapshot 
+     Advance               |Show the engine configuration
+     Engine Properties     |Support the engine configuration only for json format. Retry times: the retry times of the failed command. Retry interval: the interval time between the retry. if not be set, then they will be the engineConfig.defaultRetryTimes and engineConfig.defaultRetryInterval in application configuration.
      Migrate an old project|Support test case project migration from eclipse version
      
      **Notes:**     
@@ -70,3 +77,4 @@ order: 10
 [tutorial_project_info]: ../images/tutorial/tutorial_project_info.PNG
 [1]: ../administration/administration-bpm-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
+[tutorial_createproject_advance]: ../images/tutorial/tuorial_project_create_advance.PNG 
