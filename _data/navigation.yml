@@ -76,10 +76,14 @@ docs:
 
   - title: Analyzer
     children:
-      - title: "Analyze BPM projects with analyzer"
-        url: /analyzer/analyzer-analyze-BPM-projects-with-analyzer.html
-      - title: "Analyzer report"
-        url: /analyzer/analyzer-analyzer-report.html
+      - title: "Analyze BPM projects with analyzer statistic"
+        url: /analyzer/analyzer-analyze-BPM-projects-with-analyzer-statistic.html
+      - title: "Analyze BPM projects with analyzer toolkit references"
+        url: /analyzer/analyzer-analyze-BPM-projects-with-analyzer-toolkit-references.html
+      - title: "Statistic report"
+        url: /analyzer/analyzer-statistic-report.html
+      - title: "Toolkit references report"
+        url: /analyzer/analyzer-toolkit-references-report.html
   - title: Pipeline
     children:
       - title: "Pipeline overview"
