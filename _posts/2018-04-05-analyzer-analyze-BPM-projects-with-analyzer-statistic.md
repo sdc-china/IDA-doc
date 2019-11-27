@@ -10,9 +10,9 @@ order: 1
 ***
 ### Setting up the BPM project and perform it.
 
-   1. Switch to the **Analyzer** tab, then you can use BPM server or upload a TWX file to analyze.
+  1. Switch to the **Analyzer** tab, then you can use BPM server or upload a TWX file to analyze.
 
- **Use BPM server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
+  **Use BPM server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
 
   ![][analyzer_statistic_online]
 
@@ -31,11 +31,11 @@ order: 1
 
   You can choose or drop a TWX file.
 
- ![][analyzer_upload_drop] ![][analyzer_upload_done]
+  ![][analyzer_upload_drop] ![][analyzer_upload_done]
 
-   2. Click **Statistic Analyze** Button to see the statistic report.
+  2. Click **Statistic Analyze** Button to see the statistic report.
 
-      ![][analyzer_report]
+  ![][analyzer_report]
 
 [analyzer_statistic_online]: ../images/analyzer/analyzer_statistic_online.PNG
 [analyzer_statistic_offline]: ../images/analyzer/analyzer_statistic_offline.PNG
