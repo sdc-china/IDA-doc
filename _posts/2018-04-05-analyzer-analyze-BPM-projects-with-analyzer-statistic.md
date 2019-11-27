@@ -37,7 +37,7 @@ order: 1
 
   ![][analyzer_report]
 
-[analyzer_statistic_online]: ../images/analyzer/analyzer_statistic_online.PNG
+[analyzer_statistic_online]: ../images/analyzer/analyzer_statistic_online.png
 [analyzer_statistic_offline]: ../images/analyzer/analyzer_statistic_offline.PNG
 [analyzer_upload_drop]: ../images/analyzer/analyzer_upload_drop.PNG
 [analyzer_upload_done]: ../images/analyzer/analyzer_upload_done.PNG
