@@ -47,8 +47,9 @@ If your recorded commands come from "BPM" command category(these commands will i
     {
 	"variable_name": "value",
 	"variable2_name": "value2"
-    }
-Also parameter support varaible like csv binding variable and context variable.You can use ${csv.xxxx} or ${xxx} to reference your vairable value.If vairable value is number please remove quote before $.
+    }    
+        
+Also parameter support varaible like csv binding variable and context variable.You can use ${csv.xxxx} or ${xxx} to reference your vairable value.If vairable value is number please remove quote before $.   
 
 $.*e.g:*
 
