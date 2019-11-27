@@ -14,7 +14,7 @@ order: 20
 
 2. Click the **Labels** icon next to the test case name, you can see an input field where you can add multiple labels to this test case. Press **Enter** to complete each label.
    ![][single-test-case-labels-edit]
-   
+
 3. As you enter texts in the input field, labels that have been added to IDA will pop up to support auto-completion.
    ![][single-test-case-labels-auto-complete]
 
@@ -34,7 +34,7 @@ order: 20
 
 4. As you enter texts in the input field, labels that have been added to IDA will pop up to support auto-completion.
 
-5. Click **Save labels** to finish editing labels of selected test cases. The labels are shown under the **Labels** column.
+5. Click **Save Labels** to finish editing labels of selected test cases. The labels are shown under the **Labels** column.
    ![][multi-test-case-labels-done]
 
 
