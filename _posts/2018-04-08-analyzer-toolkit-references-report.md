@@ -40,9 +40,9 @@ order: 4
    ![][analyzer_toolkit_references_report_referenced_by_report]
 
 
-[analyzer_toolkit_references_report_title]: ../images/analyzer/analyzer_toolkit_references_report_title.PNG
-[analyzer_toolkit_references_report_references]: ../images/analyzer/analyzer_toolkit_references_report_references.PNG
-[analyzer_toolkit_references_report_references_table]: ../images/analyzer/analyzer_toolkit_references_report_references_table.PNG
-[analyzer_toolkit_references_report_referenced_by]: ../images/analyzer/analyzer_toolkit_references_report_referenced_by.PNG
-[analyzer_toolkit_references_report_referenced_by_report]: ../images/analyzer/analyzer_toolkit_references_report_referenced_by_report.PNG
+[analyzer_toolkit_references_report_title]: ../images/analyzer/analyzer_toolkit_references_report_title.png
+[analyzer_toolkit_references_report_references]: ../images/analyzer/analyzer_toolkit_references_report_references.png
+[analyzer_toolkit_references_report_references_table]: ../images/analyzer/analyzer_toolkit_references_report_references_table.png
+[analyzer_toolkit_references_report_referenced_by]: ../images/analyzer/analyzer_toolkit_references_report_referenced_by.png
+[analyzer_toolkit_references_report_referenced_by_report]: ../images/analyzer/analyzer_toolkit_references_report_referenced_by_report.png
 

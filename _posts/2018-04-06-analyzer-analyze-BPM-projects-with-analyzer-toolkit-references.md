@@ -31,7 +31,7 @@ order: 2
       ![][analyzer_toolkit_references_report]
 
 
-[analyzer_toolkit_references]: ../images/analyzer/analyzer_toolkit_references.PNG
-[analyzer_toolkit_references_report]: ../images/analyzer/analyzer_toolkit_references_report.PNG
+[analyzer_toolkit_references]: ../images/analyzer/analyzer_toolkit_references.png
+[analyzer_toolkit_references_report]: ../images/analyzer/analyzer_toolkit_references_report.png
 
 [1]: ../administration/administration-bpm-configuration.html
