@@ -7,6 +7,9 @@ order: 20
 ---
 
 # Test case label management
+
+Users can add multiple labels to manage the test cases and use labels in a **Test** step of an IDA pipeline to [select test cases in pipeline execution][test-step-ref].
+
 ***
 ### Manage labels of a single test case
 
@@ -45,3 +48,4 @@ order: 20
 [multi-test-case-labels-edit]: ../images/test/multi-test-case-labels-edit.PNG
 [multi-test-case-labels-add-remove]: ../images/test/multi-test-case-labels-add-remove.PNG
 [multi-test-case-labels-done]: ../images/test/multi-test-case-labels-done.PNG
+[test-step-ref]: ../pipeline/pipeline-step-reference.html#pipeline-step-reference
