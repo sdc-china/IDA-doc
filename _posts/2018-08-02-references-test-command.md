@@ -48,6 +48,17 @@ If your recorded commands come from "BPM" command category(these commands will i
 	"variable_name": "value",
 	"variable2_name": "value2"
     }
+Also parameter support varaible like csv binding variable and context variable.You can use ${csv.xxxx} or ${xxx} to reference your vairable value.If vairable value is number please remove quote before $.
+
+$.*e.g:*
+
+
+    {   
+      "textReader":"${csv.instanceId}",    
+      "integer":${number},    
+      "decimal":0,    
+      "text":"${mytext}"   
+    }  
 
 The ![][command_params_error_icon] icon will appears below *Expected Output* input box when the wrong *Params* is filled out after click ![][command_expected_output_refresh_button] button in the Command Editor Dialog. The error message can be got by hovering on the ![][command_params_error_icon] icon.
 
