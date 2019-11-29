@@ -23,9 +23,18 @@ order: 4
 
 ## References Table
 
-   This table shows the details of the references.We can know which artifact uses which toolkit artifact in detail.
+   This table shows the details of the toolkit references in current process application.
 
    ![][analyzer_toolkit_references_report_references_table]
+
+  |   Column                    | Description               |
+  | --------------------------- |---------------------------|
+  | Artifact                    |The artifact in current process application/toolkit|
+  | Artifact Type               |The type of "Artifact"|
+  | Using Toolkit               |The toolkit which is used by current process application/toolkit|
+  | Using Artifact              |The toolkit artifact which is used by current process application/toolkit|
+  | Using Artifact Type         |The type of "Using Artifact"|
+  
 
 ## Referenced By (Toolkit Only)
 
@@ -35,9 +44,18 @@ order: 4
 
 ## Referenced By Table (Toolkit Only)
 
-   When you analyze a toolkit, this part will be displayed.This table shows the details of the referenced by.We can know which artifact of this toolkit is used by which applications in detail.
+   When you analyze a toolkit, this part will be displayed.This table shows the referenced by details of current toolkit.
 
    ![][analyzer_toolkit_references_report_referenced_by_report]
+
+  |   Column                    | Description               |
+  | --------------------------- |---------------------------|
+  | Artifact                    |The artifact in current toolkit|
+  | Artifact Type               |The type of "Artifact"|
+  | Referencing Project         |The process application/toolkit which uses current toolkit|
+  | Referencing Artifact        |The artifact of the process application/toolkit which uses current toolkit|
+  | Referencing Artifact Type   |The type of "Referencing Artifact"|
+
 
 
 [analyzer_toolkit_references_report_title]: ../images/analyzer/analyzer_toolkit_references_report_title.png
