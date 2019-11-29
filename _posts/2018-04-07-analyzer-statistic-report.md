@@ -30,20 +30,21 @@ order: 3
 ## BPMN Artifacts Statistic
 
    Analyzer counts the number of components per Process, Service, Business Object and Coach View, so that the user could have better understanding about the complexity of the process application.
-   - In Process/Service table, we can view the count of process/service components, input/output variables number and the JavaScript code lines for each process/service.
+   - In Process table, we can view the number of process components, input/output variables number and the JavaScript code lines for each process.
+   - In Service table, we can view the number of service components, input/output variables number and the JavaScript code lines for each service.
    - In Business Object table, we can view the number of properties of each business object.
-   - In Coach View table, we can view the count of coach resource, coach resource, options and inline scripts.
+   - In Coach View table, we can view the number of coach resource, coach resource, options and inline scripts.
 
    ![][bpmn_artifacts_statistic]
 
 ## BAW v19 Migration Relevant Statistic
-   As we know, there are some features/artifacts are dprecated on BAW v19. In this section, we list all the impacted artifacts during BAW migration. It can give you a detailed migration relevant statistics before you start to migrate your process application.
-   - In Adhoc Start Event table, we can view all Adhoc start event used in BPD which is deprecated in Process.
-   - In Deprecated Assignment table, we can view all depreciated assignments like "Last user in Lane", "list of User", "Routing Policy" and "Custom" used in BPD, which is deprecated in Process.
-   - In Web Service table, we can view all inline webservice used in heritage service which is deprecated in service flow.
-   - In Java Integration table, we can view all Java Integration used in heritage service which may have problem when we convert it to service flow.
-   - In Coach v8.x and Coach v7.x table, we can veiw the count of deprecated coach controls in Coach UI.
-   - In Ajax In Coach table, we can view all Ajax services used in deprecated coach controls, whose signature alreay be changed in the latest BAW UI toolkit.
+   As we know, there are some features/artifacts are dprecated on BAW v19. In this section, we list all the impacted artifacts during BAW migration tasks.
+   - In Adhoc Start Event table, we can view all Adhoc start events which will be deprecated when we convert BPD to Process during migration.
+   - In Deprecated Assignment table, we can view all depreciated assignments like "Last user in Lane", "list of User", "Routing Policy" and "Custom" which will be  deprecated when we convert BPD to Process during migration.
+   - In Web Service table, we can view all inline webservice which will be deprecated when we convert heritage service to service flow during migration.
+   - In Java Integration table, we can view all Java Integration which may corrupted when we convert heritage service to service flow during migration.
+   - In Coach v8.x and Coach v7.x table, we can view the number of deprecated coach controls in Coach UI.
+   - In Ajax In Coach table, we can view all Ajax services used in deprecated coach controls, whose signature will be changed in the latest BAW UI toolkit.
 
    ![][migrate]
 
