@@ -42,7 +42,7 @@ order: 3
    - In Adhoc Start Event table, we can view all Adhoc start events which will be deprecated when we convert BPD to Process during migration.
    - In Deprecated Assignment table, we can view all depreciated assignments like "Last user in Lane", "list of User", "Routing Policy" and "Custom" which will be  deprecated when we convert BPD to Process during migration.
    - In Web Service table, we can view all inline webservice which will be deprecated when we convert heritage service to service flow during migration.
-   - In Java Integration table, we can view all Java Integration which may corrupted when we convert heritage service to service flow during migration.
+   - In Java Integration table, we can view all Java Integration which may be corrupted when we convert heritage service to service flow during migration.
    - In Coach v8.x and Coach v7.x table, we can view the number of deprecated coach controls in Coach UI.
    - In Ajax In Coach table, we can view all Ajax services used in deprecated coach controls, whose signature will be changed in the latest BAW UI toolkit.
 
