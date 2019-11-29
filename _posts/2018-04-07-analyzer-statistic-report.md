@@ -37,7 +37,7 @@ order: 3
    ![][bpmn_artifacts_statistic]
 
 ## BAW v19 Migration Relevant Statistic
-   As we know, there are some features/artifacts are dprecated on BAW v19. In this section, we list all the impacted the artifacts if we want to migrate the process application to latest BAW version. It can give you a detailed migration relevant statistics before you start to migrate your process application.
+   As we know, there are some features/artifacts are dprecated on BAW v19. In this section, we list all the impacted artifacts during BAW migration. It can give you a detailed migration relevant statistics before you start to migrate your process application.
    - In Adhoc Start Event table, we can view all Adhoc start event used in BPD which is deprecated in Process.
    - In Deprecated Assignment table, we can view all depreciated assignments like "Last user in Lane", "list of User", "Routing Policy" and "Custom" used in BPD, which is deprecated in Process.
    - In Web Service table, we can view all inline webservice used in heritage service which is deprecated in service flow.
