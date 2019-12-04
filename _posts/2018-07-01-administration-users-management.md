@@ -54,13 +54,16 @@ order: 1
 
   2. Click **Info** button to get basic information of your account.
 
+     ![][administrator_profile_page]
+
   3. Click **Setting** button to change your password.
 
-      ![][administrator_password]
+     ![][administrator_password]
 
-  4. Click **Projects** button to get basic information of your projects.
+  4. Click **Team** button to see which teams this user belongs to, you can also see which process apps and selenium grids each team can access.
+  
+     ![][administration_user_team]
 
-      ![][administrator_profile_page]
 
 
 [administrator_add]: ../images/administrator/Administrator_add.png
@@ -73,3 +76,4 @@ order: 1
 [administrator_edit_user]: ../images/administrator/administrator_edit_user.png
 [administrator_active_user]: ../images/administrator/administrator_active_user.png
 [administrator_role_permission]: ../images/administrator/administrator_role_permission.png
+[administration_user_team]: ../images/administrator/administration_user_team.png
