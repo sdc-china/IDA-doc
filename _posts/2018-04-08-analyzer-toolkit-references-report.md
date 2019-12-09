@@ -27,13 +27,13 @@ order: 4
 
    ![][analyzer_toolkit_references_report_references_table]
 
-  |   Column                    | Description               |
-  | --------------------------- |---------------------------|
-  | Artifact                    |The artifact in current process application/toolkit|
-  | Artifact Type               |The type of "Artifact"|
-  | Using Toolkit               |The toolkit which is used by current process application/toolkit|
-  | Using Artifact              |The toolkit artifact which is used by current process application/toolkit|
-  | Using Artifact Type         |The type of "Using Artifact"|
+   |   Column                    | Description               |
+   | --------------------------- |---------------------------|
+   | Artifact                    |The artifact in current process application/toolkit|
+   | Artifact Type               |The type of "Artifact"|
+   | Using Toolkit               |The toolkit which is used by current process application/toolkit|
+   | Using Artifact              |The toolkit artifact which is used by current process application/toolkit|
+   | Using Artifact Type         |The type of "Using Artifact"|
   
 
 ## Referenced By (Toolkit Only)
@@ -48,13 +48,13 @@ order: 4
 
    ![][analyzer_toolkit_references_report_referenced_by_report]
 
-  |   Column                    | Description               |
-  | --------------------------- |---------------------------|
-  | Artifact                    |The artifact in current toolkit|
-  | Artifact Type               |The type of "Artifact"|
-  | Referencing Project         |The process application/toolkit which uses current toolkit|
-  | Referencing Artifact        |The artifact of the process application/toolkit which uses current toolkit|
-  | Referencing Artifact Type   |The type of "Referencing Artifact"|
+   |   Column                    | Description               |
+   | --------------------------- |---------------------------|
+   | Artifact                    |The artifact in current toolkit|
+   | Artifact Type               |The type of "Artifact"|
+   | Referencing Project         |The process application/toolkit which uses current toolkit|
+   | Referencing Artifact        |The artifact of the process application/toolkit which uses current toolkit|
+   | Referencing Artifact Type   |The type of "Referencing Artifact"|
 
 
 

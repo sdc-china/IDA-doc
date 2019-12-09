@@ -10,32 +10,32 @@ order: 1
 ***
 ### Setting up the BPM project and perform it.
 
-  1. Switch to the **Analyzer** tab, then you can use BPM server or upload a TWX file to analyze.
+   1. Switch to the **Analyzer** tab, then you can use BPM server or upload a TWX file to analyze.
+     
+      **Use BPM server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
 
-  **Use BPM server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
+      ![][analyzer_statistic_online]
+      
+      |   Parameter   | Description    |
+      | ------------- |----------------|
+      | [Server][1]   |Server environment|
+      | Process App   |Process app list on the selected server|
+      | Toolkit       |Toolkits of  selected server|
+      | Branch        |The branch of selected process app or selected toolkit|
+      | Snapshot      |The snapshot of selected branch|
+      | Tip           |The tip snapshot of the process app|
 
-  ![][analyzer_statistic_online]
+      **Upload a TWX file**, choose the statistic - offline tab.
+      
+      ![][analyzer_statistic_offline]
 
-  |   Parameter   | Description    |
-  | ------------- |----------------|
-  | [Server][1]   |Server environment|
-  | Process App   |Process app list on the selected server|
-  | Toolkit       |Toolkits of  selected server|
-  | Branch        |The branch of selected process app or selected toolkit|
-  |Snapshot       |The snapshot of selected branch|
-  |Tip            |The tip snapshot of the process app|
+      You can choose or drop a TWX file.
 
-  **Upload a TWX file**, choose the statistic - offline tab.
+      ![][analyzer_upload_drop] ![][analyzer_upload_done]
 
-  ![][analyzer_statistic_offline]
+   2. Click **Statistic Analyze** Button to see the statistic report.
 
-  You can choose or drop a TWX file.
-
-  ![][analyzer_upload_drop] ![][analyzer_upload_done]
-
-  2. Click **Statistic Analyze** Button to see the statistic report.
-
-  ![][analyzer_report]
+      ![][analyzer_report]
 
 [analyzer_statistic_online]: ../images/analyzer/analyzer_statistic_online.png
 [analyzer_statistic_offline]: ../images/analyzer/analyzer_statistic_offline.png

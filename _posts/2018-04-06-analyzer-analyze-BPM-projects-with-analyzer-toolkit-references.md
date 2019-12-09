@@ -22,9 +22,9 @@ order: 2
       | Process App   |Process app list on the selected server|
       | Toolkit       |Toolkits of  selected server|
       | Branch        |The branch of selected process app or selected toolkit|
-      |Snapshot       |The snapshot of selected branch|
-      |Tip            |The tip snapshot of the process app|
-      |Exclude System Toolkits|Whether exclude system toolkits which include System Data,Coaches,Content Management,System Governance,Responsive Coaches,UI Toolkit,Dashboards,Responsive Portal Components|
+      | Snapshot      |The snapshot of selected branch|
+      | Tip           |The tip snapshot of the process app|
+      | Exclude System Toolkits|Whether exclude system toolkits which include System Data,Coaches,Content Management,System Governance,Responsive Coaches,UI Toolkit,Dashboards,Responsive Portal Components|
    
    2. Click **Toolkit References Analyze** Button to see the toolkit references report.
 
