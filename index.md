@@ -69,6 +69,7 @@ The user stories are as below:
 ### Features & Capabilities
 * Test Case generation
 * Record and playback BPM UI
+* Smart comparison for Testing
 * Static code analysis for BPM application
 * Continuous delivery of BPM application through visualizing pipeline
 * Snapshot Comparision for BPM application
