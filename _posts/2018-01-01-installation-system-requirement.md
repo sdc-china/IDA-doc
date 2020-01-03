@@ -13,7 +13,6 @@ order: 1
 * Ubuntu
 * CentOS
 * Red Hat Enterprise Linux
-* Windows 7
 * Windows 10
 * Docker
 
