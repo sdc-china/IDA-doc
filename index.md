@@ -20,10 +20,11 @@ Here are some user stories.
 1. As a developer, I want to create unit test cases against the services and coach UI that could help me to run the test cases in CI server to ensure the code quality.
 2. As a developer, I want to extend the auto testing tool functionalities using customized commands to reduce the testing effort and improve the test coverage.
 3. As a developer, I want to analyze my BPM project with the static analysis tool regularly that could help me to enforce the coding standard and best practice in my project and ensure the quality of the deliverables.
-4. As a developer, I want to compare the different versions of the BPM project to understand what changes are to be delivered,  what changes are causing issues.
+4. As a developer, I want to compare the different snapshot of the BPM project to understand what changes are to be delivered, what changes are causing issues.
 5. As a developer, I want to analyze the code quality of a specific snapshot to control the code quality of all snapshots in my deployment cycle.
 6. As a developer, I want to get the code analysis result organized by categories to understand and assign code quality issues to the Dev team.
 7. As a developer, I want to get the code analysis result with suggestions that could help me to find out how to solve every issue.
+7. As a developer, I want to know toolkit dependency result that could help me to find out what shall we update when a toolkit is upgraded or removed.
 8. As an architect, I want to be able to customize the code quality rules for static analysis that could make our specific check list be applied.
 
 ### Testing Team
@@ -70,8 +71,9 @@ The user stories are as below:
 * Record and playback BPM UI
 * Static code analysis for BPM application
 * Continuous delivery of BPM application through visualizing pipeline
-* Code review for BPM application
-* Monitor BPM service with alert in real time
+* Snapshot Comparision for BPM application
+* Statistic Analyzing for BPM application
+* Toolkit Dependency Analyzing for BPM application
 * Support tools for BPM instance migration
   
 
