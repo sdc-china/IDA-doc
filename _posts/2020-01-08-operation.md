@@ -6,7 +6,7 @@ last_modified_at: 2019-07-29 16:54:00
 order: 10
 ---
 
-# How to troubleshoot IDA Application
+# How to operate and maintain IDA Application
 ***
 ### Check the liberty log
 There are three primary log files for a server.You can find logs in /wlp/output/your ida server/logs directory.
