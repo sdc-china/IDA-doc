@@ -2,7 +2,7 @@
 title: "Create a pipeline for continuous deployment"
 category: pipeline
 date: 2018-10-11 15:17:55
-last_modified_at: 2019-07-29 15:51:00
+last_modified_at: 2020-01-08 15:51:00
 order: 2
 ---
 
@@ -13,6 +13,7 @@ order: 2
 1. Click **Create Pipeline** button in pipeline page.
 
    ![][pipeline_create]
+   In the **Build Triggers** section, you can configure how to automatically trigger the pipeline build. Select ***Build Periodically*** to configure a timer to trigger the pipeline build. Select ***Trigger By New Snapshot***, then a background job will periodically check new snapshots on PC server of the first stage (see steps below). If a new snapshot is created on PC, a new pipeline build will start. The time interval for the background job to query for new snapshots can be set [in Settings tab](../administration/administration-settings-configuration.html#set-interval-for-trigger-by-new-snapshot.html#set-interval-for-trigger-by-new-snapshot).
 
  2. Click ![][pipeline_add_stage] icon to add a new stage.
 

@@ -62,7 +62,7 @@ docs:
         url: /test/test-import-execute-sample-test-project.html
       - title: "Test Report"
         url: /test/test-case-report.html
-      - title: "Dynamic Assignee"  
+      - title: "Dynamic Assignee"
         url: /test/test-case-dynamic-assignee.html
 
   - title: Checkstyle
@@ -122,8 +122,8 @@ docs:
         url: /administration/administration-custom-recorder.html
       - title: "Start and Stop IDA environment"
         url: /administration/administration-starting-and-stop-env.html
-      - title: "Logging configuration"
-        url: /administration/administration-loggingl-configuration.html
+      - title: "Settings Configuration"
+        url: /administration/administration-settings-configuration.html
       - title: "Monitoring Configuration"
         url: administration/administration-monitoring-configuration.html
 
