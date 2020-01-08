@@ -1,9 +1,9 @@
 ---
 title: "TroubleShooting"
 category: references
-date: 2019-01-17 15:17:55
+date: 2020-01-08 15:17:55
 last_modified_at: 2019-07-29 16:54:00
-order: 10
+order: 11
 ---
 
 # How to operate and maintain IDA Application
