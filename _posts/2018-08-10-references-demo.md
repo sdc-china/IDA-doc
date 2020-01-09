@@ -2,7 +2,7 @@
 title: "Demos"
 category: references
 date: 2019-01-17 15:17:55
-last_modified_at: 2019-07-29 16:54:00
+last_modified_at: 2020-01-09 16:54:00
 order: 10
 ---
 
@@ -24,3 +24,4 @@ order: 10
 13. [IDA Tutorial: Introduction of Smart Comparison](https://www.youtube.com/watch?v=Gprvr0TR1PQ&list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg&index=13&t=0s)
 14. [IDA Tutorial: Using Labels for Test Case Management and Selection in Pipeline](https://youtu.be/5Yd6B2eh0fM)
 15. [IDA Tutorial: Analyzing Process and Toolkit dependencies with Analyzer](https://youtu.be/pYR9QlMebZo)
+16. [IDA Tutorial: Test Case Version Control](https://youtu.be/KooPECtGlrk)
