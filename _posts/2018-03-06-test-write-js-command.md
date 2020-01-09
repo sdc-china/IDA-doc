@@ -143,8 +143,18 @@ Here is the steps:
 
    ```
    
-   You can configure **timeout**, **interval**, **elementId**, **elementCss** and **xpath** as you need.
+   You can configure **timeout**, **interval**, **elementId**, **elementCss** and **xpath** as you need.The default sample
+   will wait some time util  loading icon(img[alt='Loading']) disapper(Usually it is located on right top of the BPM UI).It    applys for long loading ajax      service or Long time UI loaing.
    
+   ![][test_post_script_sampleUI]
+
+   Also you can change the post script to meet your needs.It will run js after every command you apply for ida_post_script.
+   When you replay the test case you can open the web console to debug your test case.For example:
+   
+   ```
+	console.log("Start to run post script!");
+	setTimeout(function(){ }, 3000);
+    ``` 
 2. Insert Post Script to Case Step
 
    If you have created any level of the post script then the layout of case step table:
@@ -171,4 +181,5 @@ Here is the steps:
   [test_js_commandsample]: ../images/test/test_js_commandsample.PNG
   [test_js_commandresult]: ../images/test/test_js_commandresult.PNG
   [test_post_script_look]: ../images/test/test_post_script_look.PNG
+  [test_post_script_sampleUI]: ../images/test/test_post_script_sample.PNG
   [test_operation_post_script]: ../images/test/test_operation_post_script.png
