@@ -24,12 +24,12 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
 *  **server.context-path** : default as  "/ida"  
 *  **http.port** : Liberty http port defined in the server.xml
 *  **https.port** : Liberty https port defined in the server.xml
-*  **engineConfig.connectionTimeout** :  page load timeout
-*  **engineConfig.waitTimeout** :  default wait timeout, used in waitTextPresent and waitElement commands    
-*  **engineConfig.defaultRetryTimes** :  the default retry times of the failed command. Can be overwritten by project properties.
-*  **engineConfig.defaultRetryInterval** : the default interval time between the retry. If not be set, the default is 3. Can be overwritten by project properties.    
-*  **engineConfig.dataDir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc 
-*  **engineConfig.installationPackageRemoteDir** :  Temp folder to keep exported installation packages in PC/PS server
+*  **engine-config.connection-timeout** :  page load timeout
+*  **engine-config.wait-timeout** :  default wait timeout, used in waitTextPresent and waitElement commands    
+*  **engine-config.default-retry-times** :  the default retry times of the failed command. Can be overwritten by project properties.
+*  **engine-config.default-retry-interval** : the default interval time between the retry. If not be set, the default is 3. Can be overwritten by project properties.    
+*  **engine-config.data-dir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc 
+*  **engine-config.installation-package-remote-dir** :  Temp folder to keep exported installation packages in PC/PS server
 *  **smtp.host** : SMTP host    
 *  **smtp.port** : SMTP port    
 *  **email.from** : Sender Email address 
