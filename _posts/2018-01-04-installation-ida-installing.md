@@ -206,27 +206,29 @@ Refer to [IDA-ondocker](https://github.com/sdc-china/IDA-ondocker) for deploymen
 # Step 2: Installing IDA BPM Toolkit
 The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
 
-1. Open your process app by web process designer from process center.
+1. Import **IDA_Toolkit - 8.6.0_v1.1.twx** which is below forder /toolkit of release package into your process center.
 
-2. Click **+** button after Toolkits.
+2. Open your process app by web process designer from process center.
+
+3. Click **+** button after Toolkits.
 
 	![][click_add_button]
 	
-3. Type **ida** in the search box and select **8.6.0 V1.1** below IDA Toolkit. Then the dependency **IDA Toolkit(8.6.0 v1.1)** is added. 
+4. Type **ida** in the search box and select **8.6.0 V1.1** below IDA Toolkit. Then the dependency **IDA Toolkit(8.6.0 v1.1)** is added. 
 
 	![][ida_toolkit_search]
 	
-4. Click **Services** below **IDA Toolkit(8.6.0 v1.1)**. Right click the **IDA Utility** service flow and copy the item to your process app. 
+5. Click **Services** below **IDA Toolkit(8.6.0 v1.1)**. Right click the **IDA Utility** service flow and copy the item to your process app. 
 
 	![][ida_toolkit_copy]
 	
 	![][ida_toolkit_copy_to_item]
 	
-5. If **IDA Utility** is in the Services of your Process appp, the service is installed successfully.
+6. If **IDA Utility** is in the Services of your Process appp, the service is installed successfully.
 
 	![][service]
 
-6. Modify toolkit access permission (Optional)
+7. Modify toolkit access permission (Optional)
 
 	For security concern, we suggest to disable the toolkit in BPM production environment. 
 	It allows user to modify the toolkit access permission by setting up the environment variable "BPMTAT_ACCESS". (true means enable the access, false means disable the access)
