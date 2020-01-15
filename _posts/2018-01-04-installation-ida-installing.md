@@ -274,7 +274,7 @@ https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp t
 [firefox]: ../images/install/firefox.png
 [seleniumGrid]: ../images/install/seleniumGrid.png
 [webDriver]: ../images/install/webdriver.png
-[IDAOption]: ../images/install/IDAOption.png
+[IDAOption]: ../images/install/idaOption.png
 [wasversion]: ../images/install/wasversion.png 
 [wasappnew]: ../images/install/wasappnew.png 
 [wasselectapp]: ../images/install/wasselectapp.png 
