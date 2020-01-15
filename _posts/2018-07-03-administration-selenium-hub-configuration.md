@@ -21,7 +21,7 @@ order: 3
      |   Field                | Description                                                         |
      | -------------------    |---------------------------                                          |
      | Server Name            | Hub name                                                            |  
-     | Server URL             | Hub URL name                                                        |
+     | Server URL             | Hub URL                                                        |
      | Browser                | Support Firefox, Chrome and IE                                      |  
      | Configuration          | Customize browser options for selenium
 
