@@ -44,9 +44,9 @@ order: 50
   
   **Notes**: 
   
-  If you need to  record to a  test case, you can add **debug** command by double clicking the following commands. When replay to the **debug** command, you can prepare to record your operation.
+  If you need to record some test steps, you can add **debug** command where you need to record. When replay to the **debug** command, you can record your case steps.
   
-  Here are the description of buttons:
+  Here are the description of plugin buttons:
   
    | Button   |Description      |Can click while running|
    |----|---------------------- |-----------------------|
