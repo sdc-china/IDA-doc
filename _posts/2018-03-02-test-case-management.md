@@ -150,6 +150,47 @@ You could only paste the copied case steps with group command to test cases. If 
 ### Delete a test case
 
   Click ![][test_project_delete_button] button in test case list from left-side menu.
+  
+### Compare different historical versions of test case
+
+1. Click version number button next to the case name.
+
+	![][test_case_version_button]
+
+2. Select any two versions.
+
+	![][test_case_version_table_list]
+	
+3. Then the **Compare** button will be shown. Click it. You will enter the comparison page.
+
+	![][test_case_version_compare]
+
+4. Click full screen button at the upper right corner of comparison page, you will maximize the comparison page. 
+At the bottom left corner, update, delete and new steps are shown as legends with different backgroup and we also highligh the line of code changed on bottom left.  Just hover the mouse to the yellow highlighted case step, the tooltip will tell you the changes. 
+
+	![][test_case_version_compare_page]
+	![][test_case_version_management_maximize_page]
+	
+### Restore a specific version of test case
+
+1. Click version number to see the detail of a version.
+
+	![][test_case_version_button_inside_table]
+	
+2. Click **Restore** button to restore the version.
+
+	![][test_case_restore_button]
+	
+	**Note:**
+	
+	If a custom command is created inside current project, is used by other test cases and will be changed by the version to be restored, warning message like below will be shown. Click **OK**, the custom command will be restored. And other test cases that use this custom command will also be changed.
+	
+	![][test_case_restrore_message_warning]
+	
+	If a custom command is shared by other project, and will be changed by the version to be restored, warning message like below will be shown. Click **OK**, the custom command will not be restored, but other commands will be restored normally.
+	
+	![][test_case_version_warning_message_can_not_restore]
+
     
 [1]: ../references/testing-command.html
 [test_unit_test_add_form]: ../images/test/test_unit_test_add_form.PNG
@@ -179,3 +220,13 @@ You could only paste the copied case steps with group command to test cases. If 
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
 [test_case_migration_menu]: ../images/test/test_case_migration_menu.PNG
 [test_case_migration_form]: ../images/test/test_case_migration_form.PNG
+[test_case_version_button]: ../images/test/test_case_management_version_button.PNG
+[test_case_version_table_list]: ../images/test/test_case_version_table_list.PNG
+[test_case_version_compare]: ../images/test/test_case_version_compare.PNG
+[test_case_version_compare_page]: ../images/test/test_case_version_compare_page.PNG
+[test_case_version_management_maximize_page]: ../images/test/test_case_version_management_maximize_page.PNG
+[test_case_version_button_inside_table]: ../images/test/test_case_version_button_inside_table.PNG
+[test_case_restore_button]: ../images/test/test_case_restore_button.PNG
+[test_case_restrore_message_warning]: ../images/test/test_case_restrore_message_warning.PNG
+[test_case_version_warning_message_can_not_restore]: ../images/test/test_case_version_warning_message_can_not_restore.PNG
+
