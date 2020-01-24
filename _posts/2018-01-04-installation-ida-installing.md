@@ -250,8 +250,8 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 - Click "Add to Chrome" button to install plug-in
 
 ### Firefox plugin
-- Download firefox plugin [ida-1.40-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.40-fx.xpi)
-- Drag the "ida-1.40-fx.xpi" file into firefox window
+- Download firefox plugin [ida-1.39-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.39-fx.xpi)
+- Drag the "ida-1.39-fx.xpi" file into firefox window
 - Click "Add" button
 
 **Plug-in Configuration**
