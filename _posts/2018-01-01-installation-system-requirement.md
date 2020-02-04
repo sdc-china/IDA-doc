@@ -36,7 +36,7 @@ order: 1
 
 * Firefox v52+ (64-bit)
 * Chrome v57+ (64-bit)
-* IE v11+ (Supports exection only)
+* IE v11+ (Supports execution only)
 
 ### Minimal Hardware/VM/Docker Requirements
 - 2 core CPU, 4 GB memory and 50 GB disk space.
@@ -48,12 +48,12 @@ order: 1
 Extract the IDA Installation archive file to a specific location. The IDA archive file contains the following directories and artifacts: 
 
 *  **build** : contains IDA war file that needs to be deployed in Open Liberty.
-*  **conf** : contains properties file.
+*  **conf** : contains properties files for configuration.
 *  **lib** : contains the required Java library for IDA packaging and setup.  
-*  **sql** : contains the SQL files to create  database and tables.
+*  **sql** : contains the SQL files to create or migrate database and tables.
 *  **toolkit** : contains a required Toolkit TWX file.
-*  **workspace** : contains the Checkstyle rule projects, which is builded on IBM Operational Decision Manager.
-*  **package.bat** : Windows command to update IDA war file with client settings.
-*  **package.sh** : Linux script to update IDA war file with client settings.
+*  **workspace** : contains the Checkstyle rule projects, which is based on IBM Operational Decision Manager.
+*  **package.bat** : Windows command to repackage IDA war file with custom settings.
+*  **package.sh** : Linux scripts to repackage IDA war file with custom settings.
 *  **README.html** : README file.
 *  **ReleaseNotes.html** : Release notes.
