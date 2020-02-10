@@ -10,11 +10,11 @@ order: 1
 ***
 ### Supported Platforms
 
-* Ubuntu
-* CentOS
-* Red Hat Enterprise Linux
+* Ubuntu 16.04+
+* CentOS 6.8+
+* Red Hat Enterprise Linux 6.9+
 * Windows 10
-* Docker
+* Docker CE 17.03+
 
 
 ### Software Prerequisites
