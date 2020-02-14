@@ -122,8 +122,6 @@ docs:
         url: /administration/administration-starting-and-stop-env.html
       - title: "Settings Configuration"
         url: /administration/administration-settings-configuration.html
-      - title: "Monitoring Configuration"
-        url: administration/administration-monitoring-configuration.html
 
   - title: References
     children:
