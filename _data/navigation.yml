@@ -103,8 +103,6 @@ docs:
 
   - title: Operation
     children:
-      - title: "Monitor Management"
-        url: /operation/operation-monitor-management.html
       - title: "Supporting Tool"
         url: /operation/operation-supporting-tool.html
 
