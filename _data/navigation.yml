@@ -64,7 +64,8 @@ docs:
         url: /test/test-case-report.html
       - title: "Dynamic Assignee"
         url: /test/test-case-dynamic-assignee.html
-
+      - title: "Custom OOTB Command"
+        url: /test/test-custom-ootb-command.html
   - title: Checkstyle
     children:
       - title: "Analyze BPM projects with checkstyle"
