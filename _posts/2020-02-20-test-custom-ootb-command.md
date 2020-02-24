@@ -31,6 +31,10 @@ order: 59
 
 6.  You can run your test case in replay mode to see it works or not.
 
+**Reference**  
+[Test Command](https://sdc-china.github.io/IDA-doc/references/references-test-command.html)   
+[JavaScript API](https://sdc-china.github.io/IDA-doc/references/references-js-api.html) 
+
 **Notes**
 
 You can write console.log to debug your replay script in your browser.
