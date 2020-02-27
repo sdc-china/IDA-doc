@@ -76,6 +76,47 @@ spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
 - If you enable LDAP authencation configuration, You could not add users by idaAdmin.    
 - When a user sign in IDA at the first time, the user is not belong to any teams. The user need to ask the idaAdmin to assign him/her to a team, then the user could create projects and pipelines.  
 
+
+**LDAP Configuration Example：**
+
+An example entry as displayed in the LDIF (LDAP Data Interchange Format) would look something like this:
+
+```
+dn: uid=ben,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Ben Alex
+sn: Alex
+uid: ben
+```
+You LDAP server configuration may like this:
+
+#Ldap Server configuration
+#If set flag to true, it will authenticate the ida users by ldap protocol
+ldap.enable: true
+#Ldap server url
+ldap.url: "ldap://<IP_Address>:<port>/"
+#Ldap server user name
+ldap.username: "cn=admin,dc=example,dc=org"   
+#Ldap server user password
+ldap.password: "admin"
+#The root of data information trees
+ldap.basedn: "dc=example,dc=org"
+#Ldap user filter pattern, use '#' to split multiple user filter pattern.
+
+#Specify the organization information when verifying user.
+ldap.user.filter: "uid={0},ou=people"
+#Don not specify the organization information when verifying user.
+ldap.user.filter: "uid={0}"
+
+#Set default 
+ldap.default.role: User
+#Ldap server is case insensitive or not.
+ldap.username.case-insensitive: true
+```
+
  
 **checkstyle properties configuration**
 
