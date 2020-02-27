@@ -93,6 +93,7 @@ uid: ben
 ```
 You LDAP server configuration may like this:
 
+```
 #Ldap Server configuration
 #If set flag to true, it will authenticate the ida users by ldap protocol
 ldap.enable: true
