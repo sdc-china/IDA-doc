@@ -26,6 +26,22 @@ order: 59
 4.  Write your command logic after **TODO add your implementation below, For example** line.
 
     ![][textcommandscript]
+    
+``` 
+var coachView = bta.util.getCoachView(this.jsonObject);
+var element = coachView.context.element
+ .querySelector("div.CoachView.MySelect div.dijitInputField input,div.CoachView.MyText div.dijitInputField input");
+if (element) 
+{
+  var xpath = bta.util.getXpath(element);
+	var parameter = {
+	  xpath: xpath,
+ 	  value: value
+	};
+  return bta.util.callback("sendKey", parameter);
+} 
+
+``` 
 
 5.  Click the **save** button to save the content.
 
