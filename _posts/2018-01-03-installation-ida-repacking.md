@@ -105,7 +105,7 @@ ldap.username: "cn=admin,dc=example,dc=org"
 ldap.password: "admin"
 #The root of data information trees
 ldap.basedn: "dc=example,dc=org"
-#Ldap user filter pattern, use '#' to split multiple user filter pattern.
+#Ldap user filter pattern, use '#' to split multiple user filter pattern. If you want to use "uid=ben,ou=people,dc=example,dc=org" to login IDA. Just input "ben" for the username field and input the corresponding password field on the login form.
 
 #Specify the organization information when verifying user.
 ldap.user.filter: "uid={0},ou=people"
