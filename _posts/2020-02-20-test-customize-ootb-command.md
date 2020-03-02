@@ -1,12 +1,12 @@
 ---
-title: "Custom OOTB Command"
+title: "Customize OOTB Command of Replayer"
 category: test
 date: 2018-10-03 15:17:55
-last_modified_at: 2020-02-20 15:19:00
+last_modified_at: 2020-02-26 15:19:00
 order: 59
 ---
 
-# Update a Customer Replayer command
+# Customize IDA Replayer Commands
 ***
 
 
