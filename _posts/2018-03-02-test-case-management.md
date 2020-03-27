@@ -201,7 +201,7 @@ A group test case means you could run more than one test case sequentially a tim
 2. Click Artifact Type field,  select **Build from Scratch** and input the Suite name field.
   	
   ![][build_from_scratch]
-  
+
 3. In the left-side menu bar, click **+** button on the right of **MyGrouptestCases** test suite, then select **Create Group Test Case**.
   	
   ![][create_group_test_case]
@@ -215,7 +215,7 @@ A group test case means you could run more than one test case sequentially a tim
   ![][group_test_case_edit]
 
 6. Right click on the test case editor table and click Add button. Select the target test cases to the group test case from the opened modal.
-    
+ 
   ![][select_group_test_case]
 
 
