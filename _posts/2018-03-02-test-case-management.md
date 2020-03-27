@@ -194,29 +194,32 @@ At the bottom left corner, update, delete and new steps are shown as legends wit
 
 ### Create a group test case
 
-  A group test case means you could run more than one test case sequentially a time with a group test case. Let us start with creating a group test case.
+A group test case means you could run more than one test case sequentially a time with a group test case. Let us start with creating a group test case.
 
-  1. In the left-side menu bar, click + button on the right of project name.
+1. In the left-side menu bar, click + button on the right of project name.
 
-  2. Click Artifact Type field,  select **Build from Scratch** and input the Suite name field.
+2. Click Artifact Type field,  select **Build from Scratch** and input the Suite name field.
   	
-    ![][build_from_scratch]
+  ![][build_from_scratch]
   
-  3. In the left-side menu bar, click **+** button on the right of **MyGrouptestCases** test suite, then select **Create Group Test Case**.
+3. In the left-side menu bar, click **+** button on the right of **MyGrouptestCases** test suite, then select **Create Group Test Case**.
   	
-    ![][create_group_test_case]
+  ![][create_group_test_case]
 
-  4. Input the **Group Test Case Name** and **Group Test Case Description** filed, then click save button.
+4. Input the **Group Test Case Name** and **Group Test Case Description** filed, then click save button.
     
-    ![][group_test_case_name]
+  ![][group_test_case_name]
 
-  5. Click edit button on the top-right of the test case editor table to enable editing. 
+5. Click edit button on the top-right of the test case editor table to enable editing. 
     
-    ![][group_test_case_edit]
+  ![][group_test_case_edit]
 
-  6. Right click on the test case editor table and click Add button. Select the target test cases to the group test case from the opened modal.
+6. Right click on the test case editor table and click Add button. Select the target test cases to the group test case from the opened modal.
     
-    ![][select_group_test_case]
+  ![][select_group_test_case]
+
+
+
 
 
     
