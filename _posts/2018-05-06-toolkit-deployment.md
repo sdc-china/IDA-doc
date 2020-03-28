@@ -1,12 +1,12 @@
 ---
-title: "How to deploy a toolkit by pipelines"
+title: "How to deploy a toolkit by group pipeline"
 category: pipeline
 date: 2020-03-27 16:55:50
 last_modified_at: 2020-03-27 16:55:50
 order: 7
 ---
 
-# How to deploy a toolkit by pipelines
+# How to deploy a toolkit by group pipeline
 ***
 
 ## Create a test project, we will test the toolkit with the project.
@@ -14,7 +14,7 @@ Please refer to [Create a test project and generate test cases][1] to create a t
 
   1. Here is a project named "Test Dep APP" that use the toolkit to be deployed.
 
-    ![][create-test-project]
+     ![][create-test-project]
 
 
 ## Create a pipeline, we will take sanpshot for the toolkit before testing it. 
