@@ -22,41 +22,55 @@ Please refer to [pipeline-create-a-pipeline-for-continuous-deployment][2] to cre
 
 1. Below is the pipeline overview.
 
-  ![][_create-toolkit-snapshot-pipeline-overview]
+  ![][create-toolkit-snapshot-pipeline-overview]
+
+
 
 2. In the "Dev" stage we input the toolkit and corresponding snapshot information.
 
-  ![][_create-edit-dev-stage]
+  ![][create-edit-dev-stage]
+
+
 
 3. In the "Take Snapshot" step, fill in the "Type" and "Name Pattern" fields.
 
-  ![][_create-takesnapshot-step]
+  ![][create-takesnapshot-step]
+
 
 ## Create another pipeline, we will update the toolkit dependence then test it.
 Here we have created pipeline named "_Update Toolkit Dep Pipeline".
 
 1. Below is the pipeline overview.
 
-  ![][_update-toolkit-dep-pipeline-overview]
+  ![][update-toolkit-dep-pipeline-overview]
+
+
 2. In the "Development" stage, input the test project name "Test Dep APP" and some other information.
 
   ![][_update-edit-dev-stage]
+
+
 3. Input "Type" and "Toolkit" in the "update" step.
 
-  ![][_update-updatedependence-step]
+  ![][update-updatedependence-step]
+
+
 4. In the "Test" step, select the test project that we use it to test the toolkit.
 
-  ![][_update-test-step]
+  ![][update-test-step]
+
 
 5. Take a snapshot for the project after testing.
 
-  ![][_update-takesnapshot_step]
+  ![][update-takesnapshot_step]
+
 
 ## Create a group pipeline to run "_Create Toolkit Snapshot Pipeline" and "_Update Toolkit Dep Pipeline" sequentially.
 
 1. Go to the "Define page", input the pipeline name and select the "Pipeline Group" checkbox.
 
   ![][create-group-pipeline]
+
 2. Click the "+" button besides the "Stage Configuration" and select the pipeline you have created from the select.
 
   ![][select-sub-pipeline]
@@ -83,11 +97,11 @@ Run the group pipeline, you could deploy a toolkit by it.
 [2]: ../pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html
 [create-test-project]: ../images/pipeline/create-test-project.png
 [create-a-pipeline]: ../images/pipeline/create-a-pipeline.png
-[_create-toolkit-snapshot-pipeline-overview]: ../images/pipeline/_create-toolkit-snapshot-pipeline-overview.png
-[_create-edit-dev-stage]: ../images/pipeline/_create-edit-dev-stage.png
-[_create-takesnapshot-step]:../images/pipeline/_create-takesnapshot-step.png
-[_update-toolkit-dep-pipeline-overview]: ../images/pipeline/_update-toolkit-dep-pipeline-overview.png
-[_update-updatedependence-step]: ../images/pipeline/_update-updatedependence-step.png
-[_update-test-step]: ../images/pipeline/_update-test-step.png
-[_update-takesnapshot_step]: ../images/pipeline/_update-takesnapshot_step.png
+[create-toolkit-snapshot-pipeline-overview]: ../images/pipeline/create-toolkit-snapshot-pipeline-overview.png
+[create-edit-dev-stage]: ../images/pipeline/create-edit-dev-stage.png
+[create-takesnapshot-step]:../images/pipeline/create-takesnapshot-step.png
+[update-toolkit-dep-pipeline-overview]: ../images/pipeline/update-toolkit-dep-pipeline-overview.png
+[update-updatedependence-step]: ../images/pipeline/update-updatedependence-step.png
+[update-test-step]: ../images/pipeline/update-test-step.png
+[update-takesnapshot_step]: ../images/pipeline/update-takesnapshot_step.png
 [select-sub-pipeline]: ../images/pipeline/select-sub-pipeline.png
