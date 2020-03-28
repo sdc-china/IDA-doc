@@ -22,17 +22,17 @@ Please refer to [pipeline-create-a-pipeline-for-continuous-deployment][2] to cre
 
   1. Below is the pipeline overview.
 
-    ![][create-toolkit-snapshot-pipeline-overview]
+     ![][create-toolkit-snapshot-pipeline-overview]
 
 
   2. In the "Dev" stage we input the toolkit and corresponding snapshot information.
 
-    ![][create-edit-dev-stage]
+     ![][create-edit-dev-stage]
 
 
   3. In the "Take Snapshot" step, fill in the "Type" and "Name Pattern" fields.
 
-    ![][create-takesnapshot-step]
+     ![][create-takesnapshot-step]
 
 
 ## Create another pipeline, we will update the toolkit dependence then test it.
@@ -40,39 +40,39 @@ Here we have created pipeline named "_Update Toolkit Dep Pipeline".
 
   1. Below is the pipeline overview.
 
-    ![][update-toolkit-dep-pipeline-overview]
+     ![][update-toolkit-dep-pipeline-overview]
 
 
   2. In the "Development" stage, input the test project name "Test Dep APP" and some other information.
 
-    ![][_update-edit-dev-stage]
+     ![][_update-edit-dev-stage]
 
 
   3. Input "Type" and "Toolkit" in the "update" step.
 
-    ![][update-updatedependence-step]
+     ![][update-updatedependence-step]
 
 
   4. In the "Test" step, select the test project that we use it to test the toolkit.
 
-    ![][update-test-step]
+     ![][update-test-step]
 
 
   5. Take a snapshot for the project after testing.
 
-    ![][update-takesnapshot_step]
+     ![][update-takesnapshot_step]
 
 
 ## Create a group pipeline to run "_Create Toolkit Snapshot Pipeline" and "_Update Toolkit Dep Pipeline" sequentially.
 
   1. Go to the "Define page", input the pipeline name and select the "Pipeline Group" checkbox.
 
-    ![][create-group-pipeline]
+     ![][create-group-pipeline]
 
 
   2. Click the "+" button besides the "Stage Configuration" and select the pipeline you have created from the select.
 
-    ![][select-sub-piepline]
+     ![][select-sub-piepline]
 
 
 Run the group pipeline, you could deploy a toolkit by it.
