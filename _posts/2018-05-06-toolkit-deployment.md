@@ -25,11 +25,9 @@ Please refer to [pipeline-create-a-pipeline-for-continuous-deployment][2] to cre
   ![][create-toolkit-snapshot-pipeline-overview]
 
 
-
 2. In the "Dev" stage we input the toolkit and corresponding snapshot information.
 
   ![][create-edit-dev-stage]
-
 
 
 3. In the "Take Snapshot" step, fill in the "Type" and "Name Pattern" fields.
@@ -71,23 +69,13 @@ Here we have created pipeline named "_Update Toolkit Dep Pipeline".
 
   ![][create-group-pipeline]
 
+
 2. Click the "+" button besides the "Stage Configuration" and select the pipeline you have created from the select.
 
-  ![][select-sub-pipeline]
+  ![][select-sub-piepline]
 
 
 Run the group pipeline, you could deploy a toolkit by it.
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -105,3 +93,4 @@ Run the group pipeline, you could deploy a toolkit by it.
 [update-test-step]: ../images/pipeline/update-test-step.png
 [update-takesnapshot_step]: ../images/pipeline/update-takesnapshot_step.png
 [select-sub-pipeline]: ../images/pipeline/select-sub-pipeline.png
+
