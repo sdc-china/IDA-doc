@@ -101,7 +101,7 @@ docs:
         url: /pipeline/pipeline-report.html
       - title: "Pipeline stage & step reference"
         url: /pipeline/pipeline-step-reference.html
-      - title: "Pipeline stage & step reference"
+      - title: "Toolkit deployment"
         url: /pipeline/toolkit-deployment
 
   - title: Operation
