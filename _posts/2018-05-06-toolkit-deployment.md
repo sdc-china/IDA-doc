@@ -9,7 +9,7 @@ order: 7
 # How to deploy a toolkit by group pipeline
 ***
 
-## Create a test project, we will test the toolkit with the project.
+## 1. Create a test project, we will test the toolkit with the project.
 Please refer to [Create a test project and generate test cases][1] to create a test project. 
 
   1. Here is a project named "Test Dep APP" that use the toolkit to be deployed.
@@ -17,7 +17,7 @@ Please refer to [Create a test project and generate test cases][1] to create a t
      ![][create-test-project]
 
 
-## Create a pipeline, we will take sanpshot for the toolkit before testing it. 
+## 2. Create a pipeline, we will take sanpshot for the toolkit before testing it. 
 Please refer to [pipeline-create-a-pipeline-for-continuous-deployment][2] to create a pipeline. Here we have created pipeline named "_Create Toolkit Snapshot Pipeline".
 
   1. Below is the pipeline overview.
@@ -35,7 +35,7 @@ Please refer to [pipeline-create-a-pipeline-for-continuous-deployment][2] to cre
      ![][create-takesnapshot-step]
 
 
-## Create another pipeline, we will update the toolkit dependence then test it.
+## 3. Create another pipeline, we will update the toolkit dependence then test it.
 Here we have created pipeline named "_Update Toolkit Dep Pipeline".
 
   1. Below is the pipeline overview.
@@ -63,7 +63,7 @@ Here we have created pipeline named "_Update Toolkit Dep Pipeline".
      ![][update-takesnapshot_step]
 
 
-## Create a group pipeline to run "_Create Toolkit Snapshot Pipeline" and "_Update Toolkit Dep Pipeline" sequentially.
+## 4. Create a group pipeline to run "_Create Toolkit Snapshot Pipeline" and "_Update Toolkit Dep Pipeline" sequentially.
 
   1. Go to the "Define page", input the pipeline name and select the "Pipeline Group" checkbox.
 
@@ -72,7 +72,7 @@ Here we have created pipeline named "_Update Toolkit Dep Pipeline".
 
   2. Click the "+" button besides the "Stage Configuration" and select the pipeline you have created from the select.
 
-     ![][select-sub-piepline]
+     ![][select-sub-pipeline]
 
 
 Run the group pipeline, you could deploy a toolkit by it.
