@@ -111,10 +111,10 @@ Below is the reference link for how to setup selenium grid.It includes the detai
   **Notes:**
   To see the parameters meanings, you could run scripts:
 
-  ```
-  java -jar .\selenium-server-standalone-3.141.59.jar -role node -help
-  java -jar .\selenium-server-standalone-3.141.59.jar -role hub -help
-  ```
+    ```
+    java -jar .\selenium-server-standalone-3.141.59.jar -role node -help
+    java -jar .\selenium-server-standalone-3.141.59.jar -role hub -help
+    ```
 
 
 
