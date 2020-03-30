@@ -20,17 +20,19 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Local installation**
 
-1. Download [Selenium 3.141.59](https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar)  
+1. Download [Selenium Latest](https://www.selenium.dev/downloads/)  
 
 2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
 
-	- [IE Driver](https://selenium-release.storage.googleapis.com/3.14/IEDriverServer_x64_3.14.0.zip)
-	- [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-win64.zip)
-	- [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz)
-	- [Chrome Driver Win32](https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_win32.zip)  
-	- [Chrome Driver Linux64](https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip) 
+	- [IE Driver](https://www.selenium.dev/downloads/)
+	- [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases)
+	- [Firefox Driver Linux64](https://github.com/mozilla/geckodriver/releases)
+	- [Chrome Driver Win32](https://sites.google.com/a/chromium.org/chromedriver/)  
+	- [Chrome Driver Linux64](https://sites.google.com/a/chromium.org/chromedriver/) 
    
 3. Start the Hub
+
+[Setting up your own Grid](https://www.selenium.dev/documentation/en/grid/setting_up_your_own_grid/)
 
 	- Create hubconfig.json
 		```
@@ -67,7 +69,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 		      "marionette": true,
 		      "maxInstances": 5,
 		      "seleniumProtocol": "WebDriver",
-			  "version": 67
+			    "version": 67
 		    },
 		    {
 		      "browserName": "chrome",
@@ -106,6 +108,15 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 		```
 		java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
 		```
+  **Notes:**
+  To see the parameters meanings, you could run scripts:
+
+  ```
+  java -jar .\selenium-server-standalone-3.141.59.jar -role node -help
+  java -jar .\selenium-server-standalone-3.141.59.jar -role hub -help
+  ```
+
+
 
 **Docker installation**
 

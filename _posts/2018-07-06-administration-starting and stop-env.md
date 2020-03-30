@@ -17,22 +17,6 @@ Start the MySQL server by calling the following command:
 
 - Windows: [MYSQL_HOME]\bin\mysqld.exe
 
-### Start Selenium Hub
-
-Start the Selenium Hub by calling the following command:
-
-- Linux: [JAVA_HOME]/bin/java -jar [SELENIUM_HOME]/selenium-server-standalone-3.14.0.jar -role hub -newSessionWaitTimeout 10 -timeout 30 -browserTimeout 30
-
-- Windows: [JAVA_HOME]\bin\java.exe -jar [SELENIUM_HOME]\selenium-server-standalone-3.14.0.jar -role hub -newSessionWaitTimeout 10 -timeout 30 -browserTimeout 30
-
-
-### Start Selenium Node
-Start the Selenium Node by calling the following command:
-
-- Linux: [JAVA_HOME]/bin/java -Dwebdriver.gecko.driver="[SELENIUM_HOME]/geckodriver.exe" -Dwebdriver.chrome.driver="[SELENIUM_HOME]/chromedriver.exe" -Dwebdriver.ie.driver="[SELENIUM_HOME]/IEDriverServer.exe" -jar [SELENIUM_HOME]/selenium-server-standalone-3.14.0.jar -role node -hub http://localhost:4444/grid/register/ -timeout 30 -browserTimeout 30   
-
-
-- Windows: [JAVA_HOME]\bin\java.exe -Dwebdriver.gecko.driver="[SELENIUM_HOME]/geckodriver.exe" -Dwebdriver.chrome.driver="[SELENIUM_HOME]/chromedriver.exe" -Dwebdriver.ie.driver="[SELENIUM_HOME]/IEDriverServer.exe" -jar [SELENIUM_HOME]\selenium-server-standalone-3.14.0.jar -role node -hub http://localhost:4444/grid/register/ -timeout 30 -browserTimeout 30   
 
 
 
