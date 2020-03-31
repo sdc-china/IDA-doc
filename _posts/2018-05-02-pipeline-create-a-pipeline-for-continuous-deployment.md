@@ -99,6 +99,35 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 2. When the pipeline build is over, the summary information will be appeared in pipeline dashboard. The failed step will not be running and won't have any report. You can click the **build name** link to see the whole report. [Details of the report]
 
 
+### Perform deployment from BPM PC server to PC server
+
+**Note:**
+
+IDA only support to deploy applications from BPM PC server to PC server between same version.
+
+1. Click **Create Pipeline** button in pipeline page.
+
+   ![][p2p_create-pipeline]
+   
+ 2. Click ![][pipeline_add_stage] icon to add 'Stage1' and select "Deployment" type.
+
+    ![][p2p_stage_1]
+
+ 3. Click ![][pipeline_add_stage] icon below the stage step to add 'takeSnapshot' step in the stage.
+
+    ![][p2p_takeSnapshot]
+
+ 4. Click ![][pipeline_add_stage] icon to add 'Stage2' and select "Deployment" type, you could select another BPM PC server with same version of 'Stage1'.
+
+    ![][p2p_stage2]
+
+ 5. Click ![][pipeline_add_stage] icon below the stage step to add 'Deploy' step in the stage and select 'Deployment' type.
+
+    ![][p2p_deployment]
+
+ 6. Click "Save" button and then you could use the pipeline to make a deployment from PC server to PC server.
+
+
   [pipeline_create]: ../images/pipeline/pipeline_create.png
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
   [pipeline_import_stage]: ../images/pipeline/pipeline_import_stage.png
@@ -120,3 +149,7 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
   [Details of the report]: ../pipeline/pipeline-report.html
   [pipeline_build_log_icon]: ../images/pipeline/pipeline_build_log_icon.png
   [pipeline_build_statistic]: ../images/pipeline/pipeline_build_statistic.png
+  [p2p_create-pipeline]: ../images/pipeline/p2p_create-pipeline.png
+  [p2p_stage_1]: ../images/pipeline/p2p_stage_1.png
+  [p2p_takeSnapshot]: ../images/pipeline/p2p_takeSnapshot.png
+  [p2p_stage2]: ../images/pipeline/p2p_stage2.png

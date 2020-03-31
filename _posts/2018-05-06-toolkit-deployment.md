@@ -45,7 +45,7 @@ Here we have created pipeline named "_Update Toolkit Dep Pipeline".
 
   2. In the "Development" stage, input the test project name "Test Dep APP" and some other information.
 
-     ![][_update-edit-dev-stage]
+     ![][update-edit-dev-stage]
 
 
   3. Input "Type" and "Toolkit" in the "update" step.
@@ -94,4 +94,5 @@ Run the group pipeline, you could deploy a toolkit by it.
 [update-takesnapshot_step]: ../images/pipeline/update-takesnapshot_step.png
 [create-group-pipeline]: ../images/pipeline/create-group-pipeline.png
 [select-sub-pipeline]: ../images/pipeline/select-sub-pipeline.png
+[update-edit-dev-stage]: ../images/pipeline/update-edit-dev-stage.png
 
