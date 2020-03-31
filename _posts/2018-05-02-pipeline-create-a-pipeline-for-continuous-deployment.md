@@ -153,3 +153,4 @@ IDA only support to deploy applications from BPM PC server to PC server between 
   [p2p_stage_1]: ../images/pipeline/p2p_stage_1.png
   [p2p_takeSnapshot]: ../images/pipeline/p2p_takeSnapshot.png
   [p2p_stage2]: ../images/pipeline/p2p_stage2.png
+  [p2p_deployment]: ../images/pipeline/p2p_deployment.png
