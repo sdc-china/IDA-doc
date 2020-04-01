@@ -113,7 +113,7 @@ IDA only support to deploy applications from BPM PC server to PC server between 
 
     ![][p2p_stage_1]
 
- 3. Click ![][pipeline_add_stage] icon below the stage step to add 'takeSnapshot' step in the stage.
+ 3. Click ![][pipeline_add_stage] icon below the stage step to add 'TakeSnapshot' step in the stage and select "Snapshot" type.
 
     ![][p2p_takeSnapshot]
 
