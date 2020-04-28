@@ -160,11 +160,12 @@ In some scenario, IDA Users want to execute a group command only when it meets s
 
   Here is the sample html page:
 
-     ![][add_if_command_html]
+  ![][add_if_command_html]
+
 
   2\. Right click the group command and click **Edit**, Users could add a **IF Command** to a group command from the modal.
 
-     ![][add_if_command]
+  ![][add_if_command]
   
 
 
