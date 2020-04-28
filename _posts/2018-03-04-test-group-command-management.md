@@ -137,7 +137,6 @@ In some scenario, IDA Users want to execute a group command only when it meets s
   
     **Notes:** The command read the value of 'Hiring manager' and 'Number of employees' on the html page. If the value of 'Hiring manager' equals 'Tom' and the value of 'Number of employees' euqals 12, then IDA executes the group command named 'GroupWithCondition', esle, skips the group command. The content of the command as below:  
 
-
 ```javascript
   //TODO Add your JavaScript implementation here
   var hiringManagerCoachView = bta.util.getCoachViewByLabel("Hiring manager", null);
@@ -156,11 +155,12 @@ In some scenario, IDA Users want to execute a group command only when it meets s
   var isExecuteGroupCommand = (hiringManageValue == "Tom" && employeeNumValue == 12);
   return bta.util.setIFCommandResult(isExecuteGroupCommand);
 ```
-     
-  2. Right click the group command and click **Edit**, Users could add a **IF Command** to a group command from the modal.
 
-         ![][add_if_command]
+  2. Right click the group command and click **Edit**, Users could add a **IF Command** to a group command from the modal..
+
+     ![][add_if_command]
   
+
 
   [1]: test-import-execute-sample-test-project.html
   [2]: test-unit-test-case-management.html
