@@ -52,10 +52,30 @@ For IDA version migration,you need to update IDA.war, take the following steps:
  **Notes**     
  Please not overwrite ida.properties from previous version, since we might add new some new property name  in some versions.  
  You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
+ 
+ 
+### Step 3: Update IDA BPM Toolkit    
+
+To update IDA BPM Toolkit, take the following steps:
+
+1. Import **IDA_Toolkit - 8.6.0_v1.4.twx** which is below forder /toolkit of release package into your process center.
+2. Open your process app by web process designer from process center.  
+3. Upgrade the toolkit.
+![][toolkit-upgrade-1]
+4. Delete the old **IDA Utility**.
+![][toolkit-upgrade-2] 
+5. Click **Services** below **IDA Toolkit(8.6.0 v1.4)**. Right click the **IDA Utility** service flow and copy the item to your process app.
+![][toolkit-upgrade-3]
+![][toolkit-upgrade-4]
+   
 
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration]: ../images/install/mysqlmigration.png
 [teampermission]: ../images/install/teampermission.png
 [teamproject]: ../images/install/teamproject.png
-[sqlfolder]: ../images/reference/sql-folder.png
-[migration-sql]: ../images/reference/migration-sql-example.png
+[sqlfolder]: ../images/references/sql-folder.png
+[migration-sql]: ../images/references/migration-sql-example.png
+[toolkit-upgrade-1]: ../images/references/IDAbpmToolkitUpgrade_1.png
+[toolkit-upgrade-2]: ../images/references/IDAbpmToolkitUpgrade_2.png
+[toolkit-upgrade-3]: ../images/references/IDAbpmToolkitUpgrade_3.png
+[toolkit-upgrade-4]: ../images/install/ida_toolkit_copy_to_item.png
