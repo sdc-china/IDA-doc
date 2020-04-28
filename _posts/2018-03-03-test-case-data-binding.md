@@ -65,6 +65,11 @@ order: 30
   
   3. Click save button.  
 
+### Selct rows of bind data to run test case.
+
+  1. Click **Run** button on the right of case name, then you could selct the rows to run.
+  
+     ![][testcase_data_binding_select_rows]
 
   **Notes:**
 
@@ -93,4 +98,5 @@ For example:
 [testcase_parameter_binding]: ../images/test/test_case_parameter_binding.PNG
 [bindcsv]: ../images/test/bindcsv.png  
 [bpm_server_name]: ../images/test/bpm_server_name.png 
+[testcase_data_binding_select_rows]: ../images/test/testcase_data_binding_select_rows.png
 

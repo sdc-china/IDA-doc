@@ -98,9 +98,8 @@ order: 40
   1. Remove the command from test cases first.
   
      * Enter into case step list of every test case which includes the group command.
-     * Click **Edit** button on the right of suite name.
-     * Click ![][test_case_step_delete_button] button in group command row.
-     * Click **Delete** in delete form.
+     * Right click on the row of group command, it shows the context menu.
+     * Click **Delete** to delete it.
      * Click **Exit Edit** button.
   
         ![][test_case_steps_edit]
