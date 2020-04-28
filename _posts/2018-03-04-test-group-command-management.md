@@ -133,30 +133,36 @@ order: 40
 
 In some scenario, IDA Users want to execute a group command only when it meets some condition. Now, IDA supports to add a IF Command to a group comand, and if the IF Command result is TRUE the group command will be executed. The IF Command is a custom javascript command. Let's go through it step by step:
 
-  1. Create a custom javascript command named 'Custom Condition'. [How to create a custom javascript command?][3]
+  1\. Create a custom javascript command named 'Custom Condition'. 
   
-**Notes:** The command read the value of 'Hiring manager' and 'Number of employees' on the html page. If the value of 'Hiring manager' equals 'Tom' and the value of 'Number of employees' euqals 12, then IDA executes the group command named 'GroupWithCondition', esle, skips the group command. The content of the command as below:  
+  Please refer to [How to create a custom javascript command?][3]
+  
+  **Notes:** The command read the value of 'Hiring manager' and 'Number of employees' on the html page. If the value of 'Hiring manager' equals 'Tom' and the value of 'Number of employees' euqals 12, then IDA executes the group command named 'GroupWithCondition', esle, skips the group command. The content of the command as below:  
 
-```javascript
-  //TODO Add your JavaScript implementation here
-  var hiringManagerCoachView = bta.util.getCoachViewByLabel("Hiring manager", null);
-  var hiringManageValue;
-  if (hiringManagerCoachView.context.binding) {
-    hiringManageValue = hiringManagerCoachView.context.binding.get("value");
-  }
-  var employeeNumCoachView = bta.util.getCoachViewByLabel("Number of employees", null);
-  var employeeNumValue;
-  if (employeeNumCoachView.context.binding) {
-    employeeNumValue = employeeNumCoachView.context.binding.get("value");
-  }
+  ```javascript
+    //TODO Add your JavaScript implementation here
+    var hiringManagerCoachView = bta.util.getCoachViewByLabel("Hiring manager", null);
+    var hiringManageValue;
+    if (hiringManagerCoachView.context.binding) {
+      hiringManageValue = hiringManagerCoachView.context.binding.get("value");
+    }
+    var employeeNumCoachView = bta.util.getCoachViewByLabel("Number of employees", null);
+    var employeeNumValue;
+    if (employeeNumCoachView.context.binding) {
+      employeeNumValue = employeeNumCoachView.context.binding.get("value");
+    }
 
-  //A IF command must return bta.util.setIFCommandResult(flag)
-  //If the parameter is true, execute the attached group command, else the parameter is false, skip the attached group command.
-  var isExecuteGroupCommand = (hiringManageValue == "Tom" && employeeNumValue == 12);
-  return bta.util.setIFCommandResult(isExecuteGroupCommand);
-```
+    //A IF command must return bta.util.setIFCommandResult(flag)
+    //If the parameter is true, execute the attached group command, else the parameter is false, skip the attached group command.
+    var isExecuteGroupCommand = (hiringManageValue == "Tom" && employeeNumValue == 12);
+    return bta.util.setIFCommandResult(isExecuteGroupCommand);
+  ```
 
-  2. Right click the group command and click **Edit**, Users could add a **IF Command** to a group command from the modal..
+  Here is the sample html page:
+
+     ![][add_if_command_html]
+
+  2\. Right click the group command and click **Edit**, Users could add a **IF Command** to a group command from the modal.
 
      ![][add_if_command]
   
@@ -184,4 +190,5 @@ In some scenario, IDA Users want to execute a group command only when it meets s
   [group_parameter_save]: ../images/test/test_case_step_parameter_save.PNG
   [group_parameter_input]: ../images/test/test_case_step_parameter_input.PNG
   [add_if_command]: ../images/test/add_if_command.PNG
+  [add_if_command_html]: ../images/test/add_if_command_html.png
 
