@@ -1,5 +1,5 @@
 ---
-title: "Group command management"
+title: "Group Command Management"
 category: test
 date: 2018-09-30 15:17:55
 last_modified_at: 2019-07-26 16:28:00
@@ -38,7 +38,7 @@ order: 40
   
   9. Click **Save** button.
   
-      Then **Group Command** and new group command you have created appear in left-side menu bar, and the case steps you have chosen follow new group command.  
+      Then **Group Command** and **New Group Command** you have created will appear in the left-side menu bar, and the case steps you have chosen are folded in the new group command.  
   
       ![][test_group_command]
   
@@ -131,13 +131,13 @@ order: 40
           
 ### Add IF Command to a group command
 
-In some scenario, IDA Users want to execute a group command only when it meets some condition. Now, IDA supports to add a IF Command to a group comand, and if the IF Command result is TRUE the group command will be executed. The IF Command is a custom javascript command. Let's go through it step by step:
+In some scenarios, IDA Users want to execute a group command only when it meets some conditions. Now, IDA supports to add an IF Command to a group comand, and the group command will be executed if the IF Command result is TRUE. The IF Command is a custom javascript command. Let's go through it step by step:
 
   1\. Create a custom javascript command named 'Custom Condition'. 
   
   Please refer to [How to create a custom javascript command?][3]
   
-  **Notes:** The command read the value of 'Hiring manager' and 'Number of employees' on the html page. If the value of 'Hiring manager' equals 'Tom' and the value of 'Number of employees' euqals 12, then IDA executes the group command named 'GroupWithCondition', esle, skips the group command. The content of the command as below:  
+  **Notes:** The command will read the value of 'Hiring manager' and 'Number of employees' on the html page. If the value of 'Hiring manager' equals 'Tom' and the value of 'Number of employees' euqals 12, then IDA executes the group command named 'GroupWithCondition', or else, it will skip the group command. The content of the command is as below:  
 
   ```javascript
     //TODO Add your JavaScript implementation here
