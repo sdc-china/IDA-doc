@@ -19,7 +19,12 @@ Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties f
    
 *  **spring.datasource.username** : Database connection username  
 *  **spring.datasource.password** : Database connection password  
-*  **spring.datasource.url** : Database connection URL
+*  **spring.datasource.url** : Database connection URL. If you want to configure specific data schema to db2, change your url like this: 
+	```
+	# for DB2
+	spring.datasource.url:jdbc:db2://[ip]:[port]/[database-name]?currentSchema=[schema-name]
+	
+	```
 *  **server.host** :  IDA server IP or host name
 *  **server.context-path** : default as  "/ida"  
 *  **http.port** : Liberty http port defined in the server.xml
@@ -77,7 +82,7 @@ spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
 - When a user sign in IDA at the first time, the user is not belong to any teams. The user need to ask the idaAdmin to assign him/her to a team, then the user could create projects and pipelines.  
 - Do not create user idaAdmin(case insensitive) in LDAP server because it is a reserved user.
 
-**LDAP Configuration Example：**
+**LDAP Configuration Example**
 
 An example entry as displayed in the LDIF (LDAP Data Interchange Format) would look something like this:
 
