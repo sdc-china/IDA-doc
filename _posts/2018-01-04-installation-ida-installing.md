@@ -55,8 +55,10 @@ If the server is created successfully, you receive message: Server server_name c
  <!-- Enable features -->
     <featureManager>
         <feature>servlet-3.1</feature>
-		<feature>ssl-1.0</feature>
+        <feature>ssl-1.0</feature>
         <feature>websocket-1.1</feature>
+        <feature>jdbc-4.2</feature>
+        <feature>jndi-1.0</feature>
     </featureManager>
 
     <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
@@ -83,15 +85,27 @@ If the server is created successfully, you receive message: Server server_name c
                   httpPort="9081"
                   httpsPort="9443" />
 				  
-
-                  
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	<application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
-		<classloader delegation="parentLast" />
+	  <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+		  <classloader delegation="parentLast" />
     </application>
 	
 	<keyStore id="defaultKeyStore" password="idaAdmin" />
+  <!-- JNDI data source confiduration -->
+  <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
+  <library id="MySQLLib">
+      <fileset dir="${shared.config.dir}/lib/global" includes="*.jar"/>
+  </library> 
+  <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
+  <dataSource jndiName="jdbc/mysql" statementCacheSize="60" id="mysql"
+          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="MySQLLib"/>
+    <properties databaseName="SAMPLEDB" 
+                serverName="localhost" portNumber="3306" 
+                user="user1" password="pwd1"/>
+  </dataSource>
+  
 
 ```  
     
