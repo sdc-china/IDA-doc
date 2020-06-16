@@ -159,3 +159,5 @@ docs:
         url: /trouble-shooting/trouble-shooting-known-limitation.html
       - title: "Frequently asked questions"
         url: /trouble-shooting/trouble-shooting-faq.html
+      - title: "IDA Plugin Trouble Shooting"
+        url: /trouble-shooting/trouble-shooting-ida-plugin.html
