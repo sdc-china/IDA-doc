@@ -156,6 +156,6 @@ docs:
   - title: "Trouble Shooting"
     children:
       - title: "Known Limitation"
-        url: /trouble-shooting/known-limitation.html
+        url: /trouble-shooting/trouble-shooting-known-limitation.html
       - title: "Frequently asked questions"
-        url: /trouble-shooting/faq.html
+        url: /trouble-shooting/trouble-shooting-faq.html
