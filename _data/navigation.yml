@@ -154,9 +154,9 @@ docs:
       - title: "Demos"
         url: /references/references-demo.html
 
-  - title: "Trouble Shooting"
-    children:
-      - title: "Known Limitation"
-        url: /trouble-shooting/known-limitation.html
-      - title: "Frequently asked questions"
-        url: /trouble-shooting/faq.html
+  - title: Trouble-Shooting
+        children:
+          - title: "Known Limitation"
+            url: /trouble-shooting/known-limitation.html
+          - title: "Frequently asked questions"
+            url: /trouble-shooting/faq.html
