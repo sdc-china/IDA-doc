@@ -1,9 +1,9 @@
 ---
-title: "TroubleShooting"
-category: references
+title: "Trouble Shooting"
+category: trouble-shooting
 date: 2020-01-08 15:17:55
-last_modified_at: 2020-01-08 15:17:55
-order: 11
+last_modified_at: 2020-06-16 15:17:55
+order: 3
 ---
 
 # How to operate and maintain IDA Application

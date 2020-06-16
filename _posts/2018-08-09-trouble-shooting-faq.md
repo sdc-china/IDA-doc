@@ -1,9 +1,9 @@
 ---
 title: "Frequently asked questions"
-category: references
+category: trouble-shooting
 date: 2019-01-16 15:17:55
-last_modified_at: 2019-07-29 16:53:00
-order: 9
+last_modified_at: 2020-06-16 16:53:00
+order: 1
 ---
 
 # Frequently asked questions
