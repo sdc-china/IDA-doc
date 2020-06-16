@@ -95,6 +95,7 @@ docs:
         url: /analyzer/analyzer-statistic-report.html
       - title: "Toolkit references report"
         url: /analyzer/analyzer-toolkit-references-report.html
+  
   - title: Pipeline
     children:
       - title: "Pipeline overview"
@@ -148,11 +149,14 @@ docs:
         url: /references/references-migrating-and-updating-your-application.html
       - title: "Samples"
         url: /references/references-samples.html
-      - title: "Known Limitation"
-        url: /references/reference-known-limitation.html
       - title: "Best Practices"
         url: /references/references-best-practices.html
-      - title: "Frequently asked questions"
-        url: /references/reference-faq.html
       - title: "Demos"
         url: /references/references-demo.html
+
+  - title: Trouble Shooting
+        children:
+          - title: "Known Limitation"
+            url: /trouble-shooting/known-limitation.html
+          - title: "Frequently asked questions"
+            url: /trouble-shooting/faq.html
