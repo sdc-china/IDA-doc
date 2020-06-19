@@ -19,7 +19,7 @@ Snapshot Comparison allows users to compare two snapshots inside one trace of a 
 	 [Server][1]           |Server environment.
 	 Process App           |Process apps of the selected server.
 	 Toolkit               |Toolkits of  selected server.
-	 Track                 |The branch of selected process app or toolkit.
+	 Track                 |The branches of selected process app or toolkit. Multiple select. Will load snapshots of selected branches.
 	 Start Time            |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
 	 End Time              |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
 	 Include Unnamed Snapshots|Tip it to load unnamed snapshots. 
