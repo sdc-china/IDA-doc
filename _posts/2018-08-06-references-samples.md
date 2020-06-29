@@ -11,13 +11,9 @@ order: 6
 ## Samples
 The samples are available on Git [samples](https://github.com/sdc-china/IDA-samples) repository.
 - Testing samples list
-    - Testing sample (BPM, assertion and utility commands)  
-    - UI command sample for BPM v8 Coach UI - Coach Sample
-    - UI command sample for BPM responsive Coach toolkit - Responsive Coach Sample
-    - UI command sample for BPM UI toolkit - BPM UI Sample
+    - IDA sample for BAW 19002(BPM, assertion, utility commands, BPM v8 Coach UI, BPM responsive Coach toolkit, BPM UI toolkit, JS custom command, Java Command)  
+    - IDA sample for BAW 19003(BPM, assertion, utility commands, BPM v8 Coach UI, BPM responsive Coach toolkit, BPM UI toolkit, JS custom command, Java Command) 
     - UI command sample for BP3 toolkit
-    - Write a JS custom command - JS custom command sample
-    - Write a Java custom command  - Java Command Sample
     - Headless sample - How to test the headless process application
     - BPMoC sample - How to test the BPMoC process
 
