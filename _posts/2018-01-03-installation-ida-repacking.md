@@ -68,7 +68,6 @@ Please do not contains these characters in your DB password, they are not suppor
 
 ```
 $|()\/
-
 ```
 
 **LDAP properties configuration**
