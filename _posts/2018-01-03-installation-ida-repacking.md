@@ -64,6 +64,12 @@ Also you can use command line tool from [jasypt](http://www.jasypt.org/download.
 Once you get the encrypt password,you need to change spring.datasource.password like below format.As a general rule, jasypt expects encrypted configuration parameters to appear surrounded by "ENC(...)".    
 spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)   
 
+Please do not contains these characters in your DB password, they are not supported by IDA:
+
+```
+$|()\/
+
+```
 
 **LDAP properties configuration**
 
