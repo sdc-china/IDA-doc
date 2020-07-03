@@ -290,25 +290,29 @@ cd /opt/ibm/bpm/wlp/bin
 
 **Create a Liberty profile server from websphere console page**
 
-1\. Select "Server Types -> Liberty profile servers" from left menu.  
+1. Select "Server Types -> Liberty profile servers" from left menu.
 
-	![][create-server]  
-2\. In the step 2, input the server name.
+	![][create-server]
 
-	![][create-server-2]  
-3\. There is nothing to change in step 3, step 4 and step 5, then click finish button.  
+2. In the step 2, input the server name.
 
-4\. Click the "was-liberty" in the table, we need to make some configuration.
+	![][create-server-2]
 
-5\. In the Configuration tab, input your favourite http and https ports. Please make sure they are same with your server.xml.
+3. There is nothing to change in step 3, step 4 and step 5, then click finish button.  
 
-	![][liberty-configure-1]  
-6\. In the External Configuration tab, Select your configuration file from the dropdown. Click retrieve button to view file contents. Click apply button if you make some changes.  
+4. Click the "was-liberty" in the table, we need to make some configuration.
 
-	![][liberty-configure-2]  
-7\. Back to Liberty profile servers page and select was-liberty, click Start button to run the server.  
+5. In the Configuration tab, input your favourite http and https ports. Please make sure they are same with your server.xml.
+	![][liberty-configure-1]
+
+6. In the External Configuration tab, Select your configuration file from the dropdown. Click retrieve button to view file contents. Click apply button if you make some changes.
+
+	![][liberty-configure-2]
+
+7. Back to Liberty profile servers page and select was-liberty, click Start button to run the server.  
 
 	![][liberty-configure-3]
+
 8\. You could visit the url like http://serverip:port/ida to access IDA web application.
 
 
