@@ -214,6 +214,99 @@ After finishing the installation of the fix packs, the next step is to deploy th
 
    ![][wasstartapp]
 
+
+## Deploy IDA on websphere v8.5.5.16 with was liberty profile
+
+**Install websphere liberty and configure your applications**
+
+1\. Download wlp-webProfile7-java8-linux-x86_64-19.0.0.2.zip from here:
+
+https://ak-delivery04-mul.dhe.ibm.com/sar/CMA/WSA/084l4/0/wlp-webProfile7-java8-linux-x86_64-19.0.0.2.zip
+
+2\. Unzip it and move wlp dir to /opt/ibm/bpm/
+```
+unzip wlp-webProfile7-java8-linux-x86_64-19.0.0.2.zip 
+mv ./wlp /opt/ibm/bpm/
+```
+
+3\. Create a new liberty server, for example: was-liberty
+
+```
+cd /opt/ibm/bpm/wlp/bin
+./server create was-liberty 
+```
+
+4\. Put the ida-web.war in the /opt/ibm/bpm/wlp/usr/servers/was-liberty/apps
+
+5\. Edit the server.xml, please update the fields: host, httpPort and httpsPort, for example: 
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="Default server">
+
+    <!-- Enable features -->
+    <featureManager>
+        <feature>servlet-3.1</feature>
+        <feature>ssl-1.0</feature>
+        <feature>websocket-1.1</feature>
+    </featureManager>
+
+    <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
+
+    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an
+         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element.
+         Then uncomment the keyStore element. -->
+    <!--
+    <keyStore password=""/>
+    -->
+    <webContainer invokeFlushAfterService="false"/>
+
+    <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
+        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password,
+        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element.
+        Then uncomment the user element. -->
+    <basicRegistry id="basic" realm="BasicRealm">
+        <!-- <user name="yourUserName" password="" />  -->
+    </basicRegistry>
+
+    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpEndpoint id="defaultHttpEndpoint"
+                                  host="<YOUR_HOST_IP>"
+                  httpPort="9680"
+                  httpsPort="9643" />
+
+
+
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/>
+        <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+                <classloader delegation="parentLast" />
+    </application>
+
+        <keyStore id="defaultKeyStore" password="idaAdmin" />
+
+</server>
+```
+
+**Create a Liberty profile server from websphere console page**
+
+1\. Select "Server Types -> Liberty profile servers" from left menu.
+	![][create-server]  
+2\. In the step 2, input the server name.
+	![][create-server-2]  
+3\. There is nothing to change in step 3, step 4 and step 5, then click finish button. 
+
+4\. Click the "was-liberty" in the table, we need to make some configuration.
+
+5\. In the Configuration tab, input your favourite http and https ports. Please make sure they are same with your server.xml.
+	![][liberty-configure-1]  
+6\. In the External Configuration tab, Select your configuration file from the dropdown. Click retrieve button to view file contents. Click apply button if you make some changes.
+	![][liberty-configure-2]  
+7\. Back to Liberty profile servers page and select was-liberty, click Start button to run the server.
+	![][liberty-configure-3]
+8\. You could visit the url like http://serverip:port/ida to access IDA web application.
+
+
 ## Installing on Docker platform
 Refer to [IDA-ondocker](https://github.com/sdc-china/IDA-ondocker) for deployment steps.
 
@@ -302,6 +395,11 @@ https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp t
 [wasmanagemodules]: ../images/install/wasmanagemodules.png 
 [wasmoduleclassloadorder]: ../images/install/wasmoduleclassloadorder.png 
 [wasstartapp]: ../images/install/wasstartapp.png 
+[create-server]: ../images/install/create-server.png 
+[create-server-2]: ../images/install/create-server-2.png 
+[liberty-configure-1]: ../images/install/liberty-configure-1.png 
+[liberty-configure-2]: ../images/install/liberty-configure-2.png 
+[liberty-configure-3]: ../images/install/liberty-configure-3.png 
 
 ### Self-Signed SSL Certificates Installation
 
