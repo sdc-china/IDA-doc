@@ -64,12 +64,10 @@ order: 1
     - Answer: YES. Please make sure the user is in group either tw_authors or tw_admins. 
 1. FAQ: Does IDA support window.confirm in plugin? If not, what should I do If the result of window.confirm influences the business logic?
     - Answer: No. They are't support in IDA plugin and work in server by adding confirmOk and confirmCancel command. About replaying in plugin, need to click OK or Cancel button manually.
-1. FAQ: I got the errors shows I don't have the access permission when I using the Checksstyle and Analyzer, what should I do?
-![][permission-error] 
+1. FAQ: I got the errors shows I don't have the access permission to the Process App when I using the Checksstyle and Analyzer, what should I do?
     - Answer: You should add permissions for your **Rest User** to access the Process App.
 ![][add-permission-1]
 ![][add-permission-2] 
-    
-[permission-error]: ../images/references/permission-error.png     
+        
 [add-permission-1]: ../images/references/add-permission-1.png 
 [add-permission-2]: ../images/references/add-permission-2.png
