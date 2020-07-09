@@ -14,12 +14,11 @@ order: 4
 
 ### Deploy ruleset to IBM® Operational Decision Manager Decision Server
 
-#### If you want to execute ruleset through Decision Server, you should deploy your ruleset to Decision Server like IBM Cloud or on-premise Rule Execution Server.
+* If you want to execute ruleset through Decision Server, you should deploy your ruleset to Decision Server like IBM Cloud or on-premise Rule Execution Server.
 
-#### 1. Have Decision Server set up    
+ 1. Set up the Decision Server.    
 
-
-#### 2. Deploy your ruleset
+ 2. Deploy your ruleset
 
   * Open deployment Operation in rule project CheckstyleRules. On the Deployment Target Servers tab, add a target server using the Connection Settings found in Decision Server.
 
