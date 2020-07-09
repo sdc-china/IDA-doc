@@ -36,7 +36,7 @@ order: 4
 
 	![][checkstyle_deploy_ruleset_cloud_two_6]
 
-  * After the deployment completes, a success report is generated as follows. You can also check your IBM Cloud Business Rules service to verify that the ruleset is successfully deployed.
+  * After the deployment is completed, a report will be generated as follows. You can also check your IBM Cloud Business Rules service to verify that the ruleset is successfully deployed.
 
     ![][checkstyle_deploy_ruleset_cloud_two_7]
 
@@ -44,7 +44,7 @@ order: 4
 
   * Make sure the value of ruleExecutionMode in ida.properties is 2.
 
-  * Configure the values of resUser, resPassword, resUrl, restUrl and resPort in ida.properties.
+  * Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
 
 ### Deploy ruleset in local
 
