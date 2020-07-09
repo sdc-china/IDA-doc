@@ -58,7 +58,7 @@ If you want to execute ruleset in local file system, you need to replace the rul
 
    * After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in IDA.war(IDA-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one.
 
- 2. Change configurations in ida.properties
+  2. Change configurations in ida.properties
 
   * Make sure the value of ruleExecutionMode in ida.properties is 0.
 
