@@ -40,11 +40,11 @@ If you want to execute ruleset through Decision Server, you should deploy your r
 
     ![][checkstyle_deploy_ruleset_cloud_two_7]
 
-  3. Change configurations in ida.properties
+ 3. Change configurations in ida.properties
 
-   * Make sure the value of ruleExecutionMode in ida.properties is 2.
+  * Make sure the value of ruleExecutionMode in ida.properties is 2.
 
-   * Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
+  * Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
 
 ### Deploy ruleset in local
 
