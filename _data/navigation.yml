@@ -66,6 +66,7 @@ docs:
         url: /test/test-case-dynamic-assignee.html
       - title: "Custom OOTB Command"
         url: /test/test-custom-ootb-command.html
+        
   - title: Checkstyle
     children:
       - title: "Analyze BPM projects with checkstyle"
@@ -76,6 +77,13 @@ docs:
         url: /checkstyle/checkstyle-report.html
       - title: "Deploy Checkstyle ruleset"
         url: /checkstyle/checkstyle-deploy-ruleset.html
+        
+  - title: Snapshot Comparison
+    children:
+      - title: "Compare Snapshots"
+        url: /snapshot-comparison/snapshot-comparison-compare-snapshots.html
+      - title: "Snapshot Comparison Report"
+        url: /snapshot-comparison/snapshot-comparison-snapshots-comparison-report.html
 
   - title: Analyzer
     children:
@@ -140,11 +148,16 @@ docs:
         url: /references/references-migrating-and-updating-your-application.html
       - title: "Samples"
         url: /references/references-samples.html
-      - title: "Known Limitation"
-        url: /references/reference-known-limitation.html
       - title: "Best Practices"
         url: /references/references-best-practices.html
-      - title: "Frequently asked questions"
-        url: /references/reference-faq.html
       - title: "Demos"
         url: /references/references-demo.html
+
+  - title: "Trouble Shooting"
+    children:
+      - title: "Known Limitation"
+        url: /trouble-shooting/trouble-shooting-known-limitation.html
+      - title: "Frequently asked questions"
+        url: /trouble-shooting/trouble-shooting-faq.html
+      - title: "IDA Plugin Trouble Shooting"
+        url: /trouble-shooting/trouble-shooting-ida-plugin.html

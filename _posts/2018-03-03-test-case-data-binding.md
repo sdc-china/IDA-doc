@@ -10,7 +10,7 @@ order: 30
 ***   
 ### Create a csv test data file 
 
-  1. Open the excel and edit data like below format. The first column is the key name of data.
+  1. Open the excel and edit data like below format. The first row is the key name of data.
     
      ![][testcase_file]   
   
@@ -18,7 +18,7 @@ order: 30
   
   **Notes:**
      
-   You must use **datasetName** and **dataset1** for the first column name and value for  internal usage.
+   You must use **datasetName** and **dataset1** for the first column name and value for internal usage.
   
 
   
