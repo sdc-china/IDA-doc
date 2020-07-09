@@ -14,7 +14,7 @@ order: 4
 
 ### Deploy ruleset to IBM® Operational Decision Manager Decision Server
 
-* If you want to execute ruleset through Decision Server, you should deploy your ruleset to Decision Server like IBM Cloud or on-premise Rule Execution Server.
+If you want to execute ruleset through Decision Server, you should deploy your ruleset to Decision Server like IBM Cloud or on-premise Rule Execution Server.
 
  1. Set up the Decision Server.    
 
@@ -40,25 +40,25 @@ order: 4
 
     ![][checkstyle_deploy_ruleset_cloud_two_7]
 
-#### 3. Change configurations in ida.properties
+  3. Change configurations in ida.properties
 
-  * Make sure the value of ruleExecutionMode in ida.properties is 2.
+   * Make sure the value of ruleExecutionMode in ida.properties is 2.
 
-  * Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
+   * Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
 
 ### Deploy ruleset in local
 
-#### If you want to execute ruleset in local file system, you need to replace the ruleset file following steps below.
+If you want to execute ruleset in local file system, you need to replace the ruleset file following steps below.
 
-#### 1. Deploy your ruleset
+  1. Deploy your ruleset
 
-  * There is no need to define or choose a target server when deploy your ruleset in local.
+   * There is no need to define or choose a target server when deploy your ruleset in local.
 
     ![][checkstyle_deploy_ruleset_local_1]
 
-  * After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in IDA.war(IDA-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one.
+   * After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in IDA.war(IDA-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one.
 
-#### 2. Change configurations in ida.properties
+ 2. Change configurations in ida.properties
 
   * Make sure the value of ruleExecutionMode in ida.properties is 0.
 
