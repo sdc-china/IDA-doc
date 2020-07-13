@@ -69,7 +69,7 @@ order: 1
 
   1. A user would be added to IDA system automatically if the user pass LDAP authentication from IDA login page. 
 
-  2. A user with admin role could not add user from User Management page.
+  2. A user with admin role could not 'Add', 'Inactive' and 'Active' user from User Management page.
 
      ![][ldap_user_management]
 
