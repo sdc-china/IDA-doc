@@ -65,6 +65,20 @@ order: 1
      ![][administration_user_team]
 
 
+## LDAP User Configuration
+
+  1. A user would be added to IDA system automatically if the user pass LDAP authentication from IDA login page. 
+
+  2. A user with admin role could not add user from User Management page.
+
+     ![][ldap_user_management]
+
+  3. A user with admin role could edit other user role from edit user modal.
+
+     ![][edit_user_modal]
+
+  4. All ldap users could not update password from IDA.
+
 
 [administrator_add]: ../images/administrator/Administrator_add.png
 [administrator_reset]: ../images/administrator/Administrator_reset.png
@@ -77,3 +91,5 @@ order: 1
 [administrator_active_user]: ../images/administrator/administrator_active_user.png
 [administrator_role_permission]: ../images/administrator/administrator_role_permission.png
 [administration_user_team]: ../images/administrator/administration_user_team.png
+[ldap_user_management]: ../images/administrator/ldap_user_management.png
+[edit_user_modal]: ../images/administrator/edit_user_modal.png
