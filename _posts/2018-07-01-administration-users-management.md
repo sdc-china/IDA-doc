@@ -65,7 +65,7 @@ order: 1
      ![][administration_user_team]
 
 
-## LDAP User Configuration
+## LDAP Users Management 
 
   1. A user would be added to IDA system automatically if the user pass LDAP authentication from IDA login page. 
 
