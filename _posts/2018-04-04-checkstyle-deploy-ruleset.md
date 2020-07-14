@@ -10,9 +10,9 @@ order: 4
 ***
 ### Software Prerequisites
 
-* [IBM® Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
+* [IBM Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
 
-### Deploy ruleset to IBM® Operational Decision Manager Decision Server
+### Deploy ruleset to IBM Operational Decision Manager Decision Server
 
 If you want to execute ruleset through Decision Server, you should deploy your ruleset to Decision Server like IBM Cloud or on-premise Rule Execution Server.
 
@@ -20,31 +20,31 @@ If you want to execute ruleset through Decision Server, you should deploy your r
 
 2. Deploy your ruleset.
 
-  * Open deployment Operation in rule project CheckstyleRules. On the Deployment Target Servers tab, add a target server using the Connection Settings found in Decision Server.
+	* Open deployment Operation in rule project CheckstyleRules. On the Deployment Target Servers tab, add a target server using the Connection Settings found in Decision Server.
 
-      ![][checkstyle_deploy_ruleset_cloud_two_1]
+		![][checkstyle_deploy_ruleset_cloud_two_1]
+	
+		![][checkstyle_deploy_ruleset_cloud_two_2]
 
-      ![][checkstyle_deploy_ruleset_cloud_two_2]
+	* Deploy the Checkstyle rules to your IBM Business Rules Service on IBM Cloud. Open deploymentOperation in rule project CheckstyleRules. On the Deployment Overview tab, make sure Deploy the XOM is selected as Yes and click Proceed to RuleApp deployment.
 
-  * Deploy the Checkstyle rules to your IBM Business Rules Service on IBM Cloud. Open deploymentOperation in rule project CheckstyleRules. On the Deployment Overview tab, make sure Deploy the XOM is selected as Yes and click Proceed to RuleApp deployment.
+		![][checkstyle_deploy_ruleset_cloud_two_3]
+		
+		![][checkstyle_deploy_ruleset_cloud_two_4]
+		
+		![][checkstyle_deploy_ruleset_cloud_two_5]
+		
+		![][checkstyle_deploy_ruleset_cloud_two_6]
 
-    ![][checkstyle_deploy_ruleset_cloud_two_3]
+	* After the deployment is completed, a report will be generated as follows. You can also check your IBM Cloud Business Rules service to verify that the ruleset is successfully deployed.
 
-    ![][checkstyle_deploy_ruleset_cloud_two_4]
-
-    ![][checkstyle_deploy_ruleset_cloud_two_5]
-
-    ![][checkstyle_deploy_ruleset_cloud_two_6]
-
-  * After the deployment is completed, a report will be generated as follows. You can also check your IBM Cloud Business Rules service to verify that the ruleset is successfully deployed.
-
-    ![][checkstyle_deploy_ruleset_cloud_two_7]
+		![][checkstyle_deploy_ruleset_cloud_two_7]
 
 3. Change configurations in ida.properties
 
-  * Make sure the value of ruleExecutionMode in ida.properties is 2.
-
-  * Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
+	* Make sure the value of ruleExecutionMode in ida.properties is 2.
+	
+	* Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
 
 ### Deploy ruleset in local
 
@@ -52,15 +52,15 @@ If you want to execute ruleset in local file system, you need to replace the rul
 
 1. Deploy your ruleset
 
-  * There is no need to define or choose a target server when deploy your ruleset in local.
+	* There is no need to define or choose a target server when deploy your ruleset in local.
 
     ![][checkstyle_deploy_ruleset_local_1]
 
-  * After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in IDA.war(IDA-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one.
+	* After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in IDA.war(IDA-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one.
 
 2. Change configurations in ida.properties
 
-  * Make sure the value of ruleExecutionMode in ida.properties is 0.
+	* Make sure the value of ruleExecutionMode in ida.properties is 0.
 
 
 
