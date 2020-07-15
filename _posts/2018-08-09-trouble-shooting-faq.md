@@ -75,7 +75,7 @@ order: 1
 	
 		1. Stop the servers of your IBM BPM PS environment.
 		
-		2. Start the scripting client in disconnected mode as described in (updateBPMConfig command)[https://www.ibm.com/support/knowledgecenter/SS8JB4/com.ibm.wbpm.ref.doc/topics/rref_updatebpmconfig.html].
+		2. Start the scripting client in disconnected mode as described in [updateBPMConfig command](https://www.ibm.com/support/knowledgecenter/SS8JB4/com.ibm.wbpm.ref.doc/topics/rref_updatebpmconfig.html).
 		
 		3. Run the following commands:
 		
