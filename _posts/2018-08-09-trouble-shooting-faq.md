@@ -79,11 +79,11 @@ order: 1
 		
 		3. Run the following commands:
 		
-		```
-		wsadmin> AdminTask.updateBPMConfig( [ '-create', '/server' ] 
-		wsadmin> AdminTask.updateBPMConfig( [ '-create', '/server/enforce-authorization-check-for-ps-model-data', '-xNodeValue', 'false' ] )
-		wsadmin> AdminConfig.save()
-		```
+			```
+			wsadmin> AdminTask.updateBPMConfig( [ '-create', '/server' ] 
+			wsadmin> AdminTask.updateBPMConfig( [ '-create', '/server/enforce-authorization-check-for-ps-model-data', '-xNodeValue', 'false' ] )
+			wsadmin> AdminConfig.save()
+			```
 		
 		4. Restart the servers of your IBM BPM environment.
    
