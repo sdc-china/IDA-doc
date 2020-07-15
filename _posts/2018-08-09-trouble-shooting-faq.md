@@ -68,6 +68,24 @@ order: 1
     - Answer: You should add permissions for your **Rest User** to access the Process App.
 ![][add-permission-1]
 ![][add-permission-2] 
-        
+
+1. FAQ: I can't be assigned to tw_admins group because of security factors on PS server, what should I do to test Process Apps on PS?
+	
+	- Answer: Do below action to allow non tw_admin users to access the REST.
+	
+		1. Stop the servers of your IBM BPM PS environment.
+		
+		2. Start the scripting client in disconnected mode as described in (updateBPMConfig command)[https://www.ibm.com/support/knowledgecenter/SS8JB4/com.ibm.wbpm.ref.doc/topics/rref_updatebpmconfig.html].
+		
+		3. Run the following commands:
+		
+		```
+		wsadmin> AdminTask.updateBPMConfig( [ '-create', '/server' ] 
+		wsadmin> AdminTask.updateBPMConfig( [ '-create', '/server/enforce-authorization-check-for-ps-model-data', '-xNodeValue', 'false' ] )
+		wsadmin> AdminConfig.save()
+		```
+		
+		4. Restart the servers of your IBM BPM environment.
+   
 [add-permission-1]: ../images/references/add-permission-1.png 
 [add-permission-2]: ../images/references/add-permission-2.png
