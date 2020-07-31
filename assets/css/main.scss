@@ -132,6 +132,8 @@ html {
   top: 118px;
   width: 13.5rem;
   max-width: 13.5rem;
+  overflow-y: auto;
+  height: calc(100vh - 10em);
 }
 
 .page {
