@@ -13,7 +13,7 @@ order: 2
 
   2. Click ![][add_icon] icon which is on the right of **BPM Server Configuration** to add new BPM server.
 
-  3. Fill out the form below. Then click **Create** button.
+  3. Fill out the form below. Then click **Create** button. Optional fields are hidden inside **Advance** section. Click **Advance** to show them.
 
      ![][administrator_bpmserver]  
 
@@ -24,7 +24,7 @@ order: 2
       | Server Url             | The BPM server URL, eg: https://bpmserver:9443. It is the prefix of BPM Process Admin Url or Process Portal Url. In BPM HA environment, this field should be the Url of the load balancer.  |                                        
       | REST User Name         | The name of the user who is a member of tw_admins or tw_authors group and has the Read permission to the target process application (If your want to catch a new snapshot for this process application in IDA, for example **Trigger by new Snapshot**, you need to have the Write permission to the process application). |
       | REST Password          | The Password of the user.                                            |   
-      | Connected Server Name  | Connected Server Name is the online PS server name, authorized users can install snapshots of process applications on connected Process Servers. This field only needs to be filled when this server is Process Server and is connected to the Process Center. It can be obtained from Process Center under Servers tab (login WebPD, click Servers) ![][connected_server_name].           |
+      | Connected PS Server  | Connected Server Name is the online PS server name, authorized users can install snapshots of process applications on connected Process Servers. This field only needs to be filled when this server is Process Server and is connected to the Process Center. It can be obtained from Process Center under Servers tab (login WebPD, click Servers) ![][connected_server_name].           |
       | Server Host            | The BPM server host, the IP or the hostname of Process Server, it is used for snapshot deployment from PC to PS. In BPM HA environment, you can get this value from one of the application cluster members. |
       | SOAP port              | Soap port id defined in Was console. To determine the correct port number, see the WebSphere administrative console Ports collection page (click Servers > Server Types > WebSphere application servers > server_name > Communications > Ports and find the value for SOAP_CONNECTOR_ADDRESS). In BPM HA environment, use the port configured for the application cluster member.|
       | WAS admin Command      | It is the path of wsadmin.sh in linux server, in BPM HA environment, use the path of wsadmin.sh in application cluster member. |      
