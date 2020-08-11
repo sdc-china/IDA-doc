@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-10-27 15:17:55
-last_modified_at: 2019-07-29 16:42:00
+last_modified_at: 2020-08-05 16:42:00
 order: 2
 ---
 
@@ -15,13 +15,13 @@ This document refers to the Command Editor options and not JavaScript API to cal
 
   ![][command_start_process_editor]
 
-There are five(5) categories of commands:
+There are more than 80 commands to simplify testing and categorized as five category below:
 
-* [BPM](#bpm)
-* [BPM Assertion](#bpm-assertion)
-* [UI](#ui)
-* [UI assertion](#ui-assertion)
-* [Utility](#utility)
+* [BPM](#bpm): A set of commands for calling server side components. 
+* [BPM Assertion](#bpm-assertion) : A set of commands for asserting server side components.
+* [UI](#ui): A set of commands for UI recording and actions.
+* [UI assertion](#ui-assertion):A set of commands for asserting UI components.
+* [Utility](#utility): A set of commands for util methods. e.g debug, putContext
 
 ___
 
