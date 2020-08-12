@@ -105,7 +105,7 @@ After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of IDA i
 
 ### Install and Configure Oracle
 
-IDA supports Oracle Database Server 12c R2(v12.2.0.1 Enterprise Edition). Please refer to the following steps to setup Oracle environment. 
+IDA supports Oracle Database Server 12c R2(v12.2.0.1 Enterprise Edition) and 19c(V19.3.0 Enterprise Edition). Please refer to the following steps to setup Oracle environment. 
 
 **Create Oracle User/Schema**   
 
