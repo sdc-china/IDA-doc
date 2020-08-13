@@ -38,13 +38,12 @@ To create a new test project:
   1. In this project list page, click **Create Project** button. Name the project name as **Hiring Sample**. Choose the values like below screenshot. For the visibility, you can choose private or team you belong to. For advance, click the right arrow button then you can configure retry time and retry interval for the project.
     
      ![][tutorial_createproject]
-    
+
+     **Notes** IDA caches applications and toolkits list per server, you could refresh the cache by clicking the ![][tutorial_refresh_icon] next to the 'Process App'.  
   
   2. Click **Create** button, you will enter into project dashboard page.
 
      ![][tutorial_project_info] 
-  
-     **Notes** IDA caches applications and toolkits list per server, you could refresh the cache by clicking the ![][tutorial_refresh_icon] next to the 'Process App'.
    
 ### Step 2: Generate test cases
 
