@@ -44,7 +44,7 @@ To create a new test project:
 
      ![][tutorial_project_info] 
   
-  
+     **Notes** IDA caches applications and toolkits list per server, you could refresh the cache by clicking the ![][tutorial_refresh_icon] next to the 'Process App'.
    
 ### Step 2: Generate test cases
 
@@ -84,4 +84,5 @@ To generate a process test case and an user interface test case:
 [3]: ../administration/administration-selenium-hub-configuration.html
 [4]: tutorial-run-record-and-replay-a-test-case.html
 [tutorial_createproject]: ../images/tutorial/tuorial_project_create.PNG 
+[tutorial_refresh_icon]: ../images/tutorial/refresh-icon.PNG
 [tutorial_project_info]: ../images/tutorial/tutorial_project_info.PNG
