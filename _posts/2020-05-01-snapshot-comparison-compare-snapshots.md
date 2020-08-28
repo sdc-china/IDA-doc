@@ -10,7 +10,7 @@ Snapshot Comparison allows users to compare two snapshots inside one trace of a 
 
 # Load Snapshots inside One Trace of a Process App
 
-1. In **Labs**, click **Snapshot Comparison** menu.
+1. Click **Comparison** tab.
 
 2. Fill form according to below statement.
 
