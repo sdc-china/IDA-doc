@@ -150,8 +150,7 @@ docs:
         url: /references/references-samples.html
       - title: "Best Practices"
         url: /references/references-best-practices.html
-      - title: "Demos"
-        url: /references/references-demo.html
+
 
   - title: "Trouble Shooting"
     children:
