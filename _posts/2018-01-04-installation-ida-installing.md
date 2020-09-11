@@ -51,6 +51,8 @@ If the server is created successfully, you receive message: Server server_name c
 
 * Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both **httpPort** and **httpsPort** are unique and not same with BPM server port.If found port conflict，pls change the  **httpPort** and **httpsPort** address.  
 
+```
+<?xml version="1.0" encoding="UTF-8"?>
 <server description="Default server">
 
     <!-- Enable features -->
