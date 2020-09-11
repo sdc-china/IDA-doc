@@ -51,63 +51,51 @@ If the server is created successfully, you receive message: Server server_name c
 
 * Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both **httpPort** and **httpsPort** are unique and not same with BPM server port.If found port conflict，pls change the  **httpPort** and **httpsPort** address.  
 
-```    
- <!-- Enable features -->
+<server description="Default server">
+
+    <!-- Enable features -->
     <featureManager>
         <feature>servlet-3.1</feature>
         <feature>ssl-1.0</feature>
         <feature>websocket-1.1</feature>
-        <feature>jdbc-4.2</feature>
-        <feature>jndi-1.0</feature>
     </featureManager>
 
     <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
-    
-    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an 
-         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element. 
+
+    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an
+         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element.
          Then uncomment the keyStore element. -->
     <!--
-    <keyStore password=""/> 
+    <keyStore password=""/>
     -->
     <webContainer invokeFlushAfterService="false"/>
-    
+
     <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
-        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password, 
-        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element. 
+        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password,
+        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element.
         Then uncomment the user element. -->
-    <basicRegistry id="basic" realm="BasicRealm"> 
-        <!-- <user name="yourUserName" password="" />  --> 
+    <basicRegistry id="basic" realm="BasicRealm">
+        <!-- <user name="yourUserName" password="" />  -->
     </basicRegistry>
-    
+
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint id="defaultHttpEndpoint"
-				  host="*"
-                  httpPort="9081"
-                  httpsPort="9443" />
-				  
-    <!-- Automatically expand WAR files and EAR files -->
-    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	  <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
-		  <classloader delegation="parentLast" />
-    </application>
-	
-	<keyStore id="defaultKeyStore" password="idaAdmin" />
-  <!-- JNDI data source confiduration -->
-  <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
-  <library id="MySQLLib">
-      <fileset dir="${shared.config.dir}/lib/global" includes="*.jar"/>
-  </library> 
-  <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
-  <dataSource jndiName="jdbc/mysql" statementCacheSize="60" id="mysql"
-          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
-    <jdbcDriver libraryRef="MySQLLib"/>
-    <properties databaseName="SAMPLEDB" 
-                serverName="localhost" portNumber="3306" 
-                user="user1" password="pwd1"/>
-  </dataSource>
-  
+                                  host="<YOUR_HOST_IP>"
+                  httpPort="9680"
+                  httpsPort="9643" />
 
-```  
+
+
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/>
+        <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+                <classloader delegation="parentLast" />
+    </application>
+
+        <keyStore id="defaultKeyStore" password="idaAdmin" />
+
+</server>
+```
     
 
 * Copy **IDA-web.war** application into the /usr/servers/*yourservername*/apps directory.
