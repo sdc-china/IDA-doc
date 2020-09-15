@@ -49,36 +49,30 @@ If the server is created successfully, you receive message: Server server_name c
 	
 **Configure WAS Liberty**  
 
-* Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both **httpPort** and **httpsPort** are unique and not same with BPM server port.If found port conflict，pls change the  **httpPort** and **httpsPort** address.  
+* Edit **server.xml** from *wlp/usr/servers/servername* folder. You could use the below sample server.xml to override your local **server.xml**.
 
+Please ensure both **httpPort** and **httpsPort** are unique and not same with BPM server port. If found port conflict, please change the  **httpPort** and **httpsPort** address.
+
+The **keyStore** object is used for https and the object is required.
+
+**Sample server.xml**
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <server description="Default server">
 
-    <!-- Enable features -->
     <featureManager>
         <feature>servlet-3.1</feature>
         <feature>ssl-1.0</feature>
         <feature>websocket-1.1</feature>
     </featureManager>
 
-    <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
-
-    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an
-         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element.
-         Then uncomment the keyStore element. -->
-    
+    <!-- To enable https, there should be a keyStore object, you could update the password value, by default is idaAdmin.-->
+    <!-- The liberty will generate key.p12 and Itpa.keys in the ${server.output.dir}/resources/security folder.-->
+    <!-- Please be carefull before updating the password filed, 
+         You must delete the generated key.p12 and Itpa.keys in the ${server.output.dir}/resources/security folder firstly!-->
     <keyStore id="defaultKeyStore" password="idaAdmin" />
 
     <webContainer invokeFlushAfterService="false"/>
-
-    <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
-        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password,
-        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element.
-        Then uncomment the user element. -->
-    <basicRegistry id="basic" realm="BasicRealm">
-        <!-- <user name="yourUserName" password="" />  -->
-    </basicRegistry>
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint id="defaultHttpEndpoint"
@@ -91,7 +85,6 @@ If the server is created successfully, you receive message: Server server_name c
         <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
                 <classloader delegation="parentLast" />
     </application>
-
 
 </server>
 ```
