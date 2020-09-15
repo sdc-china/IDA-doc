@@ -91,7 +91,7 @@ In Liberty installation bin folder you can use below command to start the server
 
 **5. Access ida application**
 
-The url is: https://<YOUR_HOST>:<YOUR_PORT>/ida
+The url is: https://\<YOUR_HOST\>:\<YOUR_PORT\>/ida
 
 
 
