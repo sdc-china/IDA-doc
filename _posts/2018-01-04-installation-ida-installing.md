@@ -19,7 +19,7 @@ IDA Web Application can be installed on WebSphere Application Server (WAS), libe
 ## Installing on Liberty
 
 
-**Create a Liberty server manually** 
+**1. Create a Liberty server** 
 
 You can create a server from the command line.
 
@@ -47,13 +47,9 @@ server_name must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), und
 
 If the server is created successfully, you receive message: Server server_name created.
 	
-**Configure WAS Liberty**  
+**2. Configure Liberty**  
 
-* Edit **server.xml** from *wlp/usr/servers/servername* folder. You could use the below sample server.xml to override your local **server.xml**.
-
-Please ensure both **httpPort** and **httpsPort** are unique and not same with BPM server port. If found port conflict, please change the  **httpPort** and **httpsPort** address.
-
-The **keyStore** object is used for https and the object is required.
+Edit **server.xml** from *wlp/usr/servers/servername* folder. You could use the below sample server.xml to override your local **server.xml**.
 
 **Sample server.xml**
 ```
@@ -88,13 +84,11 @@ The **keyStore** object is used for https and the object is required.
 
 </server>
 ```
-    
 
-* Copy **IDA-web.war** application into the /usr/servers/*yourservername*/apps directory.
+**3. Place the IDA-web.war to /usr/servers/*yourservername*/apps directory**
 
-* Start Liberty server and visit the url like http://serverip:port/ida (port is defined in the server.xml).
+**4. Start liberty server**
 
-For example:  
 In Liberty installation bin folder you can use below command to start the server.
 
 ```
@@ -104,6 +98,11 @@ In Liberty installation bin folder you can use below command to start the server
 #Linux
 ./server start server_name
 ```
+
+**5. Access ida application**
+Visit the url like http://serverip:port/ida
+
+
 
 ### Customizing the Liberty environment with jvm.optioins - optional
 Customize JVM options by using jvm.options files.
