@@ -67,9 +67,9 @@ If the server is created successfully, you receive message: Server server_name c
     <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an
          encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element.
          Then uncomment the keyStore element. -->
-    <!--
-    <keyStore password=""/>
-    -->
+    
+    <keyStore id="defaultKeyStore" password="idaAdmin" />
+
     <webContainer invokeFlushAfterService="false"/>
 
     <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
@@ -82,11 +82,9 @@ If the server is created successfully, you receive message: Server server_name c
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint id="defaultHttpEndpoint"
-                                  host="<YOUR_HOST_IP>"
-                  httpPort="9680"
-                  httpsPort="9643" />
-
-
+                  host="*"
+                  httpPort="9080"
+                  httpsPort="9443" />
 
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/>
@@ -94,7 +92,6 @@ If the server is created successfully, you receive message: Server server_name c
                 <classloader delegation="parentLast" />
     </application>
 
-        <keyStore id="defaultKeyStore" password="idaAdmin" />
 
 </server>
 ```
