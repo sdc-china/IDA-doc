@@ -36,7 +36,7 @@ Where server_name is the name you want to give your server.
 *Windows*
 
 ``` 
-server create server_name  
+./server create server_name  
 ``` 
 *Linux*
 
@@ -68,7 +68,7 @@ The **keyStore** object is used for https and the object is required.
 
     <!-- To enable https, there should be a keyStore object, you could update the password value, by default is idaAdmin.-->
     <!-- The liberty will generate key.p12 and Itpa.keys in the ${server.output.dir}/resources/security folder.-->
-    <!-- Please be carefull before updating the password filed, 
+    <!-- Please be careful before updating the password filed, 
          You must delete the generated key.p12 and Itpa.keys in the ${server.output.dir}/resources/security folder firstly!-->
     <keyStore id="defaultKeyStore" password="idaAdmin" />
 
@@ -96,6 +96,14 @@ The **keyStore** object is used for https and the object is required.
 
 For example:  
 In Liberty installation bin folder you can use below command to start the server.
+
+```
+#Windows
+./server start server_name
+
+#Linux
+./server start server_name
+```
 **server start default** (default is your server name).
 
 ### Customizing the Liberty environment with jvm.optioins - optional
