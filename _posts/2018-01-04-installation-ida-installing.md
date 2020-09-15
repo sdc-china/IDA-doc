@@ -34,16 +34,16 @@ cd <path_to_liberty>/wlp/bin
   
 
 ``` 
-./server create <SERVER_NAME>  
+./server create SERVER_NAME 
 ``` 
 
-The '<SERVER_NAME>' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
+The 'SERVER_NAME' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
 
-If the server is created successfully, you receive message: Server <SERVER_NAME> created.
+If the server is created successfully, you receive message: Server SERVER_NAME created.
 	
 **2. Configure Liberty**  
 
-Edit **server.xml** from *wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your local **server.xml**.
+Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your local **server.xml**.
 
 **Here is a sample server.xml**
 ```
@@ -79,14 +79,14 @@ Edit **server.xml** from *wlp/usr/servers/<SERVER_NAME>* folder. You could use t
 </server>
 ```
 
-**3. Put the IDA-web.war to /usr/servers/*<SERVER_NAME>*/apps directory**
+**3. Put the IDA-web.war to /usr/servers/*SERVER_NAME*/apps directory**
 
 **4. Start liberty server**
 
 In Liberty installation bin folder you can use below command to start the server.
 
 ```
-./server start <SERVER_NAME>
+./server start SERVER_NAME
 ```
 
 **5. Access ida application**
