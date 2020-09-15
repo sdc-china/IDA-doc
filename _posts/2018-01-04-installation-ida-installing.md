@@ -23,35 +23,29 @@ IDA Web Application can be installed on WebSphere Application Server (WAS), libe
 
 You can create a server from the command line.
 
-* Unzip the liberty installation package.Open a command line, then change directory to the wlp/bin directory.
-Where path_to_liberty is the location you installed Liberty on your operating system.  
+* Unzip the liberty installation package. Open a command line, then path to the wlp/bin directory.
+Where <path_to_liberty> is the location you installed Liberty on your operating system.  
 
 ``` 
-cd path_to_liberty/wlp/bin
+cd <path_to_liberty>/wlp/bin
 ``` 
 
-* Run the following command to create a server. If you do not specify a server name, defaultServer is used.
-Where server_name is the name you want to give your server.  
-
-*Windows*
+* Run the following command to create a server.
+  
 
 ``` 
-./server create server_name  
+./server create <SERVER_NAME>  
 ``` 
-*Linux*
 
-``` 
-./server create server_name  
-``` 
-server_name must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
+The '<SERVER_NAME>' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
 
-If the server is created successfully, you receive message: Server server_name created.
+If the server is created successfully, you receive message: Server <SERVER_NAME> created.
 	
 **2. Configure Liberty**  
 
-Edit **server.xml** from *wlp/usr/servers/servername* folder. You could use the below sample server.xml to override your local **server.xml**.
+Edit **server.xml** from *wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your local **server.xml**.
 
-**Sample server.xml**
+**Here is a sample server.xml**
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <server description="Default server">
@@ -85,22 +79,19 @@ Edit **server.xml** from *wlp/usr/servers/servername* folder. You could use the 
 </server>
 ```
 
-**3. Place the IDA-web.war to /usr/servers/*yourservername*/apps directory**
+**3. Put the IDA-web.war to /usr/servers/*<SERVER_NAME>*/apps directory**
 
 **4. Start liberty server**
 
 In Liberty installation bin folder you can use below command to start the server.
 
 ```
-#Windows
-./server start server_name
-
-#Linux
-./server start server_name
+./server start <SERVER_NAME>
 ```
 
 **5. Access ida application**
-Visit the url like http://serverip:port/ida
+
+The url is: http://<YOUR_HOST>:<YOUR_PORT>/ida
 
 
 
