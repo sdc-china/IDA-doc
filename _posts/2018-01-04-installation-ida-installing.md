@@ -104,7 +104,6 @@ In Liberty installation bin folder you can use below command to start the server
 #Linux
 ./server start server_name
 ```
-**server start default** (default is your server name).
 
 ### Customizing the Liberty environment with jvm.optioins - optional
 Customize JVM options by using jvm.options files.
