@@ -79,7 +79,7 @@ Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the
 </server>
 ```
 
-**3. Put the IDA-web.war to /usr/servers/*SERVER_NAME*/apps directory**
+**3. Put the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory**
 
 **4. Start liberty server**
 
