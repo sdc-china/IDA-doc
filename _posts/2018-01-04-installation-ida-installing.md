@@ -9,10 +9,9 @@ order: 4
 # Installing IDA Application
 
 There are three components for IDA application we need install and configure, included 
-- *IDA web application*, 
-- *IDA Browser Plugin* and 
-- *IDA BPM toolkit*.
-
+- *IDA web application* 
+- *IDA Browser Plugin*  
+- *IDA BPM/BAW toolkit*
 
 # Step 1: Installing IDA Web Application
 
