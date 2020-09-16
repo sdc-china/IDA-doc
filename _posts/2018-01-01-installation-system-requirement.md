@@ -33,8 +33,8 @@ order: 1
 * Chrome v57+ (64-bit)
 * IE v11+ (Supports execution only)
 
-### Minimal Hardware/VM/Docker Requirements
+### Minimal System Requirements
 - 2 core CPU, 4 GB memory and 50 GB disk space.
 
-### Recommended Hardware/VM/Docker Requirements
+### Recommended System Requirements
 - 2 core CPU, 8 GB memory and 200 GB disk space.
