@@ -2,23 +2,9 @@
 title: "Repacking IDA Application"
 category: installation
 date: 2018-09-20 15:17:55
-last_modified_at: 2019-07-25 21:34:00
+last_modified_at: 2020-09-15 21:34:00
 order: 3
 ---
-
-# IDA Package
-Extract the IDA Installation archive file to a specific location. The IDA archive file contains the following directories and artifacts: 
-
-*  **build** : contains IDA war file that needs to be deployed in Open Liberty.
-*  **conf** : contains properties files for configuration.
-*  **lib** : contains the required Java library for IDA packaging and setup.  
-*  **sql** : contains the SQL files to create or migrate database and tables.
-*  **toolkit** : contains a required Toolkit TWX file.
-*  **workspace** : contains the Checkstyle rule projects, which is based on IBM Operational Decision Manager.
-*  **package.bat** : Windows command to repackage IDA war file with custom settings.
-*  **package.sh** : Linux scripts to repackage IDA war file with custom settings.
-*  **README.html** : README file.
-*  **ReleaseNotes.html** : Release notes.
 
 # Repacking IDA Application
 ***
