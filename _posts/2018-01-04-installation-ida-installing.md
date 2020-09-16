@@ -344,7 +344,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 - Drag the "ida-1.48-fx.xpi" file into firefox window
 - Click "Add" button
 
-## Plug-in Configuration**
+## Plug-in Configuration
 
 If you want to use the checkstyle and codereivew feature on web PD, then you need to set the IDA url and user credentials for the plug-in options. 
 the IDA URL: https://9.30.255.220:9443/IDA   
