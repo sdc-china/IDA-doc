@@ -14,7 +14,7 @@ order: 1
 * CentOS 6.8+
 * Red Hat Enterprise Linux 6.9+
 * Windows 10
-* Docker CE 17.03+
+* Openshift v4.x
 
 
 ### Software Prerequisites
@@ -25,11 +25,6 @@ order: 1
 * [IBM Db2 v10.x+](https://www.ibm.com/analytics/us/en/db2/) 
 * [MySQL 5.x+](https://dev.mysql.com/downloads/mysql/) or [Oracle 12.2](https://sdc-china.github.io/IDA-doc/installation/installation-db.html#install-and-configure-oracle)
 * [Selenium v3.14+](https://sdc-china.github.io/IDA-doc/administration/administration-selenium-hub-configuration.html)
-
-
-### Optional  
-
-* A SMTP Server
 
 
 ### Browsers Support
@@ -43,17 +38,3 @@ order: 1
 
 ### Recommended Hardware/VM/Docker Requirements
 - 2 core CPU, 8 GB memory and 200 GB disk space.
-
-### Install IDA Package
-Extract the IDA Installation archive file to a specific location. The IDA archive file contains the following directories and artifacts: 
-
-*  **build** : contains IDA war file that needs to be deployed in Open Liberty.
-*  **conf** : contains properties files for configuration.
-*  **lib** : contains the required Java library for IDA packaging and setup.  
-*  **sql** : contains the SQL files to create or migrate database and tables.
-*  **toolkit** : contains a required Toolkit TWX file.
-*  **workspace** : contains the Checkstyle rule projects, which is based on IBM Operational Decision Manager.
-*  **package.bat** : Windows command to repackage IDA war file with custom settings.
-*  **package.sh** : Linux scripts to repackage IDA war file with custom settings.
-*  **README.html** : README file.
-*  **ReleaseNotes.html** : Release notes.
