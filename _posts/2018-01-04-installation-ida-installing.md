@@ -44,7 +44,7 @@ If the server is created successfully, you receive message: Server SERVER_NAME c
 	
 **2. Configure Liberty**  
 
-Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your local **server.xml**.
+Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
 **Here is a sample server.xml**
 ```
