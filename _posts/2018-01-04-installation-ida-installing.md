@@ -2,15 +2,16 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2019-07-25 21:37:00
+last_modified_at: 2020-09-16 21:37:00
 order: 4
 ---
 
 # Installing IDA Application
-***
-## Installing IDA Application Components
-There are three components for IDA application we need install and configure, included (1) *IDA web application*, (2) *IDA Browser Plugin* and (3) *IDA BPM toolkit*.
 
+There are three components for IDA application we need install and configure, included 
+- *IDA web application* 
+- *IDA Browser Plugin*  
+- *IDA BPM/BAW toolkit*
 
 # Step 1: Installing IDA Web Application
 
@@ -43,7 +44,7 @@ If the server is created successfully, you receive message: Server SERVER_NAME c
 	
 **2. Configure Liberty**  
 
-Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your local **server.xml**.
+Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
 **Here is a sample server.xml**
 ```
@@ -79,7 +80,7 @@ Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the
 </server>
 ```
 
-**3. Put the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory**
+**3. Copy the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory**
 
 **4. Start liberty server**
 
@@ -89,13 +90,8 @@ In Liberty installation bin folder you can use below command to start the server
 ./server start SERVER_NAME
 ```
 
-**5. Access ida application**
 
-The url is: https://\<YOUR_HOST\>:\<YOUR_PORT\>/ida
-
-
-
-### Customizing the Liberty environment with jvm.optioins - optional
+In addition, you could customize the Liberty environment with jvm.optioins as *optional step*
 Customize JVM options by using jvm.options files.
 
 * Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
@@ -192,7 +188,7 @@ After finishing the installation of the fix packs, the next step is to deploy th
    ![][wasstartapp]
 
 
-## Deploy IDA on websphere v8.5.5.16 with was liberty profile
+## Installing on WAS v8.5.5.16 liberty profile
 
 **Install websphere liberty and configure your applications**
 
@@ -338,16 +334,16 @@ The testing capability can only launch the exposed Business Processes, Human Ser
    
 # Step 3: Installing IDA Browser Plug-in
 
-### Chrome plugin
+## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in
 
-### Firefox plugin
+## Firefox plugin
 - Download firefox plugin [ida-1.48-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.48-fx.xpi)
 - Drag the "ida-1.48-fx.xpi" file into firefox window
 - Click "Add" button
 
-**Plug-in Configuration**
+## Plug-in Configuration
 
 If you want to use the checkstyle and codereivew feature on web PD, then you need to set the IDA url and user credentials for the plug-in options. 
 the IDA URL: https://9.30.255.220:9443/IDA   
@@ -387,7 +383,7 @@ https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp t
 [liberty-configure-2]: ../images/install/liberty-configure-2.png 
 [liberty-configure-3]: ../images/install/liberty-configure-3.png 
 
-### Self-Signed SSL Certificates Installation
+## Self-Signed SSL Certificates Installation
 
 The IDA recorder plugin can't support website with self sign certification by default. In this case, a warning like this:
    
@@ -395,7 +391,7 @@ The IDA recorder plugin can't support website with self sign certification by de
    
    This warning will block the recording of test case. To resolve this problem, we need to make the browsers to accept self-signed certificate.    
    
-#### FireFox - Add a Security Exception
+### FireFox - Add a Security Exception
 
 1. In FireFox, go to Tools -> Options.
 
@@ -417,7 +413,7 @@ The IDA recorder plugin can't support website with self sign certification by de
     
     ![][success]
     
-#### Chrome - Visit in unsafe mode
+### Chrome - Visit in unsafe mode
 
 Chrome browsers can save your data for a short time, and the warning page will not appear and block recording if you visit the testing website in unsafe mode before recording.
 
