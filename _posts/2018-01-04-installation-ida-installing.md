@@ -2,15 +2,16 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2019-07-25 21:37:00
+last_modified_at: 2020-09-16 21:37:00
 order: 4
 ---
 
 # Installing IDA Application
-***
-## Installing IDA Application Components
-There are three components for IDA application we need install and configure, included (1) *IDA web application*, (2) *IDA Browser Plugin* and (3) *IDA BPM toolkit*.
 
+There are three components for IDA application we need install and configure, included 
+- *IDA web application* 
+- *IDA Browser Plugin*  
+- *IDA BPM/BAW toolkit*
 
 # Step 1: Installing IDA Web Application
 
@@ -19,106 +20,78 @@ IDA Web Application can be installed on WebSphere Application Server (WAS), libe
 ## Installing on Liberty
 
 
-**Create a Liberty server manually** 
+**1. Create a Liberty server** 
 
 You can create a server from the command line.
 
-* Unzip the liberty installation package.Open a command line, then change directory to the wlp/bin directory.
-Where path_to_liberty is the location you installed Liberty on your operating system.  
+* Unzip the liberty installation package. Open a command line, then path to the wlp/bin directory.
+Where <path_to_liberty> is the location you installed Liberty on your operating system.  
 
 ``` 
-cd path_to_liberty/wlp/bin
+cd <path_to_liberty>/wlp/bin
 ``` 
 
-* Run the following command to create a server. If you do not specify a server name, defaultServer is used.
-Where server_name is the name you want to give your server.  
-
-*Windows*
+* Run the following command to create a server.
+  
 
 ``` 
-server create server_name  
+./server create SERVER_NAME 
 ``` 
-*Linux*
 
-``` 
-./server create server_name  
-``` 
-server_name must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
+The 'SERVER_NAME' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
 
-If the server is created successfully, you receive message: Server server_name created.
+If the server is created successfully, you receive message: Server SERVER_NAME created.
 	
-**Configure WAS Liberty**  
+**2. Configure Liberty**  
 
-* Edit **server.xml** from *wlp/usr/servers/servername* folder.  Please ensure both **httpPort** and **httpsPort** are unique and not same with BPM server port.If found port conflict，pls change the  **httpPort** and **httpsPort** address.  
+Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
-```    
- <!-- Enable features -->
+**Here is a sample server.xml**
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="Default server">
+
     <featureManager>
         <feature>servlet-3.1</feature>
         <feature>ssl-1.0</feature>
         <feature>websocket-1.1</feature>
-        <feature>jdbc-4.2</feature>
-        <feature>jndi-1.0</feature>
     </featureManager>
 
-    <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
-    
-    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an 
-         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element. 
-         Then uncomment the keyStore element. -->
-    <!--
-    <keyStore password=""/> 
-    -->
+    <!-- To enable https, there should be a keyStore object, you could update the password value, by default is idaAdmin.-->
+    <!-- The liberty will generate key.p12 and Itpa.keys in the ${server.output.dir}/resources/security folder.-->
+    <!-- Please be careful before updating the password filed, 
+         You must delete the generated key.p12 and Itpa.keys in the ${server.output.dir}/resources/security folder firstly!-->
+    <keyStore id="defaultKeyStore" password="idaAdmin" />
+
     <webContainer invokeFlushAfterService="false"/>
-    
-    <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
-        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password, 
-        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element. 
-        Then uncomment the user element. -->
-    <basicRegistry id="basic" realm="BasicRealm"> 
-        <!-- <user name="yourUserName" password="" />  --> 
-    </basicRegistry>
-    
+
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint id="defaultHttpEndpoint"
-				  host="*"
-                  httpPort="9081"
+                  host="*"
+                  httpPort="9080"
                   httpsPort="9443" />
-				  
+
     <!-- Automatically expand WAR files and EAR files -->
-    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
-	  <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
-		  <classloader delegation="parentLast" />
+    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/>
+        <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+                <classloader delegation="parentLast" />
     </application>
-	
-	<keyStore id="defaultKeyStore" password="idaAdmin" />
-  <!-- JNDI data source confiduration -->
-  <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
-  <library id="MySQLLib">
-      <fileset dir="${shared.config.dir}/lib/global" includes="*.jar"/>
-  </library> 
-  <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
-  <dataSource jndiName="jdbc/mysql" statementCacheSize="60" id="mysql"
-          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
-    <jdbcDriver libraryRef="MySQLLib"/>
-    <properties databaseName="SAMPLEDB" 
-                serverName="localhost" portNumber="3306" 
-                user="user1" password="pwd1"/>
-  </dataSource>
-  
 
-```  
-    
+</server>
+```
 
-* Copy **IDA-web.war** application into the /usr/servers/*yourservername*/apps directory.
+**3. Copy the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory**
 
-* Start Liberty server and visit the url like http://serverip:port/ida (port is defined in the server.xml).
+**4. Start liberty server**
 
-For example:  
 In Liberty installation bin folder you can use below command to start the server.
-**server start default** (default is your server name).
 
-### Customizing the Liberty environment with jvm.optioins - optional
+```
+./server start SERVER_NAME
+```
+
+
+In addition, you could customize the Liberty environment with jvm.optioins as *optional step*
 Customize JVM options by using jvm.options files.
 
 * Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
@@ -215,7 +188,7 @@ After finishing the installation of the fix packs, the next step is to deploy th
    ![][wasstartapp]
 
 
-## Deploy IDA on websphere v8.5.5.16 with was liberty profile
+## Installing on WAS v8.5.5.16 liberty profile
 
 **Install websphere liberty and configure your applications**
 
@@ -361,16 +334,16 @@ The testing capability can only launch the exposed Business Processes, Human Ser
    
 # Step 3: Installing IDA Browser Plug-in
 
-### Chrome plugin
+## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in
 
-### Firefox plugin
+## Firefox plugin
 - Download firefox plugin [ida-1.48-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.48-fx.xpi)
 - Drag the "ida-1.48-fx.xpi" file into firefox window
 - Click "Add" button
 
-**Plug-in Configuration**
+## Plug-in Configuration
 
 If you want to use the checkstyle and codereivew feature on web PD, then you need to set the IDA url and user credentials for the plug-in options. 
 the IDA URL: https://9.30.255.220:9443/IDA   
@@ -410,7 +383,7 @@ https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp t
 [liberty-configure-2]: ../images/install/liberty-configure-2.png 
 [liberty-configure-3]: ../images/install/liberty-configure-3.png 
 
-### Self-Signed SSL Certificates Installation
+## Self-Signed SSL Certificates Installation
 
 The IDA recorder plugin can't support website with self sign certification by default. In this case, a warning like this:
    
@@ -418,7 +391,7 @@ The IDA recorder plugin can't support website with self sign certification by de
    
    This warning will block the recording of test case. To resolve this problem, we need to make the browsers to accept self-signed certificate.    
    
-#### FireFox - Add a Security Exception
+### FireFox - Add a Security Exception
 
 1. In FireFox, go to Tools -> Options.
 
@@ -440,7 +413,7 @@ The IDA recorder plugin can't support website with self sign certification by de
     
     ![][success]
     
-#### Chrome - Visit in unsafe mode
+### Chrome - Visit in unsafe mode
 
 Chrome browsers can save your data for a short time, and the warning page will not appear and block recording if you visit the testing website in unsafe mode before recording.
 
