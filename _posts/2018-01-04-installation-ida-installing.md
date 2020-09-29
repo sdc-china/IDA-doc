@@ -46,7 +46,7 @@ If the server is created successfully, you receive message: Server SERVER_NAME c
 
 Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
-**Here is a sample server.xml**
+**Here is a sample server.xml (IDA version v2.7.x)**
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <server description="Default server">
@@ -76,6 +76,102 @@ Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the
         <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
                 <classloader delegation="parentLast" />
     </application>
+
+</server>
+```
+
+IDA Supports JNDI datasource from v3.0.0, You can configure a data source and JDBC provider for database connectivity.
+
+1\. In the server.xml file, define a shared library that points to the location of your JDBC driver JAR or compressed files.
+For example:
+
+```
+  <library id="DatabaseLib">
+      <fileset dir="C:/DB2/java" includes="*.jar"/>
+  </library>
+```
+
+2\. Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties.
+For example:
+
+```
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
+          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="DatabaseLib"/>
+    <properties databaseName="idaweb" 
+                serverName="localhost" portNumber="3306" 
+                user="root" password="mysqladmin"/>
+  </dataSource>
+
+```
+
+
+**Here is a sample server.xml (IDA version v3.x)**
+
+Please update the fields host, httpPort and httpsPort, library and dataSource. 
+
+For example:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="new server">
+
+    <!-- Enable features -->
+    <featureManager>
+        <feature>servlet-3.1</feature>
+        <feature>ssl-1.0</feature>
+        <feature>websocket-1.1</feature>
+        <feature>jdbc-4.2</feature>
+        <feature>jndi-1.0</feature>
+    </featureManager>
+
+    <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
+    
+    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an 
+         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element. 
+         Then uncomment the keyStore element. -->
+    
+    <keyStore id="defaultKeyStore" password="idaAdmin" />
+   
+    <webContainer invokeFlushAfterService="false"/>
+    
+    <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
+        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password, 
+        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element. 
+        Then uncomment the user element. -->
+    <basicRegistry id="basic" realm="BasicRealm"> 
+        <!-- <user name="yourUserName" password="" />  --> 
+    </basicRegistry>
+    
+    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpEndpoint id="defaultHttpEndpoint"
+				  host="*" httpPort="9080" httpsPort="9443" />
+                  
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
+	  <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+		  <classloader delegation="parentLast" />
+    </application>
+	
+	<!-- <keyStore id="defaultKeyStore" password="idaAdmin" /> -->
+
+  <!-- Shared libraries
+    https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/cwlp_sharedlibrary.html 
+    -->
+  <!-- JNDI data source confiduration -->
+  <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
+  
+  <library id="DatabaseLib">
+      <fileset dir="<LIBERTY_HOME>/wlp/usr/shared/config/lib/global" includes="*.jar"/>
+  </library>
+  
+  <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
+          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="DatabaseLib"/>
+    <properties databaseName="<DATABASE_NAME>" 
+                serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>" 
+                user="<USER_NAME>" password="<PASSWORD>"/>
+  </dataSource>    
 
 </server>
 ```
@@ -211,7 +307,11 @@ cd /opt/ibm/bpm/wlp/bin
 
 4\. Put the ida-web.war in the /opt/ibm/bpm/wlp/usr/servers/was-liberty/apps
 
-5\. Edit the server.xml, please update the fields: host, httpPort and httpsPort, for example: 
+5\. Edit the server.xml. 
+
+Please update the fields: host, httpPort and httpsPort, for example: 
+
+For example (IDA v2.7.x):
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -260,6 +360,76 @@ cd /opt/ibm/bpm/wlp/bin
 
 </server>
 ```
+
+Please update the fields host, httpPort and httpsPort, library and dataSource.
+
+For example (IDA v3.x):
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="new server">
+
+    <!-- Enable features -->
+    <featureManager>
+        <feature>servlet-3.1</feature>
+        <feature>ssl-1.0</feature>
+        <feature>websocket-1.1</feature>
+        <feature>jdbc-4.2</feature>
+        <feature>jndi-1.0</feature>
+    </featureManager>
+
+    <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
+    
+    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an 
+         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element. 
+         Then uncomment the keyStore element. -->
+    
+    <keyStore id="defaultKeyStore" password="idaAdmin" />
+   
+    <webContainer invokeFlushAfterService="false"/>
+    
+    <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
+        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password, 
+        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element. 
+        Then uncomment the user element. -->
+    <basicRegistry id="basic" realm="BasicRealm"> 
+        <!-- <user name="yourUserName" password="" />  --> 
+    </basicRegistry>
+    
+    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpEndpoint id="defaultHttpEndpoint"
+				  host="*" httpPort="9080" httpsPort="9443" />
+                  
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/> 
+	  <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+		  <classloader delegation="parentLast" />
+    </application>
+	
+	<!-- <keyStore id="defaultKeyStore" password="idaAdmin" /> -->
+
+  <!-- Shared libraries
+    https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/cwlp_sharedlibrary.html 
+    -->
+  <!-- JNDI data source confiduration -->
+  <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
+  
+  <library id="DatabaseLib">
+      <fileset dir="<LIBERTY_HOME>/wlp/usr/shared/config/lib/global" includes="*.jar"/>
+  </library>
+  
+  <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
+          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="DatabaseLib"/>
+    <properties databaseName="<DATABASE_NAME>" 
+                serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>" 
+                user="<USER_NAME>" password="<PASSWORD>"/>
+  </dataSource>    
+
+</server>
+```
+
 
 **Create a Liberty profile server from websphere console page**
 
