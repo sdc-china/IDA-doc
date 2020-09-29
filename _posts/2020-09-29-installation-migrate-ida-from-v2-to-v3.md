@@ -105,11 +105,13 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 
 ## 2.5 Please copy you database driver to the folder according the configuration in server.xml.
 
-## 2.6 Replace ida-web.war and Restart your server.
+## 2.6 Execute migrate-<DATABASE_TYPE>-v2.7.x-v3.0.0.sql
 
-## 2.7 Please refer to 1.6 to migrate conf/ida.properties old values to 'Settings' page
+## 2.7 Replace ida-web.war and Restart your server.
 
-## 2.8 Restart IDA server to make your changes effective.
+## 2.8 Please refer to 1.6 to migrate conf/ida.properties old values to 'Settings' page
+
+## 2.9 Restart IDA server to make your changes effective.
 
 
 
