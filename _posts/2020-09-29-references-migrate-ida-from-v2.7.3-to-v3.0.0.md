@@ -43,52 +43,65 @@ For example:
 ./server stop SERVER_NAME
 ```
 
-## 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v3.0.0.sql
+## 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.1-v3.0.0.sql
 
 ## 1.5 Replace ida-web.war and Restart your server.
 **Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
 
 ## 1.6 Migrate the values form your old conf/ida.properties to 'Settings' page. The below table lists all the filed need to be migrated:
 
-|conf/ida.properties | Settings page|
+![][General]
+
+| Settings -> General | conf/ida.properties |
 --- | ---
-server.host | Removed
-server.servlet.context-path | Removed
-http.port | Removed
-https.port | Removed
-jasypt.encryptor.password | Removed
-event_type  | Removed
-track_serviceflow | Removed
-engine-config.connection-timeout| Test -> Connection Timeout(seconds)
-engine-config.wait-timeout | Test -> Wait Timeout(seconds)
-engine-config.default-retry-times | Test -> Default Retry Times
-engine-config.default-retry-interval | Test -> Default Retry Interval(seconds)
-engine-config.data-dir | Test -> Data Path
-engine-config.installation-package-remote-dir | Pipeline -> Installation Package Remote Dir
-smtp.host | Pipeline -> Host
-smtp.port | Pipeline -> Port
-email.from | Pipeline -> Sender Email
-deployment.timeout | Pipeline -> Deployment Timeout(seconds)
-deployment.interval | Pipeline -> Deployment Check Interval(seconds)
-loggerLevel | General -> Trace Level
-checkstyle.engine | Checkstyle -> Engine
-resUser | Checkstyle -> Decision Server Username
-resPassword | Checkstyle -> Decision Server Password
-resUrl | Checkstyle -> Decision Server URL
-resPort | Checkstyle -> Decision Server Port
-restUrl | Checkstyle -> Rest Url
-enable_case_history | Test -> Enable Test Case History
-max_case_history | Test -> Max Number of Test Case History
-default_total_case | Test -> Threshold of New Test Case
-ldap.enable | General -> Enable LDAP Authentication
-ldap.url | General -> Url
-ldap.username | General -> User Name
-ldap.password | General -> Password
-ldap.basedn | General -> Base DN
-ldap.user.filter | General -> User Filter
-ldap.default.role | General -> Default Role
-ldap.username.case-insensitive | General -> User Name Case Insensitive
-pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Snapshot(seconds)
+General -> Trace Level | loggerLevel 
+General -> Enable LDAP Authentication | ldap.enable 
+General -> Url | ldap.url 
+General -> User Name ldap.username 
+General -> Password | ldap.password 
+General -> Base DN | ldap.basedn 
+General -> User Filter | ldap.user.filter 
+General -> Default Role | ldap.default.role 
+General -> User Name Case Insensitive | ldap.username.case-insensitive 
+
+![][Test]
+| Settings -> Test | conf/ida.properties |
+--- | ---
+
+Test -> Connection Timeout(seconds) engine-config.connection-timeout| 
+Test -> Wait Timeout(seconds) engine-config.wait-timeout 
+Test -> Default Retry Times | engine-config.default-retry-times 
+Test -> Default Retry Interval(seconds) | engine-config.default-retry-interval
+Test -> Data Path | engine-config.data-dir
+Test -> Enable Test Case History | enable_case_history
+Test -> Max Number of Test Case History | max_case_history
+Test -> Threshold of New Test Case | default_total_case
+
+![][Checkstyle]
+
+| Settings -> Checkstyle | conf/ida.properties |
+--- | ---
+
+Checkstyle -> Engine | checkstyle.engine
+Checkstyle -> Decision Server Username | resUser
+Checkstyle -> Decision Server Password | resPassword
+Checkstyle -> Decision Server URL | resUrl
+Checkstyle -> Decision Server Port | resPort
+Checkstyle -> Rest Url | restUrl
+
+![][Pipeline]
+
+| Settings -> Pipeline | conf/ida.properties |
+--- | ---
+Pipeline -> Installation Package Remote Dir | engine-config.installation-package-remote-dir
+Pipeline -> Host | smtp.host
+Pipeline -> Port | smtp.port
+Pipeline -> Sender Email | email.from
+Pipeline -> Deployment Timeout(seconds) | deployment.timeout
+Pipeline -> Deployment Check Interval(seconds) | deployment.interval
+Pipeline -> Interval for Trigger by New Snapshot(seconds) | pipeline.snapshot.trigger.interval
+
+
 
 ## 1.7 Restart IDA server to make your changes effective.
 
@@ -107,7 +120,7 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 
 ## 2.5 Please copy you database driver to the folder according the library field configuration in server.xml.
 
-## 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v3.0.0.sql
+## 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.1-v3.0.0.sql
 
 ## 2.7 Replace ida-web.war and Restart your liberty server.
 
@@ -122,3 +135,7 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 [1]: ../installation/installation-ida-repacking.html
 [2]: ../installation/installation-ida-installing.html
 [3]: ../references/references-migrating-and-updating-your-application.html
+[General]: ../references/General.jpg
+[Test]: ../references/Test.jpg
+[Pipeline]: ../references/Pipeline.jpg
+[Checkstyle]: ../references/Checkstyle.jpg
