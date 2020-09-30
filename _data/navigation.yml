@@ -146,7 +146,7 @@ docs:
         url: /references/references-apis.html
       - title: "Migrating and updating IDA Application"
         url: /references/references-migrating-and-updating-your-application.html
-      - title: "Migrating IDA from v2.7.x to v3.0.0"
+      - title: "Migrating IDA from v2.7.3 to v3.0.0"
         url: /references/references-migrate-ida-from-v2.7.3-to-v3.0.0.html
       - title: "Samples"
         url: /references/references-samples.html

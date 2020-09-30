@@ -52,12 +52,12 @@ For example:
 
 ![][General]
 
-| Settings -> General | conf/ida.properties |
+Settings -> General | conf/ida.properties
 --- | ---
 General -> Trace Level | loggerLevel 
 General -> Enable LDAP Authentication | ldap.enable 
 General -> Url | ldap.url 
-General -> User Name ldap.username 
+General -> User Name | ldap.username 
 General -> Password | ldap.password 
 General -> Base DN | ldap.basedn 
 General -> User Filter | ldap.user.filter 
@@ -65,11 +65,11 @@ General -> Default Role | ldap.default.role
 General -> User Name Case Insensitive | ldap.username.case-insensitive 
 
 ![][Test]
-| Settings -> Test | conf/ida.properties |
---- | ---
 
-Test -> Connection Timeout(seconds) engine-config.connection-timeout| 
-Test -> Wait Timeout(seconds) engine-config.wait-timeout 
+Settings -> Test | conf/ida.properties
+--- | ---
+Test -> Connection Timeout(seconds) | engine-config.connection-timeout
+Test -> Wait Timeout(seconds) | engine-config.wait-timeout 
 Test -> Default Retry Times | engine-config.default-retry-times 
 Test -> Default Retry Interval(seconds) | engine-config.default-retry-interval
 Test -> Data Path | engine-config.data-dir
@@ -79,9 +79,8 @@ Test -> Threshold of New Test Case | default_total_case
 
 ![][Checkstyle]
 
-| Settings -> Checkstyle | conf/ida.properties |
+Settings -> Checkstyle | conf/ida.properties
 --- | ---
-
 Checkstyle -> Engine | checkstyle.engine
 Checkstyle -> Decision Server Username | resUser
 Checkstyle -> Decision Server Password | resPassword
@@ -91,7 +90,7 @@ Checkstyle -> Rest Url | restUrl
 
 ![][Pipeline]
 
-| Settings -> Pipeline | conf/ida.properties |
+Settings -> Pipeline | conf/ida.properties
 --- | ---
 Pipeline -> Installation Package Remote Dir | engine-config.installation-package-remote-dir
 Pipeline -> Host | smtp.host
