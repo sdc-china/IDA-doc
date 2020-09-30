@@ -95,7 +95,7 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 
 ## 2.1 Please refer to section 1.1 to edit [IDA_HOME]/conf/**ida.properties** under **conf** folder.
 
-**Note:** Please comment spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password and jasypt.encryptor.password fileds.
+**Notes:** Please comment spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password and jasypt.encryptor.password fileds.
 
 ## 2.2 Please refer to 1.2 to repack ida-web.war
 
