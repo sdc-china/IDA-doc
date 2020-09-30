@@ -101,7 +101,6 @@ Pipeline -> Deployment Check Interval(seconds) | deployment.interval
 Pipeline -> Interval for Trigger by New Snapshot(seconds) | pipeline.snapshot.trigger.interval
 
 
-
 ## 1.7 Restart IDA server to make your changes effective.
 
 # 2. Migrating IDA with a JNDI datasource connection
