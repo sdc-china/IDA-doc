@@ -134,7 +134,7 @@ Pipeline -> Interval for Trigger by New Snapshot(seconds) | pipeline.snapshot.tr
 [1]: ../installation/installation-ida-repacking.html
 [2]: ../installation/installation-ida-installing.html
 [3]: ../references/references-migrating-and-updating-your-application.html
-[General]: ../references/General.jpg
-[Test]: ../references/Test.jpg
-[Pipeline]: ../references/Pipeline.jpg
-[Checkstyle]: ../references/Checkstyle.jpg
+[General]: ../images/references/General.jpg
+[Test]: ../images/references/Test.jpg
+[Pipeline]: ../images/references/Pipeline.jpg
+[Checkstyle]: ../images/references/Checkstyle.jpg
