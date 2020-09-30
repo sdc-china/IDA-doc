@@ -164,7 +164,7 @@ For example:
   
   <!-- Mysql Example-->
   <library id="MYSQLLib">
-      <fileset dir="${shared.config.dir}/lib/global" includes="*mysql-connector-java-8.0.18.jar"/>
+      <fileset dir="${shared.config.dir}/lib/global" includes="mysql-connector-java-8.0.18.jar"/>
   </library>
   
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
@@ -446,7 +446,7 @@ For example (IDA v3.x):
   
   <!-- Mysql Example-->
   <library id="MYSQLLib">
-      <fileset dir="${shared.config.dir}/lib/global" includes="*mysql-connector-java-8.0.18.jar"/>
+      <fileset dir="${shared.config.dir}/lib/global" includes="mysql-connector-java-8.0.18.jar"/>
   </library>
   
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
