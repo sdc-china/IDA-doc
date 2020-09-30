@@ -1,12 +1,12 @@
 ---
-title: "Migrate IDA from v2.7.x to v3.0.0"
-category: installation
+title: "Migrating IDA from v2.7.x to v3.0.0"
+category: references
 date: 2020-09-29 15:17:55
 last_modified_at: 2020-09-30 09:17:55
 order: 10
 ---
 
-# 1. Migrate IDA with a datasource connection
+# 1. Migrating IDA with a datasource connection
 
 ## 1.1 Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
 
@@ -46,6 +46,7 @@ For example:
 ## 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v3.0.0.sql
 
 ## 1.5 Replace ida-web.war and Restart your server.
+**Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
 
 ## 1.6 Migrate the values form your old conf/ida.properties to 'Settings' page. The below table lists all the filed need to be migrated:
 
@@ -91,13 +92,14 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 
 ## 1.7 Restart IDA server to make your changes effective.
 
-# 2. Migrate IDA with a JNDI datasource connection
+# 2. Migrating IDA with a JNDI datasource connection
 
 ## 2.1 Please refer to section 1.1 to edit [IDA_HOME]/conf/**ida.properties** under **conf** folder.
 
 **Notes:** Please comment spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password and jasypt.encryptor.password fileds.
 
 ## 2.2 Please refer to 1.2 to repack ida-web.war
+**Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
 
 ## 2.3 Please refer to 1.3 to stop your running IDA Application
 
@@ -119,3 +121,4 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 
 [1]: ../installation/installation-ida-repacking.html
 [2]: ../installation/installation-ida-installing.html
+[3]: ../references/references-migrating-and-updating-your-application.html

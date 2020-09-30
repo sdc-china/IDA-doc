@@ -2,7 +2,7 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2020-09-29 21:37:00
+last_modified_at: 2020-09-30 9:37:00
 order: 4
 ---
 
@@ -158,20 +158,48 @@ For example:
     https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/cwlp_sharedlibrary.html 
     -->
   <!-- JNDI data source confiduration -->
+  
+  
   <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
   
-  <library id="DatabaseLib">
-      <fileset dir="<LIBERTY_HOME>/wlp/usr/shared/config/lib/global" includes="*.jar"/>
+  <!-- Mysql Example-->
+  <library id="MYSQLLib">
+      <fileset dir="${shared.config.dir}/lib/global" includes="*mysql-connector-java-8.0.18.jar"/>
   </library>
   
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
-    <jdbcDriver libraryRef="DatabaseLib"/>
+    <jdbcDriver libraryRef="MYSQLLib"/>
     <properties databaseName="<DATABASE_NAME>" 
                 serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>" 
                 user="<USER_NAME>" password="<PASSWORD>"/>
-  </dataSource>    
+  </dataSource>
+  <!-- Mysql Example End-->
+
+  <!-- DB2 Example-->
+  <library id="DB2Lib">
+      <fileset dir="${shared.config.dir}/lib/global" includes="db2jcc4-11.1.jar"/>
+  </library>
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DB2DataSource"
+          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="DB2Lib"/>
+    <properties.db2.jcc databaseName="${env.DATABASE_NAME}" 
+                serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}" 
+                user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
+  </dataSource>
+  <!-- DB2 Example End-->
+
+  <!-- Oracle Example-->
+  <library id="ORACLELib">
+      <fileset dir="${shared.resource.dir}" includes="ojdbc8-12.2.0.1.jar"/>
+  </library>
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="OracleDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="ORACLELib"/>
+    <properties.oracle url="${env.DATABASE_URL}"
+          user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
+  </dataSource>
+  <!-- Oracle Example END-->
 
 </server>
 ```
@@ -412,20 +440,48 @@ For example (IDA v3.x):
     https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/cwlp_sharedlibrary.html 
     -->
   <!-- JNDI data source confiduration -->
+  
+  
   <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
   
-  <library id="DatabaseLib">
-      <fileset dir="<LIBERTY_HOME>/wlp/usr/shared/config/lib/global" includes="*.jar"/>
+  <!-- Mysql Example-->
+  <library id="MYSQLLib">
+      <fileset dir="${shared.config.dir}/lib/global" includes="*mysql-connector-java-8.0.18.jar"/>
   </library>
   
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
-    <jdbcDriver libraryRef="DatabaseLib"/>
+    <jdbcDriver libraryRef="MYSQLLib"/>
     <properties databaseName="<DATABASE_NAME>" 
                 serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>" 
                 user="<USER_NAME>" password="<PASSWORD>"/>
-  </dataSource>    
+  </dataSource>
+  <!-- Mysql Example End-->
+
+  <!-- DB2 Example-->
+  <library id="DB2Lib">
+      <fileset dir="${shared.config.dir}/lib/global" includes="db2jcc4-11.1.jar"/>
+  </library>
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DB2DataSource"
+          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="DB2Lib"/>
+    <properties.db2.jcc databaseName="${env.DATABASE_NAME}" 
+                serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}" 
+                user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
+  </dataSource>
+  <!-- DB2 Example End-->
+
+  <!-- Oracle Example-->
+  <library id="ORACLELib">
+      <fileset dir="${shared.resource.dir}" includes="ojdbc8-12.2.0.1.jar"/>
+  </library>
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="OracleDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="ORACLELib"/>
+    <properties.oracle url="${env.DATABASE_URL}"
+          user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
+  </dataSource>
+  <!-- Oracle Example END-->
 
 </server>
 ```
