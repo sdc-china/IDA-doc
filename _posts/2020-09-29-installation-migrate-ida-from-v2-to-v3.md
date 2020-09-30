@@ -1,12 +1,10 @@
 ---
-title: "Migrate IDA from V2.7.x to v3.0.0"
+title: "Migrate IDA from v2.7.x to v3.0.0"
 category: installation
 date: 2020-09-29 15:17:55
-last_modified_at: 2020-09-29 15:17:55
+last_modified_at: 2020-09-30 09:17:55
 order: 10
 ---
-
-IDA support JNDI and Datasource to connect a database from v3.0.0.
 
 # 1. Migrate IDA with a datasource connection
 
@@ -45,7 +43,7 @@ For example:
 ./server stop SERVER_NAME
 ```
 
-## 1.4 Execute migrate-<DATABASE_TYPE>-v2.7.x-v3.0.0.sql
+## 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v3.0.0.sql
 
 ## 1.5 Replace ida-web.war and Restart your server.
 
@@ -97,17 +95,19 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 
 ## 2.1 Please refer to section 1.1 to edit [IDA_HOME]/conf/**ida.properties** under **conf** folder.
 
+**Note:** Please comment spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password and jasypt.encryptor.password fileds.
+
 ## 2.2 Please refer to 1.2 to repack ida-web.war
 
 ## 2.3 Please refer to 1.3 to stop your running IDA Application
 
 ## 2.4 Please refer to the doc [Installing IDA Application][2] to config the server.xml file.
 
-## 2.5 Please copy you database driver to the folder according the configuration in server.xml.
+## 2.5 Please copy you database driver to the folder according the library field configuration in server.xml.
 
-## 2.6 Execute migrate-<DATABASE_TYPE>-v2.7.x-v3.0.0.sql
+## 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v3.0.0.sql
 
-## 2.7 Replace ida-web.war and Restart your server.
+## 2.7 Replace ida-web.war and Restart your liberty server.
 
 ## 2.8 Please refer to 1.6 to migrate conf/ida.properties old values to 'Settings' page
 
@@ -118,4 +118,4 @@ pipeline.snapshot.trigger.interval | Pipeline -> Interval for Trigger by New Sna
 
 
 [1]: ../installation/installation-ida-repacking.html
-[2]: ..installation/installation-ida-installing.html
+[2]: ../installation/installation-ida-installing.html
