@@ -574,10 +574,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 To make the plug-in work, you must login IDA server in the plugin login page.
 
 - Click the IDA plugin icon in the browser extension toolbar.
-- Enter the IDA server url, username and password
-  the IDA URL: https://localhost:8443/ida
-  the username: the IDA login username
-  the password: the IDA login password.
+- Enter the IDA server url, username and password.  
   ![][plugin_login]
 - Click "Sign in" button, then you will see the screenshot as below.
   ![][plugin_welcome]
