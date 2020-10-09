@@ -577,11 +577,11 @@ To make the plug-in work, you must login IDA server in the plugin login page.
 
 - Enter the IDA server url, username and password.
   
-      ![][plugin_login]
-	  
+  ![][plugin_login]
+  
 - Click "Sign in" button, then you will see the screenshot as below.
 
-      ![][plugin_welcome]
+  ![][plugin_welcome]
 
 **Notes**
 
