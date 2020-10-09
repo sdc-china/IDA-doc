@@ -85,6 +85,35 @@ Pls make sure the added user  exist in your selected BPM server.Also You need to
 
 What's more, you can also edit a bpm user in a similar way to editing a user.
 
+### Add Case Object Store configuration to a BPM server
+  1. Click **Case Object Store** icon on the right of the BPM server. Then you can see then Case Object Store configuration list of the server.
+
+     ![][administrator_edit_case_object_store]
+
+  2. Click ![][add_icon] icon which is on the right of **Case Object Store**. Then fill out the form below to add a Case Object Store configuration for the server.
+
+     ![][administrator_case_object_store]           
+
+	 |   Field                | Description                                                             |
+     | ---------------------- |-------------------------------------------------------------------------|                                          
+     | Server                 | the display name of BAW server                                          |  
+     | Display Name           | the display name of Case Object Store configuration                     |                  
+     | Design Object Store    | the case design object store of BAW server                              |                                   
+     | Target Object Store    | the case target object store of BAW server                              |                         
+     | Connection Point       | the case connection point of BAW server                            |                              
+
+
+     After adding Case Object Store, you can see the Case Object Store configuration list for this BPM server.
+
+     ![][administrator_case_object_store_list]    
+     
+**Notes:**   
+Pls make sure the added Case Object Store configurations exist in your selected BPM server. Also You need to well define the **Display name** of the Case Object Store.You can choose the **Case Object Store** display name to choose Case Object Store configuration when you create a test project.
+
+  ![][administrator_case_object_store_project] 
+  
+What's more, you can also edit a case object store configuration in a similar way to editing a user.
+
 [administrator_bpmserver]: ../images/administrator/administrator_bpmserver.png
 [administrator_bpmoc]: ../images/administrator/bpmoc.png
 [administrator_bpmuser]: ../images/administrator/administrator_bpmuser.png
@@ -95,3 +124,7 @@ What's more, you can also edit a bpm user in a similar way to editing a user.
 [administrator_test_bpm_server]: ../images/administrator/administrator_test_bpm_server.png
 [administrator_edit_bpm_user]: ../images/administrator/administrator_edit_bpm_user.png
 [connected_server_name]: ../images/administrator/connected_server_name.png
+[administrator_edit_case_object_store]: ../images/administrator/administrator_edit_case_object_store.png
+[administrator_case_object_store]: ../images/administrator/administrator_case_object_store.png
+[administrator_case_object_store_list]: ../images/administrator/administrator_case_object_store_list.png
+[administrator_case_object_store_project]: ../images/administrator/administrator_case_object_store_project.png
