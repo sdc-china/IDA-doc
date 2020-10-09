@@ -671,6 +671,8 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [ida_toolkit_search]: ../images/install/ida_toolkit_search.PNG
    [ida_toolkit_copy]: ../images/install/ida_toolkit_copy.png
    [ida_toolkit_copy_to_item]: ../images/install/ida_toolkit_copy_to_item.png
+   [plugin_welcome]: ../images/install/plugin_welcome.png
+   [plugin_login]: ../images/install/plugin_login.png
   
 
 
