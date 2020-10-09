@@ -571,12 +571,16 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 
 ## Plug-in Configuration
 
-If you want to use the checkstyle and codereivew feature on web PD, then you need to set the IDA url and user credentials for the plug-in options. 
-the IDA URL: https://9.30.255.220:9443/IDA   
-the username: the IDA login username 
-the password: the IDA login password.   
+To make the plug-in work, you must login IDA server in the plugin login page.
 
-   ![][IDAOption]
+- Click the IDA plugin icon in the browser extension toolbar.
+- Enter the IDA server url, username and password
+  the IDA URL: https://localhost:8443/ida
+  the username: the IDA login username
+  the password: the IDA login password.
+  ![][plugin_login]
+- Click "Sign in" button.
+  ![][plugin_welcome]
 
 **Notes**
 
