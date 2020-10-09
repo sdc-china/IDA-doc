@@ -562,12 +562,13 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 
 ## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
-- Click "Add to Chrome" button to install plug-in
+- Click "Add to Chrome" button to install plug-in.
+- The Chrom plugin offline installation package. [IDA-1.49.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-1.49.crx)
 
 ## Firefox plugin
-- Download firefox plugin [ida-1.49-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.49-fx.xpi)
-- Drag the "ida-1.49-fx.xpi" file into firefox window
-- Click "Add" button
+- Download Firefox plugin [ida-1.49-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.49-fx.xpi)
+- Drag the "ida-1.49-fx.xpi" file into firefox window.
+- Click "Add" button.
 
 ## Plug-in Configuration
 
@@ -583,10 +584,6 @@ To make the plug-in work, you must login IDA server in the plugin login page.
 
   ![][plugin_welcome]
 
-**Notes**
-
-If you want to install chrome plug-in offline,you can use online https://chrome-extension-downloader.com/  tools,then enter the url
-https://chrome.google.com/webstore/detail/ida/mjfjiglcnojlicbkomcoohndhpceflbp to download crx ,then install crx.  
 
 [toolkit]: ../images/install/toolkit.png 
 [default_toolkit_setting]: ../images/install/default_toolkit_setting.png  
