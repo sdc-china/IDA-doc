@@ -26,6 +26,7 @@ order: 10
      Project Description   |Description of project
      Visibility            |Team of project
      Server                |Server environment
+     Case Object Store     |Server Case Object Store configuration
      Process App           |Process apps of the selected server
      Toolkit               |Toolkits of  selected server
      Trace                 |The branch of selected process app or toolkit

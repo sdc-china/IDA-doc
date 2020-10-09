@@ -12,7 +12,7 @@ order: 20
 
 1. In the left-side menu bar, click **+** button on the right of project name.
 
-2. Click **Artifact Type** field, you can see three kinds of artifacts: Process, User Interface and System Service. Choose **User Interface** or **System Service** to generate a unit test case and choose **Process** to generate a BPD test case.
+2. Click **Artifact Type** field, you can see five kinds of artifacts: Process, User Interface, Service, Case Type and Build from Scratch. Choose **User Interface** or **Service** to generate a unit test case, choose **Process** to generate a BPD test case, choose **Case Type** to generate a case test case and choose **Build from Scratch** to generate an empty test case folder.
 
    ![][test_unit_test_add_form]
    
