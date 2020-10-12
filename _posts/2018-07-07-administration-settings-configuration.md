@@ -36,7 +36,7 @@ You can runtime update k8s configuration in IDA, after that you can use the new 
   1. Click Administrator tab, then switch to Settings tab.
   2. Scroll down to K8s tab and fill out form according to below table:
 
-     ![][administrator_k8s_setting]women 
+     ![][administrator_k8s_setting]
     
      |   Field                | Description                                                         |
      | -------------------|---------------------------                                          |
