@@ -50,23 +50,23 @@ You can runtime update k8s configuration in IDA, after that you can use the new 
      ![][administrator_k8s_setting_sample]
 
   3. How to create service accound and get its token:
-    
-    After login openshift, run below commands.
 
-    ```
-    kubectl -n kube-system create serviceaccount ida-service-account
-    kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
-    TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
-    TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
-    kubectl config set-credentials ida-service-account --token=$TOKEN
-    kubectl config set-context --current --user=ida-service-account
-    ```
-    
-    Check if the current user is added successfully or not, and get the token for the newly added user:
+     After login openshift, run below commands.
 
-    ```
-    oc config view
-    ```
+     ```
+     kubectl -n kube-system create serviceaccount ida-service-account
+     kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
+     TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
+     TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
+     kubectl config set-credentials ida-service-account --token=$TOKEN
+     kubectl config set-context --current --user=ida-service-account
+     ```
+
+     Check if the current user is added successfully or not, and get the token for the newly added user:
+     
+     ```
+     oc config view
+     ```
 
 
 **Notes:**
