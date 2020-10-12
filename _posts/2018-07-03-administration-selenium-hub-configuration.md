@@ -2,7 +2,7 @@
 title: "Selenium Hub configuration"
 category: administration
 date: 2018-10-20 15:17:55
-last_modified_at: 2019-10-12 16:20:00
+last_modified_at: 2020-10-12 16:20:00
 order: 3
 ---
 
