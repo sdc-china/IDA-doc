@@ -13,7 +13,7 @@ order: 3
 ### Add selenium hub
   1. Click **Administrator** tab, then switch to  **Selemium Hub Configuration** table to manage hubs.  
   2. Click ![][add_icon] icon which is on the right of **Users manager** to add new users.
-  3. Fill out the form below. Then click **Create** button.
+  3. Fill out the form below to add **Standalone** selenium grid for IDA. Then click **Create** button.
 
 
      ![][administrator_hub]
@@ -23,7 +23,23 @@ order: 3
      | Server Name            | Hub name                                                            |  
      | Server URL             | Hub URL                                                        |
      | Browser                | Support Firefox, Chrome and IE                                      |  
-     | Configuration          | Customize browser options for selenium
+     | Configuration          | Customize browser options for selenium                              |
+
+  4. Fill out the form below to create **Containerized** selenium grid for IDA. Then click **Create** button.
+
+     ![][administrator_hub_containerized]
+
+     |   Field                | Description                                                         |
+     | -------------------    |---------------------------                                          |
+     | Server Name            | Hub name                                                            |  
+     | Browser                | Support Firefox and Chrome                                          |
+     | Grid New Session Wait Timeout | How long a new test waiting for a node to become available (value in millisecond).|  
+     | Grid Browser Timeout | How long the browser is allowed to hang(value in seconds).|
+     | Grid Timeout | How long the client is allowed to be gone before the session is reclaimed(value in seconds).|
+     | Node Replicas Number | How many nodes you need to create for this hub.|
+     | Configuration          | Customize browser options for selenium                              |
+
+
 
 **Notes:**
 You can customize the selenium configuration based on the template.Currenctly we support below types of configuration.  
@@ -68,6 +84,7 @@ arguments:
 
 
 [administrator_hub]: ../images/administrator/administrator_hub.png
+[administrator_hub_containerized]: ../images/administrator/administrator_hub_containerized.png
 [Post Installation Setup]: ../installation/installlation-post-installation.html
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_edit_selenium_grid]: ../images/administrator/administrator_edit_selenium_grid.png
