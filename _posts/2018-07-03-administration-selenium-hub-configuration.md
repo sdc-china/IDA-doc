@@ -2,7 +2,7 @@
 title: "Selenium Hub configuration"
 category: administration
 date: 2018-10-20 15:17:55
-last_modified_at: 2019-07-29 16:20:00
+last_modified_at: 2019-10-12 16:20:00
 order: 3
 ---
 
@@ -39,7 +39,7 @@ order: 3
      | Node Replicas Number | How many nodes you need to create for this hub.|
      | Configuration          | Customize browser options for selenium                              |
 
-
+     What's more, the option **Containerized** is unavailable by default. You need to [configure Kubernates Setting] before creating this kind of selenium grid. 
 
 **Notes:**
 You can customize the selenium configuration based on the template.Currenctly we support below types of configuration.  
@@ -86,6 +86,7 @@ arguments:
 [administrator_hub]: ../images/administrator/administrator_hub.png
 [administrator_hub_containerized]: ../images/administrator/administrator_hub_containerized.png
 [Post Installation Setup]: ../installation/installlation-post-installation.html
+[configure Kubernates Setting]: ../administration/administration-settings-configuration.html#set-k8s-configuration
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_edit_selenium_grid]: ../images/administrator/administrator_edit_selenium_grid.png
 [administrator_selenium_grid_test]: ../images/administrator/administrator_test_selenium_grid.png
