@@ -41,7 +41,7 @@ order: 1
 1. FAQ: Does IDA support heritage coaches which is wildly used in BPM v8.x?
     - Answer: YES.
 1. FAQ: Does IDA support BPMoC?
-    - Answer: YES. But each test case need to login BPMOC in advance. That's to say, each test case needs to insert a command LoginBPMOC as the first step.
+    - Answer: YES. But each test case needs to insert a command LoginBPMOC as the first step because the BPMOC environment needs to login before visiting.
 ![][loginbpmoc]
 
 1. FAQ: Can a sample report be shared with us so we want to look at it more closely off-line to understand what checkstyle can analysis?
