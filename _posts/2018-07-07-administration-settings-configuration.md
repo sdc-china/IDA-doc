@@ -12,11 +12,11 @@ order: 15
 
 In this task, you can runtime update some settings values in IDA.
 
- ![][administrator_settings]
-
 ### Set log level
 
 You can runtime update log level in IDA, after that you can see the logs in real time based on the log level changes.
+
+  ![][administrator_settings]
 
   1. Click Administrator tab, then switch to Settings tab.
   2. Change the log level and click  save button to save the log configuration. In default it have five levels (TRACE, DEBUG,WARN,INFO,ERROR).
