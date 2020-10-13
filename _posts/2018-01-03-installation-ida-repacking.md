@@ -37,7 +37,7 @@ This properties file contains three main sections. Please set spring.datasource.
 *  **jasypt.encryptor.password** : Jasypt secret key for Encrypt datasource passwords
 
 
-### Repacking IDA-web with configuration
+## Repacking IDA-web with configuration
 
 The purpose of repackage  is to update your application-product.yaml in the war to make sure it loads the recent configuration.Once all the properties in [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
 
@@ -48,10 +48,10 @@ Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you w
 ## Properties Configuration
 
 
-### Configure IDA properties 
- 
-Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties file contains three main sections.
+### Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
 
+This properties file contains three main sections.
+ 
 **application configuration**
    
 *  **spring.datasource.username** : Database connection username  
@@ -188,7 +188,7 @@ You can uncomment DB2 property configuration and comment MySQL property configur
 
 If you want your IDA support Latin alphabet in page,you need to add **useUnicode=yes&characterEncoding=UTF-8** at the end of jdbc url.
 
-### Repacking IDA-web with configuration
+## Repacking IDA-web with configuration
 
 The purpose of repackage  is to update your application-product.yaml in the war to make sure it loads the recent configuration.Once all the properties in [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
 

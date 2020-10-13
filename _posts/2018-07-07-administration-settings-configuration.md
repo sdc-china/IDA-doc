@@ -8,26 +8,16 @@ order: 15
 
 # Settings configuration
 ***
-### About this task
 
-In this task, you can runtime update some settings values in IDA.
 
-### Set log level
+## General configuration
 
 You can runtime update log level in IDA, after that you can see the logs in real time based on the log level changes.
 
-  ![][administrator_settings]
-
-  1. Click Administrator tab, then switch to Settings tab.
-  2. Change the log level and click  save button to save the log configuration. In default it have five levels (TRACE, DEBUG,WARN,INFO,ERROR).
-  3. After that you can find the log level is changed in the console, log file etc.  
-
-### Set Interval for Trigger by New Snapshot
-
-You can runtime update the time interval(in seconds) for the background job to query for new snapshots on PC servers.
-
-  1. Click Administrator tab, then switch to Settings tab.
-  2. Change the Interval for Trigger by New Snapshot and click  save button to save the value. The default value is 300 seconds.
+![][General]
+Field | Description
+--- | ---
+Trace Level| The value of trace level, in default it have five levels (TRACE, DEBUG,WARN,INFO,ERROR).
 
 ## Set K8s Configuration
 
@@ -75,3 +65,4 @@ The settings values are saved in database so if you restart the server, the conf
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
+[General]: ../images/references/General.jpg
