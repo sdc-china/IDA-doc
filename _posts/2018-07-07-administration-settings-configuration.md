@@ -49,7 +49,7 @@ You can runtime update k8s configuration in IDA, after that you can use the new 
 
      ![][administrator_k8s_setting_sample]
 
-  3. How to create service accound and get its token:
+  3. How to create service account and get its token:
 
      After login openshift, run below commands.
 
