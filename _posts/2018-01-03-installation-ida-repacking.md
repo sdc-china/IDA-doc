@@ -36,6 +36,15 @@ This properties file contains three main sections. Please set spring.datasource.
 
 *  **jasypt.encryptor.password** : Jasypt secret key for Encrypt datasource passwords
 
+**Notes** 
+If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
+You can use [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generate encrypted password.    
+
+![][onlineencrypt]
+
+[onlineencrypt]: ../images/install/online.png
+
+Also you can use command line tool from [jasypt](http://www.jasypt.org/download.html) to generate.
 
 ## Repacking IDA-web with configuration
 
