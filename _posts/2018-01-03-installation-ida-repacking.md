@@ -6,12 +6,49 @@ last_modified_at: 2020-09-15 21:34:00
 order: 3
 ---
 
-# Repacking IDA Application
+# Repacking IDA v3.x Application
 ***
-### Properties Configuration
 
+
+## Properties Configuration
 
 **Configure IDA properties** 
+
+### Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
+
+This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to [Repacking IDA Application][1].
+
+**Notes:** Please comment spring.datasource.jndi-name if you do not use a JNDI datasource.
+
+**JNDI Configuration**
+
+*  **spring.datasource.jndi-name** : JNDI NAME
+
+
+**Datasource Configuration**
+
+*  **spring.datasource.driver-class-name** : Dirver Class Name
+*  **spring.datasource.url** : Datasource url
+*  **spring.datasource.username** : User Name
+*  **spring.datasource.password** : Password
+
+**Jasypt Configuration**
+
+*  **jasypt.encryptor.password** : Jasypt secret key for Encrypt datasource passwords
+
+
+### Repacking IDA-web with configuration
+
+The purpose of repackage  is to update your application-product.yaml in the war to make sure it loads the recent configuration.Once all the properties in [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
+
+Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the JAVA_HOME environment variable and make ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set , you can then execute the package shell command to repackage the **ida-web.war**.
+
+# Repacking IDA v2.x Application
+
+## Properties Configuration
+
+
+### Configure IDA properties 
  
 Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. This properties file contains three main sections.
 
@@ -140,7 +177,7 @@ ldap.username.case-insensitive: true
 
 It is only needed when you want to configure monitoring[1] to have the monitoring feature. If you don't need it, you can leave them as-is.
 
-#### Configure Database properties
+**Datasource properties configuration**
 You can uncomment DB2 property configuration and comment MySQL property configuration.
 
 ![][db2config]
