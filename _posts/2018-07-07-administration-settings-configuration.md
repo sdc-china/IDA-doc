@@ -29,7 +29,7 @@ You can runtime update the time interval(in seconds) for the background job to q
   1. Click Administrator tab, then switch to Settings tab.
   2. Change the Interval for Trigger by New Snapshot and click  save button to save the value. The default value is 300 seconds.
 
-### Set K8s Configuration
+## Set K8s Configuration
 
 You can runtime update k8s configuration in IDA, after that you can use the new k8s server on Selenium Grid Configuration. Only test for Openshift 4.3.
 
