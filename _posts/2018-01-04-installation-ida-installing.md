@@ -2,7 +2,7 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2020-09-30 9:37:00
+last_modified_at: 2020-10-19 18:12:00
 order: 4
 ---
 
@@ -584,6 +584,11 @@ To make the plug-in work, you must login IDA server in the plugin login page.
 
   ![][plugin_welcome]
 
+- If you see below sign in errors, please open the server url in your web browser to verify that IDA web can be accessed. If IDA web shows an HTTPS/SSL certifcate warning, you must accept the warning manually by clicking "Proceed to ..." and then sign in the IDA plugin.
+
+  ![][plugin_login_error]
+
+  ![][ida_web_cert_error]
 
 [toolkit]: ../images/install/toolkit.png 
 [default_toolkit_setting]: ../images/install/default_toolkit_setting.png  
@@ -671,6 +676,8 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [ida_toolkit_copy_to_item]: ../images/install/ida_toolkit_copy_to_item.png
    [plugin_welcome]: ../images/install/plugin_welcome.png
    [plugin_login]: ../images/install/plugin_login.png
+   [plugin_login_error]: ../images/install/plugin_login_error.png
+   [ida_web_cert_error]: ../images/install/ida_web_cert_error.png
   
 
 
