@@ -59,6 +59,9 @@ experimentalOptions:
 ```
 
 **Window Size**
+
+This argument only works under headless mode.
+
 ```
 arguments:
 ## Change windows szie
