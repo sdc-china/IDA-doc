@@ -563,7 +563,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 ## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-1.49.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-1.49.crx)
+- The Chrome plugin offline installation package. [IDA-1.50.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-1.50.crx)
 
 ## Firefox plugin
 - Download Firefox plugin [ida-1.50-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.50-fx.xpi)
