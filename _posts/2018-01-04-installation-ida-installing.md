@@ -566,8 +566,8 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 - The Chrome plugin offline installation package. [IDA-1.49.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-1.49.crx)
 
 ## Firefox plugin
-- Download Firefox plugin [ida-1.49-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.49-fx.xpi)
-- Drag the "ida-1.49-fx.xpi" file into firefox window.
+- Download Firefox plugin [ida-1.50-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.50-fx.xpi)
+- Drag the "ida-1.50-fx.xpi" file into firefox window.
 - Click "Add" button.
 
 ## Plug-in Configuration
