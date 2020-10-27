@@ -108,7 +108,7 @@ java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig
 
 ### Create startnode.sh
 
-Please note that I added an argument "-Dwebdriver.chrome.whitelistedIps=" that allows chrome driver to assign new port for webdriver.
+Please note that the argument **-Dwebdriver.chrome.whitelistedIps=** is added in the command line, that allows chrome driver to assign port for webdriver.
 
 ```
 java -Dwebdriver.chrome.whitelistedIps= -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
@@ -159,7 +159,7 @@ arguments:
 
 ### Chrome Selenium Grid Configuration
 
-Please note that I add another argument "--no-sandbox" for chrome, as I run chrome by root user.
+Please note that the argument **--no-sandbox** is added for chrome, which allows to run chrome by root user.
 
 ```
 ## Supports Firefox and Chrome
