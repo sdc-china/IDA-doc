@@ -66,7 +66,7 @@ docs:
         url: /test/test-case-dynamic-assignee.html
       - title: "Custom OOTB Command"
         url: /test/test-custom-ootb-command.html
-        
+
   - title: Checkstyle
     children:
       - title: "Analyze BPM projects with checkstyle"
@@ -77,7 +77,7 @@ docs:
         url: /checkstyle/checkstyle-report.html
       - title: "Deploy Checkstyle ruleset"
         url: /checkstyle/checkstyle-deploy-ruleset.html
-        
+
   - title: Snapshot Comparison
     children:
       - title: "Compare Snapshots"
@@ -154,7 +154,8 @@ docs:
         url: /references/references-best-practices.html
       - title: "Demos"
         url: /references/references-demo.html
-
+      - title: "Setup Selenium Grid on Redhat"
+        url: /references/setup-selenium-grid-redhat.html
 
   - title: "Trouble Shooting"
     children:
