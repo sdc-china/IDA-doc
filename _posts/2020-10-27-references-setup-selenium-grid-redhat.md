@@ -10,7 +10,7 @@ order: 15
 
 ## Install Latest Firefox
 
-Please note that the old version firefox installed in Redhat may not support headless well, so we'd better to install the latest firefox.
+Please note that the old version firefox installed on Redhat may not support headless well, so we'd better to install the latest firefox.
 
 ```
 sudo yum remove firefox
