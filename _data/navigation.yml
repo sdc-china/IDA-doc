@@ -155,7 +155,7 @@ docs:
       - title: "Demos"
         url: /references/references-demo.html
       - title: "Setup Selenium Grid on Redhat"
-        url: /references/setup-selenium-grid-redhat.html
+        url: /references/references-setup-selenium-grid-redhat.html
 
   - title: "Trouble Shooting"
     children:
