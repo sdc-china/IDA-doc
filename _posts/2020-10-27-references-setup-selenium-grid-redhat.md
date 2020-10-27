@@ -155,6 +155,8 @@ arguments:
 - "window-size=1920,1080"
 ```
 
+![][references-firefox-conf]
+
 ### Chrome Selenium Grid Configuration
 
 Please note that I add another argument "--no-sandbox" for chrome, as I run chrome by root user.
@@ -167,3 +169,8 @@ arguments:
 ## Change windows szie
 - "window-size=1920,1080"
 ```
+
+![][references-chrome-conf]
+
+[references-firefox-conf]: ../images/references/firefox_selenium_grid_conf.png
+[references-chrome-conf]: ../images/references/chrome_selenium_grid_conf.png
