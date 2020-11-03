@@ -108,7 +108,7 @@ For example:
 
 **Here is a sample server.xml (IDA version v3.x)**
 
-Please update the fields host, httpPort and httpsPort, library and dataSource. 
+Please update the fields host, httpPort and httpsPort, library and dataSource.  More information about configuring relational database connectivity in Liberty, please refer to [Data Source Configuration](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_dep_configuring_ds.html).
 
 For example:
 ```
@@ -184,7 +184,7 @@ For example:
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DB2DataSource"
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
     <jdbcDriver libraryRef="DB2Lib"/>
-    <properties.db2.jcc databaseName="${env.DATABASE_NAME}" 
+    <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.DATABASE_IDA_SCHEMA}"
                 serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}" 
                 user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
   </dataSource>
@@ -486,7 +486,6 @@ For example (IDA v3.x):
 </server>
 ```
 
-
 **Create a Liberty profile server from websphere console page**
 
 1. Select "Server Types -> Liberty profile servers" from left menu.
@@ -563,7 +562,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 ## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-1.50.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-1.51.crx)
+- The Chrome plugin offline installation package. [IDA-1.51.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-1.51.crx)
 
 ## Firefox plugin
 - Download Firefox plugin [ida-1.51-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-1.51-fx.xpi)
