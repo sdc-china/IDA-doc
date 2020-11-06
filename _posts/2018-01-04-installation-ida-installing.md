@@ -204,6 +204,12 @@ For example:
 </server>
 ```
 
+Liberty supports Advanced Encryption Standard (AES) encryption for passwords that are stored in the server.xml file. In Liberty installation bin folder you can use **securityUtility** command to encrypt your password.
+```
+./securityUtility encode password
+```
+More information about encrypt, please refer to [SecurityUtility Command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_command_securityutil.html).
+
 **3. Copy the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory**
 
 **4. Start liberty server**
