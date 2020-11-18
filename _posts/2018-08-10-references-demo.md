@@ -8,8 +8,7 @@ order: 10
 
 # Demos
 ***
-## IDA demos
-[IBM Deployment Accelerator for Business Automation Workflow - IDA ](https://video.ibm.com/playlist/634514)
+## IDA Demos
 1. [IDA Introduction](https://video.ibm.com/playlist/634514/video/128382300)
 2. [IDA Tutorial: BPM Testing - Creating and Generating Process Test Cases](https://video.ibm.com/playlist/634514/video/128382310) 
 3. [IDA Tutorial: BPM Testing - Recording and Replaying Process Test Cases](https://video.ibm.com/playlist/634514/video/128382312) 
