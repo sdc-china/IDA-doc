@@ -88,7 +88,13 @@ order: 1
 			```
 		
 		4. Restart the servers of your IBM BPM environment.
+
+1. FAQ: I got the wrong character encoding in CSV file, what should I do?
+
+	- Answer: See [Test Case binding data][1]
+
    
 [add-permission-1]: ../images/references/add-permission-1.png
 [loginbpmoc]: ../images/references/loginbpmoc.png 
 [add-permission-2]: ../images/references/add-permission-2.png
+[1]: ../test/test-case-data-binding.html#create-a-csv-test-data-file
