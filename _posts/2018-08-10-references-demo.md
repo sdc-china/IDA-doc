@@ -2,7 +2,7 @@
 title: "Demos"
 category: references
 date: 2019-01-17 15:17:55
-last_modified_at: 2020-11-18 9:30:00
+last_modified_at: 2020-12-07 9:30:00
 order: 10
 ---
 
@@ -24,3 +24,4 @@ order: 10
 13. [IDA Tutorial: Using Labels for Test Case Management and Selection in Pipeline](https://video.ibm.com/playlist/634514/video/128382917)
 14. [IDA Tutorial: Analyzing Process and Toolkit dependencies with Analyzer](https://video.ibm.com/playlist/634514/video/128382916)
 15. [IDA Tutorial: Test Case Version Control](https://video.ibm.com/playlist/634514/video/128382918)
+16. [IDA Tutorial: Building your regression testing for IBM Case Solution in 5 minutes](https://video.ibm.com/recorded/128803470) - NEW in v3.2 released in Nov 2020
