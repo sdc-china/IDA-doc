@@ -100,7 +100,7 @@ order: 1
 1. Why do I need to specify the snapshot acronym when I want to run the pipeline?
     - Answer: The snapshot acronym is optional. If user specify a snapshot acronym name when start pipeline, then the pipeline will skip "snapshot" step and use this snapshot acronym to run test/checkstyle steps.
 
-1. Can run test/checkstyle against tip/default in pipeline?
+1. Can I run test/checkstyle against tip/default in pipeline?
     - Answer: Yes. If the tip option is checked in test/checkstyle step, then it will always run against tip/default(depends on PC or PS) snapshot.
     
 1. Can I specify a PS as the first stage of a pipeline?
