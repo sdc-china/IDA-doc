@@ -94,9 +94,12 @@ order: 1
 	- Answer: See [Test Case binding data][1]
 
 1. When you create a new pipeline.  Why do I have to tie it to a snapshot?  If I create a new snapshot do I need to then update all my pipelines to have that new snapshot referenced? 
+
         - Answer: The snapshot in the first stage is the default snapshot that will be used to pull all process app information and run the pipeline steps.
 	          If the stage begins with a "snapshot" step, then the new created snapshot will be used to run the follow up test/checkstyle steps.
+		  
 1. Why do I need to specify the snapshot acronym when I want to run the pipeline?
+
         - Answer: The snapshot acronym is optional. If user specify a snapshot acronym name when start pipeline, then the pipeline will skip "snapshot" step and use this snapshot acronym to run test/checkstyle steps.
 	
    
