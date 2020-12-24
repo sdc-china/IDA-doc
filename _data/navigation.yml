@@ -156,6 +156,10 @@ docs:
         url: /references/references-demo.html
       - title: "Setup Selenium Grid on Redhat"
         url: /references/references-setup-selenium-grid-redhat.html
+      - title: "Operations"
+        url: /references/references-operation.html
+      - title: "IDA Plug-in"
+        url: /references/references-ida-plugin.html
 
   - title: "Trouble Shooting"
     children:
