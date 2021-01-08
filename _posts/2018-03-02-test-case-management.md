@@ -100,7 +100,7 @@ order: 20
 
 #### Post Script
 
-   In some user interface test cases, you may need to request data from server. If the response time is too long, it will cause time out exception and make the test case failed. In this case, you need to wait loading indicate to be hidden. We provide post script for you to do this in bulk. [More Details][2]
+   In some user interface test cases, you may need to request data from server. If the response time is too long, it will cause time out exception and make the test case failed. In this case, you need to add case steps to wait loading indicate to be hidden. We provide post script for you to do this in bulk. [More Details][2]
 
    ![][test_case_post_script_demo]
   
