@@ -97,6 +97,10 @@ order: 20
   4. Click **Edit** button.
   
   5. Click **Exit Edit** button on the right of suite name.
+
+   **Note:**
+
+   In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the test case to fail. We provide post script for you to solve this kind of issue in bulk. [More Details][2]
   
 #### Adjust the order of case step.
 
@@ -224,6 +228,7 @@ A group test case means you could run more than one test case sequentially a tim
 
     
 [1]: ../references/testing-command.html
+[2]: ../test/test-write-js-command.html#post-custom-js-command
 [test_unit_test_add_form]: ../images/test/test_unit_test_add_form.PNG
 [test_group_command_edit_button]: ../images/test/test_group_command_edit_button.PNG
 [test_unit_test_case_list]: ../images/test/test_unit_test_case_list.PNG
