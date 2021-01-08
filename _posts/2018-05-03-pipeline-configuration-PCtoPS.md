@@ -117,11 +117,46 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to offline PS.
 
-   ![][pipeline_pcdeployps_offline]
+    ![][pipeline_pcdeployps_offline]
 
- **Known Limitions:**     
+  **Known Limitions:**     
 
- IDA machine, PC Server, PS server should be Linux server.  
+ IDA machine, PC Server, PS server should be Linux server. 
+ 
+### Case Project Security Configuration
+
+If you are using a case project and deploying for the first time, the following prompt message may appears when add a new case in the PS environment：
+ 
+  ![][case_insufficient_message]{:height="80%" width="80%"}
+  
+You need to configure **Security Configuration** in your PS environment.
+
+
+1. Login to the **Case administration** Console: https://[Server URL]:[Port]/navigator/?desktop=bawadmin
+
+2. Open the project you want to configure in the Design Object Store, click **Action** -> **Manage** -> **Security Configuration**
+
+   ![][case_administration_security_configuration]{:height="100%" width="100%"}
+  
+3. You can import the **Security Configuration** which exported from the PC server, or create a new **Security Configuration**.
+
+   ![][case_security_configuration_add]{:height="100%" width="100%"}
+  
+  
+4. Configure/Modify the role permissions.
+
+   ![][case_security_configuration_role]{:height="100%" width="100%"}
+  
+5. Associate users and groups with roles.
+  
+   ![][case_security_configuration_users]{:height="100%" width="100%"}
+  
+6. Save and Apply this configuration. 
+
+7. Deploy **Security Configuration** to Target Object Store.
+
+   ![][case_ps_deploy]{:height="100%" width="100%"}
+   
 
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
@@ -138,3 +173,9 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 [pipeline_run_offline_deploy]: ../images/pipeline/pipeline_run_offline_deploy.png
 [pipeline_pc_to_ps_offline]: ../images/pipeline/pipeline_pc_to_ps_offline.png
 [pipeline_pcdeployps_offline]: ../images/pipeline/pipeline_pcdeployps_offline.png
+[case_insufficient_message]: ../images/pipeline/case_insufficient_message.png
+[case_administration_security_configuration]: ../images/pipeline/case_administration_security_configuration.png
+[case_security_configuration_add]: ../images/pipeline/case_security_configuration_add.png
+[case_security_configuration_role]: ../images/pipeline/case_security_configuration_role.png
+[case_security_configuration_users]: ../images/pipeline/case_security_configuration_users.png
+[case_ps_deploy]: ../images/pipeline/case_ps_deploy.png
