@@ -10,6 +10,8 @@ order: 3
 ***
 IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the BPM Process Center IP is 192.168.0.10.
 
+## Configure SSH Key
+ 
 ### Create SSH Key
 
 1. Login into the IDA server and create the key pair in IDA server.
@@ -33,7 +35,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys   
 
    ```
-   #### Notes:
+  **Notes:**
 
    **The Linux operator user should have the permission to run "wsadmin.sh"**
 
@@ -78,7 +80,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
    g. You can find you can use ssh to login into that server.
 
-### Define pipeline from PC to PS through online deployment
+## Define pipeline from PC to PS through online deployment
 
 1. Define the pipeline for deployment snapshot from PC to an online PS.
 
@@ -96,7 +98,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
    ![][pipeline_pcdeployps]
 
-### Define pipeline from PC to PS through offline deployment
+## Define pipeline from PC to PS through offline deployment
 
 1. Define the pipeline for deployment snapshot from PC to an offline PS.
 
@@ -118,45 +120,58 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to offline PS.
 
     ![][pipeline_pcdeployps_offline]
-
-  **Known Limitions:**     
-
- IDA machine, PC Server, PS server should be Linux server. 
  
-### Case Project Security Configuration
+## Case project configuration after the first deployment in the PS
+
+More information please reference the [Configuring the target environment after solution deployment](https://www.ibm.com/support/knowledgecenter/SS8JB4_19.x/com.ibm.casemgmt.design.doc/acmdc054.html)
+
+### Manage Roles
+
+1. Log in to **Case Client** Console: https://[Server URL]:[Port]/navigator/?desktop=baw
+
+2. From the list of available solutions, expand your solution, and click **Manage Roles**.
+
+   ![][case_manager_roles_warning]{:height="90%" width="90%"}
+   ![][case_manager_roles]{:height="90%" width="90%"}
+
+### Security Configuration
 
 If you are using a case project and deploying for the first time, the following prompt message may appears when add a new case in the PS environment：
  
-  ![][case_insufficient_message]{:height="80%" width="80%"}
+  ![][case_insufficient_message]{:height="60%" width="60%"}
   
 You need to configure **Security Configuration** in your PS environment.
-
 
 1. Login to the **Case administration** Console: https://[Server URL]:[Port]/navigator/?desktop=bawadmin
 
 2. Open the project you want to configure in the Design Object Store, click **Action** -> **Manage** -> **Security Configuration**
 
-   ![][case_administration_security_configuration]{:height="100%" width="100%"}
+   ![][case_administration_security_configuration]{:height="90%" width="90%"}
   
 3. You can import the **Security Configuration** which exported from the PC server, or create a new **Security Configuration**.
 
-   ![][case_security_configuration_add]{:height="100%" width="100%"}
+   ![][case_security_configuration_add]{:height="90%" width="90%"}
   
   
 4. Configure/Modify the role permissions.
 
-   ![][case_security_configuration_role]{:height="100%" width="100%"}
+   ![][case_security_configuration_role]{:height="90%" width="90%"}
   
 5. Associate users and groups with roles.
   
-   ![][case_security_configuration_users]{:height="100%" width="100%"}
+   ![][case_security_configuration_users]{:height="90%" width="90%"}
+   
+   **Notes：After this step is executed, you don’t need to configure Manager Roles, but after the Manager Roles are configured, this step still needs to be configured.**
   
 6. Save and Apply this configuration. 
 
 7. Deploy **Security Configuration** to Target Object Store.
 
-   ![][case_ps_deploy]{:height="100%" width="100%"}
-   
+   ![][case_ps_deploy]{:height="90%" width="90%"}
+ 
+## Known Limitions     
+
+ IDA machine, PC Server, PS server should be Linux server.  
 
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
@@ -179,3 +194,5 @@ You need to configure **Security Configuration** in your PS environment.
 [case_security_configuration_role]: ../images/pipeline/case_security_configuration_role.png
 [case_security_configuration_users]: ../images/pipeline/case_security_configuration_users.png
 [case_ps_deploy]: ../images/pipeline/case_ps_deploy.png
+[case_manager_roles_warning]: ../images/pipeline/case_manager_roles_warning.png
+[case_manager_roles]: ../images/pipeline/case_manager_roles.png
