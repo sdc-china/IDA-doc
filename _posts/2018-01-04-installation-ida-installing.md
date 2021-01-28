@@ -106,7 +106,7 @@ For example:
 ```
 
 
-**Here is a sample server.xml (IDA version v3.x)**
+**Here is a sample server.xml (IDA version v3.x and 21.x)**
 
 Please update the fields host, httpPort and httpsPort, library and dataSource.  More information about configuring relational database connectivity in Liberty, please refer to [Data Source Configuration](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_dep_configuring_ds.html).
 
