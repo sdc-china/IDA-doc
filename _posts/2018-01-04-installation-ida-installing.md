@@ -143,6 +143,7 @@ For example:
     </basicRegistry>
     
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpSession cookieSameSite="None"/>
     <httpEndpoint id="defaultHttpEndpoint"
 				  host="*" httpPort="9080" httpsPort="9443" />
                   
