@@ -2,7 +2,7 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2020-10-19 18:12:00
+last_modified_at: 2021-01-29 18:12:00
 order: 4
 ---
 
@@ -257,14 +257,28 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Check the WAS version** 
 
-If the WAS version is **9.0** (not 9.0.0.7, 9.0.0.8, 9.0.0.9), it may occur some problems when install the IDA web application, so fisrtly, we should check the WAS version. 
+If the WAS version is below **9.0.5.4**, it may occur some problems when install the IDA web application, so fisrtly, we should check the WAS version. 
 1. Login the WAS console, in the **Welcome** part, you can see the version of WAS. 
 ![][wasversion]
-2. If the WAS version is 9.0, you should install the Fix Packs, here are the available fix packs:
-- [9.0.0.7: WebSphere Application Server traditional V9.0 Fix Pack 7](http://www-01.ibm.com/support/docview.wss?uid=swg24044620)
-- [9.0.0.8: WebSphere Application Server traditional V9.0 Fix Pack 8](http://www-01.ibm.com/support/docview.wss?uid=swg24044965)
+2. If the WAS version is below **9.0.5.4**, you should install the Fix Packs 9.0.5.4+, here is the minimum fix pack version:
+- [9.0.5.4: WebSphere Application Server traditional Version 9.0.5 Fix Pack 4](https://www.ibm.com/support/pages/node/6220158)
 
-3. When finished the fix packs installation, the version will changed to 9.0.0.7, 9.0.0.8 or 9.0.0.9.
+3. Following instructions on [this page](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.installation.nd.doc/ae/tins_upgrade.html) to install the fix pack.
+
+4. When finished the fix packs installation, the version will changed to 9.0.5.4.
+
+**Update Session Management on WAS Console**
+1. Login to the WebSphere Integrated Solutions Console as an administrator (URL: https://host:port/ibm/console/login.do?action=secure).
+
+2. In left navigation bar, click the **Servers > Server Types > WebSphere application servers > server_name > Session management**
+  
+   ![][wassessionmgr1]
+
+3. Add the 'CookieSameSite' custom property and set the value to 'None'.
+
+   ![][wassessionmgr2]
+
+   ![][wassessionmgr3]
 
 **Deploy a New Application on WAS**
 
@@ -621,6 +635,9 @@ To make the plug-in work, you must login IDA server in the plugin login page.
 [liberty-configure-1]: ../images/install/liberty-configure-1.png 
 [liberty-configure-2]: ../images/install/liberty-configure-2.png 
 [liberty-configure-3]: ../images/install/liberty-configure-3.png 
+[wassessionmgr1]: ../images/install/wassessionmgr1.png 
+[wassessionmgr2]: ../images/install/wassessionmgr2.png 
+[wassessionmgr3]: ../images/install/wassessionmgr3.png 
 
 ## Self-Signed SSL Certificates Installation
 

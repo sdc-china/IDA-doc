@@ -2,7 +2,7 @@
 title: "IDA Plug-in"
 category: references
 date: 2020-10-27 15:39:00
-last_modified_at: 2020-12-24 15:39:00
+last_modified_at: 2021-01-29 15:39:00
 order: 15
 ---
 
@@ -50,13 +50,17 @@ After installing the IDA plug-in. You need to log in to the plug-in to use it. I
     
     ![][plugin_settings]{:height="60%" width="60%"}
     
-2. Enter **Setting** tab and click the **Update** button.
+2. Enter **Setting** tab and click the **Notifications** left-side menu.
 
     ![][plugin_profile_main]{:height="80%" width="80%"}
     
-3. Configure according to your needs.
+3. Configure according to your needs. If you don't see the notifications configuration page, check with your admin if s/he has enabled notifications on Settings page. See [General Configuration][settings-notifications-step-ref].
 
-    ![][plugin_profile_config]{:height="80%" width="80%"}
+4. You can turn on/off system notifications popup window on the plugin.
+
+   ![][plugin_notifications]{:height="60%" width="60%"}
+
+   ![][plugin_notifications_popup]{:height="60%" width="60%"}
 
 ### Messages
 
@@ -167,5 +171,7 @@ When you install the IDA plug-in and use BAW WebPD, you will find three new tabs
 [plugin_webpd_analyzer]: ../images/references/plugin_webpd_analyzer.png
 [plugin_webpd_analyzer_loading]: ../images/references/plugin_webpd_analyzer_loading.png
 [plugin_webpd_analyzer_done]: ../images/references/plugin_webpd_analyzer_done.png
-
+[settings-notifications-step-ref]: ../administration/administration-settings-configuration.html#general-configuration
+[plugin_notifications]: ../images/references/plugin_notifications.png
+[plugin_notifications_popup]: ../images/references/plugin_notifications_popup.png
 

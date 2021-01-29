@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-24 15:17:55
-last_modified_at: 2020-10-12 16:25:00
+last_modified_at: 2021-01-29 16:25:00
 order: 15
 ---
 
@@ -13,6 +13,8 @@ order: 15
 ## General configuration
 
 ![][General]
+
+![][General_Notifications]{:height="70%" width="70%"}
 
 Field | Description
 --- | ---
@@ -25,6 +27,12 @@ Base DN | LDAP base dn for filtering users
 User filter | LDAP user filter pattern, use '#' to split multiple user filter pattern
 Default Role | Default role for LDAP user used in IDA
 User Name Case Insensitive | LDAP server is case insensitive or not, default value is true
+Enable Notifications | Global setting to enable/disable notifications. Enabled notifications can be futher configured on each user profile page
+Test Case Created | Enable notification of test case creation
+Test Case Modified | Enable notification of test case modification
+Pipeline Build Success | Enable notification of pipeline build success
+Pipeline Build Failure | Enable notification of pipeline build failure
+BPM and Selenium Server Down/Up | Enable notification of server status
 Server Status Check Interval | Time interval in seconds to check the availability of BPM and Selenium servers
 
 ## Test configuration 
@@ -118,6 +126,7 @@ The settings values are saved in database so if you restart the server, the conf
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
 [General]: ../images/references/General.jpg
+[General_Notifications]: ../images/references/General_Notifications.jpg
 [Test]: ../images/references/Test.jpg
 [Pipeline]: ../images/references/Pipeline.jpg
 [Checkstyle]: ../images/references/Checkstyle.jpg
