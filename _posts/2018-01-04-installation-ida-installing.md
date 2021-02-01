@@ -584,12 +584,15 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
 - The Chrome plugin offline installation package. [IDA-21.0.0.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-21.0.0.crx)
-- For Chrome plugin to work on IDA web version >= 21.0.0, please add configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
+- For Chrome plugin to work on IDA web version >= 21.0.0, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
 
 ## Firefox plugin
 - Download Firefox plugin [ida-21.0.0-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-21.0.0-fx.xpi)
 - Drag the "ida-21.0.0-fx.xpi" file into firefox window.
 - Click "Add" button.
+- For Firefox plugin to work on IDA web version >= 21.0.0, please double check after plugin installation, Firefox Privacy settings is adjusted to custom as follows:
+
+  ![][firefox_custom_setting]
 
 ## Plug-in Configuration
 
@@ -639,6 +642,7 @@ To make the plug-in work, you must login IDA server in the plugin login page.
 [wassessionmgr1]: ../images/install/wassessionmgr1.png 
 [wassessionmgr2]: ../images/install/wassessionmgr2.png 
 [wassessionmgr3]: ../images/install/wassessionmgr3.png 
+[firefox_custom_setting]: ../images/install/firefox_custom_setting.png
 
 ## Self-Signed SSL Certificates Installation
 
