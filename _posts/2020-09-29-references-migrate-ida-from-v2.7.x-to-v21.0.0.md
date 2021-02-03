@@ -48,6 +48,7 @@ For example:
 ```
 
 ## 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
+**Notes:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in DB2 database.
 
 ## 1.5 Add ```<httpSession cookieSameSite="None"/>``` to server.xml
 
@@ -127,6 +128,7 @@ Pipeline -> Interval for Trigger by New Snapshot(seconds) | pipeline.snapshot.tr
 ## 2.5 Please copy you database driver to the folder according the library field configuration in server.xml.
 
 ## 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
+**Notes:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in DB2 database.
 
 ## 2.7 Replace ida-web.war and Restart your liberty server.
 
