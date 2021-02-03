@@ -6,6 +6,8 @@ last_modified_at: 2021-02-03 09:17:55
 order: 10
 ---
 
+**Important:** If you run IDA with WAS, please refer to [Installing IDA Application][2] to check your WAS version. IDA may occur some problems if the WAS version is below 9.0.5.4!
+
 # 1. Migrating IDA with a datasource connection
 
 **Important:** Please backup your database before migration!
