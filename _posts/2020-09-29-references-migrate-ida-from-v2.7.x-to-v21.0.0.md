@@ -1,18 +1,20 @@
 ---
-title: "Migrating IDA from v2.7.x to v3.0.0"
+title: "Migrating IDA from v2.7.x to v21.0.0"
 category: references
 date: 2020-09-29 15:17:55
-last_modified_at: 2020-09-30 09:17:55
+last_modified_at: 2021-02-03 09:17:55
 order: 10
 ---
 
 # 1. Migrating IDA with a datasource connection
 
+**Important:** Please backup your database before migration!
+
 ## 1.1 Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
 
 This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to [Repacking IDA Application][1].
 
-**Notes:** Please comment spring.datasource.jndi-name if you do not use a JNDI datasource.
+**Important:** Please comment spring.datasource.jndi-name if you do not use a JNDI datasource.
 
 **JNDI Configuration**
 
@@ -43,12 +45,14 @@ For example:
 ./server stop SERVER_NAME
 ```
 
-## 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.1-v3.0.0.sql
+## 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
 
-## 1.5 Replace ida-web.war and Restart your server.
+## 1.5 Add ```<httpSession cookieSameSite="None"/>``` to server.xml
+
+## 1.6 Replace ida-web.war and Restart your server.
 **Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
 
-## 1.6 Migrate the values form your old conf/ida.properties to 'Settings' page. The below table lists all the filed need to be migrated:
+## 1.7 Migrate the values form your old conf/ida.properties to 'Settings' page. The below table lists all the filed need to be migrated:
 
 ![][General]
 
@@ -105,6 +109,8 @@ Pipeline -> Interval for Trigger by New Snapshot(seconds) | pipeline.snapshot.tr
 
 # 2. Migrating IDA with a JNDI datasource connection
 
+**Important:** Please backup your database before migration!
+
 ## 2.1 Please refer to section 1.1 to edit [IDA_HOME]/conf/**ida.properties** under **conf** folder.
 
 **Notes:** Please comment spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password and jasypt.encryptor.password fileds.
@@ -118,13 +124,15 @@ Pipeline -> Interval for Trigger by New Snapshot(seconds) | pipeline.snapshot.tr
 
 ## 2.5 Please copy you database driver to the folder according the library field configuration in server.xml.
 
-## 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.1-v3.0.0.sql
+## 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
 
 ## 2.7 Replace ida-web.war and Restart your liberty server.
 
-## 2.8 Please refer to 1.6 to migrate conf/ida.properties old values to 'Settings' page
+## 2.8 Add ```<httpSession cookieSameSite="None"/>``` to server.xml
 
-## 2.9 Restart IDA server to make your changes effective.
+## 2.9 Please refer to 1.6 to migrate conf/ida.properties old values to 'Settings' page
+
+## 3.0 Restart IDA server to make your changes effective.
 
 
 
