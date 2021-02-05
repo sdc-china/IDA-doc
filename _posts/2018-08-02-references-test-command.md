@@ -1469,7 +1469,7 @@ ___
 	
 ___
            
-### **putContext**
+### **wait**
 
 Wait for specify seconds.
 
