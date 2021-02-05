@@ -197,7 +197,7 @@ Start a Generic or Integration service edited in Eclipse PD. Please install IDA 
 	
 ___
 
-### **startSQLQuery**
+### **executeSQL**
 
 Perform SQL Query by REST API, please install BPM Testing Asset Toolkit to support SQL Query.
 
