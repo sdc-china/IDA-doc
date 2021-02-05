@@ -747,23 +747,6 @@ Update current case data.
 	
 ___
 
-### **runActivityByName**
-
-Run an activity by name.
-
-- Parameters
-
-	| Name | Required | Description |
-	|----------------|------------|--------------|
-    | `Role Name` | Required | The role name|
-    | `Activity Name` | Required | The bpm activity name of current case type|
-
-- Example  
-
-	![][run_activity_by_name_sample]
-	
-___
-
 ### **runFileNetP8ActivityByName**
 
 Run a FileNet P8 activity by name.
