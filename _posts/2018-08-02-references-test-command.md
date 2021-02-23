@@ -528,7 +528,7 @@ Performs a custom search.
 	| Name | Required | Description |
 	|----------------|------------|--------------|
 	|`Columns`|Required|Valid column names are taskId, instanceId, bpdName, taskSubject, taskArrived, taskStarted, taskFinished, eg: taskId,instanceId.|
-  | `Condition` | Optional | Query condition: &quot;&lt;field&gt;|&lt;value&gt;&quot; or &quot;&lt;field&gt;|&lt;op&gt;|&lt;value&gt;&quot;|
+  | `Condition` | Optional | Query condition: &quot;&lt;field&gt;\|&lt;value&gt;&quot; or &quot;&lt;field&gt;\|&lt;op&gt;\|&lt;value&gt;&quot;|
   |`Sort`|Optional|Name of primary sort column|
   |`Second Sort`|Optional|Name of secondary sort column|
   |`Organization`|Optional|A string indicating how the results should be organized. Valid values are byTask and byInstance. The default value is byInstance.|
@@ -541,7 +541,7 @@ Performs a custom search.
 
 - Example  
 
-	![][start_query_sqmple]
+	![][start_query_sample]
 	
 ___
 
