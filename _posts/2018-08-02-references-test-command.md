@@ -519,6 +519,32 @@ Assert Rest API result.
 
 ___
 
+### **startQuery**
+
+Performs a custom search. 
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+	|`Columns`|Required|Valid column names are taskId, instanceId, bpdName, taskSubject, taskArrived, taskStarted, taskFinished, eg: taskId,instanceId.|
+  | `Condition` | Optional | Query condition: &quot;&lt;field&gt;|&lt;value&gt;&quot; or &quot;&lt;field&gt;|&lt;op&gt;|&lt;value&gt;&quot;|
+  |`Sort`|Optional|Name of primary sort column|
+  |`Second Sort`|Optional|Name of secondary sort column|
+  |`Organization`|Optional|A string indicating how the results should be organized. Valid values are byTask and byInstance. The default value is byInstance.|
+  |`Size`|Optional|Specifies the maximum number of entities to be returned. If a number is not specified, the default size defined for the query will be used.|
+  |`Offset`|Optional|Specifies the number of entities to be skipped. Offset 0 refers to the first entity from the result set.If this parameter is not specified, the default value of 0 is used.|
+  |`Filter By Current User`|Optional|Filter By Current User|
+  |`Result`|Optional|The query result. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
+  |`Json Path`|Optional|Use json path to extract the output value or sub json|
+  |`Variable Name`|Optional|Save Output into memory|
+
+- Example  
+
+	![][start_query_sqmple]
+	
+___
+
 ## **BPM Assertion**
 
 This category is for asserting server side components.
@@ -1533,6 +1559,7 @@ ___
 [fire_timer_sample]: ../images/command/fire_timer_sample.png
 [search_found_expected_output_sample]: ../images/command/search_found_expected_output_sample.png
 [start_rest_api_sample]: ../images/command/start_rest_api_sample.png
+[start_query_sample]: ../images/command/start_query_sample.png
 [assert_process_instance_status_sample]: ../images/command/assert_process_instance_status_sample.png
 [assert_process_instance_data_sample]: ../images/command/assert_process_instance_data_sample.png
 [assertTaskAssignmentByUser_sample]: ../images/command/assertTaskAssignmentByUser_sample.png
