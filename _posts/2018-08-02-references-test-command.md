@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-10-27 15:17:55
-last_modified_at: 2020-08-05 16:42:00
+last_modified_at: 2021-02-25 10:42:00
 order: 2
 ---
 
@@ -1143,6 +1143,25 @@ Wait for displaying a text until timeout.
 ___  
 
 
+### **clickActivityFromPortal**
+
+Click a activity from portal.
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+	| `Activity` | Required | The activity name  |
+	| `Process` | Optional | The process name|
+  | `Track` | Optional | The track name|
+	
+- Example  
+
+	![][clickActivityFromPortal]
+
+___  
+
+
 ## **UI Assertion**
 
  Record a command to populate the field you want to assert. Then edit the generated test case step and change command to assert. The edit would pick up matching fields from the recorded command.
@@ -1614,3 +1633,4 @@ ___
 [assert_validation_passed]: ../images/command/assert_validation_passed.png
 [add_context]: ../images/command/add_context.png
 [date_string]: ../images/command/date_string.png
+[clickActivityFromPortal]: ../images/command/clickActivityFromPortal.png
