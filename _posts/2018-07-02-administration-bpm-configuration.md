@@ -67,16 +67,24 @@ If you login get 401 unauthorized error,please check your function id belong to 
      ![][administrator_bpmuser]           
 
 	 |   Field                | Description                                                             |
-     | ---------------------- |-------------------------------------------------------------------------|                                          
-     | User    Name           | the user name of BPM server                                              |  
+     | ---------------------- |-------------------------------------------------------------------------| 
+     | Server                 | the BPM servers that need to add user                             |                                           
+     | User Name           | the user name of BPM server                                              |  
      | Display Name           | the display name of BPM user                                          |
      | User Password          | the password of BPM user                                                |
-     | Role                   | the logical role name of BPM user                                                    |  
 
 
      After adding user, you can see the user list for this BPM server.
 
-     ![][administrator_bpmuserlist]    
+     ![][administrator_bpmuserlist]   
+     
+  3. If the permission control of your BPM server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user by following action:
+  
+  	- Add UMS Admin user following steps 1 - 2.
+  	
+  	- Set it as UMS Admin user:
+  	
+  	![][administration_set_as_ums_admin_user]
 
 **Notes:**   
 Pls make sure the added user  exist in your selected BPM server.Also You need to well define the **Display name** of the BPM user.You can choose the **Assignee** display name to choose user for the test case step command.
@@ -84,6 +92,7 @@ Pls make sure the added user  exist in your selected BPM server.Also You need to
   ![][administrator_assignee]   
 
 What's more, you can also edit a bpm user in a similar way to editing a user.
+
 
 ### Add Case Object Store configuration to a BPM server
   1. Click **Case Object Store** icon on the right of the BPM server. Then you can see then Case Object Store configuration list of the server.
@@ -117,6 +126,7 @@ What's more, you can also edit a case object store configuration in a similar wa
 [administrator_bpmserver]: ../images/administrator/administrator_bpmserver.png
 [administrator_bpmoc]: ../images/administrator/bpmoc.png
 [administrator_bpmuser]: ../images/administrator/administrator_bpmuser.png
+[administration_set_as_ums_admin_user]: ../images/administrator/administration_set_as_ums_admin_user.png
 [administrator_bpmuserlist]: ../images/administrator/administrator_bpmuserlist.png
 [administrator_assignee]: ../images/administrator/administrator_asignee.png
 [add_icon]: ../images/administrator/Administrator_add_icon.png
