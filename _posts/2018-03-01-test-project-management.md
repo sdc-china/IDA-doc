@@ -31,7 +31,9 @@ order: 10
      Toolkit               |Toolkits of  selected server
      Trace                 |The branch of selected process app or toolkit
      Snapshot              |The snapshot of selected branch
-     [Selenium Hub][2]     |Support chrome, firefox selenium node 
+     [Default Assignee][3] |Default assignee BPM User. 
+     [Default Browser][2]  |Support chrome, firefox selenium node 
+     [Other Broswer][2]    |Support chrome, firefox selenium node 
      Tip                   |Use the latest snapshot 
      Advance               |Show the engine configuration
      Engine Properties     |Support the engine configuration only for json format. Retry times: the retry times of the failed command. Retry interval: the interval time between the retry. if not be set, then they will be the engineConfig.defaultRetryTimes and engineConfig.defaultRetryInterval in application configuration.
@@ -41,6 +43,7 @@ order: 10
      
      Remember to select the process app or toolkit, which can't be both selected.
      You need to upload Eclipse test project zip file when you check the "Migrate an old project".  
+     If the permission control of your BPM server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user.[Refer to][3]
      
      **Known Limitions:**   
      The test project migration is only supported under development environment.  
@@ -78,4 +81,5 @@ order: 10
 [tutorial_project_info]: ../images/tutorial/tutorial_project_info.PNG
 [1]: ../administration/administration-bpm-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
+[3]: ../administration/administration-bpm-configuration.html#add-user-to-a-bpm-server
 [tutorial_createproject_advance]: ../images/tutorial/tuorial_project_create_advance.PNG 
