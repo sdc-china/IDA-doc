@@ -79,12 +79,12 @@ If you login get 401 unauthorized error,please check your function id belong to 
      ![][administrator_bpmuserlist]   
      
   3. If the permission control of your BPM server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user by following action:
-  
-	  	- Add UMS Admin user following steps one to two.
+
+	a. Add UMS Admin user following steps one to two.
 	  	
-	  	- Set it as UMS Admin user:
+	b. Set it as UMS Admin user:
 	  	
-	  	![][administration_set_as_ums_admin_user]
+	![][administration_set_as_ums_admin_user]
 
 **Notes:**   
 Pls make sure the added user  exist in your selected BPM server.Also You need to well define the **Display name** of the BPM user.You can choose the **Assignee** display name to choose user for the test case step command.
