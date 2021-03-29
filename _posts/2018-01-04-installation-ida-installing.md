@@ -587,7 +587,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 - For Chrome plugin to work on IDA web version >= 21.1.0, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
 
 ## Firefox plugin
-- Download Firefox plugin [ida-21.1.0.1-fx.xpi](https://github.com/sdc-china/IDA-plugin/blob/master/firefox/ida-21.1.0.2-fx.xpi)
+- Download Firefox plugin [ida-21.1.0.2-fx.xpi](https://github.com/sdc-china/IDA-plugin/blob/master/firefox/ida-21.1.0.2-fx.xpi)
 - Drag the "ida-21.1.0.2-fx.xpi" file into firefox window.
 - Click "Add" button.
 - For Firefox plugin to work on IDA web version >= 21.0.0, please double check after plugin installation, Firefox Privacy settings is adjusted to custom as follows:
