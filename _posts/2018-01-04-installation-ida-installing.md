@@ -583,7 +583,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 ## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-21.1.0.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-21.1.0.crx)
+- The Chrome plugin offline installation package. [IDA-21.1.0.1.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-21.1.0.1.crx)
 - For Chrome plugin to work on IDA web version >= 21.1.0, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
 
 ## Firefox plugin
