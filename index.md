@@ -68,15 +68,18 @@ The user stories are as below:
 
 ### Features & Capabilities
 * Test Case generation
-* Record and playback BPM UI
+* Record and playback Workflow(BPM&Case) UI
 * Smart comparison for Testing
-* Static code analysis for BPM application
-* Continuous delivery of BPM application through visualizing pipeline
+* Static code analysis for BAW application
+* Continuous delivery of BAW application through visualizing pipeline
 * Snapshot Comparision for BPM application
 * Statistic Analyzing for BPM application
 * Toolkit Dependency Analyzing for BPM application
 * Support tools for BPM instance migration
-  
+* Load Test for BPM application
+
+### Contact
+- Any question please feel free to reach out to ctesdc AT ibm.com.cn with subject IDA inquiry
 
 
 
