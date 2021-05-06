@@ -55,7 +55,6 @@ Write custom Java command
 	*  **name** : The name getting the parameter from Java code.
 	*  **displayName** : The name showing on the add/update command dialog.
 	*  **type** : The control type shows on the add/update command dialog. It supports four kinds of types: text, textarea, combo and checkbox.
-
   *  **source**: It can be used to configure a list of possible values of the parameter. You can configure a list of possible values of the parameter, separated by comma.
 
 	```
