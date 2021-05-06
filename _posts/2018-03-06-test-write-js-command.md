@@ -2,7 +2,7 @@
 title: "Write a Javascript command"
 category: test
 date: 2018-10-02 15:17:55
-last_modified_at: 2019-07-29 15:17:00
+last_modified_at: 2021-05-06 11:48:00
 order: 55
 ---
 
@@ -21,7 +21,7 @@ order: 55
    ![][test_js_command_info]
 
 3. Define the javascript command parameter. You can refer these parameters' value through verbalization.
-For example: {Parameters.myKey}
+For example: {Parameters.myKey}. You can configure a list of possible values of the parameter, separated by comma.
 
    ![][test_js_command_parameter]
 
@@ -30,7 +30,7 @@ For example: {Parameters.myKey}
    ![][test_js_command_logic]
 
 
-5. Add your javascript command in your test case.
+5. Add your javascript command in your test case. If you have configured the list of possible values of the parameter, you can select from the parameter dropdown list.
 
    ![][test_add_js_command]
 
@@ -88,32 +88,32 @@ return bta.util.callback();
 4. When you record/replay this case again, you will find when you select the department value as **sales** , the number of employee value is **3**.
 
    ![][test_js_commandresult]
-   
-   
+
+
 ### Post Custom JS Command
 
   This feature allow you to inject a custom JS command to the case steps in bulk.
-  
+
   The classic use case:
-  
+
   Issue:
-  In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the test case to fail. 
-  
+  In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the test case to fail.
+
   Solution:
   Add a customized javascript which waits for the request to complete as post script and insert it after the case steps that trigger the request.
-  
+
 Here is the steps:
-  
+
 1. Create Post Custom Command:
 
    Global level: Create a javascript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will shown in the case step edit table. And allow all projects of your system to insert post script after UI/JS commands.
-  
+
    Project level: Create a javascript command named `ida_post_script` in one project. Then the post script toggle will shown in the case step edit table of this project. And allow this project to insert post script after UI/JS commands. It will overwrite the global level post script.
-   
+
    Test Case level: Create a javascript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post script toggle will shown in the case step edit table of this test case. And allow this test case to insert post script after UI/JS commands. It will overwrite global level and project level post script.
-   
+
    Default post script:
-   
+
    ```
 	console.log("Start to run post script!");
 	var timeout = 10;
@@ -142,34 +142,34 @@ Here is the steps:
 	});
 
    ```
-   
+
    You can configure **timeout**, **interval**, **elementId**, **elementCss** and **xpath** as you need.The default sample
    will wait some time util  loading icon(img[alt='Loading']) disapper(Usually it is located on right top of the BPM UI).It    applys for long loading ajax      service or Long time UI loaing.
-   
+
    ![][test_post_script_sampleUI]
 
    Also you can change the post script to meet your needs.It will run js after every command you apply for ida_post_script.
    When you replay the test case you can open the web console to debug your test case.For example:
-   
+
    ```
 	console.log("Start to run post script!");
 	setTimeout(function(){ }, 3000);
-    ``` 
+    ```
 2. Insert Post Script to Case Step
 
    If you have created any level of the post script then the layout of case step table:
-   
+
    ![][test_post_script_look]
-    
+
    Click the toggle can insert post script after the command.
-   
+
    Batch operation:
-   
+
    Select the case steps, right click then click **On**/**Off** button.
-   
+
    ![][test_operation_post_script]
-  
-  
+
+
 
   [test_js_command]: ../images/test/test_js_command.PNG
   [test_js_command_info]: ../images/test/test_js_command_info.PNG

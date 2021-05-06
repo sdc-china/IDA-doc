@@ -55,6 +55,7 @@ Write custom Java command
 	*  **name** : The name getting the parameter from Java code.
 	*  **displayName** : The name showing on the add/update command dialog.
 	*  **type** : The control type shows on the add/update command dialog. It supports four kinds of types: text, textarea, combo and checkbox.
+  *  **source**: It can be used to configure a list of possible values of the parameter. You can configure a list of possible values of the parameter, separated by comma.
 
 	```
 	import org.slf4j.Logger;
@@ -64,7 +65,7 @@ Write custom Java command
 
 	@CustomCommand(name = "myJavaCommand", verbalization = "Hello {{Parameters.message}}", description = "execute my java command", takeScreenshot = true)
 	@Parameter(name = "message", displayName = "Message", type = "text")
-	@Parameter(name = "value", displayName = "Value", type = "text")
+	@Parameter(name = "value", displayName = "Value", type = "text", source = "val1, val2, val3")
 	public class MyJavaCommand {
 
 	  private static final Logger logger = LoggerFactory.getLogger(MyJavaCommand.class);
@@ -300,7 +301,7 @@ Use custom Java command in IDA test case
 
    ![][test_insert_java_command]
 
-2. The parameters defined by Java annotation are also showed on the command dialog.
+2. The parameters defined by Java annotation are also showed on the command dialog. If you have configured the list of possible values of the parameter, you can select from the parameter dropdown list.
 
    ![][test_java_command_parameter]
 
