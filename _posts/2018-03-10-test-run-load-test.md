@@ -1,8 +1,8 @@
 ---
 title: "Run Load Test"
 category: test
-date: 2018-10-04 15:17:55
-last_modified_at: 2019-07-29 15:22:00
+date: 2021-05-27 15:22:00
+last_modified_at: 2021-05-28 15:22:00
 order: 70
 ---
 
@@ -43,6 +43,14 @@ order: 70
 
      ![][enable_load_test]
 
+###  Edit gatling home path
+
+  1. Go to the **Settings** configuration page under **Administration**.
+  
+  2. Type your gatling installation path in **Gatling Home Path**.
+
+     ![][gatling_home]
+
 ### Replay a test case
 
   1. Click project name to get into this project, click the **case1** under **Create Position Request CSHS** package. Click **Record** button on the right of case name to replay it.
@@ -56,6 +64,7 @@ order: 70
      ![][load_test_button]
 
 ### Run test case load test
+
   1. Click **Load Test** button on the right of case name.
 
      ![][load_test_button]
@@ -91,3 +100,4 @@ order: 70
 [select_strategy]: ../images/test/select_strategy.png
 [view_load_test_report]: ../images/test/view_load_test_report.png
 [test_debug_point]: ../images/test/test_debug_point.png
+[gatling_home]: ../images/test/gatling_home.png
