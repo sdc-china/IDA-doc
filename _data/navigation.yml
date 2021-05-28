@@ -60,6 +60,8 @@ docs:
         url: /test/test-smart-comparison.html
       - title: "Import and execute sample test project"
         url: /test/test-import-execute-sample-test-project.html
+      - title: "Run Load Test"
+        url: /test/test-run-load-test.html
       - title: "Test Report"
         url: /test/test-case-report.html
       - title: "Dynamic Assignee"
