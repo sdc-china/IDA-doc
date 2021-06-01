@@ -8,6 +8,16 @@ order: 70
 
 # Run Load Test
 ***
+###  Edit gatling home path
+
+  1. Download **Gatling** from their [official website](https://gatling.io/open-source/start-testing/).
+
+  2. Go to the **Settings** configuration page under **Administration**.
+
+  3. Type your gatling installation path in **Gatling Home Path**.
+
+     ![][gatling_home]
+
 ### Import a sample test project
 
   1. Click the **Sample Project** button in the project tab.
@@ -43,22 +53,14 @@ order: 70
 
      ![][enable_load_test]
 
-###  Edit gatling home path
-
-  1. Go to the **Settings** configuration page under **Administration**.
-  
-  2. Type your gatling installation path in **Gatling Home Path**.
-
-     ![][gatling_home]
-
 ### Replay a test case
 
   1. Click project name to get into this project, click the **case1** under **Create Position Request CSHS** package. Click **Record** button on the right of case name to replay it.
-  
+
   2. Do not click ![][test_record_stop] button. Let it run from the first step to last step.
-  
-  3. In the **Debug** step which has ![][test_debug_point] in front of it, the record will be stopped. You need to click ![][test_case_record_resume] button to resume. 
-  
+
+  3. In the **Debug** step which has ![][test_debug_point] in front of it, the record will be stopped. You need to click ![][test_case_record_resume] button to resume.
+
   4. When all the steps are finished, the recorder will automatically close, and there will be an extra button on the page which name is **Load Test**.
 
      ![][load_test_button]
@@ -69,7 +71,7 @@ order: 70
 
      ![][load_test_button]
 
-  2. Pop up a strategy selection window. Here we use the **atOnceUsers** strategy and set the number of users to 10. 
+  2. Pop up a strategy selection window. Here we use the **atOnceUsers** strategy and set the number of users to 10.
 
      ![][select_strategy]
 
