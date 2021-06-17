@@ -2,7 +2,7 @@
 title: "Demos"
 category: references
 date: 2019-01-17 15:17:55
-last_modified_at: 2020-12-07 9:30:00
+last_modified_at: 2021-06-17 9:30:00
 order: 10
 ---
 
@@ -10,8 +10,8 @@ order: 10
 ***
 ## IDA Demos
 1. [IDA Introduction](https://video.ibm.com/playlist/634514/video/128382300)
-2. [IDA Tutorial: BPM Testing - Creating and Generating Process Test Cases](https://video.ibm.com/playlist/634514/video/128382310) 
-3. [IDA Tutorial: BPM Testing - Recording and Replaying Process Test Cases](https://video.ibm.com/playlist/634514/video/128382312) 
+2. [IDA Tutorial: BPM Testing - Creating and Generating Process Test Cases](https://video.ibm.com/playlist/634514/video/128382310)
+3. [IDA Tutorial: BPM Testing - Recording and Replaying Process Test Cases](https://video.ibm.com/playlist/634514/video/128382312)
 4. [IDA Tutorial: BPM Testing - Creating and Replaying Service Test Cases](https://video.ibm.com/playlist/634514/video/128382313)
 5. [IDA Tutorial: BPM Testing - Refactoring Your Test Cases with Group Commands](https://video.ibm.com/playlist/634514/video/128382906)
 6. [IDA Tutorial: Static Analysis and Code Review for BPM](https://video.ibm.com/playlist/634514/video/128382907)
@@ -25,3 +25,4 @@ order: 10
 14. [IDA Tutorial: Analyzing Process and Toolkit dependencies with Analyzer](https://video.ibm.com/playlist/634514/video/128382916)
 15. [IDA Tutorial: Test Case Version Control](https://video.ibm.com/playlist/634514/video/128382918)
 16. [IDA Tutorial: Building your regression testing for IBM Case Solution in 5 minutes](https://video.ibm.com/recorded/128803470) - NEW in v3.2 released in Nov 2020
+17. [IDA Load Test v0.1](https://ibm.ent.box.com/file/823059796930)
