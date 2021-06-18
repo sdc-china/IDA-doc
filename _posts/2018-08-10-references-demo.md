@@ -25,4 +25,4 @@ order: 10
 14. [IDA Tutorial: Analyzing Process and Toolkit dependencies with Analyzer](https://video.ibm.com/playlist/634514/video/128382916)
 15. [IDA Tutorial: Test Case Version Control](https://video.ibm.com/playlist/634514/video/128382918)
 16. [IDA Tutorial: Building your regression testing for IBM Case Solution in 5 minutes](https://video.ibm.com/recorded/128803470) 
-17. [IDA Load Test ](https://ibm.ent.box.com/file/823059796930) - NEW feature in v21.2.0
+17. [Run BAW Performance Test Using IDA](https://video.ibm.com/recorded/130211251) - NEW feature in v21.2.0
