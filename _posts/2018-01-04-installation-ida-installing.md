@@ -536,7 +536,7 @@ For example (IDA v3.x):
 
 
 ## Installing on Docker platform
-Refer to [IDA-ondocker](https://github.com/sdc-china/IDA-ondocker) for deployment steps.
+Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
 # Step 2: Installing IDA BPM Toolkit
 The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
