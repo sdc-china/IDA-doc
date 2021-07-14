@@ -7,7 +7,7 @@ sidebar:
 
 ## Overview
 
-[IBM Deployment Accelerator for Business Automation Workflow](https://www.youtube.com/playlist?list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg) redefines IBM Business Process Manager (BPM)/IBM Business Automation Workflow(BAW) innovation with tools and methodologies from IBM. It is a lightweigt solution for BPM process development,testing and ops team to apply DevOps to a BPM project.
+[IBM Deployment Accelerator for Business Automation Workflow](./references/references-demo.html) redefines IBM Business Process Manager (BPM)/IBM Business Automation Workflow(BAW) innovation with tools and methodologies from IBM. It is a lightweigt solution for BPM process development,testing and ops team to apply DevOps to a BPM project.
 
   ![][ida-devops]   
 
