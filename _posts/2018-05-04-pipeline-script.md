@@ -79,11 +79,12 @@ order: 4
   *ssh -f bpmtask.py*
   
   The script has a .py extension to reflect the Jython language syntax of the script.  Example below shows a two-line Jython script named bpmtask.py.
+  
   ``` 
   print "This script is used to set BPM EnvironmentVariable"
   AdminTask.BPMSetEnvironmentVariable('[-containerAcronym BTAS -containerSnapshotAcronym TS -environmentVariableName TEST_KEY -environmentVariableValue 98744]')
   ``` 
-  ##### Notes:
+#### Notes:
   - If you not specify the script file path,it will use the BAW deployment remote dir as your script path,which is defined in the IDA setting page.Also you need to put this script file in the BAW server specfied folder before you run the pipeline.
 
 The format of the Script to call wsadmin command is
