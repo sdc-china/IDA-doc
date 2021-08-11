@@ -7,9 +7,16 @@ sidebar:
 
 ## Overview
 
-[IBM Deployment Accelerator for Business Automation Workflow](./references/references-demo.html) redefines IBM Business Process Manager (BPM)/IBM Business Automation Workflow(BAW) innovation with tools and methodologies from IBM. It is a lightweigt solution for BPM process development,testing and ops team to apply DevOps to a BPM project.
-
-  ![][ida-devops]   
+[IBM Deployment Accelerator for Business Automation Workflow](./references/references-demo.html) redefines IBM Business Process Manager (BPM)/IBM Business Automation Workflow(BAW)/ innovation with tools and methodologies from IBM. It is a lightweigt solution for BPM/Case process development,testing and ops team to apply DevOps to a BPM/Case project.
+ 
+  
+  |          | Test Case generation |  Record and playback UI |  Smart comparison for Testing  |  Static code analysis  | Continuous delivery through visualizing pipeline | Statistic Analyzing  |  Toolkit Dependency Analyzing  |Support tools for instance migration  | Load Test  |
+ |----------|:-------------:|:------|
+ |  BPM     |  ●   |●             |●           |  ●         | ●         | ●  |●  |●  | ●  |
+ |  Case    |     |●             | ●           |   ○         | ●         |  ○ | |||
+  
+  
+ ![][ida-devops] 
 
 ### Development Team
 
@@ -66,18 +73,7 @@ The user stories are as below:
 4.	As a Deployer, I want to be able to schedule pipelines to execute to assure that deployment is executed without human involvement.
 5.	As a Project Manager, I want to review the build history of my BPM project that helps push the team to handle the outstanding issues during development and deployment.
 
-### Features & Capabilities
-* Test Case generation
-* Record and playback Workflow(BPM&Case) UI
-* Smart comparison for Testing
-* Static code analysis for BAW application
-* Continuous delivery of BAW application through visualizing pipeline
-* Snapshot Comparision for BPM application
-* Statistic Analyzing for BPM application
-* Toolkit Dependency Analyzing for BPM application
-* Support tools for BPM instance migration
-* Load Test for BPM application
-
+ 
 ### Contact
 - Any question please feel free to reach out to ctesdc AT ibm.com.cn with subject IDA inquiry
 
