@@ -104,7 +104,9 @@ return bta.util.callback();
 
 Here is the steps:
 1. Post Script function is disable by default and user should enble it in project configuration. 
+
    Step1: Edit the project 
+   
    Step2: Add **"post_script":true** in Engine Properties.
    
    ![][post_script_eanble]
