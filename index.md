@@ -10,10 +10,10 @@ sidebar:
 [IBM Deployment Accelerator for Business Automation Workflow](./references/references-demo.html) redefines IBM Business Process Manager (BPM)/IBM Business Automation Workflow(BAW)/ innovation with tools and methodologies from IBM. It is a lightweigt solution for BPM/Case process development,testing and ops team to apply DevOps to a BPM/Case project.
  
   
-  |          | Test Case generation |  Record and playback UI |  Smart comparison for Testing  |  Static code analysis  | Continuous delivery through visualizing pipeline | Statistic Analyzing  |  Toolkit Dependency Analyzing  |Support tools for instance migration  | Load Test  |
- |----------|:-------------:|:------|
+  |          | Test Case generation |  Record and playback UI  |  Static code analysis  | Continuous delivery through visualizing pipeline | Statistic Analyzing  |  Toolkit Dependency Analyzing  | Smart comparison |Support tools for instance migration  | Load Test  |
+ |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
  |  BPM     |  ●   |●             |●           |  ●         | ●         | ●  |●  |●  | ●  |
- |  Case    |     |●             | ●           |   ○         | ●         |  ○ | |||
+ |  Case    |     |●             | ○           |   ●          | ○          |  | |||
   
   
  ![][ida-devops] 
