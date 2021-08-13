@@ -10,7 +10,7 @@ order: 3
 ***
 ### About this task
 
-In this task, you will use the BPM supporting tools to search instance, migrate instance between snapshots, update task data, finish task, move token, and re-try failed instance.
+In this task, you will use the Workflow supporting tools to search instance, migrate instance between snapshots, update task data, finish task, move token, and re-try failed instance.
 
 ### Search instance
 

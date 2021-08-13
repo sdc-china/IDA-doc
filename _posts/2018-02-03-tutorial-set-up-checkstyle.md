@@ -8,7 +8,7 @@ order: 3
 
 # Task 3: Set up Checkstyle
 ***
-IDA enables developers to perform static analysis on the BPM application, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on BPM development best practices and anti-patterns. The rules have been implemented with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
+IDA enables developers to perform static analysis on the Workflow project, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on Workflow development best practices and anti-patterns. The rules have been implemented with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
 
 
 ### About this task
@@ -27,7 +27,7 @@ Set up Checkstyle of a project:
      
       ![][checkstyle_notification]
   
-       You can also analyze any of your BPM projects in the **Checkstyle** tab. [More Detailed.][2]
+       You can also analyze any of your Workflow project in the **Checkstyle** tab. [More Detailed.][2]
   
   2. When the analysis is over, the analysis report will be displayed as below. [Details of the report.][1]
   
@@ -42,6 +42,6 @@ Set up Checkstyle of a project:
 [tutorial_checkstyle_report]: ../images/tutorial/tutorial_checkstyle_report.PNG
 
 [1]: ../checkstyle/checkstyle-report.html
-[2]: ../checkstyle/checkstyle-analyze-BPM-projects-with-checkstyle.html
+[2]: ../checkstyle/checkstyle-analyze-workflow-projects-with-checkstyle.html
 [3]: tutorial-run-record-and-replay-a-test-case.html
 [4]: tutorial-create-a-pipeline-for-continuous-deployment.html

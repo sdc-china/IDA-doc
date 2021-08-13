@@ -32,8 +32,8 @@ Test Case Created | Enable notification of test case creation
 Test Case Modified | Enable notification of test case modification
 Pipeline Build Success | Enable notification of pipeline build success
 Pipeline Build Failure | Enable notification of pipeline build failure
-BPM and Selenium Server Down/Up | Enable notification of server status
-Server Status Check Interval | Time interval in seconds to check the availability of BPM and Selenium servers
+BAW and Selenium Server Down/Up | Enable notification of server status
+Server Status Check Interval | Time interval in seconds to check the availability of BAW and Selenium servers
 
 ## Test configuration 
 

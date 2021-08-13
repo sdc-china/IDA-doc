@@ -1,18 +1,18 @@
 ---
-title: "Analyze BPM projects with analyzer statistic"
+title: "Analyze Workflow projects with analyzer statistic"
 category: analyzer
 date: 2018-10-10 14:17:55
 last_modified_at: 2019-11-26 14:50:00
 order: 1
 ---
 
-# Analyze BPM projects with analyzer statistic
+# Analyze Workflow projects with analyzer statistic
 ***
-### Setting up the BPM project and perform it.
+### Setting up the Workflow project and perform it.
 
-   1. Switch to the **Analyzer** tab, then you can use BPM server or upload a TWX file to analyze.
+   1. Switch to the **Analyzer** tab, then you can use Workflow server or upload a TWX file to analyze.
      
-      **Use BPM server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
+      **Use Workflow server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
 
       ![][analyzer_statistic_online]
       

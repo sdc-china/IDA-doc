@@ -16,13 +16,13 @@ order: 2
 
    You have installed **Rule Designer** in your local environment and **Checkstyle Rule Projects** have been in your local workspace.
 
-### BPM checkstyle rule projects overview
+### Workflow checkstyle rule projects overview
 
-   The BPM checkstyle rule projects include **CheckstyleBOM**, **CheckstyleRules**, **CheckstyleRulesCore** and **CheckstyleRulesCustomized**. Their dependency relationships are as follows:
+   The Workflow checkstyle rule projects include **CheckstyleBOM**, **CheckstyleRules**, **CheckstyleRulesCore** and **CheckstyleRulesCustomized**. Their dependency relationships are as follows:
 
    ![][checkstyle_rule_project_relation]
 
-### BPM checkstyle rules customization
+### Workflow checkstyle rules customization
 
 #### Override core checkstyle rules
 
@@ -32,7 +32,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
     ![][checkstyle_override_step_one]
 
-2. Run the BPM checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is warning message **Too many BPDs**.
+2. Run the Workflow checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is warning message **Too many BPDs**.
 
     ![][checkstyle_override_step_two]
 
@@ -54,7 +54,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
 6. Redeploy the ruleset to your target server e.g. on IBM Cloud.
 
-7. Rerun BPM checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is **no** warning message **Too many BPDs**.
+7. Rerun Workflow checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is **no** warning message **Too many BPDs**.
 
 
 #### Write custom checkstyle rules
@@ -65,7 +65,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
   Take writing a customized checkstyle rule **check-service-name-contain-test** as an example:
 
-  1. Add a new rule **check-service-name-contain-test** that will check if a BPM service name contains test into in package **customized** in rule project **CheckstyleRulesCustomized**.
+  1. Add a new rule **check-service-name-contain-test** that will check if a Workflow service name contains test into in package **customized** in rule project **CheckstyleRulesCustomized**.
 
      ![][checkstyle_custom_rules_step_one]
 
@@ -75,7 +75,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
   3. Redeploy the ruleset to your target server e.g. on IBM Cloud.
 
-  4. Rerun BPM checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is a warning message **The service with the word 'Test' (not case sensitive) in its name**.
+  4. Rerun Workflow checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is a warning message **The service with the word 'Test' (not case sensitive) in its name**.
 
      ![][checkstyle_custom_rules_step_four]
 

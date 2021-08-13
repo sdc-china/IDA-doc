@@ -1,18 +1,18 @@
 ---
-title: "Analyze BPM projects with analyzer toolkit references"
+title: "Analyze Workflow projects with analyzer toolkit references"
 category: analyzer
 date: 2018-10-10 14:17:55
 last_modified_at: 2019-11-26 14:50:00
 order: 2
 ---
 
-# Analyze BPM projects with analyzer toolkit references
+# Analyze Workflow projects with analyzer toolkit references
 ***
-### Setting up the BPM project and perform it.
+### Setting up the Workflow project and perform it.
 
-   1. Switch to the **Analyzer** tab, then you can use BPM server to analyze.
+   1. Switch to the **Analyzer** tab, then you can use Workflow server to analyze.
 
-      **Use BPM server**, choose the toolkit - references tab, fill the below field values for the analyzer toolkit references form.
+      **Use Workflow server**, choose the toolkit - references tab, fill the below field values for the analyzer toolkit references form.
 
       ![][analyzer_toolkit_references]
 

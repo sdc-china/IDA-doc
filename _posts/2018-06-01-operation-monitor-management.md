@@ -10,10 +10,10 @@ order: 2
 ***
 ### About this task
 
-In this task, you will create a new BPM monitor, edit monitor, delete monitor, disable/enable monitor and view monitor charts.
+In this task, you will create a new BAW monitor, edit monitor, delete monitor, disable/enable monitor and view monitor charts.
 
 ### Prerequisite
-To use Monitor feature, target BPM system to be monitored has to integrate with IDA through DEF. For details, please refer to  [Configure BPM DEF][2].
+To use Monitor feature, target BAW system to be monitored has to integrate with IDA through DEF. For details, please refer to  [Configure BAW DEF][2].
 
 ### Create monitor
 

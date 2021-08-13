@@ -89,16 +89,16 @@ order: 30
 
   **Notes:**
 
-  If you upload a csv file suffixed with "_\<YOUR BPM SERVER NAME\>.csv", you need not to change the bind csv file from the test case editor page when you run the test case with a different BPM server. The IDA will automatically select the corresponding csv file to run the test case. If the IDA does not find the corresponding csv file, it uses the binded csv file.
+  If you upload a csv file suffixed with "_\<YOUR BAW SERVER NAME\>.csv", you need not to change the bind csv file from the test case editor page when you run the test case with a different Workflow server. The IDA will automatically select the corresponding csv file to run the test case. If the IDA does not find the corresponding csv file, it uses the binded csv file.
 
 For example:  
 
 1. The "HR_Open_New_Position/case1" bind a csv file named "sample_data.csv".
    ![][bindcsv]
 
-2. If you want to run the test case with a different BPM server. The only you need to do is upload another csv file suffixed with "_\<YOUR BPM SERVER NAME\>.csv. It is very useful if you want to run the project with differents BPM servers in a pipeline. The IDA will select the corresponding csv file with the BPM server.
+2. If you want to run the test case with a different Workflow server. The only you need to do is upload another csv file suffixed with "_\<YOUR BAW SERVER NAME\>.csv. It is very useful if you want to run the project with differents Workflow servers in a pipeline. The IDA will select the corresponding csv file with the Workflow server.
 
-3. You could find \<YOUR BPM SERVER NAME\> from "Administration -> BPM Configuration"
+3. You could find \<YOUR BAW SERVER NAME\> from "Administration -> BPM Configuration"
 
    ![][bpm_server_name]
 
