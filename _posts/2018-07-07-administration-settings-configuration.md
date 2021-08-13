@@ -70,7 +70,7 @@ Decision Server Port | The port of decision server
 
 Field | Description
 --- | ---
-Interval for Trigger by New Snapshot(seconds): | Time interval in seconds for pipeline new snapshot trigger job to query BPM PC servers
+Interval for Trigger by New Snapshot(seconds): | Time interval in seconds for pipeline new snapshot trigger job to query BAW PC servers
 Installation Package Remote Dir | Installation Package Remote Dir
 Deployment Timeout(seconds) | Timeout of check if snapshot is installed on PS and set as default snapshot
 Deployment Check Interval(seconds) | Interval of check if snapshot is installed on PS and set as default snapshot

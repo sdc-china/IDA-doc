@@ -68,7 +68,7 @@ order: 4
 
   *ssh AdminTask.BPMSetEnvironmentVariable('[-containerAcronym ${APP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -environmentVariableName TEST_KEY -environmentVariableValue 8899]')*
 
-  This Script first logon Workflow server using ssh, then execute the wsadmin commmand there to update the Workflow environment variable. The format of the Script to call wsadmin command is
+  This Script first logon BAW server using ssh, then execute the wsadmin commmand there to update the Workflow environment variable. The format of the Script to call wsadmin command is
 
 **ssh** + space + **wsadmin command**
 

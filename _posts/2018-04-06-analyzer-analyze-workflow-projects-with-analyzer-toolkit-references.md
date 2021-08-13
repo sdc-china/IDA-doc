@@ -10,9 +10,9 @@ order: 2
 ***
 ### Setting up the Workflow project and perform it.
 
-   1. Switch to the **Analyzer** tab, then you can use Workflow server to analyze.
+   1. Switch to the **Analyzer** tab, then you can use BAW server to analyze.
 
-      **Use Workflow server**, choose the toolkit - references tab, fill the below field values for the analyzer toolkit references form.
+      **Use BAW server**, choose the toolkit - references tab, fill the below field values for the analyzer toolkit references form.
 
       ![][analyzer_toolkit_references]
 

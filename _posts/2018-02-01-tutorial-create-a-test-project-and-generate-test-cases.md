@@ -17,7 +17,7 @@ Before you start the tutorial, you need to setup below configurations with the a
 You need to setup user account for the IDA login credentials.
 
 [BPM configuration][2]   
-You need to setup Workflow server and make the Workflow account be ready.
+You need to setup BAW server and make the Workflow account be ready.
 
 [Selenium hub configuration][3]   
 You need to setup selenium node url for the remote testing.

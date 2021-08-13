@@ -10,9 +10,9 @@ order: 1
 ***
 ### Setting up the Workflow project and perform it.
 
-   1. Use Workflow server or upload a TWX file to analyze.
+   1. Use BAW server or upload a TWX file to analyze.
 
-      **Use Workflow server**, fill the below field values for the checkstyle form.
+      **Use BAW server**, fill the below field values for the checkstyle form.
 
       ![][checkstyle_checkstyleform]
 

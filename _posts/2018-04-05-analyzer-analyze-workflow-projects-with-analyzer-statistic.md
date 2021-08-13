@@ -10,9 +10,9 @@ order: 1
 ***
 ### Setting up the Workflow project and perform it.
 
-   1. Switch to the **Analyzer** tab, then you can use Workflow server or upload a TWX file to analyze.
+   1. Switch to the **Analyzer** tab, then you can use BAW server or upload a TWX file to analyze.
      
-      **Use Workflow server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
+      **Use BAW server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
 
       ![][analyzer_statistic_online]
       

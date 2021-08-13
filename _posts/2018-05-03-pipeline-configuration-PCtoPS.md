@@ -28,7 +28,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    The public key is now located in /root/.ssh/id_rsa.pub. The private key (identification) is now located in  /root/.ssh/id_rsa.
 
 
-3. Copy the public key to the PC Server and PS Server. Copy id_rsa.pub file to Workflow Server (PC/PS) /tmp folder, and execute below command.
+3. Copy the public key to the PC Server and PS Server. Copy id_rsa.pub file to BAW Server (PC/PS) /tmp folder, and execute below command.
 
 
    ```  
@@ -50,7 +50,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
 ### Verify SSH Key
 
-1. If you are in Linux environment, copy the id_rsa to Workflow server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
+1. If you are in Linux environment, copy the id_rsa to BAW server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
 
     ```     
    chmod 600 /tmp/id_rsa
