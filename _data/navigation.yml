@@ -123,7 +123,7 @@ docs:
     children:
       - title: "Users management"
         url: /administration/administration-users-management.html
-      - title: "BPM configuration"
+      - title: "BAW configuration"
         url: /administration/administration-bpm-configuration.html
       - title: "Selenium Hub configuration"
         url: /administration/administration-selenium-hub-configuration.html

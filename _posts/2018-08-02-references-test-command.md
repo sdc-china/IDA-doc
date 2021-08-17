@@ -37,7 +37,7 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
 | `Exception` | Optional | Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. | 
 | `Params`  | Depend on command. |JSON or XML format. If the template of parameters is rendered successfully by selecting service, the field is required. The parameters are defaulted based on the service signature. The template of parameters includes keys of data and you only need to fill in value. <br/>*e.g:*<br/>{<br/>"variable_name": "value",<br/>"variable2_name": "value2"<br/>}<br/>Also parameter support varaible like csv binding variable and context variable.You can use ${csv.xxxx} or ${xxx} to reference your vairable value.If vairable value is number please remove quote before $.<br/>*e.g:*<br/>{<br/>"textReader":"${csv.instanceId}",<br/>"integer":${number},<br/>"decimal":0,<br/>"text":"${mytext}"<br/>}  |
 | `Expected Output` |Optional|Used for validating command response. In some cases, there is a refresh button, which can be used to get default expected results. Make sure to fill out params before clicking refresh. If refresh does not work, execute the case step with out expectedOutput set. If passed, edit the step and click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results. <br/>**Notes:**The ![][command_params_error_icon] icon will appears below *Expected Output* field when the wrong *Params* is filled out after click ![][command_expected_output_refresh_button] button in the Command Editor Dialog. The error message can be got by hovering on the ![][command_params_error_icon] icon.|
@@ -207,7 +207,7 @@ Perform SQL Query by REST API, please install BPM Testing Asset Toolkit to suppo
 	|----------------|------------|--------------|
 	| `SQL` | Required |SQL script.|
 	| `Max Rows`   | Optional |  Max rows of expected output. If empty, IDA will retrieve all rows.|
-	| `Data Source`   | Required | Data source JNDI name as defined in target BPM environment. Default dataSourceName is jdbc/TeamWorksDB.|
+	| `Data Source`   | Required | Data source JNDI name as defined in target BAW environment. Default dataSourceName is jdbc/TeamWorksDB.|
 	| `Expected Output` | Required | Expected  output in JSON format. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
 	|`Expected Rows`|Optional|Expected rows of results.|
 
@@ -332,7 +332,7 @@ Assign task to specific user. Can only be used in a context of process instance 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
     | `Task Name` | Required |The name of the task assigned to the specific user. Select from drop down. |
-    | `To User` | Required | Select from drop down list of users defined in IDA/BPM Configuration for target BPM server.|
+    | `To User` | Required | Select from drop down list of users defined in IDA/BAW Configuration for target BAW server.|
 
 - Example  
 
@@ -555,7 +555,7 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
 |`TaskName`|Required| Name of the task that needs to be asserted. Drop down lists all task names in the Process Application of the Test Project which is connected to.|
 |`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
 
@@ -681,7 +681,7 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
 | `Exception` | Optional | Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. | 
 | `Params`  | Depend on command. |JSON or XML format. If the template of parameters is rendered successfully by selecting service, the field is required. The parameters are defaulted based on the service signature. The template of parameters includes keys of data and you only need to fill in value. <br/>*e.g:*<br/>{<br/>"variable_name": "value",<br/>"variable2_name": "value2"<br/>}<br/>Also parameter support varaible like csv binding variable and context variable.You can use ${csv.xxxx} or ${xxx} to reference your vairable value.If vairable value is number please remove quote before $.<br/>*e.g:*<br/>{<br/>"textReader":"${csv.instanceId}",<br/>"integer":${number},<br/>"decimal":0,<br/>"text":"${mytext}"<br/>}  |
 | `Expected Output` |Optional|Used for validating command response. In some cases, there is a refresh button, which can be used to get default expected results. Make sure to fill out params before clicking refresh. If refresh does not work, execute the case step with out expectedOutput set. If passed, edit the step and click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results. <br/>**Notes:**The ![][command_params_error_icon] icon will appears below *Expected Output* field when the wrong *Params* is filled out after click ![][command_expected_output_refresh_button] button in the Command Editor Dialog. The error message can be got by hovering on the ![][command_params_error_icon] icon.|
@@ -816,7 +816,7 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
 |`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
 
 ___
@@ -868,7 +868,7 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
 |`Value`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.| The value of the control.|
 |`Contorl ID`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the control. Control ID is the PATH control IDs leading to the selected control id.|
 |`Label`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The label of the control.|
@@ -883,7 +883,7 @@ ___
 
 ### **bpmFileDropzone**
 
-Upload file to BPM server by Dropzone control. 
+Upload file to BAW server by Dropzone control. 
 
 - Parameters
 
@@ -1172,7 +1172,7 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
 |`Contorl ID`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the control. Control ID is the PATH control IDs leading to the selected control id.|
 |`Label`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The label of the control.|
 |`Element ID`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the element.|
@@ -1432,7 +1432,7 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BPM user. Drop down lists all *BPM user names* defined in the BPM Configuration the Test Project is connected to. More details refer to [**BPM Configuration/Add user to a BPM server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If your recorded commands come from "BPM" or "Case" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "Case assertion","UI","BPM assertion","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
 |`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
 
 ___

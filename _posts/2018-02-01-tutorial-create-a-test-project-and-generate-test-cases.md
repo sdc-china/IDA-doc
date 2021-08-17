@@ -41,7 +41,7 @@ To create a new test project:
 
      **Notes** 
      IDA caches applications and toolkits list per server, you could refresh the cache by clicking the ![][tutorial_refresh_icon] next to the 'Process App'.  
-     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BPM server](https://sdc-china.github.io/IDA-doc/administration/administration-bpm-configuration.html#add-case-object-store-configuration-to-a-bpm-server).
+     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BAW server](https://sdc-china.github.io/IDA-doc/administration/administration-bpm-configuration.html#add-case-object-store-configuration-to-a-bpm-server).
   
   2. Click **Create** button, you will enter into project dashboard page.
 

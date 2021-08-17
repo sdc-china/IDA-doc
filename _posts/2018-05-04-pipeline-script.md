@@ -64,7 +64,7 @@ order: 4
   **Call wsadmin command**
   <br>
   <br>
-   You can execute a wsadmin command in Script. The wsadmin command is running against the BPM server associated to the Stage Workflow configuration. For example,
+   You can execute a wsadmin command in Script. The wsadmin command is running against the BAW server associated to the Stage Workflow configuration. For example,
 
   *ssh AdminTask.BPMSetEnvironmentVariable('[-containerAcronym ${APP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -environmentVariableName TEST_KEY -environmentVariableValue 8899]')*
 
@@ -81,7 +81,7 @@ order: 4
   The script file has a .py extension to reflect the Jython language syntax of the script.  Example below shows a two-line Jython script file named bpmtask.py.
   
   ``` 
-  print "This script is used to set BPM EnvironmentVariable"
+  print "This script is used to set BAW EnvironmentVariable"
   AdminTask.BPMSetEnvironmentVariable('[-containerAcronym BTAS -containerSnapshotAcronym TS -environmentVariableName TEST_KEY -environmentVariableValue 98744]')
   ``` 
 #### Notes:
