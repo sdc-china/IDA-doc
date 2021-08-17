@@ -103,12 +103,12 @@ return bta.util.callback();
   Add a customized javascript which waits for the request to complete as post script and insert it after the case steps that trigger the request.
 
 Here is the steps:
-1. Post Script function is disable by default and user should enble it in project configuration. 
+1. Post Script function is disable by default and user should enble it in project configuration.
 
-   Step1: Edit the project 
-   
+   Step1: Edit the project
+
    Step2: Add **"post_script":true** in Engine Properties.
-   
+
    ![][post_script_eanble]
 
 2. Create Post Custom Command:
@@ -151,7 +151,7 @@ Here is the steps:
    ```
 
    You can configure **timeout**, **interval**, **elementId**, **elementCss** and **xpath** as you need.The default sample
-   will wait some time util  loading icon(img[alt='Loading']) disapper(Usually it is located on right top of the BPM UI).It    applys for long loading ajax      service or Long time UI loaing.
+   will wait some time util  loading icon(img[alt='Loading']) disapper(Usually it is located on right top of the UI).It    applys for long loading ajax      service or Long time UI loaing.
 
    ![][test_post_script_sampleUI]
 
@@ -191,5 +191,3 @@ Here is the steps:
   [test_post_script_sampleUI]: ../images/test/test_post_script_sample.PNG
   [test_operation_post_script]: ../images/test/test_operation_post_script.png
   [post_script_eanble]: ../images/test/post_script_eanble.png
-
-

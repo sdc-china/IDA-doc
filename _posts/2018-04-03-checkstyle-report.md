@@ -18,7 +18,7 @@ order: 3
 
    Lower score means that the code of this process application is closer to to the coding standard, and higher score means that the code needs to refactor.  
 
-   The warnings are calculated from **Documentation**, **Implementation**, **Maintenance**, **Migration**, **Performance**, **Redundant** etc. dimensions and the dimension will not be displayed when there is no warning that belongs to this dimension. Warnings of each dimension  will be counted in three level : **critical**, **Major** and **Minor**. Developers can find the modification advises for each BPM application artifacts, so that it can continuously improve the coding quality.  
+   The warnings are calculated from **Documentation**, **Implementation**, **Maintenance**, **Migration**, **Performance**, **Redundant** etc. dimensions and the dimension will not be displayed when there is no warning that belongs to this dimension. Warnings of each dimension  will be counted in three level : **critical**, **Major** and **Minor**. Developers can find the modification advises for each application artifacts, so that it can continuously improve the coding quality.  
 
    ![][checkstyle_statistic]
 ####  Artifact Warning Summary
