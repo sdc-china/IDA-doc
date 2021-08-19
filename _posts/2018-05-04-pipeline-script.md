@@ -72,11 +72,15 @@ order: 4
 
 **ssh** + space + **wsadmin command**
 
-  We also support execute script file for wasadmin command. For example,
+  We also support execute script file for wasadmin command including parametes. For example,
 
   *ssh -f /tmp/bpmtask.py*
 
   *ssh -f bpmtask.py* 
+
+  *ssh -containerAcronym BTAS -containerSnapshotAcronym T1 -f /tmp/bpmtask.py*
+
+  *ssh -containerAcronym ${APP_ACRONYM} -containerSnapshotAcronym ${SNAPSHOT_ACRONYM} -f /tmp/bpmtask.py*
   
   The script file has a .py extension to reflect the Jython language syntax of the script.  Example below shows a two-line Jython script file named bpmtask.py.
   
@@ -86,10 +90,12 @@ order: 4
   ``` 
 #### Notes:
   - If you not specify the script file path,it will use the BAW deployment remote dir as your script path,which is defined in the IDA setting page.Also you need to put this script file in the BAW server specfied folder before you run the pipeline.
+  - ${APP_ACRONYM} and ${SNAPSHOT_ACRONYM} parameter will be replaced by runtime.
 
 The format of the script file to call wsadmin command is
 
 **ssh** + space + **-f** + space + **scriptFileName**
+**ssh** + space +  **Parameters**  + space +**-f** + space + **scriptFileName**
 
 [pipeline_create_script]: ../images/pipeline/pipeline_create_script.png
 [pipeline_script_result]: ../images/pipeline/pipeline_script_result.png
