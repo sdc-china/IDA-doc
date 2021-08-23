@@ -9,9 +9,9 @@ order: 2
 # BAW configuration
 ***
 ### Add a BAW server
-  1. Click **Administrator** tab, then switch to  **BPM Configurtaion** tab to manage BAW server.  
+  1. Click **Administrator** tab, then switch to  **BAW Configurtaion** tab to manage BAW server.  
 
-  2. Click ![][add_icon] icon which is on the right of **BPM Server Configuration** to add new BAW server.
+  2. Click ![][add_icon] icon which is on the right of **BAW Server Configuration** to add new BAW server.
 
   3. Fill out the form below. Then click **Create** button. Optional fields are hidden inside **Advance** section. Click **Advance** to show them.
 
@@ -50,7 +50,7 @@ If you login get 401 unauthorized error,please check your function id belong to 
 
 
 ### Delete BAW server
-  Select the servers in the **BPM Configuration** table, then click the **delete** icon to delete BAW server.
+  Select the servers in the **BAW Configuration** table, then click the **delete** icon to delete BAW server.
 
 ### Test BAW server
   Select  **Test Connection** icon on the right of the BAW server that you want to test.If test connection is failed,it will popup warning message.   
@@ -58,11 +58,11 @@ If you login get 401 unauthorized error,please check your function id belong to 
   ![][administrator_test_bpm_server]
 
 ### Add user to a BAW server
-  1. Click **Edit BPM User** icon on the right of the BAW server. Then you can see then BAW user list of the server.
+  1. Click **Manage BAW User** icon on the right. Then you can see then BAW user list of the server.
 
      ![][administrator_edit_bpm_user]
 
-  2. Click ![][add_icon] icon which is on the right of **BPM User Configuration**. Then fill out the form below to add a new user for the server.
+  2. Click ![][add_icon] icon which is on the right of **BAW User Configuration**. Then fill out the form below to add a new user for the server.
 
      ![][administrator_bpmuser]           
 
