@@ -8,7 +8,7 @@ order: 3
 
 # Deploy snapshot from PC to PS
 ***
-IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the BPM Process Center IP is 192.168.0.10.
+IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the Workflow Process Center IP is 192.168.0.10.
 
 ## Configure SSH Key
  
@@ -28,7 +28,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    The public key is now located in /root/.ssh/id_rsa.pub. The private key (identification) is now located in  /root/.ssh/id_rsa.
 
 
-3. Copy the public key to the PC Server and PS Server. Copy id_rsa.pub file to BPM Server (PC/PS) /tmp folder, and execute below command.
+3. Copy the public key to the PC Server and PS Server. Copy id_rsa.pub file to BAW Server (PC/PS) /tmp folder, and execute below command.
 
 
    ```  
@@ -40,7 +40,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    **The Linux operator user should have the permission to run "wsadmin.sh"**
 
 
-4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content to your BPM PC and PS configuration in IDA. Also you need to fill the  WAS admin command path.
+4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content to your Workflow PC and PS configuration in IDA. Also you need to fill the  WAS admin command path.
 
     ![][pipeline_bpmconfiguration]
 
@@ -50,7 +50,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
 ### Verify SSH Key
 
-1. If you are in Linux environment, copy the id_rsa to BPM server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
+1. If you are in Linux environment, copy the id_rsa to BAW server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
 
     ```     
    chmod 600 /tmp/id_rsa

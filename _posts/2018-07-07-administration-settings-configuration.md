@@ -32,8 +32,8 @@ Test Case Created | Enable notification of test case creation
 Test Case Modified | Enable notification of test case modification
 Pipeline Build Success | Enable notification of pipeline build success
 Pipeline Build Failure | Enable notification of pipeline build failure
-BPM and Selenium Server Down/Up | Enable notification of server status
-Server Status Check Interval | Time interval in seconds to check the availability of BPM and Selenium servers
+BAW and Selenium Server Down/Up | Enable notification of server status
+Server Status Check Interval | Time interval in seconds to check the availability of BAW and Selenium servers
 
 ## Test configuration 
 
@@ -70,7 +70,7 @@ Decision Server Port | The port of decision server
 
 Field | Description
 --- | ---
-Interval for Trigger by New Snapshot(seconds): | Time interval in seconds for pipeline new snapshot trigger job to query BPM PC servers
+Interval for Trigger by New Snapshot(seconds): | Time interval in seconds for pipeline new snapshot trigger job to query BAW PC servers
 Installation Package Remote Dir | Installation Package Remote Dir
 Deployment Timeout(seconds) | Timeout of check if snapshot is installed on PS and set as default snapshot
 Deployment Check Interval(seconds) | Interval of check if snapshot is installed on PS and set as default snapshot

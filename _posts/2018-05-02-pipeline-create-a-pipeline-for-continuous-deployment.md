@@ -99,11 +99,11 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 2. When the pipeline build is over, the summary information will be appeared in pipeline dashboard. The failed step will not be running and won't have any report. You can click the **build name** link to see the whole report. [Details of the report]
 
 
-### Perform deployment from BPM PC server to PC server
+### Perform deployment from Workflow PC server to PC server
 
 **Note:**
 
-IDA only support to deploy applications from BPM PC server to PC server between same version.
+IDA only support to deploy applications from Workflow PC server to PC server between same version.
 
 1. Click **Create Pipeline** button in pipeline page.
 
@@ -117,7 +117,7 @@ IDA only support to deploy applications from BPM PC server to PC server between 
 
     ![][p2p_takeSnapshot]
 
- 4. Click ![][pipeline_add_stage] icon to add 'Stage2' and select "Deployment" type, you could select another BPM PC server with same version of 'Stage1'.
+ 4. Click ![][pipeline_add_stage] icon to add 'Stage2' and select "Deployment" type, you could select another Workflow PC server with same version of 'Stage1'.
 
     ![][p2p_stage2]
 

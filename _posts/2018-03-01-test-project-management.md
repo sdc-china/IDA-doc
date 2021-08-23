@@ -31,7 +31,7 @@ order: 10
      Toolkit               |Toolkits of  selected server
      Trace                 |The branch of selected process app or toolkit
      Snapshot              |The snapshot of selected branch
-     [Default Assignee][3] |Default assignee BPM User. 
+     [Default Assignee][3] |Default assignee Workflow User. 
      [Default Browser][2]  |Support chrome, firefox selenium node 
      [Other Broswer][2]    |Support chrome, firefox selenium node 
      Tip                   |Use the latest snapshot 
@@ -43,7 +43,7 @@ order: 10
      
      Remember to select the process app or toolkit, which can't be both selected.
      You need to upload Eclipse test project zip file when you check the "Migrate an old project".  
-     If the permission control of your BPM server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user.[Refer to][3]
+     If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user.[Refer to][3]
      
      **Known Limitions:**   
      The test project migration is only supported under development environment.  

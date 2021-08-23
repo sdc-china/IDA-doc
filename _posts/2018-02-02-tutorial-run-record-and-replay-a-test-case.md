@@ -16,7 +16,7 @@ IDA provides a browser plugin recorder, which allows users to record their test 
   
 ### Step 1: Set up assignees for case steps
 
-  In this step, you need to assign the BPM task users for case steps. Take the case1 of **Create Position Request CSHS** as an example.
+  In this step, you need to assign the Workflow task users for case steps. Take the case1 of **Create Position Request CSHS** as an example.
   
 #### Procedure
 
@@ -34,7 +34,7 @@ To set up assignees for case steps:
     ![][test_case_step_edit_button]
  
  
- 5. Select **administrator** in **Assignee** field in order to specify other BPM users to help you complete the business process.
+ 5. Select **administrator** in **Assignee** field in order to specify other Workflow users to help you complete the business process.
     ![][test_case_step_table2]
  
  6. Click **Exit Edit** button to finish edit.

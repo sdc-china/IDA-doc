@@ -10,12 +10,12 @@ order: 10
 ***
 ## IDA Demos
 1. [IDA Introduction](https://video.ibm.com/playlist/634514/video/128382300)
-2. [IDA Tutorial: BPM Testing - Creating and Generating Process Test Cases](https://video.ibm.com/playlist/634514/video/128382310)
-3. [IDA Tutorial: BPM Testing - Recording and Replaying Process Test Cases](https://video.ibm.com/playlist/634514/video/128382312)
-4. [IDA Tutorial: BPM Testing - Creating and Replaying Service Test Cases](https://video.ibm.com/playlist/634514/video/128382313)
-5. [IDA Tutorial: BPM Testing - Refactoring Your Test Cases with Group Commands](https://video.ibm.com/playlist/634514/video/128382906)
-6. [IDA Tutorial: Static Analysis and Code Review for BPM](https://video.ibm.com/playlist/634514/video/128382907)
-7. [IDA Tutorial: Pipeline - Building Your CI/CD Pipeline for IBM BPM in 5 Minutes](https://video.ibm.com/playlist/634514/video/128382908)
+2. [IDA Tutorial: BAW Testing - Creating and Generating Process Test Cases](https://video.ibm.com/playlist/634514/video/128382310)
+3. [IDA Tutorial: BAW Testing - Recording and Replaying Process Test Cases](https://video.ibm.com/playlist/634514/video/128382312)
+4. [IDA Tutorial: BAW Testing - Creating and Replaying Service Test Cases](https://video.ibm.com/playlist/634514/video/128382313)
+5. [IDA Tutorial: BAW Testing - Refactoring Your Test Cases with Group Commands](https://video.ibm.com/playlist/634514/video/128382906)
+6. [IDA Tutorial: Static Analysis and Code Review for BAW](https://video.ibm.com/playlist/634514/video/128382907)
+7. [IDA Tutorial: Pipeline - Building Your CI/CD Pipeline for IBM BAW in 5 Minutes](https://video.ibm.com/playlist/634514/video/128382908)
 8. [IDA Tutorial: Pipeline - REST API Introduction](https://video.ibm.com/playlist/634514/video/128382909)
 9. [IDA Tutorial: Pipeline - Integrating IDA with Jenkins](https://video.ibm.com/playlist/634514/video/128382910)
 10. [IDA Tutorial: Configuration - Introduction of Permission Management](https://video.ibm.com/playlist/634514/video/128382913)

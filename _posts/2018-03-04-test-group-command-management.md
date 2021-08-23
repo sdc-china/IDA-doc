@@ -62,7 +62,7 @@ order: 40
       Parameter           | Description       
     ----------------------|-------------------
       Command             | Reused group command name, in custom category
-      Assignee            | BPM user who help you finish process
+      Assignee            | Workflow user who help you finish process
       comment             | Comment of command
   
       ![][test_group_command_add]

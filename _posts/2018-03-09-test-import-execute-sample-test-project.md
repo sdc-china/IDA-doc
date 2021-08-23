@@ -21,7 +21,6 @@ order: 60
        | [Server][1]   |Server environment|
        | Process App   |Process app list of the selected server, default value is "Hiring Sample"|
        | [Selenium Hub][2]  |Support chrome, firefox selenium node|
-       | BPMoc         |Using BPMoc check|
 
    3. Click **Import** button.
 

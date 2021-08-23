@@ -62,9 +62,9 @@ For IDA version migration,you need to update IDA.war, take the following steps:
  You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
  
  
-### Step 3: Update IDA BPM Toolkit    
+### Step 3: Update IDA BAW Toolkit    
 
-To update IDA BPM Toolkit, take the following steps:
+To update IDA BAW Toolkit, take the following steps:
 
 1. Import **IDA_Toolkit - 8.6.0_v1.4.twx** which is below forder /toolkit of release package into your process center.
 2. Open your process app by web process designer from process center.  

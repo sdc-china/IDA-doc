@@ -8,7 +8,7 @@ order: 1
 
 # Task 1: Create a test project and generate test cases
 ***
-IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support BPM application test.
+IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support Workflow project test.
 
 ### Pre-requisites
 Before you start the tutorial, you need to setup below configurations with the administrative account ("idaAdmin"/"idaAdmin").
@@ -17,7 +17,7 @@ Before you start the tutorial, you need to setup below configurations with the a
 You need to setup user account for the IDA login credentials.
 
 [BPM configuration][2]   
-You need to setup BPM server and make the BPM account be ready.
+You need to setup BAW server and make the Workflow account be ready.
 
 [Selenium hub configuration][3]   
 You need to setup selenium node url for the remote testing.
@@ -41,7 +41,7 @@ To create a new test project:
 
      **Notes** 
      IDA caches applications and toolkits list per server, you could refresh the cache by clicking the ![][tutorial_refresh_icon] next to the 'Process App'.  
-     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BPM server](https://sdc-china.github.io/IDA-doc/administration/administration-bpm-configuration.html#add-case-object-store-configuration-to-a-bpm-server).
+     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BAW server](https://sdc-china.github.io/IDA-doc/administration/administration-bpm-configuration.html#add-case-object-store-configuration-to-a-bpm-server).
   
   2. Click **Create** button, you will enter into project dashboard page.
 

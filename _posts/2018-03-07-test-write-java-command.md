@@ -123,7 +123,7 @@ Write custom Java command
 	    // The driver object can handle the Browser UI, eg: open a url
 	    this.driver.open("about:blank");
 
-	    // Invoke BPM Server REST API.
+	    // Invoke BAW Server REST API.
 	    TeamworksAPI client = getTeamworksAPI();
 	    client.getSystemDetails();
 
@@ -138,7 +138,7 @@ Write custom Java command
 	```
 
 	* **this.driver**: It is the object can handle browser UI.
-	* **this.getTeamworksAPI()**: This method returns an object that can invoke the BPM server REST API.
+	* **this.getTeamworksAPI()**: This method returns an object that can invoke the BAW server REST API.
 	* **this.result**: The result of the Java command, and the values in the result will pass to the following test commands in a test case.
 
 
@@ -184,7 +184,7 @@ Write custom Java command
 	    // The driver object can handle the Browser UI, eg: open a url
 	    this.driver.open("about:blank");
 
-	    // Invoke BPM Server REST API.
+	    // Invoke BAW Server REST API.
 	    TeamworksAPI client = getTeamworksAPI();
 	    client.getSystemDetails();
 
@@ -217,9 +217,9 @@ Unit test custom Java command
 
 	* **selenium_hub_url**: It's the selenium grid hub url. If you don't have selenium grid, then you can set up one by the [link][selenium_grid_url].
 	* **selenium_hub_browser**: The browser type, the value could be **iexplore**, **firefox** or **chrome**, please make sure the selenium hub can support the configured browser type.
-	* **bpm_server_url**: The BPM server URL
-	* **bpm_server_user_name**: The BPM REST call user name
-	* **bpm_server_password**: The BPM REST call password
+	* **bpm_server_url**: The BAW server URL
+	* **bpm_server_user_name**: The BAW REST call user name
+	* **bpm_server_password**: The BAW REST call password
 
 2. Write unit test class under the source folder **src/test/java**, an example as below:
 

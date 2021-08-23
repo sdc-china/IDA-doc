@@ -1,18 +1,18 @@
 ---
-title: "Analyze BPM projects with checkstyle"
+title: "Analyze Workflow projects with checkstyle"
 category: checkstyle
 date: 2018-10-06 15:17:55
 last_modified_at: 2019-07-29 15:26:00
 order: 1
 ---
 
-# Analyze BPM projects with checkstyle
+# Analyze Workflow projects with checkstyle
 ***
-### Setting up the BPM project and perform it.
+### Setting up the Workflow project and perform it.
 
-   1. Use BPM server or upload a TWX file to analyze.
+   1. Use BAW server or upload a TWX file to analyze.
 
-      **Use BPM server**, fill the below field values for the checkstyle form.
+      **Use BAW server**, fill the below field values for the checkstyle form.
 
       ![][checkstyle_checkstyleform]
 

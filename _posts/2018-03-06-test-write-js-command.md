@@ -103,8 +103,15 @@ return bta.util.callback();
   Add a customized javascript which waits for the request to complete as post script and insert it after the case steps that trigger the request.
 
 Here is the steps:
+1. Post Script function is disable by default and user should enble it in project configuration.
 
-1. Create Post Custom Command:
+   Step1: Edit the project
+
+   Step2: Add **"post_script":true** in Engine Properties.
+
+   ![][post_script_eanble]
+
+2. Create Post Custom Command:
 
    Global level: Create a javascript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will shown in the case step edit table. And allow all projects of your system to insert post script after UI/JS commands.
 
@@ -144,7 +151,7 @@ Here is the steps:
    ```
 
    You can configure **timeout**, **interval**, **elementId**, **elementCss** and **xpath** as you need.The default sample
-   will wait some time util  loading icon(img[alt='Loading']) disapper(Usually it is located on right top of the BPM UI).It    applys for long loading ajax      service or Long time UI loaing.
+   will wait some time util  loading icon(img[alt='Loading']) disapper(Usually it is located on right top of the UI).It    applys for long loading ajax      service or Long time UI loaing.
 
    ![][test_post_script_sampleUI]
 
@@ -155,7 +162,7 @@ Here is the steps:
 	console.log("Start to run post script!");
 	setTimeout(function(){ }, 3000);
     ```
-2. Insert Post Script to Case Step
+3. Insert Post Script to Case Step
 
    If you have created any level of the post script then the layout of case step table:
 
@@ -183,3 +190,4 @@ Here is the steps:
   [test_post_script_look]: ../images/test/test_post_script_look.PNG
   [test_post_script_sampleUI]: ../images/test/test_post_script_sample.PNG
   [test_operation_post_script]: ../images/test/test_operation_post_script.png
+  [post_script_eanble]: ../images/test/post_script_eanble.png

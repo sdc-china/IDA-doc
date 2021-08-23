@@ -18,8 +18,8 @@ order: 1
     - Answer: YES, you could define Testing only, Checkstyle only pipeline and then leverage REST APIs for integration. More detail please refer to [Architecture doc](https://sdc-china.github.io/IDA-doc/references/references-architecture.html) and [API doc](https://sdc-china.github.io/IDA-doc/references/references-apis.html)
 4. FAQ: Could IDA use Oracle or SQLServer as DB beside DB2 and Mysql in supported list?
     - Answer: IDA only tests on DB2 and Mysql by now.It need some consultancy hours to support other RDBMS.
-5. FAQ: Could IDA WAR be deployed on the BPM WAS server?
-    - Answer: NO. The BPM WAS server COULD be only used by BPM application if it's not a license WAS server.
+5. FAQ: Could IDA WAR be deployed on the BAW WAS server?
+    - Answer: NO. The BAW WAS server COULD be only used by Workflow project if it's not a license WAS server.
 6. FAQ: Could we use IE to record testing?
     - Answer: NO. the recording feature only supports on Chrome or Firefox. IE could be used to replay the recorded test case. Just need setup a Selenium server on Windows to run regression testing.
 6. FAQ: Could we import Selenium test projects to IDA?
@@ -31,7 +31,7 @@ order: 1
 6. FAQ: Can we customize the rules of Checktyle?
     - Answer: YES.  Refer to doc [Customize Checkstyle rules](https://sdc-china.github.io/IDA-doc/checkstyle/checkstyle-customize-checkstyle-rules.html) and [Architecture doc](https://sdc-china.github.io/IDA-doc/references/references-architecture.html) about integration.   
 1. FAQ: Does the CheckStyle feature detect issues that cannot be detected by the Process Designer code validation
-    - Answer: YES. Checkstyle is BPM code static analytic.The PD validation is to do "compiling validation".   
+    - Answer: YES. Checkstyle is BAW code static analytic.The PD validation is to do "compiling validation".   
 1. FAQ: Could IDA test process definitions in toolkits or just the ones in process applications?   
     - Answer: YES. The user could select toolkit when creating test case. See [doc](https://sdc-china.github.io/IDA-doc/test/test-case-management.html)
 1. FAQ: If the team built some AngularJS code inside the coaches, can IDA support its testing?
@@ -51,14 +51,14 @@ order: 1
 1. FAQ: Is there number of users limitation on the IDA?
     - Answer: No limitation on # of users. The IDA asset license is granted to setup one IDA env.
 1. FAQ: How does Checkstyle of IDA compare with IBM App Scan ?
-    - Answer: The app scan only check for security vulnerability and the checkstyle is do statci code analysis in BPM TWX.
+    - Answer: The app scan only check for security vulnerability and the checkstyle is do statci code analysis in BAW TWX.
 1. FAQ: Shall I record all test cases again if I add a new field or change its position?
     - Answer: You could use [group command](https://sdc-china.github.io/IDA-doc/test/test-group-command-management.html) to manage test cases. In that case, you could just manualy modify the group command if adding one new field. Or record group command steps again and not need update all test cases one by one.
 1. FAQ: Does IDA support migration from versions which are not previous to the current release? For example, 2.2.1 to 2.2.4?
     - Answer: YES. though the intermediary sql scripts must be executed for each consecutive version we skip. Refer to [step one](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) in migration doc
 1. FAQ: Why can't I launch the BP3 human services on firefox grid?
     - Answer: The firefox selenium driver that we used(geckodriver-v0.23.0) cannot launch the BP3 human services when the selenium version is 3.14.0. This will be fixed in the next release.
-1. FAQ: Do we need the BPM admin to execute WAS commands permanently or we can use another user with similar/less permissions in configuration?
+1. FAQ: Do we need the BAW admin to execute WAS commands permanently or we can use another user with similar/less permissions in configuration?
     - Answer: We need WAS admin role to execute WAS commands to do deployment if the version is BAW v18 less. If it's BAW v18.0.0.2 or better, there is no need to configure WAS Admin in IDA.    
 1. FAQ: There are only user and admin two roles in doc. Can we define more roles?
     - Answer: Yes. e.g You need an infrustrure ADMIN role to do all servers configuration. It could be done thru  customization for role permission control.  
@@ -75,7 +75,7 @@ order: 1
 	
 	- Answer: Do below action to allow non tw_admin users to access the REST.
 	
-		1. Stop the servers of your IBM BPM PS environment.
+		1. Stop the servers of your IBM BAW PS environment.
 		
 		2. Start the scripting client in disconnected mode as described in [updateBPMConfig command](https://www.ibm.com/support/knowledgecenter/SS8JB4/com.ibm.wbpm.ref.doc/topics/rref_updatebpmconfig.html).
 		
@@ -87,7 +87,7 @@ order: 1
 			wsadmin> AdminConfig.save()
 			```
 		
-		4. Restart the servers of your IBM BPM environment.
+		4. Restart the servers of your IBM BAW environment.
 
 1. FAQ: I got the wrong character encoding in CSV file, what should I do?
 

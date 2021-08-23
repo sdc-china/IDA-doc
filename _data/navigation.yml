@@ -46,7 +46,7 @@ docs:
         url: /test/test-case-management.html
       - title: "Test case labels management"
         url: /test/test-case-label-management.html
-      - title: "Test Case data binding"
+      - title: "Test case data binding"
         url: /test/test-case-data-binding.html
       - title: "Group command management"
         url: /test/test-group-command-management.html
@@ -71,8 +71,8 @@ docs:
 
   - title: Checkstyle
     children:
-      - title: "Analyze BPM projects with checkstyle"
-        url: /checkstyle/checkstyle-analyze-BPM-projects-with-checkstyle.html
+      - title: "Analyze Workflow projects with checkstyle"
+        url: /checkstyle/checkstyle-analyze-workflow-projects-with-checkstyle.html
       - title: "Customize Checkstyle rules"
         url: /checkstyle/checkstyle-customize-checkstyle-rules.html
       - title: "Checkstyle report"
@@ -89,10 +89,10 @@ docs:
 
   - title: Analyzer
     children:
-      - title: "Analyze BPM projects with analyzer statistic"
-        url: /analyzer/analyzer-analyze-BPM-projects-with-analyzer-statistic.html
-      - title: "Analyze BPM projects with analyzer toolkit references"
-        url: /analyzer/analyzer-analyze-BPM-projects-with-analyzer-toolkit-references.html
+      - title: "Analyze Workflow projects with analyzer statistic"
+        url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-statistic.html
+      - title: "Analyze Workflow projects with analyzer toolkit references"
+        url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-toolkit-references.html
       - title: "Statistic report"
         url: /analyzer/analyzer-statistic-report.html
       - title: "Toolkit references report"
@@ -123,7 +123,7 @@ docs:
     children:
       - title: "Users management"
         url: /administration/administration-users-management.html
-      - title: "BPM configuration"
+      - title: "BAW configuration"
         url: /administration/administration-bpm-configuration.html
       - title: "Selenium Hub configuration"
         url: /administration/administration-selenium-hub-configuration.html

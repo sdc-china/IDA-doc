@@ -11,7 +11,7 @@ order: 4
 There are three components for IDA application we need install and configure, included
 - *IDA web application*
 - *IDA Browser Plugin*  
-- *IDA BPM/BAW toolkit*
+- *IDA BAW toolkit*
 
 # Step 1: Installing IDA Web Application
 
@@ -341,20 +341,20 @@ After finishing the installation of the fix packs, the next step is to deploy th
 
 https://ak-delivery04-mul.dhe.ibm.com/sar/CMA/WSA/084l4/0/wlp-webProfile7-java8-linux-x86_64-19.0.0.2.zip
 
-2\. Unzip it and move wlp dir to /opt/ibm/bpm/
+2\. Unzip it and move wlp dir to /opt/ibm/baw/
 ```
 unzip wlp-webProfile7-java8-linux-x86_64-19.0.0.2.zip
-mv ./wlp /opt/ibm/bpm/
+mv ./wlp /opt/ibm/baw/
 ```
 
 3\. Create a new liberty server, for example: was-liberty
 
 ```
-cd /opt/ibm/bpm/wlp/bin
+cd /opt/ibm/baw/wlp/bin
 ./server create was-liberty
 ```
 
-4\. Put the ida-web.war in the /opt/ibm/bpm/wlp/usr/servers/was-liberty/apps
+4\. Put the ida-web.war in the /opt/ibm/baw/wlp/usr/servers/was-liberty/apps
 
 5\. Edit the server.xml.
 
@@ -538,7 +538,7 @@ For example (IDA v3.x):
 ## Installing on Docker platform
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
-# Step 2: Installing IDA BPM Toolkit
+# Step 2: Installing IDA BAW Toolkit
 The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
 
 1. Import **IDA_Toolkit - 8.6.0_v1.1.twx** which is below forder /toolkit of release package into your process center.
@@ -565,13 +565,13 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 
 7. Modify toolkit access permission (Optional)
 
-	For security concern, we suggest to disable the toolkit in BPM production environment.
+	For security concern, we suggest to disable the toolkit in BAW production environment.
 	It allows user to modify the toolkit access permission by setting up the environment variable "BPMTAT_ACCESS". (true means enable the access, false means disable the access)
 
 	By default, the toolkit can only be invoked on Development and Test environment:
 	    ![][default_toolkit_setting]
 
-	You can define the same environment variable "BPMTAT_ACCESS" in your BPM application which will override the default setting in toolkit, for example:
+	You can define the same environment variable "BPMTAT_ACCESS" in your BAW application which will override the default setting in toolkit, for example:
 	    ![][custom_toolkit_setting]
 
 
