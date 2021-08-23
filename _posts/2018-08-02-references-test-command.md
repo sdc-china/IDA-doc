@@ -59,6 +59,16 @@ Login into BPM portal. As a result BPM Portal page is opened.
 
 ___
 
+### **loginWorkplace**
+
+Login into Workpace on CP4BA. As a result BAW workplace page is opened.
+
+- Example  
+
+	![][loginWorkpalce_Sample]
+
+___
+
 ### **loginBPMoC**
 
 Login into BPM on cloud.As a result BPM on cloud page is opened.
@@ -1547,6 +1557,7 @@ ___
 [command_UIAssert_buttons]: ../images/command/command_UIAssert_buttons.png
 [command_UIAssert_checkbox]: ../images/command/command_UIAssert_checkbox.png
 [loginPortal_Sample]: ../images/command/loginPortal_Sample.png
+[loginWorkplace_Sample]: ../images/command/loginWorkplace_Sample.png
 [Login_BPMoC_Sample]: ../images/command/Login_BPMoC_Sample.png
 [openInstanceDetail_Sample]: ../images/command/openInstanceDetail_Sample.png
 [open_sample]: ../images/command/open_sample.png
