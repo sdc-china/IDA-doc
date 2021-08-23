@@ -2,7 +2,7 @@
 title: "Task 1: Create a test project and generate test cases"
 category: tutorial
 date: 2018-09-23 15:17:55
-last_modified_at: 2019-07-25 21:40:00
+last_modified_at: 2021-08-23 21:40:00
 order: 1
 ---
 
@@ -16,7 +16,7 @@ Before you start the tutorial, you need to setup below configurations with the a
 [Users management][1]  
 You need to setup user account for the IDA login credentials.
 
-[BPM configuration][2]   
+[BAW configuration][2]   
 You need to setup BAW server and make the Workflow account be ready.
 
 [Selenium hub configuration][3]   

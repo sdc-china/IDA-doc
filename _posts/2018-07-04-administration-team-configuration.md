@@ -2,7 +2,7 @@
 title: "Team configuration"
 category: administration
 date: 2018-10-21 15:17:55
-last_modified_at: 2019-07-29 16:21:00
+last_modified_at: 2021-08-23 16:21:00
 order: 4
 ---
 
@@ -21,12 +21,12 @@ order: 4
      |------------------------|-------------|                                          
      | Team    Name           | the name of the created team|  
      | Description            | more description or information of the created team|
-     | Access All BPM Server  | If check, then the users in this team can access all BAW servers without assignment.|
+     | Access All BAW Server  | If check, then the users in this team can access all BAW servers without assignment.|
      | Access All Selenium Server  | If check, then the users in this team can access all selenium serers without assignment.|
 
      **Notes:**
 
-     If checkboxes *Access All BPM Server* and *Access All Selenium Server* are checked, then the team is an administration team. Its users can access all BAW servers, process apps and selenium grids, which does not have to assign. *Process App Assignment* and *Selenium Grid Assignment* buttons are not available.
+     If checkboxes *Access All BAW Server* and *Access All Selenium Server* are checked, then the team is an administration team. Its users can access all BAW servers, process apps and selenium grids, which does not have to assign. *Process App Assignment* and *Selenium Grid Assignment* buttons are not available.
 
      ![][administration_super_team]
 

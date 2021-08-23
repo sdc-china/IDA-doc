@@ -2,7 +2,7 @@
 title: "Test Case data binding"
 category: test
 date: 2018-09-29 15:17:55
-last_modified_at: 2019-07-26 16:26:00
+last_modified_at: 2021-08-23 16:26:00
 order: 30
 ---
 
@@ -98,7 +98,7 @@ For example:
 
 2. If you want to run the test case with a different BAW server. The only you need to do is upload another csv file suffixed with "_\<YOUR BAW SERVER NAME\>.csv. It is very useful if you want to run the project with differents Workflow servers in a pipeline. The IDA will select the corresponding csv file with the Workflow server.
 
-3. You could find \<YOUR BAW SERVER NAME\> from "Administration -> BPM Configuration"
+3. You could find \<YOUR BAW SERVER NAME\> from "Administration -> BAW Configuration"
 
    ![][bpm_server_name]
 
