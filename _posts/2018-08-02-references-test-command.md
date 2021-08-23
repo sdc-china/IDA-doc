@@ -1557,7 +1557,7 @@ ___
 [command_UIAssert_buttons]: ../images/command/command_UIAssert_buttons.png
 [command_UIAssert_checkbox]: ../images/command/command_UIAssert_checkbox.png
 [loginPortal_Sample]: ../images/command/loginPortal_Sample.png
-[loginWorkplace_Sample]: ../images/command/loginWorkplace_Sample.png
+[loginWorkpalce_Sample]: ../images/command/loginWorkplace_Sample.png
 [Login_BPMoC_Sample]: ../images/command/Login_BPMoC_Sample.png
 [openInstanceDetail_Sample]: ../images/command/openInstanceDetail_Sample.png
 [open_sample]: ../images/command/open_sample.png
