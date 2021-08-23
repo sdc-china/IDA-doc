@@ -16,11 +16,11 @@ IDA could select the right BAW user without modifying the test case when you wan
 
 ## BAW User Configuration
 
-1. Go to "Administration -> BPM Configuration". Select BPM 860 DEV Server and click "Edit BPM User" to add a new BAW User as below:  
+1. Go to "Administration -> BAW Configuration". Select BPM 860 DEV Server and click "Edit BAW User" to add a new BAW User as below:  
 
     ![][bpm_user_dev]
 
-2. Go to "Administration -> BPM Configuration". Select BPM 860 QA Server and click "Edit BPM User" to add a new BAW User as below:  
+2. Go to "Administration -> BAW Configuration". Select BPM 860 QA Server and click "Edit BAW User" to add a new BAW User as below:  
 
     ![][bpm_user_qa]
 
