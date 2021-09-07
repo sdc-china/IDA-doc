@@ -32,84 +32,78 @@ Below is the reference link for how to setup selenium grid.It includes the detai
    - [Chrome Driver Linux64](https://sites.google.com/a/chromium.org/chromedriver/)
 
 3. Start the Hub
-
-[Setting up your own Grid](https://www.selenium.dev/documentation/en/grid/setting_up_your_own_grid/)
-
-    - Create hubconfig.json
-    	```
-    	{
-    	  "port": 4444,
-    	  "newSessionWaitTimeout": 10000,
-    	  "servlets" : [],
-    	  "withoutServlets": [],
-    	  "custom": {},
-    	  "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
-    	  "registry": "org.openqa.grid.internal.DefaultGridRegistry",
-    	  "throwOnCapabilityNotPresent": true,
-    	  "cleanUpCycle": 5000,
-    	  "role": "hub",
-    	  "debug": false,
-    	  "browserTimeout": 60,
-    	  "timeout": 60
-    	}
-    	```
-    - Run the command
-    	```
-    	java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json
-    	```
+  - Create hubconfig.json
+    ```
+      {
+        "port": 4444,
+        "newSessionWaitTimeout": 10000,
+        "servlets" : [],
+        "withoutServlets": [],
+        "custom": {},
+        "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+        "registry": "org.openqa.grid.internal.DefaultGridRegistry",
+        "throwOnCapabilityNotPresent": true,
+        "cleanUpCycle": 5000,
+        "role": "hub",
+        "debug": false,
+        "browserTimeout": 60,
+        "timeout": 60
+      }
+    ```
+  - Run the command
+    ```
+      java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json
+    ```
 
 4. Start the Node
-
-   - Create nodeconfig.json
-     ```
-     {
-       "capabilities":
-       [
-         {
-           "browserName": "firefox",
-           "marionette": true,
-           "maxInstances": 5,
-           "seleniumProtocol": "WebDriver",
-     	    "version": 67
-         },
-         {
-           "browserName": "chrome",
-           "maxInstances": 5,
-           "seleniumProtocol": "WebDriver",
-     	  "version": 75
-         },
-         {
-           "browserName": "internet explorer",
-           "platform": "WINDOWS",
-           "maxInstances": 1,
-           "seleniumProtocol": "WebDriver",
-     	  "version": 11
-         }
-       ],
-       "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-       "maxSession": 5,
-       "port": -1,
-       "register": true,
-       "registerCycle": 5000,
-       "hub": "http://localhost:4444",
-       "nodeStatusCheckTimeout": 5000,
-       "nodePolling": 5000,
-       "role": "node",
-       "unregisterIfStillDownAfter": 60000,
-       "downPollingLimit": 2,
-       "debug": false,
-       "servlets" : [],
-       "withoutServlets": [],
-       "custom": {},
-       "browserTimeout": 60,
-       "timeout": 60
-     }
-     ```
-   - Run the command
-
-   ```
-     `java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json`
-   ```
+  - Create nodeconfig.json
+    ```
+      {
+        "capabilities": [
+          {
+            "browserName": "firefox",
+            "marionette": true,
+            "maxInstances": 5,
+            "seleniumProtocol": "WebDriver",
+            "version": 67
+          },
+          {
+            "browserName": "chrome",
+            "maxInstances": 5,
+            "seleniumProtocol": "WebDriver",
+            "version": 75
+          },
+          {
+            "browserName": "internet explorer",
+            "platform": "WINDOWS",
+            "maxInstances": 1,
+            "seleniumProtocol": "WebDriver",
+            "version": 11
+          }
+        ],
+        "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+        "maxSession": 5,
+        "port": -1,
+        "register": true,
+        "registerCycle": 5000,
+        "hub": "http://localhost:4444",
+        "nodeStatusCheckTimeout": 5000,
+        "nodePolling": 5000,
+        "role": "node",
+        "unregisterIfStillDownAfter": 60000,
+        "downPollingLimit": 2,
+        "debug": false,
+        "servlets": [],
+        "withoutServlets": [],
+        "custom": {},
+        "browserTimeout": 60,
+        "timeout": 60
+      }
+    ```
+  - Run the command   
+    ```
+      java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
+    ```
 
    **Notes:**
    To see the parameters meanings, you could run scripts:
