@@ -73,6 +73,17 @@ order: 70
   2. Pop up a strategy selection window. Here we use the **atOnceUsers** strategy and set the number of users to 10.
 
      ![][select_strategy]
+     
+     
+     We provide two strategy for usage. 
+
+     - atOnceUsers(nbUsers): Injects a given number of users at once.  
+
+     - rampUsers(nbUsers) during(duration): Injects a given number of users distributed evenly on a time window of a given duration.
+  
+**Notes**  
+   
+   If you choose BAW internal request checkbox true,it means in the report you will see every request/response networkinfo including image,js,css,portal scoial network etc in the report.
 
   3. Click **Run** button to start the load test.
 
