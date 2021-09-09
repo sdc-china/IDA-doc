@@ -80,10 +80,12 @@ order: 70
      - atOnceUsers(nbUsers): Injects a given number of users at once.  
 
      - rampUsers(nbUsers) during(duration): Injects a given number of users distributed evenly on a time window of a given duration.
+
   
 **Notes**  
    
-   If you choose BAW internal request checkbox true,it means in the report you will see every request/response networkinfo including image,js,css,portal scoial network etc in the report.
+   In default we will force predefined js,css,image,predefine reuqest pattern url etc  to be silent.A silent request will not be shown in 
+   the report.If you enable this checkbox,you can see more request like js,css,image etc information in the load test report.
 
   3. Click **Run** button to start the load test.
 
