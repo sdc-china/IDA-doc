@@ -75,11 +75,18 @@ order: 70
      ![][select_strategy]
      
      
-     We provide two strategy for usage. 
+     We provide two strategies for usage. 
 
      - atOnceUsers(nbUsers): Injects a given number of users at once.  
 
      - rampUsers(nbUsers) during(duration): Injects a given number of users distributed evenly on a time window of a given duration.
+     
+     In advance tab 
+     
+     - Change the default assertion value to meet  load case scenario statistic.If any assertion is failed,the whole load test case is failed.
+     - Change the log level for the loading testing. You can download the load testing log in the performance report tab page.
+
+     ![][gatling_report]
 
   
 **Notes**  
@@ -115,3 +122,4 @@ order: 70
 [view_load_test_report]: ../images/test/view_load_test_report.png
 [test_debug_point]: ../images/test/test_debug_point.png
 [gatling_home]: ../images/test/gatling_home.png
+[gatling_report]: ../images/test/gatling_report.png
