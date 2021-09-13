@@ -70,7 +70,7 @@ order: 70
 
      ![][load_test_button]
 
-  2. Pop up a strategy selection window. Here we use the **atOnceUsers** strategy and set the number of users to 10.
+  2. Pop up a strategy selection window. Here we use the **atOnceUsers** strategy and set proper the number of users.
 
      ![][select_strategy]
      
@@ -85,14 +85,12 @@ order: 70
      
      - Change the default assertion value to meet  load case scenario statistic.If any assertion is failed,the whole load test case is failed.
      - Change the log level for the loading testing. You can download the load testing log in the performance report tab page.
+     - Change the check BAW Product Requests checked to see more  product request pattern url(js,css,image,portal) etc.The default is off.
 
      ![][gatling_report]
 
   
-**Notes**  
-   
-   In default we will force predefined js,css,image,predefine reuqest pattern url etc  to be silent.A silent request will not be shown in 
-   the report.If you enable this checkbox,you can see more request like js,css,image etc information in the load test report.
+
 
   3. Click **Run** button to start the load test.
 
