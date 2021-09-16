@@ -85,7 +85,7 @@ order: 70
      
      - Change the default assertion value to meet  load case scenario statistic.If any assertion is failed,the whole load test case is failed.
      - Change the log level for the loading testing. You can download the load testing log in the performance report tab page.
-     - Change the check BAW Product Requests checked to see more  product request pattern url(js,css,image,portal) etc.The default is off.
+     - Switch on Check BAW Product Requests to include BAW product internal requests(i.e JS/CSS/Image resources and Portal requests loaded by BAW) in the Load Test Report. The default value is off.
 
      ![][gatling_report]
 
