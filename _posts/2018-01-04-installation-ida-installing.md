@@ -2,7 +2,7 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2021-02-01 18:12:00
+last_modified_at: 2021-09-09 18:12:00
 order: 4
 ---
 
@@ -132,6 +132,9 @@ For example:
 
     <keyStore id="defaultKeyStore" password="idaAdmin" />
 
+    <!-- There's an issue using jdk 8 with TLSv1.3, enable TLSv1.2 as below to work around the issue. -->
+    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustDefaultCerts="true" sslProtocol="TLSv1.2"/>
+
     <webContainer invokeFlushAfterService="false"/>
 
     <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
@@ -203,6 +206,10 @@ For example:
   <!-- Oracle Example END-->
 
 </server>
+```
+We found an issue using jdk 8 with TLSv1.3, which can cause very high CPU usage of IDA. To fix the issue, use TLSv1.2 by adding below configuration to server.xml.
+```
+<ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustDefaultCerts="true" sslProtocol="TLSv1.2"/>
 ```
 
 Liberty supports Advanced Encryption Standard (AES) encryption for passwords that are stored in the server.xml file. In Liberty installation bin folder you can use **securityUtility** command to encrypt your password.
