@@ -59,8 +59,7 @@ Here are some user stories.
 
 The user stories are as below:
 
-1.	As a Workflow Administrator, I want to be notified upon the status change or abnormal execution time of specific services that could help me take immediate actions on any outage.
-2.	As a Workflow Administrator, I want to manipulate the in-flight instances more efficiently to do the run-time debug to fix the issues reported by business users easily.
+1.	As a Workflow Administrator, I want to manipulate the in-flight instances more efficiently to do the run-time debug to fix the issues reported by business users easily.
 
 
 ### CICD Pipeline
