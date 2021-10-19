@@ -102,13 +102,13 @@ order: 70
 
      ![][view_load_test_report]
 
-### Load test case warning
+### Check load test case data
 
-  1. Sometimes when you click **Load Test** button on the right of case name,you might see some warning on the page.If you see the below screenshot,it means the   recorded networkinformation is corrupt.You need to use IDA plug-in to record this test case again.
+  1. Sometimes when you click **Load Test** button on the right of case name,you might see some warning on the page.If you see the below screenshot,it means the   recorded networkinformation is incorrect.You need to use IDA plug-in to record this test case again.
   
      ![][gatling_network_incorrect]
 
-  2. If you see the below en.rror,it means your record load test data is out of data.You also need to use IDA plug-in record the case again.
+  2. If you see the below error,it means your record load test data is out of data.You also need to use IDA plug-in record the case again.
   
      ![][gatling_network_outofdate]
 
