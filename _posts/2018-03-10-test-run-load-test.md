@@ -108,7 +108,7 @@ order: 70
   
      ![][gatling_network_incorrect]
 
-  2. If you see the below error,it means your record load test data is out of data.You also need to use IDA plug-in record the case again.
+  2. If you see the below error,it means your record load test data is out of sync.You also need to use IDA plug-in record the case again.
   
      ![][gatling_network_outofdate]
 
