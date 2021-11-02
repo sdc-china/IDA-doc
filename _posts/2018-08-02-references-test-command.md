@@ -554,6 +554,23 @@ Performs a custom search.
 	![][start_query_sample]
 	
 ___
+### **WaitProcessInstanceStatus**
+
+Get process instance data.
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+  |`Instance Status`|Required|Process instance status to check|
+  |`Timeout(seconds)`|Required|Wait timeout|
+
+- Example  
+
+	![][WaitProcessInstanceStatus_sample]
+	
+___
+
 
 ### **GetProcessInstanceData**
 
@@ -564,7 +581,7 @@ Get process instance data.
 	| Name | Required | Description |
 	|----------------|------------|--------------|
   |`Json Path`|Optional|Use json path to extract the instance data variable or sub json|
-  |`Variable Name`|Optional|"Save instance data variable or sub json into memory|
+  |`Variable Name`|Optional|Save instance data variable or sub json into memory|
 
 - Example  
 
@@ -1662,4 +1679,5 @@ ___
 [add_context]: ../images/command/add_context.png
 [date_string]: ../images/command/date_string.png
 [clickActivityFromPortal]: ../images/command/clickActivityFromPortal.png
-[GetProcessInstanceData] ../images/command/GetProcessInstanceData.png
+[WaitProcessInstanceStatus]: ../images/command/WaitProcessInstanceStatus.png
+[GetProcessInstanceData]: ../images/command/GetProcessInstanceData.png
