@@ -555,6 +555,23 @@ Performs a custom search.
 	
 ___
 
+### **GetProcessInstanceData**
+
+Get process instance data.
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+  |`Json Path`|Optional|Use json path to extract the instance data variable or sub json|
+  |`Variable Name`|Optional|"Save instance data variable or sub json into memory|
+
+- Example  
+
+	![][GetProcessInstanceData_sample]
+	
+___
+
 ## **BPM Assertion**
 
 This category is for asserting server side components.
@@ -1645,3 +1662,4 @@ ___
 [add_context]: ../images/command/add_context.png
 [date_string]: ../images/command/date_string.png
 [clickActivityFromPortal]: ../images/command/clickActivityFromPortal.png
+[GetProcessInstanceData] ../images/command/GetProcessInstanceData.png
