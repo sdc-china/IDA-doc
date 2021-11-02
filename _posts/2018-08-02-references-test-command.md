@@ -1679,5 +1679,5 @@ ___
 [add_context]: ../images/command/add_context.png
 [date_string]: ../images/command/date_string.png
 [clickActivityFromPortal]: ../images/command/clickActivityFromPortal.png
-[WaitProcessInstanceStatus]: ../images/command/WaitProcessInstanceStatus.png
-[GetProcessInstanceData]: ../images/command/GetProcessInstanceData.png
+[WaitProcessInstanceStatus_sample]: ../images/command/WaitProcessInstanceStatus.png
+[GetProcessInstanceData_sample]: ../images/command/GetProcessInstanceData.png
