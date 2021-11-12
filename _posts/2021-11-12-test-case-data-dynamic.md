@@ -1,7 +1,7 @@
 ---
 title: "Test Case data dynamic loading"
 category: test
-date: 2021-11-12 15:17:55
+date: 2018-09-30 15:19:55
 last_modified_at: 2021-11-12 16:26:00
 order: 31
 ---
@@ -50,9 +50,9 @@ We can use BAW services to integrate with external applications and load dynamic
 
 
     
-[toolkit_service_flow]: ../images/test/toolkit_service_flow.PNG
-[processapp_process]: ../images/test/processapp_process.PNG    
-[testcase_steps]: ../images/test/testcase_steps.PNG   
-[testcase_get_testdata]: ../images/test/testcase_get_testdata.PNG
-[testcase_use_testdata]: ../images/test/testcase_use_testdata.PNG
-[testcase_process_inspector]: ../images/test/testcase_process_inspector.PNG
+[toolkit_service_flow]: ../images/test/toolkit_service_flow.png
+[processapp_process]: ../images/test/processapp_process.png    
+[testcase_steps]: ../images/test/testcase_steps.png   
+[testcase_get_testdata]: ../images/test/testcase_get_testdata.png
+[testcase_use_testdata]: ../images/test/testcase_use_testdata.png
+[testcase_process_inspector]: ../images/test/testcase_process_inspector.png
