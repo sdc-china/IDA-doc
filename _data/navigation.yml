@@ -48,8 +48,8 @@ docs:
         url: /test/test-case-label-management.html
       - title: "Test case data binding"
         url: /test/test-case-data-binding.html
-       - title: "Test case data dynamic loading"
-        url: /test/2021-11-12-test-case-data-dynamic.html
+      - title: "Test case data dynamic loading"
+        url: /test/test-case-data-dynamic.html
       - title: "Group command management"
         url: /test/test-group-command-management.html
       - title: "Record and replay a test case"
