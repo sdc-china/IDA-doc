@@ -30,7 +30,7 @@ order: 1
 * IE v11+ (Supports execution only)
 
 ### Minimal System Requirements
-- 2 core CPU, 4 GB memory and 50 GB disk space.
+- 1 core CPU, 2 GB memory and 50 GB disk space.
 
 ### Recommended System Requirements
-- 2 core CPU, 8 GB memory and 200 GB disk space.
+- 2 core CPU, 4 GB memory and 200 GB disk space.
