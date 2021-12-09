@@ -16,7 +16,7 @@ order: 3
 
 ### Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
 
-This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to [Repacking IDA Application][1].
+This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to Notes below.
 
 **Notes:** Please comment spring.datasource.jndi-name if you do not use a JNDI datasource.
 
