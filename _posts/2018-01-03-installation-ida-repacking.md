@@ -6,7 +6,7 @@ last_modified_at: 2020-09-15 21:34:00
 order: 3
 ---
 
-# Repacking IDA v3.x Application
+# Repacking IDA v3.x or v21.x Application
 ***
 
 
@@ -18,7 +18,7 @@ order: 3
 
 This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to Notes below.
 
-**Notes:** Please comment spring.datasource.jndi-name if you do not use a JNDI datasource.
+**Notes:** Please add JNDI or Datasource configuration. Only one type of configuration is needed and please comment out the other configuration. We recommend using JNDI configuraion and JNDI name should be configured on your application server. See sample JNDI datasource configuration in Liberty server in [installation doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#installing-on-liberty).
 
 **JNDI Configuration**
 
