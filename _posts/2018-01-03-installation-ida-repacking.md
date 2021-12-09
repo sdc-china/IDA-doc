@@ -16,9 +16,9 @@ order: 3
 
 ### Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
 
-This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to Notes below.
+This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to Notes 2 below.
 
-**Notes:** Please add JNDI or Datasource configuration. Only one type of configuration is needed and please comment out the other configuration. We recommend using JNDI configuraion and JNDI name should be configured on your application server. See sample JNDI datasource configuration in Liberty server in [installation doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#installing-on-liberty).
+**Notes1:** Please add JNDI or Datasource configuration. Only one type of configuration is needed and please comment out the other configuration. We recommend using JNDI configuraion and JNDI name should be configured on your application server. See sample JNDI datasource configuration in Liberty server in [installation doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#installing-on-liberty).
 
 **JNDI Configuration**
 
@@ -36,7 +36,7 @@ This properties file contains three main sections. Please set spring.datasource.
 
 *  **jasypt.encryptor.password** : Jasypt secret key for Encrypt datasource passwords
 
-**Notes** 
+**Notes2** 
 If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
 You can use [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generate encrypted password.    
 
