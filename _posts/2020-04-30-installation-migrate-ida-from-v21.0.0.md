@@ -1,12 +1,15 @@
 ---
-title: "Migrating IDA from v21.0.0"
-category: references
-date: 2020-04-30 15:17:55
-last_modified_at: 2020-04-30 16:44:00
+title: "Migrating IDA Application"
+category: installation
+date: 2018-09-22 15:17:56
+last_modified_at: 2021-12-10 16:44:00
 order: 5
 ---
 
-# Migrating IDA from v21.0.0
+# Migrating IDA Application from v21.0.0
+
+Below are example steps to migrate IDA application from v21.0.0 to v21.3.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](http://127.0.0.1:4000/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](http://127.0.0.1:4000/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
+
 ***
 ### Preparing your migration
 
@@ -19,12 +22,17 @@ To prepare your migration, take the following steps:
 
 ### Step 1: Update DB
 
-To update DB, take the following steps:
+Below steps are appplicable to MySQL database. For other types of database, steps are similar. To update DB, take the following steps:
 
 1. Start the mysql Server.  
 2. You can find migrate-mysql*.sql in the sql\migrate\mysql folder. Copy the corresponding version upgrade sql into clipboard.     
 For example: If your previous version is v21.0.0.You need to pick below sql script to run one by one.Make sure the migrate sql version name is bigger than your previous version.
 * migrate-mysql-v21.0.0-v21.1.0.sql.
+* migrate-mysql-v21.1.1-v21.2.0.sql
+* migrate-mysql-v21.2.0-v21.3.0.sql
+* migrate-mysql-v21.3.0-v21.3.1.sql
+* migrate-mysql-v21.3.1-v21.3.2.sql
+* migrate-mysql-v21.3.2-v21.3.3.sql
 
 
 ![][mysqlmigration-v21]   

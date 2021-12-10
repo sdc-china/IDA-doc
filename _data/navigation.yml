@@ -24,6 +24,8 @@ docs:
         url: /installation/installation-ida-installing.html
       - title: "Post Installation Setup"
         url: /installation/installlation-post-installation.html
+      - title: "Migrating IDA Application"
+        url: /installation/installation-migrate-ida-from-v21.0.0.html
 
   - title: Tutorial
     children:
@@ -150,12 +152,14 @@ docs:
         url: /references/references-js-api.html
       - title: "REST APIs"
         url: /references/references-apis.html
+      - title: "Repacking IDA Application(v3.x, v2.x)"
+        url: /references/references-ida-repacking-early-version.html
+      - title: "Installing IDA Application(v3.x, v2.x)"
+        url: /references/references-ida-installing-early-version.html
       - title: "Migrating and Updating IDA Application v2.x"
         url: /references/references-migrating-and-updating-your-application.html
       - title: "Migrating IDA from v2.7.x to v21.0.0"
         url: /references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html
-      - title: "Migrating IDA from v21.0.0"
-        url: /references/references-migrate-ida-from-v21.0.0.html
       - title: "Samples"
         url: /references/references-samples.html
       - title: "Best Practices"

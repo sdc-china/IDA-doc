@@ -1,8 +1,8 @@
 ---
 title: "Migrating IDA from v2.7.x to v21.0.0"
 category: references
-date: 2020-09-29 15:17:55
-last_modified_at: 2021-02-03 09:17:55
+date: 2018-10-30 15:17:56
+last_modified_at: 2021-12-10 09:17:55
 order: 10
 ---
 
