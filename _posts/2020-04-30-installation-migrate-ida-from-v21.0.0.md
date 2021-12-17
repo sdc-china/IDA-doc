@@ -25,7 +25,7 @@ To prepare your migration, take the following steps:
 Below steps are appplicable to MySQL database. For other types of database, steps are similar. To update DB, take the following steps:
 
 1. Start the mysql Server.  
-2. You can find migrate-mysql*.sql in the sql\migrate\mysql folder. Copy the corresponding version upgrade sql into clipboard.     
+2. You can find migrate-mysql*.sql in the sql\migrate\mysql folder.     
 For example: If your previous version is v21.0.0.You need to pick below sql script to run one by one.Make sure the migrate sql version name is bigger than your previous version.
 * migrate-mysql-v21.0.0-v21.1.0.sql.
 * migrate-mysql-v21.1.1-v21.2.0.sql
@@ -40,7 +40,12 @@ For example: If your previous version is v21.0.0.You need to pick below sql scri
 &ensp;&ensp;&ensp;3.Connect to the MySQL server and use IDA database. Execute the script for each consecutive version.
 ```
 mysql> use IDA ;   
-mysql> paste your sql here   
+mysql> source yoursqlpath\migrate-mysql-v21.0.0-v21.1.0.sql
+mysql> source yoursqlpath\migrate-mysql-v21.1.1-v21.2.0.sql
+mysql> source yoursqlpath\migrate-mysql-v21.2.0-v21.3.0.sql
+mysql> source yoursqlpath\migrate-mysql-v21.3.0-v21.3.1.sql
+mysql> source yoursqlpath\migrate-mysql-v21.3.1-v21.3.2.sql
+mysql> source yoursqlpath\migrate-mysql-v21.3.2-v21.3.3.sql
 ```    
 
 ### Step 2: Update IDA.war   
