@@ -2,13 +2,13 @@
 title: "Database Installation and Configuration"
 category: installation
 date: 2018-09-19 15:17:55
-last_modified_at: 2019-08-12 21:28:00
+last_modified_at: 2021-12-17 21:28:00
 order: 2
 ---
 
 # Database Installation and Configuration
 ***
-### Install and Configure DB2
+## Install and Configure DB2
 
 IDA supports DB2 v10.x+. Please refer to the following steps to setup DB2 environment. 
 
@@ -38,7 +38,7 @@ You can use DB2 client tool (Data Studio) to verify database tables are created 
 
 ![][db2]   
 
-##### Notes:
+**Notes**:
 - You will want to change [IDA_HOME]/sql/data-db2.sql script so that   the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
 
 
@@ -51,7 +51,7 @@ After download, extract the **db2jcc4.jar** from driver package and copy it to t
 ![][db2driver]  
 
 
-### Install and Configure MySQL DB
+## Install and Configure MySQL DB
 
 IDA supports MySQL v8.0. Download and install [MySQL](https://dev.mysql.com/downloads/mysql/).  Please refer to the following steps to setup MySQL environment. 
 
@@ -64,8 +64,7 @@ mysql> create database IDA;
 
 **Execute DB Scripts**  
 
-##### Notes:
-- You will want to change [IDA_HOME]/sql/data-mysql.sql script so that  the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
+**Notes:** You will want to change [IDA_HOME]/sql/data-mysql.sql script so that  the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
 
 
 Connect to the MySQL server and switch to the **IDA** DB and execute DB scripts **schema-mysql.sql**, **data-mysql.sql** to create the database tables and populate data. These 2 SQL scripts can be found in the **sql** folder of IDA installation package.
@@ -84,9 +83,7 @@ In MySQL 8.0, the default authentication plugin has changed from **mysql_native_
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 
-**Notes:**   
-
-You might need to change **data-mysql.sql** script for the your organization name. Please  replace 'IDA' to your company name occur in the below script. The default IDA login name and password is "idaAdmin"/"idaAdmin". Please don't change this username and password in the SQL file.
+**Notes:**   You might need to change **data-mysql.sql** script for the your organization name. Please  replace 'IDA' to your company name occur in the below script. The default IDA login name and password is "idaAdmin"/"idaAdmin". Please don't change this username and password in the SQL file.
 
 ``` 
 INSERT INTO organization (company_name, active) VALUES ('IDA', true);
@@ -103,14 +100,19 @@ After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of IDA i
 ![][mysqldriver]  
 
 
-### Install and Configure Oracle
+## Install and Configure Oracle
 
 IDA supports Oracle Database Server 12c R2(v12.2.0.1 Enterprise Edition) and 19c(V19.3.0 Enterprise Edition). Please refer to the following steps to setup Oracle environment. 
+
+**Create Database Instance**
+
+Create a database instance named IDADB based on [doc](https://docs.oracle.com/database/121/ADMIN/create.htm#ADMIN002).
 
 **Create Oracle User/Schema**   
 
 Login into the Oracle database instance and execute below commands to create user/schema 'idaDbAdmin' with password 'idaDbAdmin'. You may use SQL*Plus and use command 'sqlplus SYS AS SYSDBA' to log into the database instance.
 ``` 
+alter session set "_ORACLE_SCRIPT"=true;
 CREATE USER idaDbAdmin IDENTIFIED BY idaDbAdmin DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP;
 GRANT create session TO idaDbAdmin;
 GRANT create table TO idaDbAdmin;
@@ -121,8 +123,7 @@ GRANT UNLIMITED TABLESPACE TO idaDbAdmin;
 
 
 **Execute Oracle DB Scripts**  
-##### Notes:
-- You will want to change [IDA_HOME]/sql/data-oracle.sql script so that  the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
+**Notes:** You will want to change [IDA_HOME]/sql/data-oracle.sql script so that  the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
 
 Use SQL*Plus and command 'sqlplus idaDbAdmin' to log into the database instance, to switch to the **idaDbAdmin** DB Schema. Execute DB scripts **schema-oracle.sql**, **data-oracle.sql** to create the database tables and populate data. These 2 SQL scripts can be found in the **sql** folder of IDA installation package.
 
@@ -131,12 +132,12 @@ SQL > @/schema-oracle.sql
 SQL > @/data-oracle.sql
 ```  
 
-You can use DBeaver to verify database tables are created and populated with data. The Oracle DB connection info should be configured as follows(replace the Host and Database SID with your Oracle DB SID):
+You can use DBeaver to verify database tables are created and populated with data. The Oracle DB connection info should be configured as follows(replace the Host with your Oracle DB host address):
 ![][dbeaver_oracle]
 
 
 **Download Oracle Driver**  
-You can download [Oracle Database 12.2.0.1 JDBC Driver](https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html) 
+You can download [Oracle Database 12.2.0.1 JDBC Driver](https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html) or [Oracle Database 19c JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html)
 
 After download, extract the **ojdbc8.jar** from driver package and copy it to the lib folder of IDA installation package.
 
