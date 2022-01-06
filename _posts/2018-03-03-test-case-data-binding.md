@@ -18,7 +18,7 @@ order: 30
   
   **Notes:**
      
-   You must use **datasetName** and **dataset1** for the first column name and value for internal usage.
+   The first column name must be **datasetName**, IDA uses the first column values to define the data in each row.
 
   
   **Notes:**
