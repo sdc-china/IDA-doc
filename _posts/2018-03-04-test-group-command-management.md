@@ -169,9 +169,24 @@ In some scenarios, IDA Users want to execute a group command only when it meets 
   
 
 
+### Use a Group Command in Other Test Projects within a Team
+  If a group command is created in a test project with a specific team scope, then this group command can be used in any test projects created by or accessible to a team member.
+
+  1\. Add the group command in a test project with a specific team scope visibility.
+  
+  ![][add_group_command_in_team_project]{:height="60%" width="60%"}
+
+  2\. In other test projects created by a team member or visible to the team member within a team, the team member can find and use the group command.
+  
+  ![][use_group_command_in_team_project]{:height="60%" width="60%"}
+
+  See also [Team Configuration][4].
+
+
   [1]: test-import-execute-sample-test-project.html
   [2]: test-unit-test-case-management.html
   [3]: test-write-js-command.html
+  [4]: administration-team-configuration.html
   [test_group_command_caselist_table]: ../images/test/test_group_command_caselist_table.PNG
   [test_group_command_caselist_table2]: ../images/test/test_group_command_caselist_table2.PNG
   [test_group_command]: ../images/test/test_group_command.PNG
@@ -192,4 +207,6 @@ In some scenarios, IDA Users want to execute a group command only when it meets 
   [group_parameter_input]: ../images/test/test_case_step_parameter_input.PNG
   [add_if_command]: ../images/test/add_if_command.PNG
   [add_if_command_html]: ../images/test/add_if_command_html.png
+  [add_group_command_in_team_project]: ../images/test/add_group_command_in_team_project.png
+  [use_group_command_in_team_project]: ../images/test/use_group_command_in_team_project.png
 
