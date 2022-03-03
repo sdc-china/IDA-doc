@@ -122,6 +122,7 @@ For example:
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/>
 	  <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
+      <classloader delegation="parentLast" />
     </application>
 
 	<!-- <keyStore id="defaultKeyStore" password="idaAdmin" /> -->
