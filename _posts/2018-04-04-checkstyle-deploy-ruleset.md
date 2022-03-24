@@ -40,11 +40,15 @@ If you want to execute ruleset through Decision Server, you should deploy your r
 
 		![][checkstyle_deploy_ruleset_cloud_two_7]
 
-3. Change configurations in ida.properties
+3. Change configurations in **Administration > Settings**.
 
-	* Make sure the value of ruleExecutionMode in ida.properties is 2.
-	
-	* Configure the values of restUser, restPassword, restUrl and restPort in ida.properties.
+	* Go to the  **Settings** section under  **Administration**.
+
+	* Make sure that the Checkstyle **Engine** is set to **ODM** and configure the values of Rest Url, Decision Server Username, Decision Server Username.
+		
+		![][checkstyle_deploy_ruleset_cloud_two_8]
+
+	* Click the **Test Connection** button to test the connection between IDA and ODM Server. If successful, click **Save** to save the changes. 
 
 ### Deploy ruleset in local
 
@@ -63,8 +67,6 @@ If you want to execute ruleset in local file system, you need to replace the rul
 	* Make sure the value of ruleExecutionMode in ida.properties is 0.
 
 
-
-
  [checkstyle_deploy_ruleset_cloud_one_1]: ../images/checkstyle/checkstyle_deploy_ruleset_cloud_one_1.png
  [checkstyle_deploy_ruleset_cloud_one_2]: ../images/checkstyle/checkstyle_deploy_ruleset_cloud_one_2.png
  [checkstyle_deploy_ruleset_cloud_one_3]: ../images/checkstyle/checkstyle_deploy_ruleset_cloud_one_3.png
@@ -75,4 +77,5 @@ If you want to execute ruleset in local file system, you need to replace the rul
  [checkstyle_deploy_ruleset_cloud_two_5]: ../images/checkstyle/checkstyle_deploy_ruleset_cloud_two_5.png
  [checkstyle_deploy_ruleset_cloud_two_6]: ../images/checkstyle/checkstyle_deploy_ruleset_cloud_two_6.png
  [checkstyle_deploy_ruleset_cloud_two_7]: ../images/checkstyle/checkstyle_deploy_ruleset_cloud_two_7.png
+ [checkstyle_deploy_ruleset_cloud_two_8]: ../images/checkstyle/checkstyle_deploy_ruleset_cloud_two_8.png
  [checkstyle_deploy_ruleset_local_1]: ../images/checkstyle/checkstyle_deploy_ruleset_local_1.png
