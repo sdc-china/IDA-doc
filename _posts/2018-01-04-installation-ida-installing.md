@@ -362,7 +362,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 
 ## Firefox plugin
 - Download Firefox plugin [ida-21.9-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-21.9-fx.xpi)
-- Drag the "ida-21.8-fx.xpi" file into firefox window.
+- Drag the "ida-21.9-fx.xpi" file into firefox window.
 - Click "Add" button.
 - For Firefox plugin to work on IDA web version >= 21.1.0, please double check after plugin installation, Firefox Privacy settings is adjusted to custom as follows:
 
