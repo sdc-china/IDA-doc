@@ -2,7 +2,7 @@
 title: "Pipeline script"
 category: pipeline
 date: 2018-10-13 15:17:55
-last_modified_at: 2021-09-17 15:53:00
+last_modified_at: 2022-04-175 16:53:00
 order: 4
 ---
 
@@ -19,9 +19,7 @@ order: 4
   ![][pipeline_create_script]
   <br>
   <br>
-  After the pipeline is executed, you can view the script execution result.
-
-  ![][pipeline_script_result]  
+ 
 
 ### Script supported parameters
 
@@ -98,5 +96,4 @@ The format of the script file to call wsadmin command is
 **ssh** + space +  **Parameters**  + space +**-f** + space + **scriptFileName**
 
 [pipeline_create_script]: ../images/pipeline/pipeline_create_script.png
-[pipeline_script_result]: ../images/pipeline/pipeline_script_result.png
 [pipeline_email_script]: ../images/pipeline/pipeline_email_script.png
