@@ -83,9 +83,9 @@ docs:
         url: /checkstyle/checkstyle-report.html
       - title: "Deploy Checkstyle ruleset"
         url: /checkstyle/checkstyle-deploy-ruleset.html
-      - title: "Checkstyle Rules Summary"
-        url: /checkstyle/checkstyle-rules-summary.html
-
+      - title: "Checkstyle Rules Description"
+        url: /checkstyle/checkstyle-rules-description.html
+        
   - title: Snapshot Comparison
     children:
       - title: "Compare Snapshots"
