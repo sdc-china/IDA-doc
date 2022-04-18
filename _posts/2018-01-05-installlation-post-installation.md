@@ -21,7 +21,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Local installation**
 
-1. Download [Selenium Latest](https://www.selenium.dev/downloads/)
+1. Download [Selenium Grid 3.141.59](https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar)
 
 2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
 
