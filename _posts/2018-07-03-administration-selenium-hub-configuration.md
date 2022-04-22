@@ -21,7 +21,7 @@ order: 3
      |   Field                | Description                                                         |
      | -------------------    |---------------------------                                          |
      | Server Name            | Hub name                                                            |  
-     | Server URL             | Hub URL                                                             |
+     | Server URL             | Hub URL, there is no long a need for the ‘/wd/hub’ suffix in the URL|
      | Browser                | Support Firefox, Chrome and IE                                      |  
      | Configuration          | Customize browser options for selenium                              |
 
