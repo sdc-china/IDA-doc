@@ -357,14 +357,14 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 ## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-21.9.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-21.9.crx)
-- For Chrome plugin to work on IDA web version >= 21.1.0, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
+- The Chrome plugin offline installation package. [IDA-22.0.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-22.0.crx)
+- For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
 
 ## Firefox plugin
-- Download Firefox plugin [ida-21.9-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-21.9-fx.xpi)
-- Drag the "ida-21.9-fx.xpi" file into firefox window.
+- Download Firefox plugin [ida-22.0-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-22.0-fx.xpi)
+- Drag the "ida-22.0-fx.xpi" file into firefox window.
 - Click "Add" button.
-- For Firefox plugin to work on IDA web version >= 21.1.0, please double check after plugin installation, Firefox Privacy settings is adjusted to custom as follows:
+- For Firefox plugin to work on IDA web version >= 22.1.1, please double check after plugin installation, Firefox Privacy settings is adjusted to custom as follows:
 
   ![][firefox_custom_setting]
 
