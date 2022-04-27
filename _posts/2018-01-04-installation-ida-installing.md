@@ -8,7 +8,7 @@ order: 4
 
 # Installing IDA Application
 
-Below are steps to install IDA application v21.x+. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)]((https://sdc-china.github.io/IDA-doc/references/references-ida-repacking-early-version.html)
+Below are steps to install IDA application v21.x+. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)](https://sdc-china.github.io/IDA-doc/references/references-ida-repacking-early-version.html)
 
 There are three components for IDA application we need install and configure, included
 - *IDA web application*
