@@ -2,7 +2,7 @@
 title: "Selenium Hub configuration"
 category: administration
 date: 2018-10-20 15:17:55
-last_modified_at: 2020-10-12 16:20:00
+last_modified_at: 2022-04-22 16:39:00
 order: 3
 ---
 
@@ -16,12 +16,12 @@ order: 3
   3. Fill out the form below to add **Standalone** selenium grid for IDA. Then click **Create** button.
 
 
-     ![][administrator_hub]
+     ![][administrator_hub]{:height="60%" width="60%"} 
 
      |   Field                | Description                                                         |
      | -------------------    |---------------------------                                          |
      | Server Name            | Hub name                                                            |  
-     | Server URL             | Hub URL                                                        |
+     | Server URL             | Hub URL, there is no long a need for the ‘/wd/hub’ suffix in the URL|
      | Browser                | Support Firefox, Chrome and IE                                      |  
      | Configuration          | Customize browser options for selenium                              |
 
