@@ -27,7 +27,7 @@ To trouble shoot all IDA issues, you may need to adjust log level. You may also 
 
 4. Collect info above into an issue description document. Send us the document and the collected logs and other files. We will review all collected info and follow up with you. We may also provide further instructions to check data in IDA database, according to your specific issue.
 
-5. Remember to adjust log level back to INFO when troubleshooting is done on production environment when needed.
+5. Remember to adjust log level back to INFO after troubleshooting is done on production environment if needed.
 
 
 [set_log_level]: ../images/troubleshooting/set_log_level.png
