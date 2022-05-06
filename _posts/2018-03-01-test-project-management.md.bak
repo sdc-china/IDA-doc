@@ -32,8 +32,8 @@ order: 10
      Trace                 |The branch of selected process app or toolkit
      Snapshot              |The snapshot of selected branch
      [Default Assignee][3] |Default assignee Workflow User. 
-     [Default Selenium Grid][2]  |Support chrome, firefox selenium node 
-     [Other Selenium Grids][2]    |Support chrome, firefox selenium node 
+     [Default Browser][2]  |Support chrome, firefox selenium node 
+     [Other Broswer][2]    |Support chrome, firefox selenium node 
      Tip                   |Use the latest snapshot 
      Advance               |Show the engine configuration
      Engine Properties     |Support the engine configuration only for json format. Retry times: the retry times of the failed command. Retry interval: the interval time between the retry. if not be set, then they will be the engineConfig.defaultRetryTimes and engineConfig.defaultRetryInterval in application configuration.
