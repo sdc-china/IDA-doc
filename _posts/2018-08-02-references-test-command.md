@@ -1615,6 +1615,7 @@ ___
 [openInstanceDetail_Sample]: ../images/command/openInstanceDetail_Sample.png
 [open_sample]: ../images/command/open_sample.png
 [start_process_sample]: ../images/command/start_process_sample.png
+[start_external_process_sample]: ../images/command/start_external_process_sample.png
 [start_human_service_sample]: ../images/command/start_human_service_sample.png
 [startExposedHeritageHumanService_sample]: ../images/command/startExposedHeritageHumanService_sample.png
 [start_ajax_service_normal_sample]: ../images/command/start_ajax_service_normal_sample.png
