@@ -122,6 +122,25 @@ Start a BPM process by REST API, only exposed process are supported by default. 
 	
 ___
 
+### **startExternalProcess**
+
+Start an external BPM process by REST API, only exposed process are supported, and the snapshot must be active. 
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+	| `Process App`   | Yes |  The name of the process app. Select from drop down. |
+	| `Snapshot`   | Yes |  The name of the snapshot. Select from drop down. |
+	| `Process`   | Yes |  The name of the process to be started. Select from drop down. |
+	| `Params`   | Depend on Process. | Parameters in JSON or XML format required to start the external process. |
+
+- Example  
+
+	![][start_external_process_sample]
+	
+___
+
 ### **startHumanService**
 
 Tests Human Service in stand alone mode.
