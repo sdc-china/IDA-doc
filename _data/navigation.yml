@@ -179,5 +179,11 @@ docs:
         url: /trouble-shooting/trouble-shooting-known-limitation.html
       - title: "Frequently asked questions"
         url: /trouble-shooting/trouble-shooting-faq.html
+      - title: "IDA Trouble Shooting"
+        url: /trouble-shooting/trouble-shooting-ida-overall.html
       - title: "IDA Plugin Trouble Shooting"
         url: /trouble-shooting/trouble-shooting-ida-plugin.html
+      - title: "Test Project Trouble Shooting"
+        url: /trouble-shooting/trouble-shooting-ida-test-project.html
+      - title: "Pipeline Trouble Shooting"
+        url: /trouble-shooting/trouble-shooting-ida-pipeline.html

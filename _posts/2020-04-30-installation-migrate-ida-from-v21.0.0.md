@@ -8,7 +8,7 @@ order: 5
 
 # Migrating IDA Application from v21.0.0
 
-Below are example steps to migrate IDA application from v21.0.0 to v21.3.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](http://127.0.0.1:4000/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](http://127.0.0.1:4000/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
+Below are example steps to migrate IDA application from v21.0.0 to v21.3.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](https://sdc-china.github.io/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
 
 ***
 ### Preparing your migration
