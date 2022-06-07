@@ -107,8 +107,18 @@ order: 1
     - Answer: Yes. The first stage can be either PC or PS.
 If the first stage is PC, then snapshot step can be added, and you can add online/offline deployment in the second PS stage.
 If the first stage is PS, then you can not add snapshot step, and only offline deployment is supported.
+
+1. How to enable the Javascript Expression execution?
+    - Answer: Please follow the below steps:
+      1. Stop the BAW environment.
+      2. Change the enable-javascript-execution value in 99Local.xml flle, the file path is PROFILE_DMGR_HOME\config\cells\cell_name\nodes\node_name\servers\server_name\process-center\config\system\99Local.xml.
+      3. Start the BAW environment.
+      ![][enable-javascript-execution]
+     
+      
    
 [add-permission-1]: ../images/references/add-permission-1.png
 [loginbpmoc]: ../images/references/loginbpmoc.png 
 [add-permission-2]: ../images/references/add-permission-2.png
+[enable-javascript-execution]: ../images/references/enable-javascript-execution.png
 [1]: ../test/test-case-data-binding.html#create-a-csv-test-data-file
