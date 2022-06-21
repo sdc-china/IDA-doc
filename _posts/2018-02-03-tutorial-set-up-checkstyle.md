@@ -23,13 +23,14 @@ Set up Checkstyle of a project:
   
      ![][tutorial_project_list]{:height="80%" width="80%"}
       
-     Once completed, ida will redirect to Checkstyle section and the Checkstyle report is also displayed on this page.
-  
-     You can also analyze any of your Workflow project in the **Checkstyle** tab. [More Detailed.][2]
-  
-  2. When the analysis is over, the analysis report will be displayed as below. [Details of the report.][1]
+     then IDA will redirect from **Test** to **Checkstyle** tab.
+    
+  2. When the analysis is over, the checkstyle report will be displayed as below. [Details of the report.][1]
   
       ![][tutorial_checkstyle_report]{:height="80%" width="80%"}
+
+  3. You can also analyze any of your workflow project in the **Checkstyle** tab. [More Detailed.][2]
+ 
   
   
 <!-- **[<Previous][3] [\| Next>][4]** -->

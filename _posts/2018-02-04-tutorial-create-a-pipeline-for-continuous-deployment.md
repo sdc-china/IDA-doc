@@ -57,11 +57,19 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
   Now you can run the pipeline.
 
 ### Procedure
- 1. In the pipeline page, click **Run** icon.  
+ 1. In the pipeline list page, click **Run** icon.  
   
      ![][pipeline_build]{:height="80%" width="80%"}
 
-  2. When the pipeline build is over, click the **build no.** link to see the whole report. [Details of the report] .
+  2. When the pipeline build is over, click the **build no.** link to see the whole report. 
+     
+     ![][pipeline_build_link]{:height="80%" width="80%"}
+
+     The report is like this:
+
+     ![][pipeline_report]{:height="80%" width="80%"}
+
+     If you want know the details of the pipeline report, you can refer to this link. [Details of the report] .
   
   <!-- **[<Previous][1]** -->
 
@@ -73,6 +81,9 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
 [pipeline_stages_tutorial]: ../images/pipeline/pipeline_stages_tutorial.png
 [pipeline_add_step_below_test]: ../images/pipeline/pipeline_add_step_below_test.png
 [pipeline_build]: ../images/pipeline/pipeline_build.png
+[pipeline_report]: ../images/tutorial/tutorial_pipeline_result.png
+[pipeline_build_link]: ../images/tutorial/tutorial_pipeline_build_link.png
+
 [Details of the report]: ../pipeline/pipeline-report.html
 [1]: ../tutorial/tutorial-set-up-checkstyle.html
 [2]: ../pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html

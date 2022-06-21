@@ -46,13 +46,12 @@ To set up assignees for case steps:
  
  2. Click **case1**.
  
- 3. Click **Edit** button on the right of suite name.
+ 3. Click **Edit** button on the right top of this page.
  
     ![][test_case_step_table]{:height="80%" width="80%"}
  
- 4. Click button of case step which includes "Assignee" in **actions** column.
+ 4. Move your mouse to the first row of the case steps, right click your mouse and click **Edit** button to edit this case step.
     ![][test_case_step_edit_button]{:height="80%" width="80%"}
- 
  
  5. Select **celladmin** in **Assignee** field in order to specify other Workflow users to help you complete the business process.
     ![][assign_bpm_user]{:height="40%" width="40%"}
@@ -62,7 +61,7 @@ To set up assignees for case steps:
  
 ## Step 3: Record a test case
 
-  In this step, you can record a test case according to your inputs on the web UI.
+  In this step, you can record some case steps according to your inputs on the web UI.
  
 ### Procedure 
 
@@ -78,19 +77,21 @@ To record a test case:
      
   3. IDA Recorder window is popped up. Click **Run** icon to start recording.
 
-     ![][ida_recorder]{:height="30%" width="30%"}    
+     ![][ida_recorder]{:height="30%" width="30%"}
+
+  4. The step 1 is executed and once it is completed, the human service was shown.
      
      ![][test_record_page]{:height="80%" width="80%"}
   
-  4. The step 1 is executed in the backend and once it is completed, In the **Debug \{\{log\}\}** step, due to the debug purpose, the recording is pending at this step. You can do some changes on the human service and IDA recorder will record every UI action.
+  5. Then the recorder comes to step 2: the **Debug \{\{log\}\}** step. Due to the debug purpose, the recording is pending at this step. You can do some actions on the human service and IDA recorder will record every UI action.
    
      ![][test_case_record_plugin]{:height="80%" width="80%"}
   
-  5. In **Submit position request** human service, change **Employment type** to **Full-time**, **Department** to **Marketing**, **Location** to **Boston**. As you can see, these three web operation steps are captured in IDA Recorder as test case steps.
+  6. In **Submit position request** human service, change **Employment type** to **Full-time**, **Department** to **Marketing**, **Location** to **Boston**. As you can see, these three web operation steps are captured in IDA Recorder as test case steps.
   
       ![][test_case_record_plugin2]{:height="80%" width="80%"}
   
-  6. Click ![][test_record_stop] button to finish the recording. You can see the recorded case step in the list table.
+  7. Click ![][test_record_stop] button to finish the recording. You can see the recorded case step in the list table.
   
      ![][test_record_steps]{:height="80%" width="80%"}
   
@@ -104,31 +105,33 @@ To record a test case:
 
   1. Click **Record** button on the right of case name to replay it.
   
-  2. Click ![][test_record_stop] button to finish the replay.
-  
-  3. Click **Exit Edit** button on the right of suite name.
-  
+  2. Click **Run** icon on IDA recorder to start the replay.
+
+     ![][tutorial_click_run_button]{:height="30%" width="30%"}
+    
 ## Step 5: Run a test case
 
-   In this step, you can run a test case.The running of automated testing is asynchronous.
+   In this step, you can run a test case. The running of automated testing is asynchronous.
    
 ### Procedure
 
 To run a test case:
 
- 1. Click button on the right of the **Edit** button.
+ 1. Click Selenium Hub button on the right of the **Edit** button.
 
     ![][click_run_case_button]{:height="80%" width="80%"}
   
- 2. When it is fininshed, click **Test Report** button to see detail report including process execution flow.  
- 
+ 2. When it is fininshed, go to the **Test Report** section to see detail report including process execution flow.  
+
+    ![][tutorial_go_to_test_report]{:height="80%" width="80%"}
+
  3. Check every case step result status with **PASSED** or **FAILED** in case step list table. 
 
-     ![][tutorial_running_result]{:height="80%" width="80%"}
+    ![][tutorial_running_result]{:height="80%" width="80%"}
  
  4. Click the **Screenshots** icon link to see the captured screenshot.
   
-     ![][tutorial_case_screenshot]{:height="80%" width="80%"}
+    ![][tutorial_case_screenshot]{:height="80%" width="80%"}
 
 ## Step 6: Stop a test case
 
@@ -162,6 +165,7 @@ If your test project is configured on a container version of BAW, you may need t
 [ida_recorder]: ../images/test/ida_recorder.PNG
 [tutorial_case_run_button]: ../images/tutorial/tutorial_case_run_button.PNG
 [tutorial_case_stop_button]: ../images/tutorial/tutorial_case_stop.PNG
+[tutorial_click_run_button]: ../images/tutorial/tutorial_click_run_button.PNG
 [tutorial_running_result]: ../images/tutorial/tutorial_running_result.PNG
 [tutorial_case_screenshot]: ../images/tutorial/tutorial_case_screenshot.PNG
 [1]: ../test/test-record-and-replay-a-test-case.html
@@ -177,3 +181,4 @@ If your test project is configured on a container version of BAW, you may need t
 [test_record_page]: ../images/test/test_record_page.PNG
 [test_record_issue]: ../images/tutorial/tuorial_recordissue.png
 [click_run_case_button]: ../images/test/click_run_case_button.png
+[tutorial_go_to_test_report]: ../images/tutorial/tutorial_go_to_test_report.PNG

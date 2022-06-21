@@ -10,7 +10,7 @@ order: 1
 ***
 IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support Workflow project test.
 
-### Pre-requisites
+## Pre-requisites
 Before you start the tutorial, you need to setup below configurations with the administrative account ("idaAdmin"/"idaAdmin").
 
 [Users management][1]  
@@ -23,15 +23,15 @@ You need to setup BAW server and make the Workflow account be ready.
 You need to setup selenium node url for the remote testing.
 
 
-### About this task
+## About this task
 
 In this task, you will create a new test project after you create test cases based on this test project.
 
-### Step 1: Create a test project
+## Step 1: Create a test project
 
   In this step, you will create an empty project.   
   
-#### Procedure
+### Procedure
 
 To create a new test project:
 
@@ -47,11 +47,11 @@ To create a new test project:
 
      ![][tutorial_project_info]{:height="80%" width="80%"}
    
-### Step 2: Generate test cases
+## Step 2: Generate test cases
 
   In this step, you'll generate test cases based on new created test project. You can create cases based on the  **Artifact** Type.
    
-#### Procedure
+### Procedure
  
 To generate a process test case and an user interface test case:
 
@@ -69,7 +69,7 @@ To generate a process test case and an user interface test case:
   
       ![][tutorial_case_items_form2]{:height="80%" width="80%"}
   
- 6. Click **Generate** button.You can see two test suites with related test cases are generated in the project dashboard.
+ 6. Click **Generate** button. You can see two test suites with related test cases are generated in the project dashboard.
 
       ![][tutorial_case_basic_info]{:height="80%" width="80%"}
 
