@@ -8,7 +8,7 @@ order: 3
 
 # Task 3: Set up Checkstyle
 ***
-IDA enables developers to perform static analysis on the Workflow project, which enforces design convention and processes development standard. There are 80+ checkstyle rules are defined based on Workflow development best practices and anti-patterns. The rules have been implemented with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
+IDA enables developers to perform static analysis on the Workflow project, which enforces design convention and processes development standard. There are 120+ checkstyle rules are defined based on Workflow development best practices and anti-patterns. The rules have been implemented with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
 
 
 ### About this task
@@ -21,17 +21,15 @@ Set up Checkstyle of a project:
 
   1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in project list page and the report will be shown in a few seconds. The analyzing of checkstyle is asynchronous that you could do other things when it is performing the checkstyle.
   
-     ![][tutorial_project_list]
+     ![][tutorial_project_list]{:height="80%" width="80%"}
       
-       Once completed, the notification will be appeared in the lower right corner of the screen. 
-     
-      ![][checkstyle_notification]
+     Once completed, ida will redirect to Checkstyle section and the Checkstyle report is also displayed on this page.
   
-       You can also analyze any of your Workflow project in the **Checkstyle** tab. [More Detailed.][2]
+     You can also analyze any of your Workflow project in the **Checkstyle** tab. [More Detailed.][2]
   
   2. When the analysis is over, the analysis report will be displayed as below. [Details of the report.][1]
   
-      ![][tutorial_checkstyle_report]
+      ![][tutorial_checkstyle_report]{:height="80%" width="80%"}
   
   
 <!-- **[<Previous][3] [\| Next>][4]** -->

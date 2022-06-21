@@ -10,15 +10,35 @@ order: 2
 ***
 IDA provides a browser plugin recorder, which allows users to record their test scenarios without coding.
 
-### About this task
+## About this task
 
   In this task, you can record, replay and run a test case that you generated in the previous task.
-  
-### Step 1: Set up assignees for case steps
+
+## Prerequisites
+
+1. IDA is up and running.
+2. BAW Process Center is up and running.
+3. Selenium Hub is up and running.
+
+## Step 1: Set Up Testing Environment
+As a developer, you need to set up your testing environment first.
+
+### Procedure
+
+1. Install IDA browser plugin according to [Doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#step-3-installing-ida-browser-plug-in). Click the plugin icon on your browser extension toolbar, enter the IDA web url and click **Sign In** to sign into the plugin.
+
+   ![][plugin_login]{:height="30%" width="30%"}
+
+2. After you successfully signed into the plugin, clicking **Home** will open another browser tab of the IDA web homepage.
+
+   ![][plugin_login_success]{:height="30%" width="30%"}
+
+
+## Step 2: Set up assignees for case steps
 
   In this step, you need to assign the Workflow task users for case steps. Take the case1 of **Create Position Request CSHS** as an example.
   
-#### Procedure
+### Procedure
 
 To set up assignees for case steps:
 
@@ -28,55 +48,59 @@ To set up assignees for case steps:
  
  3. Click **Edit** button on the right of suite name.
  
-    ![][test_case_step_table]
+    ![][test_case_step_table]{:height="80%" width="80%"}
  
  4. Click button of case step which includes "Assignee" in **actions** column.
-    ![][test_case_step_edit_button]
+    ![][test_case_step_edit_button]{:height="80%" width="80%"}
  
  
- 5. Select **administrator** in **Assignee** field in order to specify other Workflow users to help you complete the business process.
-    ![][test_case_step_table2]
+ 5. Select **celladmin** in **Assignee** field in order to specify other Workflow users to help you complete the business process.
+    ![][assign_bpm_user]{:height="40%" width="40%"}
  
  6. Click **Exit Edit** button to finish edit.
  
  
-### Step 2: Record a test case
+## Step 3: Record a test case
 
   In this step, you can record a test case according to your inputs on the web UI.
  
-#### Procedure 
+### Procedure 
 
 To record a test case: 
 
   1. Click **Edit** button on the right top of page.
   
-     ![][test_case_step_table]
+     ![][test_case_step_table]{:height="80%" width="80%"}
   
-  2. Click **Record**  button on the right top of page. It will the launch UI record page.
+  2. Click **Record**  button on the right top of page.
   
-     ![][test_case_step_table2]
+     ![][test_case_step_table2]{:height="80%" width="80%"}
      
-     ![][test_record_page]
+  3. IDA Recorder window is popped up. Click **Run** icon to start recording.
+
+     ![][ida_recorder]{:height="30%" width="30%"}    
+     
+     ![][test_record_page]{:height="80%" width="80%"}
   
-  3. In the **Debug \{\{log\}\}** step, the process will be stopped. You need to click ![][test_case_record_resume] button to resume.
+  4. The step 1 is executed in the backend and once it is completed, In the **Debug \{\{log\}\}** step, due to the debug purpose, the recording is pending at this step. You can do some changes on the human service and IDA recorder will record every UI action.
    
-     ![][test_case_record_plugin]
+     ![][test_case_record_plugin]{:height="80%" width="80%"}
   
-  4. Record every UI action, you can see each step you have done in tool bar.
+  5. In **Submit position request** human service, change **Employment type** to **Full-time**, **Department** to **Marketing**, **Location** to **Boston**. As you can see, these three web operation steps are captured in IDA Recorder as test case steps.
   
-      ![][test_case_record_plugin2]
+      ![][test_case_record_plugin2]{:height="80%" width="80%"}
   
-  5. Click ![][test_record_stop] button to finish the recording. You can see the recorded case step in the list table.
+  6. Click ![][test_record_stop] button to finish the recording. You can see the recorded case step in the list table.
   
-     ![][test_record_steps]
+     ![][test_record_steps]{:height="80%" width="80%"}
   
-### Step 3: Replay a test case
+## Step 4: Replay a test case
 
   In this step, you can replay a test case that you record in the previous step.
  
-#### Procedure 
+### Procedure 
 
-To replay a test case:
+  To replay a test case:
 
   1. Click **Record** button on the right of case name to replay it.
   
@@ -84,40 +108,43 @@ To replay a test case:
   
   3. Click **Exit Edit** button on the right of suite name.
   
-### Step 4: Run a test case
+## Step 5: Run a test case
 
    In this step, you can run a test case.The running of automated testing is asynchronous.
    
-#### Procedure
+### Procedure
 
 To run a test case:
 
- 1. Click **Run** button on the right of case name.
+ 1. Click button on the right of the **Edit** button.
+
+    ![][click_run_case_button]{:height="80%" width="80%"}
   
- 2. Click **report** button to see detail report including process execution flow.  
+ 2. When it is fininshed, click **Test Report** button to see detail report including process execution flow.  
  
- 3. Check every case step result status with "PASSED" or "FAILED" in case step list table. 
+ 3. Check every case step result status with **PASSED** or **FAILED** in case step list table. 
+
+     ![][tutorial_running_result]{:height="80%" width="80%"}
  
  4. Click the **Screenshots** icon link to see the captured screenshot.
   
-![][tutorial_running_result]
+     ![][tutorial_case_screenshot]{:height="80%" width="80%"}
 
-
-### Step 5: Stop a test case
+## Step 6: Stop a test case
 
    In this step, you can stop a test case.   
    
-#### Procedure
+### Procedure
 
-Click **Stop** button on the right of case name.
+when the test case is runing, click **Stop** button on the right of case name.
 
-![][tutorial_case_stop_button]
+![][tutorial_case_stop_button]{:height="80%" width="80%"}
 
 **Notes**
 
 When you fist record and play your test case you might see the below error.
 
-   ![][test_record_issue]
+   ![][test_record_issue]{:height="60%" width="60%"}
    
 This is because IBM Business Process Manager uses default certificates that are not issued by a trusted certificate authority (CA).  The untrusted certificate can cause errors in the user’s browser and possibly block the functions of the OpenPages' integration, including the Process Portal home page.  
 
@@ -126,18 +153,21 @@ In order to solve this issue, you need to click the url from the warning message
 If your test project is configured on a container version of BAW, you may need to manually accept multiple certificates for Process Portal and Case Client separately. Follow the step above to accept each certificate warning.
   
 <!-- **[<Previous][2] [\| Next>][3]** -->
-
+[plugin_login]: ../images/test/plugin_login.png
+[plugin_login_success]: ../images/test/plugin_login_success.png
 [test_case_step_edit_button]: ../images/test/test_case_step_edit_button.PNG
 [test_case_step_table]: ../images/test/test_case_step_table.PNG
+[assign_bpm_user]: ../images/test/assign_bpm_user.PNG
 [test_case_step_table2]: ../images/test/test_case_step_table2.PNG
+[ida_recorder]: ../images/test/ida_recorder.PNG
 [tutorial_case_run_button]: ../images/tutorial/tutorial_case_run_button.PNG
 [tutorial_case_stop_button]: ../images/tutorial/tutorial_case_stop.PNG
 [tutorial_running_result]: ../images/tutorial/tutorial_running_result.PNG
+[tutorial_case_screenshot]: ../images/tutorial/tutorial_case_screenshot.PNG
 [1]: ../test/test-record-and-replay-a-test-case.html
 [2]: tutorial-create-a-test-project-and-generate-test-cases.html
 [3]: tutorial-set-up-checkstyle.html
 [test_case_step_table]: ../images/test/test_case_step_table.PNG
-[test_case_step_table2]: ../images/test/test_case_step_table2.PNG   
 [test_case_record_resume]: ../images/test/test_case_record_resume.PNG
 [test_case_record_plugin]: ../images/test/test_case_record_plugin.PNG
 [test_case_record_plugin2]: ../images/test/test_case_record_plugin2.PNG
@@ -146,3 +176,4 @@ If your test project is configured on a container version of BAW, you may need t
 [test_case_record_button]: ../images/test/test_case_record_button.PNG
 [test_record_page]: ../images/test/test_record_page.PNG
 [test_record_issue]: ../images/tutorial/tuorial_recordissue.png
+[click_run_case_button]: ../images/test/click_run_case_button.png

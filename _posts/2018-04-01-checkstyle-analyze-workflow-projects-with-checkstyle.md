@@ -14,8 +14,8 @@ order: 1
 
       **Use BAW server**, fill the below field values for the checkstyle form.
 
-      ![][checkstyle_checkstyleform]
-
+      ![][checkstyle_checkstyleform]{:height="80%" width="80%"}
+      
       |   Parameter   | Description    |
       | ------------- |----------------|
       | [Server][1]   |Server environment|
@@ -29,7 +29,7 @@ order: 1
 
       **Upload a TWX file**, choose the TWX tab.
 
-      ![][checkstyle_checkstyleupload]
+      ![][checkstyle_checkstyleupload]{:height="80%" width="80%"}
 
       You can choose or drop a TWX file.
 
@@ -37,7 +37,7 @@ order: 1
 
    2. Click **Analyze** Button to see the CheckStyle report.
 
-      ![][tutorial_checkstyle_report]
+      ![][tutorial_checkstyle_report]{:height="80%" width="80%"}
 
 
 [checkstyle_checkstyleform]: ../images/checkstyle/checkstyle_checkstyleform.PNG
