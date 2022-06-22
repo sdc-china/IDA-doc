@@ -61,7 +61,7 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
   
      ![][pipeline_build]{:height="80%" width="80%"}
 
-  2. When the pipeline build is over, click the **build no.** link to see the whole report. 
+  2. When the pipeline build is over, click the pipeline build result link to see the whole report. 
      
      ![][pipeline_build_link]{:height="80%" width="80%"}
 
