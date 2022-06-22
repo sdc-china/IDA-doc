@@ -17,7 +17,7 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
   
 ### Procedure
 
-  1. Click **Create Pipeline** button in pipeline page. Fill the values like below. Check the **unit test**, **Snapshot**, **Checkstyle** for the dev env configuration.
+  1. Click **Create Pipeline** button in pipeline page.
   
      ![][pipeline_define]{:height="80%" width="80%"}
      

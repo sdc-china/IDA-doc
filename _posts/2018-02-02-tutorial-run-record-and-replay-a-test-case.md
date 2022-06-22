@@ -75,9 +75,15 @@ To record a test case:
   
      ![][test_case_step_table2]{:height="80%" width="80%"}
      
-  3. IDA Recorder window is popped up. Click **Run** icon to start recording.
-
+  3. IDA Recorder window is popped up. Click **Run** icon to start recording. 
+     
      ![][ida_recorder]{:height="30%" width="30%"}
+
+     When you fist record and play your test case you might see the below error.
+
+     ![][test_record_issue]{:height="60%" width="60%"}
+   
+	  Solve this issue according to [Doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#self-signed-ssl-certificates-installation).
 
   4. The step 1 is executed and once it is completed, the human service was shown.
      
@@ -143,17 +149,6 @@ when the test case is runing, click **Stop** button on the right of case name.
 
 ![][tutorial_case_stop_button]{:height="80%" width="80%"}
 
-**Notes**
-
-When you fist record and play your test case you might see the below error.
-
-   ![][test_record_issue]{:height="60%" width="60%"}
-   
-This is because IBM Business Process Manager uses default certificates that are not issued by a trusted certificate authority (CA).  The untrusted certificate can cause errors in the user’s browser and possibly block the functions of the OpenPages' integration, including the Process Portal home page.  
-
-In order to solve this issue, you need to click the url from the warning message box as in the screenshot above. A new browser window will open this url and you should accept the ssl security warning, then try to restart the recoder to record/replay again.
-
-If your test project is configured on a container version of BAW, you may need to manually accept multiple certificates for Process Portal and Case Client separately. Follow the step above to accept each certificate warning.
   
 <!-- **[<Previous][2] [\| Next>][3]** -->
 [plugin_login]: ../images/test/plugin_login.png
