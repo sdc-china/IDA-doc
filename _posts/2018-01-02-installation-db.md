@@ -23,9 +23,7 @@ db2 CREATE BUFFERPOOL BP32K IMMEDIATE ALL DBPARTITIONNUMS SIZE AUTOMATIC NUMBLOC
 
 **Execute DB Scripts**  
 
-
 Start DB2 server and switch to the **IDA** DB and execute DB scripts **schema-db2.sql**, **data-db2.sql** to create the database tables and populate data. These 2 SQL scripts can be found in the **sql** folder of IDA installation package.
-
 
 ``` 
 db2 connect to IDA
@@ -39,8 +37,7 @@ You can use DB2 client tool (Data Studio) to verify database tables are created 
 ![][db2]   
 
 **Notes**:
-- You will want to change [IDA_HOME]/sql/data-db2.sql script so that   the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
-
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 
 **Download DB2 Driver**  
@@ -50,6 +47,37 @@ After download, extract the **db2jcc4.jar** from driver package and copy it to t
 
 ![][db2driver]  
 
+## Install and Configure PostgreSQL DB
+
+IDA supports PostgreSQL v14.3+. Download and install [PostgreSQL](https://www.postgresql.org/download/).  Please refer to the following steps to setup PostgreSQL environment. 
+
+**Create Database**   
+
+Connect to the PostgreSQL server and use psql command to create database. 
+``` 
+postgres=# create database ida;
+```
+**Execute DB Scripts**  
+
+Connect to the PostgreSQL server and switch to the **ida** DB and execute DB scripts **schema-postgres.sql**, **data-postgres.sql** to create the database tables and populate data. These 2 SQL scripts can be found in the **sql** folder of IDA installation package.
+
+You can execute the script with the PostgresSQL source command to execute script. Pls replace **yoursqlpath** to path of the SQL folder location.
+
+``` 
+postgres=# \c ida
+ida=# \i 'yoursqlpath/schema-postgres.sql'
+ida=# \i 'yoursqlpath/data-postgres.sql'
+```
+
+**Notes**:
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
+
+**Download PostgreSQL Driver**  
+You can download JDBC for PostgreSQL version  from below link. We recommand you to use postgresql-42.2.8.jar since it is a tested verson.   
+
+[postgresql-42.2.8.jar](https://jdbc.postgresql.org/download/postgresql-42.2.8.jar) 
+
+After download, copy postgresql-42.2.8.jar to the lib folder of IDA installation package.      
 
 ## Install and Configure MySQL DB
 
@@ -63,9 +91,6 @@ mysql> create database IDA;
 ```  
 
 **Execute DB Scripts**  
-
-**Notes:** You will want to change [IDA_HOME]/sql/data-mysql.sql script so that  the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
-
 
 Connect to the MySQL server and switch to the **IDA** DB and execute DB scripts **schema-mysql.sql**, **data-mysql.sql** to create the database tables and populate data. These 2 SQL scripts can be found in the **sql** folder of IDA installation package.
 
@@ -83,13 +108,9 @@ In MySQL 8.0, the default authentication plugin has changed from **mysql_native_
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 
-**Notes:**   You might need to change **data-mysql.sql** script for the your organization name. Please  replace 'IDA' to your company name occur in the below script. The default IDA login name and password is "idaAdmin"/"idaAdmin". Please don't change this username and password in the SQL file.
+**Notes**:
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
-``` 
-INSERT INTO organization (company_name, active) VALUES ('IDA', true);
-INSERT INTO user (user_name, password, role, active, organization_id) 
-VALUES ('idaAdmin', 'b1d2e11b343783a14f6f8362b294bb22', 'ADMIN', true, (SELECT id FROM organization where company_name = 'IDA'));
-```  
 **Download mysql Driver**  
 You can download JDBC for mysql version  from below link. We recommand you to use mysql-connector-java-5.1.44.jar since it is a tested verson.   
 
@@ -121,9 +142,7 @@ GRANT create sequence TO idaDbAdmin;
 GRANT UNLIMITED TABLESPACE TO idaDbAdmin;
 ``` 
 
-
 **Execute Oracle DB Scripts**  
-**Notes:** You will want to change [IDA_HOME]/sql/data-oracle.sql script so that  the organization matches your companies name. Please replace ‘IDA’ with your company name as outlined below.  The default IDA login name and password is “idaAdmin”/”idaAdmin”.  
 
 Use SQL*Plus and command 'sqlplus idaDbAdmin' to log into the database instance, to switch to the **idaDbAdmin** DB Schema. Execute DB scripts **schema-oracle.sql**, **data-oracle.sql** to create the database tables and populate data. These 2 SQL scripts can be found in the **sql** folder of IDA installation package.
 
@@ -135,6 +154,8 @@ SQL > @/data-oracle.sql
 You can use DBeaver to verify database tables are created and populated with data. The Oracle DB connection info should be configured as follows(replace the Host with your Oracle DB host address):
 ![][dbeaver_oracle]
 
+**Notes**:
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 **Download Oracle Driver**  
 You can download [Oracle Database 12.2.0.1 JDBC Driver](https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html) or [Oracle Database 19c JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html)
