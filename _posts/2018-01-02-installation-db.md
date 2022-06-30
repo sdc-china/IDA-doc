@@ -53,7 +53,7 @@ After download, extract the **db2jcc4.jar** from driver package and copy it to t
 
 ## Install and Configure MySQL DB
 
-IDA supports MySQL v8.0. Download and install [MySQL](https://dev.mysql.com/downloads/mysql/).  Please refer to the following steps to setup MySQL environment. 
+IDA supports MySQL v5.7+. Download and install [MySQL](https://dev.mysql.com/downloads/mysql/).  Please refer to the following steps to setup MySQL environment. 
 
 **Create Database**   
 
