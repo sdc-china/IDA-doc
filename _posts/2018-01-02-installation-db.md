@@ -10,7 +10,7 @@ order: 2
 ***
 ## Install and Configure DB2
 
-IDA supports DB2 v10.x+. Please refer to the following steps to setup DB2 environment. 
+IDA supports DB2 v11.1+. Please refer to the following steps to setup DB2 environment. 
 
 **Create DB Database**   
 
