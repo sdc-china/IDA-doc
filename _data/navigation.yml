@@ -135,6 +135,8 @@ docs:
         url: /administration/administration-selenium-hub-configuration.html
       - title: "Team configuration"
         url: /administration/administration-team-configuration.html
+      - title: "Checkstyle Rule Configuration"
+        url: /administration/administration-checkstyle-rule-configuration.html
       - title: "Custom recorder"
         url: /administration/administration-custom-recorder.html
       - title: "Start and Stop IDA environment"
