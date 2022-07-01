@@ -39,10 +39,6 @@ db2 connect reset
 **Download DB2 Driver**  
 You can download [JDBC for DB2 version 11.1 ](https://www-01.ibm.com/marketing/iwm/iwm/web/download.do?source=swg-idsdjs&pageType=urx&S_PKG=dl) 
 
-After download, extract the **db2jcc4.jar** from driver package and copy it to the **lib** folder of IDA installation package. Please note that you can also get the **db2jcc4.jar** from your DB2 server.
-
-![][db2driver]  
-
 ## Install and Configure PostgreSQL DB
 
 IDA supports PostgreSQL v14.3+. Download and install [PostgreSQL](https://www.postgresql.org/download/).  Please refer to the following steps to setup PostgreSQL environment. 
@@ -72,8 +68,6 @@ ida=# \i 'yoursqlpath/data-postgres.sql'
 You can download JDBC for PostgreSQL version  from below link. We recommand you to use postgresql-42.2.8.jar since it is a tested verson.   
 
 [postgresql-42.2.8.jar](https://jdbc.postgresql.org/download/postgresql-42.2.8.jar) 
-
-After download, copy postgresql-42.2.8.jar to the **lib** folder of IDA installation package.      
 
 ## Install and Configure MySQL DB
 
@@ -111,8 +105,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 You can download JDBC for mysql version  from below link. We recommand you to use mysql-connector-java-5.1.44.jar since it is a tested verson.   
 
 [mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) 
-
-After download,  copy mysql-connector-java-5.1.44.jar to the **lib** folder of IDA installation package.      
 
 ## Install and Configure Oracle
 
@@ -152,8 +144,6 @@ You can use DBeaver to verify database tables are created and populated with dat
 
 **Download Oracle Driver**  
 You can download [Oracle Database 12.2.0.1 JDBC Driver](https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html) or [Oracle Database 19c JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html)
-
-After download, extract the **ojdbc8.jar** from driver package and copy it to the **lib** folder of IDA installation package.
 
 [db2]: ../images/install/dbtable.png 
 [db2driver]: ../images/install/db2driver.png 
