@@ -7,12 +7,15 @@ order: 5
 ---
 
 # Migrating IDA Application from v21.0.0
-Compared to the previous version, the new version of IDA sometimes will have changes in database fields, so IDA updates always require database migration. Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](https://sdc-china.github.io/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
+
+If you have previously installed IDA in your environment and now you want to update IDA to the new version, please read the following content. 
+
+Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](https://sdc-china.github.io/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
 
 ***
 ### Preparing your migration
 
-To prepare your migration, take the following steps:  
+Compared to the previous version, the new version of IDA will have some changes in database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:  
 
 1. Download the lastest IDA installation file. The migration scripts come from the installation file. The file name is ida-web-xxx.zip.(xxx is the IDA version)
 2. Stop the libery server.  
@@ -35,6 +38,10 @@ Below steps are appplicable to MySQL database. For other types of database, step
    So if the pervious version is **v21.2.0**, and the new IDA installation file version is **v21.3.3**, then you need to execute these 4 SQL files one by one. 
 
    ![][mysqlmigration-v21]{:height="100%" width="100%"}
+
+   If the pervious version is **v21.2.0**, and the new IDA installation file version is **v22.1.2**, then you need to execute these 6 SQL files one by one. You do not need to execute **migrate-mysql-v22.1.1-v22.1.3.sql**. Because the database structure has not changed between the **v22.1.1** and **v22.1.2**. The database structure is the same in **v22.1.1** and **v22.1.2**.
+
+   ![][mysqlmigration-v22]{:height="100%" width="100%"}
 
 3. Start the MySQL Server.   
 
@@ -71,21 +78,22 @@ To update IDA BAW Toolkit, take the following steps:
 2. Open your process app by web process designer from process center.  
 3. Upgrade the toolkit.
 
-![][toolkit-upgrade-1-v21]{:height="60%" width="60%"}
+    ![][toolkit-upgrade-1-v21]{:height="60%" width="60%"}
 
-4.Delete the old **IDA Utility**.
+4. Delete the old **IDA Utility**.
 
-![][toolkit-upgrade-2]{:height="60%" width="60%"}
+    ![][toolkit-upgrade-2]{:height="60%" width="60%"}
 
-5.Click **Services** below **IDA Toolkit(8.6.2.0_TC)** or **IDA Toolkit(8.6.0 v1.5)**. Right click the **IDA Utility** service flow and copy the item to your process app.
+5. Click **Services** below **IDA Toolkit(8.6.2.0_TC)** or **IDA Toolkit(8.6.0 v1.5)**. Right click the **IDA Utility** service flow and copy the item to your process app.
 
-![][toolkit-upgrade-3-v21]{:height="60%" width="60%"}
+    ![][toolkit-upgrade-3-v21]{:height="60%" width="60%"}
 
-![][toolkit-upgrade-4]{:height="30%" width="30%"}
+    ![][toolkit-upgrade-4]{:height="30%" width="30%"}
    
 [ida_version]: ../images/install/ida_version.png
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration-v21]: ../images/install/mysqlmigration-v21.png
+[mysqlmigration-v22]: ../images/install/mysqlmigration-v22.png
 [teampermission]: ../images/install/teampermission.png
 [teamproject]: ../images/install/teamproject.png
 [sqlfolder]: ../images/references/sql-folder.png
