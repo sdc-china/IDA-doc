@@ -7,41 +7,40 @@ order: 5
 ---
 
 # Migrating IDA Application from v21.0.0
-
-Below are example steps to migrate IDA application from v21.0.0 to v21.3.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](https://sdc-china.github.io/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
+Compared to the previous version, the new version of IDA sometimes will have changes in database fields, so IDA updates always require database migration. Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](https://sdc-china.github.io/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
 
 ***
 ### Preparing your migration
 
 To prepare your migration, take the following steps:  
 
-1. Download the lastested IDA version.
+1. Download the lastest IDA installation file. The migration scripts come from the installation file. The file name is ida-web-xxx.zip.(xxx is the IDA version)
 2. Stop the libery server.  
-3. Stop the mysql server.  
-4. Backup the mysql db.    
+3. Stop the MySQL server.  
+4. Backup the MySQL database.    
 
 ### Step 1: Update DB
 
 Below steps are appplicable to MySQL database. For other types of database, steps are similar. To update DB, take the following steps:
+1. Get the previous version of IDA from the **Database Version** under the **Settings** page.
+   
+   ![][ida_version]{:height="100%" width="100%"}
 
-1. Start the mysql Server.  
-2. You can find migrate-mysql*.sql in the sql\migrate\mysql folder.     
-For example: If your previous version is v21.0.0.You need to pick below sql script to run one by one.Make sure the migrate sql version name is bigger than your previous version.
-* migrate-mysql-v21.0.0-v21.1.0.sql.
-* migrate-mysql-v21.1.1-v21.2.0.sql
-* migrate-mysql-v21.2.0-v21.3.0.sql
-* migrate-mysql-v21.3.0-v21.3.1.sql
-* migrate-mysql-v21.3.1-v21.3.2.sql
-* migrate-mysql-v21.3.2-v21.3.3.sql
+2. Determine which migration scripts need to be run. 
+   
+   You can find migrate-mysql*.sql in the **sql\migrate\mysql** folder. There are two version numbers in the file name of each SQL file. The first version represents the previous IDA database version, and the latter one represents the IDA database version will be migrated to after executing this SQL file.
 
+   For example, if the SQL name is **migrate-mysql-v21.3.2-v21.3.3.sql**, it means that this file will update IDA database version from **v21.3.2** to **v21.3.3**. 
 
-![][mysqlmigration-v21]   
+   So if the pervious version is **v21.2.0**, and the new IDA installation file version is **v21.3.3**, then you need to execute these 4 SQL files one by one. 
 
-&ensp;&ensp;&ensp;3.Connect to the MySQL server and use IDA database. Execute the script for each consecutive version.
+   ![][mysqlmigration-v21]{:height="100%" width="100%"}
+
+3. Start the MySQL Server.   
+
+4. Connect to the MySQL server and use IDA database. Execute the SQL scripts mentioned in the step 2 in order.
 ```
 mysql> use IDA ;   
-mysql> source yoursqlpath\migrate-mysql-v21.0.0-v21.1.0.sql
-mysql> source yoursqlpath\migrate-mysql-v21.1.1-v21.2.0.sql
 mysql> source yoursqlpath\migrate-mysql-v21.2.0-v21.3.0.sql
 mysql> source yoursqlpath\migrate-mysql-v21.3.0-v21.3.1.sql
 mysql> source yoursqlpath\migrate-mysql-v21.3.1-v21.3.2.sql
@@ -72,19 +71,19 @@ To update IDA BAW Toolkit, take the following steps:
 2. Open your process app by web process designer from process center.  
 3. Upgrade the toolkit.
 
-![][toolkit-upgrade-1-v21]
+![][toolkit-upgrade-1-v21]{:height="60%" width="60%"}
 
-&ensp;&ensp;&ensp;4.Delete the old **IDA Utility**.
+4.Delete the old **IDA Utility**.
 
-![][toolkit-upgrade-2] 
+![][toolkit-upgrade-2]{:height="60%" width="60%"}
 
-&ensp;&ensp;&ensp;5.Click **Services** below **IDA Toolkit(8.6.2.0_TC)** or **IDA Toolkit(8.6.0 v1.5)**. Right click the **IDA Utility** service flow and copy the item to your process app.
+5.Click **Services** below **IDA Toolkit(8.6.2.0_TC)** or **IDA Toolkit(8.6.0 v1.5)**. Right click the **IDA Utility** service flow and copy the item to your process app.
 
-![][toolkit-upgrade-3-v21]
+![][toolkit-upgrade-3-v21]{:height="60%" width="60%"}
 
-![][toolkit-upgrade-4]
+![][toolkit-upgrade-4]{:height="30%" width="30%"}
    
-
+[ida_version]: ../images/install/ida_version.png
 [yamlmigration]: ../images/install/productionyaml.png
 [mysqlmigration-v21]: ../images/install/mysqlmigration-v21.png
 [teampermission]: ../images/install/teampermission.png
