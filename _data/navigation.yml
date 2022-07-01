@@ -103,6 +103,11 @@ docs:
         url: /analyzer/analyzer-statistic-report.html
       - title: "Toolkit references report"
         url: /analyzer/analyzer-toolkit-references-report.html
+  - title: Search
+    children:
+      - title: "Search Workflow projects"
+        url: /search/search-workflow-projects.html
+  
   - title: Pipeline
     children:
       - title: "Pipeline overview"
