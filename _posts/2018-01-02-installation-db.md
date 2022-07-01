@@ -65,9 +65,8 @@ ida=# \i 'yoursqlpath/data-postgres.sql'
 - You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 **Download PostgreSQL Driver**  
-You can download JDBC for PostgreSQL version  from below link. We recommand you to use postgresql-42.2.8.jar since it is a tested verson.   
+You can download [JDBC for PostgreSQL v42.2.8](https://jdbc.postgresql.org/download/postgresql-42.2.8.jar).   
 
-[postgresql-42.2.8.jar](https://jdbc.postgresql.org/download/postgresql-42.2.8.jar) 
 
 ## Install and Configure MySQL DB
 
@@ -102,9 +101,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 - You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 **Download mysql Driver**  
-You can download JDBC for mysql version  from below link. We recommand you to use mysql-connector-java-5.1.44.jar since it is a tested verson.   
-
-[mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) 
+You can download [JDBC for mysql v5.1.44](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar). 
 
 ## Install and Configure Oracle
 
