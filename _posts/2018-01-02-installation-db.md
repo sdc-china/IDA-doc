@@ -33,7 +33,7 @@ db2 connect reset
 ```  
 
 **Notes**:
-- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 
 **Download DB2 Driver**  
@@ -62,7 +62,7 @@ ida=# \i 'yoursqlpath/data-postgres.sql'
 ```
 
 **Notes**:
-- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 **Download PostgreSQL Driver**  
 You can download [JDBC for PostgreSQL v42.2.8](https://jdbc.postgresql.org/download/postgresql-42.2.8.jar).   
@@ -98,7 +98,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 ```
 
 **Notes**:
-- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 **Download mysql Driver**  
 You can download [JDBC for mysql v5.1.44](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar). 
@@ -137,7 +137,7 @@ You can use DBeaver to verify database tables are created and populated with dat
 ![][dbeaver_oracle]
 
 **Notes**:
-- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
+- You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
 **Download Oracle Driver**  
 You can download [Oracle Database 12.2.0.1 JDBC Driver](https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html) or [Oracle Database 19c JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html)
