@@ -32,10 +32,6 @@ db2 -stvf data-db2.sql
 db2 connect reset
 ```  
 
-You can use DB2 client tool (Data Studio) to verify database tables are created and populated with data.
-
-![][db2]   
-
 **Notes**:
 - You will want to change [IDA_HOME]/sql/data-db2.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name as outlined below.  The default IDA login name and password is "idaAdmin"/"idaAdmin".  
 
@@ -43,7 +39,7 @@ You can use DB2 client tool (Data Studio) to verify database tables are created 
 **Download DB2 Driver**  
 You can download [JDBC for DB2 version 11.1 ](https://www-01.ibm.com/marketing/iwm/iwm/web/download.do?source=swg-idsdjs&pageType=urx&S_PKG=dl) 
 
-After download, extract the **db2jcc4.jar** from driver package and copy it to the lib folder of IDA installation package. Please note that you can also get the **db2jcc4.jar** from your DB2 server.
+After download, extract the **db2jcc4.jar** from driver package and copy it to the **lib** folder of IDA installation package. Please note that you can also get the **db2jcc4.jar** from your DB2 server.
 
 ![][db2driver]  
 
@@ -77,7 +73,7 @@ You can download JDBC for PostgreSQL version  from below link. We recommand you 
 
 [postgresql-42.2.8.jar](https://jdbc.postgresql.org/download/postgresql-42.2.8.jar) 
 
-After download, copy postgresql-42.2.8.jar to the lib folder of IDA installation package.      
+After download, copy postgresql-42.2.8.jar to the **lib** folder of IDA installation package.      
 
 ## Install and Configure MySQL DB
 
@@ -116,10 +112,7 @@ You can download JDBC for mysql version  from below link. We recommand you to us
 
 [mysql-connector-java-5.1.44.jar](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar) 
 
-After download,  copy mysql-connector-java-5.1.44.jar to the lib folder of IDA installation package.      
-
-![][mysqldriver]  
-
+After download,  copy mysql-connector-java-5.1.44.jar to the **lib** folder of IDA installation package.      
 
 ## Install and Configure Oracle
 
@@ -160,7 +153,7 @@ You can use DBeaver to verify database tables are created and populated with dat
 **Download Oracle Driver**  
 You can download [Oracle Database 12.2.0.1 JDBC Driver](https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html) or [Oracle Database 19c JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html)
 
-After download, extract the **ojdbc8.jar** from driver package and copy it to the lib folder of IDA installation package.
+After download, extract the **ojdbc8.jar** from driver package and copy it to the **lib** folder of IDA installation package.
 
 [db2]: ../images/install/dbtable.png 
 [db2driver]: ../images/install/db2driver.png 
