@@ -23,7 +23,7 @@ Users can enable/disable checkstyle rules dynamically without customization by u
 
 ###  Notes
   1. The priority of the settings here is higher than that of the Checkstyle page. For example, even if you do not ignore the document check in the Checkstyle page, but if you disable some document check rules here, the selected document check rules will not be executed. 
-  2. Only the [Embedded rules] in IDA are listed here. The rules customized by customers can also be enabled or disabled if the names are the same with one of the embedded rules. If the names of the customized rules are different from the the embedded rules, there is no way to control whether the rules are enable or disable.
+  2. Only the [Embedded rules] in IDA are listed here.
 
 
 [search_rule]: ../images/administrator/checkstyle_rule_config_search_rule.png
