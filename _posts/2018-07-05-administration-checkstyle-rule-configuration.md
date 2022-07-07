@@ -2,13 +2,13 @@
 title: "Checkstyle Rule Configuration"
 category: administration
 date: 2018-10-21 15:17:55
-last_modified_at: 2021-08-23 16:21:00
+last_modified_at: 2022-07-01 16:21:00
 order: 5
 ---
 
 # Checkstyle Rules Configuration
 ***
-Users can enable/disable checkstyle rules dynamically without customization by using this fuction.
+Users can enable/disable checkstyle rules dynamically without customization.
 
 ###  Enable/disable checkstyle rules
   1. Click **Administrator** tab, then switch to  **Checkstyle Rules Configuration** tab to manage checkstyle rules.  
@@ -22,10 +22,10 @@ Users can enable/disable checkstyle rules dynamically without customization by u
      ![][disable_rule]{:height="80%" width="80%"}
 
 ###  Notes
-  1. The priority of the settings here is higher than that of the Checkstyle page. For example, even if you do not ignore the document check in the Checkstyle page, but if you disable some document check rules here, the selected document check rules will not be executed. 
-  2. Only the [Embedded rules] in IDA are listed here.
+  1. It's global setting, once the rules is disabled in the configuration page, then it won't be executed when user run checkstyle in the checkstyle page or pipeline.
+  2. Only the [Embedded checkstyle rules] are listed here.
 
 
 [search_rule]: ../images/administrator/checkstyle_rule_config_search_rule.png
 [disable_rule]: ../images/administrator/checkstyle_rule_config_disable_rule.png
-[Embedded rules]: ../checkstyle/checkstyle-rules-description.html
+[Embedded checkstyle rules]: ../checkstyle/checkstyle-rules-description.html
