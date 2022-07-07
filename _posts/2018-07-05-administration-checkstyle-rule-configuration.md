@@ -22,7 +22,7 @@ Users can enable/disable checkstyle rules dynamically without customization.
      ![][disable_rule]{:height="80%" width="80%"}
 
 ###  Notes
-  1. It's global setting, once the rules is disabled in the configuration page, then it won't be executed when user run checkstyle in the checkstyle page or pipeline.
+  1. It's global setting, once the rule is disabled in the configuration page, then it won't be executed when user run checkstyle in the checkstyle page or pipeline.
   2. Only the [Embedded checkstyle rules] are listed here.
 
 
