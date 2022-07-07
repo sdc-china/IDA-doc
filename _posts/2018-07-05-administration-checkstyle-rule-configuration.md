@@ -23,9 +23,9 @@ Users can enable/disable checkstyle rules dynamically without customization.
 
 ###  Notes
   1. It's global setting, once the rule is disabled in the configuration page, then it won't be executed when user run checkstyle in the checkstyle page or pipeline.
-  2. Only the [Embedded checkstyle rules] are listed here.
+  2. Only the [built-in checkstyle rules] are listed here.
 
 
 [search_rule]: ../images/administrator/checkstyle_rule_config_search_rule.png
 [disable_rule]: ../images/administrator/checkstyle_rule_config_disable_rule.png
-[Embedded checkstyle rules]: ../checkstyle/checkstyle-rules-description.html
+[built-in checkstyle rules]: ../checkstyle/checkstyle-rules-description.html
