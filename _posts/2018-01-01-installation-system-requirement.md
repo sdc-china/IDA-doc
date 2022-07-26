@@ -29,8 +29,27 @@ order: 1
 * Chrome v57+ (64-bit)
 * IE v11+ (Supports execution only)
 
-### Minimal System Requirements
-- 1 core CPU, 2 GB memory and 50 GB disk space.
+### System Requirements
 
-### Recommended System Requirements
-- 4 core CPU, 8 GB memory and 200 GB disk space.
+- Please select the appropriate configuration according to the number of users.
+
+
+Users                 | System Requirements       
+     ----------------------|-------------------
+     0-5                 | 2 core CPU, 4 GB memory   
+     5-15                 | 4 core CPU, 8 GB memory  
+     15-30                 | 8 core CPU, 16 GB memory
+     
+- The following table provides the data stored by IDA and the approximate size of each type of data. Please estimate the required capacity according to your needs. This table does not include the size of IDA itself, logs, attachments, avatars and temporary data, please add an additional **10GB** when estimating.
+
+File               |      Description |      Average size of each file 
+     ----------------------|-------------------|-------------------
+     TWX File              | IDA needs to export and download TWX from BAW to local for analysis  | 50MB 
+     Checkstyle Report     | Generated after each Checkstyle execution  | 400KB 
+     Analyzer Report       | Generated after each Analyzer execution | 200KB
+     Comparison Report     | Generated after each Comparison execution | 300KB
+     Search Index Folder   | Generated after each Search execution  | 2MB
+     Testing Screenshot    | Generated after each Testing step execution | 60KB
+     Installation Package  | The deployment operation in the pipeline will export this installation package | 50MB
+     
+     
