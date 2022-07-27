@@ -179,6 +179,8 @@ docs:
         url: /references/references-operation.html
       - title: "IDA Plug-in"
         url: /references/references-ida-plugin.html
+      - title: "Performance Test"
+        url: /references/references-performance-test.html
 
   - title: "Trouble Shooting"
     children:
