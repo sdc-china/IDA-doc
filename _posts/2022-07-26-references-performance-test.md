@@ -8,67 +8,70 @@ order: 16
 
 # Performance Test
 ***
+
+Each request uses the various functions of IDA.
+
 ## 2 core CPU, 4 GB memory
-### 10 Users
+### 10 Concurrent Requests
 
  ![][performance-2-4-10]
  
-### 20 Users
+### 20 Concurrent Requests
 
  ![][performance-2-4-20]
  
-### 30 Users
+### 30 Concurrent Requests
 
  ![][performance-2-4-30]
 
 ## 4 core CPU, 8 GB memory
-### 10 Users
+### 10 Concurrent Requests
 
  ![][performance-4-8-10]
 
-### 20 Users
+### 20 Concurrent Requests
 
  ![][performance-4-8-20]
  
-### 30 Users 
+### 30 Concurrent Requests 
 
  ![][performance-4-8-30]
 
-### 40 Users
+### 40 Concurrent Requests
 
  ![][performance-4-8-40]
 
-### 50 Users
+### 50 Concurrent Requests
 
  ![][performance-4-8-50]
 
 ## 8 core CPU, 16 GB memory
 
-### 10 Users
+### 10 Concurrent Requests
 
  ![][performance-8-16-10]
 
-### 20 Users
+### 20 Concurrent Requests
 
  ![][performance-8-16-20]
 
-### 30 Users
+### 30 Concurrent Requests
 
  ![][performance-8-16-30]
 
-### 40 Users
+### 40 Concurrent Requests
 
  ![][performance-8-16-40]
 
-### 50 Users
+### 50 Concurrent Requests
 
  ![][performance-8-16-50]
 
-### 60 Users
+### 60 Concurrent Requests
 
  ![][performance-8-16-60]
 
-### 70 Users
+### 70 Concurrent Requests
 
  ![][performance-8-16-70]
 
