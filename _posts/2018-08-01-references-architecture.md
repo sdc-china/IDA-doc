@@ -12,7 +12,7 @@ order: 1
 ## Integration Architecture
 ![integration architecture](../images/architecture/integration_architecture_1.png)
 1. IDA communications with BAW servers by REST API using basic authentication method.
-2. SSH is needed to support IDA pipeline deployment feature, if the BAW server version is prior to version 18.0.0.2.
+2. SSH is needed to support IDA pipeline deployment feature, if the BAW server version is prior to 18.0.0.2.
 3. To gain full function of testing feature, [IDA toolkit](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#step-2-installing-ida-baw-toolkit) needs to be installed in the BAW application.
 4. To record and replay test case by browser, [IDA Plugin](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#step-3-installing-ida-browser-plug-in) need to be installed in user's browser(Chrome or Firefox).
 5. IDA connects to Database by TCP protocol.
