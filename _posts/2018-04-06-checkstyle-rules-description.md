@@ -8,6 +8,7 @@ order: 5
 
 # Checkstyle rules by category
 ***
+
 ### App
 
 | Rule                                               | Level    | Description                                                                                                         | Advice                                                                                                                                                                                                                                                                                                                                                                                        | Tags           |

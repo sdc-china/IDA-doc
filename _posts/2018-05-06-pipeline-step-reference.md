@@ -8,6 +8,7 @@ order: 6
 
 # Pipeline stage & step reference
 ***
+
 ### Pipeline stage reference
 
 Pipeline stage is like a milestone which contains one or more pipeline steps. Each stage has a **Type** attribute, which impacts the supported pipeline steps. There are 3 types of stage, which is listed as below.

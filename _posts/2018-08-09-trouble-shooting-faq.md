@@ -8,6 +8,7 @@ order: 1
 
 # Frequently asked questions
 ***
+
 ## FAQ about IDA
 
 1. FAQ: Where can I get information about hardware and software requirements of IDA?

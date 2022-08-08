@@ -8,6 +8,7 @@ order: 59
 
 # Test Smart Comparison - A new image base assertion
 ***
+
 ### How does smart comparison work
 
  Smart comparison is an image based assertion, which is a new and easy way for regression test assertion by using pixel-by-pixel comparison.

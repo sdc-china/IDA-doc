@@ -8,6 +8,7 @@ order: 1
 
 # Analyze Workflow projects with checkstyle
 ***
+
 ### Setting up the Workflow project and perform it.
 
    1. Use BAW server or upload a TWX file to analyze.

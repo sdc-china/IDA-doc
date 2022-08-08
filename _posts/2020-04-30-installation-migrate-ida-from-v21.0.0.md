@@ -13,6 +13,7 @@ If you have previously installed IDA in your environment and now you want to upd
 Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](https://sdc-china.github.io/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
 
 ***
+
 ### Preparing your migration
 
 Compared to the previous version, the new version of IDA will have some changes in database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:  

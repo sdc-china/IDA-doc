@@ -8,6 +8,7 @@ order: 2
 
 # Test Commands
 ***
+
 This document refers to the Command Editor options and not JavaScript API to call a command. JavaScript API for the test case step can be viewed by clicking the label for the step. API inputs may not be named exactly the same as Command Editor fields. For example, **Assignee** in the Dialog box corresponds to a **user** in the API.
 
 

@@ -8,6 +8,7 @@ order: 40
 
 # Group command management
 ***
+
 ### Create a group command
 
   Navigate to **Hiring sample** -> **Create Position Request CSHS** -> **Case1** to generate a group command.

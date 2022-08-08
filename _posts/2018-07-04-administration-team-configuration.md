@@ -8,6 +8,7 @@ order: 4
 
 # Team configuration
 ***
+
 ### Add a team
   1. Click **Administrator** tab, then switch to  **Team Configurtaion** tab to manage team.  
 

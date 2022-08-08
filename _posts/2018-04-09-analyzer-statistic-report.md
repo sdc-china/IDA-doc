@@ -8,6 +8,7 @@ order: 3
 
 # Analyzer - Statistic report
 ***
+
 ## Basic information
    
    After finishing the statistic analysis, the basic information for this application will be displayed in this section, including process application details, specific information of branch and snapshot. More details, see the following screenshot.

@@ -8,6 +8,7 @@ order: 3
 
 # Javascript API
 ***
+
 ## OOTB Javascript API
 
 | JS API |      Parameters    |       Comments            |       Sample            | Contains bta.util.callback()|

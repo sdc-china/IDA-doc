@@ -8,6 +8,7 @@ order: 4
 
 # Task 4: Create a pipeline for continuous deployment
 ***
+
 IDA provides a build-in continuous  integration  and deployment  pipeline to orchestrate  testing, checkstyle,  snapshot  taking and deployment.
 ## About this task
   Before you start,make sure you have set up the test project. 

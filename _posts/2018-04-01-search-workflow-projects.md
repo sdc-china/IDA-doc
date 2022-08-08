@@ -8,6 +8,7 @@ order: 1
 
 # Search Workflow projects
 ***
+
 ### Setting up the Workflow project and perform search.
 
    1. Configure the workflow project using online form or upload a TWX file to search.

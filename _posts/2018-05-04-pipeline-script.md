@@ -8,6 +8,7 @@ order: 4
 
 # Pipeline script
 ***
+
 ### Pipeline script summary
 
   In pipeline stage step definition, there is a step called script, which allows users to execute script in the server where IDA is deployed.

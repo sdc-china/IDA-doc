@@ -8,6 +8,7 @@ order: 3
 
 # Selenium Hub configuration
 ***
+
 ### How to configure selenium hub
    You need to setup the [Post Installation Setup] before this step.
 ### Add selenium hub

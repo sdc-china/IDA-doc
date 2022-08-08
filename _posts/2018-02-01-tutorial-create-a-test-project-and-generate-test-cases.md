@@ -8,6 +8,7 @@ order: 1
 
 # Task 1: Create a test project and generate test cases
 ***
+
 IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support Workflow project test.
 
 ## Pre-requisites
