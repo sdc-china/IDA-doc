@@ -39,7 +39,7 @@ Description | Hardware Requirements | Max Concurrent Users
      Optimal Requirement | 8 core CPU, 16 GB memory, 200 GB disk | 40
 
 **Notes**:
-*Using Checkstyle will consume more memory. If the TWX size is greater than 100MB, then at least **8G memory** is required.*
+*Using Checkstyle/Analyzer/Comparison/Search will consume more memory. If the TWX size is greater than 100MB, then at least **8G memory** is required.*
 
 For more information on performance, please refer to [Performance Test Report](https://sdc-china.github.io/IDA-doc/references/references-performance-test.html).
 
