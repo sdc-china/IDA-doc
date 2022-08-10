@@ -1,12 +1,12 @@
 ---
-title: "Performance Test"
+title: "Performance Test Report"
 category: references
 date: 2022-08-07 10:00:00
 last_modified_at: 2022-08-07 10:00:00
 order: 16
 ---
 
-# Performance Test
+# Performance Test Report
 ***
 
 ## Test objectives
