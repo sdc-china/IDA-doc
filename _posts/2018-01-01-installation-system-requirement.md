@@ -62,10 +62,8 @@ File               |      Description |      Average size of each file
      Installation Package  | The deployment operation in the pipeline will export this installation package | 50MB
      Standalone Testing Project| Average size of a Testing project| 55MB
      Standalone Pipeline| Average size of a Pipeline | 105MB
-     
-     
-Assuming that the following pipeline needs to be run every day, then the daily space of one pipeline is about 105MB. If you don't do data cleaning for a month, this job alone will cost 3GB+. And maybe there are multiple pipelines in your IDA.
-
+    
+Assuming that the following pipeline needs to be run every day, then the daily disk usage for one pipeline is about 105MB，and one month disk usage is 3GB+.
 
 ![][simple_pipeline]
 
