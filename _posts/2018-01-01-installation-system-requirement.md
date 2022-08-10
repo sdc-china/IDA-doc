@@ -37,14 +37,14 @@ order: 1
 Please select the appropriate configuration. For more information on Performance please refer to [Performance Test](https://sdc-china.github.io/IDA-doc/references/references-performance-test.html).
 
 
-Description               | Hardware Requirements   | Max Concurrent Users       
+                           | Hardware Requirements   | Max Concurrent Users       
      ----------------------|------------------- |-------------------
-     Minimum                 | 2 core CPU, 4 GB memory | 10 
-     Recommended             | 4 core CPU, 8 GB memory  | 20
-     Optimum                 | 8 core CPU, 16 GB memory | 40
+     Minimum Requirement      | 2 core CPU, 4 GB memory | 10 
+     Recommended Requirement  | 4 core CPU, 8 GB memory  | 20
+     Optimal Requirement      | 8 core CPU, 16 GB memory | 40
 
 **Notes**:
-*Using Checkstyle will consume a lot of memory, if the TWX size is about 100MB, IDA need at least 8G memory.*
+*Using Checkstyle will consume more memory. If the TWX size is greater than 100MB, then at least 8G memory is required.*
 
 ### Disk
 
