@@ -8,6 +8,7 @@ order: 2
 
 # BAW configuration
 ***
+
 ### Add a BAW server
   1. Click **Administrator** tab, then switch to  **BAW Configurtaion** tab to manage BAW server.  
 

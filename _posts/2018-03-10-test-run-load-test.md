@@ -8,6 +8,7 @@ order: 70
 
 # Run Load Test
 ***
+
 ###  Edit gatling home path
 
   1. Download **Gatling** from their [official website](https://gatling.io/open-source/start-testing/).

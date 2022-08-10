@@ -8,6 +8,7 @@ order: 55
 
 # Write a Javascript command
 ***
+
 ### Create a javascript command
 
 1. Navigate to **Custom Command** in the left-side menu bar, click + button to generate a group command.

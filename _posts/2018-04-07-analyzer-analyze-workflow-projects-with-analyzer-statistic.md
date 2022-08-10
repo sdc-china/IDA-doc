@@ -8,6 +8,7 @@ order: 1
 
 # Analyze Workflow projects with analyzer statistic
 ***
+
 ### Setting up the Workflow project and perform it.
 
    1. Switch to the **Analyzer** tab, then you can use BAW server or upload a TWX file to analyze.

@@ -8,6 +8,7 @@ order: 80
 
 # Test Report
 ***
+
 IDA offers detailed reports including screenshots, execution process flow and coverage to improve communication between testers and developers on every test case.
 
 ### Test Case Report  

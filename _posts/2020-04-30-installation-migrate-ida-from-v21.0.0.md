@@ -13,6 +13,7 @@ If you have previously installed IDA in your environment and now you want to upd
 Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](https://sdc-china.github.io/IDA-doc/references/references-migrating-and-updating-your-application.html) and [Migrating IDA from v2.7.x to v21.0.0](https://sdc-china.github.io/IDA-doc/references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html)
 
 ***
+
 ### Preparing your migration
 
 Compared to the previous version, the new version of IDA will have some changes in database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:  
@@ -74,7 +75,7 @@ For IDA version migration,you need to update IDA.war, take the following steps:
 
 To update IDA BAW Toolkit, take the following steps:
 
-1. For BAW version above 20.0.0.1, import **IDA_Toolkit - 8.6.2.0_TC.twx**. For BAW version below 20.0.0.1, import **IDA_Toolkit - 8.6.0_v1.5.twx**. Both files are below forder /toolkit of release package into your process center.
+1. For BAW version above 20.0.0.1, import **IDA_Toolkit - 8.6.2.0_TC.twx**. For BAW version below 20.0.0.1, import **IDA_Toolkit - 8.6.0_v1.5.twx** into your Process Center. Both files are below forder /toolkit of release package.
 2. Open your process app by web process designer from process center.  
 3. Upgrade the toolkit.
 

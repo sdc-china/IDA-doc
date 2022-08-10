@@ -8,6 +8,7 @@ order: 8
 
 # Custom recorder
 ***
+
 ### Overview
   To support the various modern UI frameworks, we can extend the IDA recorder script. The page can be accessed by the menu **Administration -> Custom Recorder**.Usually we use this feature to provide a hot fix to customer if record feature need to be enchanced.
 

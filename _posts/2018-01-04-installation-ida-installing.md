@@ -2,7 +2,7 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2021-12-10 18:12:00
+last_modified_at: 2022-08-09 13:32:00
 order: 4
 ---
 
@@ -313,9 +313,9 @@ After finishing the installation of the fix packs, the next step is to deploy th
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
 # Step 2: Installing IDA BAW Toolkit
-The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
+The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit. For BAW version above 20.0.0.1, import **IDA_Toolkit - 8.6.2.0_TC.twx**. For BAW version below 20.0.0.1, import **IDA_Toolkit - 8.6.0_v1.5.twx** into your Process Center. Both files are below forder /toolkit of release package.
 
-1. Import **IDA_Toolkit - 8.6.0_v1.1.twx** which is below forder /toolkit of release package into your process center.
+1. Import **IDA_Toolkit - 8.6.x.0.twx** which is below forder /toolkit of release package into your process center.
 
 2. Open your process app by web process designer from process center.
 
@@ -323,11 +323,11 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 
 	![][click_add_button]
 
-4. Type **ida** in the search box and select **8.6.0 V1.1** below IDA Toolkit. Then the dependency **IDA Toolkit(8.6.0 v1.1)** is added.
+4. Type **ida** in the search box and select **8.6.x.0** below IDA Toolkit. Then the dependency **IDA Toolkit(8.6.x.0)** is added.
 
 	![][ida_toolkit_search]
 
-5. Click **Services** below **IDA Toolkit(8.6.0 v1.1)**. Right click the **IDA Utility** service flow and copy the item to your process app.
+5. Click **Services** below **IDA Toolkit(8.6.x.0)**. Right click the **IDA Utility** service flow and copy the item to your process app.
 
 	![][ida_toolkit_copy]
 

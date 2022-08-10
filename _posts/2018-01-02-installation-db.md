@@ -8,6 +8,7 @@ order: 2
 
 # Database Installation and Configuration
 ***
+
 ## Install and Configure DB2
 
 IDA supports DB2 v11.1+. Please refer to the following steps to setup DB2 environment. 

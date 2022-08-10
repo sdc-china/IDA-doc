@@ -8,6 +8,7 @@ order: 4
 
 # Deploy Checkstyle ruleset
 ***
+
 ### Software Prerequisites
 
 * [IBM Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)

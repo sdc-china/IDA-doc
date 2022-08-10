@@ -11,6 +11,7 @@ order: 20
 Users can add multiple labels to manage the test cases and use labels in a **Test** step of an IDA pipeline to [select test cases in pipeline execution][test-step-ref].
 
 ***
+
 ### Manage labels of a single test case
 
 1. From the left-side menu bar, select a single test case under some test suite name.

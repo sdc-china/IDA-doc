@@ -8,6 +8,7 @@ order: 6
 
 # Samples
 ***
+
 ## Samples
 The samples are available on Git [samples](https://github.com/sdc-china/IDA-samples) repository.
 - Testing samples list

@@ -8,6 +8,7 @@ order: 6
 
 # Summary
 ***
+
 In this tutorial you know how to use IDA for a working CI/CD solution for Workflow projects.
 
 The tutorials have shown the following modules to you:

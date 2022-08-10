@@ -8,6 +8,7 @@ order: 10
 
 # Start and Stop IDA environment
 ***
+
 ##	Starting your environment
 
 ### Start MySQL

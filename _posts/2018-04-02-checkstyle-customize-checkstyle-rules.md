@@ -8,6 +8,7 @@ order: 2
 
 # Customize Checkstyle rules
 ***
+
 ### Software Prerequisites
 
 * [IBM® Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)

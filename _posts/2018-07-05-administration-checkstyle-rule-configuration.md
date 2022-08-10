@@ -8,6 +8,7 @@ order: 5
 
 # Checkstyle Rules Configuration
 ***
+
 Users can enable/disable checkstyle rules dynamically without customization.
 
 ###  Enable/disable checkstyle rules

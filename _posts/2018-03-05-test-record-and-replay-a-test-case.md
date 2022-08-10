@@ -8,6 +8,7 @@ order: 50
 
 # Record and replay a test case
 ***
+
 ### Record a test case
 
   1. Click **Edit** button on the right of suite name.

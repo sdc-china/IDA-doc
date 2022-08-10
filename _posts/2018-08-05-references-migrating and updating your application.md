@@ -8,6 +8,7 @@ order: 5
 
 # Migrating and Updating IDA Application v2.x
 ***
+
 ### Preparing your migration
 
 To prepare your migration, take the following steps:  
