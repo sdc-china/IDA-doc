@@ -51,11 +51,11 @@ User actions in the scenario:
 
 Test duration: 1 hour;
 
-System    | Total Requests  |Requests/s    | Response Min (ms)| Response Max (ms)| Response Mean (ms)  | Std Dev (ms)|%CPU  | %MEM        
-     ----------|--------|---------|---------|---------|------|-----|-------|---------
-     2 core CPU, 4 GB memory | 24521 | 6.578 | 268| 4538| 664| 507| 68.7%| 47.4%
-     4 core CPU, 8 GB memory | 32326 | 8.59 | 279| 29919| 1477| 1776| 69.7%| 40.5%
-     8 core CPU, 16 GB memory| 59101 | 15.59 | 284| 38860| 1694| 2486| 65.5%| 36.3%
+System    | Concurrent Users | Total Requests  |Requests/s    | Response Min (ms)| Response Max (ms)| Response Mean (ms)  | Std Dev (ms)|%CPU  | %MEM        
+     ----------|--------|--------|---------|---------|---------|------|-----|-------|---------
+     2 core CPU, 4 GB memory | 10 | 24521 | 6.578 | 268| 4538| 664| 507| 68.7%| 47.4%
+     4 core CPU, 8 GB memory | 20 | 32326 | 8.59 | 279| 29919| 1477| 1776| 69.7%| 40.5%
+     8 core CPU, 16 GB memory| 40 | 59101 | 15.59 | 284| 38860| 1694| 2486| 65.5%| 36.3%
 
 ## Tests Details
 
