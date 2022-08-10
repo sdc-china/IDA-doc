@@ -32,21 +32,16 @@ order: 1
 
 ## Hardware Requirements
 
-### CPU And Memory
-
-Please select the appropriate configuration. For more information on Performance please refer to [Performance Test](https://sdc-china.github.io/IDA-doc/references/references-performance-test.html).
-
-
-     Description | Hardware Requirements | Max Concurrent Users       
+Description | Hardware Requirements | Max Concurrent Users       
      ----------------------|-------------------|-------------------
-     Minimum Requirement | 2 core CPU, 4 GB memory | 10
-     Recommended Requirement | 4 core CPU, 8 GB memory | 20
-     Optimal Requirement | 8 core CPU, 16 GB memory | 40
+     Minimum Requirement | 2 core CPU, 4 GB memory, 50 GB disk | 10
+     Recommended Requirement | 4 core CPU, 8 GB memory, 200 GB disk | 20
+     Optimal Requirement | 8 core CPU, 16 GB memory, 200 GB disk | 40
 
 **Notes**:
 *Using Checkstyle will consume more memory. If the TWX size is greater than 100MB, then at least 8G memory is required.*
 
-### Disk
+## Disk Usage
 
 We recommend at least **50G** reserved disk space, and **200G** reserved disk space is recommended.
      
@@ -68,6 +63,7 @@ File               |      Description |      Average size of each file
      
      
 Assuming that the following pipeline needs to be run every day, then the daily space of one pipeline is about 105MB. If you don't do data cleaning for a month, this job alone will cost 3GB+. And maybe there are multiple pipelines in your IDA.
+
 
 ![][simple_pipeline]
 
