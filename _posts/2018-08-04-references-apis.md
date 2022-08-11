@@ -11,17 +11,17 @@ order: 4
 
 IDA REST APIs references.
 
-### Swagger URL
+## Swagger URL
     http://[serverhost]:[port]/ida/swagger-ui.html
     http://[serverhost]:[port]/ida/v2/api-docs
 
 ![][swagger_ui]
 
-### Authentication
+## Authentication
 
 IDA REST APIs support basic authentication. 
 
-### Pipeline
+## Pipeline
 - **[<code>GET /rest/v2/pipelines</code> Get pipeline list.](#get-pipeline-list)**
 - **[<code>GET /rest/v2/pipelines/metadata?pipelineId=:id(?pipelineName=:name)</code> Get pipeline metadata.](#get-pipeline-metadata)**
 - **[<code>POST /rest/v2/pipelines/builds?pipelineId=:id(?pipelineName=:name)</code>  Trigger pipeline build.](#trigger-pipeline-build)**
