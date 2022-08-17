@@ -318,7 +318,7 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 
 BAW Version | IDA Toolkit Version  
      ----------------------|-------------------
-      19.0.0.3 to 20.0.0.1 |  IDA_Toolkit - 8.6.0_v1.5.twx
+      19.0.0.3 |  IDA_Toolkit - 8.6.0_v1.5.twx
       20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [excuteSQL](https://sdc-china.github.io/IDA-doc/references/references-test-command.html#executesql)**.
       above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
 
