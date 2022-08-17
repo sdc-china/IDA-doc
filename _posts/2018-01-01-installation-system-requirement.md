@@ -24,7 +24,7 @@ order: 1
 * [Selenium v3.141.59](https://sdc-china.github.io/IDA-doc/installation/installlation-post-installation.html#selenium-grid-v3) or [Selenium v4.1.x](https://sdc-china.github.io/IDA-doc/installation/installlation-post-installation.html#selenium-grid-v4)
 
 
-## Browsers Support
+## Selenium Grid Browsers Support
 
 * Firefox v52+ (64-bit)
 * Chrome v57+ (64-bit)
