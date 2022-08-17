@@ -313,9 +313,17 @@ After finishing the installation of the fix packs, the next step is to deploy th
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
 # Step 2: Installing IDA BAW Toolkit
-The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit. For BAW version above 20.0.0.1, import **IDA_Toolkit - 8.6.2.0_TC.twx**. For BAW version below 20.0.0.1, import **IDA_Toolkit - 8.6.0_v1.5.twx** into your Process Center. Both files are below forder /toolkit of release package.
+The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit. 
 
-1. Import **IDA_Toolkit - 8.6.x.0.twx** which is below forder /toolkit of release package into your process center.
+
+BAW Version | IDA Toolkit Version  
+     ----------------------|-------------------
+      19.0.0.3 to 20.0.0.1 |  IDA_Toolkit - 8.6.0_v1.5.twx
+      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [excuteSQL](https://sdc-china.github.io/IDA-doc/references/references-test-command.html#executesql)**.
+      above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
+
+
+1. Import corresponding **IDA_Toolkit - 8.6.x.x.twx** which is below forder /toolkit of release package into your process center.      
 
 2. Open your process app by web process designer from process center.
 

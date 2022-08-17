@@ -75,8 +75,16 @@ For IDA version migration,you need to update IDA.war, take the following steps:
 
 To update IDA BAW Toolkit, take the following steps:
 
-1. For BAW version above 20.0.0.1, import **IDA_Toolkit - 8.6.2.0_TC.twx**. For BAW version below 20.0.0.1, import **IDA_Toolkit - 8.6.0_v1.5.twx** into your Process Center. Both files are below forder /toolkit of release package.
-2. Open your process app by web process designer from process center.  
+BAW Version | IDA Toolkit Version  
+     ----------------------|-------------------
+      19.0.0.3 to 20.0.0.1 |  IDA_Toolkit - 8.6.0_v1.5.twx
+      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [excuteSQL](https://sdc-china.github.io/IDA-doc/references/references-test-command.html#executesql)**.
+      above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
+
+1. Import corresponding **IDA_Toolkit - 8.6.x.x.twx** which is below forder /toolkit of release package into your process center.
+
+2. Open your process app by web process designer from process center. 
+ 
 3. Upgrade the toolkit.
 
     ![][toolkit-upgrade-1-v21]{:height="60%" width="60%"}
@@ -85,7 +93,7 @@ To update IDA BAW Toolkit, take the following steps:
 
     ![][toolkit-upgrade-2]{:height="60%" width="60%"}
 
-5. Click **Services** below **IDA Toolkit(8.6.2.0_TC)** or **IDA Toolkit(8.6.0 v1.5)**. Right click the **IDA Utility** service flow and copy the item to your process app.
+5. Click **Services** below **IDA Toolkit**. Right click the **IDA Utility** service flow and copy the item to your process app.
 
     ![][toolkit-upgrade-3-v21]{:height="60%" width="60%"}
 
