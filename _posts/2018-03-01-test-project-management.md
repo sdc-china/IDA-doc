@@ -37,7 +37,10 @@ order: 10
      [Other Selenium Grids][2]    |Support chrome, firefox selenium node 
      Tip                   |Use the latest snapshot 
      Advance               |Show the engine configuration
-     Engine Properties     |Support the engine configuration only for json format. Retry times: the retry times of the failed command. Retry interval: the interval time between the retry. if not be set, then they will be the engineConfig.defaultRetryTimes and engineConfig.defaultRetryInterval in application configuration.
+     Retry Times           |The retry times of the failed command
+     Retry Interval        |The interval time between the retries(seconds) 
+	 Load Test             |Enable load test
+	 Post Script           |Enable post script for each test step	 
      Migrate an old project|Support test case project migration from eclipse version
      
      **Notes:**     
