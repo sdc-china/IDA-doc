@@ -52,6 +52,7 @@ To set up assignees for case steps:
     ![][test_case_step_table]{:height="80%" width="80%"}
  
  4. Move your mouse to the first row of the case steps, right click your mouse and click **Edit** button to edit this case step.
+ 
     ![][test_case_step_edit_button]{:height="80%" width="80%"}
  
  5. Select **celladmin** in **Assignee** field in order to specify other Workflow users to help you complete the business process. Click **Save** button to finish editting this case step.
