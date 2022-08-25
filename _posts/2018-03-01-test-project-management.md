@@ -37,19 +37,15 @@ order: 10
      [Other Selenium Grids][2]    |Support chrome, firefox selenium node 
      Tip                   |Use the latest snapshot 
      Advance               |Show the engine configuration
-     Engine Properties     |Support the engine configuration only for json format. Retry times: the retry times of the failed command. Retry interval: the interval time between the retry. if not be set, then they will be the engineConfig.defaultRetryTimes and engineConfig.defaultRetryInterval in application configuration.
-     Migrate an old project|Support test case project migration from eclipse version
+     Retry Times           |The retry times of the failed command
+     Retry Interval        |The interval time between the retries(seconds) 
+	 Load Test             |Enable load test
+	 Post Script           |Enable post script for each test step	 
      
      **Notes:**     
      
      Remember to select the process app or toolkit, which can't be both selected.
-     You need to upload Eclipse test project zip file when you check the "Migrate an old project".  
      If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user.[Refer to][3]
-     
-     **Known Limitions:**   
-     The test project migration is only supported under development environment.  
-     It doesn't support the java/js customization test project.
-      
         
   3. Click **Create** button, you will enter into project dashboard page.
 
