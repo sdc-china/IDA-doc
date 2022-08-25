@@ -2,7 +2,7 @@
 title: "Create a pipeline for continuous deployment"
 category: pipeline
 date: 2018-10-11 15:17:55
-last_modified_at: 2020-01-08 15:51:00
+last_modified_at: 2022-08-25 15:51:00
 order: 2
 ---
 
@@ -53,7 +53,7 @@ order: 2
 
     ![][pipeline_stages]
 
-    For the first stage, it's not allowed to chenge the sequence. However, you can adjust other stages' sequence by dragging and dropping.
+    For the first stage, it's not allowed to change the sequence. However, you can adjust other stages' sequence by dragging and dropping.
 
 
 ### Create a pipeline from template
