@@ -41,16 +41,13 @@ order: 10
      Retry Interval        |The interval time between the retries(seconds) 
 	 Load Test             |Enable load test
 	 Post Script           |Enable post script for each test step	 
-     Migrate an old project|Support test case project migration from eclipse version
      
      **Notes:**     
      
      Remember to select the process app or toolkit, which can't be both selected.
-     You need to upload Eclipse test project zip file when you check the "Migrate an old project".  
      If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user.[Refer to][3]
      
      **Known Limitions:**   
-     The test project migration is only supported under development environment.  
      It doesn't support the java/js customization test project.
       
         
