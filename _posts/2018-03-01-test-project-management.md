@@ -46,10 +46,6 @@ order: 10
      
      Remember to select the process app or toolkit, which can't be both selected.
      If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user.[Refer to][3]
-     
-     **Known Limitions:**   
-     It doesn't support the java/js customization test project.
-      
         
   3. Click **Create** button, you will enter into project dashboard page.
 
