@@ -2,7 +2,7 @@
 title: "Task 2: Record, replay and run a test case"
 category: tutorial
 date: 2018-09-23 15:17:55
-last_modified_at: 2019-07-25 21:41:00
+last_modified_at: 2022-08-24 15:41:00
 order: 2
 ---
 
@@ -52,12 +52,13 @@ To set up assignees for case steps:
     ![][test_case_step_table]{:height="80%" width="80%"}
  
  4. Move your mouse to the first row of the case steps, right click your mouse and click **Edit** button to edit this case step.
+ 
     ![][test_case_step_edit_button]{:height="80%" width="80%"}
  
- 5. Select **celladmin** in **Assignee** field in order to specify other Workflow users to help you complete the business process.
+ 5. Select **celladmin** in **Assignee** field in order to specify other Workflow users to help you complete the business process. Click **Save** button to finish editting this case step.
     ![][assign_bpm_user]{:height="40%" width="40%"}
  
- 6. Click **Exit Edit** button to finish edit.
+ 6. Click **Exit Edit** button on the right top of this page to finish edit the test case.
  
  
 ## Step 3: Record a test case
