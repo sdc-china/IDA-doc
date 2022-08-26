@@ -115,6 +115,9 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
       2. Change the enable-javascript-execution value in 99Local.xml flle, the file path is PROFILE_DMGR_HOME\config\cells\cell_name\nodes\node_name\servers\server_name\process-center\config\system\99Local.xml.
       3. Start the BAW environment.
       ![][enable-javascript-execution]
+      
+1. Why the snapshots is part missing when I search the snapshots in Admin Tool/Comparison?
+    - Answer: Due to the BAW REST API's limitation on the number of returned results, so not all results are returned if the number of snapshots(named + unnamed) is huge, you can try to cleanup the unnamed snapshots.
      
       
    
