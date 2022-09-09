@@ -140,7 +140,7 @@ For example:
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida">
       <jdbcDriver libraryRef="PostgresSQLLib" />
-      <properties.postgresql serverName="localhost" portNumber="5435" 
+      <properties.postgresql serverName="localhost" portNumber="5432" 
         databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
   <!-- PostgreSQL Example End-->
