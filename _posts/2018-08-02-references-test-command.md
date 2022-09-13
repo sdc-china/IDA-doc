@@ -576,7 +576,7 @@ Performs a custom search.
 ___
 ### **WaitProcessInstanceStatus**
 
-Get process instance data.
+Wait process instance status update.
 
 - Parameters
 
