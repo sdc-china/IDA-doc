@@ -20,5 +20,5 @@ order: 2
 - The command UI.confirmOK and UI.confirmCancel aren't supported in IDA plugin.
 - BP3 Richtext control replay not working if no value is binding for this control.   
 - Some earlier firefox browser version(eg:60.9.0esr) is not automaticlly scrollable when replay the coach case in IDA plug-in, you should install latest firefox browser instead. 
-- The BPMoC environment needs to login w3id. To login w3id, it will request a random access code by mobile or email, which can't be supported by IDA.As a workaround, we suggest to login the w3id test account on the vm of Selenium Server manually, so that the IDA can test the BPMoC application by using w3id.
+- If the BPMoC environment integrates with the client's own SSO platform, and the SSO enable the multiple factor authentication(MFA), then IDA can't support it.
 - The window-size argument of selenium grid support for headless mode only.
