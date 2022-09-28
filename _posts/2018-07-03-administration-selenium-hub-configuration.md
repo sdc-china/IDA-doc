@@ -2,7 +2,7 @@
 title: "Selenium Hub configuration"
 category: administration
 date: 2018-10-20 15:17:55
-last_modified_at: 2022-04-22 16:39:00
+last_modified_at: 2022-09-28 16:39:00
 order: 3
 ---
 
@@ -69,6 +69,12 @@ arguments:
 - "window-size=1920,1080"
 ```  
 
+**Full Page Screenshot**
+```
+arguments:
+## Enable full page screenshot
+- "--fullPageScreenshot"
+```  
 
 ### Edit selenium hub
   1. Click **Edit** icon on the right of the Selenium Grid Configuration that you want to edit.
