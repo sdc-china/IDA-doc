@@ -55,8 +55,8 @@ IDA Supports JNDI datasource, You can configure a data source and JDBC provider 
 For example:
 
 ```
-  <library id="DatabaseLib">
-      <fileset dir="C:/DB2/java" includes="*.jar"/>
+  <library id="DBLib">
+      <fileset dir="${shared.config.dir}/lib" includes="*.jar"/>
   </library>
 ```
 
@@ -64,14 +64,11 @@ For example:
 For example:
 
 ```
-  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
-          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
-    <jdbcDriver libraryRef="DatabaseLib"/>
-    <properties databaseName="idaweb"
-                serverName="localhost" portNumber="3306"
-                user="root" password="mysqladmin"/>
+  <dataSource jndiName="jdbc/ida">
+      <jdbcDriver libraryRef="DBLib" />
+      <properties.postgresql serverName="localhost" portNumber="5432" 
+        databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
-
 ```
 
 
@@ -135,20 +132,18 @@ For example:
 
   <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
 
-  <!-- Mysql Example-->
-  <library id="MYSQLLib">
-      <fileset dir="${shared.config.dir}/lib/global" includes="mysql-connector-java-8.0.18.jar"/>
+  <!-- PostgreSQL Example-->
+  <library id="PostgresSQLLib">
+      <fileset dir="${shared.config.dir}/lib/global" includes="postgresql-42.2.8.jar"/>
   </library>
 
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
-  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
-          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
-    <jdbcDriver libraryRef="MYSQLLib"/>
-    <properties databaseName="<DATABASE_NAME>"
-                serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>"
-                user="<USER_NAME>" password="<PASSWORD>"/>
+  <dataSource jndiName="jdbc/ida">
+      <jdbcDriver libraryRef="PostgresSQLLib" />
+      <properties.postgresql serverName="localhost" portNumber="5432" 
+        databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
-  <!-- Mysql Example End-->
+  <!-- PostgreSQL Example End-->
 
   <!-- DB2 Example-->
   <library id="DB2Lib">
@@ -165,7 +160,7 @@ For example:
 
   <!-- Oracle Example-->
   <library id="ORACLELib">
-      <fileset dir="${shared.resource.dir}" includes="ojdbc8-12.2.0.1.jar"/>
+      <fileset dir="${shared.config.dir}/lib/global" includes="ojdbc8-12.2.0.1.jar"/>
   </library>
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="OracleDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
     <jdbcDriver libraryRef="ORACLELib"/>
@@ -174,6 +169,20 @@ For example:
   </dataSource>
   <!-- Oracle Example END-->
 
+  <!-- Mysql Example-->
+  <library id="MYSQLLib">
+      <fileset dir="${shared.config.dir}/lib/global" includes="mysql-connector-java-8.0.18.jar"/>
+  </library>
+
+  <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
+  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
+          isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <jdbcDriver libraryRef="MYSQLLib"/>
+    <properties databaseName="<DATABASE_NAME>"
+                serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>"
+                user="<USER_NAME>" password="<PASSWORD>"/>
+  </dataSource>
+  <!-- Mysql Example End-->
 </server>
 ```
 We found an issue using jdk 8 with TLSv1.3, which can cause very high CPU usage of IDA. To fix the issue, use TLSv1.2 by adding below configuration to server.xml.
