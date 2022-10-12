@@ -381,9 +381,6 @@ BAW Version | IDA Toolkit Version
 - Download Firefox plugin [ida-22.2-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-22.2-fx.xpi)
 - Drag the "ida-22.2-fx.xpi" file into firefox window.
 - Click "Add" button.
-- For Firefox plugin to work on IDA web version >= 22.1.1, please double check after plugin installation, Firefox Privacy settings is adjusted to custom as follows:
-
-  ![][firefox_custom_setting]
 
 ## Plug-in Configuration
 
