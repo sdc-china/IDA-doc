@@ -2,7 +2,7 @@
 title: "Compare Snapshots"
 category: snapshot-comparison
 date: 2018-10-06 15:17:55
-last_modified_at: 2019-07-29 15:26:00
+last_modified_at: 2022-10-14 15:26:00
 order: 1
 ---
 
@@ -20,8 +20,8 @@ Snapshot Comparison allows users to compare two snapshots inside one trace of a 
 	 Process App           |Process apps of the selected server.
 	 Toolkit               |Toolkits of  selected server.
 	 Track                 |The branches of selected process app or toolkit. Multiple select. Will load snapshots of selected branches.
-	 Start Time            |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
-	 End Time              |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
+	 Start Date            |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
+	 End Date              |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
 	 Include Unnamed Snapshots|Tip it to load unnamed snapshots. 
 	 
 	 ![][snapshot-comparison-form]
@@ -30,35 +30,19 @@ Snapshot Comparison allows users to compare two snapshots inside one trace of a 
 
 	![][snapshots]
 	
-	Click each snapshot to see brief changes from the previous snapshot.
-	
-	![][brief-changes]
-	
 	
 
 # Compare Snapshots
 
-There are two ways to compare snapshots.
+Select two snapshots, then click the **Compare** button.
 
-1. Click button ![][snapshot-comparison-file-button] to compare with previous snapshot.
-	
-	![][snapshot-comparison-compare-pre]
-	
-	Waiting for finishing.
-	
-	After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will show. Click it to see compared report.
+![][snapshot-comparison-compare-button]
 
-	![][snapshot-comparison-compare-pre-report]
-
-2. Select two snapshots, then the **Compare** button will show. Click it.
-
-	![][snapshot-comparison-compare-button]
+Waiting for finishing.
 	
-	Waiting for finishing.
+After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will show. Click it to see compared report.
 	
-	After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will show. Click it to see compared report.
-	
-	![][snapshot-comparison-compare-report-button]
+![][snapshot-comparison-compare-report-button]
 
 
 
