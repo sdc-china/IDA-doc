@@ -2,7 +2,7 @@
 title: "Snapshot Comparison Report"
 category: snapshot-comparison
 date: 2018-10-06 15:17:55
-last_modified_at: 2022-10-14 15:26:00
+last_modified_at: 2022-10-28 15:26:00
 order: 2
 ---
 
@@ -73,6 +73,35 @@ The configuration/position/event changes of a coach control are listed in conten
 
   ![][snapshot-comparison-coach-control-positioning-changes]
 
+## Service Comparison
+
+The changes of each item on the service flow are listed in sub-panels.
+
+  ![][snapshot-comparison-sf-changes]
+
+For example, data mapping change of the service task item Service is listed as follows:
+
+  ![][snapshot-comparison-sf-mapping-changes-webpd]
+ 
+  ![][snapshot-comparison-sf-mapping-changes]
+
+The script changes are listed in separate sub-panels, for example change of line 4 of the script item populateApprovalList is listed as follows:
+
+  ![][snapshot-comparison-sf-script-changes-webpd]
+ 
+  ![][snapshot-comparison-sf-script-changes]
+  
+And the addition of pre-excution script of the service task item Service is listed as follows:
+
+  ![][snapshot-comparison-sf-prescript-changes-webpd]
+ 
+  ![][snapshot-comparison-sf-prescript-changes]
+
+Sequence flow change is also listed in a separate sub-panel. For example, the name of sequence flow is changed and listed as:
+
+  ![][snapshot-comparison-sf-sequence-changes-webpd]
+ 
+  ![][snapshot-comparison-sf-sequence-changes]
 
 
 # Filter buttons
@@ -96,3 +125,12 @@ IDA provides two kinds of filter buttons: artifact type and properties. You can 
 [snapshot-comparison-coach-control-added]: ../images/snapshot-comparison/snapshot-comparison-coach-control-added.png
 [snapshot-comparison-coach-control-added-webpd]: ../images/snapshot-comparison/snapshot-comparison-coach-control-added-webpd.png
 [snapshot-comparison-coach-control-deleted]: ../images/snapshot-comparison/snapshot-comparison-coach-control-deleted.png
+[snapshot-comparison-sf-changes]: ../images/snapshot-comparison/snapshot-comparison-sf-changes.png
+[snapshot-comparison-sf-script-changes]: ../images/snapshot-comparison/snapshot-comparison-sf-script-changes.png
+[snapshot-comparison-sf-script-changes-webpd]: ../images/snapshot-comparison/snapshot-comparison-sf-script-changes-webpd.png
+[snapshot-comparison-sf-prescript-changes]: ../images/snapshot-comparison/snapshot-comparison-sf-prescript-changes.png
+[snapshot-comparison-sf-prescript-changes-webpd]: ../images/snapshot-comparison/snapshot-comparison-sf-prescript-changes-webpd.png
+[snapshot-comparison-sf-sequence-changes]: ../images/snapshot-comparison/snapshot-comparison-sf-sequence-changes.png
+[snapshot-comparison-sf-sequence-changes-webpd]: ../images/snapshot-comparison/snapshot-comparison-sf-sequence-changes-webpd.png
+[snapshot-comparison-sf-mapping-changes]: ../images/snapshot-comparison/snapshot-comparison-sf-mapping-changes.png
+[snapshot-comparison-sf-mapping-changes-webpd]: ../images/snapshot-comparison/snapshot-comparison-sf-mapping-changes-webpd.png

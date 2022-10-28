@@ -2,14 +2,14 @@
 title: "BAW configuration"
 category: administration
 date: 2018-10-19 15:17:55
-last_modified_at: 2021-08-23 16:18:00
+last_modified_at: 2022-10-28 16:18:00
 order: 2
 ---
 
 # BAW configuration
 ***
 
-### Add a BAW server
+## Add a BAW server
   1. Click **Administrator** tab, then switch to  **BAW Configurtaion** tab to manage BAW server.  
 
   2. Click ![][add_icon] icon which is on the right of **BAW Server Configuration** to add new BAW server.
@@ -18,6 +18,8 @@ order: 2
 
      ![][administrator_bpmserver]  
 
+     ![][administrator_bpmserver_adv]  
+
       |   Field                | Description                                                             |
       | ---------------------- |-------------------------------------------------------------------------|                                          
       | Server Name            | The display name of this BAW server.                                                                        |  
@@ -25,6 +27,8 @@ order: 2
       | Server Url             | The BAW server URL, eg: https://bawserver:9443. It is the prefix of BAW Process Admin Url or Process Portal Url. In BAW HA environment, this field should be the Url of the load balancer.  |                                        
       | REST User Name         | The name of the user who is a member of tw_admins or tw_authors group and has the Read permission to the target process application (If your want to catch a new snapshot for this process application in IDA, for example **Trigger by new Snapshot**, you need to have the Write permission to the process application). |
       | REST Password          | The Password of the user.                                            |   
+      | Auth Command           | Choose the custom Java command that can automate the custom SSO page of BAW server [1]               |   
+      | Auth Method            | When the BAW server doesn't support BASIC Authentication, please set the authentication method to OTHER. |   
       | Connected PS Server  | Connected Server Name is the online PS server name, authorized users can install snapshots of process applications on connected Process Servers. This field only needs to be filled when this server is Process Server and is connected to the Process Center. It can be obtained from Process Center under Servers tab (login WebPD, click Servers) ![][connected_server_name].           |
       | Server Host            | The BAW server host, the IP or the hostname of Process Server, it is used for snapshot deployment from PC to PS. In BAW HA environment, you can get this value from one of the application cluster members. |
       | SOAP port              | Soap port id defined in Was console. To determine the correct port number, see the WebSphere administrative console Ports collection page (click Servers > Server Types > WebSphere application servers > server_name > Communications > Ports and find the value for SOAP_CONNECTOR_ADDRESS). In BAW HA environment, use the port configured for the application cluster member.|
@@ -37,12 +41,12 @@ order: 2
 
 **Notes:**  
 
-If you need to add bpmoc server,you don't need to fill everything only add BAW server url,server type,hostname and rest username(function id) and password.    
+If you need to add bpmoc server,you don't need to fill everything only add BAW server url,server type,hostname and rest username(function id), password, auth command and method.    
 If you login get 401 unauthorized error,please check your function id belong to tw_admins (administrative access) and tw_authors (non-administrative access) groups.
 
    ![][administrator_bpmoc]
 
-### Edit BAW server
+## Edit BAW server
   1. Click **Edit** icon on the right of the BAW server that you want to edit.
 
      ![][administrator_edit_bpm_server]
@@ -50,15 +54,15 @@ If you login get 401 unauthorized error,please check your function id belong to 
   2. Change configurations of the BAW server. Then click **Save**.
 
 
-### Delete BAW server
+## Delete BAW server
   Select the servers in the **BAW Configuration** table, then click the **delete** icon to delete BAW server.
 
-### Test BAW server
+## Test BAW server
   Select  **Test Connection** icon on the right of the BAW server that you want to test.If test connection is failed,it will popup warning message.   
 
   ![][administrator_test_bpm_server]
 
-### Add user to a BAW server
+## Add user to a BAW server
   1. Click **Manage BAW User** icon on the right. Then you can see then BAW user list of the server.
 
      ![][administrator_edit_bpm_user]
@@ -95,7 +99,7 @@ Pls make sure the added user  exist in your selected BAW server.Also You need to
 What's more, you can also edit a BAW user in a similar way to editing a user.
 
 
-### Add Case Object Store configuration to a BAW server
+## Add Case Object Store configuration to a BAW server
   1. Click **Case Object Store** icon on the right of the BAW server. Then you can see then Case Object Store configuration list of the server.
 
      ![][administrator_edit_case_object_store]
@@ -125,6 +129,7 @@ Pls make sure the added Case Object Store configurations exist in your selected 
 What's more, you can also edit a case object store configuration in a similar way to editing a user.
 
 [administrator_bpmserver]: ../images/administrator/administrator_bpmserver.png
+[administrator_bpmserver_adv]: ../images/administrator/administrator_bpmserver_adv.png
 [administrator_bpmoc]: ../images/administrator/bpmoc.png
 [administrator_bpmuser]: ../images/administrator/administrator_bpmuser.png
 [administration_set_as_ums_admin_user]: ../images/administrator/administration_set_as_ums_admin_user.png
@@ -139,3 +144,4 @@ What's more, you can also edit a case object store configuration in a similar wa
 [administrator_case_object_store]: ../images/administrator/administrator_case_object_store.png
 [administrator_case_object_store_list]: ../images/administrator/administrator_case_object_store_list.png
 [administrator_case_object_store_project]: ../images/administrator/administrator_case_object_store_project.png
+[1]: ../test/test-write-java-command.html

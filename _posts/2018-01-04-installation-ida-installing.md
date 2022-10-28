@@ -2,7 +2,7 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-09-21 15:17:55
-last_modified_at: 2022-08-09 13:32:00
+last_modified_at: 2022-10-28 13:32:00
 order: 4
 ---
 
@@ -374,11 +374,11 @@ BAW Version | IDA Toolkit Version
 ## Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-22.2.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-22.2.crx)
+- The Chrome plugin offline installation package. [IDA-22.3.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-22.3.crx)
 - For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
 
 ## Firefox plugin
-- Download Firefox plugin [ida-22.2-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-22.2-fx.xpi)
+- Download Firefox plugin [ida-22.3-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-22.3-fx.xpi)
 - Drag the "ida-22.2-fx.xpi" file into firefox window.
 - Click "Add" button.
 

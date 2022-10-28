@@ -125,10 +125,10 @@ docs:
       - title: "Toolkit deployment"
         url: /pipeline/toolkit-deployment
 
-  - title: Operation
+  - title: Operations Tool
     children:
-      - title: "Supporting Tool"
-        url: /operation/operation-supporting-tool.html
+      - title: "Operations Tool"
+        url: /operation/operations-tool.html
 
   - title: Administration
     children:

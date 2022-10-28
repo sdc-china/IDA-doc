@@ -2,7 +2,7 @@
 title: "Analyze Workflow projects with analyzer statistic"
 category: analyzer
 date: 2018-10-10 14:17:55
-last_modified_at: 2019-11-26 14:50:00
+last_modified_at: 2022-10-28 14:50:00
 order: 1
 ---
 
@@ -25,6 +25,7 @@ order: 1
       | Branch        |The branch of selected process app or selected toolkit|
       | Snapshot      |The snapshot of selected branch|
       | Tip           |The tip snapshot of the process app|
+      | Options       |check "Ignore Toolkits Analysis" to skip toolkit analysis |
 
       **Upload a TWX file**, choose the statistic - offline tab.
       
@@ -32,7 +33,7 @@ order: 1
 
       You can choose or drop a TWX file.
 
-      ![][analyzer_upload_drop] ![][analyzer_upload_done]
+      ![][analyzer_upload_done]
 
    2. Click **Statistic Analyze** Button to see the statistic report.
 

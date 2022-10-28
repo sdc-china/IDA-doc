@@ -1,21 +1,22 @@
 ---
-title: "Supporting Tool"
+title: "Operations Tool"
 category: operation
 date: 2018-10-17 15:17:55
-last_modified_at: 2019-07-29 16:16:00
+last_modified_at: 2022-10-28 16:16:00
 order: 3
 ---
 
-# Supporting Tool
+# Operations Tool
 ***
 
-### About this task
+## About this task
 
-In this task, you will use the Workflow supporting tools to search instance, migrate instance between snapshots, update task data, finish task, move token, and re-try failed instance.
+In this task, you will use the Workflow operations tools to manage instances: search instance, migrate instance between snapshots, update task data, finish task, move token, and re-try failed instance. You can also use it to clean up snapshots.
 
-### Search instance
 
-  1. In **Operation page**, click **Supporting Tool** menu.
+## Search instance
+
+  1. In **Operations Tool** menu, click **Manage Instance**.
 
   2. Fill the instance search form according to the following table.
 
@@ -33,15 +34,15 @@ In this task, you will use the Workflow supporting tools to search instance, mig
 
      ![][op_search_instance]
 
-### Migrate instance
+## Migrate instance
 
   1. Select one or more instances in the search result table, choose a target snapshot from **Migrate Instance to** drop down list, the click **Migrate** button.
 
      ![][op_migrate_instance]   
 
-  2. As the result, the instance is migrated from source snapshot (snapshot selected in the search form) to target snapshot (snapshot selected in the **Migrate Instance to** drop down list).
+  2. As the result, the instance is migrated from source snapshot (snapshot selected in the search form) to target snapshot (snapshot selected in the **Migrate Instances** drop down list).
 
-### Update task data
+## Update task data
 
   1. Locate the instance row then click **Update Task Data** icon in **Operations** column.  
 
@@ -53,7 +54,7 @@ In this task, you will use the Workflow supporting tools to search instance, mig
 
       ![][op_update_task_data_form]   
 
-### Finish task
+## Finish task
 
   1. Locate the instance row then click **Update Task Data** icon in **Operations** column.  
 
@@ -65,30 +66,37 @@ In this task, you will use the Workflow supporting tools to search instance, mig
 
       ![][op_update_task_data_form]
 
-### Move token
+## Move token
 
   1. Locate the instance row then click **Move Token** icon in **Operations** column.  
 
-       ![][op_click_move_token]
+       ![][op_click_update_task_data]
 
   2. In the popup window, select **Token** name. The token information is retrieved from the instance details.
   3. Select **Target Step** name then click **Move Token** button to move the instance token to target step.   
 
        ![][op_move_token_form]  
 
-### Retry failed instance
 
-  1. For failed instance, you can click the view icon in **Instance Status** column to view the detailed error trace.  
+## Clean Snapshot
 
-       ![][op_click_show_trace]  
+  1. In **Operations Tool** menu, click **Clean Snapshot**.
 
-       ![][op_show_trace]   
+  2. Fill the snapshot search form by process application or toolkit.
 
-  2. Failed instance can be re-tried by clicking the **Resume Instance** icon in **Operations** column.  
+  3. Check **Include Unnamed Snapshots** if you want to search for unnamed snapshots as well.
 
-       ![][op_click_resume_instance]     
+  4. In the result table, select any named snapshots and click **Delete** to clean the snapshot. Or click **Cleanup Unnamed Snapshots** to clean up all unnamed snapshots.
+      
+     ![][op_clean_snapshot]
 
-  3. As the result, the **Instance Status** will be updated (Active or Failed).
+  5. Confirm whether you want to cleanup all completed tasks.
+
+     ![][op_clean_snapshot_confirm]
+
+  5. After snapshot is deleted, success message is shown.
+
+     ![][op_clean_snapshot_success]
 
 [op_search_instance]: ../images/operation/operation_search_instance.PNG
 [op_migrate_instance]: ../images/operation/operation_migrate_instance.PNG
@@ -99,4 +107,7 @@ In this task, you will use the Workflow supporting tools to search instance, mig
 [op_click_show_trace]: ../images/operation/operation_click_show_error_trace.PNG
 [op_show_trace]: ../images/operation/operation_error_trace.PNG
 [op_click_resume_instance]: ../images/operation/operation_click_resume_instance.PNG
+[op_clean_snapshot]: ../images/operation/operation_clean_snapshot.PNG
+[op_clean_snapshot_confirm]: ../images/operation/operation_clean_snapshot_confirm.PNG
+[op_clean_snapshot_success]: ../images/operation/operation_clean_snapshot_success.PNG
 [1]: ../administration/administration-bpm-configuration.html
