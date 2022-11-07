@@ -3,7 +3,6 @@ title: "Installing IDA Application"
 category: installation
 date: 2018-01-07 15:17:55
 last_modified_at: 2022-10-28 13:32:00
-order: 3
 ---
 
 # Installing IDA Application
