@@ -3,7 +3,6 @@ title: "Test Case data binding"
 category: test
 date: 2018-03-07 15:17:55
 last_modified_at: 2021-08-23 16:26:00
-order: 30
 ---
 
 # Test Case data binding

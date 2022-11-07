@@ -3,7 +3,6 @@ title: "Repacking IDA Application"
 category: installation
 date: 2018-01-05 15:17:55
 last_modified_at: 2021-12-10 21:34:00
-order: 3
 ---
 
 # Repacking IDA Application v21.x

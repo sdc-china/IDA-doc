@@ -3,7 +3,6 @@ title: "Deploy snapshot from PC to PS"
 category: pipeline
 date: 2018-08-05 15:17:55
 last_modified_at: 2019-07-29 15:52:00
-order: 3
 ---
 
 # Deploy snapshot from PC to PS

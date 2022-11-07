@@ -3,7 +3,6 @@ title: "How to deploy a toolkit by group pipeline"
 category: pipeline
 date: 2018-08-13 16:55:50
 last_modified_at: 2020-03-27 16:55:50
-order: 7
 ---
 
 # How to deploy a toolkit by group pipeline

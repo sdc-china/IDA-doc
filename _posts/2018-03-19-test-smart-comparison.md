@@ -3,7 +3,6 @@ title: "Test Smart Comparison"
 category: test
 date: 2018-03-19 15:17:55
 last_modified_at: 2019-07-29 15:20:00
-order: 59
 ---
 
 # Test Smart Comparison - A new image base assertion

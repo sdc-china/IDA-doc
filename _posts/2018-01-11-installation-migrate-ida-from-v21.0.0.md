@@ -3,7 +3,6 @@ title: "Migrating IDA Application"
 category: installation
 date: 2018-01-11 15:17:56
 last_modified_at: 2021-12-10 16:44:00
-order: 5
 ---
 
 # Migrating IDA Application from v21.0.0

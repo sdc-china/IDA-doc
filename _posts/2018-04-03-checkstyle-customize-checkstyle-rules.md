@@ -3,7 +3,6 @@ title: "Customize Checkstyle rules"
 category: checkstyle
 date: 2018-04-03 15:17:55
 last_modified_at: 2019-07-29 15:27:00
-order: 2
 ---
 
 # Customize Checkstyle rules

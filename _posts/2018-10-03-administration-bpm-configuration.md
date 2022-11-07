@@ -3,7 +3,6 @@ title: "BAW configuration"
 category: administration
 date: 2018-10-03 15:17:55
 last_modified_at: 2022-10-28 16:18:00
-order: 2
 ---
 
 # BAW configuration

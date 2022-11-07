@@ -3,7 +3,6 @@ title: "Test Case data dynamic loading"
 category: test
 date: 2018-03-09 15:19:55
 last_modified_at: 2021-11-12 16:26:00
-order: 31
 ---
 
 # Test Case data dynamic loading

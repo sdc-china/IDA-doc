@@ -3,7 +3,6 @@ title: "Group Command Management"
 category: test
 date: 2018-03-11 15:17:55
 last_modified_at: 2019-07-26 16:28:00
-order: 40
 ---
 
 # Group command management

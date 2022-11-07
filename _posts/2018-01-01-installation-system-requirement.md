@@ -3,7 +3,6 @@ title: "System Requirement"
 category: installation
 date: 2018-01-01 15:17:55
 last_modified_at: 2022-07-27 16:25:00
-order: 1
 ---
 
 # System Requirement

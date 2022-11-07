@@ -3,7 +3,6 @@ title: "IDA Troubleshooting"
 category: trouble-shooting
 date: 2018-12-05 15:10:55
 last_modified_at: 2022-04-27 16:50:00
-order: 5
 ---
 
 # IDA Troubleshooting

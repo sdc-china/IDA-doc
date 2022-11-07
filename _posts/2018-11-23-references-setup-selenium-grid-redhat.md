@@ -3,7 +3,6 @@ title: "Setup Selenium Grid on Redhat"
 category: references
 date: 2018-11-23 15:39:00
 last_modified_at: 2020-10-27 15:39:00
-order: 15
 ---
 
 # Setup Selenium Grid on Redhat

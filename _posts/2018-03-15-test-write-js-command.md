@@ -3,7 +3,6 @@ title: "Write a Javascript command"
 category: test
 date: 2018-03-15 15:17:55
 last_modified_at: 2021-05-06 11:48:00
-order: 55
 ---
 
 # Write a Javascript command

@@ -3,7 +3,6 @@ title: "Compare Snapshots"
 category: snapshot-comparison
 date: 2018-05-01 15:17:55
 last_modified_at: 2022-10-14 15:26:00
-order: 1
 ---
 
 Snapshot Comparison allows users to compare two snapshots inside one trace of a process app. There will be a detailed side-by-side report after the comparison.

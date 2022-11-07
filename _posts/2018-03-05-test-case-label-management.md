@@ -3,7 +3,6 @@ title: "Test case label management"
 category: test
 date: 2018-03-05 17:17:55
 last_modified_at: 2019-11-26 16:25:00
-order: 20
 ---
 
 # Test case label management

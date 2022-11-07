@@ -3,7 +3,6 @@ title: "Test project management"
 category: test
 date: 2018-03-01 15:17:55
 last_modified_at: 2019-07-26 16:23:00
-order: 10
 ---
 
 # Test project management

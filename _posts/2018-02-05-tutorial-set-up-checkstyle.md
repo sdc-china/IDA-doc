@@ -3,7 +3,6 @@ title: "Task 3: Set up Checkstyle"
 category: tutorial
 date: 2018-02-05 15:17:55
 last_modified_at: 2019-07-26 16:12:00
-order: 3
 ---
 
 # Task 3: Set up Checkstyle

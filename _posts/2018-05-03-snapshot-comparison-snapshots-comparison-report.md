@@ -3,7 +3,6 @@ title: "Snapshot Comparison Report"
 category: snapshot-comparison
 date: 2018-05-03 15:17:55
 last_modified_at: 2022-10-28 15:26:00
-order: 2
 ---
 
 # Snapshot Comparison Report Details

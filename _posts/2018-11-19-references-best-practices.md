@@ -3,7 +3,6 @@ title: "Best Practices"
 category: references
 date: 2018-11-19 15:17:55
 last_modified_at: 2019-07-29 16:52:00
-order: 8
 ---
 
 # Best Practices

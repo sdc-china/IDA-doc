@@ -3,7 +3,6 @@ title: "Migrating IDA from v2.7.x to v21.0.0"
 category: references
 date: 2018-11-15 15:17:56
 last_modified_at: 2021-12-10 09:17:55
-order: 10
 ---
 
 **Important:** If you run IDA with WAS, please refer to [Installing IDA Application][2] to check your WAS version. IDA may occur some problems if the WAS version is below 9.0.5.4!

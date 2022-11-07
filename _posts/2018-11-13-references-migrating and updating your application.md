@@ -3,7 +3,6 @@ title: "Migrating and Updating IDA Application v2.x"
 category: references
 date: 2018-11-13 15:17:55
 last_modified_at: 2020-04-30 16:44:00
-order: 5
 ---
 
 # Migrating and Updating IDA Application v2.x

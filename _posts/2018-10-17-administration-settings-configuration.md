@@ -3,7 +3,6 @@ title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
 last_modified_at: 2021-01-29 16:25:00
-order: 15
 ---
 
 # Settings configuration

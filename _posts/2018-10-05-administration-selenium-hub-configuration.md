@@ -3,7 +3,6 @@ title: "Selenium Hub configuration"
 category: administration
 date: 2018-10-05 15:17:55
 last_modified_at: 2022-09-28 16:39:00
-order: 3
 ---
 
 # Selenium Hub configuration

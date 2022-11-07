@@ -3,7 +3,6 @@ title: "Task 2: Record, replay and run a test case"
 category: tutorial
 date: 2018-02-03 15:17:55
 last_modified_at: 2022-08-24 15:41:00
-order: 2
 ---
 
 # Task 2: Record, replay and run a test case

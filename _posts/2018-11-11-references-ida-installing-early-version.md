@@ -3,7 +3,6 @@ title: "Installing IDA Application(v3.x, v2.x)"
 category: references
 date: 2018-11-11 15:17:57
 last_modified_at: 2021-12-10 18:12:00
-order: 4
 ---
 
 # Installing IDA Application(v3.x, v2.x)

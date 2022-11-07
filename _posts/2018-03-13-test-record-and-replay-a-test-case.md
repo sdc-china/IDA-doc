@@ -3,7 +3,6 @@ title: "Record and replay a test case"
 category: test
 date: 2018-03-13 15:17:55
 last_modified_at: 2019-07-26 16:32:00
-order: 50
 ---
 
 # Record and replay a test case

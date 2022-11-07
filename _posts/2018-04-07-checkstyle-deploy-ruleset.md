@@ -3,7 +3,6 @@ title: "Deploy Checkstyle ruleset"
 category: checkstyle
 date: 2018-04-07 15:17:55
 last_modified_at: 2019-07-29 15:30:00
-order: 4
 ---
 
 # Deploy Checkstyle ruleset

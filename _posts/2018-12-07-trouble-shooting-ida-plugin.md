@@ -3,7 +3,6 @@ title: "IDA Plug-in troubleshooting"
 category: trouble-shooting
 date: 2018-12-07 15:17:55
 last_modified_at: 2020-06-16 16:50:00
-order: 3
 ---
 
 # IDA plug-in troubleshooting

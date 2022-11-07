@@ -3,7 +3,6 @@ title: "Samples"
 category: references
 date: 2018-11-17 15:17:55
 last_modified_at: 2019-07-29 16:48:00
-order: 6
 ---
 
 # Samples

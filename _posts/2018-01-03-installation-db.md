@@ -3,7 +3,6 @@ title: "Database Installation and Configuration"
 category: installation
 date: 2018-01-03 15:17:55
 last_modified_at: 2021-12-17 21:28:00
-order: 2
 ---
 
 # Database Installation and Configuration
