@@ -9,7 +9,7 @@ order: 70
 # Run Load Test
 ***
 
-###  Edit gatling home path
+##  Edit gatling home path
 
   1. Download **Gatling** from their [official website](https://gatling.io/open-source/start-testing/).
 
@@ -19,7 +19,7 @@ order: 70
 
      ![][gatling_home]
 
-### Import a sample test project
+## Import a sample test project
 
   1. Click the **Sample Project** button in the project tab.
 
@@ -43,7 +43,7 @@ order: 70
 
        ![][test_import_left_side_bar]
 
-###  Edit engine properties
+##  Edit engine properties
 
   1. Click the **Edit** button to edit project.
 
@@ -53,7 +53,7 @@ order: 70
 
      ![][enable_load_test]
 
-### Replay a test case
+## Replay a test case
 
   1. Click project name to get into this project, click the **case1** under **Create Position Request CSHS** package. Click **Record** button on the right of case name to replay it.
 
@@ -65,7 +65,7 @@ order: 70
 
      ![][load_test_button]
 
-### Run test case load test
+## Run test case load test
 
   1. Click **Load Test** button on the right of case name.
 
@@ -103,7 +103,7 @@ order: 70
 
      ![][view_load_test_report]
 
-### Check load test case data
+## Check load test case data
 
   1. Sometimes when you click **Load Test** button on the right of case name,you might see some warning on the page.If you see the below screenshot,it means the   recorded networkinformation is incorrect.You need to use IDA plug-in to record this test case again.
   

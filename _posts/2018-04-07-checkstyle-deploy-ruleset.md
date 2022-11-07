@@ -9,11 +9,11 @@ order: 4
 # Deploy Checkstyle ruleset
 ***
 
-### Software Prerequisites
+## Software Prerequisites
 
 * [IBM Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
 
-### Deploy ruleset to IBM Operational Decision Manager Decision Server
+## Deploy ruleset to IBM Operational Decision Manager Decision Server
 
 If you want to execute ruleset through Decision Server, you should deploy your ruleset to Decision Server like IBM Cloud or on-premise Rule Execution Server.
 
@@ -51,7 +51,7 @@ If you want to execute ruleset through Decision Server, you should deploy your r
 
 	* Click the **Test Connection** button to test the connection between IDA and ODM Server. If successful, click **Save** to save the changes. 
 
-### Deploy ruleset in local
+## Deploy ruleset in local
 
 If you want to execute ruleset in local file system, you need to replace the ruleset file following steps below.
 

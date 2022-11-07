@@ -11,7 +11,7 @@ order: 80
 
 IDA offers detailed reports including screenshots, execution process flow and coverage to improve communication between testers and developers on every test case.
 
-### Test Case Report  
+## Test Case Report  
 
 In the Test project dashboard page,you can click any  test case link to see the detail case report.
 
@@ -31,7 +31,7 @@ In the Test project dashboard page,you can click any  test case link to see the 
   
   ![][test_BPD_test_case_diagram]
 
-### Coverage
+## Coverage
 
 Coverage is used to display the test coverage of the Process/BPD. It will calculate the coverage rate based on the line information in the **Passed** test case and the line information in the whole Process/BPD.
 

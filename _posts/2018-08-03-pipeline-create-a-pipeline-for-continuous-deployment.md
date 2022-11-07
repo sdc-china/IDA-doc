@@ -9,7 +9,7 @@ order: 2
 # Create a pipeline for continuous deployment
 ***
 
-### Create a pipeline
+## Create a pipeline
 
 1. Click **Create Pipeline** button in pipeline page.
 
@@ -56,7 +56,7 @@ order: 2
     For the first stage, it's not allowed to change the sequence. However, you can adjust other stages' sequence by dragging and dropping.
 
 
-### Create a pipeline from template
+## Create a pipeline from template
 
 1. Click **Create Pipeline** button in pipeline page.
 
@@ -69,7 +69,7 @@ order: 2
 
 4. Input the missing value labeled by  ![][pipeline_missing_value].
 
-### Edit a pipeline
+## Edit a pipeline
 
 1. In the pipeline list page, click ![][pipeline_edit_icon] button.
 
@@ -77,11 +77,11 @@ order: 2
 
 2. Update pipeline form according to the table shown in creation session.
 
-### Delete a pipeline
+## Delete a pipeline
 
 In the pipeline list page, click ![][pipeline_delete_icon] button.
 
-### Run a pipeline
+## Run a pipeline
 
 1. You have two ways to run the pipeline. Firstly, click **Run** button at the top right corner of the pipeline section. Secondly, enter the pipeline dashboard page, click **Build** button.
 
@@ -100,7 +100,7 @@ In the pipeline list page, click ![][pipeline_delete_icon] button.
 2. When the pipeline build is over, the summary information will be appeared in pipeline dashboard. The failed step will not be running and won't have any report. You can click the **build name** link to see the whole report. [Details of the report]
 
 
-### Perform deployment from Workflow PC server to PC server
+## Perform deployment from Workflow PC server to PC server
 
 **Note:**
 

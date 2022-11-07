@@ -10,7 +10,7 @@ order: 5
 
 IDA integrates with remote testing automation framework based on Selenium Grid. IDA supports both version 4 and version 3 of Selenium Grid.
 
-### Selenium Grid v4
+## Selenium Grid v4
 
 **Notes**
 
@@ -112,7 +112,7 @@ docker-compose -f docker-compose-v3.yml down
 
 ![][selenium_4_hub_node_docker]
 
-### Selenium Grid v3
+## Selenium Grid v3
 
 **Notes**
 

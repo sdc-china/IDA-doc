@@ -9,7 +9,7 @@ order: 6
 # Pipeline stage & step reference
 ***
 
-### Pipeline stage reference
+## Pipeline stage reference
 
 Pipeline stage is like a milestone which contains one or more pipeline steps. Each stage has a **Type** attribute, which impacts the supported pipeline steps. There are 3 types of stage, which is listed as below.
 
@@ -19,7 +19,7 @@ Pipeline stage is like a milestone which contains one or more pipeline steps. Ea
   | Test, Stage, Production | Checkstyle, Test, Script             | The stage is associated to Workflow PS, where users can run Checkstyle, Test, Script. Please note that the Snapshot step can only be run from Development stage. If it is the first stage in pipeline, it means there is no associated PC environment thus no new snapshot will be created during the pipeline execution. So when you run the pipeline, you need to specify an existing snapshot name to execute Checkstyle, Test, and Deployment steps.|
   | Utility         | Script                 | The stage is not associated to Workflow environment. It is associated to IDA server, which you can run Script. |
 
-### Pipeline step reference
+## Pipeline step reference
 
 
   |   Step Name        | Parameters                          | Description                                                             |

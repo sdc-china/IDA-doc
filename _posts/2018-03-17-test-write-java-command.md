@@ -9,16 +9,16 @@ order: 58
 # Write a Java command
 ***
 
-### Software Prerequisites
+## Software Prerequisites
 
 * [Eclipse IDE](https://www.eclipse.org/downloads/)
 * [Maven](https://maven.apache.org/download.cgi)
 
-### Prerequisite
+## Prerequisite
 
   Make sure you have installed **Eclipse IDE** and **Maven** in your local environment.
 
-### Java command customization
+## Java command customization
 
 Import CustomJavaCommand Java project
 

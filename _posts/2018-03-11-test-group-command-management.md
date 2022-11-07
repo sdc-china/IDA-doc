@@ -9,7 +9,7 @@ order: 40
 # Group command management
 ***
 
-### Create a group command
+## Create a group command
 
   Navigate to **Hiring sample** -> **Create Position Request CSHS** -> **Case1** to generate a group command.
  
@@ -50,7 +50,7 @@ order: 40
     ![][test_group_command_add]
     ![][test_group_command_create] 
 
-### Add group command
+## Add group command
 
   You can add a group command when you want to add some steps which belongs to this group command.
 
@@ -72,9 +72,9 @@ order: 40
   
   5. Click **Exit Edit** button.
   
-### Edit group command
+## Edit group command
 
-#### Edit group command name and description
+### Edit group command name and description
 
   1. Click **Group Command** in left-side menu bar.
   
@@ -88,13 +88,13 @@ order: 40
   
   4. Click **Update** button.
   
-#### Edit case steps of group command
+### Edit case steps of group command
 
   1. Click **Execute Custom._command\_name_ with parameters \{\{Parameters\}\}** in case step list or click command name in left-side menu bar.
   
   2. [Edit case steps.][2]
   
-### Delete Group command
+## Delete Group command
 
   1. Remove the command from test cases first.
   
@@ -107,7 +107,7 @@ order: 40
   
   2. Click ![][test_group_command_delete_button] button on the right of group command name.
   
-### Define Group parameter  
+## Define Group parameter  
 
   1. Define the group parameter for the group command.
   
@@ -130,7 +130,7 @@ order: 40
      You can see **name** is defined in the group parameter will be acted as the parameter input for group command.
      ![][group_parameter_input]  
           
-### Add IF Command to a group command
+## Add IF Command to a group command
 
 In some scenarios, IDA Users want to execute a group command only when it meets some conditions. Now, IDA supports to add an IF Command to a group comand, and the group command will be executed if the IF Command result is TRUE. The IF Command is a custom javascript command. Let's go through it step by step:
 
@@ -170,7 +170,7 @@ In some scenarios, IDA Users want to execute a group command only when it meets 
   
 
 
-### Use a Group Command in Other Test Projects within a Team
+## Use a Group Command in Other Test Projects within a Team
   If a group command is created in a test project with a specific team scope, then this group command can be used in any test projects created by or accessible to a team member.
 
   1\. Add the group command in a test project with a specific team scope visibility.

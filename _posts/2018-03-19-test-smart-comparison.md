@@ -9,7 +9,7 @@ order: 59
 # Test Smart Comparison - A new image base assertion
 ***
 
-### How does smart comparison work
+## How does smart comparison work
 
  Smart comparison is an image based assertion, which is a new and easy way for regression test assertion by using pixel-by-pixel comparison.
 
@@ -18,7 +18,7 @@ order: 59
   - Review screenshots and enable it as the base image if it's the expected result.
   - Run test case again and then the smart comparison engine will compare the new screenshot with the base image. The test step will be marked as failed with the report showing **Screenshot does not match the expected image in smart comparison** error if there's any difference after comparison.
     
-### Enable Smart Comparison
+## Enable Smart Comparison
 
    **Notes:**
   Before starting smart comparison, please make sure that the test case has already finished running with a report whose status shows as **Passed**. And be sure that there is at least one case step has the screenshot.
@@ -57,7 +57,7 @@ order: 59
   
   10. If you want to disable image comparison, just Click ![][toggle_on] in front of the case step again.
   
-### Refresh new screenshots from the latest testing report
+## Refresh new screenshots from the latest testing report
 
   Click **Refresh** button in Smart Comparison page can refresh new screenshots from the latest report, and also reset all saved comparison settings. 
   

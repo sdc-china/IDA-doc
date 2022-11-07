@@ -9,7 +9,7 @@ order: 60
 # Import and execute sample test project
 ***
 
-### Import a sample test project
+## Import a sample test project
 
   1. Click the **Sample Project** button in the project tab.
 
@@ -33,7 +33,7 @@ order: 60
 
        ![][test_import_left_side_bar]
 
-###  Execute a sample test project
+##  Execute a sample test project
 
   1. Select all the test cases in the dashboard and click **Run** button.
 

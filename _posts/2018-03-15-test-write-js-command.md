@@ -9,7 +9,7 @@ order: 55
 # Write a Javascript command
 ***
 
-### Create a javascript command
+## Create a javascript command
 
 1. Navigate to **Custom Command** in the left-side menu bar, click + button to generate a group command.
 
@@ -44,7 +44,7 @@ For example: {Parameters.myKey}. You can configure a list of possible values of 
 7. Refer to [Javascript API Reference](../references/references-js-api.html) for OOTB
 Javascript functions   
 
-### Javascript Command sample
+## Javascript Command sample
    In Hiring sample Standard_HR_Open_New_Position/case2, we will change the number of employees to value 3 if we choose Position Request Department as **Sales**.
 
    Here are the steps:

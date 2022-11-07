@@ -9,7 +9,7 @@ order: 1
 # Search Workflow projects
 ***
 
-### Setting up the Workflow project and perform search.
+## Setting up the Workflow project and perform search.
 
    1. Configure the workflow project using online form or upload a TWX file to search.
 
@@ -46,7 +46,7 @@ order: 1
 
       ![][search_results_content]
       
-### Cleaning up the exported search folders.
+## Cleaning up the exported search folders.
 
 You can clean up the exported and indexed search data folders on Clean Disk Cache page under Administrations.
 

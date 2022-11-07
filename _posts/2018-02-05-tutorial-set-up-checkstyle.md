@@ -12,11 +12,11 @@ order: 3
 IDA enables developers to perform static analysis on the Workflow project, which enforces design convention and processes development standard. There are 120+ checkstyle rules are defined based on Workflow development best practices and anti-patterns. The rules have been implemented with POJO engine. Refer to [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) about rules custmization.
 
 
-### About this task
+## About this task
 
   In this task,you can set up Checkstyle of the project that you created in the previous task.
   
-### Procedure
+## Procedure
 
 Set up Checkstyle of a project:
 

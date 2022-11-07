@@ -10,7 +10,7 @@ order: 59
 ***
 
 
-### Replayer command customization
+## Replayer command customization
 
 
 1.  Login into IDA web console.	 Click **Administrator** tab, then switch to  **Custom Command** tab. 

@@ -9,23 +9,23 @@ order: 2
 # Customize Checkstyle rules
 ***
 
-### Software Prerequisites
+## Software Prerequisites
 
 * [IBM® Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
 
-### Prerequisite
+## Prerequisite
 
    You have installed **Rule Designer** in your local environment and **Checkstyle Rule Projects** have been in your local workspace.
 
-### Workflow checkstyle rule projects overview
+## Workflow checkstyle rule projects overview
 
    The Workflow checkstyle rule projects include **CheckstyleBOM**, **CheckstyleRules**, **CheckstyleRulesCore** and **CheckstyleRulesCustomized**. Their dependency relationships are as follows:
 
    ![][checkstyle_rule_project_relation]
 
-### Workflow checkstyle rules customization
+## Workflow checkstyle rules customization
 
-#### Override core checkstyle rules
+### Override core checkstyle rules
 
 To rewrite any core checkstyle rule, please do not update the core rule itself. Instead you should copy the rule into the **checksOverride** rule package of project CheckstyleRulesCustomized and then update the copy. Take overriding a core checkstyle rule **check-app-with-too-many-bpd** as an example:
 
@@ -58,7 +58,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 7. Rerun Workflow checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is **no** warning message **Too many BPDs**.
 
 
-#### Write custom checkstyle rules
+### Write custom checkstyle rules
 
   To write customized checkstyle rules, put the new rules in rule package **customized** in rule project **CheckstyleRulesCustomized**. Create artifact-based rule package if necessary.
 

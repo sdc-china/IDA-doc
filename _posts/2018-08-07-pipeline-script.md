@@ -9,11 +9,11 @@ order: 4
 # Pipeline script
 ***
 
-### Pipeline script summary
+## Pipeline script summary
 
   In pipeline stage step definition, there is a step called script, which allows users to execute script in the server where IDA is deployed.
 
-### Define script
+## Define script
 
   In **Edit Step** modal, select **Script** as **Type** then you can define one or more scripts in **Script** text area. For multiple scripts, each of them need to start from a new line.
 
@@ -22,7 +22,7 @@ order: 4
   <br>
  
 
-### Script supported parameters
+## Script supported parameters
 
   IDA supports below parameters in Script. They can be used in Script to represent Pipeline related attributes.
 
@@ -42,7 +42,7 @@ order: 4
   <br>
   **${SNAPSHOT_ACRONYM}**: current snapshot acronym name
 
-### Script samples
+## Script samples
 **Call RESTFul service**
   <br>
   <br>
@@ -87,7 +87,7 @@ order: 4
   print "This script is used to set BAW EnvironmentVariable"
   AdminTask.BPMSetEnvironmentVariable('[-containerAcronym BTAS -containerSnapshotAcronym TS -environmentVariableName TEST_KEY -environmentVariableValue 98744]')
   ``` 
-#### Notes:
+### Notes:
   - If you not specify the script file path,it will use the BAW deployment remote dir as your script path,which is defined in the IDA setting page.Also you need to put this script file in the BAW server specfied folder before you run the pipeline.
   - ${APP_ACRONYM} and ${SNAPSHOT_ACRONYM} parameter will be replaced by runtime.
 

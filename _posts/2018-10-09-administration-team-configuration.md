@@ -9,7 +9,7 @@ order: 4
 # Team configuration
 ***
 
-### Add a team
+## Add a team
   1. Click **Administrator** tab, then switch to  **Team Configurtaion** tab to manage team.  
 
   2. Click ![][add_icon] icon which is on the right of **Team Management**.
@@ -31,7 +31,7 @@ order: 4
 
      ![][administration_super_team]
 
-### Edit a team
+## Edit a team
 
   1. Click **Edit** icon on the right of the team that you want to edit.
 
@@ -39,7 +39,7 @@ order: 4
 
   2. Change configurations of the team. Then click **Save**.
 
-### Delete teams
+## Delete teams
 
   Select the teams in the **Teams Management** table, then click the **delete** icon to delete teams.
 
@@ -53,7 +53,7 @@ order: 4
 
      ![][administrator_assign]
 
-### Assign process apps to a team
+## Assign process apps to a team
 
   1. Click **Process App Assignment** icon on the right of the team that you want to assign or remove process apps.
 
@@ -67,7 +67,7 @@ order: 4
 
      ![][administrator_assign_process_apps]
 
-### Remove process apps from a team
+## Remove process apps from a team
 
   1. Click server and the right table of modal lists the process apps which are under the server and belong to the team.
 
@@ -75,7 +75,7 @@ order: 4
 
   3. After finishing step 2, the selected server in step 1 will be selected in the left modal and the removed process apps will in the lists which belong to the server but do not belong to the team.
 
-### Assign selenium grids to a team/ Remove selenium grids from a team
+## Assign selenium grids to a team/ Remove selenium grids from a team
 
   1. Click **Selenium Grid Assignment** icon on the right of the team that you want to assign or remove selenium grids.
 

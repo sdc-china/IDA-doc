@@ -14,7 +14,7 @@ Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For 
 
 ***
 
-### Preparing your migration
+## Preparing your migration
 
 Compared to the previous version, the new version of IDA will have some changes in database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:  
 
@@ -23,7 +23,7 @@ Compared to the previous version, the new version of IDA will have some changes 
 3. Stop the MySQL server.  
 4. Backup the MySQL database.    
 
-### Step 1: Update DB
+## Step 1: Update DB
 
 Below steps are appplicable to MySQL database. For other types of database, steps are similar. To update DB, take the following steps:
 1. Get the previous version of IDA from the **Database Version** under the **Settings** page.
@@ -55,7 +55,7 @@ mysql> source yoursqlpath\migrate-mysql-v21.3.1-v21.3.2.sql
 mysql> source yoursqlpath\migrate-mysql-v21.3.2-v21.3.3.sql
 ```    
 
-### Step 2: Update IDA.war   
+## Step 2: Update IDA.war   
 
 For IDA version migration,you need to update IDA.war, take the following steps:
 
@@ -71,7 +71,7 @@ For IDA version migration,you need to update IDA.war, take the following steps:
  You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
  
  
-### Step 3: Update IDA BAW Toolkit    
+## Step 3: Update IDA BAW Toolkit    
 
 To update IDA BAW Toolkit, take the following steps:
 

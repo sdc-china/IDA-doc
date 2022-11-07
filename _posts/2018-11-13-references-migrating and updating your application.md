@@ -9,7 +9,7 @@ order: 5
 # Migrating and Updating IDA Application v2.x
 ***
 
-### Preparing your migration
+## Preparing your migration
 
 To prepare your migration, take the following steps:  
 
@@ -18,7 +18,7 @@ To prepare your migration, take the following steps:
 3. Stop the MySQL server.  
 4. Backup the MySQL db.    
 
-### Step 1: Update DB
+## Step 1: Update DB
 
 To update DB, take the following steps:
 
@@ -51,7 +51,7 @@ mysql> use IDA;
 mysql> paste your sql here   
 ```
 
-### Step 2: Update IDA.war   
+## Step 2: Update IDA.war   
 
 For IDA version migration, you need to update IDA.war, take the following steps:
 
@@ -75,7 +75,7 @@ For IDA version migration, you need to update IDA.war, take the following steps:
  You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
  
  
-### Step 3: Update IDA BAW Toolkit    
+## Step 3: Update IDA BAW Toolkit    
 
 To update IDA BAW Toolkit, take the following steps:
 

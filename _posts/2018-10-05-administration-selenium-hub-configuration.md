@@ -9,9 +9,9 @@ order: 3
 # Selenium Hub configuration
 ***
 
-### How to configure selenium hub
+## How to configure selenium hub
    You need to setup the [Post Installation Setup] before this step.
-### Add selenium hub
+## Add selenium hub
   1. Click **Administrator** tab, then switch to  **Selemium Hub Configuration** table to manage hubs.  
   2. Click ![][add_icon] icon which is on the right of **Users manager** to add new users.
   3. Fill out the form below to add **Standalone** selenium grid for IDA. Then click **Create** button.
@@ -76,17 +76,17 @@ arguments:
 - "--fullPageScreenshot"
 ```  
 
-### Edit selenium hub
+## Edit selenium hub
   1. Click **Edit** icon on the right of the Selenium Grid Configuration that you want to edit.
 
      ![][administrator_edit_selenium_grid]
 
   2. Change configurations of the selenium grid. Then click **Save**.
 
-### Delete selenium hub
+## Delete selenium hub
   Select the hub in the **Selemium Hub Configuration** table, then click the 	**Delete** button to delete selenium hub.
 
-### Test selenium hub   
+## Test selenium hub   
   Click **Test Connection** icon on the right of the Selenium Grid Configuration that you want to test.If connection is wrong,it will
  popup warning info.  
 

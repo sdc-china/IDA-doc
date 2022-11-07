@@ -11,7 +11,7 @@ order: 5
 
 Users can enable/disable checkstyle rules dynamically without customization.
 
-###  Enable/disable checkstyle rules
+##  Enable/disable checkstyle rules
   1. Click **Administrator** tab, then switch to  **Checkstyle Rules Configuration** tab to manage checkstyle rules.  
   
   2. In this page, user can filter rules by Package, rule name and other conditions.
@@ -22,7 +22,7 @@ Users can enable/disable checkstyle rules dynamically without customization.
 
      ![][disable_rule]{:height="80%" width="80%"}
 
-###  Notes
+##  Notes
   1. It's global setting, once the rule is disabled in the configuration page, then it won't be executed when user run checkstyle in the checkstyle page or pipeline.
   2. Only the [built-in checkstyle rules] are listed here.
 

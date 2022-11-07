@@ -9,7 +9,7 @@ order: 50
 # Record and replay a test case
 ***
 
-### Record a test case
+## Record a test case
 
   1. Click **Edit** button on the right of suite name.
   
@@ -33,7 +33,7 @@ order: 50
   
      ![][test_record_steps]
 
-### Replay a test case 
+## Replay a test case 
 
   1. Click **Record** button on the right of case name to replay it.
   
@@ -57,7 +57,7 @@ order: 50
    |![][test_case_disabled_record_button]|Disable record case steps.|False, can click on debug steps.|
    |![][test_case_enable_record_button]|Enable record case steps.|False, can click on debug steps.|
   
-### Record a test case with group command
+## Record a test case with group command
 
   1. Preparation
   
@@ -73,7 +73,7 @@ order: 50
       
   2. The recording operation refers to **Record a test case**.
   
-### Replay a test case with group command
+## Replay a test case with group command
 
   Refer to **Replay a test case**.
     

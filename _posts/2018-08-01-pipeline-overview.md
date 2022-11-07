@@ -9,7 +9,7 @@ order: 1
 # Pipeline overview
 ***
 
-### Pipeline overview
+## Pipeline overview
 Pipelines are workflows that contain individual steps. Each step is responsible for a specific action in the process. The flowchart below is an example of one CI/CD scenario easily modeled in IDA pipeline:
 
 ![][pipeline_overview]  

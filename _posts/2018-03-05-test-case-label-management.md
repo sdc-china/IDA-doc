@@ -12,7 +12,7 @@ Users can add multiple labels to manage the test cases and use labels in a **Tes
 
 ***
 
-### Manage labels of a single test case
+## Manage labels of a single test case
 
 1. From the left-side menu bar, select a single test case under some test suite name.
 
@@ -25,7 +25,7 @@ Users can add multiple labels to manage the test cases and use labels in a **Tes
 4. Click **Done** to finish editing labels of this test case. The labels are shown under the test case name.
   ![][single-test-case-labels-done]
 
-### Manage labels of multiple test cases
+## Manage labels of multiple test cases
 
 1. Click the test project name on the left-side menu bar, to view the list of all test cases. Test case labels are listed under the **Labels** column and can be used to fiter test cases.
    ![][multi-test-case-labels-view]

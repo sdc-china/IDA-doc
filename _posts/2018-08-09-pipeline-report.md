@@ -10,7 +10,7 @@ order: 5
 ***
 
 
-### Pipeline report  
+## Pipeline report  
 
   Every successful step will have a report in **Test Reports** page. You can read the report you want by clicking cards.
 

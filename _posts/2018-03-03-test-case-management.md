@@ -9,7 +9,7 @@ order: 20
 # Test case management
 ***
 
-### Generate test cases
+## Generate test cases
 
 1. In the left-side menu bar, click **+** button on the right of project name.
 
@@ -21,7 +21,7 @@ order: 20
 
 4. Click **Create** button to generate cases.
 
-### Create a test case
+## Create a test case
 
 1. Click **+** button on the right of suite name.
 
@@ -35,9 +35,9 @@ order: 20
 
      ![][test_unit_test_case]
 
-### Edit test case
+## Edit test case
 
-#### Edit test suite info
+### Edit test suite info
 
   1. Click ![][test_group_command_edit_button] button on the right of suite name.
 
@@ -47,7 +47,7 @@ order: 20
 
   3. Click **Update** button.
 
-#### Edit test case info
+### Edit test case info
 
   1. Click ![][test_group_command_edit_button] button on the right of case name.
   
@@ -59,7 +59,7 @@ order: 20
       
   3. Click **Update** button.
   
-#### Import test case 
+### Import test case 
 
 1. Click **...** link on the right of suite name and popup the menu.
 
@@ -71,7 +71,7 @@ order: 20
 
    ![][test_case_migration_form]
   
-#### Add a case step
+### Add a case step
 
   1. Select the test case step position you want to insert.In the popup menu choose  **Add**  link to insert.   
   
@@ -83,7 +83,7 @@ order: 20
      
   3. Click **Add** button.
   
-#### Edit a case step
+### Edit a case step
 
   1. Select the case step you want to edit.   
    
@@ -99,13 +99,13 @@ order: 20
   
   5. Click **Exit Edit** button on the right of suite name.
 
-#### Add Post Script
+### Add Post Script
 
    In some user interface test cases, you may need to request data from server. If the response time is too long, it will cause time out exception and make the test case failed. In this case, you need to add case steps to wait loading indicate to be hidden. We provide post script for you to do this in bulk. [More Details][2]
 
    ![][test_case_post_script_demo]
   
-#### Adjust the order of case step.
+### Adjust the order of case step.
 
   1.  Select the case step you want to move.
   
@@ -115,26 +115,26 @@ order: 20
   
   3. click **Exit Edit** button on the right of suite name.
 
-#### Copy case steps
+### Copy case steps
 
   1. Click **Edit** button on the right of suite name.
 
   2. Select the case steps to be copied,in the popup menu  click **Copy** link.
     ![][test_case_step_copy]
   
-#### Copy/Cut case steps with group commands
+### Copy/Cut case steps with group commands
   
   1. Click **Edit** button on the top right of the case editor table.
   2. Select the case steps with group commands, then click **Copy** link in the popup menu.
     ![][group_command_copy]
 
-##### Notes
+#### Notes
 
 You could only paste the copied case steps with group command to test cases. If you paste the case steps to group commands, you will get a warning:
   ![][group_command_copy_warning]
 
 
-#### Cut case steps
+### Cut case steps
 
   1. Click **Edit** button on the right of suite name.
 
@@ -142,23 +142,23 @@ You could only paste the copied case steps with group command to test cases. If 
   
      ![][test_case_step_cut_button]  
 
-#### Paste case steps
+### Paste case steps
 
   1. Click **Edit** button on the right of suite name.
 
   2. Choose the test case step position you want to paste then click the **Paste** link,The copied/cut case steps will be inserted before the editing case step.      
   ![][test_case_step_paste_button]. 
 
-#### Delete a case step
+### Delete a case step
 
   Select the test case steps in the test case step table.In the popup menu  click **delete** link.  
   ![][test_case_step_delete]
   
-### Delete a test case
+## Delete a test case
 
   Click ![][test_project_delete_button] button in test case list from left-side menu.
   
-### Compare different historical versions of test case
+## Compare different historical versions of test case
 
 1. Click version number button next to the case name.
 
@@ -178,7 +178,7 @@ At the bottom left corner, update, delete and new steps are shown as legends wit
 	![][test_case_version_compare_page]
 	![][test_case_version_management_maximize_page]
 	
-### Restore a specific version of test case
+## Restore a specific version of test case
 
 1. Click version number to see the detail of a version.
 
@@ -199,7 +199,7 @@ At the bottom left corner, update, delete and new steps are shown as legends wit
 	![][test_case_version_warning_message_can_not_restore]
 
 
-### Create a group test case
+## Create a group test case
 
 A group test case means you could run more than one test case sequentially a time with a group test case. Let us start with creating a group test case.
 
