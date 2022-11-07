@@ -1,7 +1,7 @@
 ---
 title: "Architecture"
 category: references
-date: 2018-10-26 15:17:55
+date: 2018-11-01 15:17:55
 last_modified_at: 2019-07-29 16:40:00
 ---
 
