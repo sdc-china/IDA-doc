@@ -1,6 +1,6 @@
 ---
 title: "Test Project Troubleshooting"
-category: trouble-shooting
+category: troubleshooting
 date: 2018-12-09 15:19:55
 last_modified_at: 2022-04-27 16:50:00
 ---

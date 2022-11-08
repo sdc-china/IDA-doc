@@ -1,6 +1,6 @@
 ---
 title: "Pipeline Troubleshooting"
-category: trouble-shooting
+category: troubleshooting
 date: 2018-12-11 15:20:55
 last_modified_at: 2022-04-27 16:50:00
 ---

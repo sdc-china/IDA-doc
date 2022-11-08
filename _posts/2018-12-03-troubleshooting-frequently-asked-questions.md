@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-category: trouble-shooting
+category: troubleshooting
 date: 2018-12-03 15:17:55
 last_modified_at: 2020-06-16 16:53:00
 ---

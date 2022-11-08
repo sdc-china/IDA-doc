@@ -1,6 +1,6 @@
 ---
 title: "Known Limitation"
-category: trouble-shooting
+category: troubleshooting
 date: 2018-12-01 15:17:55
 last_modified_at: 2020-09-27 16:50:00
 ---

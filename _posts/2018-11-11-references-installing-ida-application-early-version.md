@@ -5,7 +5,7 @@ date: 2018-11-11 15:17:57
 last_modified_at: 2021-12-10 18:12:00
 ---
 
-# Installing IDA Application(v3.x, v2.x)
+# Installing IDA v3.x Application
 
 There are three components for IDA application we need install and configure, included
 - *IDA web application*
