@@ -81,7 +81,7 @@ To generate a process test case and an user interface test case:
 [tutorial_case_basic_info]: ../images/tutorial/tutorial_case_basic_info.PNG
 
 [1]: ../administration/administration-users-management.html
-[2]: ../administration/administration-bpm-configuration.html
+[2]: ../administration/administration-baw-configuration.html
 [3]: ../administration/administration-selenium-hub-configuration.html
 [4]: tutorial-run-record-and-replay-a-test-case.html
 [tutorial_createproject]: ../images/tutorial/tuorial_project_create.PNG 

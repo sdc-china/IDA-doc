@@ -28,4 +28,4 @@ Users can enable/disable checkstyle rules dynamically without customization.
 
 [search_rule]: ../images/administrator/checkstyle_rule_config_search_rule.png
 [disable_rule]: ../images/administrator/checkstyle_rule_config_disable_rule.png
-[built-in checkstyle rules]: ../checkstyle/checkstyle-rules-description.html
+[built-in checkstyle rules]: ../checkstyle/checkstyle-checkstyle-rules-description.html

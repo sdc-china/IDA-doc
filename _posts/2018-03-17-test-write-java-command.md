@@ -313,7 +313,7 @@ Use custom Java command in IDA test case
   [test_maven_build]: ../images/test/test_maven_build.png
   [test_maven_package]: ../images/test/test_maven_package.png
   [test_java_command_jar]: ../images/test/test_java_command_jar.png
-  [selenium_grid_url]: ../installation/installlation-post-installation.html
+  [selenium_grid_url]: ../installation/installation-post-installation-setup.html
   [test_upload_java_command_1]: ../images/test/test_upload_java_command_1.png
   [test_upload_java_command_2]: ../images/test/test_upload_java_command_2.png
   [test_upload_java_command_3]: ../images/test/test_upload_java_command_3.png

@@ -35,7 +35,7 @@ last_modified_at: 2020-06-16 16:53:00
 1. FAQ: Could IDA test process definitions in toolkits or just the ones in process applications?   
     - Answer: YES. The user could select toolkit when creating test case. See [doc](https://sdc-china.github.io/IDA-doc/test/test-case-management.html)
 1. FAQ: If the team built some AngularJS code inside the coaches, can IDA support its testing?
-    - Answer: YES. We could use [Recorder extention](https://sdc-china.github.io/IDA-doc/administration/administration-custom-recorder.html()) to capture all UI controls if the OOTB recorder does not record it correctly.
+    - Answer: YES. We could use [Recorder extention](https://sdc-china.github.io/IDA-doc/administration/administration-custom-recorder.html) to capture all UI controls if the OOTB recorder does not record it correctly.
 1. FAQ: What is the customer gets under the contract: source code of IDA or the packaged compiled code??
     - Answer: The packaged compiled code w/o source code.
 1. FAQ: Does IDA support heritage coaches which is wildly used in BPM v8.x?
@@ -77,7 +77,7 @@ last_modified_at: 2020-06-16 16:53:00
 	
 		1. Stop the servers of your IBM BAW PS environment.
 		
-		2. Start the scripting client in disconnected mode as described in [updateBPMConfig command](https://www.ibm.com/support/knowledgecenter/SS8JB4/com.ibm.wbpm.ref.doc/topics/rref_updatebpmconfig.html).
+		2. Start the scripting client in disconnected mode as described in [update BPM Config command](https://www.ibm.com/support/knowledgecenter/SS8JB4/com.ibm.wbpm.ref.doc/topics/rref_updatebpmconfig.html).
 		
 		3. Run the following commands:
 		
@@ -124,4 +124,4 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
 [loginbpmoc]: ../images/references/loginbpmoc.png 
 [add-permission-2]: ../images/references/add-permission-2.png
 [enable-javascript-execution]: ../images/references/enable-javascript-execution.png
-[1]: ../test/test-case-data-binding.html#create-a-csv-test-data-file
+[1]: ../test/test-test-case-data-binding.html#create-a-csv-test-data-file

@@ -151,9 +151,9 @@ Restart IDA server to make your changes effective.
 ### 3.0 Restart IDA server to make your changes effective.
 
 
-[1]: ../installation/installation-ida-repacking.html
-[2]: ../installation/installation-ida-installing.html#installing-on-was-v9
-[3]: ../references/references-migrating-and-updating-your-application.html
+[1]: ../installation/installation-repacking-ida-application.html
+[2]: ../installation/installation-installation-ida-application.html#installing-on-was-v9
+[3]: ../references/references-migrating-and-updating-ida-application.html
 [General]: ../images/references/General.jpg
 [Test]: ../images/references/Test.jpg
 [Pipeline]: ../images/references/Pipeline.jpg

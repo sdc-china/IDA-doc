@@ -7,7 +7,7 @@ sidebar:
 
 ## Overview
 
-[IBM Deployment Accelerator for Business Automation Workflow](./references/references-demo.html) redefines IBM Business Automation Workflow(BAW) innovation with tools and methodologies from IBM. It is a lightweigt solution for Workflow project development,testing and ops team to apply DevOps to a Workflow project.
+[IBM Deployment Accelerator for Business Automation Workflow](./references/references-demos.html) redefines IBM Business Automation Workflow(BAW) innovation with tools and methodologies from IBM. It is a lightweigt solution for Workflow project development,testing and ops team to apply DevOps to a Workflow project.
  
   
   |          | Test Case generation |  Record and playback UI  |  Checkstyle  | Pipeline | Statistic Analyzing  |  Toolkit Dependency Analyzing  | Comparison | Instance migration  | Load Test  |

@@ -94,7 +94,7 @@ arguments:
 
 [administrator_hub]: ../images/administrator/administrator_hub.png
 [administrator_hub_containerized]: ../images/administrator/administrator_hub_containerized.png
-[Post Installation Setup]: ../installation/installlation-post-installation.html
+[Post Installation Setup]: ../installation/installation-post-installation-setup.html
 [configure Kubernates Setting]: ../administration/administration-settings-configuration.html#set-k8s-configuration
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_edit_selenium_grid]: ../images/administrator/administrator_edit_selenium_grid.png

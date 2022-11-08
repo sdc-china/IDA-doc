@@ -77,5 +77,5 @@ last_modified_at: 2019-07-26 16:23:00
 [tutorial_project_info]: ../images/tutorial/tutorial_project_info.PNG
 [1]: ../administration/administration-bpm-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
-[3]: ../administration/administration-bpm-configuration.html#add-user-to-a-bpm-server
+[3]: ../administration/administration-baw-configuration.html#add-user-to-a-bpm-server
 [tutorial_createproject_advance]: ../images/tutorial/tuorial_project_create_advance.PNG 

@@ -48,4 +48,4 @@ Users can add multiple labels to manage the test cases and use labels in a **Tes
 [multi-test-case-labels-edit]: ../images/test/multi-test-case-labels-edit.PNG
 [multi-test-case-labels-add-remove]: ../images/test/multi-test-case-labels-add-remove.PNG
 [multi-test-case-labels-done]: ../images/test/multi-test-case-labels-done.PNG
-[test-step-ref]: ../pipeline/pipeline-step-reference.html#pipeline-step-reference
+[test-step-ref]: ../pipeline/pipeline-pipeline-stage&step-reference.html#pipeline-step-reference

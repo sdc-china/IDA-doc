@@ -84,6 +84,6 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
 [pipeline_report]: ../images/tutorial/tutorial_pipeline_result.png
 [pipeline_build_link]: ../images/tutorial/tutorial_pipeline_build_link.png
 
-[Details of the report]: ../pipeline/pipeline-report.html
+[Details of the report]: ../pipeline/pipeline-pipeline-report.html
 [1]: ../tutorial/tutorial-set-up-checkstyle.html
 [2]: ../pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html

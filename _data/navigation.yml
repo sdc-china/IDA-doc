@@ -19,7 +19,7 @@ docs:
       - title: "Database Installation and Configuration"
         url: /installation/installation-database-installation-and-configuration.html
       - title: "Repacking IDA Application"
-        url: /installation/installation-repacking-iDA-application.html
+        url: /installation/installation-repacking-ida-application.html
       - title: "Installing IDA Application"
         url: /installation/installation-installation-ida-application.html
       - title: "Post Installation Setup"
@@ -122,7 +122,7 @@ docs:
         url: /pipeline/pipeline-pipeline-report.html
       - title: "Pipeline Stage & Step Reference"
         url: /pipeline/pipeline-pipeline-stage&step-reference.html
-      - title: "Toolkit deployment"
+      - title: "Toolkit Deployment"
         url: /pipeline/pipeline-toolkit-deployment.html
 
   - title: Operations Tool
@@ -157,8 +157,8 @@ docs:
         url: /references/references-test-command.html
       - title: "Javascript API"
         url: /references/references-javascript-api.html
-      - title: "REST APIs"
-        url: /references/references-rest-apis.html
+      - title: "IDA REST APIs"
+        url: /references/references-ida-rest-apis.html
       - title: "Repacking IDA Application(v3.x, v2.x)"
         url: /references/references-repacking-ida-application-early-version.html
       - title: "Installing IDA Application(v3.x, v2.x)"

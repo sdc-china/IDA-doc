@@ -1597,7 +1597,7 @@ Generate a specified length random number.
 ___
 
 
-[1]: ../administration/administration-bpm-configuration.html#add-user-to-a-bpm-server
+[1]: ../administration/administration-baw-configuration.html#add-user-to-a-bpm-server
 [command_expected_output_refresh_button]: ../images/command/command_expected_output_refresh_button.png
 [command_start_process_editor]: ../images/command/command_start_process_editor.png
 [command_start_process_javascript_API]: ../images/command/command_start_process_javascript_API.png

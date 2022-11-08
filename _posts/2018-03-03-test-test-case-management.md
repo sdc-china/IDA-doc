@@ -229,8 +229,8 @@ A group test case means you could run more than one test case sequentially a tim
 
 
     
-[1]: ../references/testing-command.html
-[2]: ../test/test-write-js-command.html#post-custom-js-command
+[1]: ../references/references-test-command.html
+[2]: ../test/test-write-javascript-command.html#post-custom-js-command
 [test_unit_test_add_form]: ../images/test/test_unit_test_add_form.PNG
 [test_case_post_script_demo]: ../images/test/test_case_post_script_demo.png
 [test_group_command_edit_button]: ../images/test/test_group_command_edit_button.PNG
