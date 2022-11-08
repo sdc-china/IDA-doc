@@ -5,13 +5,18 @@
 - a development server will run in http://127.0.0.1:4000/IDA-doc/.
 
 ## Add a new document post
-- Create a new document file in folder _posts, named as **YYYY-mm-dd-{category}-{doc-name}.md**
+- Create a new document file in folder _posts, named as **YYYY-mm-dd-{doc_category}-{doc_title}.md**
 - Set the document title and category in its YAML header
 - Set the document date and last modified date as well. Note: the value of the date sets the PREVIOUS/NEXT order of documents. The value of the last modified sets the _Updated:_ field on document page. 
 - Update _data/navigation.yml to link this document in the sidebar. 
   1. Add a children element under some title
   2. Set the title of the children element, to be displayed in the siderbar
-  3. Set the url of the children element to be **{category}-{doc-name}.html**
+  3. Set the url of the children element to be **{doc_category}-{doc_title}.html**
+
+## Naming Convensions
+- Title in navigation.yml(displayed in sidebar) and post's YAML header (displayed in Previous/Next button) should be the same
+- Capitalize the first letter of each word in the Title (except for "a", "and"...)
+- Post's file name and url file name in navigation.yml should be the same (**{doc_category}-{doc_title}**) and use lower case words
 
 ## Reference
 - http://bruth.github.io/jekyll-docs-template
@@ -22,3 +27,4 @@
 - Install pandoc first. Then enter local directory of IDA-doc.
 - $ chmod 777 docxAndPdf.sh
 - $ ./docxAndPdf.sh
+
