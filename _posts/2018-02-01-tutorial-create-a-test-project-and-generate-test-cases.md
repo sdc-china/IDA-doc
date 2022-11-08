@@ -1,11 +1,11 @@
 ---
-title: "Task 1: Create a test project and generate test cases"
+title: "Task 1: Create a Test Project and Generate Test Cases"
 category: tutorial
 date: 2018-02-01 15:17:55
 last_modified_at: 2021-08-23 21:40:00
 ---
 
-# Task 1: Create a test project and generate test cases
+# Task 1: Create a Test Project and Generate Test Cases
 ***
 
 IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support Workflow project test.

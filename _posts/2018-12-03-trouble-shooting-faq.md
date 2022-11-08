@@ -1,11 +1,11 @@
 ---
-title: "Frequently asked questions"
+title: "Frequently Asked Questions"
 category: trouble-shooting
 date: 2018-12-03 15:17:55
 last_modified_at: 2020-06-16 16:53:00
 ---
 
-# Frequently asked questions
+# Frequently Asked Questions
 ***
 
 ## FAQ about IDA

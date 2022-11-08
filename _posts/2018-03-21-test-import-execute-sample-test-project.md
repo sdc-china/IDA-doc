@@ -1,11 +1,11 @@
 ---
-title: "Import and execute sample test project"
+title: "Import and Execute Sample Test Project"
 category: test
 date: 2018-03-21 15:17:55
 last_modified_at: 2019-07-29 15:22:00
 ---
 
-# Import and execute sample test project
+# Import and Execute Sample Test Project
 ***
 
 ## Import a sample test project

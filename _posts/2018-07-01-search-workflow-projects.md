@@ -1,11 +1,11 @@
 ---
-title: "Search Workflow projects"
+title: "Search Workflow Projects"
 category: search
 date: 2018-07-01 15:17:55
 last_modified_at: 2022-07-01 15:26:00
 ---
 
-# Search Workflow projects
+# Search Workflow Projects
 ***
 
 ## Setting up the Workflow project and perform search.

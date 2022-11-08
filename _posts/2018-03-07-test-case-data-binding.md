@@ -1,11 +1,11 @@
 ---
-title: "Test Case data binding"
+title: "Test Case Data Binding"
 category: test
 date: 2018-03-07 15:17:55
 last_modified_at: 2021-08-23 16:26:00
 ---
 
-# Test Case data binding
+# Test Case Data Binding
 ***  
  
 ## Create a csv test data file 

@@ -1,11 +1,11 @@
 ---
-title: "Test project management"
+title: "Test Project Management"
 category: test
 date: 2018-03-01 15:17:55
 last_modified_at: 2019-07-26 16:23:00
 ---
 
-# Test project management
+# Test Project Management
 ***
 
 ## Create a test project

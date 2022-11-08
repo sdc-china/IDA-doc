@@ -5,7 +5,7 @@ date: 2018-03-11 15:17:55
 last_modified_at: 2019-07-26 16:28:00
 ---
 
-# Group command management
+# Group Command Management
 ***
 
 ## Create a group command

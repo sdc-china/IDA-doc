@@ -1,11 +1,11 @@
 ---
-title: "Pipeline script"
+title: "Pipeline Script"
 category: pipeline
 date: 2018-08-07 15:17:55
 last_modified_at: 2022-05-17 16:53:00
 ---
 
-# Pipeline script
+# Pipeline Script
 ***
 
 ## Pipeline script summary

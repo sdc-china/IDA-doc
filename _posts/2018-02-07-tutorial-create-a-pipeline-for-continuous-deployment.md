@@ -1,11 +1,11 @@
 ---
-title: "Task 4: Create a pipeline for continuous deployment"
+title: "Task 4: Create a Pipeline for Continuous Deployment"
 category: tutorial
 date: 2018-02-07 15:17:55
 last_modified_at: 2019-07-26 16:14:00
 ---
 
-# Task 4: Create a pipeline for continuous deployment
+# Task 4: Create a Pipeline for Continuous Deployment
 ***
 
 IDA provides a build-in continuous  integration  and deployment  pipeline to orchestrate  testing, checkstyle,  snapshot  taking and deployment.

@@ -1,11 +1,11 @@
 ---
-title: "Pipeline overview"
+title: "Pipeline Overview"
 category: pipeline
 date: 2018-08-01 20:17:55
 last_modified_at: 2019-07-29 15:50:00
 ---
 
-# Pipeline overview
+# Pipeline Overview
 ***
 
 ## Pipeline overview

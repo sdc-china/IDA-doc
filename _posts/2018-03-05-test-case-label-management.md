@@ -1,11 +1,11 @@
 ---
-title: "Test case label management"
+title: "Test Case Label Management"
 category: test
 date: 2018-03-05 17:17:55
 last_modified_at: 2019-11-26 16:25:00
 ---
 
-# Test case label management
+# Test Case Label Management
 
 Users can add multiple labels to manage the test cases and use labels in a **Test** step of an IDA pipeline to [select test cases in pipeline execution][test-step-ref].
 

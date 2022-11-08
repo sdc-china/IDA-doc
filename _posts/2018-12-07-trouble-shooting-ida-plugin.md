@@ -1,11 +1,11 @@
 ---
-title: "IDA Plug-in troubleshooting"
+title: "IDA Plug-in Troubleshooting"
 category: trouble-shooting
 date: 2018-12-07 15:17:55
 last_modified_at: 2020-06-16 16:50:00
 ---
 
-# IDA plug-in troubleshooting
+# IDA Plug-in Troubleshooting
 When you run IDA plug-in for replay you might meet issue for the plug-in. You should see the step with highlighted red color.When you move the mouse the red icon,it will show the detail issue.
 
    ![][references-idarecorder]

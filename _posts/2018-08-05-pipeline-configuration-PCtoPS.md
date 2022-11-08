@@ -1,11 +1,11 @@
 ---
-title: "Deploy snapshot from PC to PS"
+title: "Deploy Snapshot from PC to PS"
 category: pipeline
 date: 2018-08-05 15:17:55
 last_modified_at: 2019-07-29 15:52:00
 ---
 
-# Deploy snapshot from PC to PS
+# Deploy Snapshot from PC to PS
 ***
 
 IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the Workflow Process Center IP is 192.168.0.10.

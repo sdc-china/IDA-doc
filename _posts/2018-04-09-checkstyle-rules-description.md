@@ -5,7 +5,7 @@ date: 2018-04-09 15:29:00
 last_modified_at: 2022-04-11 15:29:00
 ---
 
-# Checkstyle rules by category
+# Checkstyle Rules Description
 ***
 
 ## App

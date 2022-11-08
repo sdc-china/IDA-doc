@@ -1,11 +1,11 @@
 ---
-title: "Analyze Workflow projects with analyzer toolkit references"
+title: "Analyze Workflow Projects with Analyzer Toolkit References"
 category: analyzer
 date: 2018-06-03 14:17:55
 last_modified_at: 2019-11-26 14:50:00
 ---
 
-# Analyze Workflow projects with analyzer toolkit references
+# Analyze Workflow Projects with Analyzer Toolkit References
 ***
 
 ## Setting up the Workflow project and perform it.

@@ -1,11 +1,11 @@
 ---
-title: "Pipeline stage & step reference"
+title: "Pipeline Stage & Step Reference"
 category: pipeline
 date: 2018-08-11 15:17:55
 last_modified_at: 2019-07-29 15:55:00
 ---
 
-# Pipeline stage & step reference
+# Pipeline Stage & Step Reference
 ***
 
 ## Pipeline stage reference

@@ -1,11 +1,11 @@
 ---
-title: "Analyze Workflow projects with checkstyle"
+title: "Analyze Workflow Projects with Checkstyle"
 category: checkstyle
 date: 2018-04-01 20:17:55
 last_modified_at: 2019-07-29 15:26:00
 ---
 
-# Analyze Workflow projects with checkstyle
+# Analyze Workflow Projects with Checkstyle
 ***
 
 ## Setting up the Workflow project and perform it.

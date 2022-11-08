@@ -1,11 +1,11 @@
 ---
-title: "Analyze Workflow projects with analyzer statistic"
+title: "Analyze Workflow Projects with Analyzer Statistic"
 category: analyzer
 date: 2018-06-01 14:17:55
 last_modified_at: 2022-10-28 14:50:00
 ---
 
-# Analyze Workflow projects with analyzer statistic
+# Analyze Workflow Projects with Analyzer Statistic
 ***
 
 ## Setting up the Workflow project and perform it.

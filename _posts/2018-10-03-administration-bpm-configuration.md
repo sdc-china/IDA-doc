@@ -1,11 +1,11 @@
 ---
-title: "BAW configuration"
+title: "BAW Configuration"
 category: administration
 date: 2018-10-03 15:17:55
 last_modified_at: 2022-10-28 16:18:00
 ---
 
-# BAW configuration
+# BAW Configuration
 ***
 
 ## Add a BAW server

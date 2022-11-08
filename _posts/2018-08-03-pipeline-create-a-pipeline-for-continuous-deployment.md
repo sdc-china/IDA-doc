@@ -1,11 +1,11 @@
 ---
-title: "Create a pipeline for continuous deployment"
+title: "Create a Pipeline for Continuous Deployment"
 category: pipeline
 date: 2018-08-03 15:17:55
 last_modified_at: 2022-08-25 15:51:00
 ---
 
-# Create a pipeline for continuous deployment
+# Create a Pipeline for Continuous Deployment
 ***
 
 ## Create a pipeline

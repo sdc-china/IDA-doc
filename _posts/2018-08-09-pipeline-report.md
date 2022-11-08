@@ -1,11 +1,11 @@
 ---
-title: "Pipeline report"
+title: "Pipeline Report"
 category: pipeline
 date: 2018-08-09 15:17:55
 last_modified_at: 2019-07-29 15:53:00
 ---
 
-# Pipeline report
+# Pipeline Report
 ***
 
 

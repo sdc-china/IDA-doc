@@ -1,11 +1,11 @@
 ---
-title: "Analyzer - Toolkit References report"
+title: "Analyzer - Toolkit References Report"
 category: analyzer
 date: 2018-06-07 14:17:55
 last_modified_at: 2019-11-26 14:50:00
 ---
 
-# Analyzer - Toolkit References report
+# Analyzer - Toolkit References Report
 ***
 
 ## Title

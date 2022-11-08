@@ -1,11 +1,11 @@
 ---
-title: "Test Case data dynamic loading"
+title: "Test Case Data Dynamic Loading"
 category: test
 date: 2018-03-09 15:19:55
 last_modified_at: 2021-11-12 16:26:00
 ---
 
-# Test Case data dynamic loading
+# Test Case Data Dynamic Loading
 
 We can use BAW services to integrate with external applications and load dynamic test data (for example unique ids generated from external systems), then use the loaded data as input parameters of the test case. An example is given below.
 

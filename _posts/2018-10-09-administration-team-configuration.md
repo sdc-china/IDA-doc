@@ -1,11 +1,11 @@
 ---
-title: "Team configuration"
+title: "Team Configuration"
 category: administration
 date: 2018-10-09 15:17:55
 last_modified_at: 2021-08-23 16:21:00
 ---
 
-# Team configuration
+# Team Configuration
 ***
 
 ## Add a team

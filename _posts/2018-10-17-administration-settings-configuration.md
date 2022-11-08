@@ -5,7 +5,7 @@ date: 2018-10-17 15:17:55
 last_modified_at: 2021-01-29 16:25:00
 ---
 
-# Settings configuration
+# Settings Configuration
 ***
 
 

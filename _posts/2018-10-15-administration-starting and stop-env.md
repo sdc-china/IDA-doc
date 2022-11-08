@@ -1,11 +1,11 @@
 ---
-title: "Start and Stop IDA environment"
+title: "Start and Stop IDA Environment"
 category: administration
 date: 2018-10-15 15:17:55
 last_modified_at: 2019-07-29 16:23:00
 ---
 
-# Start and Stop IDA environment
+# Start and Stop IDA Environment
 ***
 
 ##	Starting your environment

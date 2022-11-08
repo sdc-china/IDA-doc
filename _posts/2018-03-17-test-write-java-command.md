@@ -1,11 +1,11 @@
 ---
-title: "Write a Java command"
+title: "Write a Java Command"
 category: test
 date: 2018-03-17 15:17:55
 last_modified_at: 2019-07-29 15:19:00
 ---
 
-# Write a Java command
+# Write a Java Command
 ***
 
 ## Software Prerequisites

@@ -1,11 +1,11 @@
 ---
-title: "Customize Checkstyle rules"
+title: "Customize Checkstyle Rules"
 category: checkstyle
 date: 2018-04-03 15:17:55
 last_modified_at: 2019-07-29 15:27:00
 ---
 
-# Customize Checkstyle rules
+# Customize Checkstyle Rules
 ***
 
 ## Software Prerequisites

@@ -5,7 +5,7 @@ date: 2018-05-03 15:17:55
 last_modified_at: 2022-10-28 15:26:00
 ---
 
-# Snapshot Comparison Report Details
+# Snapshot Comparison Report
 
 On the left is the old snapshot, and on the right is the new snapshot. The name of the snapshot and the time of creation are in front of the artifact changes.
 

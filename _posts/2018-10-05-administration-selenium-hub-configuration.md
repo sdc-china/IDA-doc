@@ -1,11 +1,11 @@
 ---
-title: "Selenium Hub configuration"
+title: "Selenium Hub Configuration"
 category: administration
 date: 2018-10-05 15:17:55
 last_modified_at: 2022-09-28 16:39:00
 ---
 
-# Selenium Hub configuration
+# Selenium Hub Configuration
 ***
 
 ## How to configure selenium hub

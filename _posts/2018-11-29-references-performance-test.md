@@ -1,11 +1,11 @@
 ---
-title: "Performance Test Report"
+title: "Performance Test"
 category: references
 date: 2018-11-29 10:00:00
 last_modified_at: 2022-08-07 10:00:00
 ---
 
-# Performance Test Report
+# Performance Test
 ***
 
 ## Test objectives

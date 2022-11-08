@@ -1,11 +1,11 @@
 ---
-title: "Users management"
+title: "Users Management"
 category: administration
 date: 2018-10-01 15:17:55
 last_modified_at: 2019-07-29 16:18:00
 ---
 
-# Users management
+# Users Management
 ***
 
 ## Add a new user
