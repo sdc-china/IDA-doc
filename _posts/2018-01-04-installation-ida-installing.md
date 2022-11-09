@@ -362,7 +362,7 @@ BAW Version | IDA Toolkit Version
 	By default, the toolkit can only be invoked on Development and Test environment:
 	    ![][default_toolkit_setting]
 
-	You can define the same environment variable "BPMTAT_ACCESS" in your BAW application which will override the default setting in toolkit, for example:
+	You can define the same environment variable "IDA_ACCESS" in your BAW application which will override the default setting in toolkit, for example:
 	    ![][custom_toolkit_setting]
 
 
