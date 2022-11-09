@@ -41,7 +41,7 @@ Description | Hardware Requirements | Max Concurrent Users
 **Notes**:
 *Using Checkstyle/Analyzer/Comparison/Search will consume more memory. If the TWX size is greater than 100MB, then at least **8G memory** is required.*
 
-For more information on performance, please refer to [Performance Test Report](https://sdc-china.github.io/IDA-doc/references/references-performance-test.html).
+For more information on performance, please refer to [Performance Test Report](../references/references-performance-test.html).
 
 ## Disk Usage
 

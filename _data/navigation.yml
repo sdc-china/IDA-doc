@@ -32,7 +32,7 @@ docs:
       - title: "Task 1: Create a Test Project and Generate Test Cases"
         url: /tutorial/tutorial-create-a-test-project-and-generate-test-cases.html
       - title: "Task 2: Record, Replay and Run a Test Case"
-        url: /tutorial/tutorial-record--replay-and-run-a-test-case.html
+        url: /tutorial/tutorial-record-replay-and-run-a-test-case.html
       - title: "Task 3: Set up Checkstyle"
         url: /tutorial/tutorial-set-up-checkstyle.html
       - title: "Task 4: Create a Pipeline for Continuous Deployment"
@@ -44,7 +44,7 @@ docs:
     children:
       - title: "Test Project Management"
         url: /test/test-test-project-management.html
-      - title: "Test Case Mmanagement"
+      - title: "Test Case Management"
         url: /test/test-test-case-management.html
       - title: "Test Case Label Management"
         url: /test/test-test-case-label-management.html

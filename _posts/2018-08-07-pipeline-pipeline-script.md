@@ -86,7 +86,7 @@ last_modified_at: 2022-05-17 16:53:00
   print "This script is used to set BAW EnvironmentVariable"
   AdminTask.BPMSetEnvironmentVariable('[-containerAcronym BTAS -containerSnapshotAcronym TS -environmentVariableName TEST_KEY -environmentVariableValue 98744]')
   ``` 
-### Notes:
+### Notes
   - If you not specify the script file path,it will use the BAW deployment remote dir as your script path,which is defined in the IDA setting page.Also you need to put this script file in the BAW server specfied folder before you run the pipeline.
   - ${APP_ACRONYM} and ${SNAPSHOT_ACRONYM} parameter will be replaced by runtime.
 

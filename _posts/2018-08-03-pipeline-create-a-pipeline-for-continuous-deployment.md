@@ -146,7 +146,7 @@ IDA only support to deploy applications from Workflow PC server to PC server bet
   [pipeline_dashboard]: ../images/pipeline/pipeline_dashboard.PNG
   [pipeline_step]: ../images/pipeline/pipeline_stepdetail.png
   [pipeline_build_view]: ../images/pipeline/pipeline_build_view.PNG
-  [Details of the report]: ../pipeline/pipeline-report.html
+  [Details of the report]: ../pipeline/pipeline-pipeline-report.html
   [pipeline_build_log_icon]: ../images/pipeline/pipeline_build_log_icon.png
   [pipeline_build_statistic]: ../images/pipeline/pipeline_build_statistic.png
   [p2p_create-pipeline]: ../images/pipeline/p2p_create-pipeline.png

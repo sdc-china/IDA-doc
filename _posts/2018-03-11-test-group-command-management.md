@@ -185,7 +185,7 @@ In some scenarios, IDA Users want to execute a group command only when it meets 
 
   [1]: test-import-execute-sample-test-project.html
   [2]: test-unit-test-case-management.html
-  [3]: test-write-js-command.html
+  [3]: test-write-javascript-command.html
   [4]: ../administration/administration-team-configuration.html
   [test_group_command_caselist_table]: ../images/test/test_group_command_caselist_table.PNG
   [test_group_command_caselist_table2]: ../images/test/test_group_command_caselist_table2.PNG

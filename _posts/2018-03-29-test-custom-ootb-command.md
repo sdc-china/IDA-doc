@@ -47,8 +47,8 @@ if (element)
 6.  You can run your test case in replay mode to see it works or not.
 
 **Reference**  
-[Test Command](https://sdc-china.github.io/IDA-doc/references/references-test-command.html)   
-[JavaScript API](https://sdc-china.github.io/IDA-doc/references/references-js-api.html) 
+[Test Command](../references/references-test-command.html)   
+[JavaScript API](../references/references-javascript-api.html) 
 
 **Notes**
 

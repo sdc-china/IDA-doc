@@ -25,7 +25,7 @@ As a developer, you need to set up your testing environment first.
 
 ### Procedure
 
-1. Install IDA browser plugin according to [Doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#step-3-installing-ida-browser-plug-in). Click the plugin icon on your browser extension toolbar, enter the IDA web url and click **Sign In** to sign into the plugin.
+1. Install IDA browser plugin according to [Doc](../installation/installation-installation-ida-application.html#step-3-installing-ida-browser-plug-in). Click the plugin icon on your browser extension toolbar, enter the IDA web url and click **Sign In** to sign into the plugin.
 
    ![][plugin_login]{:height="30%" width="30%"}
 

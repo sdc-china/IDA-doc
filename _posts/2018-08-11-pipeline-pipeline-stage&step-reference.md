@@ -29,4 +29,4 @@ Pipeline stage is like a milestone which contains one or more pipeline steps. Ea
   | Deployment             |  **Ignore Validation Error**: indicate whether to ignore validation errors during deployment.<br>**Offline Install** : indicates it is an offline deployment. <br>**Online Install** : indicates it is an online deployment.|  The Deployment step is used to deploy the processApp snapshot to process server, either through onine or offline deployment. The step is only available in Workflow non-DEV environment(QA, STG, PROD). |
   | Script                   | **Script**: the script content to execute  |   The Script step is used to run a script in IDA server. Refer to [this] for more details about pipeline Script samples.|   
 
-[this]: https://sdc-china.github.io/IDA-doc/pipeline/pipeline-script.html
+[this]: ../pipeline/pipeline-pipeline-script.html

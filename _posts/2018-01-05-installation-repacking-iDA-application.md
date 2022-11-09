@@ -6,7 +6,7 @@ last_modified_at: 2021-12-10 21:34:00
 ---
 
 # Repacking IDA Application v21.x
-Below are steps to repackage IDA application v21.x+. For repackaging applications of early versions of IDA, see [Repacking IDA v3.x Application, Repacking IDA v2.x Application](https://sdc-china.github.io/IDA-doc/references/references-ida-repacking-early-version.html)
+Below are steps to repackage IDA application v21.x+. For repackaging applications of early versions of IDA, see [Repacking IDA v3.x Application, Repacking IDA v2.x Application](../references/references-repacking-ida-application-early-version.html)
 
 ***
 
@@ -15,9 +15,9 @@ Below are steps to repackage IDA application v21.x+. For repackaging application
 
 **Configure IDA properties** 
 
-### Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
+Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
 
-Please add JNDI configuration. See sample JNDI datasource configuration in Liberty server in [installation doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#installing-on-liberty).
+Please add JNDI configuration. See sample JNDI datasource configuration in Liberty server in [installation doc](../installation/installation-installation-ida-application.html#installing-on-liberty).
 
 **JNDI Configuration**
 

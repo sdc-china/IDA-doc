@@ -22,7 +22,7 @@ To trouble shoot all IDA issues, you may need to adjust log level. You may also 
    server dump ida_server --archive="ida_server.zip"
    ```
 
-3. Refer [Test Project Troubleshooting](https://sdc-china.github.io/IDA-doc/trouble-shooting/trouble-shooting-ida-test-project.html), [Pipeline Troubleshooting](https://sdc-china.github.io/IDA-doc/trouble-shooting/trouble-shooting-ida-pipeline.html) and [IDA plug-in troubleshooting](https://sdc-china.github.io/IDA-doc/trouble-shooting/trouble-shooting-ida-plugin.html) to collect more info for troubleshooting test project and pipeline issues.
+3. Refer [Test Project Troubleshooting](../troubleshooting/troubleshooting-test-project-troubleshooting.html), [Pipeline Troubleshooting](../troubleshooting/troubleshooting-pipeline-troubleshooting.html) and [IDA plug-in troubleshooting](../troubleshooting/troubleshooting-ida-plugin-troubleshooting.html) to collect more info for troubleshooting test project and pipeline issues.
 
 4. Collect info above into an issue description document. Send us the document and the collected logs and other files. We will review all collected info and follow up with you. We may also provide further instructions to check data in IDA database, according to your specific issue.
 

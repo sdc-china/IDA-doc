@@ -1,11 +1,11 @@
 ---
-title: "Test Case Mmanagement"
+title: "Test Case Management"
 category: test
 date: 2018-03-03 15:17:55
 last_modified_at: 2019-07-26 16:24:00
 ---
 
-# Test Case Mmanagement
+# Test Case Management
 ***
 
 ## Generate test cases
@@ -127,7 +127,7 @@ last_modified_at: 2019-07-26 16:24:00
   2. Select the case steps with group commands, then click **Copy** link in the popup menu.
     ![][group_command_copy]
 
-#### Notes
+Notes
 
 You could only paste the copied case steps with group command to test cases. If you paste the case steps to group commands, you will get a warning:
   ![][group_command_copy_warning]

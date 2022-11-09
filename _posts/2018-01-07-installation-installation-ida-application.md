@@ -7,18 +7,18 @@ last_modified_at: 2022-10-28 13:32:00
 
 # Installing IDA Application
 
-Below are steps to install IDA application v21.x+. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)](https://sdc-china.github.io/IDA-doc/references/references-ida-repacking-early-version.html)
+Below are steps to install IDA application v21.x+. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)](../references/references-repacking-ida-application-early-version.html)
 
 There are three components for IDA application we need install and configure, included
 - *IDA web application*
 - *IDA Browser Plugin*  
 - *IDA BAW toolkit*
 
-# Step 1: Installing IDA Web Application
+## Step 1: Installing IDA Web Application
 
 IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. First, let's introduce the way to install IDA on liberty.
 
-## Installing on Liberty
+### Installing on Liberty
 
 
 **1. Create a Liberty server**
@@ -237,7 +237,7 @@ We might need proxy server to visit the application,the proxy settings can be pa
 Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
-## Installing on WAS V9
+### Installing on WAS V9
 
 **Check the WAS version**
 
@@ -317,17 +317,17 @@ After finishing the installation of the fix packs, the next step is to deploy th
    ![][wasstartapp]
 
 
-## Installing on Docker platform
+### Installing on Docker platform
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
-# Step 2: Installing IDA BAW Toolkit
+## Step 2: Installing IDA BAW Toolkit
 The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit. 
 
 
 BAW Version | IDA Toolkit Version  
      ----------------------|-------------------
       19.0.0.3 |  IDA_Toolkit - 8.6.0_v1.5.twx
-      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [excuteSQL](https://sdc-china.github.io/IDA-doc/references/references-test-command.html#executesql)**.
+      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [excuteSQL](../references/references-test-command.html#executesql)**.
       above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
 
 
@@ -368,20 +368,20 @@ BAW Version | IDA Toolkit Version
 
 
 
-# Step 3: Installing IDA Browser Plug-in
+## Step 3: Installing IDA Browser Plug-in
 
-## Chrome plugin
+### Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
 - The Chrome plugin offline installation package. [IDA-22.3.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-22.3.crx)
 - For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
 
-## Firefox plugin
+### Firefox plugin
 - Download Firefox plugin [ida-22.3-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-22.3-fx.xpi)
 - Drag the "ida-22.2-fx.xpi" file into firefox window.
 - Click "Add" button.
 
-## Plug-in Configuration
+### Plug-in Configuration
 
 To make the plug-in work, you must login IDA server in the plugin login page.
 

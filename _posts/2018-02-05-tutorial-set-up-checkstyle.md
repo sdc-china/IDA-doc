@@ -40,7 +40,7 @@ Set up Checkstyle of a project:
 [checkstyle_notification]: ../images/checkstyle/checkstyle_notification.png
 [tutorial_checkstyle_report]: ../images/tutorial/tutorial_checkstyle_report.PNG
 
-[1]: ../checkstyle/checkstyle-report.html
+[1]: ../checkstyle/checkstyle-checkstyle-report.html
 [2]: ../checkstyle/checkstyle-analyze-workflow-projects-with-checkstyle.html
 [3]: tutorial-run-record-and-replay-a-test-case.html
 [4]: tutorial-create-a-pipeline-for-continuous-deployment.html

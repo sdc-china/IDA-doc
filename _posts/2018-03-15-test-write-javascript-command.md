@@ -40,7 +40,7 @@ For example: {Parameters.myKey}. You can configure a list of possible values of 
    ![][test_js_commandlist]
 
 
-7. Refer to [Javascript API Reference](../references/references-js-api.html) for OOTB
+7. Refer to [Javascript API Reference](../references/references-javascript-api.html) for OOTB
 Javascript functions   
 
 ## Javascript Command sample
