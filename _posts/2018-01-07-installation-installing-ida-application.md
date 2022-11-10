@@ -356,12 +356,12 @@ BAW Version | IDA Toolkit Version
 7. Modify toolkit access permission (Optional)
 
 	For security concern, we suggest to disable the toolkit in BAW production environment.
-	It allows user to modify the toolkit access permission by setting up the environment variable "BPMTAT_ACCESS". (true means enable the access, false means disable the access)
+	It allows user to modify the toolkit access permission by setting up the environment variable "IDA_ACCESS". (true means enable the access, false means disable the access)
 
 	By default, the toolkit can only be invoked on Development and Test environment:
 	    ![][default_toolkit_setting]
 
-	You can define the same environment variable "BPMTAT_ACCESS" in your BAW application which will override the default setting in toolkit, for example:
+	You can define the same environment variable "IDA_ACCESS" in your BAW application which will override the default setting in toolkit, for example:
 	    ![][custom_toolkit_setting]
 
 
