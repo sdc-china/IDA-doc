@@ -1,0 +1,47 @@
+---
+title: "Analyze Workflow Projects with Analyzer Statistic"
+category: analyzer
+date: 2018-06-01 14:17:55
+last_modified_at: 2022-10-28 14:50:00
+---
+
+# Analyze Workflow Projects with Analyzer Statistic
+***
+
+## Setting up the Workflow project and perform it.
+
+   1. Switch to the **Analyzer** tab, then you can use BAW server or upload a TWX file to analyze.
+     
+      **Use BAW server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
+
+      ![][analyzer_statistic_online]
+      
+      |   Parameter   | Description    |
+      | ------------- |----------------|
+      | [Server][1]   |Server environment|
+      | Process App   |Process app list on the selected server|
+      | Toolkit       |Toolkits of  selected server|
+      | Branch        |The branch of selected process app or selected toolkit|
+      | Snapshot      |The snapshot of selected branch|
+      | Tip           |The tip snapshot of the process app|
+      | Options       |check "Ignore Toolkits Analysis" to skip toolkit analysis |
+
+      **Upload a TWX file**, choose the statistic - offline tab.
+      
+      ![][analyzer_statistic_offline]
+
+      You can choose or drop a TWX file.
+
+      ![][analyzer_upload_done]
+
+   2. Click **Statistic Analyze** Button to see the statistic report.
+
+      ![][analyzer_report]
+
+[analyzer_statistic_online]: ../images/analyzer/analyzer_statistic_online.png
+[analyzer_statistic_offline]: ../images/analyzer/analyzer_statistic_offline.png
+[analyzer_upload_drop]: ../images/analyzer/analyzer_upload_drop.PNG
+[analyzer_upload_done]: ../images/analyzer/analyzer_upload_done.PNG
+[analyzer_report]: ../images/analyzer/analyzer_report.PNG
+
+[1]: ../administration/administration-bpm-configuration.html
