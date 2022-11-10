@@ -13,13 +13,13 @@ IDA enables testers to automate their test scenarios easily and provides 60+ bui
 ## Pre-requisites
 Before you start the tutorial, you need to setup below configurations with the administrative account ("idaAdmin"/"idaAdmin").
 
-[Users management][1]  
+[Users Management][1]  
 You need to setup user account for the IDA login credentials.
 
-[BAW configuration][2]   
+[BAW Configuration][2]   
 You need to setup BAW server and make the Workflow account be ready.
 
-[Selenium hub configuration][3]   
+[Selenium Hub Configuration][3]   
 You need to setup selenium node url for the remote testing.
 
 
@@ -41,7 +41,7 @@ To create a new test project:
 
      **Notes** 
      IDA caches applications and toolkits list per server, you could refresh the cache by clicking the ![][tutorial_refresh_icon] next to the 'Process App'.  
-     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BAW server](../administration/administration-baw-configuration.html#add-case-object-store-configuration-to-a-bpm-server).
+     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BAW server](../administration/administration-baw-configuration.html#add-case-object-store-configuration-to-a-baw-server).
   
   2. Click **Create** button, you will enter into project dashboard page.
 

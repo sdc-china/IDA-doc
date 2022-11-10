@@ -16,6 +16,6 @@ The tutorials have shown the following modules to you:
 * **CheckStyle**: Static code analysis for Workflow projects.
 * **Pipeline**: A build-in continuous integration pipeline for testing, checkstyle, snapshot , artifact deployment(online and offline deployment.
 
-For more you could explore our [demos](https://www.youtube.com/playlist?list=PLvnkIpbV-59aKdOujdn30R7KRZ0qLd8Cg) on YouTube.
+For more you could explore our [demos](../references/references-demos.html) on YouTube.
 
 

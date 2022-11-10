@@ -25,7 +25,7 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
 
      ![][pipeline_create_stage]{:height="40%" width="40%"}
      
-     More details of the parameters in the table, pls see **[Create a pipeline for continuous deployment][2]**.
+     More details of the parameters in the table, pls see **[Create a Pipeline for Continuous Deployment][2]**.
   
   3. Click ![][pipeline_add_stage] button shown below. 
   
