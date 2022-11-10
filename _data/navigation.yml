@@ -51,7 +51,7 @@ docs:
       - title: "Test Case Data Binding"
         url: /test/test-test-case-data-binding.html
       - title: "Test Case Data Dynamic Loading"
-        url: /test/test-test-case-data-dynamic.html
+        url: /test/test-test-case-data-dynamic-loading.html
       - title: "Group Command Management"
         url: /test/test-group-command-management.html
       - title: "Record and Replay a Test Case"
