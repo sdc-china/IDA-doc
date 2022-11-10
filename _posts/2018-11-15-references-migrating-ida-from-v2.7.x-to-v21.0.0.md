@@ -48,11 +48,13 @@ For example:
 ```
 
 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
+
 **Notes:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in DB2 database.
 
 1.5 Add ```<httpSession cookieSameSite="None"/>``` to server.xml
 
 1.6 Replace ida-web.war and Restart your server.
+
 **Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
 
 1.7 Migrate the values from your old conf/ida.properties to 'Settings' page. The below table lists all the filed need to be migrated:
@@ -131,6 +133,7 @@ Restart IDA server to make your changes effective.
 **Notes:** Please comment spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password and jasypt.encryptor.password fileds.
 
 2.2 Please refer to 1.2 to repack ida-web.war
+
 **Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
 
 2.3 Please refer to 1.3 to stop your running IDA Application
@@ -140,6 +143,7 @@ Restart IDA server to make your changes effective.
 2.5 Please copy you database driver to the folder according the library field configuration in server.xml.
 
 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
+
 **Notes:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in DB2 database.
 
 2.7 Replace ida-web.war and Restart your liberty server.
@@ -152,8 +156,8 @@ Restart IDA server to make your changes effective.
 
 
 [1]: ../installation/installation-repacking-ida-application.html
-[2]: ../installation/installation-installation-ida-application.html#installing-on-was-v9
-[3]: ../references/references-migrating-and-updating-ida-application.html
+[2]: ../installation/installation-installing-ida-application.html
+[3]: ../references/references-migrating-and-updating-ida-application-v2.x.html
 [General]: ../images/references/General.jpg
 [Test]: ../images/references/Test.jpg
 [Pipeline]: ../images/references/Pipeline.jpg
