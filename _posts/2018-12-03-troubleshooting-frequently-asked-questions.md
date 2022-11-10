@@ -11,11 +11,11 @@ last_modified_at: 2020-06-16 16:53:00
 ## FAQ about IDA
 
 1. FAQ: Where can I get information about hardware and software requirements of IDA?
-    - Answer: See [System requirement doc](../installation/installation-system-requirement.html)
+    - Answer: See [System Requirement doc](../installation/installation-system-requirement.html)
 2. FAQ: Could IDA be used to do performnance testing?
     - Answer: No at the moment.
 3. FAQ: Can Checkstyle or Testing component be integrated individually with the existing external CI/CD pipeline?
-    - Answer: YES, you could define Testing only, Checkstyle only pipeline and then leverage REST APIs for integration. More detail please refer to [Architecture doc](../references/references-architecture.html) and [API doc](../references/references-ida-rest-apis.html)
+    - Answer: YES, you could define Testing only, Checkstyle only pipeline and then leverage REST APIs for integration. More detail please refer to [Architecture doc](../references/references-architecture.html) and [IDA REST APIs doc](../references/references-ida-rest-apis.html)
 4. FAQ: Could IDA use Oracle or SQLServer as DB beside DB2 and Mysql in supported list?
     - Answer: IDA only tests on DB2 and Mysql by now.It need some consultancy hours to support other RDBMS.
 5. FAQ: Could IDA WAR be deployed on the BAW WAS server?
@@ -27,15 +27,15 @@ last_modified_at: 2020-06-16 16:53:00
 6. FAQ: Does IDA support BPM adv (BPEL) testing and static analysis?
     - Answer: NO. The testing and checkstyle of IDA only supports BPM std(BPMN).    
 6. FAQ: Does IDA support IBM BAW v18?
-    - Answer: YES.  Refer to *Software Prerequisites* in [System requirement doc](../installation/installation-system-requirement.html)     
+    - Answer: YES.  Refer to *Software Prerequisites* in [System Requirement doc](../installation/installation-system-requirement.html)     
 6. FAQ: Can we customize the rules of Checktyle?
-    - Answer: YES.  Refer to doc [Customize Checkstyle rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) and [Architecture doc](../references/references-architecture.html) about integration.   
+    - Answer: YES.  Refer to doc [Customize Checkstyle Rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) and [Architecture doc](../references/references-architecture.html) about integration.   
 1. FAQ: Does the CheckStyle feature detect issues that cannot be detected by the Process Designer code validation
     - Answer: YES. Checkstyle is BAW code static analytic.The PD validation is to do "compiling validation".   
 1. FAQ: Could IDA test process definitions in toolkits or just the ones in process applications?   
     - Answer: YES. The user could select toolkit when creating test case. See [doc](../test/test-test-case-management.html)
 1. FAQ: If the team built some AngularJS code inside the coaches, can IDA support its testing?
-    - Answer: YES. We could use [Recorder extention](../administration/administration-custom-recorder.html) to capture all UI controls if the OOTB recorder does not record it correctly.
+    - Answer: YES. We could use [Custom Recorder](../administration/administration-custom-recorder.html) to capture all UI controls if the OOTB recorder does not record it correctly.
 1. FAQ: What is the customer gets under the contract: source code of IDA or the packaged compiled code??
     - Answer: The packaged compiled code w/o source code.
 1. FAQ: Does IDA support heritage coaches which is wildly used in BPM v8.x?
@@ -55,7 +55,7 @@ last_modified_at: 2020-06-16 16:53:00
 1. FAQ: Shall I record all test cases again if I add a new field or change its position?
     - Answer: You could use [group command](../test/test-group-command-management.html) to manage test cases. In that case, you could just manualy modify the group command if adding one new field. Or record group command steps again and not need update all test cases one by one.
 1. FAQ: Does IDA support migration from versions which are not previous to the current release? For example, 2.2.1 to 2.2.4?
-    - Answer: YES. though the intermediary sql scripts must be executed for each consecutive version we skip. Refer to [step one](../references/references-migrating-and-updating-ida-application.html) in migration doc
+    - Answer: YES. though the intermediary sql scripts must be executed for each consecutive version we skip. Refer to [step one](../references/references-migrating-and-updating-ida-application-v2.x.html) in migration doc
 1. FAQ: Why can't I launch the BP3 human services on firefox grid?
     - Answer: The firefox selenium driver that we used(geckodriver-v0.23.0) cannot launch the BP3 human services when the selenium version is 3.14.0. This will be fixed in the next release.
 1. FAQ: Do we need the BAW admin to execute WAS commands permanently or we can use another user with similar/less permissions in configuration?
@@ -91,7 +91,7 @@ last_modified_at: 2020-06-16 16:53:00
 
 1. FAQ: I got the wrong character encoding in CSV file, what should I do?
 
-	- Answer: See [Test Case binding data][1]
+	- Answer: See [Test Case Data Binding][1]
 
 1. When you create a new pipeline.  Why do I have to tie it to a snapshot?  If I create a new snapshot do I need to then update all my pipelines to have that new snapshot referenced? 
     - Answer: The snapshot in the first stage is the default snapshot that will be used to pull all process app information and run the pipeline steps.
