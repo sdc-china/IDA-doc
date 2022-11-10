@@ -99,9 +99,9 @@ docs:
         url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-statistic.html
       - title: "Analyze Workflow Projects with Analyzer Toolkit References"
         url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-toolkit-references.html
-      - title: "Statistic Report"
+      - title: "Analyzer - Statistic Report"
         url: /analyzer/analyzer-statistic-report.html
-      - title: "Toolkit References Report"
+      - title: "Analyzer - Toolkit References Report"
         url: /analyzer/analyzer-toolkit-references-report.html
   - title: Search
     children:
