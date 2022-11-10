@@ -7,7 +7,7 @@ last_modified_at: 2022-10-28 13:32:00
 
 # Installing IDA Application
 
-Below are steps to install IDA application v21.x+. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)](../references/references-repacking-ida-application-early-version.html)
+Below are steps to install IDA application v21.x+. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)](../references/references-installing-ida-application-early-version.html)
 
 There are three components for IDA application we need install and configure, included
 - *IDA web application*

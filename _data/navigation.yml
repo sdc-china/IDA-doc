@@ -21,11 +21,11 @@ docs:
       - title: "Repacking IDA Application"
         url: /installation/installation-repacking-ida-application.html
       - title: "Installing IDA Application"
-        url: /installation/installation-installation-ida-application.html
+        url: /installation/installation-installing-ida-application.html
       - title: "Post Installation Setup"
         url: /installation/installation-post-installation-setup.html
       - title: "Migrating IDA Application"
-        url: /installation/installation-migrate-ida-application.html
+        url: /installation/installation-migrating-ida-application.html
 
   - title: Tutorial
     children:
@@ -164,7 +164,7 @@ docs:
       - title: "Installing IDA Application(v3.x, v2.x)"
         url: /references/references-installing-ida-application-early-version.html
       - title: "Migrating and Updating IDA Application v2.x"
-        url: /references/references-migrating-and-updating-ida-application.html
+        url: /references/references-migrating-and-updating-ida-application-v2.x.html
       - title: "Migrating IDA from v2.7.x to v21.0.0"
         url: /references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html
       - title: "Samples"
