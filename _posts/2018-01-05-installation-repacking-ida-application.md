@@ -17,7 +17,7 @@ Below are steps to repackage IDA application v21.x+. For repackaging application
 
 Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
 
-Please add JNDI configuration. See sample JNDI datasource configuration in Liberty server in [installation doc](../installation/installation-installation-ida-application.html#installing-on-liberty).
+Please add JNDI configuration. See sample JNDI datasource configuration in Liberty server in [installation doc](../installation/installation-installing-ida-application.html#installing-on-liberty).
 
 **JNDI Configuration**
 
