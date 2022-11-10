@@ -60,11 +60,11 @@ last_modified_at: 2019-07-26 16:32:00
 
   1. Preparation
   
-     - Prepare group commands that you want to add into test case. Refer to **Create a group command** in **[Reusable group command management][1]**. Here is the group command that is ready to be used as example.
+     - Prepare group commands that you want to add into test case. Refer to **Create a group command** in **[Group Command Management][1]**. Here is the group command that is ready to be used as example.
           
           ![][test_record_and_replay_example_group_command]
           
-     - Add group command to test case. Refer to **Reuse a group command** in **[Reusable group command management][1]**.
+     - Add group command to test case. Refer to **Use a group command** in **[Group Command Management][1]**.
     
      - Add **debug** command following the group command. In case you would like to record after the group command. Take case2 of **Standard HR Open New Position** as an example. After finishing preparation, the case step list will be like that shown in the following screenshot.
 
@@ -93,4 +93,4 @@ last_modified_at: 2019-07-26 16:32:00
 [test_record_page]: ../images/test/test_record_page.PNG
 [test_record_and_record_group_command]: ../images/test/test_record_and_record_group_command.PNG
 [test_record_and_replay_example_group_command]: ../images/test/test_record_and_replay_example_group_command.PNG
-[1]: test-record-and-replay-a-test-case.html
+[1]: test-group-command-management.html

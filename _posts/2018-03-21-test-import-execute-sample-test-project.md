@@ -20,7 +20,7 @@ last_modified_at: 2019-07-29 15:22:00
        | ------------- |----------------|
        | [Server][1]   |Server environment|
        | Process App   |Process app list of the selected server, default value is "Hiring Sample"|
-       | [Selenium Hub][2]  |Support chrome, firefox selenium node|
+       | [Default Browser][2]  |Support chrome, firefox selenium node|
 
    3. Click **Import** button.
 
@@ -49,6 +49,6 @@ last_modified_at: 2019-07-29 15:22:00
 [test_import_run]: ../images/test/test_import_run.png
 [test_import_left_side_bar]: ../images/test/test_import_left_side_bar.PNG
 [test_hiring_sample_project]: ../images/test/test_hiring_sample_project.PNG
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
 [3]: test-case-report.html

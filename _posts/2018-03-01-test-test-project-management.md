@@ -44,7 +44,7 @@ last_modified_at: 2019-07-26 16:23:00
      **Notes:**     
      
      Remember to select the process app or toolkit, which can't be both selected.
-     If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user.[Refer to][3]
+     If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user. Refer to [Add user to a BAW server][3].
         
   3. Click **Create** button, you will enter into project dashboard page.
 
@@ -77,5 +77,5 @@ last_modified_at: 2019-07-26 16:23:00
 [tutorial_project_info]: ../images/tutorial/tutorial_project_info.PNG
 [1]: ../administration/administration-bpm-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
-[3]: ../administration/administration-baw-configuration.html#add-user-to-a-bpm-server
+[3]: ../administration/administration-baw-configuration.html#add-user-to-a-baw-server
 [tutorial_createproject_advance]: ../images/tutorial/tuorial_project_create_advance.PNG 
