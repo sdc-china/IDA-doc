@@ -17,7 +17,7 @@ Please refer to [Create a test project and generate test cases][1] to create a t
 
 
 ## 2. Create a pipeline, we will take sanpshot for the toolkit before testing it
-Please refer to [pipeline-create-a-pipeline-for-continuous-deployment][2] to create a pipeline. Here we have created pipeline named "_Create Toolkit Snapshot Pipeline".
+Please refer to [Create a Pipeline for Continuous Deployment][2] to create a pipeline. Here we have created pipeline named "_Create Toolkit Snapshot Pipeline".
 
   1. Below is the pipeline overview.
 

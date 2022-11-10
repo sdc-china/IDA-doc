@@ -13,7 +13,7 @@ last_modified_at: 2022-08-25 15:51:00
 1. Click **Create Pipeline** button in pipeline page.
 
    ![][pipeline_create]
-   In the **Build Triggers** section, you can configure how to automatically trigger the pipeline build. Select ***Build Periodically*** to configure a timer to trigger the pipeline build. Select ***Trigger By New Snapshot***, then a background job will periodically check new snapshots on PC server of the first stage (see steps below). If a new snapshot is created on PC, a new pipeline build will start. The time interval for the background job to query for new snapshots can be set [in Settings tab](../administration/administration-settings-configuration.html#set-interval-for-trigger-by-new-snapshot.html#set-interval-for-trigger-by-new-snapshot).
+   In the **Build Triggers** section, you can configure how to automatically trigger the pipeline build. Select ***Build Periodically*** to configure a timer to trigger the pipeline build. Select ***Trigger By New Snapshot***, then a background job will periodically check new snapshots on PC server of the first stage (see steps below). If a new snapshot is created on PC, a new pipeline build will start. The time interval for the background job to query for new snapshots can be set [in Settings tab](../administration/administration-settings-configuration.html#pipeline-configuration).
 
  2. Click ![][pipeline_add_stage] icon to add a new stage.
 
