@@ -15,7 +15,7 @@ last_modified_at: 2021-08-23 16:21:00
 
   3. Fill out the form below. Then click **Create** button.
 
-     ![][administrator_add_team]
+     ![][administrator_add_team]{:width="40%"}
 
      |   Field                | Description |
      |------------------------|-------------|                                          
@@ -28,13 +28,13 @@ last_modified_at: 2021-08-23 16:21:00
 
      If checkboxes *Access All BAW Server* and *Access All Selenium Server* are checked, then the team is an administration team. Its users can access all BAW servers, process apps and selenium grids, which does not have to assign. *Process App Assignment* and *Selenium Grid Assignment* buttons are not available.
 
-     ![][administration_super_team]
+     ![][administration_super_team]{:width="73%"}
 
 ## Edit a team
 
   1. Click **Edit** icon on the right of the team that you want to edit.
 
-     ![][administrator_edit_team]
+     ![][administrator_edit_team]{:width="73%"}
 
   2. Change configurations of the team. Then click **Save**.
 
@@ -46,17 +46,17 @@ last_modified_at: 2021-08-23 16:21:00
 
   1. Click **User Assignment** icon on the right of the team that you want to assign or remove users.
 
-     ![][administrator_assign_user]
+     ![][administrator_assign_user]{:width="73%"}
 
   2. The left table of modal lists the users who do not belong to team, while the right do. And you can select users in the left table and click ![][administrator_assign_button] to assign users to the team. Similarly, you can select uses in the right table and click ![][administrator_remove_button] to remove users from the team.
 
-     ![][administrator_assign]
+     ![][administrator_assign]{:width="63%"}
 
 ## Assign process apps to a team
 
   1. Click **Process App Assignment** icon on the right of the team that you want to assign or remove process apps.
 
-     ![][administrator_assign_processapps]
+     ![][administrator_assign_processapps]{:width="73%"}
 
   2. Select server and the left table of modal lists the process apps which belong to the server but do not belong to the team.
 
@@ -64,7 +64,7 @@ last_modified_at: 2021-08-23 16:21:00
 
   4. After finishing step 3, the assigned process apps will appear below the selected server.
 
-     ![][administrator_assign_process_apps]
+     ![][administrator_assign_process_apps]{:width="63%"}
 
 ## Remove process apps from a team
 
@@ -78,11 +78,11 @@ last_modified_at: 2021-08-23 16:21:00
 
   1. Click **Selenium Grid Assignment** icon on the right of the team that you want to assign or remove selenium grids.
 
-     ![][administrator_assign_selenium_grid]
+     ![][administrator_assign_selenium_grid]{:width="73%"}
 
   2. The left table of modal lists the selenium girds which do not belong to team, while the right do. And you can select selenium girds in the left table and click ![][administrator_assign_button] to assign users to the team. Similarly, you can select slelenium grids in the right table and click ![][administrator_remove_button] to remove users from the team.
 
-     ![][administrator_assign_seleniumgrds]
+     ![][administrator_assign_seleniumgrds]{:width="63%"}
 
 
 
