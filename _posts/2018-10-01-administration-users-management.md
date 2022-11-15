@@ -14,7 +14,7 @@ last_modified_at: 2019-07-29 16:18:00
   2. Click ![][add_icon] icon which is on the right of **Users Management** to add new users.
   3. Fill out the form below. Then click **Create** button.
 
-     ![][administrator_add]{:width="40%"}
+     ![][administrator_add]{:width="60%"}
 
      |   Field       | Description               |
      | --------------|---------------------------|
@@ -31,12 +31,12 @@ last_modified_at: 2019-07-29 16:18:00
 
   4. Click **Reset password** button can reset password of one user. The default password is **123456**.
 
-     ![][administrator_reset_password]{:width="73%"} 
+     ![][administrator_reset_password]{:width="80%"} 
 
 ## Edit a user
   1. Click **Edit** icon on the right of the user that you want to edit.
 
-     ![][administrator_edit_user]{:width="73%"}
+     ![][administrator_edit_user]{:width="80%"}
 
     2. Change roles of the user. Then click **Save**.
 
@@ -44,28 +44,28 @@ last_modified_at: 2019-07-29 16:18:00
 
    Select users in the **Users Management** table, then click **Activate** button to activate the selected inactive users. And click **Deactivate** button to deactivate the selected active users.
 
-   	![][administrator_active_user]{:width="73%"}
+   	![][administrator_active_user]{:width="80%"}
 
 ## User profile
 
-  1. On the top right corner, click the  **Profile** icon.
+  1. On the top right corner, click the **Profile** button.
 
-     ![][administrator_profile]{:width="90%"}
+     ![][administrator_profile]{:width="100%"}
 
   2. Click **Profile** button to get basic information of your account.
 
-     ![][administrator_profile_page]{:width="73%"}
+     ![][administrator_profile_page]{:width="80%"}
 
-  3. Click **API Access** button to generate your token
+  3. Click **API Access** button to generate your token.
 
-     ![][administrator_api_access]{:width="73%"}
+     ![][administrator_api_access]{:width="80%"}
 
   4. Click **Team** button to see which teams this user belongs to, you can also see which process apps and selenium grids each team can access.
   
-     ![][administration_user_team]{:width="73%"}
+     ![][administration_user_team]{:width="80%"}
   5. Click **Password** button to change your password.
 
-     ![][administrator_password]{:width="73%"}
+     ![][administrator_password]{:width="80%"}
 
 # LDAP Users Management 
 
@@ -77,7 +77,7 @@ last_modified_at: 2019-07-29 16:18:00
 
   3. A user with admin role could edit other user role from edit user modal.
 
-     ![][edit_user_modal]{:width="40%"}
+     ![][edit_user_modal]{:width="60%"}
 
   4. All ldap users could not update password from IDA.
 
