@@ -16,7 +16,7 @@ last_modified_at: 2022-09-28 16:39:00
   3. Fill out the form below to add **Standalone** selenium grid for IDA. Then click **Create** button.
 
 
-     ![][administrator_hub]{:height="60%" width="60%"} 
+     ![][administrator_hub]{:width="60%"} 
 
      |   Field                | Description                                                         |
      | -------------------    |---------------------------                                          |
@@ -27,7 +27,7 @@ last_modified_at: 2022-09-28 16:39:00
 
   4. Fill out the form below to create **Containerized** selenium grid for IDA. Then click **Create** button.
 
-     ![][administrator_hub_containerized]
+     ![][administrator_hub_containerized]{:width="60%"}
 
      |   Field                | Description                                                         |
      | -------------------    |---------------------------                                          |
@@ -78,7 +78,7 @@ arguments:
 ## Edit selenium hub
   1. Click **Edit** icon on the right of the Selenium Grid Configuration that you want to edit.
 
-     ![][administrator_edit_selenium_grid]
+     ![][administrator_edit_selenium_grid]{:width="80%"}
 
   2. Change configurations of the selenium grid. Then click **Save**.
 
@@ -89,7 +89,7 @@ arguments:
   Click **Test Connection** icon on the right of the Selenium Grid Configuration that you want to test.If connection is wrong,it will
  popup warning info.  
 
-   ![][administrator_selenium_grid_test]
+   ![][administrator_selenium_grid_test]{:width="80%"}
 
 
 [administrator_hub]: ../images/administrator/administrator_hub.png
@@ -98,4 +98,4 @@ arguments:
 [configure Kubernates Setting]: ../administration/administration-settings-configuration.html#set-k8s-configuration
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_edit_selenium_grid]: ../images/administrator/administrator_edit_selenium_grid.png
-[administrator_selenium_grid_test]: ../images/administrator/administrator_test_selenium_grid.png
+[administrator_selenium_grid_test]: ../images/administrator/administrator_selenium_grid_test.png

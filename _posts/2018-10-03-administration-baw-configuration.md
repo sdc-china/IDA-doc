@@ -15,11 +15,11 @@ last_modified_at: 2022-10-28 16:18:00
 
   3. Fill out the form below. Then click **Create** button. Optional fields are hidden inside **Advance** section. Click **Advance** to show them.
 
-     ![][administrator_bpmserver]  
+     ![][administrator_bpmserver]{:width="60%"} 
 
-     ![][administrator_bpmserver_adv]  
+     ![][administrator_bpmserver_adv]{:width="60%"}
 
-      |   Field                | Description                                                                                                                                                                                                                                                                                                                                                                       |
+     |   Field                | Description                                                                                                                                                                                                                                                                                                                                                                       |
       |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|                                          
       | Server Name            | The display name of this BAW server.                                                                                                                                                                                                                                                                                                                                              |  
       | Type                   | Options: DEV, QA, STG, PRO. If the BAW server is Process Center, please select DEV, if your server is Process Server, you should choose QA, STG or PRO, it depends on your actual environment.                                                                                                                                                                                    |
@@ -43,12 +43,12 @@ last_modified_at: 2022-10-28 16:18:00
 If you need to add bpmoc server,you don't need to fill everything only add BAW server url,server type,hostname and rest username(function id), password, auth command and method.    
 If you login get 401 unauthorized error,please check your function id belong to tw_admins (administrative access) and tw_authors (non-administrative access) groups.
 
-   ![][administrator_bpmoc]
+   ![][administrator_bpmoc]{:width="60%"}
 
 ## Edit BAW server
   1. Click **Edit** icon on the right of the BAW server that you want to edit.
 
-     ![][administrator_edit_bpm_server]
+     ![][administrator_edit_bpm_server]{:width="80%"}
 
   2. Change configurations of the BAW server. Then click **Save**.
 
@@ -59,16 +59,16 @@ If you login get 401 unauthorized error,please check your function id belong to 
 ## Test BAW server
   Select  **Test Connection** icon on the right of the BAW server that you want to test.If test connection is failed,it will popup warning message.   
 
-  ![][administrator_test_bpm_server]
+  ![][administrator_test_bpm_server]{:width="80%"}
 
 ## Add user to a BAW server
   1. Click **Manage BAW User** icon on the right. Then you can see then BAW user list of the server.
 
-     ![][administrator_edit_bpm_user]
+     ![][administrator_edit_bpm_user]{:width="80%"}
 
   2. Click ![][add_icon] icon which is on the right of **BAW User Configuration**. Then fill out the form below to add a new user for the server.
 
-     ![][administrator_bpmuser]           
+     ![][administrator_bpmuser]{:width="40%"}      
 
 	 |   Field                | Description                                                             |
      | ---------------------- |-------------------------------------------------------------------------| 
@@ -80,7 +80,7 @@ If you login get 401 unauthorized error,please check your function id belong to 
 
      After adding user, you can see the user list for this BAW server.
 
-     ![][administrator_bpmuserlist]   
+     ![][administrator_bpmuserlist]{:width="80%"}   
      
   3. If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user into ida and set it as UMS Admin user by following action:
 
@@ -88,12 +88,12 @@ If you login get 401 unauthorized error,please check your function id belong to 
 		  	
 	   b. Set it as UMS Admin user:
 		  	
-	   ![][administration_set_as_ums_admin_user]
+	   ![][administration_set_as_ums_admin_user]{:width="80%"}
 
 **Notes:**   
 Pls make sure the added user  exist in your selected BAW server.Also You need to well define the **Display name** of the BAW user.You can choose the **Assignee** display name to choose user for the test case step command.
 
-  ![][administrator_assignee]   
+  ![][administrator_assignee]{:width="60%"}
 
 What's more, you can also edit a BAW user in a similar way to editing a user.
 
@@ -101,11 +101,11 @@ What's more, you can also edit a BAW user in a similar way to editing a user.
 ## Add Case Object Store configuration to a BAW server
   1. Click **Case Object Store** icon on the right of the BAW server. Then you can see then Case Object Store configuration list of the server.
 
-     ![][administrator_edit_case_object_store]
+     ![][administrator_edit_case_object_store]{:width="80%"}
 
   2. Click ![][add_icon] icon which is on the right of **Case Object Store**. Then fill out the form below to add a Case Object Store configuration for the server.
 
-     ![][administrator_case_object_store]           
+     ![][administrator_case_object_store]{:width="60%"}         
 
 	 |   Field                | Description                                                             |
      | ---------------------- |-------------------------------------------------------------------------|                                          
@@ -118,12 +118,12 @@ What's more, you can also edit a BAW user in a similar way to editing a user.
 
      After adding Case Object Store, you can see the Case Object Store configuration list for this BAW server.
 
-     ![][administrator_case_object_store_list]    
+     ![][administrator_case_object_store_list]{:width="80%"}    
      
 **Notes:**   
 Pls make sure the added Case Object Store configurations exist in your selected BAW server. Also You need to well define the **Display name** of the Case Object Store.You can choose the **Case Object Store** display name to choose Case Object Store configuration when you create a test project.
 
-  ![][administrator_case_object_store_project] 
+  ![][administrator_case_object_store_project]{:width="60%"}
   
 What's more, you can also edit a case object store configuration in a similar way to editing a user.
 
