@@ -13,6 +13,8 @@ last_modified_at: 2021-01-29 16:25:00
 
 ![][General]{:width="80%"}
 
+![][General_Notifications]{:width="80%"}
+
 Field | Description
 --- | ---
 Trace Level | The value of trace level, in default it have five levels (TRACE, DEBUG,WARN,INFO,ERROR).
@@ -64,6 +66,8 @@ Decision Server Port | The port of decision server
 ## Pipeline configuration
 
 ![][Pipeline]{:width="80%"}
+
+![][General_Notifications]{:height="70%" width="70%"}
 
 Field | Description
 --- | ---
@@ -123,7 +127,7 @@ The settings values are saved in database so if you restart the server, the conf
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
 [General]: ../images/administrator/General.png
-[General_Notifications]: ../images/references/General_Notifications.jpg
+[General_Notifications]: ../images/administrator/General_Notifications.png
 [Test]: ../images/administrator/Test.png
 [Pipeline]: ../images/administrator/Pipeline.png
 [Checkstyle]: ../images/administrator/Checkstyle.png

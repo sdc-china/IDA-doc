@@ -282,17 +282,18 @@ Package custom Java command
 
 Upload custom Java command in IDA
 
-1. Open the page in **Administration** -> **Custom Java Command**.
+1. Open the page in **Administration** -> **Custom Command**.
 
-   ![][test_upload_java_command_1]
+   ![][test_upload_java_command_1]{:width="100%"}
 
-2. Click **Upload** button, choose the file **custom-java-command-1.0.jar** and upload it.
+2. Click **Upload Java Command** button, choose the file **custom-java-command-22.1.8-SNAPSHOT.jar** and upload it.
 
-   ![][test_upload_java_command_2]
+   ![][test_upload_java_command_2]{:width="80%"}
+   ![][test_upload_java_command_2_2]{:width="60%"}
 
 3. You could see the Java command shows in the table.
 
-   ![][test_upload_java_command_3]
+   ![][test_upload_java_command_3]{:width="80%"}
 
 
 Use custom Java command in IDA test case
@@ -316,6 +317,7 @@ Use custom Java command in IDA test case
   [selenium_grid_url]: ../installation/installation-post-installation-setup.html
   [test_upload_java_command_1]: ../images/test/test_upload_java_command_1.png
   [test_upload_java_command_2]: ../images/test/test_upload_java_command_2.png
+  [test_upload_java_command_2_2]: ../images/test/test_upload_java_command_2_2.png
   [test_upload_java_command_3]: ../images/test/test_upload_java_command_3.png
   [test_insert_java_command]: ../images/test/test_insert_java_command.png
   [test_java_command_parameter]: ../images/test/test_java_command_parameter.png

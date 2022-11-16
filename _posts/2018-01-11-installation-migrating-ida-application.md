@@ -27,7 +27,7 @@ Compared to the previous version, the new version of IDA will have some changes 
 Below steps are appplicable to MySQL database. For other types of database, steps are similar. To update DB, take the following steps:
 1. Get the previous version of IDA from the **Database Version** under the **Settings** page.
    
-   ![][ida_version]{:height="100%" width="100%"}
+   ![][ida_version]{:width="80%"}
 
 2. Determine which migration scripts need to be run. 
    
