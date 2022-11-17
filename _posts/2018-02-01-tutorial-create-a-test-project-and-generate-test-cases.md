@@ -59,7 +59,7 @@ To generate a process test case and an user interface test case:
 
  2. Choose **Process** in the **Artifact Type** field and **Standard HR Open New Position** in the **Items** field.
   
-     ![][tutorial_case_items_form]{:width="60%"}
+     ![][tutorial_case_items_form]{:width="80%"}
   
  3. Click **Generate** button.
   
@@ -67,7 +67,7 @@ To generate a process test case and an user interface test case:
   
  5. Choose **User Interface** in the **Artifact Type** field and **Create Position Request CSHS** in the **Items** field. 
   
-      ![][tutorial_case_items_form2]{:width="60%"}
+      ![][tutorial_case_items_form2]{:width="80%"}
   
  6. Click **Generate** button. You can see two test suites with related test cases are generated in the project dashboard.
 

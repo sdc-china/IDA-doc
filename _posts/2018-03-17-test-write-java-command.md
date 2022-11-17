@@ -293,7 +293,7 @@ Upload custom Java command in IDA
 
 3. You could see the Java command shows in the table.
 
-   ![][test_upload_java_command_3]{:width="80%"}
+   ![][test_upload_java_command_3]{:width="100%"}
 
 
 Use custom Java command in IDA test case

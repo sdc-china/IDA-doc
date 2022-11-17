@@ -82,7 +82,7 @@ To record a test case:
 
      When you fist record and play your test case you might see the below error.
 
-     ![][test_record_issue]{:height="60%" width="60%"}
+     ![][test_record_issue]{:width="100%"}
    
 	  Solve this issue according to [Doc](https://sdc-china.github.io/IDA-doc/installation/installation-ida-installing.html#self-signed-ssl-certificates-installation).
 
