@@ -21,13 +21,13 @@ Set up Checkstyle of a project:
 
   1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in project list page and the report will be shown in a few seconds. The analyzing of checkstyle is asynchronous that you could do other things when it is performing the checkstyle.
   
-     ![][tutorial_project_list]{:height="80%" width="80%"}
+     ![][tutorial_project_list]{:width="100%"}
       
      then IDA will redirect from **Test** to **Checkstyle** tab.
     
   2. When the analysis is over, the checkstyle report will be displayed as below. [Details of the report.][1]
   
-      ![][tutorial_checkstyle_report]{:height="80%" width="80%"}
+      ![][tutorial_checkstyle_report]{:width="80%"}
 
   3. You can also analyze any of your workflow project in the **Checkstyle** tab. [More Detailed.][2]
  

@@ -27,11 +27,11 @@ As a developer, you need to set up your testing environment first.
 
 1. Install IDA browser plugin according to [Doc](../installation/installation-installing-ida-application.html#step-3-installing-ida-browser-plug-in). Click the plugin icon on your browser extension toolbar, enter the IDA web url and click **Sign In** to sign into the plugin.
 
-   ![][plugin_login]{:height="30%" width="30%"}
+   ![][plugin_login]{:width="40%"}
 
 2. After you successfully signed into the plugin, clicking **Home** will open another browser tab of the IDA web homepage.
 
-   ![][plugin_login_success]{:height="30%" width="30%"}
+   ![][plugin_login_success]{:width="40%"}
 
 
 ## Step 2: Set up assignees for case steps
@@ -48,14 +48,14 @@ To set up assignees for case steps:
  
  3. Click **Edit** button on the right top of this page.
  
-    ![][test_case_step_table]{:height="80%" width="80%"}
+    ![][test_case_step_table]{:width="80%"}
  
  4. Move your mouse to the first row of the case steps, right click your mouse and click **Edit** button to edit this case step.
  
-    ![][test_case_step_edit_button]{:height="80%" width="80%"}
+    ![][test_case_step_edit_button]{:width="80%"}
  
  5. Select **celladmin** in **Assignee** field in order to specify other Workflow users to help you complete the business process. Click **Save** button to finish editting this case step.
-    ![][assign_bpm_user]{:height="40%" width="40%"}
+    ![][assign_bpm_user]{: width="60%"}
  
  6. Click **Exit Edit** button on the right top of this page to finish edit the test case.
  
@@ -88,19 +88,19 @@ To record a test case:
 
   4. The step 1 is executed and once it is completed, the human service was shown.
      
-     ![][test_record_page]{:height="80%" width="80%"}
+     ![][test_record_page]{:width="100%"}
   
   5. Then the recorder comes to step 2: the **Debug \{\{log\}\}** step. Due to the debug purpose, the recording is pending at this step. You can do some actions on the human service and IDA recorder will record every UI action.
    
-     ![][test_case_record_plugin]{:height="80%" width="80%"}
+     ![][test_case_record_plugin]{:width="100%"}
   
   6. In **Submit position request** human service, change **Employment type** to **Full-time**, **Department** to **Marketing**, **Location** to **Boston**. As you can see, these three web operation steps are captured in IDA Recorder as test case steps.
   
-      ![][test_case_record_plugin2]{:height="80%" width="80%"}
+      ![][test_case_record_plugin2]{:width="100%"}
   
   7. Click ![][test_record_stop] button to finish the recording. You can see the recorded case step in the list table.
   
-     ![][test_record_steps]{:height="80%" width="80%"}
+     ![][test_record_steps]{:width="100%"}
   
 ## Step 4: Replay a test case
 
@@ -138,7 +138,7 @@ To run a test case:
  
  4. Click the **Screenshots** icon link to see the captured screenshot.
   
-    ![][tutorial_case_screenshot]{:height="80%" width="80%"}
+    ![][tutorial_case_screenshot]{:height="80%" width="100%"}
 
 ## Step 6: Stop a test case
 
