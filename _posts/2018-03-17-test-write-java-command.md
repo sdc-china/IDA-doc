@@ -300,11 +300,11 @@ Use custom Java command in IDA test case
 
 1. Edit your test case, and open the add/update command dialog. You will see the Java command showing under the **Custom** category.
 
-   ![][test_insert_java_command]
+   ![][test_insert_java_command]{:width="60%"}
 
 2. The parameters defined by Java annotation are also showed on the command dialog. If you have configured the list of possible values of the parameter, you can select from the parameter dropdown list.
 
-   ![][test_java_command_parameter]
+   ![][test_java_command_parameter]{:width="60%"}
 
   [test_java_command_zip]: ../images/test/test_java_command_zip.png
   [test_import_java_command]: ../images/test/test_import_java_command.png
