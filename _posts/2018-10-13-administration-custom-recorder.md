@@ -11,7 +11,7 @@ last_modified_at: 2019-07-29 16:22:00
 ## Overview
   To support the various modern UI frameworks, we can extend the IDA recorder script. The page can be accessed by the menu **Administration -> Custom Recorder**.Usually we use this feature to provide a hot fix to customer if record feature need to be enchanced.
 
-![][administrator_default_script]{:width="80%“}
+![][administrator_default_script]{:width="80%"}
 
   Uncomment the definition of the **bta.record.RECORD_EVENTS** to enable the script.
 

@@ -68,7 +68,7 @@ If you login get 401 unauthorized error,please check your function id belong to 
 
   2. Click ![][add_icon] icon which is on the right of **BAW User Configuration**. Then fill out the form below to add a new user for the server.
 
-     ![][administrator_bpmuser]{:width="40%"}      
+     ![][administrator_bpmuser]{:width="60%"}      
 
 	 |   Field                | Description                                                             |
      | ---------------------- |-------------------------------------------------------------------------| 
@@ -93,7 +93,7 @@ If you login get 401 unauthorized error,please check your function id belong to 
 **Notes:**   
 Pls make sure the added user  exist in your selected BAW server.Also You need to well define the **Display name** of the BAW user.You can choose the **Assignee** display name to choose user for the test case step command.
 
-  ![][administrator_assignee]{:width="60%"}
+  ![][administrator_assignee]{:width="80%"}
 
 What's more, you can also edit a BAW user in a similar way to editing a user.
 
