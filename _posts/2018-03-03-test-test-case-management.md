@@ -14,7 +14,7 @@ last_modified_at: 2019-07-26 16:24:00
 
 2. Click **Artifact Type** field, you can see five kinds of artifacts: Process, User Interface, Service, Case Type and Build from Scratch. Choose **User Interface** or **Service** to generate a unit test case, choose **Process** to generate a BPD test case, choose **Case Type** to generate a case test case and choose **Build from Scratch** to generate an empty test case folder.
 
-   ![][test_unit_test_add_form]
+   ![][test_unit_test_add_form]{:width="80%"}
    
 3. Choose process items.
 
@@ -28,11 +28,11 @@ last_modified_at: 2019-07-26 16:24:00
      
 2. Fill case name and case description.
 
-    ![][test_unit_test_case_add_form]
+    ![][test_unit_test_case_add_form]{:width="60%"}
   
 3. Click **Add** button. You can see new test case shown in left-side menu bar. When your mouse hover on ![][test_unit_test_case_info_button] button, you can see the description of the test case.
 
-     ![][test_unit_test_case]
+     ![][test_unit_test_case]{:width="100%"}
 
 ## Edit test case
 
@@ -54,31 +54,19 @@ last_modified_at: 2019-07-26 16:24:00
      
   2. Edit test case name and description. 
   
-      ![][test_unit_test_case_edit_form]
+      ![][test_unit_test_case_edit_form]{:width="60%"}
       
   3. Click **Update** button.
-  
-### Import test case 
-
-1. Click **...** link on the right of suite name and popup the menu.
-
-2. Click "Import" link on the popup menu.
-
-   ![][test_case_migration_menu]
- 
-3. Click the  "Add file" button to upload the zip file then click the "Import" button to migrate test cases.
-
-   ![][test_case_migration_form]
   
 ### Add a case step
 
   1. Select the test case step position you want to insert.In the popup menu choose  **Add**  link to insert.   
   
-       ![][test_case_step_table_add]
+       ![][test_case_step_table_add]{:width="80%"}
   
   2. Choose command you want to add and add comment for command if necessary. Different commands have different parameters. [More details see API reference.][1] Fill form to add case step.
   
-     ![][test_case_step_add_form]
+     ![][test_case_step_add_form]{:width="60%"}
      
   3. Click **Add** button.
   
@@ -88,11 +76,11 @@ last_modified_at: 2019-07-26 16:24:00
    
   2. In the popup menu click the  edit link.    
   
-     ![][test_case_step_edit_button]
+     ![][test_case_step_edit_button]{:width="80%"}
   
   3. Update case step.
   
-     ![][test_case_step_edit_form]
+     ![][test_case_step_edit_form]{:width="60%"}
      
   4. Click **Edit** button.
   
@@ -102,7 +90,7 @@ last_modified_at: 2019-07-26 16:24:00
 
    In some user interface test cases, you may need to request data from server. If the response time is too long, it will cause time out exception and make the test case failed. In this case, you need to add case steps to wait loading indicate to be hidden. We provide post script for you to do this in bulk. [More Details][2]
 
-   ![][test_case_post_script_demo]
+   ![][test_case_post_script_demo]{:width="80%"}
   
 ### Adjust the order of case step.
 
@@ -110,7 +98,7 @@ last_modified_at: 2019-07-26 16:24:00
   
   2.  In the popup menu, click **MoveUP** or  **Movedown** link to adjust the order of a case step.   
      
-      ![][test_case_step_updown_button]   
+      ![][test_case_step_updown_button]{:width="80%"} 
   
   3. click **Exit Edit** button on the right of suite name.
 
@@ -119,13 +107,13 @@ last_modified_at: 2019-07-26 16:24:00
   1. Click **Edit** button on the right of suite name.
 
   2. Select the case steps to be copied,in the popup menu  click **Copy** link.
-    ![][test_case_step_copy]
+    ![][test_case_step_copy]{:width="80%"}
   
 ### Copy/Cut case steps with group commands
   
   1. Click **Edit** button on the top right of the case editor table.
   2. Select the case steps with group commands, then click **Copy** link in the popup menu.
-    ![][group_command_copy]
+    ![][group_command_copy]{:width="80%"}
 
 Notes
 
@@ -139,19 +127,19 @@ You could only paste the copied case steps with group command to test cases. If 
 
   2. Select the case steps to be cut, in the popup menu  click **Cut** link.
   
-     ![][test_case_step_cut_button]  
+     ![][test_case_step_cut_button]{:width="80%"}  
 
 ### Paste case steps
 
   1. Click **Edit** button on the right of suite name.
 
   2. Choose the test case step position you want to paste then click the **Paste** link,The copied/cut case steps will be inserted before the editing case step.      
-  ![][test_case_step_paste_button]. 
+  ![][test_case_step_paste_button]{:width="80%"} . 
 
 ### Delete a case step
 
   Select the test case steps in the test case step table.In the popup menu  click **delete** link.  
-  ![][test_case_step_delete]
+  ![][test_case_step_delete]{:width="80%"}
   
 ## Delete a test case
 
@@ -165,27 +153,27 @@ You could only paste the copied case steps with group command to test cases. If 
 
 2. Select any two versions.
 
-	![][test_case_version_table_list]
+	![][test_case_version_table_list]{:width="80%"}
 	
 3. Then the **Compare** button will be shown. Click it. You will enter the comparison page.
 
-	![][test_case_version_compare]
+	![][test_case_version_compare]{:width="80%"}
 
 4. Click full screen button at the upper right corner of comparison page, you will maximize the comparison page. 
 At the bottom left corner, update, delete and new steps are shown as legends with different backgroup and we also highligh the line of code changed on bottom left.  Just hover the mouse to the yellow highlighted case step, the tooltip will tell you the changes. 
 
-	![][test_case_version_compare_page]
-	![][test_case_version_management_maximize_page]
+	![][test_case_version_compare_page]{:width="100%"}
+	![][test_case_version_management_maximize_page]{:width="100%"}
 	
 ## Restore a specific version of test case
 
 1. Click version number to see the detail of a version.
 
-	![][test_case_version_button_inside_table]
+	![][test_case_version_button_inside_table]{:width="80%"}
 	
 2. Click **Restore** button to restore the version.
 
-	![][test_case_restore_button]
+	![][test_case_restore_button]{:width="80%"}
 	
 	**Note:**
 	
@@ -206,7 +194,7 @@ A group test case means you could run more than one test case sequentially a tim
 
   2. Click Artifact Type field,  select **Build from Scratch** and input the Suite name field.
   	
-     ![][build_from_scratch]
+     ![][build_from_scratch]{:width="80%"}
 
   3. In the left-side menu bar, click **+** button on the right of **MyGrouptestCases** test suite, then select **Create Group Test Case**.
   	
@@ -214,15 +202,16 @@ A group test case means you could run more than one test case sequentially a tim
 
   4. Input the **Group Test Case Name** and **Group Test Case Description** filed, then click save button.
     
-     ![][group_test_case_name]
+     ![][group_test_case_name]{:width="60%"}
+
 
   5. Click edit button on the top-right of the test case editor table to enable editing. 
     
-     ![][group_test_case_edit]
+     ![][group_test_case_edit]{:width="100%"}
 
   6. Right click on the test case editor table and click Add button. Select the target test cases to the group test case from the opened modal.
  
-     ![][select_group_test_case]
+     ![][select_group_test_case]{:width="60%"}
 
 
 

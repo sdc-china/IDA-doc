@@ -11,9 +11,9 @@ last_modified_at: 2021-01-29 16:25:00
 
 ## General configuration
 
-![][General]
+![][General]{:width="100%"}
 
-![][General_Notifications]{:height="70%" width="70%"}
+![][General_Notifications]{:width="100%"}
 
 Field | Description
 --- | ---
@@ -36,7 +36,7 @@ Server Status Check Interval | Time interval in seconds to check the availabilit
 
 ## Test configuration 
 
-![][Test]
+![][Test]{:width="100%"}
 
 Field | Description
 --- | ---
@@ -52,7 +52,7 @@ Data Path | IDA working directory data path
 
 ## Checkstyle configuration
 
-![][Checkstyle]
+![][Checkstyle]{:width="100%"}
 
 Field | Description
 --- | ---
@@ -63,9 +63,16 @@ Decision Server Password | Decision Server Password
 Decision Server URL | Decision server url, Replace localhost with the hostname or ip address of Rule Execution Server
 Decision Server Port | The port of decision server
 
+## Search configuration
+![][Search]{:width="100%"}
+
+Field | Description
+--- | ---
+Search Depth | Search (and comparison) depth of Coach/Coach View
+
 ## Pipeline configuration
 
-![][Pipeline]
+![][Pipeline]{:width="100%"}
 
 Field | Description
 --- | ---
@@ -78,14 +85,14 @@ Port | SMPT port
 Sender Email | Sender email
 
 
-## Set K8s Configuration
+## Set K8s configuration
 
 You can runtime update k8s configuration in IDA, after that you can use the new k8s server on Selenium Grid Configuration. Only test for Openshift 4.3.
 
   1. Click Administrator tab, then switch to Settings tab.
   2. Scroll down to K8s tab and fill out form according to below table:
 
-     ![][administrator_k8s_setting]
+     ![][administrator_k8s_setting]{:width="100%"}
     
      |   Field                | Description                                                         |
      | -------------------|---------------------------                                          |
@@ -96,7 +103,7 @@ You can runtime update k8s configuration in IDA, after that you can use the new 
 
      Here is a sample:
 
-     ![][administrator_k8s_setting_sample]
+     ![][administrator_k8s_setting_sample]{:width="100%"}
 
   3. How to create service account and get its token:
 
@@ -124,8 +131,9 @@ The settings values are saved in database so if you restart the server, the conf
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
-[General]: ../images/references/General.jpg
-[General_Notifications]: ../images/references/General_Notifications.jpg
-[Test]: ../images/references/Test.jpg
-[Pipeline]: ../images/references/Pipeline.jpg
-[Checkstyle]: ../images/references/Checkstyle.jpg
+[General]: ../images/administrator/General.png
+[General_Notifications]: ../images/administrator/General_Notifications.png
+[Test]: ../images/administrator/Test.png
+[Pipeline]: ../images/administrator/Pipeline.png
+[Checkstyle]: ../images/administrator/Checkstyle.png
+[Search]: ../images/administrator/Search.png

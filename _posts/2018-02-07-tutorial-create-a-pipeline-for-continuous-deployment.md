@@ -23,7 +23,7 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
      
   2. Click ![][pipeline_add_stage] button. Then fill in **Create Stage** form like the screenshot and **Submit**. Remember to select the first option under snapshot column as it's the latest snapshot.  
 
-     ![][pipeline_create_stage]{:height="40%" width="40%"}
+     ![][pipeline_create_stage]{:width="60%"}
      
      More details of the parameters in the table, pls see **[Create a Pipeline for Continuous Deployment][2]**.
   
@@ -33,7 +33,7 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
      
      Fill in the form like below and **Submit**.
      
-     ![][pipeline_create_test_step]{:height="40%" width="40%"}
+     ![][pipeline_create_test_step]{:width="60%"}
  
   4. Repeat the step 3 to add **Snapshot** and **Checkstyle** step and fill out the forms according to the table below. The ![][pipeline_add_stage] button clicked is the one below the stage step.
   
@@ -59,15 +59,15 @@ IDA provides a build-in continuous  integration  and deployment  pipeline to orc
 ### Procedure
  1. In the pipeline list page, click **Run** icon.  
   
-     ![][pipeline_build]{:height="90%" width="90%"}
+     ![][pipeline_build]{:width="100%"}
 
   2. When the pipeline build is over, click the pipeline build result link to see the whole report. 
      
-     ![][pipeline_build_link]{:height="90%" width="90%"}
+     ![][pipeline_build_link]{:width="100%"}
 
      The report is like this:
 
-     ![][pipeline_report]{:height="90%" width="90%"}
+     ![][pipeline_report]{:width="100%"}
 
      If you want know the details of the pipeline report, you can refer to this link. [Details of the report] .
   
