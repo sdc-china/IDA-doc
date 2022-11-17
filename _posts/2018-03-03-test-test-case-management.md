@@ -14,7 +14,7 @@ last_modified_at: 2019-07-26 16:24:00
 
 2. Click **Artifact Type** field, you can see five kinds of artifacts: Process, User Interface, Service, Case Type and Build from Scratch. Choose **User Interface** or **Service** to generate a unit test case, choose **Process** to generate a BPD test case, choose **Case Type** to generate a case test case and choose **Build from Scratch** to generate an empty test case folder.
 
-   ![][test_unit_test_add_form]{:width="60%"}
+   ![][test_unit_test_add_form]{:width="80%"}
    
 3. Choose process items.
 
@@ -57,18 +57,6 @@ last_modified_at: 2019-07-26 16:24:00
       ![][test_unit_test_case_edit_form]{:width="60%"}
       
   3. Click **Update** button.
-  
-### Import test case 
-
-1. Click **...** link on the right of suite name and popup the menu.
-
-2. Click "Import" link on the popup menu.
-
-   ![][test_case_migration_menu]
- 
-3. Click the  "Add file" button to upload the zip file then click the "Import" button to migrate test cases.
-
-   ![][test_case_migration_form]
   
 ### Add a case step
 
