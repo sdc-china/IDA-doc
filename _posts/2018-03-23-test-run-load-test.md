@@ -16,13 +16,13 @@ last_modified_at: 2021-05-28 15:22:00
 
   3. Type your gatling installation path in **Gatling Home Path**.
 
-     ![][gatling_home]
+     ![][gatling_home]{:width="80%"}
 
 ## Import a sample test project
 
   1. Click the **Sample Project** button in the project tab.
 
-      ![][test_import_form]
+      ![][test_import_form]{:width="60%"}
 
   2. Fill import form according to following table.
 
@@ -50,7 +50,7 @@ last_modified_at: 2021-05-28 15:22:00
 
   2. Click **Advance** and type the following parameter in **Engine Properties**:
 
-     ![][enable_load_test]
+     ![][enable_load_test]{:width="60%"}
 
 ## Replay a test case
 

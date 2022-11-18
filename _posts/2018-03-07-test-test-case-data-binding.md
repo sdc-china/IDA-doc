@@ -68,7 +68,7 @@ last_modified_at: 2021-08-23 16:26:00
   
   3. Bind the csv data file name from "Bind External File" selectbox.
   
-     ![][testcase_data_binding]
+     ![][testcase_data_binding]{:width="80%"}
      
      
 ## Bind data item to the case step parameter
@@ -77,15 +77,15 @@ last_modified_at: 2021-08-23 16:26:00
   
   2. Choose the csv binding variable  from the selectbox value.
   
-     ![][testcase_parameter_binding] 
+     ![][testcase_parameter_binding]{:width="60%"}
   
   3. Click save button.  
 
-## Selct rows of bind data to run test case.
+## Select rows of bind data to run test case.
 
   1. Click **Run** button on the right of case name, then you could selct the rows to run.
   
-     ![][testcase_data_binding_select_rows]
+     ![][testcase_data_binding_select_rows]{:width="90%"}
 
   **Notes:**
 
@@ -93,14 +93,14 @@ last_modified_at: 2021-08-23 16:26:00
 
 For example:  
 
-1. The "HR_Open_New_Position/case1" bind a csv file named "sample_data.csv".
-   ![][bindcsv]
+1. The "Create_Position_Request_CSHS/case1" bind a csv file named "sample_data.csv".
+   ![][bindcsv]{:width="90%"}
 
 2. If you want to run the test case with a different BAW server. The only you need to do is upload another csv file suffixed with "_\<YOUR BAW SERVER NAME\>.csv. It is very useful if you want to run the project with differents Workflow servers in a pipeline. The IDA will select the corresponding csv file with the Workflow server.
 
 3. You could find \<YOUR BAW SERVER NAME\> from "Administration -> BAW Configuration"
 
-   ![][bpm_server_name]
+   ![][bpm_server_name]{:width="90%"}
 
 
   
@@ -111,7 +111,7 @@ For example:
 [testcase_data_upload]: ../images/test/test_case_data_upload.PNG    
 [testcase_data_binding]: ../images/test/test_case_data_binding.PNG   
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
-[testcase_parameter_binding]: ../images/test/test_case_parameter_binding.PNG
+[testcase_parameter_binding]: ../images/test/testcase_parameter_binding.PNG
 [bindcsv]: ../images/test/bindcsv.png  
 [bpm_server_name]: ../images/test/bpm_server_name.png 
 [testcase_data_binding_select_rows]: ../images/test/testcase_data_binding_select_rows.png

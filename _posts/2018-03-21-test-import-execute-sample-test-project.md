@@ -12,7 +12,7 @@ last_modified_at: 2019-07-29 15:22:00
 
   1. Click the **Sample Project** button in the project tab.
 
-      ![][test_import_form]
+      ![][test_import_form]{:width="60%"}
 
   2. Fill import form according to following table.
 

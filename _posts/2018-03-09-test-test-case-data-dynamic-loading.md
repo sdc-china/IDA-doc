@@ -32,15 +32,15 @@ We can use BAW services to integrate with external applications and load dynamic
 
   1. Write a test cases with below test steps in sequence.  
   
-     ![][testcase_steps]{:height="70%" width="70%"}
+     ![][testcase_steps]{:width="80%"}
   
   2. The first test step will start service flow in toolkit and save the output data into test case context with variable name **output**. You can use JSON Path to select the output data.
   
-     ![][testcase_get_testdata]{:height="70%" width="70%"}
+     ![][testcase_get_testdata]{:width="60%"}
   
   3. The third test step launches process and uses the output data from previous step as input parameter's value.
 
-     ![][testcase_use_testdata]{:height="70%" width="70%"}   
+     ![][testcase_use_testdata]{:width="60%"}   
 
 
   4. The process will be launched with correct dynamic test data.
