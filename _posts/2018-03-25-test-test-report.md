@@ -46,7 +46,7 @@ Click **Coverage**, it will show the BPD Coverage dialog, you can view detailed 
   
    [testcase_list]: ../images/test/test_case_dashboard.png
    [testcase_step_status]: ../images/test/test_case_step_status.png
-   [test_BPD_test_case_diagram]: ../images/test/test_BPD_test_case_diagram.png
+   [test_BPD_test_case_diagram]: ../images/test/test_BPD_test_case_diagram.PNG
    [bpd_coverage]: ../images/test/bpd_coverage.png
    [dashboard_coverage]: ../images/test/dashboard_coverage.png
    [generate_test_cases_artifact_type]: ../images/test/generate_test_cases_artifact_type.png
