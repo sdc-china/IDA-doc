@@ -20,11 +20,11 @@ last_modified_at: 2020-02-26 15:19:00
 
 3.  Choose the command from OOTB command list,it will show the template code for usage.
 
-    ![][textcommand]
+    ![][textcommand]{:width="80%"}
 
 4.  Write your command logic after **TODO add your implementation below, For example** line.
 
-    ![][textcommandscript]
+    ![][textcommandscript]{:width="80%"}
     
 ``` 
 var coachView = bta.util.getCoachView(this.jsonObject);

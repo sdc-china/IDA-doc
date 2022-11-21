@@ -18,12 +18,12 @@ last_modified_at: 2021-05-06 11:48:00
 
    **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default, the value is private. You can input the {Parameters.XXX} as verbalization. The parameter is defined in this JS. XXX is the parameter key name you defined in this custom js.
 
-   ![][test_js_command_info]
+   ![][test_js_command_info]{:width="60%"}
 
 3. Define the javascript command parameter. You can refer these parameters' value through verbalization.
 For example: {Parameters.myKey}. You can configure a list of possible values of the parameter, separated by comma.
 
-   ![][test_js_command_parameter]
+   ![][test_js_command_parameter]{:width="80%"}
 
 4. Define your javascript command content.
 
@@ -32,11 +32,11 @@ For example: {Parameters.myKey}. You can configure a list of possible values of 
 
 5. Add your javascript command in your test case. If you have configured the list of possible values of the parameter, you can select from the parameter dropdown list.
 
-   ![][test_add_js_command]
+   ![][test_add_js_command]{:width="60%"}
 
 6. You can  refer js variable in the case step.
 
-   ![][test_js_casestep]
+   ![][test_js_casestep]{:width="60%"}
    ![][test_js_commandlist]
 
 

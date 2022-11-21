@@ -22,11 +22,11 @@ last_modified_at: 2019-07-26 16:28:00
   
   5. Click **Edit** button on the right of suite name.
   
-      ![][test_group_command_caselist_table]
+      ![][test_group_command_caselist_table]{:width="80%"}
   
   6. Choose at least two continuous case steps to save as group command.
   
-      ![][test_group_command_caselist_table2]
+      ![][test_group_command_caselist_table2]{:width="80%"}
   
   7. Click **Save as Group Command** button.
   
@@ -34,20 +34,20 @@ last_modified_at: 2019-07-26 16:28:00
   
      **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default the value is private.
   
-      ![][test_group_command_save_form]
+      ![][test_group_command_save_form]{:width="60%"}
   
   9. Click **Save** button.
   
       Then **Group Command** and **New Group Command** you have created will appear in the left-side menu bar, and the case steps you have chosen are folded in the new group command.  
   
-      ![][test_group_command]
+      ![][test_group_command]{:width="100%"}
   
   10. Click **Exit Edit** button.
   
   **Notes**  
   You can also add group command through the custom command menu.     
-    ![][test_group_command_add]
-    ![][test_group_command_create] 
+    ![][test_group_command_add]{:width="30%"}<br>
+    ![][test_group_command_create]{:width="60%"}
 
 ## Add group command
 
@@ -65,7 +65,7 @@ last_modified_at: 2019-07-26 16:28:00
       Assignee            | Workflow user who help you finish process
       comment             | Comment of command
   
-      ![][test_group_command_add]
+      ![][test_group_command_add]{:width="30%"}
   
   4. Click **Add** button.
   
@@ -79,11 +79,11 @@ last_modified_at: 2019-07-26 16:28:00
   
   2. Click ![][test_group_command_edit_button] button on the right of group command name.
   
-      ![][test_group_command_bar]
+      ![][test_group_command_bar]{:width="30%"}
   
   3. Edit group command name and group command description.
   
-      ![][test_group_command_edit_form]
+      ![][test_group_command_edit_form]{:width="60%"}
   
   4. Click **Update** button.
   
@@ -102,7 +102,7 @@ last_modified_at: 2019-07-26 16:28:00
      * Click **Delete** to delete it.
      * Click **Exit Edit** button.
   
-        ![][test_case_steps_edit]
+     ![][test_case_steps_edit]{:width="100%"}
   
   2. Click ![][test_group_command_delete_button] button on the right of group command name.
   
@@ -116,18 +116,19 @@ last_modified_at: 2019-07-26 16:28:00
       * Click **Add** button to add group parameter.
       * Click **Cancel** button to exit.
       
-         ![][group_parameter_add]
+         ![][group_parameter_add]{:width="60%"}
      
    2. Bind group parameter for case step parameter.
    
-       * Click ![][test_case_step_edit_button] button to edit case step.
+       * Click **Edit** button to edit case step.
+         ![][test_case_step_edit_button]{:width="100%"}
        * Choose the parameter value from the  select box.                   
        * Click **Save** button to save the parameter.
        
-          ![][group_parameter_save]
+          ![][group_parameter_save]{:width="60%"}
   3. Edit this group command parameter value in the case step.
      You can see **name** is defined in the group parameter will be acted as the parameter input for group command.
-     ![][group_parameter_input]  
+     - ![][group_parameter_input]{:width="60%"} 
           
 ## Add IF Command to a group command
 
@@ -174,11 +175,11 @@ In some scenarios, IDA Users want to execute a group command only when it meets 
 
   1\. Add the group command in a test project with a specific team scope visibility.
   
-  ![][add_group_command_in_team_project]{:height="60%" width="60%"}
+  ![][add_group_command_in_team_project]{:width="60%"}
 
   2\. In other test projects created by a team member or visible to the team member within a team, the team member can find and use the group command.
   
-  ![][use_group_command_in_team_project]{:height="60%" width="60%"}
+  ![][use_group_command_in_team_project]{:width="60%"}
 
   See also [Team Configuration][4].
 

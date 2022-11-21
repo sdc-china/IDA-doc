@@ -17,17 +17,17 @@ IDA could select the right BAW user without modifying the test case when you wan
 
 1. Go to "Administration -> BAW Configuration". Select BPM 860 DEV Server and click "Edit BAW User" to add a new BAW User as below:  
 
-    ![][bpm_user_dev]
+    ![][bpm_user_dev]{:width="60%"}
 
 2. Go to "Administration -> BAW Configuration". Select BPM 860 QA Server and click "Edit BAW User" to add a new BAW User as below:  
 
-    ![][bpm_user_qa]
+    ![][bpm_user_qa]{:width="60%"}
 
 3. Please make sure the two BAW users are with the same display name "Tester".
 
 4. Edit the case step and set the assignee:
 
-    ![][bpm_user_assignee]
+    ![][bpm_user_assignee]{:width="60%"}
 
 [bpm_user_dev]: ../images/test/bpm_user_dev.png  
 [bpm_user_qa]: ../images/test/bpm_user_qa.png  
