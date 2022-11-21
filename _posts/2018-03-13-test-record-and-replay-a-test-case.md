@@ -12,11 +12,11 @@ last_modified_at: 2019-07-26 16:32:00
 
   1. Click **Edit** button on the right of suite name.
   
-     ![][test_case_step_table]{:width="90%"}
+     ![][test_case_step_table]
   
   2. Click **Record** button on the right of suite name. You will enter record mode.
   
-     ![][test_case_step_table2]{:width="90%"}
+     ![][test_case_step_table2]
      
       ![][test_record_page]
   

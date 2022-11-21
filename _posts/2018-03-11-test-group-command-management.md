@@ -47,7 +47,7 @@ last_modified_at: 2019-07-26 16:28:00
   **Notes**  
   You can also add group command through the custom command menu.     
     ![][test_group_command_add]{:width="30%"}<br>
-    ![][test_group_command_create] 
+    ![][test_group_command_create]{:width="60%"}
 
 ## Add group command
 
@@ -102,7 +102,7 @@ last_modified_at: 2019-07-26 16:28:00
      * Click **Delete** to delete it.
      * Click **Exit Edit** button.
   
-     ![][test_case_steps_edit]{:width="90%"}
+     ![][test_case_steps_edit]{:width="100%"}
   
   2. Click ![][test_group_command_delete_button] button on the right of group command name.
   
@@ -121,7 +121,7 @@ last_modified_at: 2019-07-26 16:28:00
    2. Bind group parameter for case step parameter.
    
        * Click **Edit** button to edit case step.
-         ![][test_case_step_edit_button]{:width="90%"}
+         ![][test_case_step_edit_button]{:width="100%"}
        * Choose the parameter value from the  select box.                   
        * Click **Save** button to save the parameter.
        
