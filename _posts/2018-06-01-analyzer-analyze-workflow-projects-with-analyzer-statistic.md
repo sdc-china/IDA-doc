@@ -28,11 +28,11 @@ last_modified_at: 2022-10-28 14:50:00
 
       **Upload a TWX file**, choose the statistic - offline tab.
       
-      ![][analyzer_statistic_offline]
+      ![][analyzer_statistic_offline]{:width="40%"}
 
       You can choose or drop a TWX file.
 
-      ![][analyzer_upload_done]
+      ![][analyzer_upload_done]{:width="40%"}
 
    2. Click **Statistic Analyze** Button to see the statistic report.
 

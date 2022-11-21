@@ -50,7 +50,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
     ![][checkstyle_override_step_five_2]
 
-    ![][checkstyle_override_step_five_3]
+    ![][checkstyle_override_step_five_3]{:width="60%"}
 
 6. Redeploy the ruleset to your target server e.g. on IBM Cloud.
 
@@ -67,7 +67,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
   1. Add a new rule **check-service-name-contain-test** that will check if a Workflow service name contains test into in package **customized** in rule project **CheckstyleRulesCustomized**.
 
-     ![][checkstyle_custom_rules_step_one]
+     ![][checkstyle_custom_rules_step_one]{:width="40%"}
 
   2. Check that the asset provides the utility function **does not match the naming convension** in its **CheckstyleRulesBOM** project.
 

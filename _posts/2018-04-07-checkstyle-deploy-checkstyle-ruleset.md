@@ -24,17 +24,17 @@ If you want to execute ruleset through Decision Server, you should deploy your r
 
 		![][checkstyle_deploy_ruleset_cloud_two_1]
 	
-		![][checkstyle_deploy_ruleset_cloud_two_2]
+		![][checkstyle_deploy_ruleset_cloud_two_2]{:width="60%"}
 
 	* Deploy the Checkstyle rules to your IBM Business Rules Service on IBM Cloud. Open deploymentOperation in rule project CheckstyleRules. On the Deployment Overview tab, make sure Deploy the XOM is selected as Yes and click Proceed to RuleApp deployment.
 
 		![][checkstyle_deploy_ruleset_cloud_two_3]
 		
-		![][checkstyle_deploy_ruleset_cloud_two_4]
+		![][checkstyle_deploy_ruleset_cloud_two_4]{:width="60%"}
 		
-		![][checkstyle_deploy_ruleset_cloud_two_5]
+		![][checkstyle_deploy_ruleset_cloud_two_5]{:width="60%"}
 		
-		![][checkstyle_deploy_ruleset_cloud_two_6]
+		![][checkstyle_deploy_ruleset_cloud_two_6]{:width="60%"}
 
 	* After the deployment is completed, a report will be generated as follows. You can also check your IBM Cloud Business Rules service to verify that the ruleset is successfully deployed.
 
@@ -58,7 +58,7 @@ If you want to execute ruleset in local file system, you need to replace the rul
 
 	* There is no need to define or choose a target server when deploy your ruleset in local.
 
-    ![][checkstyle_deploy_ruleset_local_1]
+    ![][checkstyle_deploy_ruleset_local_1]{:width="60%"}
 
 	* After the successful deployment, the ruleset has been generated in the output folder of CheckstyleRules Project as the file CheckstyleRules.dsar. Replace the ruleset in IDA.war(IDA-web/WEB-INF/classes/data/CheckstyleRules.dsar) with the new one.
 

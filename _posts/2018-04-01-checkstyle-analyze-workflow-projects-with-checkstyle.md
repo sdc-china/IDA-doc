@@ -33,7 +33,8 @@ last_modified_at: 2019-07-29 15:26:00
 
       You can choose or drop a TWX file.
 
-      ![][checkstyle_checkstyleupload_drop] ![][checkstyle_checkstyleupload_done]
+      ![][checkstyle_checkstyleupload_drop]{:width="40%"}<br>
+      ![][checkstyle_checkstyleupload_done]{:width="40%"}
 
    2. Click **Analyze** Button to see the CheckStyle report.
 
