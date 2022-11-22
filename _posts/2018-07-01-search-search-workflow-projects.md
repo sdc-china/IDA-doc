@@ -35,6 +35,8 @@ last_modified_at: 2022-07-01 15:26:00
 
       ![][search_keyword]
 
+      You can configure the search depth of Coach/Coach View on [Settings][2].
+
    3. Expect it to take some time if it is the first time you search for a snapshot, as IDA needs to export and index the snapshot in data folder. After the first-time search, if you enter other keywords, it will take much less time.
 
    4. Search results are listed on page and can be filtered using Properties Fiter or Artifact Type Filter. Entries show WebPD location of the search results. 
@@ -59,4 +61,5 @@ You can clean up the exported and indexed search data folders on Clean Disk Cach
 [search_results_content]: ../images/search/search_results_content.PNG
 [search_folder_cleanup]: ../images/search/search_folder_cleanup.PNG
 
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html
+[2]: ../administration/administration-settings-configuration.html#search-configuration

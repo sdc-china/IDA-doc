@@ -34,4 +34,4 @@ last_modified_at: 2019-11-26 14:50:00
 [analyzer_toolkit_references]: ../images/analyzer/analyzer_toolkit_references.png
 [analyzer_toolkit_references_report]: ../images/analyzer/analyzer_toolkit_references_report.png
 
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html

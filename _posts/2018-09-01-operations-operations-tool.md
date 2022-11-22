@@ -109,4 +109,4 @@ In this task, you will use the Workflow operations tools to manage instances: se
 [op_clean_snapshot]: ../images/operation/operation_clean_snapshot.PNG
 [op_clean_snapshot_confirm]: ../images/operation/operation_clean_snapshot_confirm.PNG
 [op_clean_snapshot_success]: ../images/operation/operation_clean_snapshot_success.PNG
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html

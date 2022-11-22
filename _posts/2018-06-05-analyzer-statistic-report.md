@@ -21,13 +21,13 @@ last_modified_at: 2019-11-26 14:50:00
 
    ![][dependencies]
 
-## BPMN Artifacts Summary
+## Artifacts Summary
 
    The number on the right of the BPMN artifact summary indicates the number of applications applied to the left artifact. In this diagram, we can get the number of Process, Service, Business Object and Coach View, also we can get the number of each component under them.
 
    ![][bpmn_artifacts_summary]
 
-## BPMN Artifacts Statistic
+## Artifacts Statistic
 
    Analyzer counts the number of components per Process, Service, Business Object and Coach View, so that the user could have better understanding about the complexity of the process application.
    - In Process table, we can view the number of process components, input/output variables number and the JavaScript code lines for each process.
@@ -37,8 +37,8 @@ last_modified_at: 2019-11-26 14:50:00
 
    ![][bpmn_artifacts_statistic]
 
-## BAW v19 Migration Relevant Statistic
-   As we know, there are some features/artifacts are dprecated on BAW v19. In this section, we list all the impacted artifacts during BAW migration.
+## BAW Migration Relevant Statistic
+   As we know, there are some features/artifacts are dprecated since BAW v19 or BAW on Container. In this section, we list all the impacted artifacts during BAW migration and migration suggestions. For example:
    - In Adhoc Start Event table, we can view all Adhoc start events which will be deprecated when we convert BPD to Process during migration.
    - In Deprecated Assignment table, we can view all depreciated assignments like "Last user in Lane", "list of User", "Routing Policy" and "Custom" which will be  deprecated when we convert BPD to Process during migration.
    - In Web Service table, we can view all inline webservice which will be deprecated when we convert heritage service to service flow during migration.
@@ -48,6 +48,19 @@ last_modified_at: 2019-11-26 14:50:00
 
    ![][migrate]
 
+   ![][migrate_container]
+
+## Unused Artifacts Statistic
+   
+   Analyzer lists all the unused artifacts in the application.
+
+   ![][unused_artifacts]
+
+## Validation Statistic
+   
+   Analyzer lists all the validation errors or warnings of the application.
+
+   ![][validation]
 
 
 [basic_info]: ../images/analyzer/basic_info.PNG
@@ -55,3 +68,6 @@ last_modified_at: 2019-11-26 14:50:00
 [bpmn_artifacts_summary]: ../images/analyzer/bpmn_artifacts_summary.PNG
 [bpmn_artifacts_statistic]: ../images/analyzer/bpmn_artifacts_statistic.PNG
 [migrate]: ../images/analyzer/migrate.PNG
+[migrate_container]: ../images/analyzer/migrate_container.PNG
+[unused_artifacts]: ../images/analyzer/unused_artifacts.PNG
+[validation]: ../images/analyzer/validation.PNG

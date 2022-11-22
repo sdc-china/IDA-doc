@@ -42,7 +42,11 @@ last_modified_at: 2019-07-29 15:29:00
 
    You can see more detailed information about checkstyle warnings. It supports to filter through different dimensions like level and category. You can type in **Symptom**, **Best Practice**, **Reference** and **Artifact** to make a more accurate search. **Symptom** provides the description of warnings, **Best Practice** offers suggestions for improvement, **Reference** gives a reference source for suggestions, and **Artifact** indicates the location of artifact that causes warnings so that you can fix them easily.
 
+   If you fixed one warning, you can hover the mouse over the row and click the **Refresh** icon to re-check the warning.
+
    ![][checkstyle_checkresultDetailed]
+   
+   ![][checkstyle_checkresultDetailed_refresh]
 
 [checkstyle_healthScore]: ../images/checkstyle/checkstyle_healthScore.PNG
 [checkstyle_basicInfo]: ../images/checkstyle/checkstyle_basicInfo.PNG
@@ -50,3 +54,4 @@ last_modified_at: 2019-07-29 15:29:00
 [checkstyle_statistic]: ../images/checkstyle/checkstyle_statistic.PNG
 [checkstyle_category]: ../images/checkstyle/checkstyle_category.PNG
 [checkstyle_checkresultDetailed]: ../images/checkstyle/checkstyle_checkresultDetailed.PNG
+[checkstyle_checkresultDetailed_refresh]: ../images/checkstyle/checkstyle_checkresultDetailed_refresh.PNG

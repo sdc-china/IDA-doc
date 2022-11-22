@@ -55,4 +55,4 @@ After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] wil
 [snapshot-comparison-compare-pre-report-icon]: ../images/snapshot-comparison/snapshot-comparison-compare-pre-report-icon.png
 [snapshot-comparison-compare-button]: ../images/snapshot-comparison/snapshot-comparison-compare-button.png
 [snapshot-comparison-compare-report-button]: ../images/snapshot-comparison/snapshot-comparison-compare-report-button.png
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html
