@@ -117,7 +117,7 @@ last_modified_at: 2021-05-28 15:22:00
 [enable_load_test]: ../images/test/enable_load_test.png
 [test_import_left_side_bar]: ../images/test/test_import_left_side_bar.PNG
 [test_hiring_sample_project]: ../images/test/test_hiring_sample_project.PNG
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
 [3]: test-case-report.html
 [test_record_stop]: ../images/test/test_record_stop.PNG

@@ -14,7 +14,7 @@ last_modified_at: 2019-07-29 15:26:00
 
       **Use BAW server**, fill the below field values for the checkstyle form.
 
-      ![][checkstyle_checkstyleform]{:height="80%" width="80%"}
+      ![][checkstyle_checkstyleform]{:width="100%"}
       
       |   Parameter   | Description    |
       | ------------- |----------------|
@@ -29,7 +29,7 @@ last_modified_at: 2019-07-29 15:26:00
 
       **Upload a TWX file**, choose the TWX tab.
 
-      ![][checkstyle_checkstyleupload]{:height="80%" width="80%"}
+      ![][checkstyle_checkstyleupload]{:width="100%"}
 
       You can choose or drop a TWX file.
 
@@ -38,7 +38,7 @@ last_modified_at: 2019-07-29 15:26:00
 
    2. Click **Analyze** Button to see the CheckStyle report.
 
-      ![][tutorial_checkstyle_report]{:height="80%" width="80%"}
+      ![][tutorial_checkstyle_report]{:width="100%"}
 
 
 [checkstyle_checkstyleform]: ../images/checkstyle/checkstyle_checkstyleform.PNG
@@ -47,4 +47,4 @@ last_modified_at: 2019-07-29 15:26:00
 [checkstyle_checkstyleupload_done]: ../images/checkstyle/checkstyle_checkstyleupload_done.PNG
 [tutorial_checkstyle_report]: ../images/tutorial/tutorial_checkstyle_report.PNG
 
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html

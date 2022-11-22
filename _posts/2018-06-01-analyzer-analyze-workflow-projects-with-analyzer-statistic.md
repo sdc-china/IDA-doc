@@ -44,4 +44,4 @@ last_modified_at: 2022-10-28 14:50:00
 [analyzer_upload_done]: ../images/analyzer/analyzer_upload_done.PNG
 [analyzer_report]: ../images/analyzer/analyzer_report.PNG
 
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html

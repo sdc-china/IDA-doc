@@ -68,7 +68,7 @@ The configuration/position/event changes of a coach control are listed in conten
 
 - The poistioning of control Position CV placed in Section 2 of control Position Request is updated to 100:
  
-  ![][snapshot-comparison-coach-control-positioning-changes-webpd]{:width="80%"}
+  ![][snapshot-comparison-coach-control-positioning-changes-webpd]
 
   ![][snapshot-comparison-coach-control-positioning-changes]
 
@@ -92,13 +92,13 @@ The script changes are listed in separate sub-panels, for example change of line
   
 And the addition of pre-excution script of the service task item Service is listed as follows:
 
-  ![][snapshot-comparison-sf-prescript-changes-webpd]{:width="80%"}
+  ![][snapshot-comparison-sf-prescript-changes-webpd]
  
   ![][snapshot-comparison-sf-prescript-changes]
 
 Sequence flow change is also listed in a separate sub-panel. For example, the name of sequence flow is changed and listed as:
 
-  ![][snapshot-comparison-sf-sequence-changes-webpd]{:width="80%"}
+  ![][snapshot-comparison-sf-sequence-changes-webpd]
  
   ![][snapshot-comparison-sf-sequence-changes]
 

@@ -17,9 +17,13 @@ last_modified_at: 2019-11-26 14:50:00
   
 ## References 
 
-   This part shows the references of current process application, the item above the arrow is the name of current process application/toolkit, the items in the direction indicated by the arrow are the rependencies of current process application, you can see the toolkit version after the toolkit name. 
+   This part shows the references of current process application, the item above the arrow is the name of current process application/toolkit, the items in the direction indicated by the arrow are the rependencies of current process application, you can see the toolkit version after the toolkit name. The items can be clicked to filter the References table.
 
    ![][analyzer_toolkit_references_report_references]
+
+   Unused toolkits are in grey color and can not be clicked.
+
+   ![][analyzer_toolkit_references_report_references_unused]
 
 ## References Table
 
@@ -60,6 +64,7 @@ last_modified_at: 2019-11-26 14:50:00
 
 [analyzer_toolkit_references_report_title]: ../images/analyzer/analyzer_toolkit_references_report_title.png
 [analyzer_toolkit_references_report_references]: ../images/analyzer/analyzer_toolkit_references_report_references.png
+[analyzer_toolkit_references_report_references_unused]: ../images/analyzer/analyzer_toolkit_references_report_references_unused.png
 [analyzer_toolkit_references_report_references_table]: ../images/analyzer/analyzer_toolkit_references_report_references_table.png
 [analyzer_toolkit_references_report_referenced_by]: ../images/analyzer/analyzer_toolkit_references_report_referenced_by.png
 [analyzer_toolkit_references_report_referenced_by_report]: ../images/analyzer/analyzer_toolkit_references_report_referenced_by_report.png
