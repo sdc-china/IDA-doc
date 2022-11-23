@@ -120,10 +120,10 @@ docs:
         url: /pipeline/pipeline-pipeline-script.html
       - title: "Pipeline Report"
         url: /pipeline/pipeline-pipeline-report.html
-      - title: "Pipeline Stage & Step Reference"
-        url: /pipeline/pipeline-pipeline-stage&step-reference.html
       - title: "Toolkit Deployment"
         url: /pipeline/pipeline-toolkit-deployment.html
+      - title: "Pipeline Stage & Step Reference"
+        url: /pipeline/pipeline-pipeline-stage&step-reference.html
 
   - title: Operations Tool
     children:
