@@ -15,9 +15,9 @@ When you run pipeline, you can review pipeline step reports and logs of each pip
 
 2. For a failed Checkstyle step, open and view the detailed checkstyle report. Check if the health score is above the threshold set in pipeline step.
 
-   ![][pipeline_checkstyle_report]
+   ![][pipeline_checkstyle_report]{:width="80%"}
 
-   ![][pipeline_checkstyle_step]
+   ![][pipeline_checkstyle_step]{:width="80%"}
 
 3. For a failed Test step, open its report and click to view the Trace messages and screenshots(if available) on the failed step of failed test cases.
 
