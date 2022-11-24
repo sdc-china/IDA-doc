@@ -17,7 +17,7 @@ last_modified_at: 2022-08-25 15:51:00
 
  2. Click ![][pipeline_add_stage] icon to add a new stage.
 
-    ![][pipeline_first_stage]
+    ![][pipeline_first_stage]{:width="60%"}
 
 	The fields to create a stage is explained as below.
 
@@ -33,7 +33,7 @@ last_modified_at: 2022-08-25 15:51:00
 
  3. Click ![][pipeline_add_stage] icon below the stage step to add a new step in the stage.
 
-    ![][pipeline_create_step]
+    ![][pipeline_create_step]{:width="60%"}
 
     The fields to create a step is explained as below.
 
@@ -50,7 +50,7 @@ last_modified_at: 2022-08-25 15:51:00
 
  4. Click ![][pipeline_add_stage] icon to add more stages, here's a typical stage's look.
 
-    ![][pipeline_stages]
+    ![][pipeline_stages]{:width="80%"}
 
     For the first stage, it's not allowed to change the sequence. However, you can adjust other stages' sequence by dragging and dropping.
 
@@ -107,23 +107,23 @@ IDA only support to deploy applications from Workflow PC server to PC server bet
 
 1. Click **Create Pipeline** button in pipeline page.
 
-   ![][p2p_create-pipeline]
+   ![][p2p_create_pipeline]{:width="60%"}
    
  2. Click ![][pipeline_add_stage] icon to add 'Stage1' and select "Deployment" type.
 
-    ![][p2p_stage_1]
+    ![][p2p_stage_1]{:width="60%"}
 
  3. Click ![][pipeline_add_stage] icon below the stage step to add 'TakeSnapshot' step in the stage and select "Snapshot" type.
 
-    ![][p2p_takeSnapshot]
+    ![][p2p_takeSnapshot]{:width="60%"}
 
  4. Click ![][pipeline_add_stage] icon to add 'Stage2' and select "Deployment" type, you could select another Workflow PC server with same version of 'Stage1'.
 
-    ![][p2p_stage2]
+    ![][p2p_stage2]{:width="60%"}
 
  5. Click ![][pipeline_add_stage] icon below the stage step to add 'Deploy' step in the stage and select 'Deployment' type.
 
-    ![][p2p_deployment]
+    ![][p2p_deployment]{:width="60%"}
 
  6. Click "Save" button and then you could use the pipeline to make a deployment from PC server to PC server.
 
@@ -149,7 +149,7 @@ IDA only support to deploy applications from Workflow PC server to PC server bet
   [Details of the report]: ../pipeline/pipeline-pipeline-report.html
   [pipeline_build_log_icon]: ../images/pipeline/pipeline_build_log_icon.png
   [pipeline_build_statistic]: ../images/pipeline/pipeline_build_statistic.png
-  [p2p_create-pipeline]: ../images/pipeline/p2p_create-pipeline.png
+  [p2p_create_pipeline]: ../images/pipeline/p2p_create_pipeline.png
   [p2p_stage_1]: ../images/pipeline/p2p_stage_1.png
   [p2p_takeSnapshot]: ../images/pipeline/p2p_takeSnapshot.png
   [p2p_stage2]: ../images/pipeline/p2p_stage2.png

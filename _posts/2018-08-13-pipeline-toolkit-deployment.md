@@ -13,7 +13,7 @@ Please refer to [Create a test project and generate test cases][1] to create a t
 
   1. Here is a project named "Test Dep APP" that use the toolkit to be deployed.
 
-     ![][create-test-project]
+     ![][create-test-project]{:width="60%"}
 
 
 ## 2. Create a pipeline, we will take sanpshot for the toolkit before testing it
@@ -21,17 +21,17 @@ Please refer to [Create a Pipeline for Continuous Deployment][2] to create a pip
 
   1. Below is the pipeline overview.
 
-     ![][create-toolkit-snapshot-pipeline-overview]
+     ![][create-toolkit-snapshot-pipeline-overview]{:width="60%"}
 
 
   2. In the "Dev" stage we input the toolkit and corresponding snapshot information.
 
-     ![][create-edit-dev-stage]
+     ![][create-edit-dev-stage]{:width="60%"}
 
 
   3. In the "Take Snapshot" step, fill in the "Type" and "Name Pattern" fields.
 
-     ![][create-takesnapshot-step]
+     ![][create-takesnapshot-step]{:width="60%"}
 
 
 ## 3. Create another pipeline, we will update the toolkit dependence then test it
@@ -44,22 +44,22 @@ Here we have created pipeline named "_Update Toolkit Dep Pipeline".
 
   2. In the "Development" stage, input the test project name "Test Dep APP" and some other information.
 
-     ![][update-edit-dev-stage]
+     ![][update-edit-dev-stage]{:width="60%"}
 
 
   3. Input "Type" and "Toolkit" in the "update" step.
 
-     ![][update-updatedependence-step]
+     ![][update-updatedependence-step]{:width="60%"}
 
 
   4. In the "Test" step, select the test project that we use it to test the toolkit.
 
-     ![][update-test-step]
+     ![][update-test-step]{:width="60%"}
 
 
   5. Take a snapshot for the project after testing.
 
-     ![][update-takesnapshot_step]
+     ![][update-takesnapshot_step]{:width="60%"}
 
 
 ## 4. Create a group pipeline to run "_Create Toolkit Snapshot Pipeline" and "_Update Toolkit Dep Pipeline" sequentially
