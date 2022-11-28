@@ -11,12 +11,12 @@ last_modified_at: 2021-01-29 15:39:00
 
 After installing the IDA plug-in. You need to log in to the plug-in to use it. If you are not logged in, the following information will appear when using the record function in testing.
 
-![][plugin_message]{:height="60%" width="60%"}
+![][plugin_message]{:width="40%"}
 
 1. Click the plug-in button, the landing page will pop up.
       
       
-    ![][plugin_login]{:height="60%" width="60%"}
+    ![][plugin_login]{:width="40%"}
 
      Parameter             | Description       
 	 ----------------------|-------------------
@@ -27,7 +27,7 @@ After installing the IDA plug-in. You need to log in to the plug-in to use it. I
 
 2. After successfully logging in, you will see the following interface.
 
-    ![][plugin_menu]{:height="60%" width="60%"}
+    ![][plugin_menu]{:width="40%"}
     
 	 Parameter             | Description       
 	 ----------------------|-------------------
@@ -43,23 +43,23 @@ After installing the IDA plug-in. You need to log in to the plug-in to use it. I
 
 1. You can enter the configuration page through the following two entrances.
 
-    ![][plugin_profile_menu]{:height="40%" width="40%"}
+    ![][plugin_profile_menu]{:width="30%"}
         
     OR
     
-    ![][plugin_settings]{:height="60%" width="60%"}
+    ![][plugin_settings]{:width="40%"}
     
 2. Enter **Setting** tab and click the **Notifications** left-side menu.
 
-    ![][plugin_profile_main]{:height="80%" width="80%"}
+    ![][plugin_profile_main]{:width="80%"}
     
 3. Configure according to your needs. If you don't see the notifications configuration page, check with your admin if s/he has enabled notifications on Settings page. See [General Configuration][settings-notifications-step-ref].
 
 4. You can turn on/off system notifications popup window on the plugin.
 
-   ![][plugin_notifications]{:height="60%" width="60%"}
+   ![][plugin_notifications]{:width="40%"}
 
-   ![][plugin_notifications_popup]{:height="60%" width="60%"}
+   ![][plugin_notifications_popup]{:width="40%"}
 
 ### Messages
 
@@ -69,11 +69,11 @@ After installing the IDA plug-in. You need to log in to the plug-in to use it. I
 
 2. Click **Notifications** to enter the messages page.
 
-    ![][plugin_notification_message]{:height="60%" width="60%"}
+    ![][plugin_notification_message]{:width="40%"}
 
 3. You can click to view details.
 
-    ![][plugin_notification_message_details]{:height="60%" width="60%"}
+    ![][plugin_notification_message_details]{:width="40%"}
 
 ## WebPD Integration
 
@@ -101,29 +101,17 @@ When you install the IDA plug-in and use BAW WebPD, you will find three new tabs
 
     ![][plugin_webpd_comparison]{:height="100%" width="100%"}
     
-2. You can click the button to directly compare the results of the current snapshot and the previous snapshot, or select any two snapshots you want for compare.
-
-    ![][plugin_webpd_comparison_compare]{:height="100%" width="100%"}
-
-    OR
+2. You can select any two snapshots you want for compare.
     
     ![][plugin_webpd_comparison_compare_any]{:height="100%" width="100%"}
     
 3. It takes some time to wait for the IDA server to return the result.
-
-    ![][plugin_webpd_comparison_compare_loading]{:height="100%" width="100%"}
-    
-     OR
      
     ![][plugin_webpd_comparison_compare_any_loading]{:height="100%" width="100%"}
     
 4. After the IDA server completes the request, you will see the compare report link.
     
-    ![][plugin_webpd_comparison_compare_done]{:height="100%" width="100%"}
-    
-     OR
-     
-    ![][plugin_webpd_comparison_compare_any_done]{:height="80%" width="80%"}
+    ![][plugin_webpd_comparison_compare_any_done]{:width="30%"}
     
 5. After clicking, it will jump to the specific comparison result page.
 

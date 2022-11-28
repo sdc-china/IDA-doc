@@ -17,7 +17,7 @@ When you run pipeline, you can review pipeline step reports and logs of each pip
 
    ![][pipeline_checkstyle_report]
 
-   ![][pipeline_checkstyle_step]
+   ![][pipeline_checkstyle_step]{:width="60%"}
 
 3. For a failed Test step, open its report and click to view the Trace messages and screenshots(if available) on the failed step of failed test cases.
 
@@ -41,7 +41,7 @@ When you run pipeline, you can review pipeline step reports and logs of each pip
 
    ![][pipeline_export]
 
-   ![][test_project_export]
+   ![][test_project_export]{:width="30%"}
 
 9. Collect info above into an issue description document. Send us the document and the collected logs, pipeline.zip, test project.zip and twx file. We will review all collected info and follow up with you.
 
