@@ -575,7 +575,7 @@ Performs a custom search.
 ___
 ### **WaitProcessInstanceStatus**
 
-Wait process instance status update.
+Wait process instance status update. Fail when timeout.
 
 - Parameters
 
@@ -1171,7 +1171,7 @@ ___
   
 ### **waitElement**
 
-Wait a element visible/hidden/editable/readonly until timeout.
+Wait a element visible/hidden/editable/readonly until timeout. Fail when timeout.
 
 - Parameters
 
@@ -1190,7 +1190,7 @@ ___
   
 ### **waitTextPresent**
 
-Wait for displaying a text until timeout.
+Wait for displaying a text until timeout. Fail when timeout.
 
 - Parameters
 

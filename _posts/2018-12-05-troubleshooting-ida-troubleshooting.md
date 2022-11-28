@@ -10,7 +10,7 @@ To trouble shoot all IDA issues, you may need to adjust log level. You may also 
 
 1. On Settings page, set trace level to DEBUG.
 
-   ![][set_log_level]
+   ![][set_log_level]{:width="50%"}
 
 2. Monitor IDA server logs. Reproduce the issue and collect the logs when the issue is reproduced. For example, if you installed IDA on Liberty, you may collect logs using either method below:
    - Find log files console.log, message.log in logs folder.

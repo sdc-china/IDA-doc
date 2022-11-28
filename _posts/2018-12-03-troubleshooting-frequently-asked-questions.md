@@ -117,6 +117,23 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
       
 1. Why the snapshots is part missing when I search the snapshots in Admin Tool/Comparison?
     - Answer: Due to the BAW REST API's limitation on the number of returned results, so not all results are returned if the number of snapshots(named + unnamed) is huge, you can try to cleanup the unnamed snapshots.
+
+1. Do you have any sizing recommedation for Selenium Hub? Can you explain what influences on the number of test cases which can run in parallel?
+
+   Some suggestions about Selenium Hub sizing as follows:
+   
+   - Max concurrent sessions per Selenium node: #CPU cores and # of maxSession configured on Selenium node
+   - Memory consumption after startup:
+     Selenium Hub: 400M
+     Selenium browser: 300M
+   - Memory consumption running 1 test case:
+     Selenium Hub: 600M
+     Selenium browser: 800M
+   - Memory consumption running 30 test cases:
+     Selenium Hub: 1G
+     Selenium browser: 1G
+
+   Test cases are queued on IDA if no available Selenium browser sessions. Max concurrent test cases running in Selenium is also limited by IDA server's performance. IDA's max threads > Selenium's max threads concurrency. When test cases increases and their run time increases significantly, try increase #CPU cores per Selenium node and/or connect a new Selenium node to Selenium hub.
      
       
    

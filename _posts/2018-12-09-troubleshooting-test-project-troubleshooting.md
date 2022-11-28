@@ -28,7 +28,7 @@ When you run test cases in a test project, you can review test reports and logs 
 
 6. Export the test project and twx file. Test project can be exported to a zip file using the dropdown menu to the right of the test project name. TWX should be exported from BAW Workflow Center.
 
-   ![][test_project_export]
+   ![][test_project_export]{:width="30%"}
 
 7. Collect info above into an issue description document. Send us the document and the collected logs, test project.zip and twx file. We will review all collected info and follow up with you.
 

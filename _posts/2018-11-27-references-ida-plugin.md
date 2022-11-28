@@ -101,29 +101,17 @@ When you install the IDA plug-in and use BAW WebPD, you will find three new tabs
 
     ![][plugin_webpd_comparison]{:height="100%" width="100%"}
     
-2. You can click the button to directly compare the results of the current snapshot and the previous snapshot, or select any two snapshots you want for compare.
-
-    ![][plugin_webpd_comparison_compare]{:height="100%" width="100%"}
-
-    OR
+2. You can select any two snapshots you want for compare.
     
     ![][plugin_webpd_comparison_compare_any]{:height="100%" width="100%"}
     
 3. It takes some time to wait for the IDA server to return the result.
-
-    ![][plugin_webpd_comparison_compare_loading]{:height="100%" width="100%"}
-    
-     OR
      
     ![][plugin_webpd_comparison_compare_any_loading]{:height="100%" width="100%"}
     
 4. After the IDA server completes the request, you will see the compare report link.
     
-    ![][plugin_webpd_comparison_compare_done]{:height="100%" width="100%"}
-    
-     OR
-     
-    ![][plugin_webpd_comparison_compare_any_done]{:width="60%"}
+    ![][plugin_webpd_comparison_compare_any_done]{:width="30%"}
     
 5. After clicking, it will jump to the specific comparison result page.
 
