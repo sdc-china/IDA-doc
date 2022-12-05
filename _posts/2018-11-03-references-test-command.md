@@ -1177,7 +1177,7 @@ Wait a element visible/hidden/editable/readonly until timeout. Fail when timeout
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Type` | Required | Select the element type from drop down. *Visible*, *Hidden*, *Enabled* and *Disabled*.  |
+	| `Type` | Required | Select the element type from drop down. *Visible*, *Hidden*, *Editable* and *Readonly*.  |
 	| `Timeout` | Optional | The maximum time that wait for the element. If empty, use engine-config.wait-timeout set on ida.properties.|
 	
 - Example  
