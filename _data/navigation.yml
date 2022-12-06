@@ -91,11 +91,11 @@ docs:
       - title: "Compare Snapshots"
         url: /snapshot-comparison/snapshot-comparison-compare-snapshots.html
       - title: "Snapshot Comparison Report"
-        url: /snapshot-comparison/snapshot-comparison-snapshots-comparison-report.html
+        url: /snapshot-comparison/snapshot-comparison-snapshot-comparison-report.html
       - title: "Merge Snapshots"
         url: /snapshot-comparison/snapshot-comparison-merge-snapshots.html
       - title: "Snapshot Merge Report"
-        url: /snapshot-comparison/snapshot-comparison-snapshots-merge-report.html
+        url: /snapshot-comparison/snapshot-comparison-snapshot-merge-report.html
 
 
   - title: Analyzer
