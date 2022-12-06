@@ -37,7 +37,7 @@ db2 connect reset
 
 
 **Download DB2 Driver**  
-You can download [JDBC for DB2 version 11.1 ](https://www-01.ibm.com/marketing/iwm/iwm/web/download.do?source=swg-idsdjs&pageType=urx&S_PKG=dl) 
+You can download [JDBC driver for DB2 based on your DB2 version](https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads) 
 
 ## Install and Configure PostgreSQL DB
 
