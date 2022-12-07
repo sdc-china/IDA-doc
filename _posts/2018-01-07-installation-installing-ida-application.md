@@ -195,6 +195,14 @@ Liberty supports Advanced Encryption Standard (AES) encryption for passwords tha
 ```
 More information about encrypt, please refer to [SecurityUtility Command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_command_securityutil.html).
 
+If the database requires SSL connection, set it in the datasource prop, for example, for DB2:
+```
+ <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.DATABASE_IDA_SCHEMA}"
+                serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}"
+                user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}" sslConnection="true"/>
+```
+Refer to [Database connections with TLS](https://openliberty.io/blog/2021/06/04/database-ssl-primer.html).
+
 **3. Copy the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory**
 
 **4. Start liberty server**
