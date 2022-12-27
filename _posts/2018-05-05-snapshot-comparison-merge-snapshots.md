@@ -13,7 +13,12 @@ Snapshot merge allows users to compare one snapshot with a trace tip snapshot of
 
 Enable the **Snapshot Merge** in Administration Settings. Then **Merge To** button will show in Comparison.
 
-![][settings-comparison-merge]
+![][settings-comparison-merge]{:width="100%"}
+
+Field | Description
+--- | ---
+Snapshot Merge | Enable it to enable Merge to in Comparison.
+Snapshot Naming Pattern | This pattern will be used to create snapshot for unnamed tip snapshot during merge. Pattern supports variables {MAJOR.MINOR.PATCH}, {yyyyMMddHHmmss}, {yyyyMMdd}, {TRACK} and {APP_ACRONYM}
 
 
 ## Load Snapshots of a Process App

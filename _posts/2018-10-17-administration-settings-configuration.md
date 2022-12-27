@@ -13,11 +13,10 @@ last_modified_at: 2021-01-29 16:25:00
 
 ![][General]{:width="100%"}
 
-![][General_Notifications]{:width="100%"}
-
 Field | Description
 --- | ---
 Trace Level | The value of trace level, in default it have five levels (TRACE, DEBUG,WARN,INFO,ERROR).
+Data Path | IDA working directory data path
 Enable LDAP Authentication | Login IDA with ldap configuration
 Url | LDAP server url
 User Name | LDAP server user name
@@ -48,7 +47,7 @@ Connection Timeout(seconds) | Timeout of connection
 Wait Timeout(seconds) | Timeout of wait
 Default Retry Interval(seconds) | Default value of retry interval
 Default Retry Times | Default value of retry times
-Data Path | IDA working directory data path
+
 
 ## Checkstyle configuration
 
@@ -80,9 +79,13 @@ Interval for Trigger by New Snapshot(seconds): | Time interval in seconds for pi
 BAW Deployment Remote Dir | Installation Package Remote Dir
 Deployment Timeout(seconds) | Timeout of check if snapshot is installed on PS and set as default snapshot
 Deployment Check Interval(seconds) | Interval of check if snapshot is installed on PS and set as default snapshot
+Max # of builds to keep | If not empty, only up to this number of builds are kept
+Days to keep builds | If not empty, builds are only kept up to this number of days
 Host | SMTP host
 Port | SMPT port
 Sender Email | Sender email
+Sender Password | Sender Password
+
 
 
 ## Set K8s configuration
@@ -132,7 +135,6 @@ The settings values are saved in database so if you restart the server, the conf
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
 [General]: ../images/administrator/General.png
-[General_Notifications]: ../images/administrator/General_Notifications.png
 [Test]: ../images/administrator/Test.png
 [Pipeline]: ../images/administrator/Pipeline.png
 [Checkstyle]: ../images/administrator/Checkstyle.png
