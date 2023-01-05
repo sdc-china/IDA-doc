@@ -62,13 +62,6 @@ Decision Server Password | Decision Server Password
 Decision Server URL | Decision server url, Replace localhost with the hostname or ip address of Rule Execution Server
 Decision Server Port | The port of decision server
 
-## Search configuration
-![][Search]{:width="100%"}
-
-Field | Description
---- | ---
-Search Depth | Search (and comparison) depth of Coach/Coach View
-
 ## Pipeline configuration
 
 ![][Pipeline]{:width="100%"}
@@ -86,6 +79,12 @@ Port | SMPT port
 Sender Email | Sender email
 Sender Password | Sender Password
 
+## Search configuration
+![][Search]{:width="100%"}
+
+Field | Description
+--- | ---
+Search Depth | Search (and comparison) depth of Coach/Coach View
 
 
 ## Set K8s configuration
