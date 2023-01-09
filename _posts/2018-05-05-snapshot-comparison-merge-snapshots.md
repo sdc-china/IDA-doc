@@ -8,6 +8,7 @@ last_modified_at: 2022-12-01 20:00:00
 # Merge Snapshots
 Snapshot merge allows users to compare one snapshot with a trace tip snapshot of a process app. There will be a detailed side-by-side report after this merge operation.
 
+Snapshot merge only support updated Script section in Service Flow/Human Service/Process now.
 
 ## Enable Merge To
 
