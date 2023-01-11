@@ -271,6 +271,30 @@ If the WAS version is below **9.0.5.4**, it may occur some problems when install
    ![][wassessionmgr2]
 
    ![][wassessionmgr3]
+   
+   
+**Confige the JNDI**
+
+1. In left navigation bar, click the **Resource > JDBC > Data sources**
+
+2. Create a new data source, we use db2 as an example.
+
+   ![][data_source1]
+   
+   ![][data_source2]
+    
+   ![][data_source3]
+    
+   ![][data_source4]
+    
+   ![][was_db2_user]
+    
+   ![][data_source5]
+   
+ 3. Test connection for this data source, make sure this connection is successful.
+ 
+  ![][was_data_source_test_connection]
+ 
 
 **Deploy a New Application on WAS**
 
@@ -501,3 +525,12 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [plugin_login]: ../images/install/plugin_login.png
    [plugin_login_error]: ../images/install/plugin_login_error.png
    [ida_web_cert_error]: ../images/install/ida_web_cert_error.png
+   [data_source1]: ../images/install/was_data_source1.png
+   [data_source2]: ../images/install/was_data_source2.png
+   [data_source3]: ../images/install/was_data_source3.png
+   [data_source4]: ../images/install/was_data_source4.png
+   [data_source5]: ../images/install/was_data_source5.png
+   [was_db2_user]: ../images/install/was_db2_user.png
+   [was_data_source_test_connection]: ../images/install/was_data_source_test_connection.png
+   
+   
