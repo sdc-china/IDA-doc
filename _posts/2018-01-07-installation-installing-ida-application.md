@@ -272,6 +272,12 @@ If the WAS version is below **9.0.5.4**, it may occur some problems when install
 
    ![][wassessionmgr3]
    
+4. Make sure the host ports have been added to the **Environment > Virtual hosts > default_host**.
+
+   ![][was_server_port]
+   
+   ![][was_virtual_hosts]
+
    
 **Confige the JNDI**
 
@@ -532,5 +538,7 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [data_source5]: ../images/install/was_data_source5.png
    [was_db2_user]: ../images/install/was_db2_user.png
    [was_data_source_test_connection]: ../images/install/was_data_source_test_connection.png
+   [was_server_port]: ../images/install/was_server_port.png
+   [was_virtual_hosts]: ../images/install/was_virtual_hosts.png
    
    
