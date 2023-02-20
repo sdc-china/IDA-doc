@@ -10,7 +10,7 @@ last_modified_at: 2021-05-28 15:22:00
 
 ##  Edit gatling home path
 
-  1. Download **Gatling** from their [official website](https://gatling.io/open-source/start-testing/).
+  1. Download [Gatling v3.6.0](https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/3.6.0/gatling-charts-highcharts-bundle-3.6.0-bundle.zip).
 
   2. Go to the **Settings** configuration page under **Administration**.
 
