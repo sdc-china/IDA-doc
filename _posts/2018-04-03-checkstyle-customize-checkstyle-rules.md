@@ -8,23 +8,25 @@ last_modified_at: 2019-07-29 15:27:00
 # Customize Checkstyle Rules
 ***
 
-## Software Prerequisites
+## ODM Customization
+
+### Software Prerequisites
 
 * [IBM® Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
 
-## Prerequisite
+### Prerequisite
 
    You have installed **Rule Designer** in your local environment and **Checkstyle Rule Projects** have been in your local workspace.
 
-## Workflow checkstyle rule projects overview
+### Workflow checkstyle rule projects overview
 
    The Workflow checkstyle rule projects include **CheckstyleBOM**, **CheckstyleRules**, **CheckstyleRulesCore** and **CheckstyleRulesCustomized**. Their dependency relationships are as follows:
 
    ![][checkstyle_rule_project_relation]
 
-## Workflow checkstyle rules customization
+### Workflow checkstyle rules customization
 
-### Override core checkstyle rules
+#### Override core checkstyle rules
 
 To rewrite any core checkstyle rule, please do not update the core rule itself. Instead you should copy the rule into the **checksOverride** rule package of project CheckstyleRulesCustomized and then update the copy. Take overriding a core checkstyle rule **check-app-with-too-many-bpd** as an example:
 
@@ -57,7 +59,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 7. Rerun Workflow checkstyle asset against an updated sample file **sample-updated.twx** and verify in the final checkstyle report, there is **no** warning message **Too many BPDs**.
 
 
-### Write custom checkstyle rules
+#### Write custom checkstyle rules
 
   To write customized checkstyle rules, put the new rules in rule package **customized** in rule project **CheckstyleRulesCustomized**. Create artifact-based rule package if necessary.
 
@@ -79,8 +81,49 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
      ![][checkstyle_custom_rules_step_four]
 
+## Embedded Rules Customization
 
+### Embedded rules overview
 
+   After decompressing the **embedded-checkstyle-rules.zip**, the embedded rules folders include **init**, **checks** and **score**. 
+    
+   ![][checkstyle_embedded_custom_folders]{:width="40%"}
+
+Folder | Description 
+     ----------------------|-------------------
+     init | Including a thresholds initialization rule.
+     checks | Specific rules for executing checkstyle, including folders like **app**, **businessobject**, **casesolution**, **businessobject**, **casetype**, **coachview**, **migrate**, **process**, **service**, **variable**, **webservice**.
+     score | Including rules for calculating score and setting score bound.
+   
+     
+   Customization can be done by directly modifying the rule file. for example, modify some thresholds by modifying the values in **init/init-thresholds.drl**.    
+   
+   ![][checkstyle_embedded_custom_init_thresholds]
+   
+   Modify the lower and upper bound by modifying the values in **score/configure-score-health-bound.drl**.  
+     
+   ![][checkstyle_embedded_custom_modify_bound]{:width="70%"}
+   
+### Override embedded rules
+
+  1. After modifying the rules, repackage the customized rules into a ZIP.
+
+     ![][checkstyle_embedded_custom_zip]{:width="40%"}
+     
+  2. Click **Administrator** tab, then switch to **Settings** tab.
+
+     ![][checkstyle_embedded_settings_tab]{:width="40%"}
+     
+  3. Scroll to **Checkstyle** section, choose **EMBEDDED** as the Engine and switch on the **Enable Custom Rules**.
+
+     ![][checkstyle_embedded_settings]
+     
+  4. Click **Upload Custom Rules** button to upload the custom rules ZIP.
+
+     ![][checkstyle_embedded_custom_settings_upload]
+     
+  5. Click **Save** button in Settings to save the configuration and rerun Checkstyle.
+  
  [checkstyle_rule_project_relation]: ../images/checkstyle/checkstyle_rule_project_relation.png
  [checkstyle_override_step_one]: ../images/checkstyle/checkstyle_override_step_one.png
  [checkstyle_override_step_two]: ../images/checkstyle/checkstyle_override_step_two.png
@@ -93,3 +136,13 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
  [checkstyle_custom_rules_step_one]: ../images/checkstyle/checkstyle_custom_rules_step_one.png
  [checkstyle_custom_rules_step_two]: ../images/checkstyle/checkstyle_custom_rules_step_two.png
  [checkstyle_custom_rules_step_four]: ../images/checkstyle/checkstyle_custom_rules_step_four.png
+ [checkstyle_embedded_custom_folders]: ../images/checkstyle/checkstyle_embedded_custom_folders.png
+ [checkstyle_embedded_custom_init_thresholds]: ../images/checkstyle/checkstyle_embedded_custom_init_thresholds.png
+ [checkstyle_embedded_custom_modify_bound]: ../images/checkstyle/checkstyle_embedded_custom_modify_bound.png
+ [checkstyle_embedded_custom_zip]: ../images/checkstyle/checkstyle_embedded_custom_zip.png
+ [checkstyle_embedded_settings_tab]: ../images/checkstyle/checkstyle_embedded_settings_tab.png
+ [checkstyle_embedded_settings]: ../images/checkstyle/checkstyle_embedded_settings.png
+ [checkstyle_embedded_custom_settings_upload]: ../images/checkstyle/checkstyle_embedded_custom_settings_upload.png
+ 
+ 
+
