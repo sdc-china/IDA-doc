@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-11-03 15:17:55
-last_modified_at: 2021-08-23 10:42:00
+last_modified_at: 2023-02-28 15:17:00
 ---
 
 # Test Commands
@@ -1003,7 +1003,8 @@ Click an element by id , CSS or xpath. **Notes:** BPM UI toolkit has *id* on a b
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Type` | Required | *Link* or *Button*.|
+	| `Type` | Optional | *Link* or *Button*.|
+	| `Trigger Event` | Optional | The js event triggered by click.|
 	
 - Example  
 
