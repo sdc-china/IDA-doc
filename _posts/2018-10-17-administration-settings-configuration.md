@@ -43,8 +43,8 @@ Stop After Assert Failure | If not checked, the test case will keep running when
 Enable Test Case History | Enable save test case history function
 Max Number of Test Case History | Set test case history max number of each test case, default value is 100.
 Threshold of New Test Case | Threshold of generating test case per process
-Default Wait Timeout(seconds) | Default wait time out
-Page Load Timeout(seconds) | Default page load time out 
+Default Wait Timeout(seconds) | Default wait time out for test commands and finding web elements, default value is 60.
+Page Load Timeout(seconds) | Default page load time out for open and load page, default value is 10.
 Default Retry Interval(seconds) | Default value of retry interval
 Default Retry Times | Default value of retry times
 

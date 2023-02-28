@@ -12,6 +12,7 @@ last_modified_at: 2023-02-28 14:39:00
   To support the various modern UI frameworks, we can extend the IDA recorder script and util script. The page can be accessed by the menu **Administration -> Custom Recorder**.Usually we use this feature to provide a hot fix to customer if record feature need to be enchanced.
 
 ![][administrator_default_script]{:width="80%"}
+![][administrator_util_script]{:width="80%"}
 
   Uncomment the definition of the **bta.record.RECORD_EVENTS** to enable the script.
 
@@ -21,8 +22,6 @@ last_modified_at: 2023-02-28 14:39:00
 |**cssSelector**|Array of string|The css selector can identify the UI controls.
 |**setValue**|function(element, data)|**element** is the target UI control DOM element. **data** is the recorded data.
 |**events**|Array of string|The recorder will fire the corresponding event on the target UI control, and also trigger the **setValue** function.
-
-![][administrator_util_script]{:width="80%"}
 
 [administrator_default_script]: ../images/administrator/administrator_default_script.png
 [administrator_util_script]: ../images/administrator/administrator_util_script.png
