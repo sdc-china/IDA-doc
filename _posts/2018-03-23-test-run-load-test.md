@@ -2,7 +2,7 @@
 title: "Run Load Test"
 category: test
 date: 2018-03-23 10:22:00
-last_modified_at: 2021-05-28 15:22:00
+last_modified_at: 2023-02-27 15:22:00
 ---
 
 # Run Load Test
@@ -60,7 +60,7 @@ last_modified_at: 2021-05-28 15:22:00
 
   3. In the **Debug** step which has ![][test_debug_point] in front of it, the record will be stopped. You need to click ![][test_case_record_resume] button to resume.
 
-  4. When all the steps are finished, the recorder will automatically close, and there will be an extra button on the page which name is **Load Test**.
+  4. When all the steps are finished, the recorder will automatically close, and there will be an extra button on the page named **Load Test**. The **Load Test** button is only displayed after the test case is replayed from the first to the last step.
 
      ![][load_test_button]
 
@@ -73,23 +73,23 @@ last_modified_at: 2021-05-28 15:22:00
   2. Pop up a strategy selection window. Here we use the **atOnceUsers** strategy and set proper the number of users.
 
      ![][select_strategy]
-     
-     
-     We provide two strategies for usage. 
+
+
+     We provide two strategies for usage.
 
      - atOnceUsers(nbUsers): Injects a given number of users at once.  
 
      - rampUsers(nbUsers) during(duration): Injects a given number of users distributed evenly on a time window of a given duration.
-     
-     In advance tab 
-     
+
+     In advance tab
+
      - Change the default assertion value to meet  load case scenario statistic.If any assertion is failed,the whole load test case is failed.
      - Change the log level for the loading testing. You can download the load testing log in the performance report tab page.
      - Switch on Check BAW Product Requests to include BAW product internal requests(i.e JS/CSS/Image resources and Portal requests loaded by BAW) in the Load Test Report. The default value is off.
 
      ![][gatling_report]
 
-  
+
 
 
   3. Click **Run** button to start the load test.
@@ -104,12 +104,12 @@ last_modified_at: 2021-05-28 15:22:00
 
 ## Check load test case data
 
-  1. Sometimes when you click **Load Test** button on the right of case name,you might see some warning on the page.If you see the below screenshot,it means the   recorded networkinformation is incorrect.You need to use IDA plug-in to record this test case again.
-  
+  1. Sometimes when you click **Load Test** button on the right of case name, you might see some warning on the page. If you see the below screenshot, it means the recorded network information is incorrect. You need to use IDA plug-in to replay the test case again.
+
      ![][gatling_network_incorrect]
 
-  2. If you see the below error,it means your record load test data is out of sync.You also need to use IDA plug-in record the case again.
-  
+  2. If you see the below error, it means your record load test data is out of sync. You also need to use IDA plug-in replay the test case again.
+
      ![][gatling_network_outofdate]
 
 [test_import_form]: ../images/test/test_import_form.png
