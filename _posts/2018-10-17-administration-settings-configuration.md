@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
-last_modified_at: 2021-01-29 16:25:00
+last_modified_at: 2023-02-28 14:25:00
 ---
 
 # Settings Configuration
@@ -43,8 +43,8 @@ Stop After Assert Failure | If not checked, the test case will keep running when
 Enable Test Case History | Enable save test case history function
 Max Number of Test Case History | Set test case history max number of each test case, default value is 100.
 Threshold of New Test Case | Threshold of generating test case per process
-Connection Timeout(seconds) | Timeout of connection
-Wait Timeout(seconds) | Timeout of wait
+Default Wait Timeout(seconds) | Default wait time out
+Page Load Timeout(seconds) | Default page load time out 
 Default Retry Interval(seconds) | Default value of retry interval
 Default Retry Times | Default value of retry times
 

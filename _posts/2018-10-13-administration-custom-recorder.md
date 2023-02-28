@@ -2,14 +2,14 @@
 title: "Custom Recorder"
 category: administration
 date: 2018-10-13 15:17:55
-last_modified_at: 2019-07-29 16:22:00
+last_modified_at: 2023-02-28 14:39:00
 ---
 
 # Custom Recorder
 ***
 
 ## Overview
-  To support the various modern UI frameworks, we can extend the IDA recorder script. The page can be accessed by the menu **Administration -> Custom Recorder**.Usually we use this feature to provide a hot fix to customer if record feature need to be enchanced.
+  To support the various modern UI frameworks, we can extend the IDA recorder script and util script. The page can be accessed by the menu **Administration -> Custom Recorder**.Usually we use this feature to provide a hot fix to customer if record feature need to be enchanced.
 
 ![][administrator_default_script]{:width="80%"}
 
@@ -22,4 +22,7 @@ last_modified_at: 2019-07-29 16:22:00
 |**setValue**|function(element, data)|**element** is the target UI control DOM element. **data** is the recorded data.
 |**events**|Array of string|The recorder will fire the corresponding event on the target UI control, and also trigger the **setValue** function.
 
+![][administrator_util_script]{:width="80%"}
+
 [administrator_default_script]: ../images/administrator/administrator_default_script.png
+[administrator_util_script]: ../images/administrator/administrator_util_script.png
