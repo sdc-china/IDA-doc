@@ -113,10 +113,11 @@ last_modified_at: 2023-03-01 15:22:00
      ![][gatling_network_outofdate]
 
 
-Note the Load Test feature currently has the following **limitations**:
-     - Frequently used test commands in BPM category are supported.
-     - Most Test commands in UI category are supported.
-     - Assertion and Utility commands are not supported yet.
+  Note the Load Test feature currently has the following **limitations**:
+
+  - Frequently used test commands in the BPM category are supported.
+  - Most test commands in the UI category are supported.
+  - Assertion and Utility commands are not supported yet.
 
 [test_import_form]: ../images/test/test_import_form.png
 [edit_project]: ../images/test/edit_project.png
