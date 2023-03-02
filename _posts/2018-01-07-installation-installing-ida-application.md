@@ -369,7 +369,7 @@ BAW Version | IDA Toolkit Version
       above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
 
 
-1. Import corresponding **IDA_Toolkit - 8.6.x.x.twx** which is below forder /toolkit of release package into your process center.      
+1. Import corresponding **IDA_Toolkit - 8.6.x.x.twx** which is below folder /toolkit of release package into your process center.      
 
 2. Open your process app by web process designer from process center.
 
