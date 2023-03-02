@@ -2,7 +2,7 @@
 title: "Run Load Test"
 category: test
 date: 2018-03-23 10:22:00
-last_modified_at: 2023-02-27 15:22:00
+last_modified_at: 2023-03-01 15:22:00
 ---
 
 # Run Load Test
@@ -111,6 +111,12 @@ last_modified_at: 2023-02-27 15:22:00
   2. If you see the below error, it means your record load test data is out of sync. You also need to use IDA plug-in replay the test case again.
 
      ![][gatling_network_outofdate]
+
+
+Note the Load Test feature currently has the following **limitations**:
+     - Frequently used test commands in BPM category are supported.
+     - Most Test commands in UI category are supported.
+     - Assertion and Utility commands are not supported yet.
 
 [test_import_form]: ../images/test/test_import_form.png
 [edit_project]: ../images/test/edit_project.png
