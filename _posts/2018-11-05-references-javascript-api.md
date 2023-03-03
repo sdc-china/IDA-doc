@@ -9,11 +9,11 @@ last_modified_at: 2019-07-29 16:44:00
 ***
 
 ## OOTB Javascript API
-A Custom JavaScript command must return a callback command.
+
 
 | JS API |      Parameters    |       Comments            |       Sample            | Callback Command|
 |----------|:-------------:|:------|
-| bta.util.callback  | |Default callback for Javascript command  |return bta.util.callback(); | Yes|  
+| bta.util.callback  | |Default callback for Javascript command, A Custom JavaScript command must return a callback command.  |return bta.util.callback(); | Yes|  
 | bta.util.putContext|key, value| add key,value into the memory| bta.util.putContext(key,value); | Yes |
 | bta.util.putContexts|JSON| add key-value pairs into the memory| bta.util.putContexts({"key":"value","key2":"value2"}); | Yes|
 | bta.util.assertTrue | condition(boolean), message(string)|Asserts that a condition is true. If it isn't it throws an error with the given message. | bta.util.assertTrue(true, "The condition is not true!"); | Yes|
