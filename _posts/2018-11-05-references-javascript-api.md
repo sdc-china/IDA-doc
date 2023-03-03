@@ -10,7 +10,6 @@ last_modified_at: 2019-07-29 16:44:00
 
 ## OOTB Javascript API
 
-
 | JS API |      Parameters    |       Comments            |       Sample            | Callback Command|
 |----------|:-------------:|:------|
 | bta.util.callback  | |Default callback for Javascript command, A Custom JavaScript command must return a callback command.  |return bta.util.callback(); | Yes|  
