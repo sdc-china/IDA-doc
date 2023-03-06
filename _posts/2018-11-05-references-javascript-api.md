@@ -19,8 +19,8 @@ last_modified_at: 2019-07-29 16:44:00
 | bta.util.assertFalse| condition(booelan), message(string)| Asserts that a condition is false. If it isn't it throws an error with the given message.|  bta.util.assertFalse(false, "The condition is not false!"); | Yes|
 | bta.util.assertEquals | expected(string), actual(string), message(string) |Asserts that two objects are equal. If they are not, an error is thrown with the given message.|bta.util.assertEquals("The expected value", "The actual value", "error message"); |Yes|
 | bta.util.assertFail  | message(string), retry(boolean, default is true) |Assert fail with the given message|  bta.util.assertFail("error message", true); | Yes|
-| bta.util.getCoachView  |  JSON |Get the coach view object|var coachView = bta.util.getCoachView({controlId: "Coach Control ID", label: "Coach Label Text", elementId: "The element ID", elementCss: "The element CSS", xpath: "The element xpath" });| No|
 | bta.util.debug | message |add debug info on the browser console | bta.util.debug("msg")  | No |  
+| bta.util.getCoachView  |  JSON |Get the coach view object|var coachView = bta.util.getCoachView({controlId: "Coach Control ID", label: "Coach Label Text", elementId: "The element ID", elementCss: "The element CSS", xpath: "The element xpath" });| No|
 | bta.util.getElement | JSON |Get the DOM element |  var element = bta.util.getElement({elementId: "The element ID", elementCss: "The element CSS", xpath: "The element xpath"}); |No|  
 | bta.util.getElementText | DOM Element |Get the DOM element text|  var text = bta.util.getElementText(textElement); |No|  
 | bta.util.getXpath | DOM Element |Get xpath of the DOM element|  var xpath = bta.util.getXpath(element); |No|  
