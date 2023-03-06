@@ -24,7 +24,7 @@ last_modified_at: 2019-07-29 16:44:00
 | bta.util.getElement | JSON |Get the DOM element |  var element = bta.util.getElement({elementId: "The element ID", elementCss: "The element CSS", xpath: "The element xpath"}); |No|  
 | bta.util.getElementText | DOM Element |Get the DOM element text|  var text = bta.util.getElementText(textElement); |No|  
 | bta.util.getXpath | DOM Element |Get xpath of the DOM element|  var xpath = bta.util.getXpath(element); |No|  
-| bta.util.fireEvent | element(DOM Element), eventType(string) |Fire event of target DOM element|  bta.util.fireEvent(element, "keyup"); |No|  
+| bta.util.fireEvent | element(DOM Element), eventType(string) |Fire event of the DOM element|  bta.util.fireEvent(element, "keyup"); |No|  
 
 **Notes**
 Beside these OOTB JS API, user can also use standard BPM coach view JS API when writing the custom JS. e.g
