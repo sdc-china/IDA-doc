@@ -396,7 +396,7 @@ BAW Version | IDA Toolkit Version
 	For security concern, we suggest to disable the toolkit in BAW production environment.
 	It allows user to modify the toolkit access permission by setting up the environment variable "IDA_ACCESS". (true means enable the access, false means disable the access)
 
-	By default, the toolkit can only be invoked on Development and Test environment:
+	By default, the toolkit can only be invoked on Development, Test and Stage environments:
 	    ![][default_toolkit_setting]
 
 	You can define the same environment variable "IDA_ACCESS" in your BAW application which will override the default setting in toolkit, for example:
