@@ -2,7 +2,7 @@
 title: "Known Limitation"
 category: troubleshooting
 date: 2018-12-01 15:17:55
-last_modified_at: 2020-09-27 16:50:00
+last_modified_at: 2023-03-23 16:50:00
 ---
 
 # Known Limitation
@@ -17,7 +17,8 @@ last_modified_at: 2020-09-27 16:50:00
 - The command UI.close is disabled in IDA plugin which may caused issue in plugin.
 - The command UI.confirmOK and UI.confirmCancel aren't supported in IDA plugin.
 - BP3 Richtext control replay not working if no value is binded for this control.   
-- Some earlier firefox browser version(eg:60.9.0esr) is not automaticlly scrollable when replay the coach case in IDA plug-in, please install the latest firefox browser instead. 
+- Some earlier firefox browser version(eg:60.9.0esr) is not automaticlly scrollable when replay the coach case in IDA plug-in, please install the latest firefox browser instead.
 - If the BPMoC environment integrates with the client's own SSO platform, and it also enable the multiple factor authentication(MFA), then IDA can't support it.
 - The window-size argument of selenium grid support for headless mode only.
 - Snapshot merge only support updated Script section in Service Flow/Human Service/Process.
+- Snapshot comparison may show diff results as deletion + addition if an item in Process/Service is renamed, as the item's id is a UUID which can not be relied on to identify the item.
