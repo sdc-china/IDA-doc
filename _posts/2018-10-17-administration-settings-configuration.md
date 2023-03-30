@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
-last_modified_at: 2023-02-28 14:25:00
+last_modified_at: 2023-03-30 11:28:00
 ---
 
 # Settings Configuration
@@ -61,6 +61,8 @@ Decision Server Username | Decision Server Username
 Decision Server Password | Decision Server Password
 Decision Server URL | Decision server url, Replace localhost with the hostname or ip address of Rule Execution Server
 Decision Server Port | The port of decision server
+Tags | These will be used to ignore artifacts by tag(s). For example: test.
+Naming Pattern | This pattern will be used to ignore artifacts by name. Pattern supports variables test$, ^test.
 
 ## Pipeline configuration
 
