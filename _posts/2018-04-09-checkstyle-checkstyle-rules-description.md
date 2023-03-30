@@ -69,7 +69,7 @@ last_modified_at: 2023-03-30 15:29:00
 | check-propertyview-documentation   | MINOR | Check if the document of the propertyview in case solution is empty.                                   | For maintenance purpose, a documentation or description for each Case property artifact is necessary. A well described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description can be set to each artifact. | Documentation  |
 | check-rule-documentation           | MINOR | Check if the document of the rule in case solution is empty.                                           | For maintenance purpose, a documentation or description for each Case property artifact is necessary. A well described artifact can be very helpful for users to have a better understanding of the artifact. It is strongly recommended that a documentation or description can be set to each artifact. | Documentation  |
 
-## Coach
+## Coach View
 
 | Rule                                     | Level | Description                                                                                                              | Advice                                                                                                                                 | Tags           | Reference                                           |
 | ---------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------------------------------------- |
