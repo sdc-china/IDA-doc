@@ -65,7 +65,7 @@ For example:
 ```
   <dataSource jndiName="jdbc/ida">
       <jdbcDriver libraryRef="DBLib" />
-      <properties.postgresql serverName="localhost" portNumber="5432" 
+      <properties.postgresql serverName="localhost" portNumber="5432"
         databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
 ```
@@ -139,7 +139,7 @@ For example:
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida">
       <jdbcDriver libraryRef="PostgresSQLLib" />
-      <properties.postgresql serverName="localhost" portNumber="5432" 
+      <properties.postgresql serverName="localhost" portNumber="5432"
         databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
   <!-- PostgreSQL Example End-->
@@ -271,14 +271,14 @@ If the WAS version is below **9.0.5.4**, it may occur some problems when install
    ![][wassessionmgr2]
 
    ![][wassessionmgr3]
-   
+
 4. Make sure the host ports have been added to the **Environment > Virtual hosts > default_host**.
 
    ![][was_server_port]
-   
+
    ![][was_virtual_hosts]
 
-   
+
 **Confige the JNDI**
 
 1. In left navigation bar, click the **Resource > JDBC > Data sources**
@@ -286,21 +286,21 @@ If the WAS version is below **9.0.5.4**, it may occur some problems when install
 2. Create a new data source, we use db2 as an example.
 
    ![][data_source1]
-   
+
    ![][data_source2]
-    
+
    ![][data_source3]
-    
+
    ![][data_source4]
-    
+
    ![][was_db2_user]
-    
+
    ![][data_source5]
-   
+
  3. Test connection for this data source, make sure this connection is successful.
- 
+
   ![][was_data_source_test_connection]
- 
+
 
 **Deploy a New Application on WAS**
 
@@ -359,7 +359,7 @@ After finishing the installation of the fix packs, the next step is to deploy th
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
 ## Step 2: Installing IDA BAW Toolkit
-The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit. 
+The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
 
 
 BAW Version | IDA Toolkit Version  
@@ -411,11 +411,11 @@ BAW Version | IDA Toolkit Version
 ### Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-23.2.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-23.2.crx)
+- The Chrome plugin offline installation package. [IDA-23.3.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-23.3.crx)
 - For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
 
 ### Firefox plugin
-- Download Firefox plugin [ida-23.2-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-23.2-fx.xpi)
+- Download Firefox plugin [ida-23.3-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-23.3-fx.xpi)
 - Drag the downloaded plugin file into firefox window.
 - Click "Add" button.
 
@@ -540,5 +540,3 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [was_data_source_test_connection]: ../images/install/was_data_source_test_connection.png
    [was_server_port]: ../images/install/was_server_port.png
    [was_virtual_hosts]: ../images/install/was_virtual_hosts.png
-   
-   
