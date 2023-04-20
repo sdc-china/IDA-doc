@@ -120,6 +120,7 @@ You can runtime update k8s configuration in IDA, after that you can use the new 
      TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
      kubectl config set-credentials ida-service-account --token=$TOKEN
      kubectl config set-context --current --user=ida-service-account
+     echo $TOKEN
      ```
 
      Check if the current user is added successfully or not, and get the token for the newly added user:
