@@ -117,10 +117,11 @@ You can runtime update k8s configuration in IDA, after that you can use the new 
      kubectl -n kube-system create serviceaccount ida-service-account
      kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
      TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
+     echo $TOKENNAME
      TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
+     echo $TOKEN
      kubectl config set-credentials ida-service-account --token=$TOKEN
      kubectl config set-context --current --user=ida-service-account
-     echo $TOKEN
      ```
 
      Check if the current user is added successfully or not, and get the token for the newly added user:
