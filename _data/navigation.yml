@@ -17,135 +17,140 @@ docs:
       - title: "System Requirement"
         url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
-        url: /installation/installation-db.html
+        url: /installation/installation-database-installation-and-configuration.html
       - title: "Repacking IDA Application"
-        url: /installation/installation-ida-repacking.html
+        url: /installation/installation-repacking-ida-application.html
       - title: "Installing IDA Application"
-        url: /installation/installation-ida-installing.html
+        url: /installation/installation-installing-ida-application.html
       - title: "Post Installation Setup"
-        url: /installation/installlation-post-installation.html
+        url: /installation/installation-post-installation-setup.html
       - title: "Migrating IDA Application"
-        url: /installation/installation-migrate-ida-from-v21.0.0.html
+        url: /installation/installation-migrating-ida-application.html
 
   - title: Tutorial
     children:
-      - title: "Task 1: Create a test project and generate test cases"
+      - title: "Task 1: Create a Test Project and Generate Test Cases"
         url: /tutorial/tutorial-create-a-test-project-and-generate-test-cases.html
-      - title: "Task 2: Record, replay and run a test case"
-        url: /tutorial/tutorial-run-record-and-replay-a-test-case.html
+      - title: "Task 2: Record, Replay and Run a Test Case"
+        url: /tutorial/tutorial-record-replay-and-run-a-test-case.html
       - title: "Task 3: Set up Checkstyle"
         url: /tutorial/tutorial-set-up-checkstyle.html
-      - title: "Task 4: Create a pipeline for continuous deployment"
+      - title: "Task 4: Create a Pipeline for Continuous Deployment"
         url: /tutorial/tutorial-create-a-pipeline-for-continuous-deployment.html
       - title: "Summary"
         url: /tutorial/tutorial-summary.html
 
   - title: Test
     children:
-      - title: "Test project management"
-        url: /test/test-project-management.html
-      - title: "Test case management"
-        url: /test/test-case-management.html
-      - title: "Test case labels management"
-        url: /test/test-case-label-management.html
-      - title: "Test case data binding"
-        url: /test/test-case-data-binding.html
-      - title: "Test case data dynamic loading"
-        url: /test/test-case-data-dynamic.html
-      - title: "Group command management"
+      - title: "Test Project Management"
+        url: /test/test-test-project-management.html
+      - title: "Test Case Management"
+        url: /test/test-test-case-management.html
+      - title: "Test Case Label Management"
+        url: /test/test-test-case-label-management.html
+      - title: "Test Case Data Binding"
+        url: /test/test-test-case-data-binding.html
+      - title: "Test Case Data Dynamic Loading"
+        url: /test/test-test-case-data-dynamic-loading.html
+      - title: "Group Command Management"
         url: /test/test-group-command-management.html
-      - title: "Record and replay a test case"
+      - title: "Record and Replay a Test Case"
         url: /test/test-record-and-replay-a-test-case.html
-      - title: "Write a Javascript command"
-        url: /test/test-write-js-command.html
-      - title: "Write a Java command"
+      - title: "Write a Javascript Command"
+        url: /test/test-write-javascript-command.html
+      - title: "Write a Java Command"
         url: /test/test-write-java-command.html
       - title: "Test Smart Comparison"
-        url: /test/test-smart-comparison.html
-      - title: "Import and execute sample test project"
+        url: /test/test-test-smart-comparison.html
+      - title: "Import and Execute Sample Test Project"
         url: /test/test-import-execute-sample-test-project.html
       - title: "Run Load Test"
         url: /test/test-run-load-test.html
       - title: "Test Report"
-        url: /test/test-case-report.html
-      - title: "Dynamic Assignee"
-        url: /test/test-case-dynamic-assignee.html
+        url: /test/test-test-report.html
+      - title: "Dynamic User Assignment"
+        url: /test/test-dynamic-user-assignment.html
       - title: "Custom OOTB Command"
         url: /test/test-custom-ootb-command.html
 
   - title: Checkstyle
     children:
-      - title: "Analyze Workflow projects with checkstyle"
+      - title: "Analyze Workflow Projects with Checkstyle"
         url: /checkstyle/checkstyle-analyze-workflow-projects-with-checkstyle.html
-      - title: "Customize Checkstyle rules"
+      - title: "Customize Checkstyle Rules"
         url: /checkstyle/checkstyle-customize-checkstyle-rules.html
-      - title: "Checkstyle report"
-        url: /checkstyle/checkstyle-report.html
-      - title: "Deploy Checkstyle ruleset"
-        url: /checkstyle/checkstyle-deploy-ruleset.html
+      - title: "Checkstyle Report"
+        url: /checkstyle/checkstyle-checkstyle-report.html
+      - title: "Deploy Checkstyle Ruleset"
+        url: /checkstyle/checkstyle-deploy-checkstyle-ruleset.html
       - title: "Checkstyle Rules Description"
-        url: /checkstyle/checkstyle-rules-description.html
+        url: /checkstyle/checkstyle-checkstyle-rules-description.html
         
   - title: Snapshot Comparison
     children:
       - title: "Compare Snapshots"
         url: /snapshot-comparison/snapshot-comparison-compare-snapshots.html
       - title: "Snapshot Comparison Report"
-        url: /snapshot-comparison/snapshot-comparison-snapshots-comparison-report.html
+        url: /snapshot-comparison/snapshot-comparison-snapshot-comparison-report.html
+      - title: "Merge Snapshots"
+        url: /snapshot-comparison/snapshot-comparison-merge-snapshots.html
+      - title: "Snapshot Merge Report"
+        url: /snapshot-comparison/snapshot-comparison-snapshot-merge-report.html
+
 
   - title: Analyzer
     children:
-      - title: "Analyze Workflow projects with analyzer statistic"
+      - title: "Analyze Workflow Projects with Analyzer Statistic"
         url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-statistic.html
-      - title: "Analyze Workflow projects with analyzer toolkit references"
+      - title: "Analyze Workflow Projects with Analyzer Toolkit References"
         url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-toolkit-references.html
-      - title: "Statistic report"
+      - title: "Analyzer - Statistic Report"
         url: /analyzer/analyzer-statistic-report.html
-      - title: "Toolkit references report"
+      - title: "Analyzer - Toolkit References Report"
         url: /analyzer/analyzer-toolkit-references-report.html
   - title: Search
     children:
-      - title: "Search Workflow projects"
-        url: /search/search-workflow-projects.html
+      - title: "Search Workflow Projects"
+        url: /search/search-search-workflow-projects.html
   
   - title: Pipeline
     children:
-      - title: "Pipeline overview"
-        url: /pipeline/pipeline-overview.html
-      - title: "Create a pipeline for continuous deployment"
+      - title: "Pipeline Overview"
+        url: /pipeline/pipeline-pipeline-overview.html
+      - title: "Create a Pipeline for Continuous Deployment"
         url: /pipeline/pipeline-create-a-pipeline-for-continuous-deployment.html
-      - title: "Deploy snapshot from PC to PS"
-        url: /pipeline/pipeline-configuration-PCtoPS.html
-      - title: "Pipeline script"
-        url: /pipeline/pipeline-script.html
-      - title: "Pipeline report"
-        url: /pipeline/pipeline-report.html
-      - title: "Pipeline stage & step reference"
-        url: /pipeline/pipeline-step-reference.html
-      - title: "Toolkit deployment"
-        url: /pipeline/toolkit-deployment
+      - title: "Deploy Snapshot from PC to PS"
+        url: /pipeline/pipeline-deploy-snapshot-from-pc-to-ps.html
+      - title: "Pipeline Script"
+        url: /pipeline/pipeline-pipeline-script.html
+      - title: "Pipeline Report"
+        url: /pipeline/pipeline-pipeline-report.html
+      - title: "Toolkit Deployment"
+        url: /pipeline/pipeline-toolkit-deployment.html
+      - title: "Pipeline Stage & Step Reference"
+        url: /pipeline/pipeline-pipeline-stage&step-reference.html
 
-  - title: Operation
+  - title: Operations Tool
     children:
-      - title: "Supporting Tool"
-        url: /operation/operation-supporting-tool.html
+      - title: "Operations Tool"
+        url: /operations/operations-operations-tool.html
 
   - title: Administration
     children:
-      - title: "Users management"
+      - title: "Users Management"
         url: /administration/administration-users-management.html
-      - title: "BAW configuration"
-        url: /administration/administration-bpm-configuration.html
-      - title: "Selenium Hub configuration"
+      - title: "BAW Configuration"
+        url: /administration/administration-baw-configuration.html
+      - title: "Selenium Hub Configuration"
         url: /administration/administration-selenium-hub-configuration.html
-      - title: "Team configuration"
+      - title: "Team Configuration"
         url: /administration/administration-team-configuration.html
       - title: "Checkstyle Rule Configuration"
         url: /administration/administration-checkstyle-rule-configuration.html
-      - title: "Custom recorder"
+      - title: "Custom Recorder"
         url: /administration/administration-custom-recorder.html
-      - title: "Start and Stop IDA environment"
-        url: /administration/administration-starting-and-stop-env.html
+      - title: "Start and Stop IDA Environment"
+        url: /administration/administration-start-and-stop-ida-environment.html
       - title: "Settings Configuration"
         url: /administration/administration-settings-configuration.html
 
@@ -156,27 +161,27 @@ docs:
       - title: "Test Commands"
         url: /references/references-test-command.html
       - title: "Javascript API"
-        url: /references/references-js-api.html
-      - title: "REST APIs"
-        url: /references/references-apis.html
+        url: /references/references-javascript-api.html
+      - title: "IDA REST APIs"
+        url: /references/references-ida-rest-apis.html
       - title: "Repacking IDA Application(v3.x, v2.x)"
-        url: /references/references-ida-repacking-early-version.html
+        url: /references/references-repacking-ida-application-early-version.html
       - title: "Installing IDA Application(v3.x, v2.x)"
-        url: /references/references-ida-installing-early-version.html
+        url: /references/references-installing-ida-application-early-version.html
       - title: "Migrating and Updating IDA Application v2.x"
-        url: /references/references-migrating-and-updating-your-application.html
+        url: /references/references-migrating-and-updating-ida-application-v2.x.html
       - title: "Migrating IDA from v2.7.x to v21.0.0"
-        url: /references/references-migrate-ida-from-v2.7.x-to-v21.0.0.html
+        url: /references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html
       - title: "Samples"
         url: /references/references-samples.html
       - title: "Best Practices"
         url: /references/references-best-practices.html
       - title: "Demos"
-        url: /references/references-demo.html
+        url: /references/references-demos.html
       - title: "Setup Selenium Grid on Redhat"
-        url: /references/references-setup-selenium-grid-redhat.html
+        url: /references/references-setup-selenium-grid-on-redhat.html
       - title: "Operations"
-        url: /references/references-operation.html
+        url: /references/references-operations.html
       - title: "IDA Plug-in"
         url: /references/references-ida-plugin.html
       - title: "Performance Test"
@@ -185,14 +190,14 @@ docs:
   - title: "Trouble Shooting"
     children:
       - title: "Known Limitation"
-        url: /trouble-shooting/trouble-shooting-known-limitation.html
-      - title: "Frequently asked questions"
-        url: /trouble-shooting/trouble-shooting-faq.html
-      - title: "IDA Trouble Shooting"
-        url: /trouble-shooting/trouble-shooting-ida-overall.html
-      - title: "IDA Plugin Trouble Shooting"
-        url: /trouble-shooting/trouble-shooting-ida-plugin.html
-      - title: "Test Project Trouble Shooting"
-        url: /trouble-shooting/trouble-shooting-ida-test-project.html
-      - title: "Pipeline Trouble Shooting"
-        url: /trouble-shooting/trouble-shooting-ida-pipeline.html
+        url: /troubleshooting/troubleshooting-known-limitation.html
+      - title: "Frequently Asked Questions"
+        url: /troubleshooting/troubleshooting-frequently-asked-questions.html
+      - title: "IDA Troubleshooting"
+        url: /troubleshooting/troubleshooting-ida-troubleshooting.html
+      - title: "IDA Plug-in Troubleshooting"
+        url: /troubleshooting/troubleshooting-ida-plugin-troubleshooting.html
+      - title: "Test Project Troubleshooting"
+        url: /troubleshooting/troubleshooting-test-project-troubleshooting.html
+      - title: "Pipeline Troubleshooting"
+        url: /troubleshooting/troubleshooting-pipeline-troubleshooting.html

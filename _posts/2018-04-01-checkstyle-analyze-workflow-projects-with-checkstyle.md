@@ -1,21 +1,20 @@
 ---
-title: "Analyze Workflow projects with checkstyle"
+title: "Analyze Workflow Projects with Checkstyle"
 category: checkstyle
-date: 2018-10-06 15:17:55
+date: 2018-04-01 20:17:55
 last_modified_at: 2019-07-29 15:26:00
-order: 1
 ---
 
-# Analyze Workflow projects with checkstyle
+# Analyze Workflow Projects with Checkstyle
 ***
 
-### Setting up the Workflow project and perform it.
+## Setting up the Workflow project and perform it.
 
    1. Use BAW server or upload a TWX file to analyze.
 
       **Use BAW server**, fill the below field values for the checkstyle form.
 
-      ![][checkstyle_checkstyleform]{:height="80%" width="80%"}
+      ![][checkstyle_checkstyleform]{:width="100%"}
       
       |   Parameter   | Description    |
       | ------------- |----------------|
@@ -30,15 +29,16 @@ order: 1
 
       **Upload a TWX file**, choose the TWX tab.
 
-      ![][checkstyle_checkstyleupload]{:height="80%" width="80%"}
+      ![][checkstyle_checkstyleupload]{:width="100%"}
 
       You can choose or drop a TWX file.
 
-      ![][checkstyle_checkstyleupload_drop] ![][checkstyle_checkstyleupload_done]
+      ![][checkstyle_checkstyleupload_drop]{:width="40%"}<br>
+      ![][checkstyle_checkstyleupload_done]{:width="40%"}
 
    2. Click **Analyze** Button to see the CheckStyle report.
 
-      ![][tutorial_checkstyle_report]{:height="80%" width="80%"}
+      ![][tutorial_checkstyle_report]{:width="100%"}
 
 
 [checkstyle_checkstyleform]: ../images/checkstyle/checkstyle_checkstyleform.PNG
@@ -47,4 +47,4 @@ order: 1
 [checkstyle_checkstyleupload_done]: ../images/checkstyle/checkstyle_checkstyleupload_done.PNG
 [tutorial_checkstyle_report]: ../images/tutorial/tutorial_checkstyle_report.PNG
 
-[1]: ../administration/administration-bpm-configuration.html
+[1]: ../administration/administration-baw-configuration.html

@@ -1,12 +1,11 @@
 ---
-title: "Task 1: Create a test project and generate test cases"
+title: "Task 1: Create a Test Project and Generate Test Cases"
 category: tutorial
-date: 2018-09-23 15:17:55
+date: 2018-02-01 15:17:55
 last_modified_at: 2021-08-23 21:40:00
-order: 1
 ---
 
-# Task 1: Create a test project and generate test cases
+# Task 1: Create a Test Project and Generate Test Cases
 ***
 
 IDA enables testers to automate their test scenarios easily and provides 60+ built-in automation test commands to support Workflow project test.
@@ -14,13 +13,13 @@ IDA enables testers to automate their test scenarios easily and provides 60+ bui
 ## Pre-requisites
 Before you start the tutorial, you need to setup below configurations with the administrative account ("idaAdmin"/"idaAdmin").
 
-[Users management][1]  
+[Users Management][1]  
 You need to setup user account for the IDA login credentials.
 
-[BAW configuration][2]   
+[BAW Configuration][2]   
 You need to setup BAW server and make the Workflow account be ready.
 
-[Selenium hub configuration][3]   
+[Selenium Hub Configuration][3]   
 You need to setup selenium node url for the remote testing.
 
 
@@ -38,15 +37,15 @@ To create a new test project:
 
   1. In this project list page, click **Create Project** button. Name the project name as **Hiring Sample**. Choose the values like below screenshot. For the visibility, you can choose private or team you belong to. For advance, click the right arrow button then you can configure retry time and retry interval for the project.
     
-     ![][tutorial_createproject]{:height="60%" width="60%"}
+     ![][tutorial_createproject]{:width="60%"}
 
      **Notes** 
      IDA caches applications and toolkits list per server, you could refresh the cache by clicking the ![][tutorial_refresh_icon] next to the 'Process App'.  
-     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BAW server](https://sdc-china.github.io/IDA-doc/administration/administration-bpm-configuration.html#add-case-object-store-configuration-to-a-bpm-server).
+     If you want to create a test project for **CASE**, please configure the **Case Object Store** first, refer to [Add Case Object Store configuration to a BAW server](../administration/administration-baw-configuration.html#add-case-object-store-configuration-to-a-baw-server).
   
   2. Click **Create** button, you will enter into project dashboard page.
 
-     ![][tutorial_project_info]{:height="80%" width="80%"}
+     ![][tutorial_project_info]{:width="100%"}
    
 ## Step 2: Generate test cases
 
@@ -60,7 +59,7 @@ To generate a process test case and an user interface test case:
 
  2. Choose **Process** in the **Artifact Type** field and **Standard HR Open New Position** in the **Items** field.
   
-     ![][tutorial_case_items_form]{:height="80%" width="80%"}
+     ![][tutorial_case_items_form]{:width="80%"}
   
  3. Click **Generate** button.
   
@@ -68,11 +67,11 @@ To generate a process test case and an user interface test case:
   
  5. Choose **User Interface** in the **Artifact Type** field and **Create Position Request CSHS** in the **Items** field. 
   
-      ![][tutorial_case_items_form2]{:height="80%" width="80%"}
+      ![][tutorial_case_items_form2]{:width="80%"}
   
  6. Click **Generate** button. You can see two test suites with related test cases are generated in the project dashboard.
 
-      ![][tutorial_case_basic_info]{:height="80%" width="80%"}
+      ![][tutorial_case_basic_info]{:width="100%"}
 
 <!-- **[< Next>][4]** -->
   
@@ -82,7 +81,7 @@ To generate a process test case and an user interface test case:
 [tutorial_case_basic_info]: ../images/tutorial/tutorial_case_basic_info.PNG
 
 [1]: ../administration/administration-users-management.html
-[2]: ../administration/administration-bpm-configuration.html
+[2]: ../administration/administration-baw-configuration.html
 [3]: ../administration/administration-selenium-hub-configuration.html
 [4]: tutorial-run-record-and-replay-a-test-case.html
 [tutorial_createproject]: ../images/tutorial/tuorial_project_create.PNG 
