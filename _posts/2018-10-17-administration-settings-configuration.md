@@ -89,12 +89,9 @@ Field | Description
 Search Depth | Search (and comparison) depth of Coach/Coach View
 
 
-## Set K8s configuration
+## Set Kubernetes configuration
 
-You can runtime update k8s configuration in IDA, after that you can use the new k8s server on Selenium Grid Configuration. Only test for Openshift 4.3.
-
-  1. Click Administrator tab, then switch to Settings tab.
-  2. Scroll down to K8s tab and fill out form according to below table:
+The Kubernetes configuration is used to create Containerized Selenium Grid Server. Tested on Openshift 4.x.
 
      ![][administrator_k8s_setting]{:width="100%"}
     
