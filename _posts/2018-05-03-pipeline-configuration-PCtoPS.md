@@ -45,7 +45,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
     ![][pipeline_bpmconfiguration]
 
-5. In PS Server configuraion, you need to fill the connect server name.
+5. For connected process server, please also fill the connected PS server.
 
      ![][pipeline_servername]
 
