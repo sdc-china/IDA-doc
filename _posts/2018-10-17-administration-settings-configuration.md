@@ -93,39 +93,37 @@ Search Depth | Search (and comparison) depth of Coach/Coach View
 
 The Kubernetes configuration is used to create Containerized Selenium Grid Server. Tested on Openshift 4.x.
 
-     ![][administrator_k8s_setting]{:width="100%"}
-    
-     |   Field                | Description                                                         |
-     | -------------------|---------------------------                                          |
-     | Ingress Host|The subdomain to use for exposed routes. For openshift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
-     | Server Url| Cluster API address |
-     | Namespace| The namespace/project that you want to use to create your containerized grid.|  
-     | User Token| Token of service account.|
+![][administrator_k8s_setting]{:width="100%"}
 
-     Here is a sample:
+|   Field                | Description                                                         |
+| -------------------|---------------------------                                          |
+| Ingress Host|The subdomain to use for exposed routes. For openshift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
+| Server Url| Cluster API address |
+| Namespace| The namespace/project that you want to use to create your containerized grid.|  
+| User Token| Token of service account.|
 
-     ![][administrator_k8s_setting_sample]{:width="100%"}
+Here is a sample:
 
-  3. How to create service account and get its token:
+![][administrator_k8s_setting_sample]{:width="100%"}
 
-     After login openshift, run below commands.
+The steps to create service account and get token:
 
-     ```
-     kubectl -n kube-system create serviceaccount ida-service-account
-     kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
-     TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
-     echo $TOKENNAME
-     TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
-     echo $TOKEN
-     kubectl config set-credentials ida-service-account --token=$TOKEN
-     kubectl config set-context --current --user=ida-service-account
-     ```
+```
+kubectl -n kube-system create serviceaccount ida-service-account
+kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
+TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
+echo $TOKENNAME
+TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
+echo $TOKEN
+kubectl config set-credentials ida-service-account --token=$TOKEN
+kubectl config set-context --current --user=ida-service-account
+```
 
-     Check if the current user is added successfully or not, and get the token for the newly added user:
-     
-     ```
-     oc config view
-     ```
+Check if the current user is added successfully or not, and get the token for the newly added user:
+
+```
+oc config view
+```
 
 
 **Notes:**
