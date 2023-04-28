@@ -2,7 +2,7 @@
 title: "IDA Troubleshooting"
 category: troubleshooting
 date: 2018-12-05 15:10:55
-last_modified_at: 2022-04-27 16:50:00
+last_modified_at: 2023-04-28 16:50:00
 ---
 
 # IDA Troubleshooting
@@ -20,6 +20,11 @@ To trouble shoot all IDA issues, you may need to adjust log level. You may also 
    - Dump all server logs using Liberty server commmand below. File ida_server.zip is generated in server folder which includes all server logs.
    ```
    server dump ida_server --archive="ida_server.zip"
+   ```
+
+   - If OOM error is found in the logs, help to provide the Liberty server dump including the heap dump, using command below:
+   ```
+   server dump ida_server --archive="ida_server.zip" --include=heap
    ```
 
 3. Refer [Test Project Troubleshooting](../troubleshooting/troubleshooting-test-project-troubleshooting.html), [Pipeline Troubleshooting](../troubleshooting/troubleshooting-pipeline-troubleshooting.html) and [IDA plug-in troubleshooting](../troubleshooting/troubleshooting-ida-plugin-troubleshooting.html) to collect more info for troubleshooting test project and pipeline issues.
