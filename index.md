@@ -86,7 +86,7 @@ The user stories are as below:
 * Load Test for Workflow project
  
 ### Contact
-- Any question please feel free to reach out to ctesdc@ibm.com with subject IDA inquiry
+- Any question please feel free to reach out to <ctesdc@ibm.com> with subject IDA inquiry
 
 
 
