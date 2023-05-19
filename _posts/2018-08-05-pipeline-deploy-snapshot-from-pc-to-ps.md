@@ -32,7 +32,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
 
    ```  
-   cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys   
+   cat /tmp/id_rsa.pub | ssh root@socking1.fyre.ibm.com "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 
    ```
   **Notes:**
