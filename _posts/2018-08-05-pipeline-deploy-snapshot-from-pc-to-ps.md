@@ -32,7 +32,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
 
    ```  
-   cat /root/.ssh/id_rsa.pub | ssh root@BAW_HOST "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+   cat /root/.ssh/id_rsa.pub | ssh root@192.168.0.10 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 
    ```
   **Notes:**
@@ -53,7 +53,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 1. If you are in Linux environment, you can use below command to vertify the connection. Please replace your IP address accordingly.
 
     ```     
-   ssh -i /root/.ssh/id_rsa root@BAW_SERVER
+   ssh -i /root/.ssh/id_rsa root@192.168.0.10
    ```
 2. If you are in Windows environment, you can use Putty tool to vertify it.
 
