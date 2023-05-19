@@ -28,7 +28,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    The public key is now located in /root/.ssh/id_rsa.pub. The private key (identification) is now located in  /root/.ssh/id_rsa.
 
 
-3. Copy the public key to the PC Server and PS Server.
+3. Add the public key to the PC Server and PS Server's authorized_keys.
 
 
    ```  
