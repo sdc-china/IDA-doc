@@ -147,6 +147,18 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
    IDA supports nightly cleanup of pipeline build reports - you can set Max # of builds to keep and Days to keep builds on Settings. To clean old test screenshots that are out of scope of the nighlty job, use commands below. For example, to clean test screenshots older than 45 days:
 
    `find /var/ida/data/screenshots/pipeline/Project* -maxdepth 0 -type d -ctime +45 -exec rm -r "{}" \;`
+   
+   
+1. How to deal with WebSphere Application Server SOAP Connection Issues: "java.lang.SocketException: Connection reset" or "java.net.SocketTimeoutException: Read timed out"?
+
+    - Answer: Please follow the below steps, refer to doc [Connection timeout when running a wsadmin script](https://www.ibm.com/docs/en/bpm/8.6.0?topic=configuration-connection-timeout-when-running-wsadmin-script):
+      1. Open the Dmgr profile SOAP properties file, <WAS_PROFILE_HOME>/Dmgr01/properties/soap.client.props.
+      2. Edit the SOAP timeout value to 0 (no limit), by default, the value is 180: com.ibm.SOAP.requestTimeout=0
+      3. Open the AppSrv profile SOAP properties file, <WAS_PROFILE_HOME>/AppSrv01/properties/soap.client.props.
+      4. Edit the SOAP timeout value to 0 (no limit), by default, the value is 180: com.ibm.SOAP.requestTimeout=0
+      5. Restart the whole environment.
+      
+      
 
 
 [add-permission-1]: ../images/references/add-permission-1.png
