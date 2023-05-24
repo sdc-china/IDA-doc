@@ -17,7 +17,7 @@ IDA pipeline allows you to deploy your snapshot from Workflow Center to Workflow
 1. Login into the IDA server and create the key pair in IDA server.
 
     ```  
-     $ssh-keygen -m PEM -t rsa
+     ssh-keygen -m PEM -t rsa
 
     ```  
 
