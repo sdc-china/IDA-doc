@@ -2,7 +2,7 @@
 title: "Deploy Snapshot from Workflow Center to Workflow Server"
 category: pipeline
 date: 2018-08-05 15:17:55
-last_modified_at: 2019-07-29 15:52:00
+last_modified_at: 2023-06-09 17:31:00
 ---
 
 # Deploy Snapshot from Workflow Center to Workflow Server
@@ -112,6 +112,7 @@ IDA pipeline allows you to deploy your snapshot from Workflow Center to Workflow
      |Label                  | Description
      |---------------------- |-------------
      |Deploy From Local File System Of Process Server                   | Jump over the export step and use the package in Workflow Server server directly
+     |Clean Old Snapshots | Clean the old snapshots without any running instances or completed tasks referenced by running instances, and the completed instances in the snapshots will be deleted as well.   
      
 3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (Workflow Center) stage will be installed to offline Workflow Server. If the snapshot acronym is provided, it means the existing snapshot in DEV (Workflow Center) will be located by snapshot acronym and installed to offline Workflow Server.
 
