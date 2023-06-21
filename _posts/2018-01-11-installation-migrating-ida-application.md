@@ -18,8 +18,8 @@ Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For 
 Compared to the previous version, the new version of IDA will have some changes in database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:  
 
 1. Download the lastest IDA installation file. The migration scripts come from the installation file. The file name is ida-web-xxx.zip.(xxx is the IDA version)
-2. Stop the libery server.  
-3. Stop the MySQL server.  
+2. Stop Libery server.  
+3. Stop MySQL server.  
 4. Backup the MySQL database.    
 
 ## Step 1: Update DB
@@ -59,10 +59,9 @@ mysql> source yoursqlpath\migrate-mysql-v21.3.2-v21.3.3.sql
 You need to update IDA.war by the following steps:
 
 1. [Repacking IDA Application](../installation/installation-repacking-ida-application.html) if you have changed the **ida.properties** before, otherwise you can skip step 1.
-2. Stop Liberty Server.
-3. Remove all the files from <LIBERTY_FOLDER>\usr\servers\default\apps folder.     
-4. Copy the **ida-web.war** into the <LIBERTY_FOLDER>\usr\servers\default\apps folder.    
-5. Start Liberty Server.  
+2. Remove all the files from <LIBERTY_FOLDER>\usr\servers\default\apps folder.     
+3. Copy the **ida-web.war** into the <LIBERTY_FOLDER>\usr\servers\default\apps folder.    
+4. Start Liberty Server.  
  
 ## Step 3: Update IDA BAW Toolkit    
 
