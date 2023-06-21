@@ -5,7 +5,7 @@ date: 2018-01-11 15:17:56
 last_modified_at: 2021-12-10 16:44:00
 ---
 
-# Migrating IDA Application from v21.0.0
+# Migrating IDA Application from
 
 If you have previously installed IDA in your environment and now you want to update IDA to the new version, please read the following content. 
 
@@ -58,7 +58,7 @@ mysql> source yoursqlpath\migrate-mysql-v21.3.2-v21.3.3.sql
 
 You need to update IDA.war by the following steps:
 
-1. [Repacking IDA Application](../installation/installation-repacking-ida-application.html) if you have changed the **ida.properties** before, otherwise you can skip this step.
+1. [Repacking IDA Application](../installation/installation-repacking-ida-application.html) if you have changed the **ida.properties** before, otherwise you can skip step 1.
 2. Stop Liberty Server.
 3. Remove all the files from <LIBERTY_FOLDER>\usr\servers\default\apps folder.     
 4. Copy the **ida-web.war** into the <LIBERTY_FOLDER>\usr\servers\default\apps folder.    
