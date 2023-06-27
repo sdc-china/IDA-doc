@@ -122,7 +122,7 @@ kubectl config set-context --current --user=ida-service-account
 Check if the current user is added successfully or not, and get the token for the newly added user:
 
 ```
-oc config view
+kubectl config view
 ```
 
 
