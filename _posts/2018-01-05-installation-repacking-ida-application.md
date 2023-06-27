@@ -5,8 +5,8 @@ date: 2018-01-05 15:17:55
 last_modified_at: 2021-12-10 21:34:00
 ---
 
-# Repacking IDA Application v21.x
-Below are steps to repackage IDA application v21.x+. For repackaging applications of early versions of IDA, see [Repacking IDA v3.x Application, Repacking IDA v2.x Application](../references/references-repacking-ida-application-early-version.html)
+# Repacking IDA Application
+Below are steps to repackage IDA application. For repackaging applications of early versions of IDA, see [Repacking IDA v3.x Application, Repacking IDA v2.x Application](../references/references-repacking-ida-application-early-version.html)
 
 ***
 

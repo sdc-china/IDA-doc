@@ -5,7 +5,7 @@ date: 2018-01-11 15:17:56
 last_modified_at: 2021-12-10 16:44:00
 ---
 
-# Migrating IDA Application from v21.0.0
+# Migrating IDA Application
 
 If you have previously installed IDA in your environment and now you want to update IDA to the new version, please read the following content. 
 
@@ -18,8 +18,8 @@ Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For 
 Compared to the previous version, the new version of IDA will have some changes in database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:  
 
 1. Download the lastest IDA installation file. The migration scripts come from the installation file. The file name is ida-web-xxx.zip.(xxx is the IDA version)
-2. Stop the libery server.  
-3. Stop the MySQL server.  
+2. Stop Libery server.  
+3. Stop MySQL server.  
 4. Backup the MySQL database.    
 
 ## Step 1: Update DB
@@ -54,21 +54,14 @@ mysql> source yoursqlpath\migrate-mysql-v21.3.1-v21.3.2.sql
 mysql> source yoursqlpath\migrate-mysql-v21.3.2-v21.3.3.sql
 ```    
 
-## Step 2: Update IDA.war   
+## Step 2: Update IDA.war
 
-For IDA version migration,you need to update IDA.war, take the following steps:
+You need to update IDA.war by the following steps:
 
-1. Find  **ida.properties** under conf folder in the previous version.
-2. Reconfigure  **ida.properties** file in the new version.Make sure you have copy the every propertie value from old version to new version. After you finish the properties value changes,you need to double check these properties values are set in new version files.    
-3. Run **package.bat/package.sh** command to repackage the **ida-web.war** file.It will update application-prod.yml.
-4. Remove all the files from wlp installation location\usr\servers\default\apps folder.     
-5. Copy the **ida-web.war** (which generated in step3) into the wlp installation\usr\servers\default\apps folder.    
-6. Start the Liberty Server.  
-
- **Notes**     
- Please not overwrite ida.properties from previous version, since we might add new some new property name  in some versions.  
- You can check the application-prod.yml in ida-web.war to make sure these setting are applied.
- 
+1. [Repacking IDA Application](../installation/installation-repacking-ida-application.html) if you have changed the **ida.properties** before, otherwise you can skip step 1.
+2. Remove all the files from <LIBERTY_FOLDER>\usr\servers\default\apps folder.     
+3. Copy the **ida-web.war** into the <LIBERTY_FOLDER>\usr\servers\default\apps folder.    
+4. Start Liberty Server.  
  
 ## Step 3: Update IDA BAW Toolkit    
 
