@@ -2,7 +2,7 @@
 title: "Selenium Hub Configuration"
 category: administration
 date: 2018-10-05 15:17:55
-last_modified_at: 2022-09-28 16:39:00
+last_modified_at: 2023-06-27 12:00:00
 ---
 
 # Selenium Hub Configuration
@@ -36,7 +36,8 @@ last_modified_at: 2022-09-28 16:39:00
      | Grid New Session Wait Timeout | How long a new test waiting for a node to become available (value in millisecond).|  
      | Grid Browser Timeout | How long the browser is allowed to hang(value in seconds).|
      | Grid Timeout | How long the client is allowed to be gone before the session is reclaimed(value in seconds).|
-     | Node Replicas Number | How many nodes you need to create for this hub.|
+     | Node Min Replicas Number | Nodes will automatically increase or decrease according to actual needs, this value sets the minimum number of nodes. |
+     | Node Max Replicas Number | Nodes will automatically increase or decrease according to actual needs, this value sets the maximum number of nodes.|
      | Configuration          | Customize browser options for selenium                              |
 
      What's more, the option **Containerized** is unavailable by default. You need to [configure Kubernates Setting] before creating this kind of selenium grid. 
