@@ -24,10 +24,9 @@ Selenium Grid 4 can be set up in the serveral modes: Standalone/Hub and Node/Dis
    - [Firefox Driver](https://github.com/mozilla/geckodriver/releases)
    - [Chrome Driver](https://chromedriver.storage.googleapis.com/index.html)
    - [IE Driver](https://www.selenium.dev/downloads/)
-   - [Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
 3. To quickly start Selenium 4 in standalone mode with default configurations, run the command below. This will setup a 1-node hub with auto-detected webdrivers in the same folder as the jar file.
     ```
-      java -jar selenium-server-4.x.x.jar standalone
+    java -jar selenium-server-4.x.x.jar standalone
     ```
     ![][selenium_4_standalone]
 4. To start Selenium 4 in Hub and Node mode with customized node configuration,
@@ -138,76 +137,76 @@ Below is the reference link for how to setup selenium grid. It includes the deta
 
 3. Start the Hub
   - Create hubconfig.json
-    ```
-      {
-        "port": 4444,
-        "newSessionWaitTimeout": 10000,
-        "servlets" : [],
-        "withoutServlets": [],
-        "custom": {},
-        "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
-        "registry": "org.openqa.grid.internal.DefaultGridRegistry",
-        "throwOnCapabilityNotPresent": true,
-        "cleanUpCycle": 5000,
-        "role": "hub",
-        "debug": false,
-        "browserTimeout": 60,
-        "timeout": 60
-      }
-    ```
+   ```
+   {
+      "port": 4444,
+      "newSessionWaitTimeout": 10000,
+      "servlets" : [],
+      "withoutServlets": [],
+      "custom": {},
+      "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+      "registry": "org.openqa.grid.internal.DefaultGridRegistry",
+      "throwOnCapabilityNotPresent": true,
+      "cleanUpCycle": 5000,
+      "role": "hub",
+      "debug": false,
+      "browserTimeout": 60,
+      "timeout": 60
+   }
+   ```
   - Run the command
     ```
-      java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json
+    java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json
     ```
 
 4. Start the Node
   - Create nodeconfig.json
-    ```
-      {
-        "capabilities": [
-          {
-            "browserName": "firefox",
-            "marionette": true,
-            "maxInstances": 5,
-            "seleniumProtocol": "WebDriver",
-            "version": 67
-          },
-          {
-            "browserName": "chrome",
-            "maxInstances": 5,
-            "seleniumProtocol": "WebDriver",
-            "version": 75
-          },
-          {
-            "browserName": "internet explorer",
-            "platform": "WINDOWS",
-            "maxInstances": 1,
-            "seleniumProtocol": "WebDriver",
-            "version": 11
-          }
-        ],
-        "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-        "maxSession": 5,
-        "port": -1,
-        "register": true,
-        "registerCycle": 5000,
-        "hub": "http://localhost:4444",
-        "nodeStatusCheckTimeout": 5000,
-        "nodePolling": 5000,
-        "role": "node",
-        "unregisterIfStillDownAfter": 60000,
-        "downPollingLimit": 2,
-        "debug": false,
-        "servlets": [],
-        "withoutServlets": [],
-        "custom": {},
-        "browserTimeout": 60,
-        "timeout": 60
-      }
-    ```
+   ```
+   {
+     "capabilities": [
+       {
+         "browserName": "firefox",
+         "marionette": true,
+         "maxInstances": 5,
+         "seleniumProtocol": "WebDriver",
+         "version": 67
+       },
+       {
+         "browserName": "chrome",
+         "maxInstances": 5,
+         "seleniumProtocol": "WebDriver",
+         "version": 75
+       },
+       {
+         "browserName": "internet explorer",
+         "platform": "WINDOWS",
+         "maxInstances": 1,
+         "seleniumProtocol": "WebDriver",
+         "version": 11
+       }
+     ],
+     "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+     "maxSession": 5,
+     "port": -1,
+     "register": true,
+     "registerCycle": 5000,
+     "hub": "http://localhost:4444",
+     "nodeStatusCheckTimeout": 5000,
+     "nodePolling": 5000,
+     "role": "node",
+     "unregisterIfStillDownAfter": 60000,
+     "downPollingLimit": 2,
+     "debug": false,
+     "servlets": [],
+     "withoutServlets": [],
+     "custom": {},
+     "browserTimeout": 60,
+     "timeout": 60
+   }
+   ```
   - Run the command   
     ```
-      java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
+    java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
     ```
 
    **Notes:**
@@ -231,12 +230,10 @@ docker pull selenium/hub:3.141.59-palladium
 docker pull selenium/node-firefox:3.141.59-palladium
 docker pull selenium/node-chrome:3.141.59-palladium
 
-
 docker network create grid
 docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.141.59-palladium
 docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-palladium
 docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium
-
 ```
 
 You can do the below command mutiple times,it will create mutiple chrome/firefox node for the grid remote testing. It can provide you to run the selenium tesing parallel in the Grid.We recommand you to create above 5 node number for chrome/firefox each.
@@ -244,7 +241,6 @@ You can do the below command mutiple times,it will create mutiple chrome/firefox
 ```
 docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-palladium
 docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium
-
 ```
 
 After that you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.
