@@ -32,23 +32,24 @@ Selenium Grid 4 can be set up in the serveral modes: Standalone/Hub and Node/Dis
     ![][selenium_4_standalone]
 4. To start Selenium 4 in Hub and Node mode with customized node configuration,
   - create a config.toml file with configuration below.
-  ```
-  [node]
-  detect-drivers = false
-  [[node.driver-configuration]]
-  display-name = "Firefox"  
-  max-sessions = 5
-  stereotype = "{\"browserName\": \"firefox\"}"
-  [[node.driver-configuration]]
-  display-name = "Chrome"
-  max-sessions = 5
-  stereotype = "{\"browserName\": \"chrome\"}"
-  ```
+```
+[node]
+detect-drivers = false
+
+[[node.driver-configuration]]
+display-name = "Firefox"  
+max-sessions = 5
+stereotype = "{\"browserName\": \"firefox\"}"
+
+[[node.driver-configuration]]
+display-name = "Chrome"
+max-sessions = 5
+stereotype = "{\"browserName\": \"chrome\"}"
+```
   - Run commands below in different commandlines.
-  ```
-    java -jar selenium-server-4.x.x.jar hub
-    java -jar selenium-server-4.x.x.jar node --config config.toml
-  ```
+```
+java -jar selenium-server-4.x.x.jar standalone --config config.toml
+```
   ![][selenium_4_hub_node]
 
 **Docker installation**
