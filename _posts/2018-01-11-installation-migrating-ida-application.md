@@ -9,7 +9,7 @@ last_modified_at: 2021-12-10 16:44:00
 
 If you have previously installed IDA in your environment and now you want to update IDA to the new version, please read the following content. 
 
-Below are example steps to migrate IDA application from v21.0.0 to v22.1.3. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](../references/references-migrating-and-updating-ida-application-v2.x.html) and [Migrating IDA from v2.7.x to v21.0.0](../references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html)
+Below are example steps to migrate IDA application from v21.0.0 to latest version. For migrating applications from early versions of IDA, see [Migrating and Updating IDA Application v2.x](../references/references-migrating-and-updating-ida-application-v2.x.html) and [Migrating IDA from v2.7.x to v21.0.0](../references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html)
 
 ***
 
