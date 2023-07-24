@@ -851,7 +851,9 @@ Run a case solution activity by name.
 
 - Example  
 
-	![][run_filenet_p8_activity_by_name_sample]
+	![][run_filenet_p8_activity_by_name_sample_1]
+	
+	![][run_filenet_p8_activity_by_name_sample_2]
 	
 ___
 
@@ -1660,7 +1662,8 @@ ___
 [add_activity_sample]: ../images/command/add_activity_sample.png
 [update_case_data_sample]: ../images/command/update_case_data_sample.png
 [run_activity_by_name_sample]: ../images/command/run_activity_by_name_sample.png
-[run_filenet_p8_activity_by_name_sample]: ../images/command/run_filenet_p8_activity_by_name_sample.png
+[run_filenet_p8_activity_by_name_sample_1]: ../images/command/run_filenet_p8_activity_by_name_sample_1.png
+[run_filenet_p8_activity_by_name_sample_2]: ../images/command/run_filenet_p8_activity_by_name_sample_2.png
 [start_manual_activity_sample]: ../images/command/start_manual_activity_sample.png
 [assertServiceData_sample]: ../images/command/assertServiceData_sample.png
 [assert_case_state_sample]: ../images/command/assert_case_state_sample.png
