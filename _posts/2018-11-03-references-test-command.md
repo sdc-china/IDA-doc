@@ -836,16 +836,18 @@ Update current case data.
 	
 ___
 
-### **runFileNetP8ActivityByName**
+### **runActivityByName**
 
-Run a FileNet P8 activity by name.
+Run a case solution activity by name.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Role Name` | Required | The role name|
-    | `Activity Name` | Required | The filenet p8 activity name of current case type|
+     | `Activity Name` | Required | The case solution activity name of current case type|
+	| `Role Name` | Required(FileNet P8) | The role name, it is required if run a FileNet P8 activity.| 
+    | `Task Name` | Required(BPMN) | The task name, it is required if run a BPMN activity. |
+    | `byTaskOwner` | Optional(BPMN) | Checked means the task owner will run this task. Unchecked indicates that the assigned user will run the task.|
 
 - Example  
 
