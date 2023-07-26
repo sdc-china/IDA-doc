@@ -2,7 +2,7 @@
 title: "Test Report"
 category: test
 date: 2018-03-25 15:17:55
-last_modified_at: 2023-07-03 15:50:00
+last_modified_at: 2023-07-26 15:50:00
 ---
 
 # Test Report
@@ -54,10 +54,10 @@ In the Test project dashboard page, you can click ...button -> Print Report to g
 The report has 3 parts: test project summary, test suite summary, test case detail.
     ![][print_repot_summary]{:width="80%"}
     
-The failed test case will have trace log and screenshot if it has.
+The failed test case will display trace log and screenshot if it has.
 
    ![][print_report_failed]{:width="80%"}
-
+   ![][print_report_failed_2]{:width="80%"}
 
    [testcase_list]: ../images/test/test_case_dashboard.png
    [testcase_step_status]: ../images/test/test_case_step_status.png
@@ -68,3 +68,4 @@ The failed test case will have trace log and screenshot if it has.
    [print_report]: ../images/test/print_report.png
    [print_repot_summary]: ../images/test/print_repot_summary.png
    [print_report_failed]: ../images/test/print_report_failed.png
+   [print_report_failed_2]: ../images/test/print_report_failed_2.png
