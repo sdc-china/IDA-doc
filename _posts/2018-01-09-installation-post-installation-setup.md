@@ -129,7 +129,7 @@ services:
 2. Run commands below to start / stop Selenium Grid 4.
 
 ```
-docker-compose -f docker-compose-v3.yml up
+docker-compose -f docker-compose-v3.yml up -d
 docker-compose -f docker-compose-v3.yml down
 ```
 
