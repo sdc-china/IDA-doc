@@ -64,6 +64,7 @@ For example:
 
 ```
   <dataSource jndiName="jdbc/ida">
+      <connectionManager maxPoolSize="50"/>
       <jdbcDriver libraryRef="DBLib" />
       <properties.postgresql serverName="localhost" portNumber="5432"
         databaseName="IDADB" user="postgres" password="password" />
@@ -138,6 +139,7 @@ For example:
 
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida">
+      <connectionManager maxPoolSize="50"/>
       <jdbcDriver libraryRef="PostgresSQLLib" />
       <properties.postgresql serverName="localhost" portNumber="5432"
         databaseName="IDADB" user="postgres" password="password" />
@@ -150,6 +152,7 @@ For example:
   </library>
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DB2DataSource"
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <connectionManager maxPoolSize="50"/>
     <jdbcDriver libraryRef="DB2Lib"/>
     <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.DATABASE_IDA_SCHEMA}"
                 serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}"
@@ -162,6 +165,7 @@ For example:
       <fileset dir="${shared.config.dir}/lib/global" includes="ojdbc8-12.2.0.1.jar"/>
   </library>
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="OracleDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <connectionManager maxPoolSize="50"/>
     <jdbcDriver libraryRef="ORACLELib"/>
     <properties.oracle url="${env.DATABASE_URL}"
           user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
@@ -176,6 +180,7 @@ For example:
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <connectionManager maxPoolSize="50"/>
     <jdbcDriver libraryRef="MYSQLLib"/>
     <properties databaseName="<DATABASE_NAME>"
                 serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>"
