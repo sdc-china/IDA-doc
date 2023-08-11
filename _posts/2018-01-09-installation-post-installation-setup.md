@@ -23,6 +23,7 @@ Selenium Grid 4 can be set up in the serveral modes: Standalone/Hub and Node/Dis
 2. Download Selenium web drivers and put them under the same folder of the Selenium server jar file.
    - [Firefox Driver](https://github.com/mozilla/geckodriver/releases)
    - [Chrome Driver](https://chromedriver.storage.googleapis.com/index.html)
+   - [Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver)
    - [IE Driver](https://www.selenium.dev/downloads/)
 3. To quickly start Selenium 4 in standalone mode with default configurations, run the command below. This will setup a 1-node hub with auto-detected webdrivers in the same folder as the jar file.
     ```
@@ -45,6 +46,11 @@ Selenium Grid 4 can be set up in the serveral modes: Standalone/Hub and Node/Dis
    display-name = "Chrome"
    max-sessions = 5
    stereotype = "{\"browserName\": \"chrome\"}"
+
+   [[node.driver-configuration]]
+   display-name = "Edge"
+   max-sessions = 5
+   stereotype = "{\"browserName\": \"MicrosoftEdge\"}"
    ```
 
   - Run commands below in different commandlines.
@@ -66,7 +72,7 @@ Docker Compose is the simplest way to start a Grid.
 version: "3"
 services:
   chrome:
-    image: selenium/node-chrome:4.1.1-20211217
+    image: selenium/node-chrome:4.10.0-20230607
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -77,11 +83,11 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_MAX_SESSIONS=5
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   firefox:
-    image: selenium/node-firefox:4.1.1-20211217
+    image: selenium/node-firefox:4.10.0-20230607
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -92,11 +98,26 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_MAX_SESSIONS=5
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+
+  edge:
+    image: selenium/node-edge:4.10.0-20230607
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    deploy:
+        replicas: 5
+    restart: always
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_MAX_SESSIONS=5
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   selenium-hub:
-    image: selenium/hub:4.1.1-20211217
+    image: selenium/hub:4.10.0-20230607
     container_name: selenium-hub
     ports:
       - "4442:4442"
