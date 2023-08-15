@@ -16,7 +16,7 @@ There are three components for IDA application we need install and configure, in
 
 ## Step 1: Installing IDA Web Application
 
-IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. First, let's introduce the way to install IDA on liberty.
+IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. 
 
 ### Installing on Liberty
 
