@@ -254,7 +254,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Check the WAS version**
 
-If the WAS version is below **9.0.5.4**, it may occur some problems when install the IDA web application, so fisrtly, we should check the WAS version.
+If the WAS version is below **9.0.5.4**, it may occur some problems when install the IDA web application, please check the WAS version first.
 1. Login the WAS console, in the **Welcome** part, you can see the version of WAS.
 ![][wasversion]
 2. If the WAS version is below **9.0.5.4**, you should install the Fix Packs 9.0.5.4+, here is the minimum fix pack version:
