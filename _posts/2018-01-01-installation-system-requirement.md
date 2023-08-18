@@ -11,7 +11,7 @@ last_modified_at: 2022-07-27 16:25:00
 ## Supported Platforms
 
 * Ubuntu 16.04+, CentOS 6.8+, Red Hat Enterprise Linux 6.9+
-* Windows 10
+* Windows 10+
 * Openshift v4.x
 
 
