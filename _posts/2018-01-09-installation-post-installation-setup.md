@@ -126,10 +126,15 @@ services:
     restart: always
 ```
 
-2. Run commands below to start / stop Selenium Grid 4.
+2. Start Selenium Grid 4.
 
 ```
 docker-compose -f docker-compose-v3.yml up -d
+```
+
+3. Stop Selenium Grid 4.
+
+```
 docker-compose -f docker-compose-v3.yml down
 ```
 
