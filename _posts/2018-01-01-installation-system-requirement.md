@@ -29,6 +29,7 @@ last_modified_at: 2022-07-27 16:25:00
 
 * Firefox v52+ (64-bit)
 * Chrome v57+ (64-bit)
+* Edge v96+ (64-bit)
 * IE v11+ (Supports execution only)
 
 ## Hardware Requirements
