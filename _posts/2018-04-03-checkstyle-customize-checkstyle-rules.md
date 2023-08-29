@@ -12,7 +12,8 @@ last_modified_at: 2019-07-29 15:27:00
 
 ### Software Prerequisites
 
-* [IBM® Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
+* [IBM® Operational Decision Manager](https://www.ibm.com/products/operational-decision-manager)
+* For large BAW project(eg: the twx size is greater than 100MB), at least 4G memory is required for ODM server.
 
 ### Prerequisite
 
