@@ -2,7 +2,7 @@
 title: "Installing IDA Application(v3.x, v2.x)"
 category: references
 date: 2018-11-11 15:17:57
-last_modified_at: 2021-12-10 18:12:00
+last_modified_at: 2023-09-01 14:45:00
 ---
 
 # Installing IDA v3.x Application
@@ -261,7 +261,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Check the WAS version**
 
-If the WAS version is below **9.0.5.4**, it may occur some problems when install the IDA web application, so fisrtly, we should check the WAS version.
+IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5.5. It's recommended to install IDA on WebSphere **v9.0.5.4+**.
 1. Login the WAS console, in the **Welcome** part, you can see the version of WAS.
 ![][wasversion]
 2. If the WAS version is below **9.0.5.4**, you should install the Fix Packs 9.0.5.4+, here is the minimum fix pack version:
