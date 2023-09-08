@@ -2,7 +2,7 @@
 title: "Database Installation and Configuration"
 category: installation
 date: 2018-01-03 15:17:55
-last_modified_at: 2021-12-17 21:28:00
+last_modified_at: 2023-09-08 13:35:00
 ---
 
 # Database Installation and Configuration
@@ -101,7 +101,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 - You will want to change [IDA_HOME]/sql/data-mysql.sql script so that the organization matches your companies name. Please replace 'IDA' with your company name.  The default IDA login name and password is "idaAdmin/idaAdmin".  
 
 **Download mysql Driver**  
-You can download [JDBC for mysql v5.1.44](http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar). 
+You can download [JDBC for mysql v5.1.44](https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar). 
 
 ## Install and Configure Oracle
 
