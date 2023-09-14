@@ -16,7 +16,7 @@ There are three components for IDA application we need install and configure, in
 
 ## Step 1: Installing IDA Web Application
 
-IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. 
+IDA Web Application can be installed on WebSphere Application Server (WAS), liberty, Docker or Openshift. 
 
 ### Installing on Liberty
 
@@ -362,6 +362,9 @@ After finishing the installation of the fix packs, the next step is to deploy th
 
 ### Installing on Docker platform
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
+
+### Installing on Openshift
+Refer to [ida-operator](https://github.com/sdc-china/ida-operator) for deployment steps.
 
 ## Step 2: Installing IDA BAW Toolkit
 The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
