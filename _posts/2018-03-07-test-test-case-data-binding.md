@@ -2,7 +2,7 @@
 title: "Test Case Data Binding"
 category: test
 date: 2018-03-07 15:17:55
-last_modified_at: 2021-08-23 16:26:00
+last_modified_at: 2023-09-15 15:43:00
 ---
 
 # Test Case Data Binding
