@@ -111,7 +111,7 @@ For example:
 [testcase_data_upload]: ../images/test/test_case_data_upload.PNG    
 [testcase_data_binding]: ../images/test/test_case_data_binding.PNG   
 [test_project_delete_button]: ../images/test/test_project_delete_button.PNG
-[testcase_parameter_binding]: ../images/test/test_case_parameter_binding.PNG
+[testcase_parameter_binding]: ../images/test/test_case_parameter_binding.png
 [bindcsv]: ../images/test/bindcsv.png  
 [bpm_server_name]: ../images/test/bpm_server_name.png 
 [testcase_data_binding_select_rows]: ../images/test/testcase_data_binding_select_rows.png
