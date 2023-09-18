@@ -2,15 +2,17 @@
 title: "Installing IDA Application(v3.x, v2.x)"
 category: references
 date: 2018-11-11 15:17:57
-last_modified_at: 2023-09-01 14:45:00
+last_modified_at: 2023-09-18 17:40:00
 ---
 
-# Installing IDA v3.x Application
+# Installing IDA Application(v3.x, v2.x)
 
 There are three components for IDA application we need install and configure, included
 - *IDA web application*
 - *IDA Browser Plugin*  
 - *IDA BAW toolkit*
+
+For IDA v2.x Application installation, please make sure repacking IDA Application firstly, please refer to [Repacking IDA v2.x Application](https://sdc-china.github.io/IDA-doc/references/references-repacking-ida-application-early-version.html#repacking-ida-v2x-application).
 
 # Step 1: Installing IDA Web Application
 
