@@ -3,7 +3,7 @@ title: "Installing IDA Application"
 category: installation
 date: 2018-01-07 15:17:55
 last_modified_at: 2023-09-28 13:32:00
----
+
 
 # Installing IDA Application
 
@@ -16,7 +16,7 @@ There are three components for IDA application we need install and configure, in
 
 ## Step 1: Installing IDA Web Application
 
-IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. 
+IDA Web Application can be installed on WebSphere Application Server (WAS), liberty, Docker or Openshift. 
 
 ### Installing on Liberty
 
@@ -254,7 +254,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Check the WAS version**
 
-If the WAS version is below **9.0.5.4**, it may occur some problems when install the IDA web application, please check the WAS version first.
+IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5.5. It's recommended to install IDA on WebSphere **v9.0.5.4+**.
 1. Login the WAS console, in the **Welcome** part, you can see the version of WAS.
 ![][wasversion]
 2. If the WAS version is below **9.0.5.4**, you should install the Fix Packs 9.0.5.4+, here is the minimum fix pack version:
@@ -363,6 +363,9 @@ After finishing the installation of the fix packs, the next step is to deploy th
 ### Installing on Docker platform
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
+### Installing on Openshift
+Refer to [ida-operator](https://github.com/sdc-china/ida-operator) for deployment steps.
+
 ## Step 2: Installing IDA BAW Toolkit
 The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
 
@@ -418,6 +421,12 @@ BAW Version | IDA Toolkit Version
 - Click "Add to Chrome" button to install plug-in.
 - The Chrome plugin offline installation package. [IDA-23.4.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-23.4.crx)
 - For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
+  
+### Edge plugin
+- The same IDA Chrome plugin can also be installed in Edge.
+- Enable "Allow extensions from other stores." in the Edge Extensions settings page.
+- Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
+- Click "Get" button, then click "Add extension" button to install plug-in.
 
 ### Firefox plugin
 - Download Firefox plugin [ida-23.4-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-23.4-fx.xpi)

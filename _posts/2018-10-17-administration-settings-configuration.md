@@ -125,10 +125,6 @@ Check if the current user is added successfully or not, and get the token for th
 kubectl config view
 ```
 
-
-**Notes:**
-The settings values are saved in database so if you restart the server, the configurations are still valid.
-
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
