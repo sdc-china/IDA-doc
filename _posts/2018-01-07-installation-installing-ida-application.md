@@ -527,8 +527,6 @@ Chrome browsers can save your data for a short time, and the warning page will n
 
 
 
-
-
    [error]: ../images/install/installation_self_signed_sertificates_error.png
    [tool]: ../images/install/installation_self_signed_sertificates_tool.png
    [security_tab]: ../images/install/installation_self_signed_sertificates_security_tab.png
