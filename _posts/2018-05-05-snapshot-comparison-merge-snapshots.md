@@ -10,6 +10,7 @@ Snapshot merge allows users to compare one snapshot with a trace tip snapshot of
 
 This feature is an experimental function and currently has the following **limitations**:
 - Only support **updated Script** section in **Service Flow/Human Service/Process**
+- Only support deleting the entire artifact.
 
 ## Enable Merge To
 
