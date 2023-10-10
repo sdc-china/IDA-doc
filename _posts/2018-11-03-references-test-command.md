@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-11-03 15:17:55
-last_modified_at: 2023-02-28 15:17:00
+last_modified_at: 2023-10-10 13:00:00
 ---
 
 # Test Commands
@@ -1579,26 +1579,36 @@ ___
 
 ### **randomString**
 
-Generate a specified length random string.
+Generate a specified length random string with key.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
+	| `Key` | Optional | Key name for the length of the generated random string, default value is "RANDOM_STRING".|
 	| `Length` | Required | Length of the generated random string.|
+
+- Example 
+
+  ![][random_string]
 	
 ___
 
 ### **randomNumber**
 
-Generate a specified length random number.
+Generate a specified length random number with key.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
+	| `Key` | Optional | Key name for the length of the generated random number, default value is "RANDOM_NUMBER".|
 	| `Length` | Required | Length of the generated random number.|
 	
+- Example 
+
+  ![][random_number]
+
 ___
 
 
@@ -1707,3 +1717,5 @@ ___
 [clickActivityFromPortal]: ../images/command/clickActivityFromPortal.png
 [WaitProcessInstanceStatus_sample]: ../images/command/WaitProcessInstanceStatus.png
 [GetProcessInstanceData_sample]: ../images/command/GetProcessInstanceData.png
+[random_string]: ../images/command/random_string.png
+[random_number]: ../images/command/random_number.png
