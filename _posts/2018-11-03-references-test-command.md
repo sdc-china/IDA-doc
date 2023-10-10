@@ -1589,6 +1589,7 @@ Generate a specified length random string with key.
 	| `Length` | Required | Length of the generated random string.|
 
 - Example 
+
   ![][random_string]
 	
 ___
@@ -1605,7 +1606,9 @@ Generate a specified length random number with key.
 	| `Length` | Required | Length of the generated random number.|
 	
 - Example 
+
   ![][random_number]
+
 ___
 
 
