@@ -39,7 +39,7 @@ last_modified_at: 2023-10-12 12:00:00
      | Node Max Replicas Number | Nodes will automatically increase or decrease according to actual needs, this value sets the maximum number of nodes.|
      | Configuration          | Customize browser options for selenium                              |
 
-     What's more, the option **Containerized** is unavailable by default. You need to [configure Kubernates Setting] before creating this kind of selenium grid.
+     The option **Containerized** is unavailable by default. You need to [configure Kubernates Setting] before creating this kind of selenium grid.
 
 **Known Issues:**
 
