@@ -219,27 +219,27 @@ In Liberty installation bin folder you can use below command to start the server
 ```
 
 
-In addition, you could customize the Liberty environment by using certain specific variables as *optional step*
+In addition, you could customize the Liberty environment for IDA as *optional steps*
 
-- Specify environment variables by using server.env files.
-  You can use server.env files at the installation and server levels to specify environment variables for IDA such as ENGINECONFIG_DATADIR. For example:
+* Specify environment variables by using *server.env* files.
+  You can use *server.env* files at the installation and server levels to specify environment variables for IDA such as ENGINECONFIG_DATADIR. For example:
 
   ```
   # IDA working directory data path
   ENGINECONFIG_DATADIR=/var/ida/data
   ```
 
-- Customize JVM options by using jvm.options files.
+* Customize JVM options by using *jvm.options* files.
 
-* Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
+  * Create a text file named *jvm.options*. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
 
-* Update heap size setting
+  * Update heap size setting
 
-  Add below to jvm.options. e.g set the maximum heap size to 1024m
+    Add below to jvm.options. e.g set the maximum heap size to 1024m
 
-  ```
-  -Xmx1024m
-  ```
+    ```
+    -Xmx1024m
+    ```
 
 If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
