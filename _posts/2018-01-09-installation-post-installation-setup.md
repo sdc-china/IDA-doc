@@ -9,6 +9,20 @@ last_modified_at: 2022-04-22 16:39:00
 
 IDA integrates with remote testing automation framework based on Selenium Grid. IDA supports both version 4 and version 3 of Selenium Grid.
 
+## Selenium Grid sizes
+
+Choosing a Grid role depends on what operating systems and browsers need to be supported, how many parallel sessions need to be executed, the amount of available machines, and how powerful (CPU, RAM) those machines are.
+
+Creating sessions concurrently relies on the available processors to the Distributor. For example, if a machine has 4 CPUs, the Distributor will only be able to create up to 4 sessions concurrently.
+
+By default, the maximum amount of concurrent sessions a Node supports is limited by the number of CPUs available. For example, if the Node machine has 8CPUs, it can run up to 8 concurrent browser sessions (with the exception of Safari, which is always one). Additionally, it is expected that each browser session should use around 1GB RAM.
+
+In general, it is a recommended to have Nodes as small as possible. Instead of having a machine with 32CPUs and 32GB RAM to run 32 concurrent browser sessions, it is better to have 32 small Nodes in order to better isolate processes. With this, if a Node fails, it will do it in an isolated way. Docker is a good tool to achieve this approach.
+
+Note that the default values (**1CPU/1GB RAM per browser**) are a recommendation and they could not apply to your context. It is recommended to use them as a reference, but measuring performance continuously will help to determine the ideal values for your environment.
+
+Grid sizes are relative to the amount of supported concurrent sessions and amount of Nodes, and there is no “one size fits all”. It suggests to start with small grid size, which contains 5 or less nodes. More nodes can be added in future according to the actual requirement.
+
 ## Selenium Grid v4
 
 **Notes**
