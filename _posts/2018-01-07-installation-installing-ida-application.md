@@ -296,16 +296,16 @@ IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5
 
 **Setting environment entries on WAS Console (Optional)**
 
-1. In left navigation bar, click the ** Servers >  Server Types > WebSphere application servers > server_name > (Expand Java™ and Process Management) > Process Definition > Environment Entries > New**
+1. In left navigation bar, click the **Servers >  Server Types > WebSphere application servers > server_name > Java and Process Management > Process Definition > Environment Entries > New**
 
    ![][wasenv1]
 
 2. Add entries to the Name/Value pairs.
 
-  ```
-  # IDA working directory data path
-  ENGINECONFIG_DATADIR=/var/ida/data
-  ```
+    ```
+    # IDA working directory data path
+    ENGINECONFIG_DATADIR=/var/ida/data
+    ```
   ![][wasenv2]
 
 3. Click OK to save changes.
@@ -508,8 +508,8 @@ To make the plug-in work, you must login IDA server in the plugin login page.
 [wassessionmgr1]: ../images/install/wassessionmgr1.png
 [wassessionmgr2]: ../images/install/wassessionmgr2.png
 [wassessionmgr3]: ../images/install/wassessionmgr3.png
-[wasenv1]: ../images/install/wasen1.png
-[wasenv2]: ../images/install/wasen2.png
+[wasenv1]: ../images/install/wasenv1.png
+[wasenv2]: ../images/install/wasenv2.png
 [firefox_custom_setting]: ../images/install/firefox_custom_setting.png
 
 ## Self-Signed SSL Certificates Installation
