@@ -310,7 +310,7 @@ IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5
     ```
   ![][wasenv2]
 
-3. Click OK to save changes.
+3. Click OK to save changes and restart server.
 
 
 **Confige the JNDI**
