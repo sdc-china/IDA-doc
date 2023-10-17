@@ -241,7 +241,7 @@ In addition, you could customize the Liberty environment for IDA as *optional st
     -Xmx1024m
     ```
 
-If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
+  If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
 **Support http proxy**
 
