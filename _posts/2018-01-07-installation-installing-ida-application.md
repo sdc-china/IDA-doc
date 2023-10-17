@@ -226,6 +226,7 @@ In addition, you could customize the Liberty environment for IDA as *optional st
 
   ```
   # IDA working directory data path
+  # Ensure the path exists and the user running IDA has the correct permissions to access this folder.
   ENGINE_CONFIG_DATA_DIR=/var/ida/data
   ```
 
@@ -235,10 +236,10 @@ In addition, you could customize the Liberty environment for IDA as *optional st
 
   * Update heap size setting
 
-    Add below to jvm.options. e.g set the maximum heap size to 1024m
+    Add below to jvm.options. e.g set the maximum heap size to 4096m
 
     ```
-    -Xmx1024m
+    -Xmx4096m
     ```
 
   If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
@@ -304,6 +305,7 @@ IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5
 
     ```
     # IDA working directory data path
+    # Ensure the path exists and the user running IDA has the correct permissions to access this folder.
     ENGINE_CONFIG_DATA_DIR=/var/ida/data
     ```
   ![][wasenv2]
