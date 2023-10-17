@@ -226,7 +226,7 @@ In addition, you could customize the Liberty environment for IDA as *optional st
 
   ```
   # IDA working directory data path
-  ENGINECONFIG_DATADIR=/var/ida/data
+  ENGINE_CONFIG_DATA_DIR=/var/ida/data
   ```
 
 * Customize JVM options by using *jvm.options* files.
@@ -304,7 +304,7 @@ IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5
 
     ```
     # IDA working directory data path
-    ENGINECONFIG_DATADIR=/var/ida/data
+    ENGINE_CONFIG_DATA_DIR=/var/ida/data
     ```
   ![][wasenv2]
 
