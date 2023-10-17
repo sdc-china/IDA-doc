@@ -222,7 +222,7 @@ In Liberty installation bin folder you can use below command to start the server
 In addition, you could customize the Liberty environment for IDA as *optional steps*
 
 * Specify environment variables by using *server.env* files.
-  You can use *server.env* files at the installation and server levels to specify environment variables for IDA such as ENGINECONFIG_DATADIR. For example:
+  You can use *server.env* files at the installation and server levels to specify environment variables for IDA such as **ENGINECONFIG_DATADIR**. For example:
 
   ```
   # IDA working directory data path
