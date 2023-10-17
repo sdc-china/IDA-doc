@@ -23,7 +23,7 @@ last_modified_at: 2019-07-29 16:18:00
 
      Permissions for each role are shown in the following figure:
 
-     ![][administrator_role_permission]
+     ![][administrator_role_permission]{:width="80%"}
 
      **Notes:**
 

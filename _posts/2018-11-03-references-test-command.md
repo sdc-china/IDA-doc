@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-11-03 15:17:55
-last_modified_at: 2021-08-23 10:42:00
+last_modified_at: 2023-10-10 13:00:00
 ---
 
 # Test Commands
@@ -836,20 +836,24 @@ Update current case data.
 	
 ___
 
-### **runFileNetP8ActivityByName**
+### **runActivityByName**
 
-Run a FileNet P8 activity by name.
+Run a case solution activity by name.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Role Name` | Required | The role name|
-    | `Activity Name` | Required | The filenet p8 activity name of current case type|
+     | `Activity Name` | Required | The case solution activity name of current case type|
+	| `Role Name` | Required(FileNet P8) | The role name, it is required if run a FileNet P8 activity.| 
+    | `Task Name` | Required(BPMN) | The task name, it is required if run a BPMN activity. |
+    | `byTaskOwner` | Optional(BPMN) | Checked means the task owner will run this task. Unchecked indicates that the assigned user will run the task.|
 
 - Example  
 
-	![][run_filenet_p8_activity_by_name_sample]
+	![][run_filenet_p8_activity_by_name_sample_1]
+	
+	![][run_filenet_p8_activity_by_name_sample_2]
 	
 ___
 
@@ -1003,7 +1007,8 @@ Click an element by id , CSS or xpath. **Notes:** BPM UI toolkit has *id* on a b
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Type` | Required | *Link* or *Button*.|
+	| `Type` | Optional | *Link* or *Button*.|
+	| `Trigger Event` | Optional | The js event triggered by click.|
 	
 - Example  
 
@@ -1574,26 +1579,36 @@ ___
 
 ### **randomString**
 
-Generate a specified length random string.
+Generate a specified length random string with key.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
+	| `Key` | Optional | Key name for the length of the generated random string, default value is "RANDOM_STRING".|
 	| `Length` | Required | Length of the generated random string.|
+
+- Example 
+
+  ![][random_string]
 	
 ___
 
 ### **randomNumber**
 
-Generate a specified length random number.
+Generate a specified length random number with key.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
+	| `Key` | Optional | Key name for the length of the generated random number, default value is "RANDOM_NUMBER".|
 	| `Length` | Required | Length of the generated random number.|
 	
+- Example 
+
+  ![][random_number]
+
 ___
 
 
@@ -1657,7 +1672,8 @@ ___
 [add_activity_sample]: ../images/command/add_activity_sample.png
 [update_case_data_sample]: ../images/command/update_case_data_sample.png
 [run_activity_by_name_sample]: ../images/command/run_activity_by_name_sample.png
-[run_filenet_p8_activity_by_name_sample]: ../images/command/run_filenet_p8_activity_by_name_sample.png
+[run_filenet_p8_activity_by_name_sample_1]: ../images/command/run_filenet_p8_activity_by_name_sample_1.png
+[run_filenet_p8_activity_by_name_sample_2]: ../images/command/run_filenet_p8_activity_by_name_sample_2.png
 [start_manual_activity_sample]: ../images/command/start_manual_activity_sample.png
 [assertServiceData_sample]: ../images/command/assertServiceData_sample.png
 [assert_case_state_sample]: ../images/command/assert_case_state_sample.png
@@ -1701,3 +1717,5 @@ ___
 [clickActivityFromPortal]: ../images/command/clickActivityFromPortal.png
 [WaitProcessInstanceStatus_sample]: ../images/command/WaitProcessInstanceStatus.png
 [GetProcessInstanceData_sample]: ../images/command/GetProcessInstanceData.png
+[random_string]: ../images/command/random_string.png
+[random_number]: ../images/command/random_number.png

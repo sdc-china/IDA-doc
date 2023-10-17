@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
-last_modified_at: 2021-01-29 16:25:00
+last_modified_at: 2023-03-30 11:28:00
 ---
 
 # Settings Configuration
@@ -43,8 +43,8 @@ Stop After Assert Failure | If not checked, the test case will keep running when
 Enable Test Case History | Enable save test case history function
 Max Number of Test Case History | Set test case history max number of each test case, default value is 100.
 Threshold of New Test Case | Threshold of generating test case per process
-Connection Timeout(seconds) | Timeout of connection
-Wait Timeout(seconds) | Timeout of wait
+Default Wait Timeout(seconds) | Default wait time out for test commands and finding web elements, default value is 60.
+Page Load Timeout(seconds) | Default page load time out for open and load page, default value is 10.
 Default Retry Interval(seconds) | Default value of retry interval
 Default Retry Times | Default value of retry times
 
@@ -61,6 +61,8 @@ Decision Server Username | Decision Server Username
 Decision Server Password | Decision Server Password
 Decision Server URL | Decision server url, Replace localhost with the hostname or ip address of Rule Execution Server
 Decision Server Port | The port of decision server
+Tags | These will be used to ignore artifacts by tag(s). For example: test.
+Naming Pattern | This pattern will be used to ignore artifacts by name. Pattern supports variables test$, ^test.
 
 ## Pipeline configuration
 
@@ -87,48 +89,41 @@ Field | Description
 Search Depth | Search (and comparison) depth of Coach/Coach View
 
 
-## Set K8s configuration
+## Set Kubernetes configuration
 
-You can runtime update k8s configuration in IDA, after that you can use the new k8s server on Selenium Grid Configuration. Only test for Openshift 4.3.
+The Kubernetes configuration is used to create Containerized Selenium Grid Server. Tested on Openshift 4.x.
 
-  1. Click Administrator tab, then switch to Settings tab.
-  2. Scroll down to K8s tab and fill out form according to below table:
+![][administrator_k8s_setting]{:width="100%"}
 
-     ![][administrator_k8s_setting]{:width="100%"}
-    
-     |   Field                | Description                                                         |
-     | -------------------|---------------------------                                          |
-     | Ingress Host|The subdomain to use for exposed routes. For openshift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
-     | Server Url| Cluster API address |
-     | Namespace| The namespace/project that you want to use to create your containerized grid.|  
-     | User Token| Token of service account.|
+|   Field                | Description                                                         |
+| -------------------|---------------------------                                          |
+| Ingress Host|The subdomain to use for exposed routes. For openshift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
+| Server Url| Cluster API address |
+| Namespace| The namespace/project that you want to use to create your containerized grid.|  
+| User Token| Token of service account.|
 
-     Here is a sample:
+Here is a sample:
 
-     ![][administrator_k8s_setting_sample]{:width="100%"}
+![][administrator_k8s_setting_sample]{:width="100%"}
 
-  3. How to create service account and get its token:
+The steps to create service account and get token:
 
-     After login openshift, run below commands.
+```
+kubectl -n kube-system create serviceaccount ida-service-account
+kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
+TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
+echo $TOKENNAME
+TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
+echo $TOKEN
+kubectl config set-credentials ida-service-account --token=$TOKEN
+kubectl config set-context --current --user=ida-service-account
+```
 
-     ```
-     kubectl -n kube-system create serviceaccount ida-service-account
-     kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
-     TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
-     TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
-     kubectl config set-credentials ida-service-account --token=$TOKEN
-     kubectl config set-context --current --user=ida-service-account
-     ```
+Check if the current user is added successfully or not, and get the token for the newly added user:
 
-     Check if the current user is added successfully or not, and get the token for the newly added user:
-     
-     ```
-     oc config view
-     ```
-
-
-**Notes:**
-The settings values are saved in database so if you restart the server, the configurations are still valid.
+```
+kubectl config view
+```
 
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png

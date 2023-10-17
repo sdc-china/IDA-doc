@@ -2,12 +2,12 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-01-07 15:17:55
-last_modified_at: 2022-10-28 13:32:00
+last_modified_at: 2023-09-28 13:32:00
 ---
 
 # Installing IDA Application
 
-Below are steps to install IDA application v21.x+. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)](../references/references-installing-ida-application-early-version.html)
+Below are steps to install IDA application. For installing applications of early versions of IDA, see [Installing IDA Application(v3.x, v2.x)](../references/references-installing-ida-application-early-version.html)
 
 There are three components for IDA application we need install and configure, included
 - *IDA web application*
@@ -16,7 +16,7 @@ There are three components for IDA application we need install and configure, in
 
 ## Step 1: Installing IDA Web Application
 
-IDA Web Application can be installed on WebSphere Application Server (WAS), liberty or Docker. First, let's introduce the way to install IDA on liberty.
+IDA Web Application can be installed on WebSphere Application Server (WAS), liberty, Docker or Openshift. 
 
 ### Installing on Liberty
 
@@ -64,8 +64,9 @@ For example:
 
 ```
   <dataSource jndiName="jdbc/ida">
+      <connectionManager maxPoolSize="50"/>
       <jdbcDriver libraryRef="DBLib" />
-      <properties.postgresql serverName="localhost" portNumber="5432" 
+      <properties.postgresql serverName="localhost" portNumber="5432"
         databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
 ```
@@ -138,8 +139,9 @@ For example:
 
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida">
+      <connectionManager maxPoolSize="50"/>
       <jdbcDriver libraryRef="PostgresSQLLib" />
-      <properties.postgresql serverName="localhost" portNumber="5432" 
+      <properties.postgresql serverName="localhost" portNumber="5432"
         databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
   <!-- PostgreSQL Example End-->
@@ -150,6 +152,7 @@ For example:
   </library>
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DB2DataSource"
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <connectionManager maxPoolSize="50"/>
     <jdbcDriver libraryRef="DB2Lib"/>
     <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.DATABASE_IDA_SCHEMA}"
                 serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}"
@@ -162,6 +165,7 @@ For example:
       <fileset dir="${shared.config.dir}/lib/global" includes="ojdbc8-12.2.0.1.jar"/>
   </library>
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="OracleDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <connectionManager maxPoolSize="50"/>
     <jdbcDriver libraryRef="ORACLELib"/>
     <properties.oracle url="${env.DATABASE_URL}"
           user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
@@ -176,6 +180,7 @@ For example:
   <!-- Configure attributes for the data source, such as JDBC vendor properties and connection pooling properties. For example:  -->
   <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="DefaultDataSource"
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+    <connectionManager maxPoolSize="50"/>
     <jdbcDriver libraryRef="MYSQLLib"/>
     <properties databaseName="<DATABASE_NAME>"
                 serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>"
@@ -260,7 +265,7 @@ Below is the reference link for how to setup selenium grid.It includes the detai
 
 **Check the WAS version**
 
-If the WAS version is below **9.0.5.4**, it may occur some problems when install the IDA web application, so fisrtly, we should check the WAS version.
+IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5.5. It's recommended to install IDA on WebSphere **v9.0.5.4+**.
 1. Login the WAS console, in the **Welcome** part, you can see the version of WAS.
 ![][wasversion]
 2. If the WAS version is below **9.0.5.4**, you should install the Fix Packs 9.0.5.4+, here is the minimum fix pack version:
@@ -282,6 +287,36 @@ If the WAS version is below **9.0.5.4**, it may occur some problems when install
    ![][wassessionmgr2]
 
    ![][wassessionmgr3]
+
+4. Make sure the host ports have been added to the **Environment > Virtual hosts > default_host**.
+
+   ![][was_server_port]
+
+   ![][was_virtual_hosts]
+
+
+**Confige the JNDI**
+
+1. In left navigation bar, click the **Resource > JDBC > Data sources**
+
+2. Create a new data source, we use db2 as an example.
+
+   ![][data_source1]
+
+   ![][data_source2]
+
+   ![][data_source3]
+
+   ![][data_source4]
+
+   ![][was_db2_user]
+
+   ![][data_source5]
+
+ 3. Test connection for this data source, make sure this connection is successful.
+
+  ![][was_data_source_test_connection]
+
 
 **Deploy a New Application on WAS**
 
@@ -339,8 +374,11 @@ After finishing the installation of the fix packs, the next step is to deploy th
 ### Installing on Docker platform
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
+### Installing on Openshift
+Refer to [ida-operator](https://github.com/sdc-china/ida-operator) for deployment steps.
+
 ## Step 2: Installing IDA BAW Toolkit
-The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit. 
+The testing capability can only launch the exposed Business Processes, Human Services and AJAX Services. If you wish to test other services such as system services, integration services or business processes which are not exposed directly, you need to install the IDA Toolkit.
 
 
 BAW Version | IDA Toolkit Version  
@@ -350,7 +388,7 @@ BAW Version | IDA Toolkit Version
       above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
 
 
-1. Import corresponding **IDA_Toolkit - 8.6.x.x.twx** which is below forder /toolkit of release package into your process center.      
+1. Import corresponding **IDA_Toolkit - 8.6.x.x.twx** which is below folder /toolkit of release package into your process center.      
 
 2. Open your process app by web process designer from process center.
 
@@ -377,7 +415,7 @@ BAW Version | IDA Toolkit Version
 	For security concern, we suggest to disable the toolkit in BAW production environment.
 	It allows user to modify the toolkit access permission by setting up the environment variable "IDA_ACCESS". (true means enable the access, false means disable the access)
 
-	By default, the toolkit can only be invoked on Development and Test environment:
+	By default, the toolkit can only be invoked on Development, Test and Stage environments:
 	    ![][default_toolkit_setting]
 
 	You can define the same environment variable "IDA_ACCESS" in your BAW application which will override the default setting in toolkit, for example:
@@ -392,12 +430,18 @@ BAW Version | IDA Toolkit Version
 ### Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-22.6.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-22.6.crx)
+- The Chrome plugin offline installation package. [IDA-23.4.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-23.4.crx)
 - For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
+  
+### Edge plugin
+- The same IDA Chrome plugin can also be installed in Edge.
+- Enable "Allow extensions from other stores." in the Edge Extensions settings page.
+- Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
+- Click "Get" button, then click "Add extension" button to install plug-in.
 
 ### Firefox plugin
-- Download Firefox plugin [ida-22.6-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-22.6-fx.xpi)
-- Drag the "ida-22.2-fx.xpi" file into firefox window.
+- Download Firefox plugin [ida-23.4-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-23.4-fx.xpi)
+- Drag the downloaded plugin file into firefox window.
 - Click "Add" button.
 
 ### Plug-in Configuration
@@ -494,8 +538,6 @@ Chrome browsers can save your data for a short time, and the warning page will n
 
 
 
-
-
    [error]: ../images/install/installation_self_signed_sertificates_error.png
    [tool]: ../images/install/installation_self_signed_sertificates_tool.png
    [security_tab]: ../images/install/installation_self_signed_sertificates_security_tab.png
@@ -512,3 +554,12 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [plugin_login]: ../images/install/plugin_login.png
    [plugin_login_error]: ../images/install/plugin_login_error.png
    [ida_web_cert_error]: ../images/install/ida_web_cert_error.png
+   [data_source1]: ../images/install/was_data_source1.png
+   [data_source2]: ../images/install/was_data_source2.png
+   [data_source3]: ../images/install/was_data_source3.png
+   [data_source4]: ../images/install/was_data_source4.png
+   [data_source5]: ../images/install/was_data_source5.png
+   [was_db2_user]: ../images/install/was_db2_user.png
+   [was_data_source_test_connection]: ../images/install/was_data_source_test_connection.png
+   [was_server_port]: ../images/install/was_server_port.png
+   [was_virtual_hosts]: ../images/install/was_virtual_hosts.png

@@ -2,7 +2,7 @@
 title: "Selenium Hub Configuration"
 category: administration
 date: 2018-10-05 15:17:55
-last_modified_at: 2022-09-28 16:39:00
+last_modified_at: 2023-10-12 12:00:00
 ---
 
 # Selenium Hub Configuration
@@ -32,17 +32,22 @@ last_modified_at: 2022-09-28 16:39:00
      |   Field                | Description                                                         |
      | -------------------    |---------------------------                                          |
      | Server Name            | Hub name                                                            |  
-     | Browser                | Support Firefox and Chrome                                          |
-     | Grid New Session Wait Timeout | How long a new test waiting for a node to become available (value in millisecond).|  
-     | Grid Browser Timeout | How long the browser is allowed to hang(value in seconds).|
-     | Grid Timeout | How long the client is allowed to be gone before the session is reclaimed(value in seconds).|
-     | Node Replicas Number | How many nodes you need to create for this hub.|
+     | Browser                | Support Chrome, Edge and Firefox.                                   |
+     | Session Timeout        | The Node will automatically kill a session that has not had any activity in the last X seconds. This will release the slot for other tests.|
+     | Session Request Timeout| Timeout in seconds. A new incoming session request is added to the queue. Requests sitting in the queue for longer than the configured time will timeout.|
+     | Node Min Replicas Number | Nodes will automatically increase or decrease according to actual needs, this value sets the minimum number of nodes. |
+     | Node Max Replicas Number | Nodes will automatically increase or decrease according to actual needs, this value sets the maximum number of nodes.|
      | Configuration          | Customize browser options for selenium                              |
 
-     What's more, the option **Containerized** is unavailable by default. You need to [configure Kubernates Setting] before creating this kind of selenium grid. 
+     The option **Containerized** is unavailable by default. You need to [configure Kubernates Setting] before creating this kind of selenium grid.
+
+**Known Issues:**
+
+Containerized Firefox hub throws timeout exception when deployed on OCP 4.11+.
 
 **Notes:**
-You can customize the selenium configuration based on the template.Currenctly we support below types of configuration.  
+
+You can customize the selenium configuration based on the template. Currenctly we support below types of configuration.  
 
 **Headless** for chrome and firefox
 ```
@@ -95,7 +100,7 @@ arguments:
 [administrator_hub]: ../images/administrator/administrator_hub.png
 [administrator_hub_containerized]: ../images/administrator/administrator_hub_containerized.png
 [Post Installation Setup]: ../installation/installation-post-installation-setup.html
-[configure Kubernates Setting]: ../administration/administration-settings-configuration.html#set-k8s-configuration
+[configure Kubernates Setting]: ../administration/administration-settings-configuration.html#set-kubernetes-configuration
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_edit_selenium_grid]: ../images/administrator/administrator_edit_selenium_grid.png
 [administrator_selenium_grid_test]: ../images/administrator/administrator_selenium_grid_test.png

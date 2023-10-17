@@ -1,14 +1,14 @@
 ---
-title: "Deploy Snapshot from PC to PS"
+title: "Deploy Snapshot from Workflow Center to Workflow Server"
 category: pipeline
 date: 2018-08-05 15:17:55
-last_modified_at: 2019-07-29 15:52:00
+last_modified_at: 2023-06-09 17:31:00
 ---
 
-# Deploy Snapshot from PC to PS
+# Deploy Snapshot from Workflow Center to Workflow Server
 ***
 
-IDA pipeline allows you to deploy your snapshot from PC to PS, either through online or offline deployment. Testers can easily test projects on PS side. To deploy snapshot from PC to PS by IDA, there are some configurations needed. In below instruction, we assume the Workflow Process Center IP is 192.168.0.10.
+IDA pipeline allows you to deploy your snapshot from Workflow Center to Workflow Server, either through online or offline deployment.
 
 ## Configure SSH Key
  
@@ -17,7 +17,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 1. Login into the IDA server and create the key pair in IDA server.
 
     ```  
-     $ssh-keygen -t rsa
+     ssh-keygen -m PEM -t rsa
 
     ```  
 
@@ -28,11 +28,11 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    The public key is now located in /root/.ssh/id_rsa.pub. The private key (identification) is now located in  /root/.ssh/id_rsa.
 
 
-3. Copy the public key to the PC Server and PS Server. Copy id_rsa.pub file to BAW Server (PC/PS) /tmp folder, and execute below command.
+3. Add the public key to the both of the Workflow Center and Workflow Server's authorized_keys.
 
 
    ```  
-   cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys   
+   cat /root/.ssh/id_rsa.pub | ssh root@BAW_SERVER_HOST "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 
    ```
   **Notes:**
@@ -40,21 +40,20 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
    **The Linux operator user should have the permission to run "wsadmin.sh"**
 
 
-4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content to your Workflow PC and PS configuration in IDA. Also you need to fill the  WAS admin command path.
+4. Use cat ~/.ssh/id_rsa to print your private key. Copy this key content to your BAW configuration in IDA. Also you need to fill the WAS admin command path.
 
     ![][pipeline_bpmconfiguration]
 
-5. In PS Server configuraion, you need to fill the connect server name.
+5. For connected process server, please also fill the connected Workflow Server server.
 
      ![][pipeline_servername]
 
 ### Verify SSH Key
 
-1. If you are in Linux environment, copy the id_rsa to BAW server /tmp folder. You can use below command to vertify the connection. Please replace your IP address accordingly.
+1. If you are in Linux environment, you can use below command to vertify the connection.
 
     ```     
-   chmod 600 /tmp/id_rsa
-   ssh -i /tmp/id_rsa root@192.168.0.10
+   ssh -i /root/.ssh/id_rsa root@BAW_SERVER_HOST
    ```
 2. If you are in Windows environment, you can use Putty tool to vertify it.
 
@@ -71,7 +70,7 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
      ![][PrivateKeyGen]   
 
    d. Click Save private key button, save as IDA.ppk .   
-   e. Open putty.exe, For example enter PC IP address 192.168.0.10     
+   e. Open putty.exe, For example enter BAW Server IP address 192.168.0.10     
 
      ![][putty]     
    f. Select category: Connection -> SSH -> Auth, and set the private key file, then click Open button.   
@@ -80,9 +79,9 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
    g. You can find you can use ssh to login into that server.
 
-## Define pipeline from PC to PS through online deployment
+## Define pipeline from Workflow Center to Workflow Server through online deployment
 
-1. Define the pipeline for deployment snapshot from PC to an online PS.
+1. Define the pipeline for deployment snapshot from Workflow Center to an online Workflow Server.
 
    ![][pipeline_pstops]
 
@@ -90,17 +89,17 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
    ![][pipeline_online_deploy]{:width="60%"}
 
-3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to online PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to online PS.
+3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (Workflow Center) stage will be installed to online Workflow Server. If the snapshot acronym is provided, it means the existing snapshot in DEV (Workflow Center) will be located by snapshot acronym and installed to online Workflow Server.
 
    ![][pipeline_run_online_deploy]{:width="60%"}
 
-4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to online PS.
+4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from Workflow Center to online Workflow Server.
 
    ![][pipeline_pcdeployps]
 
-## Define pipeline from PC to PS through offline deployment
+## Define pipeline from Workflow Center to Workflow Server through offline deployment
 
-1. Define the pipeline for deployment snapshot from PC to an offline PS.
+1. Define the pipeline for deployment snapshot from Workflow Center to an offline Workflow Server.
 
    ![][pipeline_pc_to_ps_offline]
 
@@ -112,17 +111,18 @@ IDA pipeline allows you to deploy your snapshot from PC to PS, either through on
 
      |Label                  | Description
      |---------------------- |-------------
-     |Deploy From Local File System Of Process Server                   | Jump over the export step and use the package in PS server directly
+     |Deploy From Local File System Of Process Server                   | Jump over the export step and use the package in Workflow Server server directly
+     |Clean Old Snapshots | Clean the old snapshots without any running instances or completed tasks referenced by running instances, and the completed instances in the snapshots will be deleted as well.   
      
-3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (PC) stage will be installed to offline PS. If the snapshot acronym is provided, it means the existing snapshot in DEV (PC) will be located by snapshot acronym and installed to offline PS.
+3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (Workflow Center) stage will be installed to offline Workflow Server. If the snapshot acronym is provided, it means the existing snapshot in DEV (Workflow Center) will be located by snapshot acronym and installed to offline Workflow Server.
 
    ![][pipeline_run_online_deploy]
 
-4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from PC to offline PS.
+4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from Workflow Center to offline Workflow Server.
 
     ![][pipeline_pcdeployps_offline]
  
-## Case project configuration after the first deployment in the PS
+## Case project configuration after the first deployment in the Workflow Server
 
 More information please reference the [Configuring the target environment after solution deployment](https://www.ibm.com/support/knowledgecenter/SS8JB4_19.x/com.ibm.casemgmt.design.doc/acmdc054.html)
 
@@ -137,11 +137,11 @@ More information please reference the [Configuring the target environment after 
 
 ### Security Configuration
 
-If you are using a case project and deploying for the first time, the following prompt message may appears when add a new case in the PS environment：
+If you are using a case project and deploying for the first time, the following prompt message may appears when add a new case in the Workflow Server environment：
  
   ![][case_insufficient_message]{:height="60%" width="60%"}
   
-You need to configure **Security Configuration** in your PS environment.
+You need to configure **Security Configuration** in your Workflow Server environment.
 
 1. Login to the **Case administration** Console: https://[Server URL]:[Port]/navigator/?desktop=bawadmin
 
@@ -149,7 +149,7 @@ You need to configure **Security Configuration** in your PS environment.
 
    ![][case_administration_security_configuration]{:height="90%" width="90%"}
   
-3. You can import the **Security Configuration** which exported from the PC server, or create a new **Security Configuration**.
+3. You can import the **Security Configuration** which exported from the Workflow Center server, or create a new **Security Configuration**.
 
    ![][case_security_configuration_add]{:height="90%" width="90%"}
   
@@ -172,7 +172,7 @@ You need to configure **Security Configuration** in your PS environment.
  
 ## Known Limitions     
 
- IDA machine, PC Server, PS server should be Linux server.  
+ IDA machine, Workflow Center Server, Workflow Server server should be Linux server.  
 
 [pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
 [pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png

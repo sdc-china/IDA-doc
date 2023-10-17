@@ -11,6 +11,28 @@ On the left is the old snapshot, and on the right is the new snapshot. The name 
 
 ![][snanshot-comparison-name-of-snapshot]
 
+
+## Menu
+
+There are three types of change,  **Add**,  **Update**,  **Delete**.
+
+If it is a add change, there will be a green **A**.
+
+![][merge-report-menu-add]{:width="40%"}
+
+If it is a update change, there will be a yellow **U**.
+
+![][merge-report-menu-update]{:width="40%"}
+
+If it is a delete change, there will be a red **D**.
+
+![][merge-report-menu-delete]{:width="40%"}
+
+IDA provides filter button. The user can filter the artifact by **Change Type/Artifact Type/Properties**.
+
+![][merge-report-menu-filter]{:width="60%"}
+
+
 ## Process Comparison
 The changes of one artifact are in one panel:
 
@@ -32,7 +54,7 @@ The **minus sign** before the artifact type indicates that the artifact has been
 
 ## Coach Comparison
 
-The changes of each coach control are listed in a separate sub-panel under the Human Service. For example in this case, 5 coach controls are changed and listed in 5 sub-panels under Client-Side Human Service **Create Position Request CSHS**.
+The changes of each coach control are listed in a separate sub-panel under the Human Service. For example in this case, 4 coach controls are changed and listed in 4 sub-panels under Client-Side Human Service **Create Position Request CSHS**.
 
 ![][snapshot-comparison-coach-changes]
 
@@ -103,14 +125,14 @@ Sequence flow change is also listed in a separate sub-panel. For example, the na
   ![][snapshot-comparison-sf-sequence-changes]
 
 
-# Filter buttons
-
-IDA provides two kinds of filter buttons: artifact type and properties. You can filter the report by them.
-
 
 [bpm-changes]: ../images/snapshot-comparison/bpm-changes.png
 [change-in-ida]: ../images/snapshot-comparison/change-in-ida.png
 [snapshot-comparison-artifact-changes]: ../images/snapshot-comparison/snapshot-comparison-artifact-changes.png
+[merge-report-menu-add]: ../images/snapshot-comparison/merge-report-menu-add.png
+[merge-report-menu-update]: ../images/snapshot-comparison/merge-report-menu-update.png
+[merge-report-menu-delete]: ../images/snapshot-comparison/merge-report-menu-delete.png
+[merge-report-menu-filter]: ../images/snapshot-comparison/merge-report-menu-filter.png
 [snapshot-comparison-report]: ../images/snapshot-comparison/snapshot-comparison-report.png
 [snanshot-comparison-name-of-snapshot]: ../images/snapshot-comparison/snanshot-comparison-name-of-snapshot.png
 [snapshot-comparison-coach-changes]: ../images/snapshot-comparison/snapshot-comparison-coach-changes.png
