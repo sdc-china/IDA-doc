@@ -1,7 +1,7 @@
 ---
 title: "High availability for IDA application"
 category: references
-date: 2023-10-18 15:00:00
+date: 2018-11-16 15:00:00
 last_modified_at: 2023-10-20 17:30:00
 ---
 
@@ -101,7 +101,7 @@ Add below config in **server.xml**, support for X-Forwarded-* and Forwarded head
 ```
 
 ### 2. Set environment
-Create **server.env** from *wlp/usr/servers/SERVER_NAME*  folder with below environment values:
+Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment values:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/server.env
 
@@ -113,7 +113,7 @@ ORG_QUARTZ_JOBSTORE_DATASOURCE_ENABLED=true
 ```
 
 ### 3. Set jvm options
-Create **jvm.options** from *wlp/usr/servers/SERVER_NAME*  folder with below settings:
+Create **jvm.options** from *wlp/usr/servers/SERVER_NAME* folder with below settings:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/jvm.options
 
