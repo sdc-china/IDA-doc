@@ -172,6 +172,8 @@ docs:
         url: /references/references-migrating-and-updating-ida-application-v2.x.html
       - title: "Migrating IDA from v2.7.x to v21.0.0"
         url: /references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html
+      - title: "High availability for IDA application"
+        url: /references/references-high-availability-for-ida-application.html
       - title: "Samples"
         url: /references/references-samples.html
       - title: "Best Practices"
