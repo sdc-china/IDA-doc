@@ -55,7 +55,7 @@ There are 2 parts for IDA application high availability we need to install and c
   ![][first-member-java-management]
   ![][input-jvm]
 
-2.3 Go to **Process definition->Environment Entries**, click **New** to create below configurations:
+2.3 Go to **Process definition->Environment Entries**, click **New** to create below configurations, this is example for PostgreSQL DB.
 
 * HAZELCAST_NETWORK_JOIN_TCP_IP_ENABLED=true
 * HAZELCAST_NETWORK_JOIN_TCP_IP_MEMBER= {your first WAS node IP} , {your second WAS node IP}
@@ -120,6 +120,16 @@ Create **jvm.options** from *wlp/usr/servers/SERVER_NAME*  folder with below set
 -Xms512m
 -Xmx8192m
 ```
+## ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS value for different Database
+
+ DB Type | ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS value
+    --- | ---
+Oracle |    org.quartz.impl.jdbcjobstore.oracle.OracleDelegate
+DB2 V8 |  org.quartz.impl.jdbcjobstore.DB2v8Delegate 
+PostgreSQL |  org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+MySQL | org.quartz.impl.jdbcjobstore.StdJDBCDelegate ??
+
+Note: Other DB2 versions please refer to: [Uses of Interface org.quartz.impl.jdbcjobstore.DriverDelegate](https://javadoc.io/doc/org.quartz-scheduler/quartz/2.1.3/org/quartz/impl/jdbcjobstore/class-use/DriverDelegate.html)
 
 # Step 2: HA Proxy setup
 
