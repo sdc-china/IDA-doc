@@ -67,11 +67,11 @@ There are 2 parts for IDA application high availability we need to install and c
 2.4 Repeat step 2.1~2.3 for second member, ex. idaServer02.
 
 ### 3. Install IDA Web Application 
-Install IDA Web Application according [Installing IDA Application(v3.x, v2.x)](../installation/installation-installing-ida-application.html#installing-on-was-v9), 
+Install IDA Web Application according [Installing IDA Application(v3.x, v2.x)](../installation/installation-installing-ida-application.html#installing-on-was-v9)，take below steps for HA configurations:
 
 3.1 Make sure do all steps for web server on each cluster member. 
 
-3.2 Create JDBC provider on cluster created in step 1, ex. idaCluster.
+3.2 For Data source, create JDBC provider on cluster, ex. idaCluster.
 
   ![][config-jndi-for-cluster]
 
