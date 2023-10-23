@@ -21,7 +21,7 @@ There are 2 parts for IDA application high availability we need to install and c
 
   ![][create-cluster-input-name]
 
-1.2 Input frist cluster member name, for example idaServer01, click **New**,
+1.2 Input frist cluster member name, for example idaServer01, click **Next**,
 
   ![][create-first-cluster-member]
 
