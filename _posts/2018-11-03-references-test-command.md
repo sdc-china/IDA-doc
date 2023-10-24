@@ -1585,7 +1585,7 @@ Generate a specified length random string with key.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Key` | Optional | Key name for the length of the generated random string, default value is "RANDOM_STRING".|
+	| `Key` | Optional | Key name for the generated random string, default value is "RANDOM_STRING".|
 	| `Length` | Required | Length of the generated random string.|
 
 - Example 
@@ -1602,7 +1602,7 @@ Generate a specified length random number with key.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Key` | Optional | Key name for the length of the generated random number, default value is "RANDOM_NUMBER".|
+	| `Key` | Optional | Key name for the generated random number, default value is "RANDOM_NUMBER".|
 	| `Length` | Required | Length of the generated random number.|
 	
 - Example 
