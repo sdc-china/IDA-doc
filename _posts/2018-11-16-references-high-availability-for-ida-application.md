@@ -11,7 +11,7 @@ last_modified_at: 2023-10-20 17:30:00
   ![][was-ha-topology]
 
 **prerequisite:** 
-  Already set up share folder (e.g. NFS, NAS and so on) on both node servers. e.g. /share-folder/ida-data
+  Already set up share folder (e.g. NFS, NAS and so on) on both node servers, e.g. /share-folder/ida-data
 
 There are 2 parts for IDA application high availability we need to install and configure, included:
 - *High availability configuring for IDA application on WAS*
