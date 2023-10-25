@@ -11,7 +11,7 @@ last_modified_at: 2022-05-26 16:44:00
 IDA REST APIs references.
 
 ## Swagger URL
-    http://[serverhost]:[port]/ida/swagger-ui.html
+    http://[serverhost]:[port]/ida/swagger-ui/index.html
     http://[serverhost]:[port]/ida/v2/api-docs
 
 ![][swagger_ui]
