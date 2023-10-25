@@ -1604,7 +1604,7 @@ Generate a specified length random string with key.
 
   ![][random_string_key_use]
 
-  ![][random_sring_key_steps_desc]
+  ![][random_string_key_steps_desc]
 	
 ___
 
