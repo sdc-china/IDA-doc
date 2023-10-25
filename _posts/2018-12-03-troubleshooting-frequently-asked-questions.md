@@ -2,7 +2,7 @@
 title: "Frequently Asked Questions"
 category: troubleshooting
 date: 2018-12-03 15:17:55
-last_modified_at: 2023-04-21 16:53:00
+last_modified_at: 2023-10-17 16:53:00
 ---
 
 # Frequently Asked Questions
@@ -120,18 +120,18 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
 
 1. Do you have any sizing recommedation for Selenium Hub? Can you explain what influences on the number of test cases which can run in parallel?
 
-   Some suggestions about Selenium Hub sizing as follows:
+   See [docs][6]. Some suggestions about Selenium Hub sizing as follows:
 
    - Max concurrent sessions per Selenium node: #CPU cores and # of maxSession configured on Selenium node
    - Memory consumption after startup:
      Selenium Hub: 400M
-     Selenium browser: 300M
+     Per Selenium browser: 300M
    - Memory consumption running 1 test case:
      Selenium Hub: 600M
-     Selenium browser: 800M
+     Per Selenium browser: 1G
    - Memory consumption running 30 test cases:
      Selenium Hub: 1G
-     Selenium browser: 1G
+     Per Selenium browser: 1G
 
    Test cases are queued on IDA if no available Selenium browser sessions. Max concurrent test cases running in Selenium is also limited by IDA server's performance. IDA's max threads > Selenium's max threads concurrency. When test cases increases and their run time increases significantly, try increase #CPU cores per Selenium node and/or connect a new Selenium node to Selenium hub.
 
@@ -170,3 +170,4 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
 [3]: https://gist.github.com/IngussNeilands/3bbbb7d78954c85e2e988cf3bfec7caa
 [4]: https://chromeenterprise.google/policies/?policy=AutoSelectCertificateForUrls
 [5]: https://bugs.chromium.org/p/chromium/issues/detail?id=1310715&q=component%3AInternals%3EHeadless&can=2
+[6]: https://www.selenium.dev/documentation/grid/getting_started/#grid-sizes

@@ -219,18 +219,30 @@ In Liberty installation bin folder you can use below command to start the server
 ```
 
 
-In addition, you could customize the Liberty environment with jvm.optioins as *optional step*
-Customize JVM options by using jvm.options files.
+In addition, you could customize the Liberty environment for IDA as *optional steps*
 
-* Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
+* Specify environment variables by using *server.env* files.
+  You can use *server.env* files at the installation and server levels to specify environment variables for IDA such as **ENGINECONFIG_DATADIR**. For example:
 
-**Update heap size setting**
+  ```
+  # IDA working directory data path
+  # Ensure the path exists and the user running IDA has read/write permissions on the folder.
+  ENGINE_CONFIG_DATA_DIR=/var/ida/data
+  ```
 
-Add below to jvm.options. e.g set the maximum heap size to 1024m
+* Customize JVM options by using *jvm.options* files.
 
-* -Xmx1024m
+  * Create a text file named *jvm.options*. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
 
-If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
+  * Update heap size setting
+
+    Add below to jvm.options. e.g set the maximum heap size to 4096m
+
+    ```
+    -Xmx4096m
+    ```
+
+  If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
 **Support http proxy**
 
@@ -282,6 +294,23 @@ IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5
    ![][was_server_port]
 
    ![][was_virtual_hosts]
+
+**Setting environment entries on WAS Console (Optional)**
+
+1. In left navigation bar, click the **Servers >  Server Types > WebSphere application servers > server_name > Java and Process Management > Process Definition > Environment Entries > New**
+
+   ![][wasenv1]
+
+2. Add entries to the Name/Value pairs.
+
+    ```
+    # IDA working directory data path
+    # Ensure the path exists and the user running IDA has read/write permissions on the folder.
+    ENGINE_CONFIG_DATA_DIR=/var/ida/data
+    ```
+  ![][wasenv2]
+
+3. Click OK to save changes and restart server.
 
 
 **Confige the JNDI**
@@ -481,6 +510,8 @@ To make the plug-in work, you must login IDA server in the plugin login page.
 [wassessionmgr1]: ../images/install/wassessionmgr1.png
 [wassessionmgr2]: ../images/install/wassessionmgr2.png
 [wassessionmgr3]: ../images/install/wassessionmgr3.png
+[wasenv1]: ../images/install/wasenv1.png
+[wasenv2]: ../images/install/wasenv2.png
 [firefox_custom_setting]: ../images/install/firefox_custom_setting.png
 
 ## Self-Signed SSL Certificates Installation
