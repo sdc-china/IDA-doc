@@ -433,8 +433,13 @@ cd /opt/IBM/HTTPServer/conf
 /opt/IBM/HTTPServer/bin/gskcmd -cert -list -db key.kdb -pw <your password>
 
 ```
+Add below line into /opt/IBM/HTTPServer/conf/httpd.conf file, under **LoadModule reqtimeout_module modules/mod_reqtimeout.so**:
 
-Add below content into /opt/IBM/HTTPServer/conf/httpd.conf file:
+```
+LoadModule ibm_ssl_module modules/mod_ibm_ssl.so
+```
+
+Add below content into /opt/IBM/HTTPServer/conf/httpd.conf file under **Example SSL configuration** part:
 ```
 <IfModule mod_ibm_ssl.c>
   Listen 443
@@ -447,7 +452,7 @@ KeyFile "/opt/IBM/HTTPServer/conf/key.kdb"
 LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so
 WebSpherePluginConfig /opt/IBM/WebSphere/Plugins/config/<your web server name>/plugin-cfg.xml
 ```
-Note: replace <your web server name> to be your web server name create in step 4. Defining IBM HTTP Server
+Note: replace {your web server name} to be your web server name create in **step 4. Defining IBM HTTP Server**.
 
 ### Step 6. Restart HTTP Server
 ```
