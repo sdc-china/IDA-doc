@@ -327,10 +327,10 @@ Note: If you used a directory other than /opt/IBM/HTTPServer for the HTTP Server
 "/opt/IBM/HTTPServer/bin/htpasswd" -b "/opt/IBM/HTTPServer/conf/admin.passwd" "ihsmgr" "<yourpassword>"
 ```
 
-3.5 Set the admin port in the admin.conf file, e.g. 80
+3.5 Set the admin port in the admin.conf file, e.g. 8008
 
 ```
-sed -i s#@@AdminPort@@#"80"#g "/opt/IBM/HTTPServer/conf/admin.conf"
+sed -i s#@@AdminPort@@#"8008"#g "/opt/IBM/HTTPServer/conf/admin.conf"
 ```
 
 ### Step 4. Defining IBM HTTP Server
@@ -420,7 +420,7 @@ cd /opt/IBM/HTTPServer/bin
 ./adminctl start
 ```
 
-### Step 5. Configuring IHS - Enable IHS SSL(command)
+### Step 5. Enable IHS SSL
 ```
 cd /opt/IBM/HTTPServer/conf
 
@@ -433,13 +433,13 @@ cd /opt/IBM/HTTPServer/conf
 /opt/IBM/HTTPServer/bin/gskcmd -cert -list -db key.kdb -pw <your password>
 
 ```
-Add below line into /opt/IBM/HTTPServer/conf/httpd.conf file, under **LoadModule reqtimeout_module modules/mod_reqtimeout.so**:
+Add below line into **/opt/IBM/HTTPServer/conf/httpd.conf** file, under **LoadModule reqtimeout_module modules/mod_reqtimeout.so**:
 
 ```
 LoadModule ibm_ssl_module modules/mod_ibm_ssl.so
 ```
 
-Add below content into /opt/IBM/HTTPServer/conf/httpd.conf file under **Example SSL configuration** part:
+Add below content into **/opt/IBM/HTTPServer/conf/httpd.conf** file under **Example SSL configuration** part:
 ```
 <IfModule mod_ibm_ssl.c>
   Listen 443
@@ -457,6 +457,7 @@ Note: replace {your web server name} to be your web server name create in **step
 ### Step 6. Restart HTTP Server
 ```
 cd /opt/IBM/HTTPServer/bin
+./apachectl stop
 ./adminctl stop
 
 ./adminctl start
@@ -465,7 +466,7 @@ cd /opt/IBM/HTTPServer/bin
 
 ### Step 7. Verify HTTP Server
 
-Browser visit https://<HTTP server ip>:443/ida 
+Browser visit https://{HTTP server ip or hostname}:443/ida 
 
 
 
