@@ -1748,7 +1748,7 @@ ___
 [GetProcessInstanceData_sample]: ../images/command/GetProcessInstanceData.png
 [random_string_default_define]: ../images/command/random_string_default_define.png
 [random_string_default_use]: ../images/command/random_string_default_use.png
-[random_sring_steps_desc]: ../images/command/random_sring_steps_desc.png
+[random_string_steps_desc]: ../images/command/random_string_steps_desc.png
 [random_string_key_define]: ../images/command/random_string_key_define.png
 [random_string_key_use]: ../images/command/random_string_key_use.png
 [random_string_key_steps_desc]: ../images/command/random_string_key_steps_desc.png
