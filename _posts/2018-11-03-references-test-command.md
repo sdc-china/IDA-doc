@@ -1589,8 +1589,22 @@ Generate a specified length random string with key.
 	| `Length` | Required | Length of the generated random string.|
 
 - Example 
+  
+  No key name, just use default value "RANDOM_STRING".
 
-  ![][random_string]
+  ![][random_string_default_define]
+
+  ![][random_string_default_use]
+
+  ![][random_string_steps_desc]
+
+  Use key name, e.g. SKey1.
+
+  ![][random_string_key_define]
+
+  ![][random_string_key_use]
+
+  ![][random_sring_key_steps_desc]
 	
 ___
 
@@ -1607,7 +1621,22 @@ Generate a specified length random number with key.
 	
 - Example 
 
-  ![][random_number]
+  No key name, just use default value "RANDOM_NUMBER".
+
+  ![][random_number_default_define]
+
+  ![][random_number_default_use]
+
+  ![][random_number_steps_desc]
+
+
+  Use key name, e.g. Key1.
+
+  ![][random_number_key_define]
+
+  ![][random_number_key_use]
+
+  ![][random_number_key_steps_desc]
 
 ___
 
@@ -1717,5 +1746,15 @@ ___
 [clickActivityFromPortal]: ../images/command/clickActivityFromPortal.png
 [WaitProcessInstanceStatus_sample]: ../images/command/WaitProcessInstanceStatus.png
 [GetProcessInstanceData_sample]: ../images/command/GetProcessInstanceData.png
-[random_string]: ../images/command/random_string.png
-[random_number]: ../images/command/random_number.png
+[random_string_default_define]: ../images/command/random_string_default_define.png
+[random_string_default_use]: ../images/command/random_string_default_use.png
+[random_sring_steps_desc]: ../images/command/random_sring_steps_desc.png
+[random_string_key_define]: ../images/command/random_string_key_define.png
+[random_string_key_use]: ../images/command/random_string_key_use.png
+[random_string_key_steps_desc]: ../images/command/random_string_key_steps_desc.png
+[random_number_default_define]: ../images/command/random_number_default_define.png
+[random_number_default_use]: ../images/command/random_number_default_use.png
+[random_number_steps_desc]: ../images/command/random_number_steps_desc.png
+[random_number_key_define]: ../images/command/random_number_key_define.png
+[random_number_key_use]: ../images/command/random_number_key_use.png
+[random_number_key_steps_desc]: ../images/command/random_number_key_steps_desc.png
