@@ -19,7 +19,7 @@ There are 2 parts for IDA application high availability we need to install and c
 **prerequisite:** 
   Already set up share folder on both node servers. For example, /sdc-nfs/ida-data/was-data
 
-To Be Updated: Install IDA Web Application on Liberty according [Installing IDA Application(v3.x, v2.x)](../installation/installation-installing-ida-application.html#installing-on-liberty), take below steps for HA configurations:
+Install IDA Web Application on Liberty according [Installing IDA Application(v3.x, v2.x)](../installation/installation-installing-ida-application.html#installing-on-liberty), and take below steps for HA configurations:
 ### Step 1. Support for X-Forwarded-* and Forwarded headers
 Add below config in **server.xml**, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
 
