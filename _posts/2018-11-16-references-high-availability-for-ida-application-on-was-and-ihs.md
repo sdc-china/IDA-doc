@@ -115,9 +115,7 @@ com.ibm.ws.webcontainer.extractHostHeaderPort | true
 HAZELCAST_NETWORK_JOIN_TCP_IP_ENABLED |    true | required
 HAZELCAST_NETWORK_JOIN_TCP_IP_MEMBER | {your first WAS node IP} , {your second WAS node IP} | required
 ORG_QUARTZ_JOBSTORE_DATASOURCE_ENABLED |    true | required
-ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS | org.quartz.impl.jdbcjobstore.PostgreSQLDelegate | optional
-
-**Note**: *Only PostgreSQL DB need ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS environment entry.*
+ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS | org.quartz.impl.jdbcjobstore.PostgreSQLDelegate | optional, for PostgreSQL DB only
 
   ![][was-first-member-env]
 
