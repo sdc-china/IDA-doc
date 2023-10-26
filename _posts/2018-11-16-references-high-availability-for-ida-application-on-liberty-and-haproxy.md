@@ -2,14 +2,14 @@
 title: "High availability for IDA application on Liberty and HAProxy"
 category: references
 date: 2018-11-16 15:00:00
-last_modified_at: 2023-10-20 17:30:00
+last_modified_at: 2023-10-26 11:20:00
 ---
 
 # High availability for IDA application on Liberty and HAProxy
 
 ## Recommended topology 
 
-   **[topology pic placeholder]**
+   ![][liberty-ha-topology]
 
 There are 2 parts for IDA application high availability we need to install and configure, included:
 - *High availability configuring for IDA application on Liberty*
@@ -123,3 +123,8 @@ backend ida-be-https
     server ida01 <your first node IP>:<port> check
     server ida02 <your second node IP>:<port> check
 ```
+
+
+
+
+ [liberty-ha-topology]: ../images/references/liberty-ha-topology.png
