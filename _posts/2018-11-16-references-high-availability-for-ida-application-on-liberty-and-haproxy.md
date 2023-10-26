@@ -5,7 +5,7 @@ date: 2018-11-16 15:00:00
 last_modified_at: 2023-10-26 20:20:00
 ---
 
-# High availability for IDA application on Liberty and HAProxy
+# High availability configuring for IDA application on Liberty
 
 ## Recommended topology 
 
@@ -220,9 +220,9 @@ Add below to jvm.options. e.g set the maximum heap size to 8192m
 If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
 
-**Set environment for HA Configurations**
+**Set environment variables for HA Configurations**
 
-Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment values:
+Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment variables:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/server.env
 
