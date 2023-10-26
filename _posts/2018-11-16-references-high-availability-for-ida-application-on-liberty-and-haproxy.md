@@ -47,15 +47,6 @@ Additional environment variable for PostgreSQL DB only.
 ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 ```
 
-### Step 3. Set jvm options
-Create **jvm.options** from *wlp/usr/servers/SERVER_NAME* folder with below settings:
-```
-#/opt/wlp/usr/servers/<SERVER_NAME>/jvm.options
-
--Xms512m
--Xmx8192m
-```
-
 ## HAProxy setup
 
 ### Step 1. Install HAProxy in Linux
