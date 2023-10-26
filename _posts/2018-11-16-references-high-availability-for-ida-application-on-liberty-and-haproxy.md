@@ -47,7 +47,7 @@ Additional environment variable for PostgreSQL DB only.
 ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 ```
 
-### 3. Set jvm options
+### Step 3. Set jvm options
 Create **jvm.options** from *wlp/usr/servers/SERVER_NAME* folder with below settings:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/jvm.options
