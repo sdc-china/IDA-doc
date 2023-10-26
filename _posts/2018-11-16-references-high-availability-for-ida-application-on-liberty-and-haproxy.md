@@ -32,7 +32,7 @@ Add below config in **server.xml**, support for X-Forwarded-* and Forwarded head
 ```
 
 ### Step 2. Set environment variables
-Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment values:
+Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment variables:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/server.env
 
@@ -67,7 +67,7 @@ systemctl restart haproxy
 ```
 
 ### Step 3. Create haproxy.cfg
-Add config file to /etc/haproxy/haproxy.cfg, change the IP address to the IDA nodes.
+Add config file to /etc/haproxy/haproxy.cfg, and change the node IP and port to your IDA nodes.
 ```
 global
     log         127.0.0.1 local2
