@@ -19,7 +19,7 @@ There are 2 parts for IDA application high availability we need to install and c
 **prerequisite:** 
   Already set up share folder on both node servers. For example, /sdc-nfs/ida-data/was-data
 
-To Be Updated: Install IDA Web Application on Liberty according [Installing IDA Application(v3.x, v2.x)](../installation/installation-installing-ida-application.html#installing-on-liberty), take below steps for HA configurations:
+Install IDA Web Application on Liberty according [Installing IDA Application(v3.x, v2.x)](../installation/installation-installing-ida-application.html#installing-on-liberty), and take below steps for HA configurations:
 ### Step 1. Support for X-Forwarded-* and Forwarded headers
 Add below config in **server.xml**, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
 
@@ -31,7 +31,7 @@ Add below config in **server.xml**, support for X-Forwarded-* and Forwarded head
     </httpEndpoint>
 ```
 
-### Step 2. Set environment
+### Step 2. Set environment variables
 Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment values:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/server.env
@@ -39,18 +39,12 @@ Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below envir
 HAZELCAST_NETWORK_JOIN_MULTICAST_ENABLED=false
 HAZELCAST_NETWORK_JOIN_TCP_IP_ENABLED=true
 HAZELCAST_NETWORK_JOIN_TCP_IP_MEMBER=<your first liberty server IP>,<your second liberty server IP>
-ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 ORG_QUARTZ_JOBSTORE_DATASOURCE_ENABLED=true
 ```
-Note: Only PostgreSQL DB need ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS.
 
-### 3. Set jvm options
-Create **jvm.options** from *wlp/usr/servers/SERVER_NAME* folder with below settings:
+Additional environment variable for PostgreSQL DB only.
 ```
-#/opt/wlp/usr/servers/<SERVER_NAME>/jvm.options
-
--Xms512m
--Xmx8192m
+ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 ```
 
 ## HAProxy setup
