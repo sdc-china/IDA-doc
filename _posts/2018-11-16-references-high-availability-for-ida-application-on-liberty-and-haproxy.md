@@ -5,7 +5,7 @@ date: 2018-11-16 15:00:00
 last_modified_at: 2023-10-26 20:20:00
 ---
 
-# High availability configuring for IDA application on Liberty
+# High availability configuring for IDA application on Liberty and HAProxy
 
 ## Recommended topology 
 
