@@ -39,10 +39,13 @@ Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below envir
 HAZELCAST_NETWORK_JOIN_MULTICAST_ENABLED=false
 HAZELCAST_NETWORK_JOIN_TCP_IP_ENABLED=true
 HAZELCAST_NETWORK_JOIN_TCP_IP_MEMBER=<your first liberty server IP>,<your second liberty server IP>
-ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 ORG_QUARTZ_JOBSTORE_DATASOURCE_ENABLED=true
 ```
-Note: Only PostgreSQL DB need ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS.
+
+Additional environment variable for PostgreSQL DB only.
+```
+ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+```
 
 ### 3. Set jvm options
 Create **jvm.options** from *wlp/usr/servers/SERVER_NAME* folder with below settings:
