@@ -31,7 +31,7 @@ Add below config in **server.xml**, support for X-Forwarded-* and Forwarded head
     </httpEndpoint>
 ```
 
-### Step 2. Set environment
+### Step 2. Set environment variables
 Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment values:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/server.env
