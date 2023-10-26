@@ -15,13 +15,12 @@ There are 2 parts for IDA application high availability we need to install and c
 - *High availability configuring for IDA application on Liberty*
 - *HAProxy setup*
 
-# Step 1: HA Configurations
-## Configurations on Liberty
+## High availability configuring for IDA application on Liberty
 **prerequisite:** 
   Already set up share folder on both node servers. For example, /sdc-nfs/ida-data/was-data
 
 To Be Updated: Install IDA Web Application on Liberty according [Installing IDA Application(v3.x, v2.x)](../installation/installation-installing-ida-application.html#installing-on-liberty), take below steps for HA configurations:
-### 1. Support for X-Forwarded-* and Forwarded headers
+### Step 1. Support for X-Forwarded-* and Forwarded headers
 Add below config in **server.xml**, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
 
 ```
@@ -32,7 +31,7 @@ Add below config in **server.xml**, support for X-Forwarded-* and Forwarded head
     </httpEndpoint>
 ```
 
-### 2. Set environment
+### Step 2. Set environment
 Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment values:
 ```
 #/opt/wlp/usr/servers/<SERVER_NAME>/server.env
@@ -54,9 +53,9 @@ Create **jvm.options** from *wlp/usr/servers/SERVER_NAME* folder with below sett
 -Xmx8192m
 ```
 
-# Step 2: HA Proxy setup
+## HAProxy setup
 
-## 1. Install HAProxy in Linux
+### Step 1. Install HAProxy in Linux
 
 ```
 # Ubuntu
@@ -65,7 +64,7 @@ sudo apt update
 sudo apt install haproxy=2.7.\* -y
 ```
 
-## 2. Start/Stop HAProxy command
+### Step 2. Start/Stop HAProxy command
 
 ```
 systemctl start haproxy
@@ -73,7 +72,7 @@ systemctl stop haproxy
 systemctl restart haproxy
 ```
 
-## 3. Create haproxy.cfg
+### Step 3. Create haproxy.cfg
 Add config file to /etc/haproxy/haproxy.cfg, change the IP address to the IDA nodes.
 ```
 global
@@ -123,8 +122,6 @@ backend ida-be-https
     server ida01 <your first node IP>:<port> check
     server ida02 <your second node IP>:<port> check
 ```
-
-
 
 
  [liberty-ha-topology]: ../images/references/liberty-ha-topology.png
