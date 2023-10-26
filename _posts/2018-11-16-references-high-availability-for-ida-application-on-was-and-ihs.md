@@ -1,11 +1,11 @@
 ---
-title: "High availability configuring for IDA application on WebSphere Application Server and IBM HTTP Server"
+title: "High availability for IDA application on WAS and IBM HTTP Server"
 category: references
 date: 2018-11-16 15:00:00
 last_modified_at: 2023-10-26 11:20:00
 ---
 
-# High availability configuring for IDA application on WAS and IBM HTTP Server
+# High availability for IDA application on WAS and IBM HTTP Server
 ## Recommended topology 
 
   ![][was-ha-topology]
