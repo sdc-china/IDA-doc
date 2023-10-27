@@ -212,7 +212,7 @@ Set the maximum heap size to 8192m, If the heap size is not big enough, IDA chec
 -Xms512m
 -Xmx8192m
 ```
-You might also need to set proxy server, then add the following lines to jvm.options based on your acutal proxy setting.
+You might also need to set proxy server, then add the following lines to **jvm.options** based on your acutal proxy setting.
 ```
 -Dhttps.proxyHost=host     
 -Dhttps.proxyPort=port     
