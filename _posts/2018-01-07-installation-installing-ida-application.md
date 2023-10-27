@@ -224,7 +224,7 @@ You might also need to set proxy server, then add the following lines to **jvm.o
 
 Create **server.env** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>** directory.
 
-The default IDA data folder is **/var/ida/data**, if the default value is not applicable, then add the following environment variable to change the default IDA data folder:
+The default IDA data folder is **/var/ida/data**. If the default value is not applicable, then add the following environment variable to change the default IDA data folder:
 ```
 ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
 ```
