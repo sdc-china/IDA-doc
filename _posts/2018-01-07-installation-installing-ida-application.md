@@ -203,9 +203,9 @@ If the database requires SSL connection, set it in the datasource prop, for exam
 Refer to [Database connections with TLS](https://openliberty.io/blog/2021/06/04/database-ssl-primer.html).
 
 
-**3. Update JVM options**
+**3. Update jvm.options**
 
-Create jvm.options from <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>.
+Create **jvm.options** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
 Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 ```
@@ -220,9 +220,9 @@ You might also need to set proxy server, then add the following lines to jvm.opt
 -Dhttps.proxyPassword=your password
 ```
 
-**4. Update environment variables**
+**4. Update server.env**
 
-Create server.env from <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>.
+Create **server.env** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
 The default IDA data folder is **/var/ida/data**, if the default value is not applicable, then add the following environment variable to change the default IDA data folder:
 ```
@@ -231,7 +231,7 @@ ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
 
 **5. Copy the ida-web.war to apps directory**
 
-Copy the ida-web.war to <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps directory
+Copy the **ida-web.war** to **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps** directory
 
 **6. Start liberty server**
 
