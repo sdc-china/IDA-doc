@@ -203,7 +203,7 @@ If the database requires SSL connection, set it in the datasource prop, for exam
 Refer to [Database connections with TLS](https://openliberty.io/blog/2021/06/04/database-ssl-primer.html).
 
 
-**3. Update jvm.options**
+**3. Configure jvm.options**
 
 Create **jvm.options** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>** directory.
 
@@ -220,7 +220,7 @@ You might also need to set proxy server, then add the following lines to **jvm.o
 -Dhttps.proxyPassword=your password
 ```
 
-**4. Update server.env**
+**4. Configure server.env**
 
 Create **server.env** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>** directory.
 
