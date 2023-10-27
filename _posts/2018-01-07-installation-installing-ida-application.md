@@ -64,7 +64,16 @@ For example:
         databaseName="IDADB" user="postgres" password="password" />
   </dataSource>
 ```
+3\. Support for X-Forwarded-* and Forwarded headers
 
+Add below config in server.xml, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
+```
+  <httpEndpoint id="defaultHttpEndpoint"
+                        host="*" httpPort="9080"
+                        httpsPort="9443">
+      <remoteIp useRemoteIpInAccessLog="true"/>
+  </httpEndpoint>
+```
 
 **Here is a sample server.xml (IDA version 21.x)**
 
@@ -107,9 +116,12 @@ For example:
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpSession cookieSameSite="None"/>
-    <httpEndpoint id="defaultHttpEndpoint"
-				  host="*" httpPort="9080" httpsPort="9443" />
 
+    <httpEndpoint id="defaultHttpEndpoint"
+                        host="*" httpPort="9080"
+                        httpsPort="9443">
+      <remoteIp useRemoteIpInAccessLog="true"/>
+    </httpEndpoint>
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" startTimeout="360s" stopTimeout="120s"/>
 	  <application type="war" id="ida" name="ida" location="${server.config.dir}/apps/ida-web.war">
