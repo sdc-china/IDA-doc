@@ -189,7 +189,7 @@ More information about encrypt, please refer to [SecurityUtility Command](https:
 
 ### Step 3. Update heap size setting
 
-Create/update **jvm.options** from *wlp/usr/servers/<SERVER_NAME>*.
+Create/update **jvm.options** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
 Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 ```
@@ -207,14 +207,14 @@ You might also need to set proxy server, then add the following lines to jvm.opt
 
 ### Step 4. Set environment variables
 
-Create/update **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment variables:
+Create/update **server.env** from **<path_to_liberty>/wlp/usr/servers/SERVER_NAME** folder with below environment variables:
 
-Configure IDA data folder, please also make sure the the folder exists and the user running IDA has read/write permissions on this folder.
+*Configure IDA data folder, please make sure the folder exists and the user running IDA has read/write permissions on this folder.
 ```
 ENGINE_CONFIG_DATA_DIR=/share-folder/ida-data
 ```
 
-Enable HA configuration
+*Enable HA configuration
 ```
 HAZELCAST_NETWORK_JOIN_TCP_IP_ENABLED=true
 HAZELCAST_NETWORK_JOIN_TCP_IP_MEMBER=<your first liberty server IP>,<your second liberty server IP>
@@ -228,7 +228,7 @@ ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLD
 
 ### Step 5. Copy the ida-web.war to apps directory
 
-Copy the ida-web.war to *wlp/usr/servers/<SERVER_NAME>/apps* directory
+Copy the ida-web.war to **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps** directory
 
 ### Step 6. Start liberty server
 
