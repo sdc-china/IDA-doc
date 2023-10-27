@@ -35,7 +35,7 @@ The 'SERVER_NAME' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z
 
 If the server is created successfully, you receive message: Server SERVER_NAME created.
 
-### Step 2: Configure Liberty
+### Step 2: Configure server.xml
 
 Edit **server.xml** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>** folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
@@ -187,7 +187,7 @@ Liberty supports Advanced Encryption Standard (AES) encryption for passwords tha
 ```
 More information about encrypt, please refer to [SecurityUtility Command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_command_securityutil.html).
 
-### Step 3. Update heap size setting
+### Step 3. Update jvm.options
 
 Create **jvm.options** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
@@ -205,11 +205,11 @@ You might also need to set proxy server, then add the following lines to jvm.opt
 -Dhttps.proxyPassword=your password  
 ```
 
-### Step 4. Set environment variables
+### Step 4. Update server.env
 
 Create **server.env** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
-Configure IDA data folder, please make sure the folder exists and the user running IDA has read/write permissions on this folder.
+Configure IDA data folder to the share folder.
 ```
 ENGINE_CONFIG_DATA_DIR=/share-folder/ida-data
 ```
@@ -228,7 +228,7 @@ ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLD
 
 ### Step 5. Copy the ida-web.war to apps directory
 
-Copy the ida-web.war to **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps** directory
+Copy the ida-web.war to **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps** directory.
 
 ### Step 6. Start liberty server
 
