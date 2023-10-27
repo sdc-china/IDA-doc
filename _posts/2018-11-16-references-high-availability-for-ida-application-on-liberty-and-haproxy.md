@@ -28,7 +28,7 @@ Where <path_to_liberty> is the location you installed Liberty on your operating 
 * Run the following command to create a server.
 
 ```
-<path_to_liberty>/wlp/bin/server create SERVER_NAME
+<path_to_liberty>/wlp/bin/server create <SERVER_NAME>
 ```
 
 The 'SERVER_NAME' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
@@ -37,7 +37,7 @@ If the server is created successfully, you receive message: Server SERVER_NAME c
 
 ### Step 2: Configure Liberty
 
-Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
+Edit **server.xml** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>** folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
 IDA Supports JNDI datasource from v3.0.0, You can configure a data source and JDBC provider for database connectivity.
 
@@ -207,7 +207,7 @@ You might also need to set proxy server, then add the following lines to jvm.opt
 
 ### Step 4. Set environment variables
 
-Create **server.env** from **<path_to_liberty>/wlp/usr/servers/SERVER_NAME**.
+Create **server.env** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
 Configure IDA data folder, please make sure the folder exists and the user running IDA has read/write permissions on this folder.
 ```
