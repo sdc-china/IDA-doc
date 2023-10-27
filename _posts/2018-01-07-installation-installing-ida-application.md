@@ -255,13 +255,6 @@ We might need proxy server to visit the application,the proxy settings can be pa
 
 [1]: ../installation/installation-integrate-def.html
 
- with remote testing automation framework based on Selenium Grid.
-
-**Notes**
-
-Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
-- [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
-
 ### Installing on WAS V9
 
 **Check the WAS version**
