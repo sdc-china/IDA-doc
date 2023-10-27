@@ -75,7 +75,7 @@ Add below config in server.xml, support for X-Forwarded-* and Forwarded headers 
   </httpEndpoint>
 ```
 
-**Here is a sample server.xml (IDA version 21.x)**
+**Here is a sample server.xml**
 
 Please update the fields host, httpPort and httpsPort, library and dataSource.  More information about configuring relational database connectivity in Liberty, please refer to [Data Source Configuration](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_dep_configuring_ds.html).
 
