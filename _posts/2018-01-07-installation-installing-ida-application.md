@@ -28,24 +28,18 @@ You can create a server from the command line.
 * Unzip the liberty installation package. Open a command line, then path to the wlp/bin directory.
 Where <path_to_liberty> is the location you installed Liberty on your operating system.  
 
-```
-cd <path_to_liberty>/wlp/bin
-```
-
 * Run the following command to create a server.
-
-
 ```
-./server create SERVER_NAME
+<path_to_liberty>/wlp/bin/server create <SERVER_NAME>
 ```
 
 The 'SERVER_NAME' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
 
 If the server is created successfully, you receive message: Server SERVER_NAME created.
 
-**2. Configure Liberty**  
+**2. Configure server.xml**  
 
-Edit **server.xml** from *wlp/usr/servers/SERVER_NAME* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
+Edit **server.xml** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>** folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
 
 IDA Supports JNDI datasource, You can configure a data source and JDBC provider for database connectivity.
@@ -208,50 +202,38 @@ If the database requires SSL connection, set it in the datasource prop, for exam
 ```
 Refer to [Database connections with TLS](https://openliberty.io/blog/2021/06/04/database-ssl-primer.html).
 
-**3. Copy the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory**
 
-**4. Start liberty server**
+**3. Update JVM options**
+Create jvm.options from <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>.
 
-In Liberty installation bin folder you can use below command to start the server.
-
+Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 ```
-./server start SERVER_NAME
+-Xms512m
+-Xmx8192m
 ```
-
-
-In addition, you could customize the Liberty environment for IDA as *optional steps*
-
-* Specify environment variables by using *server.env* files.
-  You can use *server.env* files at the installation and server levels to specify environment variables for IDA such as **ENGINECONFIG_DATADIR**. For example:
-
-  ```
-  # IDA working directory data path
-  # Ensure the path exists and the user running IDA has read/write permissions on the folder.
-  ENGINE_CONFIG_DATA_DIR=/var/ida/data
-  ```
-
-* Customize JVM options by using *jvm.options* files.
-
-  * Create a text file named *jvm.options*. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
-
-  * Update heap size setting
-
-    Add below to jvm.options. e.g set the maximum heap size to 4096m
-
-    ```
-    -Xmx4096m
-    ```
-
-  If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
-
-**Support http proxy**
-
-We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.
-* Add following lines to jvm.options based on your acutal proxy setting. You can change https to http as well.    
+You might also need to set proxy server, then add the following lines to jvm.options based on your acutal proxy setting.
+```
 -Dhttps.proxyHost=host     
 -Dhttps.proxyPort=port     
 -Dhttps=proxyUser=user     
--Dhttps.proxyPassword=your password  
+-Dhttps.proxyPassword=your password
+```
+
+**4. Update environment variables**
+Create server.env from <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>.
+
+The default IDA data folder is **/var/ida/data**, if the default value is not applicable, then add the following environment variable to change the default IDA data folder:
+```
+ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
+```
+
+**5. Copy the ida-web.war to apps directory**
+Copy the ida-web.war to <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps directory
+
+**6. Start liberty server**
+```
+<path_to_liberty>/wlp/bin/server start SERVER_NAME
+```
 
 [1]: ../installation/installation-integrate-def.html
 
