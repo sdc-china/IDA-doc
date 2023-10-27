@@ -5,7 +5,7 @@ date: 2018-11-16 15:00:00
 last_modified_at: 2023-10-26 20:20:00
 ---
 
-# High availability configuring for IDA application on Liberty and HAProxy
+# High availability for IDA application on Liberty and HAProxy
 
 ## Recommended topology 
 
@@ -68,7 +68,7 @@ For example:
   </dataSource>
 ```
 
-3\. Support for X-Forwarded-* and Forwarded headers (**HA configurations**)
+3\. Support for X-Forwarded-* and Forwarded headers
 
 Add below config in **server.xml**, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
 
@@ -246,14 +246,6 @@ We might need proxy server to visit the application,the proxy settings can be pa
 -Dhttps.proxyPassword=your password  
 
 [1]: ../installation/installation-integrate-def.html
-
- with remote testing automation framework based on Selenium Grid.
-
-
-**Notes**
-
-Below is the reference link for how to setup selenium grid.It includes the detail parameter setting explanation.   
-- [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)  
 
 ## HAProxy setup
 
