@@ -17,7 +17,7 @@ There are 2 parts for IDA application high availability we need to install and c
 
 ## High availability configuring for IDA application on Liberty
 **prerequisite:** 
-  Already set up share folder on both node servers. For example, /sdc-nfs/ida-data/was-data
+  Already set up share folder on both node servers. For example, /share-folder/ida-data
 
 ### Step 1: Create a Liberty server
 You can create a server from the command line.
@@ -25,15 +25,10 @@ You can create a server from the command line.
 * Unzip the liberty installation package. Open a command line, then path to the wlp/bin directory.
 Where <path_to_liberty> is the location you installed Liberty on your operating system.  
 
-```
-cd <path_to_liberty>/wlp/bin
-```
-
 * Run the following command to create a server.
 
-
 ```
-./server create SERVER_NAME
+<path_to_liberty>/wlp/bin/server create SERVER_NAME
 ```
 
 The 'SERVER_NAME' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
@@ -192,58 +187,54 @@ Liberty supports Advanced Encryption Standard (AES) encryption for passwords tha
 ```
 More information about encrypt, please refer to [SecurityUtility Command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_command_securityutil.html).
 
-### Step 3. Copy the ida-web.war to apps directory
+### Step 3. Update heap size setting
 
-Copy the ida-web.war to /usr/servers/*SERVER_NAME*/apps directory
+Create/update **jvm.options** from *wlp/usr/servers/<SERVER_NAME>*.
 
-### Step 4. Start liberty server
-
-In Liberty installation bin folder you can use below command to start the server.
-
+Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 ```
-./server start SERVER_NAME
+-Xms512m
+-Xmx8192m
 ```
 
-In addition, you could customize the Liberty environment with jvm.optioins as *optional step*
-Customize JVM options by using jvm.options files.
-
-* Create a text file named jvm.options. Copy it to path_to_liberty/wlp/usr/servers/*yourservername* directory.      
-
-
-**Update heap size setting**
-
-Add below to jvm.options. e.g set the maximum heap size to 8192m
-
-* -Xms512m
-* -Xmx8192m
-
-If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
-
-
-**Set environment variables for HA Configurations**
-
-Create **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment variables:
+You might also need to set proxy server, then add the following lines to jvm.options based on your acutal proxy setting.
 ```
-#/opt/wlp/usr/servers/<SERVER_NAME>/server.env
+-Dhttps.proxyHost=host     
+-Dhttps.proxyPort=port     
+-Dhttps=proxyUser=user     
+-Dhttps.proxyPassword=your password  
+```
 
+### Step 4. Set environment variables
+
+Create/update **server.env** from *wlp/usr/servers/SERVER_NAME* folder with below environment variables:
+
+Configure IDA data folder, please also make sure the the folder exists and the user running IDA has read/write permissions on this folder.
+```
+ENGINE_CONFIG_DATA_DIR=/share-folder/ida-data
+```
+
+Enable HA configuration
+```
 HAZELCAST_NETWORK_JOIN_TCP_IP_ENABLED=true
 HAZELCAST_NETWORK_JOIN_TCP_IP_MEMBER=<your first liberty server IP>,<your second liberty server IP>
 ORG_QUARTZ_JOBSTORE_DATASOURCE_ENABLED=true
 ```
 
-Additional environment variable for PostgreSQL DB only.
+Additional environment variable for PostgreSQL DB only in HA mode.
 ```
 ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 ```
 
-**Support http proxy**
+### Step 5. Copy the ida-web.war to apps directory
 
-We might need proxy server to visit the application,the proxy settings can be passd to the runtime via the JAVA_OPTS environment variable.
-* Add following lines to jvm.options based on your acutal proxy setting. You can change https to http as well.    
--Dhttps.proxyHost=host     
--Dhttps.proxyPort=port     
--Dhttps=proxyUser=user     
--Dhttps.proxyPassword=your password  
+Copy the ida-web.war to *wlp/usr/servers/<SERVER_NAME>/apps* directory
+
+### Step 6. Start liberty server
+
+```
+<path_to_liberty>/wlp/bin/server start SERVER_NAME
+```
 
 [1]: ../installation/installation-integrate-def.html
 
