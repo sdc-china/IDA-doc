@@ -187,7 +187,7 @@ Liberty supports Advanced Encryption Standard (AES) encryption for passwords tha
 ```
 More information about encrypt, please refer to [SecurityUtility Command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_command_securityutil.html).
 
-### Step 3. Update jvm.options
+### Step 3. Configure jvm.options
 
 Create **jvm.options** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
@@ -205,7 +205,7 @@ You might also need to set proxy server, then add the following lines to jvm.opt
 -Dhttps.proxyPassword=your password  
 ```
 
-### Step 4. Update server.env
+### Step 4. Configure server.env
 
 Create **server.env** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
 
