@@ -37,7 +37,7 @@ If the server is created successfully, you receive message: Server SERVER_NAME c
 
 ### Step 2: Configure server.xml
 
-Edit **server.xml** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>** folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
+Edit **server.xml** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
 
 IDA Supports JNDI datasource from v3.0.0, You can configure a data source and JDBC provider for database connectivity.
 
@@ -189,7 +189,7 @@ More information about encrypt, please refer to [SecurityUtility Command](https:
 
 ### Step 3. Configure jvm.options
 
-Create **jvm.options** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
+Create **jvm.options** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>*.
 
 Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 ```
@@ -207,7 +207,7 @@ You might also need to set proxy server, then add the following lines to jvm.opt
 
 ### Step 4. Configure server.env
 
-Create **server.env** from **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>**.
+Create **server.env** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>*.
 
 Configure IDA data folder to the share folder.
 ```
@@ -228,7 +228,7 @@ ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLD
 
 ### Step 5. Copy the ida-web.war to apps directory
 
-Copy the ida-web.war to **<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps** directory.
+Copy the ida-web.war to *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps* directory.
 
 ### Step 6. Start liberty server
 
