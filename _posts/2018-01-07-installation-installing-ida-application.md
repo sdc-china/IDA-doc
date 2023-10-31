@@ -29,6 +29,7 @@ You can create a server from the command line.
 Where <path_to_liberty> is the location you installed Liberty on your operating system.  
 
 * Run the following command to create a server.
+
 ```
 <path_to_liberty>/wlp/bin/server create <SERVER_NAME>
 ```
@@ -67,6 +68,7 @@ For example:
 3\. Support for X-Forwarded-* and Forwarded headers
 
 Add below config in server.xml, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
+
 ```
   <httpEndpoint id="defaultHttpEndpoint"
                         host="*" httpPort="9080"
@@ -80,6 +82,7 @@ Add below config in server.xml, support for X-Forwarded-* and Forwarded headers 
 Please update the fields host, httpPort and httpsPort, library and dataSource.  More information about configuring relational database connectivity in Liberty, please refer to [Data Source Configuration](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_dep_configuring_ds.html).
 
 For example:
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <server description="new server">
@@ -220,11 +223,13 @@ Refer to [Database connections with TLS](https://openliberty.io/blog/2021/06/04/
 Create **jvm.options** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* directory.
 
 Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
+
 ```
 -Xms512m
 -Xmx8192m
 ```
 You might also need to set proxy server, then add the following lines to **jvm.options** based on your acutal proxy setting.
+
 ```
 -Dhttps.proxyHost=host     
 -Dhttps.proxyPort=port     
@@ -237,6 +242,7 @@ You might also need to set proxy server, then add the following lines to **jvm.o
 Create **server.env** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* directory.
 
 The default IDA data folder is **/var/ida/data**. If the default value is not applicable, then add the following environment variable to change the default IDA data folder:
+
 ```
 ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
 ```
