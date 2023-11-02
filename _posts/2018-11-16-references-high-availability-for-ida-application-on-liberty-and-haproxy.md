@@ -37,7 +37,7 @@ If the server is created successfully, you receive message: Server SERVER_NAME c
 
 ### Step 2: Configure server.xml
 
-Edit **server.xml** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
+Edit **server.xml** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore* and enable *features ssl,websocket*.
 
 IDA Supports JNDI datasource from v3.0.0, You can configure a data source and JDBC provider for database connectivity.
 
@@ -63,7 +63,22 @@ For example:
   </dataSource>
 ```
 
-3\. Support for X-Forwarded-* and Forwarded headers
+3\. Customize the SSL server key for Liberty
+- Create SSL certificate by *`keytool`* command
+    ```
+    keytool -genkeypair -alias MyLibertyKey -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -dname "cn=<hostname>, o=<organization>, ou=<organizational unit>, c=<coutry>" -validity 365 -storetype PKCS12 -keypass idaAdmin -storepass idaAdmin -keystore <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/resources/security/libertykeystore.p12 -ext san=dns:<hostname>
+
+    ```
+
+- configure the keystore
+    ```
+    <keyStore id="defaultKeyStore" password="idaAdmin" location="${server.config.dir}/resources/security/libertykeystore.p12" />
+
+    ```
+
+**Notes:** copy the generated SSL certificate to all IDA Liberty servers, and configure the keystore.
+
+4\. Support for X-Forwarded-* and Forwarded headers
 
 Add below config in **server.xml**, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
 
@@ -87,7 +102,7 @@ For example:
     <!-- Enable features -->
     <featureManager>
         <feature>servlet-3.1</feature>
-        <feature>ssl-1.0</feature>
+        <feature>transportSecurity-1.0</feature>
         <feature>websocket-1.1</feature>
         <feature>jdbc-4.2</feature>
         <feature>jndi-1.0</feature>

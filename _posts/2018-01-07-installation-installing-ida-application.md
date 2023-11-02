@@ -90,7 +90,7 @@ For example:
     <!-- Enable features -->
     <featureManager>
         <feature>servlet-3.1</feature>
-        <feature>ssl-1.0</feature>
+        <feature>transportSecurity-1.0</feature>
         <feature>websocket-1.1</feature>
         <feature>jdbc-4.2</feature>
         <feature>jndi-1.0</feature>
