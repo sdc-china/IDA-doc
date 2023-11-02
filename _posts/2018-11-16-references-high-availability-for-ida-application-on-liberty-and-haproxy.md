@@ -69,10 +69,9 @@ For example:
     keytool -genkeypair -alias MyLibertyKey -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -dname "cn=<hostname>, o=<organization>, ou=<organizational unit>, c=<coutry>" -validity 365 -storetype PKCS12 -keypass idaAdmin -storepass idaAdmin -keystore <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/resources/security/libertykeystore.p12 -ext san=dns:<hostname>
     ```
 
-- configure the keystore
+- configure the keystore in **server.xml**
     ```
     <keyStore id="defaultKeyStore" password="idaAdmin" location="${server.config.dir}/resources/security/libertykeystore.p12" />
-
     ```
 
 **Notes:** copy the generated SSL certificate to all IDA Liberty servers, and configure the keystore.
@@ -113,7 +112,7 @@ For example:
          encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element.
          Then uncomment the keyStore element. -->
 
-    <keyStore id="defaultKeyStore" password="idaAdmin" />
+    <keyStore id="defaultKeyStore" password="idaAdmin" location="${server.config.dir}/resources/security/libertykeystore.p12" />
 
     <!-- There's an issue using jdk 8 with TLSv1.3, enable TLSv1.2 as below to work around the issue. -->
     <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustDefaultCerts="true" sslProtocol="TLSv1.2"/>
