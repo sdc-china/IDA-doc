@@ -67,7 +67,6 @@ For example:
 - Create SSL certificate by *`keytool`* command
     ```
     keytool -genkeypair -alias MyLibertyKey -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -dname "cn=<hostname>, o=<organization>, ou=<organizational unit>, c=<coutry>" -validity 365 -storetype PKCS12 -keypass idaAdmin -storepass idaAdmin -keystore <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/resources/security/libertykeystore.p12 -ext san=dns:<hostname>
-
     ```
 
 - configure the keystore
