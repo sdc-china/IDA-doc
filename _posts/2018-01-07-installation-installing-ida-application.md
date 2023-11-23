@@ -314,7 +314,8 @@ The default IDA data folder is **/var/ida/data**. If the default value is not ap
 
 **Confige the JNDI**
 
-1. In left navigation bar, click the **Resource > JDBC > Data sources**
+1. In left navigation bar, click the **Resource > JDBC > Data sources**, and select **Server** as the scope.
+   ![][data_source_new]
 
 2. Create a new data source, we use db2 as an example.
 
@@ -573,6 +574,7 @@ Chrome browsers can save your data for a short time, and the warning page will n
    [plugin_login]: ../images/install/plugin_login.png
    [plugin_login_error]: ../images/install/plugin_login_error.png
    [ida_web_cert_error]: ../images/install/ida_web_cert_error.png
+   [data_source_new]: ../images/install/was_data_source_new.png
    [data_source1]: ../images/install/was_data_source1.png
    [data_source2]: ../images/install/was_data_source2.png
    [data_source3]: ../images/install/was_data_source3.png

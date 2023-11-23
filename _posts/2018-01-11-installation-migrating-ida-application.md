@@ -58,7 +58,7 @@ mysql> source yoursqlpath\migrate-mysql-v21.3.2-v21.3.3.sql
 
 You need to update IDA.war by the following steps:
 
-1. [Repacking IDA Application](../installation/installation-repacking-ida-application.html) if you have changed the **ida.properties** before, otherwise you can skip step 1.
+1. [Configure Liberty server.xml](../installation/installation-installing-ida-application.html#installing-on-liberty).
 2. Remove all the files from <LIBERTY_FOLDER>\usr\servers\default\apps folder.     
 3. Copy the **ida-web.war** into the <LIBERTY_FOLDER>\usr\servers\default\apps folder.    
 4. Start Liberty Server.  

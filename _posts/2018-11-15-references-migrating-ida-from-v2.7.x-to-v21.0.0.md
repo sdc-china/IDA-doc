@@ -155,7 +155,7 @@ Restart IDA server to make your changes effective.
 2.10 Restart IDA server to make your changes effective.
 
 
-[1]: ../installation/installation-repacking-ida-application.html
+[1]: ../references/repacking-ida-application-early-version.html
 [2]: ../installation/installation-installing-ida-application.html
 [3]: ../references/references-migrating-and-updating-ida-application-v2.x.html
 [General]: ../images/references/General.jpg
