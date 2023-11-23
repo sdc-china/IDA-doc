@@ -18,8 +18,6 @@ docs:
         url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
         url: /installation/installation-database-installation-and-configuration.html
-      - title: "Repacking IDA Application"
-        url: /installation/installation-repacking-ida-application.html
       - title: "Installing IDA Application"
         url: /installation/installation-installing-ida-application.html
       - title: "Post Installation Setup"
