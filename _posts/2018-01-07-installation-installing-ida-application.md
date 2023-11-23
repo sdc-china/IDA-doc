@@ -314,7 +314,7 @@ The default IDA data folder is **/var/ida/data**. If the default value is not ap
 
 **Confige the JNDI**
 
-1. In left navigation bar, click the **Resource > JDBC > Data sources**, and select **Server** as the scope.
+1. In left navigation bar, click the **Resource > JDBC > Data sources**, and select the **Node=<NODE_NAME>, Server=<SERVER_NAME>** server scope.
    ![][data_source_new]
 
 2. Create a new data source, we use db2 as an example.
