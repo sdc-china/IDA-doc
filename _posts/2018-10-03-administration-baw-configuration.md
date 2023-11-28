@@ -118,17 +118,17 @@ What's more, you can also edit a BAW user in a similar way to editing a user.
      
 If the case functions are installed by default, please refer to the default configuration information.
      
-     |   Field                | Workflow Center  |  Workflow Server | Workflow Center(Pak4BA)|  Workflow Server(Pak4BA) |
-     | ---------------------- |-------------------|-------------------|-------------------|-------------------|                                                           
-     | Design Object Store    |     dos           |        dos            |    BAWDOS    |     BAWINS1DOS   |                         
-     | Target Object Store    |     tos           |         tos          |      BAWTOS       |BAWINS1TOS    |                                    
-     | Connection Point       |  TOS_Default_ConnPt   |    TOS_Default_ConnPt   |   pe_conn_tosuser   |  pe_conn_tosuser|                                    
-     | Target Environment Name|     |   Workflow Default Target Environment |    |   Workflow Default Target Environment|                                                      
+|   Field | Workflow Center  |  Workflow Server | Workflow Center(Pak4BA) |  Workflow Server(Pak4BA) |
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| Design Object Store    |     dos           |        dos            |    BAWDOS    |     BAWINS1DOS   |                         
+| Target Object Store    |     tos           |         tos          |      BAWTOS       |BAWINS1TOS    |                                    
+| Connection Point  |  TOS_Default_ConnPt   |    TOS_Default_ConnPt   |   pe_conn_tosuser   | pe_conn_tosuser|                                    
+| Target Environment Name|     |   Workflow Default Target Environment |    |   Workflow Default Target Environment |                                                      
 
 
 After adding Case Object Store, you can see the Case Object Store configuration list for this BAW server.
 
-     ![][administrator_case_object_store_list]{:width="80%"}    
+   ![][administrator_case_object_store_list]{:width="80%"}    
 
 **Notes:**   
 Pls make sure the added Case Object Store configurations exist in your selected BAW server. Also You need to well define the **Display name** of the Case Object Store.You can choose the **Case Object Store** display name to choose Case Object Store configuration when you create a test project.
