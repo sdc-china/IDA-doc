@@ -122,11 +122,18 @@ IDA pipeline allows you to deploy your snapshot from Workflow Center to Workflow
 
     ![][pipeline_pcdeployps_offline]
  
-## Case project configuration after the first deployment in the Workflow Server
 
-More information please reference the [Configuring the target environment after solution deployment](https://www.ibm.com/support/knowledgecenter/SS8JB4_19.x/com.ibm.casemgmt.design.doc/acmdc054.html)
+## Case project configuration for the first deployment
+
+### Case Object Store configuration
+
+Before deploying using IDA, please make sure you have configured Case Object Store on Workflow Center and Workflow Server in IDA BAW Configuration.
+
+please reference the [Add Case Object Store configuration to a BAW server](https://sdc-china.github.io/IDA-doc/administration/administration-baw-configuration.html#add-case-object-store-configuration-to-a-baw-server)
 
 ### Manage Roles
+
+If you are using a case project and deploying for the first time, you need to manager roles for the case project.
 
 1. Log in to **Case Client** Console: https://[Server URL]:[Port]/navigator/?desktop=baw
 
@@ -169,6 +176,8 @@ You need to configure **Security Configuration** in your Workflow Server environ
 7. Deploy **Security Configuration** to Target Object Store.
 
    ![][case_ps_deploy]{:height="90%" width="90%"}
+   
+More information please reference the [Configuring the target environment after solution deployment](https://www.ibm.com/support/knowledgecenter/SS8JB4_19.x/com.ibm.casemgmt.design.doc/acmdc054.html)
  
 ## Known Limitions     
 

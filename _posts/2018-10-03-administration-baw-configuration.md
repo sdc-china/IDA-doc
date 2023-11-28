@@ -107,13 +107,23 @@ What's more, you can also edit a BAW user in a similar way to editing a user.
 
      ![][administrator_case_object_store]{:width="60%"}         
 
-	 |   Field                | Description                                                             |
+	 |   Field                | Description                                                            |
      | ---------------------- |-------------------------------------------------------------------------|                                          
      | Server                 | the display name of BAW server                                          |  
      | Display Name           | the display name of Case Object Store configuration                     |                  
      | Design Object Store    | the case design object store of BAW server                              |                                   
      | Target Object Store    | the case target object store of BAW server                              |                         
-     | Connection Point       | the case connection point of BAW server                            |                              
+     | Connection Point       | the case connection point of BAW server                                 |   
+     | Target Environment Name| the case target environment name of BAW server                          |   
+     
+If the case functions are installed by default, please refer to the default configuration information.
+     
+     |   Field                | Workflow Center  |  Workflow Server | Workflow Center(Pak4BA)|  Workflow Server(Pak4BA) |
+     | ---------------------- |-------------------|-------------------|-------------------|-------------------|                                                           
+     | Design Object Store    |     dos           |        dos            |    BAWDOS    |     BAWINS1DOS   |                         
+     | Target Object Store    |     tos           |         tos          |      BAWTOS       |BAWINS1TOS    |                                    
+     | Connection Point       |    TOS_Default_ConnPt   |    TOS_Default_ConnPt   |   pe_conn_tosuser   |  pe_conn_tosuser|                                    
+     | Target Environment Name|      |    Workflow Default Target Environment |    |   Workflow Default Target Environment   |                                                      
 
 
      After adding Case Object Store, you can see the Case Object Store configuration list for this BAW server.
