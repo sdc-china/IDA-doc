@@ -122,11 +122,11 @@ If the case functions are installed by default, please refer to the default conf
      | ---------------------- |-------------------|-------------------|-------------------|-------------------|                                                           
      | Design Object Store    |     dos           |        dos            |    BAWDOS    |     BAWINS1DOS   |                         
      | Target Object Store    |     tos           |         tos          |      BAWTOS       |BAWINS1TOS    |                                    
-     | Connection Point       |    TOS_Default_ConnPt   |    TOS_Default_ConnPt   |   pe_conn_tosuser   |  pe_conn_tosuser|                                    
-     | Target Environment Name|      |    Workflow Default Target Environment |    |   Workflow Default Target Environment   |                                                      
+     | Connection Point       |  TOS_Default_ConnPt   |    TOS_Default_ConnPt   |   pe_conn_tosuser   |  pe_conn_tosuser|                                    
+     | Target Environment Name|     |   Workflow Default Target Environment |    |   Workflow Default Target Environment|                                                      
 
 
-     After adding Case Object Store, you can see the Case Object Store configuration list for this BAW server.
+After adding Case Object Store, you can see the Case Object Store configuration list for this BAW server.
 
      ![][administrator_case_object_store_list]{:width="80%"}    
 
