@@ -449,7 +449,7 @@ BAW Version | IDA Toolkit Version
 ### Chrome plugin
 - Open the url <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
 - Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [IDA-23.5.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-23.5.crx)
+- The Chrome plugin offline installation package. [IDA-23.6.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-23.6.crx)
 - For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
   
 ### Edge plugin
@@ -459,7 +459,7 @@ BAW Version | IDA Toolkit Version
 - Click "Get" button, then click "Add extension" button to install plug-in.
 
 ### Firefox plugin
-- Download Firefox plugin [ida-23.5-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-23.5-fx.xpi)
+- Download Firefox plugin [ida-23.6-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-23.6-fx.xpi)
 - Drag the downloaded plugin file into firefox window.
 - Click "Add" button.
 
