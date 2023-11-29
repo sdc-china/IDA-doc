@@ -38,7 +38,7 @@ last_modified_at: 2019-07-29 16:18:00
 
      ![][administrator_edit_user]{:width="80%"}
 
-    2. Change roles of the user. Then click **Save**.
+  2. Change roles of the user. Then click **Save**.
 
 ## Activate/Deactivate users
 
