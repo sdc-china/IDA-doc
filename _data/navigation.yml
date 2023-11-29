@@ -141,6 +141,8 @@ docs:
         url: /administration/administration-baw-configuration.html
       - title: "SSH Configuration"
         url: /administration/administration-ssh-configuration.html
+      - title: "Case Solution Deployment Configuration"
+        url: /administration/administration-case-solution-deployment-configuration.html
       - title: "Selenium Hub Configuration"
         url: /administration/administration-selenium-hub-configuration.html
       - title: "Team Configuration"
