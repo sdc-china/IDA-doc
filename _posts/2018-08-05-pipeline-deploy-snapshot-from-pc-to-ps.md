@@ -110,10 +110,6 @@ You need to configure **Security Configuration** in your Workflow Server environ
    
 More information please reference the [Configuring the target environment after solution deployment](https://www.ibm.com/support/knowledgecenter/SS8JB4_19.x/com.ibm.casemgmt.design.doc/acmdc054.html)
  
-## Known Limitions     
-
- IDA machine, Workflow Center Server, Workflow Server server should be Linux server.  
-
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png
 [pipeline_pcdeployps]: ../images/pipeline/pipeline_pcdeployps.png
 [pipeline_online_deploy]: ../images/pipeline/pipeline_online_deployment.png
