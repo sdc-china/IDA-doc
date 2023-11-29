@@ -8,7 +8,7 @@ last_modified_at: 2023-06-09 17:31:00
 # SSH Configuration
 ***
 For BAW server with version prior to v18.0.0.2, it needs to configure SSH key to establish the commuication between IDA and BAW server. 
-So that IDA pipeline can deploy snapshot from Workflow Center to Workflow Server by wasadmin script.
+So that IDA pipeline can deploy snapshot from Workflow Center to Workflow Server by wsadmin script.
 
 ## Create SSH Key
 
