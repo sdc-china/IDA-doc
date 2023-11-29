@@ -1,11 +1,11 @@
 ---
-title: "Case Solution Project Configuration"
+title: "Case Solution Deployment Configuration"
 category: administration
 date: 2018-08-05 15:17:55
 last_modified_at: 2023-06-09 17:31:00
 ---
 
-# Case Solution Project Configuration
+# Case Solution Deployment Configuration
 ***
 A set of initial configuration is requirement to enable Case Solution Project Deployment.
 
