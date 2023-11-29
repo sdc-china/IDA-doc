@@ -55,15 +55,11 @@ last_modified_at: 2019-07-29 16:18:00
   2. Click **Profile** button to get basic information of your account.
 
      ![][administrator_profile_page]{:width="80%"}
-
-  3. Click **API Access** button to generate your token.
-
-     ![][administrator_api_access]{:width="80%"}
-
-  4. Click **Team** button to see which teams this user belongs to, you can also see which process apps and selenium grids each team can access.
+    
+  3. Click **Team** button to see which teams this user belongs to, you can also see which process apps and selenium grids each team can access.
   
      ![][administration_user_team]{:width="80%"}
-  5. Click **Password** button to change your password.
+  4. Click **Password** button to change your password.
 
      ![][administrator_password]{:width="80%"}
 
