@@ -26,8 +26,6 @@ IDA pipeline allows you to deploy your snapshot from Workflow Center to Workflow
 
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from Workflow Center to online Workflow Server.
 
-   ![][pipeline_pcdeployps]
-
 ## Define pipeline from Workflow Center to Workflow Server through offline deployment
 
 1. Define the pipeline for deployment snapshot from Workflow Center to an offline Workflow Server.
@@ -51,13 +49,10 @@ IDA pipeline allows you to deploy your snapshot from Workflow Center to Workflow
 
 4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from Workflow Center to offline Workflow Server.
 
-    ![][pipeline_pcdeployps_offline]
  
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png
-[pipeline_pcdeployps]: ../images/pipeline/pipeline_pcdeployps.png
 [pipeline_online_deploy]: ../images/pipeline/pipeline_online_deployment.png
 [pipeline_offline_deploy]: ../images/pipeline/pipeline_offline_deployment.png
 [pipeline_run_online_deploy]: ../images/pipeline/pipeline_run_online_deploy.png
 [pipeline_run_offline_deploy]: ../images/pipeline/pipeline_run_offline_deploy.png
 [pipeline_pc_to_ps_offline]: ../images/pipeline/pipeline_pc_to_ps_offline.png
-[pipeline_pcdeployps_offline]: ../images/pipeline/pipeline_pcdeployps_offline.png
