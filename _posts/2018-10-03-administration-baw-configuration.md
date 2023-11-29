@@ -35,15 +35,11 @@ last_modified_at: 2023-02-28 15:30:00
       | WAS Admin username     | The name of the WAS Administrative user who can login the WAS console and can manages the product resources and user accounts in WebSphere Application Server. In BAW HA environment, use the WAS Admin user configured for the application cluster member.                                                                                                                       |
       | WAS Admin password     | The password of WAS admin user.                                                                                                                                                                                                                                                                                                                                                   |
       | SSH User Name          | The user who can access PC and PS by SSH key, this field is used for snapshot deployment from PC to PS. This user should have the permission to exeute wsadmin.sh, in BAW HA environment, use the SSH user configured for application cluster member.                                                                                                                             |
-      | SSH key                | Used for snapshot deployment from PC to PS. The way to generate ssh key is here: [Link](../pipeline/pipeline-deploy-snapshot-from-pc-to-ps.html).                                                                                                                                                                                                                                          |
+      | SSH key                | Used for snapshot deployment from PC to PS. The way to generate ssh key is here: [Link](../administration/administration-ssh-configuration.html).                                                                                                                                                                                                                                          |
 
 
 **Notes:**  
-
-If you need to add bpmoc server,you don't need to fill everything only add BAW server url,server type,hostname and rest username(function id), password, auth command and method.    
 If you login get 401 unauthorized error,please check your function id belong to tw_admins (administrative access) and tw_authors (non-administrative access) groups.
-
-   ![][administrator_bpmoc]{:width="60%"}
 
 ## Edit BAW server
   1. Click **Edit** icon on the right of the BAW server that you want to edit.
