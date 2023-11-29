@@ -114,15 +114,8 @@ More information please reference the [Configuring the target environment after 
 
  IDA machine, Workflow Center Server, Workflow Server server should be Linux server.  
 
-[pipeline_sshkey]: ../images/pipeline/pipeline_sshkey.png
-[pipeline_bpmconfiguration]: ../images/pipeline/pipeline_bpmconfiguration.png
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png
 [pipeline_pcdeployps]: ../images/pipeline/pipeline_pcdeployps.png
-[pipeline_servername]: ../images/pipeline/pipeline_serverName.png
-[puttyKeyGen]: ../images/pipeline/PuttyKeyGen.png
-[PrivateKeyGen]: ../images/pipeline/privateKey.png
-[putty]: ../images/pipeline/putty.png
-[puttyAuth]: ../images/pipeline/puttyAuth.png
 [pipeline_online_deploy]: ../images/pipeline/pipeline_online_deployment.png
 [pipeline_offline_deploy]: ../images/pipeline/pipeline_offline_deployment.png
 [pipeline_run_online_deploy]: ../images/pipeline/pipeline_run_online_deploy.png
