@@ -37,19 +37,17 @@ warfile="${scriptdir}/ida-web.war"
 appdir="${libertydir}/usr/servers/${idaserver}/apps/"
 
 cd $appdir
-timestamp=$(date +%s)
-echo "Backup previous war file to ${appdir}ida-web.war.${timestamp}"
-mv "${appdir}ida-web.war" "${appdir}ida-web.war.${timestamp}"
+if [ -f ida-web.war ]; then
+	timestamp=$(date +%s)
+  echo "Backup previous war file to ${appdir}ida-web.war.${timestamp}"
+  mv "${appdir}ida-web.war" "${appdir}ida-web.war.${timestamp}"
+fi
 
-echo "Copy new war file to liberty"
-cp $warfile $appdir
+echo "Move new war file to liberty"
+mv $warfile $appdir
 
 echo "Start liberty server"
 cd $bindir
 ./server start $idaserver
-
-echo "Clean previous unzipped ida-web.war"
-cd $scriptdir
-rm -Rf ida-web.war;
 
 echo "End"
