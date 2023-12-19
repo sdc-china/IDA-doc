@@ -1,5 +1,16 @@
 #!/bin/bash
 echo "Input parameters, IDA zip path: $1, Liberty path(till server name): $2"
+#verify input parameters
+if [ ! -f $1 ]; then
+	echo "Error: Input parameter IDA zip $1 doesn't exist, please check."
+	exit 1
+fi
+
+if [ ! -d $2 ]; then
+    echo "Error: Input parameter Liberty path(till server name) $2 doesn't exist, please check."
+	exit 1
+fi
+
 #process input parameters
 zippath=$1
 filename=$(basename $zippath)
