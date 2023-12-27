@@ -2,7 +2,7 @@
 title: "System Requirement"
 category: installation
 date: 2018-01-01 15:17:55
-last_modified_at: 2023-09-08 13:35:00
+last_modified_at: 2023-12-27 13:35:00
 ---
 
 # System Requirement
