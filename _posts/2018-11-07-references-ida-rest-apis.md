@@ -2,7 +2,7 @@
 title: "IDA REST APIs"
 category: references
 date: 2018-11-07 15:17:55
-last_modified_at: 2022-05-26 16:44:00
+last_modified_at: 2024-01-31 16:44:00
 ---
 
 # IDA REST APIs
@@ -24,6 +24,7 @@ IDA REST APIs support basic authentication.
 - **[<code>GET /rest/v2/pipelines</code> Get pipeline list.](#get-pipeline-list)**
 - **[<code>GET /rest/v2/pipelines/metadata?pipelineId=:id(?pipelineName=:name)</code> Get pipeline metadata.](#get-pipeline-metadata)**
 - **[<code>POST /rest/v2/pipelines/builds?pipelineId=:id(?pipelineName=:name)</code>  Trigger pipeline build.](#trigger-pipeline-build)**
+- **[<code>PUT /rest/v2/pipelines/builds/{buildId}</code> Operate on pipeline build.](#operate-on-pipeline-build)**
 - **[<code>GET /rest/v2/pipelines/builds/{buildId}</code> Get pipeline build status.](#get-pipeline-build-status)**
 
 
@@ -195,10 +196,44 @@ Response
   "pipelineName": "HSS Pipeline",
   "buildId": 674,
   "teamName": "Private",
-  "status": "RUNNING"
+  "status": "Running"
 }
 ```
 
+### **Operate On Pipeline Build**
+___
+Operate on a pipeline build by build id.
+
+**URL:**
+
+```
+/rest/v2/pipelines/builds/{buildId}
+```
+
+**Method:**  ```PUT```
+
+
+**Parameter:**
+
+| Name | Required                        | Description        |
+|----------------|------------|--------------|
+| `buildId`   | Yes          | Build id. <br>You could get the build id from the reponse of the [Trigger Pipeline Build REST API](#trigger-pipeline-build). |
+| `action`   | Yes          | Supported actions: approve, reject.|
+
+**Example:**
+
+Request
+```
+  curl -X PUT "https://[serverhost]:[port]/ida/rest/v2/pipelines/builds/223178?action=approve" -H "accept: application/json;charset=UTF-8"
+```
+Response
+``` json
+{
+  "pipelineId": 222556,
+  "pipelineName": "HSS Pipeline",
+  "status": "Running"
+}
+```
 
 ### **Get Pipeline Build Status**
 ___
@@ -230,7 +265,7 @@ Request
 Response
 ``` json
 {
-  "status": "SUCCESS",
+  "status": "Success",
   "pipelineId": 1,
   "pipelineName": "HSS Pipeline",
   "triggerBy": "idaAdmin",
@@ -248,7 +283,7 @@ Request
 Response
 ``` json
 {
-  "status": "SUCCESS",
+  "status": "Success",
   "pipelineId": 65,
   "pipelineName": "Hiring Sample",
   "triggerBy": "idaAdmin",
@@ -261,6 +296,7 @@ Response
   "stages": [
     {
       "name": "Development",
+      "status": "Success",
       "steps": [
         {
           "name": "Checkstyle",
@@ -502,6 +538,7 @@ Response
     },
     {
       "name": "QA",
+      "status": "Success",
       "steps": [
         {
           "name": "Deployment",
