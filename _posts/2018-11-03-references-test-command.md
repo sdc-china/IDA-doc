@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-11-03 15:17:55
-last_modified_at: 2023-10-10 13:00:00
+last_modified_at: 2023-12-27 13:00:00
 ---
 
 # Test Commands
@@ -21,6 +21,7 @@ There are more than 80 commands to simplify testing and categorized as five cate
 * [BPM Assertion](#bpm-assertion) : A set of commands for asserting server side components.
 * [Case](#case): A set of commands for calling server side components of case. 
 * [Case Assertion](#case-assertion) : A set of commands for asserting server side components of case.
+* [BA](#ba): A set of commands for calling server side components of business application (available on Cloud Pak for Business Automation). 
 * [UI](#ui): A set of commands for UI recording and actions.
 * [UI assertion](#ui-assertion):A set of commands for asserting UI components.
 * [Utility](#utility): A set of commands for util methods. e.g debug, putContext
@@ -922,6 +923,36 @@ Check the activity state of the current case.
 
 ___
 
+## **BA**
+
+This category of commands are for calling server side components of business application (available on Cloud Pak for Business Automation). There are some common input fields. Below are some statements which are common for most of the commands in this category. 
+
+___
+
+### **Common Parameters**
+
+| Name | Required | Description |
+|----------------|------------|--------------|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+
+___
+
+### **startBusinessApplication**
+
+Start the business application.
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+    | `Business Application` | Required | The unique name of the business application.|
+    
+- Example  
+
+	![][startBusinessApplication_sample]{:height="70%" width="70%"}
+___
+
 ## **UI**  
 
 In most cases, the UI commands are recorded using the IDA plug in. If you find a need to add a command manually, for example, validation command, look at the recorded command for the element and copy the location information from it.
@@ -1757,3 +1788,4 @@ ___
 [random_number_key_define]: ../images/command/random_number_key_define.png
 [random_number_key_use]: ../images/command/random_number_key_use.png
 [random_number_key_steps_desc]: ../images/command/random_number_key_steps_desc.png
+[startBusinessApplication_sample]: ../images/command/startBusinessApplication_sample.png
