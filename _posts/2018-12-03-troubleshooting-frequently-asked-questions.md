@@ -2,7 +2,7 @@
 title: "Frequently Asked Questions"
 category: troubleshooting
 date: 2018-12-03 15:17:55
-last_modified_at: 2023-10-17 16:53:00
+last_modified_at: 2024-02-19 12:53:00
 ---
 
 # Frequently Asked Questions
@@ -157,6 +157,10 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
       3. Open the AppSrv profile SOAP properties file, <WAS_PROFILE_HOME>/AppSrv01/properties/soap.client.props.
       4. Edit the SOAP timeout value to 0 (no limit), by default, the value is 180: com.ibm.SOAP.requestTimeout=0
       5. Restart the whole environment.
+
+1. How to test non-exposed human service?
+
+   Non-exposed human service can only be tested in Workflow Center environment. Before testing, assign process app Read permission to the test account in Workflow Center. Non-exposed human service can not be tested in a Workflow Server environment.
       
       
 
