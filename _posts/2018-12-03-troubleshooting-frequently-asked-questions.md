@@ -160,7 +160,7 @@ If the first stage is PS, then you can not add snapshot step, and only offline d
 
 1. How to test non-exposed human service?
 
-   Non-exposed human service can only be tested in Workflow Center environment. Before testing, assign process app Read permission to the test account in Workflow Center. Non-exposed human service can not be tested in a Workflow Server environment.
+   Non-exposed human service can only be tested in Workflow Center environment. Before testing, assign process application(or toolkit if human service is created in toolkit) Read permission to the test account in Workflow Center. Non-exposed human service can not be tested in a Workflow Server environment.
       
       
 
