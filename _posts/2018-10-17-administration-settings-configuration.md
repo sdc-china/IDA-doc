@@ -106,25 +106,6 @@ Here is a sample:
 
 ![][administrator_k8s_setting_sample]{:width="100%"}
 
-The steps to create service account and get token:
-
-```
-kubectl -n kube-system create serviceaccount ida-service-account
-kubectl create clusterrolebinding ida-clusterrolebinding --clusterrole=cluster-admin --serviceaccount=kube-system:ida-service-account
-TOKENNAME=`kubectl -n kube-system get serviceaccount/ida-service-account -o jsonpath='{.secrets[0].name}'`
-echo $TOKENNAME
-TOKEN=`kubectl -n kube-system get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
-echo $TOKEN
-kubectl config set-credentials ida-service-account --token=$TOKEN
-kubectl config set-context --current --user=ida-service-account
-```
-
-Check if the current user is added successfully or not, and get the token for the newly added user:
-
-```
-kubectl config view
-```
-
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
