@@ -106,6 +106,17 @@ Here is a sample:
 
 ![][administrator_k8s_setting_sample]{:width="100%"}
 
+The steps to create service account and get token:
+
+``` 
+oc new-project selenium-demo
+oc create sa ida-selenium-sa
+oc adm policy add-role-to-user admin -z ida-selenium-sa
+TOKENNAME=`oc describe  sa/ida-selenium-sa | grep Tokens |  awk '{print $2}'`
+TOKEN=`oc get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
+echo $TOKEN
+``` 
+
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
