@@ -2,7 +2,7 @@
 title: "Test Smart Comparison"
 category: test
 date: 2018-03-19 15:17:55
-last_modified_at: 2019-07-29 15:20:00
+last_modified_at: 2024-02-23 15:20:00
 ---
 
 # Test Smart Comparison - A new image base assertion
@@ -14,7 +14,7 @@ last_modified_at: 2019-07-29 15:20:00
 
  Here are the steps:
   - Run and record your test case as usual.
-  - Review screenshots and enable it as the base image if it's the expected result.
+  - Review screenshots and enable it as the base image if it's the expected result. **It is recommended to select specific area in the image to compare, as whole image comparison will report MISMATCH when sreenshots differ in any pixel, for example scrollbar positions.**
   - Run test case again and then the smart comparison engine will compare the new screenshot with the base image. The test step will be marked as failed with the report showing **Screenshot does not match the expected image in smart comparison** error if there's any difference after comparison.
     
 ## Enable Smart Comparison
@@ -28,11 +28,11 @@ last_modified_at: 2019-07-29 15:20:00
    
   3. Click **Smart Comparison** Button. You can see that all comparable case steps are listed on the left. Choose one and click, you could see its screenshot on the right.
    
-  4. Click ![][toggle] in front of the case step to enable image comparison. The whole image will be compared by default. If comparing the whole image is not what you need, you can specify the area to compare by moving the mouse over the screenshot, then clicking, dragging to select the area you need to compare. Release the mouse, you can see the selected part is shown: 
+  4. Click ![][toggle] in front of the case step to enable image comparison. The whole image will be compared by default. If comparing the whole image is not what you need, you can specify the area to compare by moving the mouse over the screenshot, then clicking, dragging to select the area you need to compare. Release the mouse, you can see the selected part is shown. **It is recommended to select specific area in the image to compare, as whole image comparison will report MISMATCH when sreenshots differ in any pixel, for example scrollbar positions.**
   
       ![][cropped_image]
     
-  5. If you want to unselect area, just click any area not being selectd. The confirm form will be shown soon, and click **OK**. It will switch back to the whole image comparison.
+  5. If you want to unselect area, just click any area not being selected. The confirm form will be shown soon, and click **OK**. It will switch back to the whole image comparison.
   
   6. Click **<<** button and you can go back to test case edit page. 
   
