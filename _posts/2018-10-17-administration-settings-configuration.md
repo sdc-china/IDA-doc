@@ -97,14 +97,24 @@ The Kubernetes configuration is used to create Containerized Selenium Grid Serve
 
 |   Field                | Description                                                         |
 | -------------------|---------------------------                                          |
-| Ingress Host|The subdomain to use for exposed routes. For openshift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
-| Server Url| Cluster API address |
+| Ingress Host|The subdomain to use for exposed routes. For OpenShift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
+| Server Url| Cluster API address. For OpenShift, it should be in the format of ```https://api.<cluster_name>.<base_domain>:6443```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|
 | Namespace| The namespace/project that you want to use to create your containerized grid.|  
 | User Token| Token of service account.|
 
 Here is a sample:
 
 ![][administrator_k8s_setting_sample]{:width="100%"}
+
+If you use the Openshift, you can get the Server Url throw command:
+
+``` 
+oc whoami --show-server
+``` 
+
+If you use the Openshift, you can get the Ingress Host from the console Url:
+
+![][administrator_k8s_ocp_ingress_host]{:width="100%"}
 
 The steps to create service account and get token:
 
@@ -117,9 +127,11 @@ TOKEN=`oc get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
 echo $TOKEN
 ``` 
 
+
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
+[administrator_k8s_ocp_ingress_host]: ../images/administrator/administrator_k8s_ocp_ingress_host.png
 [General]: ../images/administrator/General.png
 [Test]: ../images/administrator/Test.png
 [Pipeline]: ../images/administrator/Pipeline.png
