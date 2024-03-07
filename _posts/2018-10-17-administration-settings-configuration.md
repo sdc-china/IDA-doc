@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
-last_modified_at: 2023-03-30 11:28:00
+last_modified_at: 2024-03-07 11:28:00
 ---
 
 # Settings Configuration
