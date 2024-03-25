@@ -557,9 +557,11 @@ Response
 The [Trigger Pipeline Build](#trigger-pipeline-build) and [Get Pipeline Build Status](#get-pipeline-build-status) REST APIs' response will be returned with one of the following status:
 
 **Build Status:**
-* `RUNNING` The pipeline build is running
-* `FAILED` There was a problem with pipeline build (step failed, etc.)
-* `SUCCESS` The pipeline build was successful
+* `Running` The pipeline build is running.
+* `Failed` There was a problem with pipeline build (step failed, etc.).
+* `Success` The pipeline build was successful.
+* `Partial Success` The pipeline build was partially successful. Some steps were failed but they were configured with unchecked Halt On Failure option.
+* `Pending` The pipeline build was pending.
 
 
 **Other Status:**
