@@ -33,6 +33,17 @@ IDA provides filter button. The user can filter the artifact by **Change Type/Ar
 ![][merge-report-menu-filter]{:width="60%"}
 
 
+## Change History
+
+Comparative historical results of an artifact of the same branch.
+
+![][change-history-same-branch]
+
+Comparative historical results of an artifact from different branches. The modification history of the old snapshot is at the top, and the modification history of the new snapshot is at the bottom.
+
+![][change-history-different-branches]
+
+
 ## Process Comparison
 The changes of one artifact are in one panel:
 
@@ -155,3 +166,5 @@ Sequence flow change is also listed in a separate sub-panel. For example, the na
 [snapshot-comparison-sf-sequence-changes-webpd]: ../images/snapshot-comparison/snapshot-comparison-sf-sequence-changes-webpd.png
 [snapshot-comparison-sf-mapping-changes]: ../images/snapshot-comparison/snapshot-comparison-sf-mapping-changes.png
 [snapshot-comparison-sf-mapping-changes-webpd]: ../images/snapshot-comparison/snapshot-comparison-sf-mapping-changes-webpd.png
+[change-history-same-branch]: ../images/snapshot-comparison/change-history-same-branch.png
+[change-history-different-branches]: ../images/snapshot-comparison/change-history-different-branches.png
