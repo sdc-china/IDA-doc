@@ -121,6 +121,8 @@ docs:
         url: /pipeline/pipeline-deploy-snapshot-from-pc-to-ps.html
       - title: "Pipeline Script"
         url: /pipeline/pipeline-pipeline-script.html
+      - title: "Pipeline Email Notification"
+        url: /pipeline/pipeline-pipeline-email-notification.html
       - title: "Pipeline Report"
         url: /pipeline/pipeline-pipeline-report.html
       - title: "Toolkit Deployment"
