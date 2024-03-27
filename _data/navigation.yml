@@ -127,6 +127,8 @@ docs:
         url: /pipeline/pipeline-pipeline-report.html
       - title: "Toolkit Deployment"
         url: /pipeline/pipeline-toolkit-deployment.html
+      - title: "Pend pipeline"
+        url: /pipeline/pend-pipeline.html
       - title: "Pipeline Stage & Step Reference"
         url: /pipeline/pipeline-pipeline-stage&step-reference.html
 
