@@ -1,3 +1,4 @@
+
 ---
 title: "Run Load Test"
 category: test
@@ -8,116 +9,110 @@ last_modified_at: 2023-03-01 15:22:00
 # Run Load Test
 ***
 
-##  Edit gatling home path
+## Edit Gatling Home Path
 
-  1. Download [Gatling v3.6.0](https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/3.6.0/gatling-charts-highcharts-bundle-3.6.0-bundle.zip).
+1. Download [Gatling v3.6.0](https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/3.6.0/gatling-charts-highcharts-bundle-3.6.0-bundle.zip).
 
-  2. Go to the **Settings** configuration page under **Administration**.
+2. Go to the **Settings** configuration page under **Administration**.
 
-  3. Type your gatling installation path in **Gatling Home Path**.
+3. Type your Gatling installation path in **Gatling Home Path**.
 
-     ![][gatling_home]{:width="80%"}
+   ![][gatling_home]{:width="80%"}
 
-## Import a sample test project
+## Import a Sample Test Project
 
-  1. Click the **Sample Project** button in the project tab.
+1. Click the **Sample Project** button in the project tab.
 
-      ![][test_import_form]{:width="60%"}
+   ![][test_import_form]{:width="60%"}
 
-  2. Fill import form according to following table.
+2. Fill in the import form according to the following table.
 
-       |   Parameter   | Description    |
-       | ------------- |----------------|
-       | [Server][1]   |Server environment|
-       | Process App   |Process app list of the selected server, default value is "Hiring Sample"|
-       | [Selenium Hub][2]  |Support chrome, firefox selenium node|
+   | Parameter | Description |
+   | --- | --- |
+   | [Server][1] | Server environment |
+   | Process App | Process app list of the selected server, default value is "Hiring Sample" |
+   | [Selenium Hub][2] | Support Chrome, Firefox Selenium node |
 
-   3. Click **Import** button.
+3. Click the **Import** button.
 
-   4. Click **_Hring Sample** from project list and enter into project dashboard.
+4. Click **Hiring Sample** from the project list and enter the project dashboard.
 
-       ![][test_hiring_sample_project]
+   ![][test_hiring_sample_project]
 
-      The default sample project contains two suites: **Create Position Request CSHS** and **Standard HR Open New Position**.
+   The default sample project contains two suites: **Create Position Request CSHS** and **Standard HR Open New Position**.
 
-       ![][test_import_left_side_bar]
+   ![][test_import_left_side_bar]
 
-##  Edit engine properties
+## Edit Engine Properties
 
-  1. Click the **Edit** button to edit project.
+1. Click the **Edit** button to edit the project.
 
-     ![][edit_project]
+   ![][edit_project]
 
-  2. Click **Advance** and type the following parameter in **Engine Properties**:
+2. Click **Advanced** and type the following parameter in **Engine Properties**:
 
-     ![][enable_load_test]{:width="60%"}
+   ![][enable_load_test]{:width="60%"}
 
-## Replay a test case
+## Replay a Test Case
 
-  1. Click project name to get into this project, click the **case1** under **Create Position Request CSHS** package. Click **Record** button on the right of case name to replay it.
+1. Click the project name to get into the project, click the **case1** under the **Create Position Request CSHS** package. Click the **Record** button on the right of the case name to replay it.
 
-  2. Do not click ![][test_record_stop] button. Let it run from the first step to last step.
+2. Do not click ![][test_record_stop] button. Let it run from the first step to the last step.
 
-  3. In the **Debug** step which has ![][test_debug_point] in front of it, the record will be stopped. You need to click ![][test_case_record_resume] button to resume.
+3. In the **Debug** step, which has ![][test_debug_point] in front of it, the recording will be stopped. You need to click ![][test_case_record_resume] button to resume.
 
-  4. When all the steps are finished, the recorder will automatically close, and there will be an extra button on the page named **Load Test**. The **Load Test** button is only displayed after the test case is replayed from the first to the last step.
+4. When all the steps are finished, the recorder will automatically close, and there will be an extra button on the page named **Load Test**. The **Load Test** button is only displayed after the test case is replayed from the first to the last step.
 
-     ![][load_test_button]
+   ![][load_test_button]
 
-## Run test case load test
+## Run Test Case Load Test
 
-  1. Click **Load Test** button on the right of case name.
+1. Click the **Load Test** button on the right of the case name.
 
-     ![][load_test_button]
+   ![][load_test_button]
 
-  2. Pop up a strategy selection window. Here we use the **atOnceUsers** strategy and set proper the number of users.
+2. A strategy selection window will pop up. Here, we use the **atOnceUsers** strategy and set the proper number of users.
 
-     ![][select_strategy]
+   ![][select_strategy]
 
+   We provide two strategies for usage:
 
-     We provide two strategies for usage.
+   - atOnceUsers(nbUsers): Injects a given number of users at once.
+   - rampUsers(nbUsers) during(duration): Injects a given number of users distributed evenly on a time window of a given duration.
 
-     - atOnceUsers(nbUsers): Injects a given number of users at once.  
+   In the Advanced tab:
 
-     - rampUsers(nbUsers) during(duration): Injects a given number of users distributed evenly on a time window of a given duration.
+   - Change the default assertion value to meet the load case scenario statistics. If any assertion fails, the whole load test case will fail.
+   - Change the log level for the load testing. You can download the load testing log in the Performance Report tab page.
+   - Switch on Check BAW Product Requests to include BAW product internal requests (i.e., JS/CSS/Image resources and Portal requests loaded by BAW) in the Load Test Report. The default value is off.
 
-     In advance tab
+   ![][gatling_report]
 
-     - Change the default assertion value to meet  load case scenario statistic.If any assertion is failed,the whole load test case is failed.
-     - Change the log level for the loading testing. You can download the load testing log in the performance report tab page.
-     - Switch on Check BAW Product Requests to include BAW product internal requests(i.e JS/CSS/Image resources and Portal requests loaded by BAW) in the Load Test Report. The default value is off.
+3. Click the **Run** button to start the load test.
 
-     ![][gatling_report]
+4. After the load test finishes, click the small arrow next to the **Load Test** button, and switch the option to **View Report**.
 
+   ![][switch_to_view_report]
 
+5. Click the **View Report** button to see the Load Test Report.
 
+   ![][view_load_test_report]
 
-  3. Click **Run** button to start the load test.
+## Check Load Test Case Data
 
-  4. After the load test finished, click the small arrow next to **Load Test** button, switch the option to **View Report**.
+1. Sometimes when you click the **Load Test** button on the right of the case name, you might see some warnings on the page. If you see the screenshot below, it means the recorded network information is incorrect. You need to use the IDA plug-in to replay the test case again.
 
-     ![][switch_to_view_report]
+   ![][gatling_network_incorrect]
 
-  5. Click **View Report** button to see the Load Test Report.
+2. If you see the error below, it means your recorded load test data is out of sync. You also need to use the IDA plug-in to replay the test case again.
 
-     ![][view_load_test_report]
+   ![][gatling_network_outofdate]
 
-## Check load test case data
+Note: The Load Test feature currently has the following **limitations**:
 
-  1. Sometimes when you click **Load Test** button on the right of case name, you might see some warning on the page. If you see the below screenshot, it means the recorded network information is incorrect. You need to use IDA plug-in to replay the test case again.
-
-     ![][gatling_network_incorrect]
-
-  2. If you see the below error, it means your record load test data is out of sync. You also need to use IDA plug-in replay the test case again.
-
-     ![][gatling_network_outofdate]
-
-
-  Note the Load Test feature currently has the following **limitations**:
-
-  - Frequently used test commands in the BPM category are supported.
-  - Most test commands in the UI category are supported.
-  - Assertion and Utility commands are not supported yet.
+- Frequently used test commands in the BPM category are supported.
+- Most test commands in the UI category are supported.
+- Assertion and Utility commands are not supported yet.
 
 [test_import_form]: ../images/test/test_import_form.png
 [edit_project]: ../images/test/edit_project.png

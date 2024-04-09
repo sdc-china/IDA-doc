@@ -1,81 +1,81 @@
 ---
-title: "Users Management"
+title: "User Management"
 category: administration
 date: 2018-10-01 15:17:55
 last_modified_at: 2019-07-29 16:18:00
 ---
 
-# Users Management
+# User Management
 ***
 
-## Add a new user
-  Use super account (idaAdmin/idaAdmin) login into IDA application.
-  1. Click **Administrator** tab, then switch to  **Users management** tab to add user.  
-  2. Click ![][add_icon] icon which is on the right of **Users Management** to add new users.
-  3. Fill out the form below. Then click **Create** button.
+## Add a New User
+  Use the super account (idaAdmin/idaAdmin) to log in to the IDA application.
+  1. Click the **Administrator** tab, then switch to the **User Management** tab to add users.  
+  2. Click the ![][add_icon] icon on the right of **User Management** to add new users.
+  3. Fill out the form below. Then click the **Create** button.
 
      ![][administrator_add]{:width="60%"}
 
      |   Field       | Description               |
      | --------------|---------------------------|
-     | User Name     | Use email address as user name|
-     | Role          | A user can have multiple roles, only Admin role user can configure settings|
+     | User Name     | Use an email address as the username|
+     | Role          | A user can have multiple roles, only users with the Admin role can configure settings|
 
      Permissions for each role are shown in the following figure:
 
      ![][administrator_role_permission]{:width="80%"}
 
-     **Notes:**
+     **Note:**
 
-     Role and role privileges can be customized according to client needs.
+     Roles and role privileges can be customized according to client needs.
 
-  4. Click **Reset password** button can reset password of one user. The default password is **123456**.
+  4. Click the **Reset Password** button to reset the password of a user. The default password is **123456**.
 
      ![][administrator_reset_password]{:width="80%"} 
 
-## Edit a user
-  1. Click **Edit** icon on the right of the user that you want to edit.
+## Edit a User
+  1. Click the **Edit** icon on the right of the user you want to edit.
 
      ![][administrator_edit_user]{:width="80%"}
 
-  2. Change roles of the user. Then click **Save**.
+  2. Change the roles of the user. Then click **Save**.
 
-## Activate/Deactivate users
+## Activate/Deactivate Users
 
-   Select users in the **Users Management** table, then click **Activate** button to activate the selected inactive users. And click **Deactivate** button to deactivate the selected active users.
+   Select users in the **User Management** table, then click the **Activate** button to activate the selected inactive users. And click the **Deactivate** button to deactivate the selected active users.
 
    	![][administrator_active_user]{:width="80%"}
 
-## User profile
+## User Profile
 
-  1. On the top right corner, click the **Profile** button.
+  1. In the top right corner, click the **Profile** button.
 
      ![][administrator_profile]{:width="100%"}
 
-  2. Click **Profile** button to get basic information of your account.
+  2. Click the **Profile** button to get basic information about your account.
 
      ![][administrator_profile_page]{:width="80%"}
     
-  3. Click **Team** button to see which teams this user belongs to, you can also see which process apps and selenium grids each team can access.
+  3. Click the **Team** button to see which teams this user belongs to, you can also see which process apps and Selenium grids each team can access.
   
      ![][administration_user_team]{:width="80%"}
-  4. Click **Password** button to change your password.
+  4. Click the **Password** button to change your password.
 
      ![][administrator_password]{:width="80%"}
 
-# LDAP Users Management 
+# LDAP User Management 
 
-  1. A user would be added to IDA system automatically if the user pass LDAP authentication from IDA login page. 
+  1. A user would be added to the IDA system automatically if the user passes LDAP authentication from the IDA login page. 
 
-  2. A user with admin role could 'Add', 'Deactivate' and 'Active' user from User Management page.
+  2. A user with the admin role could 'Add', 'Deactivate', and 'Activate' users from the User Management page.
 
      ![][ldap_user_management]{:width="80%"}
 
-  3. A user with admin role could edit other user role from edit user modal.
+  3. A user with the admin role could edit other users' roles from the edit user modal.
 
      ![][edit_user_modal]{:width="60%"}
 
-  4. All ldap users could not update password from IDA.
+  4. All LDAP users could not update their passwords from IDA.
 
 
 [administrator_add]: ../images/administrator/Administrator_add.png

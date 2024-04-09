@@ -2,7 +2,7 @@
 title: "Demos"
 category: references
 date: 2018-11-21 15:17:55
-last_modified_at: 2021-06-17 9:30:00
+last_modified_at: 2021-06-17 09:30:00
 ---
 
 # Demos
@@ -22,7 +22,7 @@ last_modified_at: 2021-06-17 9:30:00
 11. [IDA Tutorial: Configuration - Introduction of Team Management](https://www.youtube.com/watch?v=ICwoiB6DjKA&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=11)
 12. [IDA Tutorial: Introduction of Smart Comparison](https://www.youtube.com/watch?v=-4kCmIvxrl8&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=12)
 13. [IDA Tutorial: Using Labels for Test Case Management and Selection in Pipeline](https://www.youtube.com/watch?v=yyisAsfIW-A&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=13)
-14. [IDA Tutorial: Analyzing Process and Toolkit dependencies with Analyzer](https://www.youtube.com/watch?v=CCv023orO2I&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=14)
+14. [IDA Tutorial: Analyzing Process and Toolkit Dependencies with Analyzer](https://www.youtube.com/watch?v=CCv023orO2I&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=14)
 15. [IDA Tutorial: Test Case Version Control](https://www.youtube.com/watch?v=t7Tr_jnJ2Tg&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=15)
-16. [IDA Tutorial: Building your regression testing for IBM Case Solution in 5 minutes](https://www.youtube.com/watch?v=siJurUicE4k&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=16) 
+16. [IDA Tutorial: Building Your Regression Testing for IBM Case Solution in 5 Minutes](https://www.youtube.com/watch?v=siJurUicE4k&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=16)
 17. [Run BAW Performance Test Using IDA](https://www.youtube.com/watch?v=fxTZPDN8QSQ&list=PLPe--jvJ5_ZH_t-tIy50sqT9WevBNJC83&index=17)

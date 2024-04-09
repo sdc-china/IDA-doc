@@ -1,18 +1,18 @@
 ---
-title: "Analyze Workflow Projects with Analyzer Statistic"
+title: "Analyze Workflow Projects with Analyzer Statistics"
 category: analyzer
 date: 2018-06-01 14:17:55
 last_modified_at: 2022-10-28 14:50:00
 ---
 
-# Analyze Workflow Projects with Analyzer Statistic
+# Analyze Workflow Projects with Analyzer Statistics
 ***
 
-## Setting up the Workflow project and perform it.
+## Setting up the Workflow project and performing it.
 
-   1. Switch to the **Analyzer** tab, then you can use BAW server or upload a TWX file to analyze.
+   1. Switch to the **Analyzer** tab, then you can use the BAW server or upload a TWX file to analyze.
      
-      **Use BAW server**, choose the statistic - online tab, fill the below field values for the analyzer statistic form.
+      **Use BAW server**, choose the statistics - online tab, fill in the field values for the analyzer statistics form below.
 
       ![][analyzer_statistic_online]
       
@@ -20,21 +20,21 @@ last_modified_at: 2022-10-28 14:50:00
       | ------------- |----------------|
       | [Server][1]   |Server environment|
       | Process App   |Process app list on the selected server|
-      | Toolkit       |Toolkits of  selected server|
-      | Branch        |The branch of selected process app or selected toolkit|
-      | Snapshot      |The snapshot of selected branch|
+      | Toolkit       |Toolkits of the selected server|
+      | Branch        |The branch of the selected process app or selected toolkit|
+      | Snapshot      |The snapshot of the selected branch|
       | Tip           |The tip snapshot of the process app|
-      | Options       |check "Ignore Toolkits Analysis" to skip toolkit analysis |
+      | Options       |Check "Ignore Toolkits Analysis" to skip toolkit analysis |
 
-      **Upload a TWX file**, choose the statistic - offline tab.
+      **Upload a TWX file**, choose the statistics - offline tab.
       
       ![][analyzer_statistic_offline]{:width="40%"}
 
-      You can choose or drop a TWX file.
+      You can choose or drag and drop a TWX file.
 
       ![][analyzer_upload_done]{:width="40%"}
 
-   2. Click **Statistic Analyze** Button to see the statistic report.
+   2. Click the **Statistic Analyze** Button to see the statistics report.
 
       ![][analyzer_report]
 

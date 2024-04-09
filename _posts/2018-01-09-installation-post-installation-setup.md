@@ -7,45 +7,45 @@ last_modified_at: 2022-04-22 16:39:00
 
 # Post Installation Setup
 
-IDA integrates with remote testing automation framework based on Selenium Grid. IDA supports both version 4 and version 3 of Selenium Grid.
+IDA integrates with a remote testing automation framework based on Selenium Grid. IDA supports both version 4 and version 3 of Selenium Grid.
 
-## Selenium Grid sizes
+## Selenium Grid Sizes
 
-Choosing a Grid role depends on what operating systems and browsers need to be supported, how many parallel sessions need to be executed, the amount of available machines, and how powerful (CPU, RAM) those machines are.
+Choosing a Grid role depends on what operating systems and browsers need to be supported, how many parallel sessions need to be executed, the number of available machines, and how powerful (CPU, RAM) those machines are.
 
 Creating sessions concurrently relies on the available processors to the Distributor. For example, if a machine has 4 CPUs, the Distributor will only be able to create up to 4 sessions concurrently.
 
-By default, the maximum amount of concurrent sessions a Node supports is limited by the number of CPUs available. For example, if the Node machine has 8CPUs, it can run up to 8 concurrent browser sessions (with the exception of Safari, which is always one). Additionally, it is expected that each browser session should use around 1GB RAM.
+By default, the maximum number of concurrent sessions a Node supports is limited by the number of CPUs available. For example, if the Node machine has 8 CPUs, it can run up to 8 concurrent browser sessions (with the exception of Safari, which is always one). Additionally, it is expected that each browser session should use around 1GB RAM.
 
-In general, it is a recommended to have Nodes as small as possible. Instead of having a machine with 32CPUs and 32GB RAM to run 32 concurrent browser sessions, it is better to have 32 small Nodes in order to better isolate processes. With this, if a Node fails, it will do it in an isolated way. Docker is a good tool to achieve this approach.
+In general, it is recommended to have Nodes as small as possible. Instead of having a machine with 32 CPUs and 32GB RAM to run 32 concurrent browser sessions, it is better to have 32 small Nodes in order to better isolate processes. With this, if a Node fails, it will do so in an isolated manner. Docker is a good tool to achieve this approach.
 
-Note that the default values (**1CPU/1GB RAM per browser**) are a recommendation and they could not apply to your context. It is recommended to use them as a reference, but measuring performance continuously will help to determine the ideal values for your environment.
+Note that the default values (**1 CPU/1GB RAM per browser**) are a recommendation and may not apply to your context. It is recommended to use them as a reference, but measuring performance continuously will help determine the ideal values for your environment.
 
-Grid sizes are relative to the amount of supported concurrent sessions and amount of Nodes, and there is no “one size fits all”. It suggests to start with small grid size, which contains 5 or less nodes. More nodes can be added in future according to the actual requirement.
+Grid sizes are relative to the number of supported concurrent sessions and the number of Nodes, and there is no "one size fits all." It is suggested to start with a small grid size, which contains 5 or fewer nodes. More nodes can be added in the future according to actual requirements.
 
 ## Selenium Grid v4
 
 **Notes**
 
-Selenium Grid 4 can be set up in the serveral modes: Standalone/Hub and Node/Distributed/Docker. For varied configuration details, please check Selenium documentation below.
+Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distributed/Docker. For varied configuration details, please check the Selenium documentation below.
 
 - [Selenium Grid TOML configuration options](https://www.selenium.dev/documentation/grid/configuration/toml_options/)
 
 **Local installation**
 
 1. Download the latest Selenium server jar [selenium-server-4.x.x.jar](https://www.selenium.dev/downloads/).
-2. Download Selenium web drivers and put them under the same folder of the Selenium server jar file.
+2. Download Selenium web drivers and put them under the same folder as the Selenium server jar file.
    - [Firefox Driver](https://github.com/mozilla/geckodriver/releases)
    - [Chrome Driver](https://chromedriver.storage.googleapis.com/index.html)
    - [Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver)
    - [IE Driver](https://www.selenium.dev/downloads/)
-3. To quickly start Selenium 4 in standalone mode with default configurations, run the command below. This will setup a 1-node hub with auto-detected webdrivers in the same folder as the jar file.
+3. To quickly start Selenium 4 in standalone mode with default configurations, run the command below. This will set up a 1-node hub with auto-detected web drivers in the same folder as the jar file.
     ```
     java -jar selenium-server-4.x.x.jar standalone
     ```
     ![][selenium_4_standalone]
 4. To start Selenium 4 in Hub and Node mode with customized node configuration,
-  - create a config.toml file with configuration below.
+  - create a config.toml file with the configuration below.
 
    ```
    [node]
@@ -67,7 +67,7 @@ Selenium Grid 4 can be set up in the serveral modes: Standalone/Hub and Node/Dis
    stereotype = "{\"browserName\": \"MicrosoftEdge\"}"
    ```
 
-  - Run commands below in different commandlines.
+  - Run the commands below in different command lines.
    ```
    java -jar selenium-server-4.x.x.jar standalone --config config.toml
    ```
@@ -80,7 +80,7 @@ The following link provides detailed instructions on how to run Selenium 4 using
 
 Docker Compose is the simplest way to start a Grid. 
 
-1. Download [docker-compose-v3.yml](https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v3.yml), and check the execution instructions on top of each file. You can also edit the file to add more nodes by adding replicas. An example as follows:
+1. Download [docker-compose-v3.yml](https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v3.yml), and check the execution instructions at the top of each file. You can also edit the file to add more nodes by adding replicas. An example is as follows:
 
 ```
 version: "3"
@@ -158,7 +158,7 @@ docker-compose -f docker-compose-v3.yml down
 
 **Notes**
 
-Below is the reference link for how to setup selenium grid. It includes the detail parameter setting explanation.
+Below are the reference links for how to set up Selenium Grid. They include detailed parameter setting explanations.
 
 - [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
 - [Internet Explorer Driver Required Configuration](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#user-content-required-configuration)
@@ -167,7 +167,7 @@ Below is the reference link for how to setup selenium grid. It includes the deta
 
 1. Download [Selenium Grid 3.141.59](https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar)
 
-2. Download Selenium web drivers and put them under the same folder of the Selenium Jar file.
+2. Download Selenium web drivers and put them under the same folder as the Selenium Jar file.
 
    - [IE Driver](https://www.selenium.dev/downloads/)
    - [Firefox Driver Win64](https://github.com/mozilla/geckodriver/releases)
@@ -250,7 +250,7 @@ Below is the reference link for how to setup selenium grid. It includes the deta
     ```
 
    **Notes:**
-   To see the parameters meanings, you could run scripts:
+   To see the parameter meanings, you could run these scripts:
 
    ```
    java -jar .\selenium-server-standalone-3.141.59.jar -role node -help
@@ -259,11 +259,11 @@ Below is the reference link for how to setup selenium grid. It includes the deta
 
 **Docker installation**
 
-The followingThe below link is shows a step-by-step introduction to using the official Selenium Docker images using a basic Selemium Hub and Selenium Node configuration.
+The following link shows a step-by-step introduction to using the official Selenium Docker images with a basic Selenium Hub and Selenium Node configuration.
 
 [Selenium: Getting-Started-with-Hub-and-Nodes](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Hub-and-Nodes)
 
-You can follow below script to install Selenium Hub and Node on docker.We recommand you to install debug image version so you can visually see what the browser is doing.
+You can follow the script below to install the Selenium Hub and Node on Docker. We recommend you install the debug image version so you can visually see what the browser is doing.
 
 ```
 docker pull selenium/hub:3.141.59-palladium
@@ -276,14 +276,14 @@ docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selen
 docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium
 ```
 
-You can do the below command mutiple times,it will create mutiple chrome/firefox node for the grid remote testing. It can provide you to run the selenium tesing parallel in the Grid.We recommand you to create above 5 node number for chrome/firefox each.
+You can run the command below multiple times; it will create multiple Chrome/Firefox nodes for the grid remote testing. It can provide you the ability to run Selenium testing in parallel on the Grid. We recommend creating more than 5 nodes for Chrome/Firefox each.
 
 ```
 docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-palladium
 docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium
 ```
 
-After that you can open the browser http://dockerhostIP:4444/grid/console to check selenium grid/node installation status.
+After that, you can open the browser http://dockerhostIP:4444/grid/console to check the Selenium Grid/Node installation status.
 
 ![][selenium_node]
 

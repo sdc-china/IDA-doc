@@ -15,22 +15,22 @@ This document refers to the Command Editor options and not JavaScript API to cal
 
   ![][command_start_process_editor]
 
-There are more than 80 commands to simplify testing and categorized as five category below:
+There are more than 80 commands to simplify testing and categorized into five categories below:
 
-* [BPM](#bpm): A set of commands for calling server side components. 
-* [BPM Assertion](#bpm-assertion) : A set of commands for asserting server side components.
-* [Case](#case): A set of commands for calling server side components of case. 
-* [Case Assertion](#case-assertion) : A set of commands for asserting server side components of case.
-* [BA](#ba): A set of commands for calling server side components of business application (available on Cloud Pak for Business Automation). 
+* [BPM](#bpm): A set of commands for calling server-side components. 
+* [BPM Assertion](#bpm-assertion) : A set of commands for asserting server-side components.
+* [Case](#case): A set of commands for calling server-side components of a case. 
+* [Case Assertion](#case-assertion) : A set of commands for asserting server-side components of a case.
+* [BA](#ba): A set of commands for calling server-side components of a business application (available on Cloud Pak for Business Automation). 
 * [UI](#ui): A set of commands for UI recording and actions.
-* [UI assertion](#ui-assertion):A set of commands for asserting UI components.
-* [Utility](#utility): A set of commands for util methods. e.g debug, putContext
+* [UI assertion](#ui-assertion): A set of commands for asserting UI components.
+* [Utility](#utility): A set of commands for utility methods, e.g., debug, putContext
 
 ___
 
 ## **BPM**
 
-This category of commands are for calling server side components. There are a lot of common input fields. Below are some statements which are common for most of the commands in this category.  
+This category of commands is for calling server-side components. There are a lot of common input fields. Below are some statements which are common for most of the commands in this category.  
 
 ___
 
@@ -38,21 +38,21 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. The drop-down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW REST API or Java API), you need to choose the proper assignee based on business logic. Recorded commands come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
 | `Exception` | Optional | Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. | 
-| `Params`  | Depend on command. |JSON or XML format. If the template of parameters is rendered successfully by selecting service, the field is required. The parameters are defaulted based on the service signature. The template of parameters includes keys of data and you only need to fill in value. <br/>*e.g:*<br/>{<br/>"variable_name": "value",<br/>"variable2_name": "value2"<br/>}<br/>Also parameter support varaible like csv binding variable and context variable.You can use ${csv.xxxx} or ${xxx} to reference your vairable value.If vairable value is number please remove quote before $.<br/>*e.g:*<br/>{<br/>"textReader":"${csv.instanceId}",<br/>"integer":${number},<br/>"decimal":0,<br/>"text":"${mytext}"<br/>}  |
-| `Expected Output` |Optional|Used for validating command response. In some cases, there is a refresh button, which can be used to get default expected results. Make sure to fill out params before clicking refresh. If refresh does not work, execute the case step with out expectedOutput set. If passed, edit the step and click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results. <br/>**Notes:**The ![][command_params_error_icon] icon will appears below *Expected Output* field when the wrong *Params* is filled out after click ![][command_expected_output_refresh_button] button in the Command Editor Dialog. The error message can be got by hovering on the ![][command_params_error_icon] icon.|
-|`TaskName`|Required| Drop down lists all task names in the Process Application of the Test Project which is connected to.|
-|`Json Path`|Optional| Json path to a variable in the output json data.|
-|`Variable Name`|Optional| Variable name to save the value that json path points to. This variable can be accessed via ${variable_name} in later commands in this test case.|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+| `Params`  | Depend on command. |JSON or XML format. If the template of parameters is rendered successfully by selecting the service, the field is required. The parameters are defaulted based on the service signature. The template of parameters includes keys of data, and you only need to fill in the value. <br/>*e.g.:*<br/>{<br/>"variable_name": "value",<br/>"variable2_name": "value2"<br/>}<br/>Also, the parameter supports variables like CSV binding variables and context variables. You can use ${csv.xxxx} or ${xxx} to reference your variable value. If the variable value is a number, please remove the quote before $.<br/>*e.g.:*<br/>{<br/>"textReader":"${csv.instanceId}",<br/>"integer":${number},<br/>"decimal":0,<br/>"text":"${mytext}"<br/>}  |
+| `Expected Output` |Optional|Used for validating the command response. In some cases, there is a refresh button, which can be used to get default expected results. Make sure to fill out the params before clicking refresh. If refresh does not work, execute the case step without setting the expectedOutput. If passed, edit the step and click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results. <br/>**Notes:** The ![][command_params_error_icon] icon will appear below the *Expected Output* field when the wrong *Params* is filled out after clicking ![][command_expected_output_refresh_button] button in the Command Editor Dialog. The error message can be obtained by hovering over the ![][command_params_error_icon] icon.|
+|`TaskName`|Required| Drop-down lists all task names in the Process Application of the Test Project which is connected to.|
+|`Json Path`|Optional| JSON path to a variable in the output JSON data.|
+|`Variable Name`|Optional| Variable name to save the value that the JSON path points to. This variable can be accessed via ${variable_name} in later commands in this test case.|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
 
 ___
 
 ### **loginPortal**
 
-Login into BPM portal. As a result BPM Portal page is opened.
+Log in to the BPM portal. As a result, the BPM Portal page is opened.
 
 - Example  
 
@@ -62,7 +62,7 @@ ___
 
 ### **loginWorkplace**
 
-Login into Workpace on CP4BA. As a result BAW workplace page is opened.
+Log in to the Workplace on CP4BA. As a result, the BAW Workplace page is opened.
 
 - Example  
 
@@ -72,7 +72,7 @@ ___
 
 ### **loginBPMoC**
 
-Login into BPM on cloud.As a result BPM on cloud page is opened.
+Log in to BPM on Cloud. As a result, the BPM on Cloud page is opened.
 
 - Example
 
@@ -82,7 +82,7 @@ ___
 
 ### **openInstanceDetail**
 
-Open the current instance detail page of BAW portal page by calling the rest API: https://[BAW Server]/ProcessPortal/launchInstanceUI?instanceId=[currentInstanceId].
+Open the current instance detail page of the BAW portal page by calling the REST API: https://[BAW Server]/ProcessPortal/launchInstanceUI?instanceId=[currentInstanceId].
 
 - Example  
 
@@ -92,7 +92,7 @@ ___
 
 ### **open**
 
-Open an URL.
+Open a URL.
 
 - Parameters
 
@@ -108,14 +108,14 @@ ___
 
 ### **startProcess**
 
-Start a BPM process by REST API, only exposed process are supported by default. Install IDA Toolkit to support all processes. 
+Start a BPM process by REST API, only exposed processes are supported by default. Install the IDA Toolkit to support all processes. 
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Process`   | Yes |  The name of the process to be started. Select from drop down. |
-	| `Params`   | Depend on Process. | Parameters in JSON or XML format required to start the process. Tip: when create a test suite to test Process by **Generate Test Cases**, the default parameters will be generated. |
+	| `Process`   | Yes |  The name of the process to be started. Select from the drop-down. |
+	| `Params`   | Depend on Process. | Parameters in JSON or XML format required to start the process. Tip: when creating a test suite to test a Process by **Generate Test Cases**, the default parameters will be generated. |
 
 - Example  
 
@@ -125,15 +125,15 @@ ___
 
 ### **startExternalProcess**
 
-Start an external BPM process by REST API, only exposed process are supported, and the snapshot must be active. 
+Start an external BPM process by REST API, only exposed processes are supported, and the snapshot must be active. 
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Process App`   | Yes |  The name of the process app. Select from drop down. |
-	| `Snapshot`   | Yes |  The name of the snapshot. Select from drop down. |
-	| `Process`   | Yes |  The name of the process to be started. Select from drop down. |
+	| `Process App`   | Yes |  The name of the process app. Select from the drop-down. |
+	| `Snapshot`   | Yes |  The name of the snapshot. Select from the drop-down. |
+	| `Process`   | Yes |  The name of the process to be started. Select from the drop-down. |
 	| `Params`   | Depend on Process. | Parameters in JSON or XML format required to start the external process. |
 
 - Example  
@@ -144,13 +144,13 @@ ___
 
 ### **startHumanService**
 
-Tests Human Service in stand alone mode.
+Test a Human Service in stand-alone mode.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Service`   | Yes |  The name of the Human Service to be started. Select from drop down.|
+	| `Service`   | Yes |  The name of the Human Service to be started. Select from the drop-down.|
 	| `Params`   | Depend on Human Service. | Input list in JSON or XML format required to start the Human Service. Only simple input arguments are supported.|
 
 - Example  
@@ -161,14 +161,14 @@ ___
 
 ### **startExposedHeritageHumanService**
 
-Tests Heritage Human Service in stand alone mode. Be sure to expose the Heritage Human Service to the specified team.
+Test an exposed Heritage Human Service in stand-alone mode. Be sure to expose the Heritage Human Service to the specified team.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Assignee` |Refer to common input fields description. |The user should belong to the team where the service was exposed.|
-	| `Service`   | Yes |  The name of the Human Service to be started. Select from drop down.|
+	| `Assignee` |Refer to the common input fields description. |The user should belong to the team where the service was exposed.|
+	| `Service`   | Yes |  The name of the Human Service to be started. Select from the drop-down.|
 	| `Params`   | Depend on Heritage Human Service. | Input list in JSON or XML format required to start the Heritage Human Service. Only simple input arguments are supported.|
 
 - Example  
@@ -179,15 +179,15 @@ ___
 
 ### **startAjaxService**
 
-Start an ajax service edited in Eclipse PD by REST API. To call services created in Web PD, use startServiceFlow command.
+Start an AJAX service edited in Eclipse PD by REST API. To call services created in Web PD, use the startServiceFlow command.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Exception` | Optional |Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. Refer to common input fields description.|
-	| `Service`   | Yes |  The name of the Ajax Service to be started. Select from drop down.|
-	| `Params`   | Depend on Heritage Ajax Service. | Input list in JSON or XML format required to start the Heritage Human Service.|
+	| `Exception` | Optional |Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. Refer to the common input fields description.|
+	| `Service`   | Yes |  The name of the AJAX Service to be started. Select from the drop-down.|
+	| `Params`   | Depend on Heritage AJAX Service. | Input list in JSON or XML format required to start the Heritage AJAX Service.|
 	| `Expected Output`   | If `Exception` is not checked, it is mandatory. Otherwise, you need to keep it empty.| Expected service output in JSON. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
 
 - Example  
@@ -204,14 +204,14 @@ ___
 
 ### **startSystemService**
 
-Start a Generic or Integration service edited in Eclipse PD. Please install IDA Toolkit to support system service. To call services created in Web PD, use startServiceFlow command.
+Start a Generic or Integration service edited in Eclipse PD. Please install the IDA Toolkit to support the system service. To call services created in Web PD, use the startServiceFlow command.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Exception` | Optional |Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. Refer to common input fields description.|
-	| `Service`   | Yes |  The name of the System Service to be started. Select from drop down.|
+	| `Exception` | Optional |Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. Refer to the common input fields description.|
+	| `Service`   | Yes |  The name of the System Service to be started. Select from the drop-down.|
 	| `Params`   | Depend on System Service. | Input list in JSON or XML format required to start the System Service.|
 	| `Expected Output`   | If `Exception` is not checked, it is mandatory. Otherwise, you need to keep it empty.| Expected service output in JSON. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
 
@@ -229,7 +229,7 @@ ___
 
 ### **executeSQL**
 
-Perform SQL Query by REST API, please install BPM Testing Asset Toolkit to support SQL Query.
+Perform an SQL Query by REST API, please install the BPM Testing Asset Toolkit to support SQL Query.
 
 - Parameters
 
@@ -237,8 +237,8 @@ Perform SQL Query by REST API, please install BPM Testing Asset Toolkit to suppo
 	|----------------|------------|--------------|
 	| `SQL` | Required |SQL script.|
 	| `Max Rows`   | Optional |  Max rows of expected output. If empty, IDA will retrieve all rows.|
-	| `Data Source`   | Required | Data source JNDI name as defined in target BAW environment. Default dataSourceName is jdbc/TeamWorksDB.|
-	| `Expected Output` | Required | Expected  output in JSON format. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
+	| `Data Source`   | Required | Data source JNDI name as defined in the target BAW environment. The default dataSourceName is jdbc/TeamWorksDB.|
+	| `Expected Output` | Required | Expected output in JSON format. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
 	|`Expected Rows`|Optional|Expected rows of results.|
 
 - Example  
@@ -249,13 +249,13 @@ ___
 
 ### **startUCA**
 
-Start message UCA.
+Start a message UCA.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `UCA` | Required |Name of message UCA, select from drop down.|
+	| `UCA` | Required |Name of the message UCA, select from the drop-down.|
 	| `Params`   | Depend on UCA. |  UCA inputs. |
 
 - Example  
@@ -266,16 +266,17 @@ ___
 
 ### **startServiceFlow**
 
-Start a Service Flow by REST API developed in Web PD, please install BPM Testing Asset Toolkit to support system service.
+Start a Service Flow by REST API developed in Web PD, please install the BPM Testing Asset Toolkit to support the system service.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Exception` | Optional |Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. Refer to common input fields description.|
-	| `Service`   | Yes |  The name of the Service Flow to be started. Select from drop down.|
+    | `Exception` | Optional |Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. Refer to the common input fields description.|
+	| `Service`   | Yes |  The name of the Service Flow to be started. Select from the drop-down.|
 	| `Params`   | Depend on Service Flow. | Input list in JSON or XML format required to start the Service Flow.|
 	| `Expected Output`   | If `Exception` is not checked, it is mandatory. Otherwise, you need to keep it empty.| Expected service output in JSON. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
+
 
 - Example  
 
@@ -285,13 +286,13 @@ ___
 
 ### **startAdHoc**
 
-Start AdHoc event (depreciated) for stand alone activities to use runAdHocActivity.
+Start an AdHoc event (deprecated) for stand-alone activities to use runAdHocActivity.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Ad Hoc Name` | Required |Ad Hoc name, select from drop down. |
+    | `Ad Hoc Name` | Required |Ad Hoc name, select from the drop-down. |
     
 
 - Example  
@@ -302,13 +303,13 @@ ___
 
 ### **runAdHocActivity**
 
-Start AdHoc Activity, can be executed in a context of a business process instance. Can be added to a test case created based on a process or bpd.
+Start an AdHoc Activity, can be executed in the context of a business process instance. Can be added to a test case created based on a process or BPD.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Ad Hoc Activity Name` | Required |Ad Hoc Activity Name, select from drop down. |
+    | `Ad Hoc Activity Name` | Required |Ad Hoc Activity Name, select from the drop-down. |
     
 
 - Example  
@@ -319,13 +320,13 @@ ___
 
 ### **runTaskByDisplayName**
 
-Run task by display name.
+Run a task by display name.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Task Name` | Required |Task Name, select from drop down. |
+    | `Task Name` | Required |Task Name, select from the drop-down. |
     | `byTaskOwner` | Optional |Checked means the task owner will run this task. Unchecked indicates that the assigned user will run the task.|
     
 
@@ -337,13 +338,13 @@ ___
  
 ### **runTaskByActivityName**
 
-Run task by Activity name. Can only be used in a context of process instance execution.
+Run a task by Activity name. Can only be used in the context of process instance execution.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Task Name` | Required |Task Name, select from drop down. |
+    | `Task Name` | Required |Task Name, select from the drop-down. |
     | `byTaskOwner` | Optional |Checked means the task owner will run this task. Unchecked indicates that the assigned user will run the task.|
     
 
@@ -355,14 +356,14 @@ ___
 
 ### **assignTask**
 
-Assign task to specific user. Can only be used in a context of process instance execution.
+Assign a task to a specific user. Can only be used in the context of process instance execution.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Task Name` | Required |The name of the task assigned to the specific user. Select from drop down. |
-    | `To User` | Required | Select from drop down list of users defined in IDA/BAW Configuration for target BAW server.|
+    | `Task Name` | Required |The name of the task assigned to the specific user. Select from the drop-down. |
+    | `To User` | Required | Select from the drop-down list of users defined in IDA/BAW Configuration for the target BAW server.|
 
 - Example  
 
@@ -372,13 +373,13 @@ ___
 
 ### **claimTask**
 
-Claim task.
+Claim a task.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Task Name` | Required |The name of the task. Select from drop down. |
+    | `Task Name` | Required |The name of the task. Select from the drop-down. |
     
 - Example  
 
@@ -388,14 +389,14 @@ ___
   
 ### **finishTask**
 
-Complete a given task and set output for the task. Can only be used in a context of process instance execution.
+Complete a given task and set the output for the task. Can only be used in the context of process instance execution.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Task Name` | Required |The name of the task. Select from drop down. |
-    | `Output` | Depend on  |Task output, Json format. Set this value to the output of the task. |
+    | `Task Name` | Required |The name of the task. Select from the drop-down. |
+    | `Output` | Depend on  |Task output, JSON format. Set this value to the output of the task. |
     
 - Example  
 
@@ -405,13 +406,13 @@ ___
    
 ### **addInstanceId**
 
-Add the process instance id to context. Use this command if the process was not started as part of the current use case. 
+Add the process instance ID to the context. Use this command if the process was not started as part of the current use case. 
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Instance ID` | Required | Instance id of the process. Can be found in web PD or in Eclipse PD.|
+    | `Instance ID` | Required | Instance ID of the process. Can be found in Web PD or in Eclipse PD.|
     
 - Example  
 
@@ -421,13 +422,13 @@ ___
     
 ### **getTaskIdByName**
 
-Get task id by name.
+Get the task ID by name.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Task Name` | Required |The name of the task. Select from drop down. |
+    | `Task Name` | Required |The name of the task. Select from the drop-down. |
     
 - Example  
 
@@ -437,13 +438,13 @@ ___
  
 ### **getLatestInstanceIdByProcess**
 
-Get the latest process instance id by process name and add it to the context.
+Get the latest process instance ID by process name and add it to the context.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Process Name` | Required | Process name to get latest instance. Select from drop down.|
+    | `Process Name` | Required | Process name to get the latest instance. Select from the drop-down.|
     
 - Example  
 
@@ -453,14 +454,14 @@ ___
  
 ### **getInstanceIdByInstanceName**
 
-Get the process instance id by process name and instance name.
+Get the process instance ID by process name and instance name.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Process Name` | Required | Process name to get instance. Select from drop down.|
-    | `Instance Name` | Required | Instance name of the instance id.|
+    | `Process Name` | Required | Process name to get the instance. Select from the drop-down.|
+    | `Instance Name` | Required | Instance name of the instance ID.|
     
 - Example  
 
@@ -470,13 +471,13 @@ ___
  
 ### **getInstanceIdByTaskName**
 
-Get the process instance id by process name and task subject name.
+Get the process instance ID by process name and task subject name.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Process Name` | Required | Process name to get instance. Select from drop down.|
+    | `Process Name` | Required | Process name to get the instance. Select from the drop-down.|
     | `Task Name` | Required | Task name.|
     
 - Example  
@@ -487,7 +488,7 @@ ___
 
 ### **getInstanceIdByTaskUrl**
 
-Get the process instance id by the task id in url. Use it by: ${context.currentInstanceId}.
+Get the process instance ID by the task ID in the URL. Use it by: ${context.currentInstanceId}.
     
 - Example  
 
@@ -497,13 +498,13 @@ ___
 
 ### **getInstanceIdByBusinessData**
 
-Get the process instance id by process name and business data.
+Get the process instance ID by process name and business data.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Process Name` | Required | Process name to get instance. Select from drop down.|
+    | `Process Name` | Required | Process name to get the instance. Select from the drop-down.|
     | `Business Data Alias` | Required | Business data alias name. ![][alias]|
     | `Business Data Value` | Required | Actual data value.|
     
@@ -515,13 +516,13 @@ ___
 
 ### **fireTimer**
 
-Fire timer for the current instance.
+Fire a timer for the current instance.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Token` | Required | Timer name, selected from drop down.|
+    | `Token` | Required | Timer name, selected from the drop-down.|
     
 - Example  
 
@@ -531,15 +532,15 @@ ___
 
 ### **startRestApi**
 
-Assert Rest API result. 
+Assert the REST API result. 
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	|`API Name`|Required|Rest API name, selected from drop down. <br/>Support Rest API list:<br/>*Organization(Groups)*<br/>*Organization(Users)*<br/>*Process(ProcessQueryEntityList)*<br/>*Search(ExecuteQuery)*<br/>*Task(TaskQueryEntityList)*|
-    | `Params` | Required | Parameters of Rest API. Refer to https://[BAW-Server-URL]/bpmrest-ui/BPMRestAPITester/<br/>|
-    |`Expected Value`|Required|The expected response of Rest API.|
+	|`API Name`|Required|REST API name, selected from the drop-down. <br/>Supported REST API list:<br/>*Organization(Groups)*<br/>*Organization(Users)*<br/>*Process(ProcessQueryEntityList)*<br/>*Search(ExecuteQuery)*<br/>*Task(TaskQueryEntityList)*|
+    | `Params` | Required | Parameters of the REST API. Refer to https://[BAW-Server-URL]/bpmrest-ui/BPMRestAPITester/<br/>|
+    |`Expected Value`|Required|The expected response of the REST API.|
     
 - Example  
 
@@ -557,16 +558,16 @@ Performs a custom search.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	|`Columns`|Required|Valid column names are taskId, instanceId, bpdName, taskSubject, taskArrived, taskStarted, taskFinished, eg: taskId,instanceId.|
+	|`Columns`|Required|Valid column names are taskId, instanceId, bpdName, taskSubject, taskArrived, taskStarted, taskFinished, e.g.: taskId,instanceId.|
   | `Condition` | Optional | Query condition: &quot;&lt;field&gt;\|&lt;value&gt;&quot; or &quot;&lt;field&gt;\|&lt;op&gt;\|&lt;value&gt;&quot;|
-  |`Sort`|Optional|Name of primary sort column|
-  |`Second Sort`|Optional|Name of secondary sort column|
+  |`Sort`|Optional|Name of the primary sort column|
+  |`Second Sort`|Optional|Name of the secondary sort column|
   |`Organization`|Optional|A string indicating how the results should be organized. Valid values are byTask and byInstance. The default value is byInstance.|
   |`Size`|Optional|Specifies the maximum number of entities to be returned. If a number is not specified, the default size defined for the query will be used.|
-  |`Offset`|Optional|Specifies the number of entities to be skipped. Offset 0 refers to the first entity from the result set.If this parameter is not specified, the default value of 0 is used.|
+  |`Offset`|Optional|Specifies the number of entities to be skipped. Offset 0 refers to the first entity from the result set. If this parameter is not specified, the default value of 0 is used.|
   |`Filter By Current User`|Optional|Filter By Current User|
   |`Result`|Optional|The query result. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
-  |`Json Path`|Optional|Use json path to extract the output value or sub json|
+  |`Json Path`|Optional|Use the JSON path to extract the output value or sub-JSON|
   |`Variable Name`|Optional|Save Output into memory|
 
 - Example  
@@ -576,7 +577,7 @@ Performs a custom search.
 ___
 ### **WaitProcessInstanceStatus**
 
-Wait process instance status update. Fail when timeout.
+Wait for the process instance status to update. Fail when timeout.
 
 - Parameters
 
@@ -600,8 +601,8 @@ Get process instance data.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-  |`Json Path`|Optional|Use json path to extract the instance data variable or sub json|
-  |`Variable Name`|Optional|Save instance data variable or sub json into memory|
+  |`Json Path`|Optional|Use the JSON path to extract the instance data variable or sub-JSON|
+  |`Variable Name`|Optional|Save the instance data variable or sub-JSON into memory|
 
 - Example  
 
@@ -611,7 +612,7 @@ ___
 
 ## **BPM Assertion**
 
-This category is for asserting server side components.
+This category is for asserting server-side components.
 
 ___
 
@@ -619,15 +620,15 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
-|`TaskName`|Required| Name of the task that needs to be asserted. Drop down lists all task names in the Process Application of the Test Project which is connected to.|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. The drop-down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW REST API or Java API), you need to choose the proper assignee based on business logic. Recorded commands come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
+|`TaskName`|Required| Name of the task that needs to be asserted. The drop-down lists all task names in the Process Application of the Test Project which is connected to.|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
 ___
 
 ### **assertProcessInstanceStatus**
 
-Check current process instance status.
+Check the current process instance status.
 
 - Parameters
 
@@ -643,13 +644,13 @@ ___
 
 ### **assertProcessInstanceData**
 
-Assert the data of current process instance. Can only be used in a context of process instance execution.
+Assert the data of the current process instance. Can only be used in the context of process instance execution.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Expected Value` | Required | JSON object, expected value of the data.<br>**Notes:** <br>  Before adding this step, run the test case and look at the report. In the **Process Instance** section, click on the **click to show full data** link. <br>![][command_instance_data_template]<br>Copy the shown JSON into the **Expected Value** as data template. Then change the value as you need. If your data has auto generated fields, like current dates, instance ids or some other unique identifiers, they have to be removed from the JSON.|
+    | `Expected Value` | Required | JSON object, expected value of the data.<br>**Notes:** <br>  Before adding this step, run the test case and look at the report. In the **Process Instance** section, click on the **click to show full data** link. <br>![][command_instance_data_template]<br>Copy the shown JSON into the **Expected Value** as the data template. Then change the value as you need. If your data has auto-generated fields, like current dates, instance IDs or some other unique identifiers, they have to be removed from the JSON.|
     
 - Example  
 
@@ -659,7 +660,7 @@ ___
 
 ### **assertTaskAssignmentByUser**
 
-Check that correct user is assigned (claimed) to the task. Can only be used in a context of process instance execution.
+Check that the correct user is assigned (claimed) to the task. Can only be used in the context of process instance execution.
 
 - Example  
 
@@ -669,7 +670,7 @@ ___
 
 ### **assertTaskStatus**
 
-Check the status of a task for current process instance.
+Check the status of a task for the current process instance.
 
 - Parameters
 
@@ -695,7 +696,7 @@ ___
 
 ### **assertTaskNotGenerated**
 
-Check the task is not generated.
+Check that the task is not generated.
     
 - Example  
 
@@ -705,13 +706,13 @@ ___
 
 ### **assertTaskData**
 
-Check the task data of current process instance. It checks the variables saved in BPM Task execution context. Use UI Assertions to check on page contents during the coach execution.
+Check the task data of the current process instance. It checks the variables saved in the BPM Task execution context. Use UI Assertions to check the page contents during the coach execution.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Expected Value` | Required | Expected value of the data.<br>**Notes:**<br>Before adding this step, run the test case and look at the report. In the **Task Data** section, click on the **click to show full data** link.<br>![][command_task_data_template]<br> Copy JSON value into the **Expected Value** as data template. Then change the value as you need. If your data has auto generated fields, like current dates, instance ids or some other unique identifiers, they have to be removed from the JSON.|
+	| `Expected Value` | Required | Expected value of the data.<br>**Notes:**<br>Before adding this step, run the test case and look at the report. In the **Task Data** section, click on the **click to show full data** link.<br>![][command_task_data_template]<br> Copy the JSON value into the **Expected Value** as the data template. Then change the value as you need. If your data has auto-generated fields, like current dates, instance IDs or some other unique identifiers, they have to be removed from the JSON.|
 	
 - Example  
 
@@ -727,7 +728,7 @@ Check the current service data.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Expected Value` | Required | Expected value of the data.<br>**Notes:**<br>Before adding this step, run the test case and look at the report. In the **Service Data** section, click on the **click to show full data** link. <br>![][command_service_data_template]<br>Copy JSON value into the **Expected Value** as data template. Then change the value as you need. If your data has auto generated fields, like current dates, instance ids or some other unique identifiers, they have to be removed from the JSON.|
+	| `Expected Value` | Required | Expected value of the data.<br>**Notes:**<br>Before adding this step, run the test case and look at the report. In the **Service Data** section, click on the **click to show full data** link. <br>![][command_service_data_template]<br>Copy the JSON value into the **Expected Value** as the data template. Then change the value as you need. If your data has auto-generated fields, like current dates, instance IDs or some other unique identifiers, they have to be removed from the JSON.|
 	
 - Example  
 
@@ -737,7 +738,7 @@ ___
 
 ## **Case**
 
-This category of commands are for calling server side components of case. There are a lot of common input fields. Below are some statements which are common for most of the commands in this category.  
+This category of commands is for calling server-side components of a case. There are a lot of common input fields. Below are some statements which are common for most of the commands in this category.  
 
 ___
 
@@ -745,18 +746,18 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW rest api or Java api), you need to choose the proper assignee based on business logic. Recorded commands that come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
 | `Exception` | Optional | Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. | 
-| `Params`  | Depend on command. |JSON or XML format. If the template of parameters is rendered successfully by selecting service, the field is required. The parameters are defaulted based on the service signature. The template of parameters includes keys of data and you only need to fill in value. <br/>*e.g:*<br/>{<br/>"variable_name": "value",<br/>"variable2_name": "value2"<br/>}<br/>Also parameter support varaible like csv binding variable and context variable.You can use ${csv.xxxx} or ${xxx} to reference your vairable value.If vairable value is number please remove quote before $.<br/>*e.g:*<br/>{<br/>"textReader":"${csv.instanceId}",<br/>"integer":${number},<br/>"decimal":0,<br/>"text":"${mytext}"<br/>}  |
-| `Expected Output` |Optional|Used for validating command response. In some cases, there is a refresh button, which can be used to get default expected results. Make sure to fill out params before clicking refresh. If refresh does not work, execute the case step with out expectedOutput set. If passed, edit the step and click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results. <br/>**Notes:**The ![][command_params_error_icon] icon will appears below *Expected Output* field when the wrong *Params* is filled out after click ![][command_expected_output_refresh_button] button in the Command Editor Dialog. The error message can be got by hovering on the ![][command_params_error_icon] icon.|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+| `Params`  | Depend on command. |JSON or XML format. If the template of parameters is rendered successfully by selecting the service, the field is required. The parameters are defaulted based on the service signature. The template of parameters includes keys of data, and you only need to fill in the value. <br/>*e.g:*<br/>{<br/>"variable_name": "value",<br/>"variable2_name": "value2"<br/>}<br/>Also, the parameter supports variables like CSV binding variables and context variables. You can use ${csv.xxxx} or ${xxx} to reference your variable value. If the variable value is a number, please remove the quote before $.<br/>*e.g:*<br/>{<br/>"textReader":"${csv.instanceId}",<br/>"integer":${number},<br/>"decimal":0,<br/>"text":"${mytext}"<br/>}  |
+| `Expected Output` |Optional|Used for validating the command response. In some cases, there is a refresh button, which can be used to get default expected results. Make sure to fill out the params before clicking refresh. If refresh does not work, execute the case step without setting the expectedOutput. If passed, edit the step and click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results. <br/>**Notes:** The ![][command_params_error_icon] icon will appear below the *Expected Output* field when the wrong *Params* is filled out after clicking the ![][command_expected_output_refresh_button] button in the Command Editor Dialog. The error message can be obtained by hovering over the ![][command_params_error_icon] icon.|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
 
 ___
 
 ### **loginCaseClient**
 
-Login Case Client. As a result Case Client page is opened.
+Login Case Client. As a result, the Case Client page is opened.
 
 - Parameters
 
@@ -779,7 +780,7 @@ Add a case based on the solution case type.
 	| Name | Required | Description |
 	|----------------|------------|--------------|
     | `Case Type` | Required | The current case type name|
-    | `Params` | Required | The init case data|
+    | `Params` | Required | The initial case data|
 
 - Example  
 
@@ -789,7 +790,7 @@ ___
 
 ### **addCaseFolderId**
 
-Add a case folder id to context, use it by: ${context.currentCaseFolderId}.
+Add a case folder id to the context, use it by: ${context.currentCaseFolderId}.
 
 - Parameters
 
@@ -822,7 +823,7 @@ ___
 
 ### **updateCaseData**
 
-Update current case data.
+Update the current case data.
 
 - Parameters
 
@@ -845,7 +846,7 @@ Run a case solution activity by name.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Activity Name` | Required | The case solution activity name of current case type|
+    | `Activity Name` | Required | The case solution activity name of the current case type|
     | `Task Name` | Required | The task name of the selected activity. |
     | `byTaskOwner` | Optional(BPMN) | Checked means the task owner will run this task. Unchecked indicates that the assigned user will run the task.|
 
@@ -865,7 +866,7 @@ Start a manual activity.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Manual Activity Name` | Required | The manual activity name of current case type|
+    | `Manual Activity Name` | Required | The manual activity name of the current case type|
 
 - Example  
 
@@ -875,7 +876,7 @@ ___
 
 ## **Case Assertion**
 
-This category is for asserting server side components of case.
+This category is for asserting server-side components of a case.
 
 ___
 
@@ -883,14 +884,14 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW rest api or Java api), you need to choose the proper assignee based on business logic. Recorded commands that come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
 ___
 
 ### **assertCaseState**
 
-Check current case state.
+Check the current case state.
 
 - Parameters
 
@@ -914,7 +915,7 @@ Check the activity state of the current case.
 	|----------------|------------|--------------|
     | `Activity Name` | Required | The name of the activity.|
     | `Activity State` | Required | Expected state of the case activity.<br>Possible values: <br>*Waiting*<br>*Ready*<br>*Started*<br>*Completed*<br>*Canceled*|
-    | `Activity Is Requird` | Required | Expected required state of the case activity.<br>Possible values: <br>*True*<br>*False*|
+    | `Activity Is Required` | Required | Expected required state of the case activity.<br>Possible values: <br>*True*<br>*False*|
     | `Activity Is Disabled` | Required | Expected disabled state of the case activity.<br>Possible values: <br>*True*<br>*False*|
     
 - Example  
@@ -925,7 +926,7 @@ ___
 
 ## **BA**
 
-This category of commands are for calling server side components of business application (available on Cloud Pak for Business Automation). There are some common input fields. Below are some statements which are common for most of the commands in this category. 
+This category of commands is for calling server-side components of a business application (available on Cloud Pak for Business Automation). There are some common input fields. Below are some statements which are common for most of the commands in this category. 
 
 ___
 
@@ -933,8 +934,8 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW rest api or Java api), you need to choose the proper assignee based on business logic. Recorded commands that come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
 ___
 
@@ -955,9 +956,9 @@ ___
 
 ## **UI**  
 
-In most cases, the UI commands are recorded using the IDA plug in. If you find a need to add a command manually, for example, validation command, look at the recorded command for the element and copy the location information from it.
+In most cases, the UI commands are recorded using the IDA plugin. If you find a need to add a command manually, for example, a validation command, look at the recorded command for the element and copy the location information from it.
 <br>*e.g:*
-Any one or combination of the recorded values can be used to identify the control:  Control ID, Element ID or XPATH. If Label is unique on the page, it can be used as well. Enough location arguments are required to uniquely identify an element on the page. **IDA** cycles through available ids until it finds the element. For example, if you recorded a select step and later moved the control around on the page, the Control ID and XPATH are probably different from the recorded step, but Element ID is still the same.
+Any one or combination of the recorded values can be used to identify the control:  Control ID, Element ID, or XPATH. If the Label is unique on the page, it can be used as well. Enough location arguments are required to uniquely identify an element on the page. **IDA** cycles through available ids until it finds the element. For example, if you recorded a select step and later moved the control around on the page, the Control ID and XPATH are probably different from the recorded step, but the Element ID is still the same.
 
 In most cases, the UI commands are recorded and displayed immediately in the IDA recorder. Commands below are only displayed after recording of some other control as the command value cannot be set immediately:
 - bpmFileDropzone
@@ -970,29 +971,29 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
-|`Value`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.| The value of the control.|
-|`Contorl ID`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the control. Control ID is the PATH control IDs leading to the selected control id.|
-|`Label`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The label of the control.|
-|`Element ID`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the element.|
-|`Element CSS`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The CSS of the element.|
-|`XPATH`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The xpath of the control.|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW rest api or Java api), you need to choose the proper assignee based on business logic. Recorded commands that come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
+|`Value`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.| The value of the control.|
+|`Control ID`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the control. Control ID is the PATH control IDs leading to the selected control id.|
+|`Label`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The label of the control.|
+|`Element ID`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the element.|
+|`Element CSS`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The CSS of the element.|
+|`XPATH`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The xpath of the control.|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
-***Notes:** The element is first obtained through the Control ID. If is failed, the label, Element ID and Element CSS are then used in turn. Finally is XPATH. If is successful, the rest will not be used.*
+***Notes:** The element is first obtained through the Control ID. If it fails, the label, Element ID, and Element CSS are then used in turn. Finally, the XPATH is used. If successful, the rest will not be used.*
 
 ___
 
 ### **bpmFileDropzone**
 
-Upload file to BAW server by Dropzone control. 
+Upload a file to the BAW server by using the Dropzone control. 
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
 	| `Value` | Required |Name of the BPM file.|
-	| `Control ID` | Required |Control ID of BPM file drop zone.|
+	| `Control ID` | Required |Control ID of the BPM file drop zone.|
 	
 - Example  
 
@@ -1002,14 +1003,14 @@ ___
 
 ### **bpmFileUploader**
 
-BPM file uploader. UI.bpmFileUploader can't be replayed on IDA Plugin due to browser security issue, but this command can work on Selenium Grid. So you can record the file upload commands by IDA Plugin, but replay them on Selenium Grid.
+BPM file uploader. UI.bpmFileUploader can't be replayed on the IDA Plugin due to browser security issues, but this command can work on the Selenium Grid. So you can record the file upload commands by the IDA Plugin, but replay them on the Selenium Grid.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
 	| `Value` | Required |Name of the BPM file.|
-	| `Control ID` | Required |The control id of BPM file that needs to be Uploaded. |
+	| `Control ID` | Required |The control id of the BPM file that needs to be uploaded. |
 	
 - Example  
 
@@ -1019,14 +1020,14 @@ ___
 
 ### **checkbox**
 
- 	Set the value of check box control. 
+ 	Set the value of the checkbox control. 
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Value` | Required | The value of the check box to operate on. |
-	| `Select Options` | Required | Check box operation, Select or Unselect. Select: to check the check box. Unselect: to clear the check box. |
+	| `Value` | Required | The value of the checkbox to operate on. |
+	| `Select Options` | Required | Checkbox operation, Select or Unselect. Select: to check the checkbox. Unselect: to clear the checkbox. |
 	
 - Example  
 
@@ -1036,14 +1037,14 @@ ___
 
 ### **click**
 
-Click an element by id , CSS or xpath. **Notes:** BPM UI toolkit has *id* on a button but Coach v8 and BP3 do not. Thus the later two can only be identified by XPATH. Moving the coach view around the page may change its xpath and break the test case.
+Click an element by id, CSS, or xpath. **Notes:** The BPM UI toolkit has an *id* on a button, but Coach v8 and BP3 do not. Thus, the latter two can only be identified by XPATH. Moving the coach view around the page may change its xpath and break the test case.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
 	| `Type` | Optional | *Link* or *Button*.|
-	| `Trigger Event` | Optional | The js event triggered by click.|
+	| `Trigger Event` | Optional | The JavaScript event triggered by the click.|
 	
 - Example  
 
@@ -1053,24 +1054,23 @@ ___
 
 ### **coachControl**
 
-Set value of coach control. This is a generic setter. Value should match the selected control type.
+Set the value of the coach control. This is a generic setter. The value should match the selected control type.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Value Type` | Optional | Select type from drop down. |
+	| `Value Type` | Optional | Select the type from the drop-down. |
 	| `Default Value` | Optional | Default value of the control. |
 	
 - Example  
 
 	![][coach_control]
-
 ___
 
 ### **confirmOK**
 
-Click OK button for window.confirm and return *true*, isn't supported in IDA plugin. It needs to be added to the test case manually when used and can work fine in selenium.
+Click the OK button for window.confirm and return *true*. This isn't supported in the IDA plugin. It needs to be added to the test case manually when used and can work fine in Selenium.
 	
 - Example  
 
@@ -1080,7 +1080,7 @@ ___
 
 ### **confirmCancel**
 
-Click the Cancel button for window.confirm and return *false*, isn't supported in IDA plugin. It needs to be added to the test case manually when used and can work fine in selenium.
+Click the Cancel button for window.confirm and return *false*. This isn't supported in the IDA plugin. It needs to be added to the test case manually when used and can work fine in Selenium.
 	
 - Example  
 
@@ -1090,7 +1090,7 @@ ___
 
 ### **doubleClick**
 
-Double click an element by id, CSS or xpath. Be similar to **click**. It needs to be added to the test case manually when used.
+Double-click an element by id, CSS, or xpath. This is similar to **click**. It needs to be added to the test case manually when used.
 	
 - Example  
 
@@ -1100,13 +1100,13 @@ ___
 
 ### **file**
 
-Upload file. UI.file can't be replayed on IDA Plugin due to browser security issue, but this command can work on Selenium Grid. So you can record the file upload commands by IDA Plugin, but replay them on Selenium Grid.
+Upload a file. UI.file can't be replayed on the IDA Plugin due to browser security issues, but this command can work on the Selenium Grid. So you can record the file upload commands by the IDA Plugin, but replay them on the Selenium Grid.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Value` | Required | File name that needs to be uploaded. |
+	| `Value` | Required | The filename that needs to be uploaded. |
 	
 - Example  
 
@@ -1116,7 +1116,7 @@ ___
 
 ### **close**
 
-Close current opened browser.
+Close the currently opened browser.
 	
 - Example  
 
@@ -1126,13 +1126,13 @@ ___
 
 ### **radio**
 
-Set the value of radio control.
+Set the value of the radio control.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Value` | Required | The value of radio to select. Value should be the LABEL on the CV control.<br>*e.g:*<br>![][command_UI_radio]<br> Value should be set to *Make a selection*.|
+	| `Value` | Required | The value of the radio to select. The value should be the LABEL on the CV control.<br>*e.g:*<br>![][command_UI_radio]<br> The value should be set to *Make a selection*.|
 	
 - Example  
 
@@ -1142,14 +1142,14 @@ ___
 
 ### **saveCoachControl**
 
-Put the control value into a key. <br>Tip:<br> a) record a step to set the value of the control;<br>b) edit the recorded step in Command Editor and change the command to saveCoachControl;<br>c) set the Key.<br> If the control you try to save is readonly, record any other controls which are the same level ( e.g in the container ).  Modify the Control ID path to match the control you are trying to save.
+Put the control value into a key. <br>Tip:<br> a) record a step to set the value of the control;<br>b) edit the recorded step in the Command Editor and change the command to saveCoachControl;<br>c) set the Key.<br> If the control you try to save is read-only, record any other controls which are at the same level (e.g., in the container). Modify the Control ID path to match the control you are trying to save.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
 	| `Key` | Required | Name of a variable, which can later be referenced as ${key} in a value field of any command.|
-	| `Property` | Optional | When the control binding complex object, you can get the value form complex object by property. <br> *eg:* <br> *bindingObject.value* |
+	| `Property` | Optional | When the control binds a complex object, you can get the value from the complex object by property. <br> *e.g.:* <br> *bindingObject.value* |
 	
 - Example  
 
@@ -1159,7 +1159,7 @@ ___
 
 ### **saveText**
 
-Save text into context. Can put the output text, single select and input value to a key.
+Save text into the context. Can put the output text, single select, and input value to a key.
 
 - Parameters
 
@@ -1175,7 +1175,7 @@ ___
 
 ### **select**
 
- Set the value of select (drop down) control. Value is a json list of selected display values for this Select or Multi Select CV. <br>*e.g:*``["Selected value1","Selected value2"] ``
+ Set the value of the select (drop-down) control. The value is a JSON list of selected display values for this Select or Multi-Select CV. <br>*e.g.:*``["Selected value1","Selected value2"] ``
 	
 - Example  
 
@@ -1185,13 +1185,13 @@ ___
 
 ### **selectWindow**
 
- Select window by window info.
+ Select a window by window information.
 	
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Info` | Required | window information.  |
+	| `Info` | Required | Window information.  |
 	
 - Example  
 
@@ -1201,7 +1201,7 @@ ___
   
 ### **text**
 
-Set the value of any control, which UI accepts textual input. Example: input text CV, Integer CV, Date Picker. This event is captured when the control loses focus. So it is possible for some controls like Date Picker to record 2 steps. One for empty value and the other for actual value. It is because the first empty data is captured when the mouse focus moves from control to the Data select popup. Users can remove the first recorded case step or just keep them as-is.
+Set the value of any control, which UI accepts textual input. Examples: input text CV, Integer CV, Date Picker. This event is captured when the control loses focus. So it is possible for some controls like Date Picker to record two steps. One for an empty value and the other for the actual value. This is because the first empty data is captured when the mouse focus moves from the control to the Date select popup. Users can remove the first recorded case step or just keep them as-is.
 
 - Example  
 
@@ -1211,14 +1211,14 @@ ___
   
 ### **waitElement**
 
-Wait a element visible/hidden/editable/readonly until timeout. Fail when timeout.
+Wait for an element to be visible/hidden/editable/read-only until the timeout. Fail when the timeout is reached.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Type` | Required | Select the element type from drop down. *Visible*, *Hidden*, *Editable* and *Readonly*.  |
-	| `Timeout` | Optional | The maximum time that wait for the element. If empty, use engine-config.wait-timeout set on ida.properties.|
+	| `Type` | Required | Select the element type from the drop-down. *Visible*, *Hidden*, *Editable*, and *Readonly*.  |
+	| `Timeout` | Optional | The maximum time to wait for the element. If empty, use engine-config.wait-timeout set on ida.properties.|
 	
 - Example  
 
@@ -1230,14 +1230,14 @@ ___
   
 ### **waitTextPresent**
 
-Wait for displaying a text until timeout. Fail when timeout.
+Wait for a text to be displayed until the timeout. Fail when the timeout is reached.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
 	| `Text` | Required | Text waiting to be displayed on the page.  |
-	| `Timeout` | Optional | The maximum time that wait for the element. If empty, use engine-config.wait-timeout set on ida.properties.|
+	| `Timeout` | Optional | The maximum time to wait for the element. If empty, use engine-config.wait-timeout set on ida.properties.|
 	
 - Example  
 
@@ -1248,7 +1248,7 @@ ___
 
 ### **clickActivityFromPortal**
 
-Click a activity from portal.
+Click an activity from the portal.
 
 - Parameters
 
@@ -1267,7 +1267,7 @@ ___
 
 ## **UI Assertion**
 
- Record a command to populate the field you want to assert. Then edit the generated test case step and change command to assert. The edit would pick up matching fields from the recorded command.
+ Record a command to populate the field you want to assert. Then edit the generated test case step and change the command to assert. The edit would pick up matching fields from the recorded command.
 
 ___
 
@@ -1275,29 +1275,29 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
-|`Contorl ID`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the control. Control ID is the PATH control IDs leading to the selected control id.|
-|`Label`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The label of the control.|
-|`Element ID`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the element.|
-|`Element CSS`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The CSS of the element.|
-|`XPATH`|Optional, fields `Value`, `Contorl ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The xpath of the control.|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW rest api or Java api), you need to choose the proper assignee based on business logic. Recorded commands that come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
+|`Control ID`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the control. Control ID is the PATH control IDs leading to the selected control id.|
+|`Label`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The label of the control.|
+|`Element ID`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The ID of the element.|
+|`Element CSS`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The CSS of the element.|
+|`XPATH`|Optional, fields `Value`, `Control ID`, `Label`, `Element ID`, `Element CSS` and `XPATH` must be filled in at least one of them.|The xpath of the control.|
 |`Expected Value`|Required|The expected value of the control|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
-***Notes:** The element is first obtained through the Control ID. If is failed, the label, Element ID and Element CSS are then used in turn. Finally is XPATH. If is successful, the rest will not be used.*
+***Notes:** The element is first obtained through the Control ID. If it fails, the label, Element ID, and Element CSS are then used in turn. Finally, the XPATH is used. If successful, the rest will not be used.*
 
 ___
   
 ### **assertButtons**
 
-Check the buttons are rendered or not.
+Check if the buttons are rendered or not.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Texts` | Required | Text of buttons that you want to render.<br>*e.g:*<br>![][command_UIAssert_buttons]<br>If you want to check that all the buttons are rendered in this form, you can fill like this:<br>``Save``<br>``Cancel``<br>**Notes:** *Texts are separated by the line break.*|
-	| `Expected Visibility` | Required | The expected visibility of the control. Select from drop down. *Enabled*, *Disabled,* and *Hidden*.|
+	| `Texts` | Required | Text of the buttons that you want to render.<br>*e.g.:*<br>![][command_UIAssert_buttons]<br>If you want to check that all the buttons are rendered in this form, you can fill it in like this:<br>``Save``<br>``Cancel``<br>**Notes:** *Texts are separated by the line break.*|
+	| `Expected Visibility` | Required | The expected visibility of the control. Select from the drop-down. *Enabled*, *Disabled,* and *Hidden*.|
 	
 - Example  
 
@@ -1313,8 +1313,8 @@ Assert checkbox value and options.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Checked Labels` | Required | Labels of checkboxes that are expected to be checked.<br>*e.g:* <br>![][command_UIAssert_checkbox]<br>To verify the options in this page, fill in like this: <br>``Create Position Request CSHS``<br>``GM Approval CSHS``. <br>**Notes:** *Labels are separated by the line break.*|
-	| `Expected Options` | Required | Labels of all options that are expected to be rendered. <br>*e.g:* If you want to check that all the checkbox options are rendered in the figure above, you can fill in like this:<br>``Create Position Request CSHS``<br>``Find Candidates CSHS``<br>``GM Approval CSHS``<br>**Notes:** *Labels are separated by the line break.*|
+	| `Checked Labels` | Required | Labels of checkboxes that are expected to be checked.<br>*e.g.:* <br>![][command_UIAssert_checkbox]<br>To verify the options on this page, fill in like this: <br>``Create Position Request CSHS``<br>``GM Approval CSHS``. <br>**Notes:** *Labels are separated by the line break.*|
+	| `Expected Options` | Required | Labels of all options that are expected to be rendered. <br>*e.g.:* If you want to check that all the checkbox options are rendered in the figure above, you can fill in like this:<br>``Create Position Request CSHS``<br>``Find Candidates CSHS``<br>``GM Approval CSHS``<br>**Notes:** *Labels are separated by the line break.*|
 	
 - Example  
 
@@ -1324,14 +1324,14 @@ ___
   
 ### **assertCoachControl**
 
-Assert Coach Control binding value and visibility, it only supports String, Number, Date and Boolean type of binding value now. Either of Control ID or label is required. The Control ID is the coach view Control ID, label is the coach view label.
+Assert Coach Control binding value and visibility. It only supports String, Number, Date, and Boolean types of binding values now. Either the Control ID or label is required. The Control ID is the coach view Control ID, and the label is the coach view label.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Expected Value Type` | Required | The value Type of the control, select from drop down. *String*, *Number*, *Date(MM/dd/yyyy)* and *Boolean*.|
-	| `Expected Visibility` | Required | The visibility of the control. Select from drop down. *Enabled*, *Disabled,* and *Hidden*.|
+	| `Expected Value Type` | Required | The value Type of the control, select from the drop-down. *String*, *Number*, *Date(MM/dd/yyyy)*, and *Boolean*.|
+	| `Expected Visibility` | Required | The visibility of the control. Select from the drop-down. *Enabled*, *Disabled,* and *Hidden*.|
 	
 - Example  
 
@@ -1341,7 +1341,7 @@ ___
   
 ### **assertDatePicker**
 
-Assert date picker value.
+Assert the date picker value.
 
 - Parameters
 
@@ -1363,7 +1363,7 @@ Assert the element value and visibility.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Expected visibility` | Required | The visibility of the control. Select from drop down. *Enabled*, *Disabled,* and *Hidden*.|
+	| `Expected visibility` | Required | The visibility of the control. Select from the drop-down. *Enabled*, *Disabled,* and *Hidden*.|
 	
 - Example  
 
@@ -1373,13 +1373,13 @@ ___
 
 ### **assertInputText**
 
-Check coach text field value. If you check the regular expression, it will use expected value as regular expression to match the actual value.
+Check the coach text field value. If you check the regular expression, it will use the expected value as a regular expression to match the actual value.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Expected Max Length` | Optional | Expected max length of the text.|
+	| `Expected Max Length` | Optional | Expected maximum length of the text.|
 	
 - Example  
 
@@ -1389,7 +1389,7 @@ ___
  
 ### **assertOutputText**
 
-Check coach output text value. 
+Check the coach output text value. 
 
 - Example  
 
@@ -1405,7 +1405,7 @@ Assert Radio value and options.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Checked Label` | Required | Label of radio box that is expected to be checked.|
+	| `Checked Label` | Required | Label of the radio box that is expected to be checked.|
 	| `Expected Options` | Required | Labels of all options that are expected to be rendered. Refer to the statements of *Expected Options* in **assertCheckbox**.|
 
 - Example  
@@ -1422,7 +1422,7 @@ Assert Select value and options.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Expected Value` | Required | The expected value of the control. If is multiSelect, the value is separated by the line break.|
+	| `Expected Value` | Required | The expected value of the control. If it is a multi-select, the value is separated by the line break.|
 	| `Expected Options` | Required | Labels of select options that are expected to be rendered. Refer to the statements of *Expected Options* in **assertCheckbox**.|
 
 - Example  
@@ -1433,7 +1433,7 @@ ___
      
 ### **assertSwitch**
 
-Assert Switch box.
+Assert the Switch box.
 
 - Example  
 
@@ -1450,7 +1450,7 @@ Assert the cell value of the table.
 	| Name | Required | Description |
 	|----------------|------------|--------------|
 	| `Column Name` | Required | The name of the column where the value needs to be asserted.|
-	| `Row Number` | Required | The number of row where the value needs to be validated.|
+	| `Row Number` | Required | The number of the row where the value needs to be validated.|
 	| `Expected value` | Required | The cell value that needs to be checked. |
 
 - Example  
@@ -1482,12 +1482,12 @@ Assert the textarea value.
 - Example  
 
 	![][assert_text_area]
-
+	
 ___
           
 ### **assertTextNotPresent**
 
-Assert text is not appear on UI.  
+Assert that the text does not appear on the UI.  
 
 - Parameters
 
@@ -1503,7 +1503,7 @@ ___
            
 ### **assertTextPresent**
 
-Assert text is appear on UI. 
+Assert that the text appears on the UI. 
 
 - Parameters
 
@@ -1519,7 +1519,7 @@ ___
            
 ### **assertValidationPassed**
 
-Check whether the coach page is passed the validation or not.
+Check whether the coach page has passed the validation or not.
 
 - Example  
 
@@ -1535,8 +1535,8 @@ ___
 
 | Name | Required | Description |
 |----------------|------------|--------------|
-| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. Drop down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:**Currently all the commands are run as "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from "BPM", "BPM Assertion", "Case" or "Case Assertion" command category(these commands will invoke BAW rest api or Java api),you need to choose proper assignee based on business logic. Recorded commands come from "UI","UI assertion","Utility" command category don't need to set assignee for these commands. You can leave blank or "default user".|
-|`Comment`|Optional|Not part of any command and can be used for documenting test case step.|
+| `Assignee`   | Optional | When specified, the command is executed by the specified BAW user. The drop-down lists all *BAW user names* defined in the BAW Configuration the Test Project is connected to. More details refer to [**BAW Configuration/Add user to a BAW server**][1]. <br/>**Notes:** Currently, all the commands are run as the "default user", unless manually modified. If manually modified, the following commands are run as the latest modified user until modified again. If your recorded commands come from the "BPM", "BPM Assertion", "Case" or "Case Assertion" command category (these commands will invoke BAW rest api or Java api), you need to choose the proper assignee based on business logic. Recorded commands that come from the "UI", "UI assertion", "Utility" command category don't need to set an assignee for these commands. You can leave it blank or use the "default user".|
+|`Comment`|Optional|Not part of any command and can be used for documenting the test case step.|
 
 ___
            
@@ -1548,8 +1548,8 @@ Append another value to this key.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Key` | Required | Name of key. |
-	| `Value` | Required | Value that need to be appended. |
+	| `Key` | Required | Name of the key. |
+	| `Value` | Required | Value that needs to be appended. |
 
 - Example  
 
@@ -1559,15 +1559,15 @@ ___
            
 ### **dateString**
 
-Generate date string before/after number of days of today. If the key is not specified, then the default key is "DATE_STRING". You can use the date string by ${context.DATE_STRING}.
+Generate a date string before/after a number of days from today. If the key is not specified, then the default key is "DATE_STRING". You can use the date string by ${context.DATE_STRING}.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Key` | Optional | Name of key. Default is `DATE_STRING`.|
-	| `Days` | Optional | The number of days from the current date that you want to convert to a string. Negative number of days means before today, while positive number of days means after today. <br>*e.g:* **-1** means generating string of the date of yesterday. Default is `0`.|
-	| `Format` | Optional |Format of date. Default is `MM/dd/YYYY`.|
+	| `Key` | Optional | Name of the key. Default is `DATE_STRING`.|
+	| `Days` | Optional | The number of days from the current date that you want to convert to a string. A negative number of days means before today, while a positive number of days means after today. <br>*e.g.:* **-1** means generating a string of the date of yesterday. Default is `0`.|
+	| `Format` | Optional |Format of the date. Default is `MM/dd/YYYY`.|
 
 - Example  
 
@@ -1577,44 +1577,44 @@ ___
            
 ### **debug**
 
-Command for debug, recording of the case will stop at this step.
+Command for debugging, recording of the case will stop at this step.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Log` | Optional | Log text will be shown in console.|
+	| `Log` | Optional | Log text will be shown in the console.|
 	
 ___
            
 ### **putContext**
 
- Put a new key-value pair to context.
+ Put a new key-value pair into the context.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Key` | Required | Name of key.|
-	| `Value` | Required | Value that need to into context.|
+	| `Key` | Required | Name of the key.|
+	| `Value` | Required | Value that needs to be put into the context.|
 	
 ___
            
 ### **wait**
 
-Wait for specify seconds.
+Wait for a specified number of seconds.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Time` | Required | The seconds to be wait.|
+	| `Time` | Required | The number of seconds to wait.|
 	
 ___
 
 ### **randomString**
 
-Generate a specified length random string with key.
+Generate a random string of a specified length with a key.
 
 - Parameters
 
@@ -1625,7 +1625,7 @@ Generate a specified length random string with key.
 
 - Example 
   
-  No key name, just use default value "RANDOM_STRING".
+  No key name, just use the default value "RANDOM_STRING".
 
   ![][random_string_default_define]
 
@@ -1633,7 +1633,7 @@ Generate a specified length random string with key.
 
   ![][random_string_steps_desc]
 
-  Use key name, e.g. SKey1.
+  Use a key name, e.g., SKey1.
 
   ![][random_string_key_define]
 
@@ -1645,7 +1645,7 @@ ___
 
 ### **randomNumber**
 
-Generate a specified length random number with key.
+Generate a random number of a specified length with a key.
 
 - Parameters
 
@@ -1656,7 +1656,7 @@ Generate a specified length random number with key.
 	
 - Example 
 
-  No key name, just use default value "RANDOM_NUMBER".
+  No key name, just use the default value "RANDOM_NUMBER".
 
   ![][random_number_default_define]
 
@@ -1665,7 +1665,7 @@ Generate a specified length random number with key.
   ![][random_number_steps_desc]
 
 
-  Use key name, e.g. Key1.
+  Use a key name, e.g., Key1.
 
   ![][random_number_key_define]
 

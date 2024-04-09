@@ -9,7 +9,7 @@ last_modified_at: 2021-08-23 16:21:00
 ***
 
 ## Add a team
-  1. Click **Administrator** tab, then switch to  **Team Configurtaion** tab to manage team.  
+  1. Click **Administrator** tab, then switch to **Team Configuration** tab to manage teams.  
 
   2. Click ![][add_icon] icon which is on the right of **Team Management**.
 
@@ -19,10 +19,10 @@ last_modified_at: 2021-08-23 16:21:00
 
      |   Field                | Description |
      |------------------------|-------------|                                          
-     | Team    Name           | the name of the created team|  
+     | Team Name              | the name of the created team|  
      | Description            | more description or information of the created team|
-     | Access All BAW Server  | If check, then the users in this team can access all BAW servers without assignment.|
-     | Access All Selenium Server  | If check, then the users in this team can access all selenium serers without assignment.|
+     | Access All BAW Server  | If checked, then the users in this team can access all BAW servers without assignment.|
+     | Access All Selenium Server  | If checked, then the users in this team can access all selenium servers without assignment.|
 
      **Notes:**
 
@@ -48,7 +48,7 @@ last_modified_at: 2021-08-23 16:21:00
 
      ![][administrator_assign_user]{:width="80%"}
 
-  2. The left table of modal lists the users who do not belong to team, while the right do. And you can select users in the left table and click ![][administrator_assign_button] to assign users to the team. Similarly, you can select uses in the right table and click ![][administrator_remove_button] to remove users from the team.
+  2. The left table of the modal lists the users who do not belong to the team, while the right table lists those who do. You can select users in the left table and click ![][administrator_assign_button] to assign users to the team. Similarly, you can select users in the right table and click ![][administrator_remove_button] to remove users from the team.
 
      ![][administrator_assign]{:width="70%"}
 
@@ -58,7 +58,7 @@ last_modified_at: 2021-08-23 16:21:00
 
      ![][administrator_assign_processapps]{:width="80%"}
 
-  2. Select server and the left table of modal lists the process apps which belong to the server but do not belong to the team.
+  2. Select a server, and the left table of the modal lists the process apps which belong to the server but do not belong to the team.
 
   3. Select process apps in the left table and click ![][administrator_assign_button] to assign process apps to the team.
 
@@ -68,11 +68,11 @@ last_modified_at: 2021-08-23 16:21:00
 
 ## Remove process apps from a team
 
-  1. Click server and the right table of modal lists the process apps which are under the server and belong to the team.
+  1. Click a server, and the right table of the modal lists the process apps which are under the server and belong to the team.
 
   2. Select process apps in the right table and click ![][administrator_remove_button] to remove process apps from the team.
 
-  3. After finishing step 2, the selected server in step 1 will be selected in the left modal and the removed process apps will in the lists which belong to the server but do not belong to the team.
+  3. After finishing step 2, the selected server in step 1 will be selected in the left modal, and the removed process apps will appear in the lists which belong to the server but do not belong to the team.
 
 ## Assign selenium grids to a team/ Remove selenium grids from a team
 
@@ -80,7 +80,7 @@ last_modified_at: 2021-08-23 16:21:00
 
      ![][administrator_assign_selenium_grid]{:width="80%"}
 
-  2. The left table of modal lists the selenium girds which do not belong to team, while the right do. And you can select selenium girds in the left table and click ![][administrator_assign_button] to assign users to the team. Similarly, you can select slelenium grids in the right table and click ![][administrator_remove_button] to remove users from the team.
+  2. The left table of the modal lists the selenium grids which do not belong to the team, while the right table lists those that do. You can select selenium grids in the left table and click ![][administrator_assign_button] to assign them to the team. Similarly, you can select selenium grids in the right table and click ![][administrator_remove_button] to remove them from the team.
 
      ![][administrator_assign_seleniumgrds]{:width="70%"}
 

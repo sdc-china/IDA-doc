@@ -8,22 +8,17 @@ last_modified_at: 2019-07-29 15:53:00
 # Pipeline Report
 ***
 
+## Pipeline Report  
 
-## Pipeline report  
+Every successful step will have a report in the **Test Reports** page. You can read the report you want by clicking on the cards.
 
-  Every successful step will have a report in **Test Reports** page. You can read the report you want by clicking cards.
+![][pipeline_fullreport]  
 
-  ![][pipeline_fullreport]  
+Click the **Test Report** card, you can read the whole unit testing report of this project. It includes the test summary statistics of every test suite, test case, and test step.  
 
+![][pipeline_unitreport]  
 
-  Click the **Test Report** card,you can read the whole unit testing report of this project. It includes
-  test summary statistic of every test suite, test case, test step.  
-
-  ![][pipeline_unitreport]  
-
-  Click the **[Checkstyle report][2]** card to see the result. The same way to read other reports.
-
-
+Click the **[Checkstyle Report][2]** card to see the result. The same way to read other reports.
 
 [pipeline_summary]: ../images/pipeline/pipeline_build_summary.PNG
 [pipeline_report]: ../images/pipeline/pipeline_report.png

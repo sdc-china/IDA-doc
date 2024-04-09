@@ -15,13 +15,13 @@ last_modified_at: 2019-07-29 15:19:00
 
 ## Prerequisite
 
-  Make sure you have installed **Eclipse IDE** and **Maven** in your local environment.
+Make sure you have installed **Eclipse IDE** and **Maven** in your local environment.
 
 ## Java command customization
 
 Import CustomJavaCommand Java project
 
-1. Unzip the file **workspace/custom-java-command.zip** in release package.
+1. Unzip the file **workspace/custom-java-command.zip** in the release package.
 
    ![][test_java_command_zip]
 
@@ -46,16 +46,16 @@ Write custom Java command
 2. Add annotations **@CustomCommand** and **@Parameter** on the class, so that the IDA can recognize the Java command. And add private variables based on the parameter definition.
 
 	**@CustomCommand**
-	*  **name** : The name showing on the test command selection box.
-	*  **verbalization** : The text showing on the test case detail table.
-	*  **description** : The text showing on the add/update command dialog.
-	*  **takeScreenshot** : Indicate whether it will take screenshot after command execution.
+	*  **name**: The name showing on the test command selection box.
+	*  **verbalization**: The text showing on the test case detail table.
+	*  **description**: The text showing on the add/update command dialog.
+	*  **takeScreenshot**: Indicate whether it will take a screenshot after command execution.
 
 	**@Parameter**
-	*  **name** : The name getting the parameter from Java code.
-	*  **displayName** : The name showing on the add/update command dialog.
-	*  **type** : The control type shows on the add/update command dialog. It supports four kinds of types: text, textarea, combo and checkbox.
-   *  **source**: It can be used to configure a list of possible values of the parameter. You can configure a list of possible values of the parameter, separated by comma.
+	*  **name**: The name getting the parameter from Java code.
+	*  **displayName**: The name showing on the add/update command dialog.
+	*  **type**: The control type shows on the add/update command dialog. It supports four kinds of types: text, textarea, combo, and checkbox.
+   *  **source**: It can be used to configure a list of possible values for the parameter. You can configure a list of possible values for the parameter, separated by a comma.
 
 	```
 	import org.slf4j.Logger;
@@ -76,7 +76,7 @@ Write custom Java command
 	}
 	```
 
-3. Extend the Java command from class **com.ibm.cte.sdc.bpm.testing.command.BaseCommand**, and override the constructor method and the method **execute** and **parseArgs** from parent class as below:
+3. Extend the Java command from the class **com.ibm.cte.sdc.bpm.testing.command.BaseCommand**, and override the constructor method and the methods **execute** and **parseArgs** from the parent class as below:
 
 	```
 	  public MyJavaCommand(TestDriver driver) {
@@ -86,7 +86,7 @@ Write custom Java command
 	  @Override
 	  public Map<String, Object> execute(Map<String, Object> args) throws Exception {
 	    if (!parseArgs(args)) {
-	      logger.error("Can not execute MyJavaCommand due to invalid args {}", args);
+	      logger.error("Cannot execute MyJavaCommand due to invalid args {}", args);
 	      this.assertFail("Args invalid", false);
 	    }
 
@@ -108,26 +108,26 @@ Write custom Java command
 	    return valid;
 	  }
 	```
-4. By overriding the **parseArgs** method, you could read the inputs from a **Map** object and assign the value to the pre-defined private variables. You could also add your own validation logic in the method, and it will be returned as  **false** if the arguments is invalid.
+4. By overriding the **parseArgs** method, you could read the inputs from a **Map** object and assign the value to the pre-defined private variables. You could also add your own validation logic in the method, and it will be returned as **false** if the arguments are invalid.
 
-5. By overriding the **execute** method, you could add your own execution content. An example of **execute** method as below:
+5. By overriding the **execute** method, you could add your own execution content. An example of the **execute** method is as follows:
 
 	```
 	  @Override
 	  public Map<String, Object> execute(Map<String, Object> args) throws Exception {
 	    if (!parseArgs(args)) {
-	      logger.error("Can not execute MyJavaCommand due to invalid args {}", args);
+	      logger.error("Cannot execute MyJavaCommand due to invalid args {}", args);
 	      this.assertFail("Args invalid", false);
 	    }
 
-	    // The driver object can handle the Browser UI, eg: open a url
+	    // The driver object can handle the Browser UI, e.g., open a URL
 	    this.driver.open("about:blank");
 
 	    // Invoke BAW Server REST API.
 	    TeamworksAPI client = getTeamworksAPI();
 	    client.getSystemDetails();
 
-	    // Put variable into context, so that the variable can be used in other commands.
+	    // Put a variable into the context, so that the variable can be used in other commands.
 	    // We need to use the variable by the format ${context.JAVA_COMMAND_VARIABLE}
 	    this.result.put("JAVA_COMMAND_VARIABLE", this.value);
 	    // Log
@@ -137,12 +137,12 @@ Write custom Java command
 	  }
 	```
 
-	* **this.driver**: It is the object can handle browser UI.
+	* **this.driver**: It is the object that can handle the browser UI.
 	* **this.getTeamworksAPI()**: This method returns an object that can invoke the BAW server REST API.
-	* **this.result**: The result of the Java command, and the values in the result will pass to the following test commands in a test case.
+	* **this.result**: The result of the Java command, and the values in the result will be passed to the following test commands in a test case.
 
 
-6. Below is a completed example of Java command, you could also find it in the package **com.ibm.cte.sdc.bpm.testing.command.customized.MyJavaCommand**
+6. Below is a completed example of a Java command; you could also find it in the package **com.ibm.cte.sdc.bpm.testing.command.customized.MyJavaCommand**
 
 	```
 	package com.ibm.cte.sdc.bpm.testing.command.customized;
@@ -177,18 +177,18 @@ Write custom Java command
 	  @Override
 	  public Map<String, Object> execute(Map<String, Object> args) throws Exception {
 	    if (!parseArgs(args)) {
-	      logger.error("Can not execute MyJavaCommand due to invalid args {}", args);
+	      logger.error("Cannot execute MyJavaCommand due to invalid args {}", args);
 	      this.assertFail("Args invalid", false);
 	    }
 
-	    // The driver object can handle the Browser UI, eg: open a url
+	    // The driver object can handle the Browser UI, e.g., open a URL
 	    this.driver.open("about:blank");
 
 	    // Invoke BAW Server REST API.
 	    TeamworksAPI client = getTeamworksAPI();
 	    client.getSystemDetails();
 
-	    // Put variable into context, so that the variable can be used in other commands.
+	    // Put a variable into the context, so that the variable can be used in other commands.
 	    // We need to use the variable by the format ${context.JAVA_COMMAND_VARIABLE}
 	    this.result.put("JAVA_COMMAND_VARIABLE", this.value);
 	    // Log
@@ -215,13 +215,13 @@ Write custom Java command
 Unit test custom Java command
 1. Configure **test.properties** under **src/test/resources**.
 
-	* **selenium_hub_url**: It's the selenium grid hub url. If you don't have selenium grid, then you can set up one by the [link][selenium_grid_url].
-	* **selenium_hub_browser**: The browser type, the value could be **iexplore**, **firefox** or **chrome**, please make sure the selenium hub can support the configured browser type.
+	* **selenium_hub_url**: It's the selenium grid hub URL. If you don't have a selenium grid, then you can set up one by the [link][selenium_grid_url].
+	* **selenium_hub_browser**: The browser type, the value could be **iexplore**, **firefox**, or **chrome**, please make sure the selenium hub can support the configured browser type.
 	* **bpm_server_url**: The BAW server URL
-	* **bpm_server_user_name**: The BAW REST call user name
+	* **bpm_server_user_name**: The BAW REST call username
 	* **bpm_server_password**: The BAW REST call password
 
-2. Write unit test class under the source folder **src/test/java**, an example as below:
+2. Write a unit test class under the source folder **src/test/java**, an example is as follows:
 
 	```
 	package com.ibm.cte.sdc.bpm.testing.command.customized;
@@ -268,17 +268,17 @@ Unit test custom Java command
 
 Package custom Java command
 
-1. Once all unit test cases are passed, then you could package the Java command by right clicking the project and choose **Run As** -> **Maven build...**.
+1. Once all unit test cases are passed, then you could package the Java command by right-clicking the project and choosing **Run As** -> **Maven build...**.
 
    ![][test_maven_build]
 
-2. In the Maven build configuration page, enter **package** in the textbox **Goals**, then click **Run** button.
+2. In the Maven build configuration page, enter **package** in the textbox **Goals**, then click the **Run** button.
 
    ![][test_maven_package]
 
-3. You could find the Jar file at the path **target/custom-java-command-1.0.jar**, this is the jar we will upload to IDA application.
+3. You could find the Jar file at the path **target/custom-java-command-1.0.jar**, this is the jar we will upload to the IDA application.
 
-- Notes: If you use any java lib which are not existed in as-is IDA.war/lib folder, you need copy it to lib folder and repack the IDA web so that the customer java command jar could find reference in class loader.
+- Notes: If you use any Java libraries which are not existing in the as-is IDA.war/lib folder, you need to copy them to the lib folder and repack the IDA web archive so that the custom Java command jar could find references in the class loader.
 
 Upload custom Java command in IDA
 
@@ -286,12 +286,12 @@ Upload custom Java command in IDA
 
    ![][test_upload_java_command_1]{:width="100%"}
 
-2. Click **Upload Java Command** button, choose the file **custom-java-command-22.1.8-SNAPSHOT.jar** and upload it.
+2. Click the **Upload Java Command** button, choose the file **custom-java-command-22.1.8-SNAPSHOT.jar** and upload it.
 
    ![][test_upload_java_command_2]{:width="80%"}
    ![][test_upload_java_command_2_2]{:width="60%"}
 
-3. You could see the Java command shows in the table.
+3. You could see the Java command showing in the table.
 
    ![][test_upload_java_command_3]{:width="100%"}
 
@@ -302,7 +302,7 @@ Use custom Java command in IDA test case
 
    ![][test_insert_java_command]{:width="60%"}
 
-2. The parameters defined by Java annotation are also showed on the command dialog. If you have configured the list of possible values of the parameter, you can select from the parameter dropdown list.
+2. The parameters defined by Java annotation are also shown on the command dialog. If you have configured the list of possible values for the parameter, you can select from the parameter dropdown list.
 
    ![][test_java_command_parameter]{:width="60%"}
 

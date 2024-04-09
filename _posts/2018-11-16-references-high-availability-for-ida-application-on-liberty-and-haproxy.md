@@ -1,28 +1,28 @@
 ---
-title: "High availability for IDA application on Liberty and HAProxy"
+title: "High Availability for IDA Application on Liberty and HAProxy"
 category: references
 date: 2018-11-16 15:00:00
 last_modified_at: 2023-10-26 20:20:00
 ---
 
-# High availability for IDA application on Liberty and HAProxy
+# High Availability for IDA Application on Liberty and HAProxy
 
-## Recommended topology 
+## Recommended Topology
 
    ![][liberty-ha-topology]
 
-There are 2 parts for IDA application high availability we need to install and configure, included:
-- *High availability configuring for IDA application on Liberty*
-- *HAProxy setup*
+There are two parts for IDA application high availability that we need to install and configure, including:
+- *High Availability Configuring for IDA Application on Liberty*
+- *HAProxy Setup*
 
-## High availability configuring for IDA application on Liberty
-**prerequisite:** 
-  Already set up share folder on both node servers. For example, /share-folder/ida-data
+## High Availability Configuring for IDA Application on Liberty
+**Prerequisite:** 
+  Already set up a shared folder on both node servers. For example, /share-folder/ida-data
 
-### Step 1: Create a Liberty server
+### Step 1: Create a Liberty Server
 You can create a server from the command line.
 
-* Unzip the liberty installation package. Open a command line, then path to the wlp/bin directory.
+* Unzip the Liberty installation package. Open a command line, then navigate to the wlp/bin directory.
 Where <path_to_liberty> is the location you installed Liberty on your operating system.  
 
 * Run the following command to create a server.
@@ -33,13 +33,13 @@ Where <path_to_liberty> is the location you installed Liberty on your operating 
 
 The 'SERVER_NAME' must use only Unicode alphanumeric (for example, 0-9, a-z, A-Z), underscore (_), dash (-), plus (+), and period (.) characters. The name cannot begin with a dash or period. Your file system, operating system, or compressed file directory might impose more restrictions.
 
-If the server is created successfully, you receive message: Server SERVER_NAME created.
+If the server is created successfully, you will receive the message: Server SERVER_NAME created.
 
 ### Step 2: Configure server.xml
 
-Edit **server.xml** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore* and enable *features ssl,websocket*.
+Edit **server.xml** from the *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your **server.xml** and update *httpPort*, *httpsPort* and *keyStore* and enable *features ssl,websocket*.
 
-IDA Supports JNDI datasource from v3.0.0, You can configure a data source and JDBC provider for database connectivity.
+IDA supports JNDI datasource from v3.0.0. You can configure a data source and JDBC provider for database connectivity.
 
 1\. In the server.xml file, define a shared library that points to the location of your JDBC driver JAR or compressed files.
 For example:
@@ -64,21 +64,21 @@ For example:
 ```
 
 3\. Customize the SSL server key for Liberty
-- Create SSL certificate by *`keytool`* command
+- Create an SSL certificate using the *`keytool`* command
     ```
-    keytool -genkeypair -alias MyLibertyKey -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -dname "cn=<hostname>, o=<organization>, ou=<organizational unit>, c=<coutry>" -validity 365 -storetype PKCS12 -keypass idaAdmin -storepass idaAdmin -keystore <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/resources/security/libertykeystore.p12 -ext san=dns:<hostname>
+    keytool -genkeypair -alias MyLibertyKey -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -dname "cn=<hostname>, o=<organization>, ou=<organizational unit>, c=<country>" -validity 365 -storetype PKCS12 -keypass idaAdmin -storepass idaAdmin -keystore <path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/resources/security/libertykeystore.p12 -ext san=dns:<hostname>
     ```
 
-- configure the keystore in **server.xml**
+- Configure the keystore in **server.xml**
     ```
     <keyStore id="defaultKeyStore" password="idaAdmin" location="${server.config.dir}/resources/security/libertykeystore.p12" />
     ```
 
-**Notes:** copy the generated SSL certificate to all IDA Liberty servers, and configure the keystore.
+**Note:** Copy the generated SSL certificate to all IDA Liberty servers and configure the keystore.
 
 4\. Support for X-Forwarded-* and Forwarded headers
 
-Add below config in **server.xml**, support for X-Forwarded-* and Forwarded headers in Liberty means better integration with front end HTTP load balancers and web servers.
+Add the following configuration in **server.xml**, which supports X-Forwarded-* and Forwarded headers in Liberty for better integration with front-end HTTP load balancers and web servers.
 
 ```
   <httpEndpoint id="defaultHttpEndpoint"
@@ -90,7 +90,7 @@ Add below config in **server.xml**, support for X-Forwarded-* and Forwarded head
 
 **Here is a sample server.xml**
 
-Please update the fields host, httpPort and httpsPort, library and dataSource.  More information about configuring relational database connectivity in Liberty, please refer to [Data Source Configuration](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_dep_configuring_ds.html).
+Please update the fields host, httpPort, httpsPort, library, and dataSource. For more information about configuring relational database connectivity in Liberty, please refer to [Data Source Configuration](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_dep_configuring_ds.html).
 
 For example:
 ```
@@ -114,7 +114,7 @@ For example:
 
     <keyStore id="defaultKeyStore" password="idaAdmin" location="${server.config.dir}/resources/security/libertykeystore.p12" />
 
-    <!-- There's an issue using jdk 8 with TLSv1.3, enable TLSv1.2 as below to work around the issue. -->
+    <!-- There's an issue using JDK 8 with TLSv1.3, enable TLSv1.2 as below to work around the issue. -->
     <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustDefaultCerts="true" sslProtocol="TLSv1.2"/>
 
     <webContainer invokeFlushAfterService="false"/>
@@ -143,12 +143,12 @@ For example:
   <!-- Shared libraries
     https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/cwlp_sharedlibrary.html
     -->
-  <!-- JNDI data source confiduration -->
+  <!-- JNDI data source configuration -->
 
 
   <!-- Define a shared library pointing to the location of the JDBC driver JAR or compressed files. For example:  -->
 
-  <!-- Mysql Example-->
+  <!-- MySQL Example-->
   <library id="MYSQLLib">
       <fileset dir="${shared.config.dir}/lib/global" includes="mysql-connector-java-8.0.18.jar"/>
   </library>
@@ -161,7 +161,7 @@ For example:
                 serverName="<SERVER_NAME>" portNumber="<SERVER_PORT>"
                 user="<USER_NAME>" password="<PASSWORD>"/>
   </dataSource>
-  <!-- Mysql Example End-->
+  <!-- MySQL Example End-->
 
   <!-- DB2 Example-->
   <library id="DB2Lib">
@@ -175,46 +175,59 @@ For example:
                 user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
   </dataSource>
   <!-- DB2 Example End-->
+</server>
+```
 
-  <!-- Oracle Example-->
-  <library id="ORACLELib">
-      <fileset dir="${shared.resource.dir}" includes="ojdbc8-12.2.0.1.jar"/>
-  </library>
-  <dataSource jndiName="jdbc/ida" statementCacheSize="60" id="OracleDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
-    <jdbcDriver libraryRef="ORACLELib"/>
-    <properties.oracle url="${env.DATABASE_URL}"
-          user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
-  </dataSource>
-  <!-- Oracle Example END-->
+```
+password="${env.DATABASE_PASSWORD}"/>
+</dataSource>
+<!-- DB2 Example End-->
+
+<!-- Oracle Example-->
+<library id="ORACLELib">
+    <fileset dir="${shared.resource.dir}" includes="ojdbc8-12.2.0.1.jar"/>
+</library>
+<dataSource jndiName="jdbc/ida" statementCacheSize="60" id="OracleDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
+  <jdbcDriver libraryRef="ORACLELib"/>
+  <properties.oracle url="${env.DATABASE_URL}"
+        user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
+</dataSource>
+<!-- Oracle Example END-->
 
 </server>
 ```
-We found an issue using jdk 8 with TLSv1.3, which can cause very high CPU usage of IDA. To fix the issue, use TLSv1.2 by adding below configuration to server.xml.
+
+We found an issue using JDK 8 with TLSv1.3, which can cause very high CPU usage of IDA. To fix the issue, use TLSv1.2 by adding the following configuration to server.xml.
+
 ```
 <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustDefaultCerts="true" sslProtocol="TLSv1.2"/>
 ```
 
-Liberty supports Advanced Encryption Standard (AES) encryption for passwords that are stored in the server.xml file. In Liberty installation bin folder you can use **securityUtility** command to encrypt your password.
+Liberty supports Advanced Encryption Standard (AES) encryption for passwords that are stored in the server.xml file. In the Liberty installation bin folder, you can use the **securityUtility** command to encrypt your password.
+
 ```
 ./securityUtility encode password
 ```
-More information about encrypt, please refer to [SecurityUtility Command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_command_securityutil.html).
+
+More information about encryption, please refer to [SecurityUtility Command](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/rwlp_command_securityutil.html).
 
 ### Step 3. Configure jvm.options
 
 Create **jvm.options** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>*.
 
-Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
+Set the maximum heap size to 8192m. If the heap size is not big enough, IDA checkstyle may crash with an out-of-memory exception thrown. Increase the heap size and restart the server to fix this issue.
+
 ```
 -Xms512m
 -Xmx8192m
 ```
 
-You might also need to set proxy server, then add the following lines to jvm.options based on your acutal proxy setting.
+You might also need to set a proxy server. Then, add the following lines to jvm.options based on your actual proxy settings.
+
 ```
 -Dhttps.proxyHost=host     
 -Dhttps.proxyPort=port     
--Dhttps=proxyUser=user     
+-Dhttps.proxyUser=user     
 -Dhttps.proxyPassword=your password  
 ```
 
@@ -222,12 +235,14 @@ You might also need to set proxy server, then add the following lines to jvm.opt
 
 Create **server.env** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>*.
 
-Configure IDA data folder to the share folder.
+Configure the IDA data folder to the shared folder.
+
 ```
 ENGINE_CONFIG_DATA_DIR=/share-folder/ida-data
 ```
 
-Enable HA configuration
+Enable HA configuration.
+
 ```
 HAZELCAST_NETWORK_JOIN_TCP_IP_ENABLED=true
 HAZELCAST_NETWORK_JOIN_TCP_IP_MEMBER=<your first liberty server IP>,<your second liberty server IP>
@@ -235,15 +250,16 @@ ORG_QUARTZ_JOBSTORE_DATASOURCE_ENABLED=true
 ```
 
 Additional environment variable for PostgreSQL DB only in HA mode.
+
 ```
 ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS=org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
 ```
 
-### Step 5. Copy the ida-web.war to apps directory
+### Step 5. Copy the ida-web.war to the apps directory
 
 Copy the ida-web.war to *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps* directory.
 
-### Step 6. Start liberty server
+### Step 6. Start the liberty server
 
 ```
 <path_to_liberty>/wlp/bin/server start SERVER_NAME
@@ -274,7 +290,9 @@ systemctl restart haproxy
 ```
 
 ### Step 3. Create haproxy.cfg
-Add config file to /etc/haproxy/haproxy.cfg, and change the node IP and port to your IDA nodes.
+
+Add the config file to /etc/haproxy/haproxy.cfg, and change the node IP and port to your IDA nodes.
+
 ```
 global
     log         127.0.0.1 local2
@@ -324,5 +342,4 @@ backend ida-be-https
     server ida02 <your second node IP>:<port> check
 ```
 
-
- [liberty-ha-topology]: ../images/references/liberty-ha-topology.png
+[liberty-ha-topology]: ../images/references/liberty-ha-topology.png

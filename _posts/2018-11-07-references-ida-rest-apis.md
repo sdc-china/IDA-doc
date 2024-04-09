@@ -174,9 +174,9 @@ Start a pipeline build by pipeline id or name. Specify either pipeline id or nam
 
 | Name | Required                        | Description        |
 |----------------|------------|--------------|
-| `pipelineId`   | No          | Pipeline id. <br>You could get the pipeline id from the [Get Pipeline List REST API](#get-pipeline-list). |
+| `pipelineId`   | No          | Pipeline ID. <br>You could get the pipeline ID from the [Get Pipeline List REST API](#get-pipeline-list). |
 | `pipelineName` | No          | Pipeline name. <br>You could get the pipeline name from the [Get Pipeline List REST API](#get-pipeline-list). |
-| `pipelineRestInput`   | No          |  Parameter used to overwrite some pipeline definition, for example: <br>**container:** the acronym of a process application/toolkit used to trigger a build.<br>**snapshotAcronym:** the snapshot acronym of the process app/toolkit.<br>**branchName:** the track name of the process app/toolkit. <br>Either snapshotAcronym or branchName can be specified. If branchName is specified, the latest snapshot on that branch will be used to start the build. If no **container**/**snapshotAcronym**/**branchName**, the snapshot configured in pipeline definition will be used to start the build.<br>**installFileName:**the Workflow installation package file name to be deployed.<br><br>For a Snapshot step, **namingConvention** can be overwritten.<br>For a Checkstyle step, all checkstyle options e.g. **tip**, **healthScoreThreshold**, **warningsThreshold**, **ignoreDocCheck**, **ignoreJsCheck**, **ignoreToolkitsCheck**, **haltOnFailure** can be overwritten.<br>For a Test step, **tip** and **testProjectId** can be overwritten. Specify a test project id of the triggering process app/toolkit.|
+| `pipelineRestInput`   | No          |  Parameter used to overwrite some pipeline definition, for example: <br>**container:** the acronym of a process application/toolkit used to trigger a build.<br>**snapshotAcronym:** the snapshot acronym of the process app/toolkit.<br>**branchName:** the track name of the process app/toolkit. <br>Either snapshotAcronym or branchName can be specified. If branchName is specified, the latest snapshot on that branch will be used to start the build. If no **container**/**snapshotAcronym**/**branchName**, the snapshot configured in the pipeline definition will be used to start the build.<br>**installFileName:** the Workflow installation package file name to be deployed.<br><br>For a Snapshot step, **namingConvention** can be overwritten.<br>For a Checkstyle step, all Checkstyle options e.g. **tip**, **healthScoreThreshold**, **warningsThreshold**, **ignoreDocCheck**, **ignoreJsCheck**, **ignoreToolkitsCheck**, **haltOnFailure** can be overwritten.<br>For a Test step, **tip** and **testProjectId** can be overwritten. Specify a test project ID of the triggering process app/toolkit.|
 
 **Example:**
 
@@ -202,7 +202,7 @@ Response
 
 ### **Operate On Pipeline Build**
 ___
-Operate on a pipeline build by build id.
+Operate on a pipeline build by build ID.
 
 **URL:**
 
@@ -217,7 +217,7 @@ Operate on a pipeline build by build id.
 
 | Name | Required                        | Description        |
 |----------------|------------|--------------|
-| `buildId`   | Yes          | Build id. <br>You could get the build id from the reponse of the [Trigger Pipeline Build REST API](#trigger-pipeline-build). |
+| `buildId`   | Yes          | Build ID. <br>You could get the build ID from the response of the [Trigger Pipeline Build REST API](#trigger-pipeline-build). |
 | `action`   | Yes          | Supported actions: approve, reject.|
 
 **Example:**
@@ -237,7 +237,7 @@ Response
 
 ### **Get Pipeline Build Status**
 ___
-Get a pipeline build status by build id.
+Get a pipeline build status by build ID.
 
 **URL:**
 
@@ -252,7 +252,7 @@ Get a pipeline build status by build id.
 
 | Name | Required                        | Description        |
 |----------------|------------|--------------|
-| `buildId`   | Yes          | Build id. <br>You could get the build id from the reponse of the [Trigger Pipeline Build REST API](#trigger-pipeline-build). |
+| `buildId`   | Yes          | Build ID. <br>You could get the build ID from the response of the [Trigger Pipeline Build REST API](#trigger-pipeline-build). |
 | `parts`   | No          | Specify value "all" to get detailed build status including detailed build logs and test case results.|
 
 
@@ -554,21 +554,21 @@ Response
 ```
 
 ### Response Status
-The [Trigger Pipeline Build](#trigger-pipeline-build) and [Get Pipeline Build Status](#get-pipeline-build-status) REST APIs' response will be returned with one of the following status:
+The [Trigger Pipeline Build](#trigger-pipeline-build) and [Get Pipeline Build Status](#get-pipeline-build-status) REST APIs' response will be returned with one of the following statuses:
 
 **Build Status:**
 * `Running` The pipeline build is running.
-* `Failed` There was a problem with pipeline build (step failed, etc.).
+* `Failed` There was a problem with the pipeline build (step failed, etc.).
 * `Success` The pipeline build was successful.
-* `Partial Success` The pipeline build was partially successful. Some steps were failed but they were configured with unchecked Halt On Failure option.
+* `Partial Success` The pipeline build was partially successful. Some steps failed, but they were configured with the Halt On Failure option unchecked.
 * `Pending` The pipeline build was pending.
 
 
 **Other Status:**
-* `unauthorized` The REST API caller does not have permission to access the requested resource
-* `pipeline not found` An attempt was made to access a pipeline that does not exist
-* `build not found` An attempt was made to access a build that does not exist
-* `ERROR` Error occured during the REST API call
+* `unauthorized` The REST API caller does not have permission to access the requested resource.
+* `pipeline not found` An attempt was made to access a pipeline that does not exist.
+* `build not found` An attempt was made to access a build that does not exist.
+* `ERROR` An error occurred during the REST API call.
 
 
-[swagger_ui]: ../images/references/swagger_ui.png 
+[swagger_ui]: ../images/references/swagger_ui.png

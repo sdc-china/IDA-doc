@@ -1,15 +1,15 @@
 ---
-title: "Setup Selenium Grid on Redhat"
+title: "Setup Selenium Grid on RedHat"
 category: references
 date: 2018-11-23 15:39:00
 last_modified_at: 2020-10-27 15:39:00
 ---
 
-# Setup Selenium Grid on Redhat
+# Setup Selenium Grid on RedHat
 
 ## Install Latest Firefox
 
-Please note that the old version firefox installed on Redhat may not support headless well, so we'd better to install the latest firefox.
+Please note that the old version of Firefox installed on RedHat may not support headless well, so we'd better install the latest Firefox.
 
 ```
 sudo yum remove firefox
@@ -33,7 +33,7 @@ yum -y localinstall google-chrome-stable_current_x86_64.rpm
 google-chrome --version
 ```
 
-## Setup Selenium Grid server
+## Setup Selenium Grid Server
 
 ### Download Selenium Grid JAR
 
@@ -107,13 +107,13 @@ java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig
 
 ### Create startnode.sh
 
-Please note that the argument **-Dwebdriver.chrome.whitelistedIps=** is added in the command line, that allows chrome driver to assign port for webdriver.
+Please note that the argument **-Dwebdriver.chrome.whitelistedIps=** is added in the command line, that allows the Chrome driver to assign a port for the WebDriver.
 
 ```
 java -Dwebdriver.chrome.whitelistedIps= -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
 ```
 
-### Download Firefox and Chrome webdriver
+### Download Firefox and Chrome WebDriver
 
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-linux64.tar.gz
@@ -125,7 +125,7 @@ unzip chromedriver_linux64.zip
 chmod +x chromedriver
 ```
 
-### Start Selenium Grid Server in background
+### Start Selenium Grid Server in Background
 
 ```
 chmod +x starthub.sh
@@ -142,7 +142,7 @@ kill -9 $(ps -aux|grep hubconfig.json | grep -v grep| awk '{print $2}')
 kill -9 $(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print $2}')
 ```
 
-## Configure Selenium Grid on IDA and enable headless mode.
+## Configure Selenium Grid on IDA and Enable Headless Mode
 
 ### Firefox Selenium Grid Configuration
 
@@ -150,7 +150,7 @@ kill -9 $(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print $2}')
 ## Supports Firefox and Chrome
 arguments:
 - "--headless"
-## Change windows szie
+## Change window size
 - "window-size=1920,1080"
 ```
 
@@ -158,14 +158,14 @@ arguments:
 
 ### Chrome Selenium Grid Configuration
 
-Please note that the argument **--no-sandbox** is added for chrome, which allows to run chrome by root user.
+Please note that the argument **--no-sandbox** is added for Chrome, which allows running Chrome by the root user.
 
 ```
 ## Supports Firefox and Chrome
 arguments:
 - "--headless"
 - "--no-sandbox"
-## Change windows szie
+## Change window size
 - "window-size=1920,1080"
 ```
 
