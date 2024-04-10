@@ -116,9 +116,16 @@ If you use the Openshift, you can get the Ingress Host from the console Url:
 
 ![][administrator_k8s_ocp_ingress_host]{:width="100%"}
 
-The steps to create service account and get token:
+The commands to get ingress host, server url and token:
 
 ``` 
+# Command to get ingress host
+oc get ingresses.config cluster --output jsonpath={.spec.domain}
+
+# Command to get server url
+oc config view --minify -o jsonpath='{.clusters[*].cluster.server}'
+
+# Commands to get user token
 oc new-project selenium-demo
 oc create sa ida-selenium-sa
 oc adm policy add-role-to-user admin -z ida-selenium-sa
