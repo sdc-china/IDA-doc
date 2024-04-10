@@ -1,4 +1,3 @@
-
 ---
 title: "Write a JavaScript Command"
 category: test

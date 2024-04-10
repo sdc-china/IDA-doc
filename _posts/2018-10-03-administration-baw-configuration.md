@@ -1,4 +1,3 @@
-
 ---
 title: "BAW Configuration"
 category: administration

@@ -1,4 +1,3 @@
-
 ---
 title: "Database Installation and Configuration"
 category: installation

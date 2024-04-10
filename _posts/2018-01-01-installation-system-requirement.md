@@ -1,9 +1,12 @@
-Title: "System Requirements"
-Category: installation
-Date: 2018-01-01 15:17:55
-Last_Modified_At: 2023-12-27 13:35:00
+---
+title: "System Requirement"
+category: installation
+date: 2018-01-01 15:17:55
+last_modified_at: 2023-12-27 13:35:00
+---
 
 # System Requirements
+***
 
 ## Supported Platforms
 

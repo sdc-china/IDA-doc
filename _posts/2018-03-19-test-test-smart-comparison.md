@@ -1,5 +1,3 @@
-Here's the revised content with corrected spelling and grammar errors, while maintaining the original meaning, structure, and markdown syntax:
-
 ---
 title: "Test Smart Comparison"
 category: test
