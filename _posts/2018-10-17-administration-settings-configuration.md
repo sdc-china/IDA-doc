@@ -106,16 +106,6 @@ Here is a sample:
 
 ![][administrator_k8s_setting_sample]{:width="100%"}
 
-If you use the Openshift, you can get the Server Url throw command:
-
-``` 
-oc whoami --show-server
-``` 
-
-If you use the Openshift, you can get the Ingress Host from the console Url:
-
-![][administrator_k8s_ocp_ingress_host]{:width="100%"}
-
 The commands to get ingress host, server url and token:
 
 ``` 
@@ -123,7 +113,7 @@ The commands to get ingress host, server url and token:
 oc get ingresses.config cluster --output jsonpath={.spec.domain}
 
 # Command to get server url
-oc config view --minify -o jsonpath='{.clusters[*].cluster.server}'
+oc whoami --show-server
 
 # Commands to get user token
 oc new-project selenium-demo
@@ -138,7 +128,6 @@ echo $TOKEN
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
-[administrator_k8s_ocp_ingress_host]: ../images/administrator/administrator_k8s_ocp_ingress_host.png
 [General]: ../images/administrator/General.png
 [Test]: ../images/administrator/Test.png
 [Pipeline]: ../images/administrator/Pipeline.png
