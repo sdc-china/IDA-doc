@@ -5,7 +5,7 @@ date: 2018-11-09 15:17:56
 last_modified_at: 2021-12-10 21:34:00
 ---
 
-# Repacking IDA v3.x Application
+# Repacking IDA Application (v3.x, v2.x)
 ***
 
 ## Properties Configuration
