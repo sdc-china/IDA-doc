@@ -14,7 +14,7 @@ main:
 docs:
   - title: Installation
     children:
-      - title: "System Requirement"
+      - title: "System Requirements"
         url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
         url: /installation/installation-database-installation-and-configuration.html
@@ -54,7 +54,7 @@ docs:
         url: /test/test-group-command-management.html
       - title: "Record and Replay a Test Case"
         url: /test/test-record-and-replay-a-test-case.html
-      - title: "Write a Javascript Command"
+      - title: "Write a JavaScript Command"
         url: /test/test-write-javascript-command.html
       - title: "Write a Java Command"
         url: /test/test-write-java-command.html
@@ -98,11 +98,11 @@ docs:
 
   - title: Analyzer
     children:
-      - title: "Analyze Workflow Projects with Analyzer Statistic"
+      - title: "Analyze Workflow Projects with Analyzer Statistics"
         url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-statistic.html
       - title: "Analyze Workflow Projects with Analyzer Toolkit References"
         url: /analyzer/analyzer-analyze-workflow-projects-with-analyzer-toolkit-references.html
-      - title: "Analyzer - Statistic Report"
+      - title: "Analyzer - Statistical Report"
         url: /analyzer/analyzer-statistic-report.html
       - title: "Analyzer - Toolkit References Report"
         url: /analyzer/analyzer-toolkit-references-report.html
@@ -139,7 +139,7 @@ docs:
 
   - title: Administration
     children:
-      - title: "Users Management"
+      - title: "User Management"
         url: /administration/administration-users-management.html
       - title: "BAW Configuration"
         url: /administration/administration-baw-configuration.html
@@ -166,11 +166,11 @@ docs:
         url: /references/references-architecture.html
       - title: "Test Commands"
         url: /references/references-test-command.html
-      - title: "Javascript API"
+      - title: "JavaScript API"
         url: /references/references-javascript-api.html
       - title: "IDA REST APIs"
         url: /references/references-ida-rest-apis.html
-      - title: "Repacking IDA Application(v3.x, v2.x)"
+      - title: "Repacking IDA Application (v3.x, v2.x)"
         url: /references/references-repacking-ida-application-early-version.html
       - title: "Installing IDA Application(v3.x, v2.x)"
         url: /references/references-installing-ida-application-early-version.html
@@ -180,7 +180,7 @@ docs:
         url: /references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html
       - title: "High availability for IDA application on WAS and IHS"
         url: /references/references-high-availability-for-ida-application-on-was-and-ihs.html
-      - title: "High availability for IDA application on Liberty and HAProxy"
+      - title: "High Availability for IDA Application on Liberty and HAProxy"
         url: /references/references-high-availability-for-ida-application-on-liberty-and-haproxy.html
       - title: "Samples"
         url: /references/references-samples.html
@@ -188,7 +188,7 @@ docs:
         url: /references/references-best-practices.html
       - title: "Demos"
         url: /references/references-demos.html
-      - title: "Setup Selenium Grid on Redhat"
+      - title: "Setup Selenium Grid on RedHat"
         url: /references/references-setup-selenium-grid-on-redhat.html
       - title: "Operations"
         url: /references/references-operations.html
@@ -199,7 +199,7 @@ docs:
 
   - title: "Trouble Shooting"
     children:
-      - title: "Known Limitation"
+      - title: "Known Limitations"
         url: /troubleshooting/troubleshooting-known-limitation.html
       - title: "Frequently Asked Questions"
         url: /troubleshooting/troubleshooting-frequently-asked-questions.html
