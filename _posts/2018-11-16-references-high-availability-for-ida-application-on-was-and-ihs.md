@@ -1,20 +1,20 @@
 ---
-title: "High availability for IDA application on WAS and IBM HTTP Server"
+title: "High Availability for IDA Application on WAS and IBM HTTP Server"
 category: references
 date: 2018-11-16 15:00:00
 last_modified_at: 2023-10-26 11:20:00
 ---
 
-# High availability for IDA application on WAS and IBM HTTP Server
+# High Availability for IDA Application on WAS and IBM HTTP Server
 ## Recommended topology 
 
   ![][was-ha-topology]
 
 There are 2 parts for IDA application high availability we need to install and configure, including:
-- *High availability configuring for IDA application on WAS*
+- *High Availability configuring for IDA application on WAS*
 - *HTTP Server setup*
 
-## High availability configuring for IDA application on WAS V9
+## High Availability configuring for IDA Application on WAS V9
 
 **Prerequisite:** 
   Already set up a shared folder (e.g., NFS, NAS, etc.) on both node servers, e.g., /share-folder/ida-data

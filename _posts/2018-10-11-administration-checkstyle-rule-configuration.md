@@ -1,5 +1,5 @@
 ---
-title: "Checkstyle Rule Configuration"
+title: "Checkstyle Rules Configuration"
 category: administration
 date: 2018-10-11 15:17:55
 last_modified_at: 2022-07-01 16:21:00
