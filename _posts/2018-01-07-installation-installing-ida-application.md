@@ -40,7 +40,7 @@ If the server is created successfully, you receive message: Server SERVER_NAME c
 
 **2. Configure server.xml**  
 
-Edit **server.xml** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl,websocket*.
+Edit **server.xml** from *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl, websocket*.
 
 
 IDA Supports JNDI datasource, You can configure a data source and JDBC provider for database connectivity.
@@ -220,7 +220,7 @@ Refer to [Database connections with TLS](https://openliberty.io/blog/2021/06/04/
 
 **3. Configure jvm.options**
 
-Create **jvm.options** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* directory.
+Create **jvm.options** from *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>* directory.
 
 Set the maximum heap size to 8192m, If the heap size is not big enough, IDA checkstyle may crash with out-of-memory exception throwed, increase the heap size and restart server can fix this issue.
 
@@ -239,9 +239,9 @@ You might also need to set proxy server, then add the following lines to **jvm.o
 
 **4. Configure server.env (Optinal)**
 
-Create **server.env** from *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* directory.
+Create **server.env** from *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>* directory.
 
-The default IDA data folder is **/var/ida/data**. If the default value is not applicable, then add the following environment variable to **server.env** for your IDA data folder:
+The default IDA data folder is **/var/ida/data**. If the default value is not writable or not applicable, then add the following environment variable to **server.env** for your IDA data folder:
 
 ```
 ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
@@ -249,7 +249,7 @@ ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
 
 **5. Copy the ida-web.war to apps directory**
 
-Copy the **ida-web.war** to *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps* directory.
+Copy the **ida-web.war** to *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>/apps* directory.
 
 **6. Start liberty server**
 
@@ -294,7 +294,7 @@ IDA uses Spring Boot websocket feature, which is not supported by WebSphere v8.5
 
 **Setting environment entries on WAS Console (Optional)**
 
-The default IDA data folder is **/var/ida/data**. If the default value is not applicable, then follow the below steps to change the IDA data folder:
+The default IDA data folder is **/var/ida/data**. If the default value is not writable or not applicable, then follow the below steps to change the IDA data folder:
 
 1. In left navigation bar, click the **Servers >  Server Types > WebSphere application servers > server_name > Java and Process Management > Process Definition > Environment Entries > New**
 
