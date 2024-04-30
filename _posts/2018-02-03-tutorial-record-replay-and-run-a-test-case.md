@@ -54,7 +54,7 @@ To set up assignees for case steps:
 
    ![][test_case_step_edit_button]{:width="80%"}
 
-5. Select **celladmin** in the **Assignee** field in order to specify other Workflow users to help you complete the business process. Click the **Save** button to finish editing this case step.
+5. Select **celladmin** in the **Assignee** field in order to specify other Workflow users to help you complete the business process. Click the **Save** button to finish editing this case step.\
    ![][assign_bpm_user]{: width="60%"}
 
 6. Click the **Exit Edit** button on the right top of this page to finish editing the test case.
