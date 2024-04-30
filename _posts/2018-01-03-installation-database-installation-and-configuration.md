@@ -35,7 +35,7 @@ db2 connect reset
 **Notes**:
 - You will want to change the [IDA_HOME]/sql/data-db2.sql script so that the organization matches your company's name. Please replace 'IDA' with your company name. The default IDA login name and password are "idaAdmin/idaAdmin".
 
-**Download DB2 Driver**
+**Download DB2 Driver**\
 You can download the [JDBC driver for DB2 based on your DB2 version](https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads)
 
 ## Install and Configure PostgreSQL DB
@@ -63,7 +63,7 @@ ida=# \i 'yoursqlpath/data-postgres.sql'
 **Notes**:
 - You will want to change the [IDA_HOME]/sql/data-postgres.sql script so that the organization matches your company's name. Please replace 'IDA' with your company name. The default IDA login name and password are "idaAdmin/idaAdmin".
 
-**Download PostgreSQL Driver**
+**Download PostgreSQL Driver**\
 You can download the [JDBC for PostgreSQL v42.2.8](https://jdbc.postgresql.org/download/postgresql-42.2.8.jar).
 
 ## Install and Configure MySQL DB
@@ -98,7 +98,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 **Notes**:
 - You will want to change the [IDA_HOME]/sql/data-mysql.sql script so that the organization matches your company's name. Please replace 'IDA' with your company name. The default IDA login name and password are "idaAdmin/idaAdmin".
 
-**Download MySQL Driver**
+**Download MySQL Driver**\
 You can download the [JDBC for mysql v5.1.44](https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar).
 
 ## Install and Configure Oracle
@@ -137,7 +137,7 @@ You can use DBeaver to verify that the database tables are created and populated
 **Notes**:
 - You will want to change the [IDA_HOME]/sql/data-oracle.sql script so that the organization matches your company's name. Please replace 'IDA' with your company name. The default IDA login name and password are "idaAdmin/idaAdmin".
 
-**Download Oracle Driver**
+**Download Oracle Driver**\
 You can download the [Oracle Database 12.2.0.1 JDBC Driver](https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html) or the [Oracle Database 19c JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html)
 
 [db2]: ../images/install/dbtable.png
