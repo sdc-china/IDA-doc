@@ -27,8 +27,8 @@ Compared to the previous version, the new version of IDA will have some changes 
 
 1. Download the lastest IDA installation file. The migration scripts come from the installation file. The file name is ida-web-xxx.zip.(xxx is the IDA version)
 2. Stop Libery server.  
-3. Stop MySQL server.  
-4. Backup the MySQL database.  
+3. Stop database server.  
+4. Backup the database.  
 
 ## Step 1: Update IDA.war
 
