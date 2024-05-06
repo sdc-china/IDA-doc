@@ -139,7 +139,7 @@ docs:
 
   - title: Administration
     children:
-      - title: "User Management"
+      - title: "Users Management"
         url: /administration/administration-users-management.html
       - title: "BAW Configuration"
         url: /administration/administration-baw-configuration.html

@@ -126,6 +126,7 @@ IDA only supports deploying applications from a Workflow PC server to a PC serve
     ![][p2p_deployment]{:width="60%"}
 
  6. Click the "Save" button, and then you could use the pipeline to make a deployment from the PC server to the PC server.
+
   [pipeline_create]: ../images/pipeline/pipeline_create.png
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
   [pipeline_import_stage]: ../images/pipeline/pipeline_import_stage.png
