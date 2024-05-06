@@ -38,7 +38,7 @@ Snapshot Naming Pattern | This pattern will be used to create a snapshot for an 
 	 Track                 |The branches of the selected process app or toolkit. Multiple selections allowed. Will load snapshots of the selected branches.
 	 Start Date            |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
 	 End Date              |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
-	 Include Unnamed Snapshots|Tick it to load unnamed snapshots. 
+	 Include Unnamed Snapshots|Tip it to load unnamed snapshots. 
 	 
 	 ![][snapshot-comparison-merge-form]
 	 

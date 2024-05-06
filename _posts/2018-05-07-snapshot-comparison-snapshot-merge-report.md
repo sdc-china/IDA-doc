@@ -81,7 +81,7 @@ Click the ![][merge-report-artifact-report-push]{:width="10%"} button, and an al
 
 ![][merge-report-artifact-report-push-alert]{:width="60%"}
 
-After pushing successfully, the ![][merge-report-artifact-report-revert]{:width="10%"} button will show. Click the ![][merge-report-artifact-report-revert]{:width="10%"} button, and an alert window will show as below. Click **OK**, and all the changes will be reverted.
+After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="10%"} button will show. Click the ![][merge-report-artifact-report-revert]{:width="10%"} button, and an alert window will show as below. Click **OK**, and all the changes will be reverted.
 
 ![][merge-report-artifact-report-revert-alert]{:width="60%"}
 
