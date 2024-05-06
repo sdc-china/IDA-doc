@@ -39,7 +39,7 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
     ![][checkstyle_override_step_two]
 
-3. In Rule Designer, copy the rule **check-app-with-too-many-bpd** from the CheckstyleRulesCore rule project to the checksOverride rule package in the CheckstyleRulesCustomized rule project.
+3. In Rule Designer, copy the rule **check-app-with-too-many-bpd** from rule project CheckstyleRulesCore to rule package checksOverride in rule project CheckstyleRulesCustomized.
 
     ![][checkstyle_override_step_three]
 
@@ -62,13 +62,13 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
 #### Write custom checkstyle rules
 
-  To write customized checkstyle rules, put the new rules in the **customized** rule package in the CheckstyleRulesCustomized rule project. Create artifact-based rule packages if necessary.
+  To write customized checkstyle rules, put the new rules in rule package **customized** in rule project **CheckstyleRulesCustomized**. Create artifact-based rule package if necessary.
 
   ![][checkstyle_custom_rules]
 
   Take writing a customized checkstyle rule **check-service-name-contain-test** as an example:
 
-  1. Add a new rule **check-service-name-contain-test** that will check if a Workflow service name contains the word "test" (case-insensitive) in the **customized** package of the CheckstyleRulesCustomized rule project.
+  1. Add a new rule **check-service-name-contain-test** that will check if a Workflow service name contains test into in package **customized** in rule project **CheckstyleRulesCustomized**.
 
      ![][checkstyle_custom_rules_step_one]{:width="40%"}
 
@@ -124,6 +124,7 @@ Folder | Description
      ![][checkstyle_embedded_custom_settings_upload]
      
   5. Click the **Save** button in Settings to save the configuration and rerun Checkstyle.
+
  [checkstyle_rule_project_relation]: ../images/checkstyle/checkstyle_rule_project_relation.png
  [checkstyle_override_step_one]: ../images/checkstyle/checkstyle_override_step_one.png
  [checkstyle_override_step_two]: ../images/checkstyle/checkstyle_override_step_two.png
