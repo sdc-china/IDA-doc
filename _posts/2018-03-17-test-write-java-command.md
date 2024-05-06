@@ -278,7 +278,7 @@ Package custom Java command
 
 3. You could find the Jar file at the path **target/custom-java-command-1.0.jar**, this is the jar we will upload to the IDA application.
 
-- Notes: If you use any Java libraries which are not existing in the as-is IDA.war/lib folder, you need to copy them to the lib folder and repack the IDA web archive so that the custom Java command jar could find references in the class loader.
+- Notes: If you use any Java libraries which are not existing in the as-is IDA.war/lib folder, you need to copy them to the lib folder and repack the IDA web so that the custom Java command jar could find references in the class loader.
 
 Upload custom Java command in IDA
 
