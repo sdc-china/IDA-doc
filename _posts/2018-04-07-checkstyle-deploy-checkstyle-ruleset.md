@@ -10,7 +10,7 @@ last_modified_at: 2019-07-29 15:30:00
 
 ## Software Prerequisites
 
-* [IBM Operational Decision Manager](https://www.ibm.com/us-en/marketplace/operational-decision-manager)
+* [IBM Operational Decision Manager](https://www.ibm.com/products/operational-decision-manager?mhsrc=ibmsearch_a&mhq=IBM%20Operational%20Decision%20Manager)
 
 ## Deploy ruleset to IBM Operational Decision Manager Decision Server
 
