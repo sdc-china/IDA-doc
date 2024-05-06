@@ -135,7 +135,7 @@ You can add a group command when you want to add some steps that belong to this 
 
 In some scenarios, IDA Users want to execute a group command only when it meets specific conditions. Now, IDA supports adding an IF Command to a group command, and the group command will be executed if the IF Command result is TRUE. The IF Command is a custom JavaScript command. Let's go through it step by step:
 
-1. Create a custom JavaScript command named 'Custom Condition'.
+1.Create a custom JavaScript command named 'Custom Condition'.
 
 Please refer to [How to create a custom JavaScript command?][3]
 
@@ -164,18 +164,18 @@ Here is the sample HTML page:
 
 ![][add_if_command_html]
 
-2. Right-click the group command and click **Edit**, Users could add an **IF Command** to a group command from the modal.
+2.Right-click the group command and click **Edit**, Users could add an **IF Command** to a group command from the modal.
 
 ![][add_if_command]
 
 ## Use a Group Command in Other Test Projects within a Team
 If a group command is created in a test project with a specific team scope, then this group command can be used in any test projects created by or accessible to a team member.
 
-1. Add the group command in a test project with a specific team scope visibility.
+1.Add the group command in a test project with a specific team scope visibility.
 
 ![][add_group_command_in_team_project]{:width="60%"}
 
-2. In other test projects created by a team member or visible to the team member within a team, the team member can find and use the group command.
+2.In other test projects created by a team member or visible to the team member within a team, the team member can find and use the group command.
 
 ![][use_group_command_in_team_project]{:width="60%"}
 
