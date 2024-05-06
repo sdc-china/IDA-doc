@@ -66,7 +66,7 @@ The changes of each coach control are listed in separate sub-panels under the Hu
 
 ![][snapshot-comparison-coach-changes]
 
-The sub-panel title specifies the location of a coach control. For example, in this case, the coach control labeled Position Request inside the coach name Create Position Request is changed.
+The sub-panel title specifies the location of a coach control. For example, in this case, the coach control labeled Position Request inside the coach name "Create position request" is changed.
 
 ![][snapshot-comparison-coach-control-changes]
 

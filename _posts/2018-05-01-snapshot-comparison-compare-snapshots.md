@@ -22,7 +22,7 @@ Snapshot Comparison allows users to compare two snapshots inside one trace of a 
 	 Track                 |The branches of the selected process app or toolkit. Multiple selections allowed. Will load snapshots of the selected branches.
 	 Start Date            |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
 	 End Date              |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
-	 Include Unnamed Snapshots|Tick it to load unnamed snapshots. 
+	 Include Unnamed Snapshots|Tip it to load unnamed snapshots. 
 	 
 	 ![][snapshot-comparison-form]
 	 
