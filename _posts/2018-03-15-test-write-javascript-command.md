@@ -10,17 +10,17 @@ last_modified_at: 2021-05-06 11:48:00
 
 ## Create a JavaScript command
 
-1. Navigate to **Custom Command** in the left-side menu bar, click the + button to generate a new command group.
+1. Navigate to **Custom Command** in the left-side menu bar, click the + button to generate a group command.
 
    ![][test_js_command]
 
 2. Enter the JavaScript command information.
 
-   **Note:** The scope field has two options: private means the command can be used only in the current project, and public means the command can be used in other projects. By default, the value is private. You can input the {Parameters.XXX} as a variable. The parameter is defined in this JavaScript. XXX is the parameter key name you defined in this custom JavaScript.
+   **Note:** The scope field has two options: private means the command can be used only in the current project, and public means the command can be used in other projects. By default, the value is private. You can input the {Parameters.XXX} as a verbalization. The parameter is defined in this JavaScript. XXX is the parameter key name you defined in this custom JavaScript.
 
    ![][test_js_command_info]{:width="60%"}
 
-3. Define the JavaScript command parameter. You can refer to these parameters' values through variables.
+3. Define the JavaScript command parameter. You can refer to these parameters' values through verbalization.
 For example: {Parameters.myKey}. You can configure a list of possible values for the parameter, separated by commas.
 
    ![][test_js_command_parameter]{:width="80%"}
@@ -40,7 +40,7 @@ For example: {Parameters.myKey}. You can configure a list of possible values for
    ![][test_js_commandlist]
 
 
-7. Refer to [JavaScript API Reference](../references/references-javascript-api.html) for out-of-the-box
+7. Refer to [JavaScript API Reference](../references/references-javascript-api.html) for OOTB
 JavaScript functions   
 
 ## JavaScript Command sample
@@ -100,7 +100,7 @@ return bta.util.callback();
   In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the test case to fail.
 
   Solution:
-  Add a customized JavaScript which waits for the request to complete as a post-script and insert it after the case steps that trigger the request.
+  Add a customized JavaScript which waits for the request to complete as a post script and insert it after the case steps that trigger the request.
 
 Here are the steps:
 1. The Post Script function is disabled by default, and the user should enable it in the project configuration.
@@ -113,13 +113,13 @@ Here are the steps:
 
 2. Create Post Custom Command:
 
-   Global level: Create a JavaScript command named `ida_post_script` in **Administration -> Custom Command**. Then the post-script toggle will be shown in the case step edit table. It will allow all projects in your system to insert a post-script after UI/JavaScript commands.
+   Global level: Create a JavaScript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will be shown in the case step edit table. It will allow all projects in your system to insert a post script after UI/JavaScript commands.
 
-   Project level: Create a JavaScript command named `ida_post_script` in one project. Then the post-script toggle will be shown in the case step edit table of this project. It will allow this project to insert a post-script after UI/JavaScript commands. It will overwrite the global level post-script.
+   Project level: Create a JavaScript command named `ida_post_script` in one project. Then the post script toggle will be shown in the case step edit table of this project. It will allow this project to insert a post script after UI/JavaScript commands. It will overwrite the global level post script.
 
-   Test Case level: Create a JavaScript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post-script toggle will be shown in the case step edit table of this test case. It will allow this test case to insert a post-script after UI/JavaScript commands. It will overwrite the global level and project level post-scripts.
+   Test Case level: Create a JavaScript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post script toggle will be shown in the case step edit table of this test case. It will allow this test case to insert a post script after UI/JavaScript commands. It will overwrite the global level and project level post scripts.
 
-   Default post-script:
+   Default post script:
 
    ```
 	console.log("Start to run post script!");
@@ -155,7 +155,7 @@ Here are the steps:
 
    ![][test_post_script_sampleUI]
 
-   You can also change the post-script to meet your needs. It will run JavaScript after every command you apply for ida_post_script.
+   You can also change the post script to meet your needs. It will run JavaScript after every command you apply for ida_post_script.
    When you replay the test case, you can open the web console to debug your test case. For example:
 
    ```
@@ -164,11 +164,11 @@ Here are the steps:
     ```
 3. Insert Post Script to Case Step
 
-   If you have created any level of the post-script, then the layout of the case step table will be:
+   If you have created any level of the post script, then the layout of the case step table will be:
 
    ![][test_post_script_look]
 
-   Click the toggle to insert a post-script after the command.
+   Click the toggle to insert a post script after the command.
 
    Batch operation:
 
