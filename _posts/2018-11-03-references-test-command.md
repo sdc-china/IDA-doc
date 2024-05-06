@@ -959,6 +959,11 @@ In most cases, the UI commands are recorded using the IDA plug in. If you find a
 <br>*e.g:*
 Any one or combination of the recorded values can be used to identify the control:  Control ID, Element ID or XPATH. If Label is unique on the page, it can be used as well. Enough location arguments are required to uniquely identify an element on the page. **IDA** cycles through available ids until it finds the element. For example, if you recorded a select step and later moved the control around on the page, the Control ID and XPATH are probably different from the recorded step, but Element ID is still the same.
 
+In most cases, the UI commands are recorded and displayed immediately in the IDA recorder. Commands below are only displayed after recording of some other control as the command value cannot be set immediately:
+- bpmFileDropzone
+- bpmFileUploader
+- coachControl
+
 ___
 
 ### **Common Parameters**

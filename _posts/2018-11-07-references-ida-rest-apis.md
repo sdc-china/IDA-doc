@@ -2,7 +2,7 @@
 title: "IDA REST APIs"
 category: references
 date: 2018-11-07 15:17:55
-last_modified_at: 2024-01-31 16:44:00
+last_modified_at: 2024-03-25 16:44:00
 ---
 
 # IDA REST APIs
@@ -557,9 +557,11 @@ Response
 The [Trigger Pipeline Build](#trigger-pipeline-build) and [Get Pipeline Build Status](#get-pipeline-build-status) REST APIs' response will be returned with one of the following status:
 
 **Build Status:**
-* `RUNNING` The pipeline build is running
-* `FAILED` There was a problem with pipeline build (step failed, etc.)
-* `SUCCESS` The pipeline build was successful
+* `Running` The pipeline build is running.
+* `Failed` There was a problem with pipeline build (step failed, etc.).
+* `Success` The pipeline build was successful.
+* `Partial Success` The pipeline build was partially successful. Some steps were failed but they were configured with unchecked Halt On Failure option.
+* `Pending` The pipeline build was pending.
 
 
 **Other Status:**

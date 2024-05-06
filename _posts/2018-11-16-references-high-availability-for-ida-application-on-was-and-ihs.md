@@ -228,7 +228,7 @@ ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS | org.quartz.impl.jdbcjobstore.PostgreSQ
 ## IBM HTTP Server setup
 
 **prerequisite:** 
-Already have Installation media for **IM**, **IHS**, **Plugin**, **JDK** and unzip them. If don't have, please refer to [V9.0.5: Download WebSphere Application Server Version 9.0.5 from Passport Advantage Online]([../installation/installation-installing-ida-application.html#installing-on-was-v9](https://www.ibm.com/support/pages/node/886233))
+Already have Installation media for **IM**, **IHS**, **Plugin**, **JDK** and unzip them. If don't have, please refer to [V9.0.5: Download WebSphere Application Server Version 9.0.5 from Passport Advantage Online](https://www.ibm.com/support/pages/node/886233)
 
 For example:
 ```

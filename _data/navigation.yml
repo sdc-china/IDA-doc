@@ -121,10 +121,14 @@ docs:
         url: /pipeline/pipeline-deploy-snapshot-from-pc-to-ps.html
       - title: "Pipeline Script"
         url: /pipeline/pipeline-pipeline-script.html
+      - title: "Pipeline Email Notification"
+        url: /pipeline/pipeline-pipeline-email-notification.html
       - title: "Pipeline Report"
         url: /pipeline/pipeline-pipeline-report.html
       - title: "Toolkit Deployment"
         url: /pipeline/pipeline-toolkit-deployment.html
+      - title: "Approve and Resume Pipeline Build"
+        url: /pipeline/pipeline-approve-and-resume-pipeline-build.html
       - title: "Pipeline Stage & Step Reference"
         url: /pipeline/pipeline-pipeline-stage&step-reference.html
 
@@ -174,6 +178,8 @@ docs:
         url: /references/references-migrating-and-updating-ida-application-v2.x.html
       - title: "Migrating IDA from v2.7.x to v21.0.0"
         url: /references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html
+      - title: "Migrating IDA from v21.0.0 to v24.0.2"
+        url: /references/references-migrating-ida-from-v21.0.0-to-v24.0.2.html
       - title: "High availability for IDA application on WAS and IHS"
         url: /references/references-high-availability-for-ida-application-on-was-and-ihs.html
       - title: "High availability for IDA application on Liberty and HAProxy"

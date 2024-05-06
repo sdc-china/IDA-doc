@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
-last_modified_at: 2023-03-30 11:28:00
+last_modified_at: 2024-03-07 11:28:00
 ---
 
 # Settings Configuration
@@ -97,8 +97,8 @@ The Kubernetes configuration is used to create Containerized Selenium Grid Serve
 
 |   Field                | Description                                                         |
 | -------------------|---------------------------                                          |
-| Ingress Host|The subdomain to use for exposed routes. For openshift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
-| Server Url| Cluster API address |
+| Ingress Host|The subdomain to use for exposed routes. For OpenShift, it should be in the format of ```apps.<cluster_name>.<base_domain>```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|  
+| Server Url| Cluster API address. For OpenShift, it should be in the format of ```https://api.<cluster_name>.<base_domain>:6443```. The ```<cluster_name>``` and ```<base_domain>``` come from the installation config file.|
 | Namespace| The namespace/project that you want to use to create your containerized grid.|  
 | User Token| Token of service account.|
 
@@ -113,7 +113,7 @@ The commands to get ingress host, server url and token:
 oc get ingresses.config cluster --output jsonpath={.spec.domain}
 
 # Command to get server url
-oc config view --minify -o jsonpath='{.clusters[*].cluster.server}'
+oc whoami --show-server
 
 # Commands to get user token
 oc new-project selenium-demo
@@ -126,6 +126,7 @@ echo $TOKEN
 # Allow users using the "restricted" SCC in selenium grid namespace
 oc create rolebinding local:scc:restricted -n "selenium-demo" --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:"selenium-demo"
 ``` 
+
 
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
