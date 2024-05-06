@@ -106,15 +106,25 @@ Here is a sample:
 
 ![][administrator_k8s_setting_sample]{:width="100%"}
 
-The steps to create service account and get token:
+The commands to get ingress host, server url and token:
 
 ``` 
+# Command to get ingress host
+oc get ingresses.config cluster --output jsonpath={.spec.domain}
+
+# Command to get server url
+oc config view --minify -o jsonpath='{.clusters[*].cluster.server}'
+
+# Commands to get user token
 oc new-project selenium-demo
 oc create sa ida-selenium-sa
 oc adm policy add-role-to-user admin -z ida-selenium-sa
 TOKENNAME=`oc describe  sa/ida-selenium-sa | grep Tokens |  awk '{print $2}'`
 TOKEN=`oc get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
 echo $TOKEN
+
+# Allow users using the "restricted" SCC in selenium grid namespace
+oc create rolebinding local:scc:restricted -n "selenium-demo" --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:"selenium-demo"
 ``` 
 
 [administrator_settings]: ../images/administrator/Administrator_settings.png
