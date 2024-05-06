@@ -124,7 +124,7 @@ TOKEN=`oc get secret $TOKENNAME -o jsonpath='{.data.token}'| base64 --decode`
 echo $TOKEN
 
 # Allow users using the "restricted" SCC in selenium grid namespace
-oc create rolebinding local:scc:restricted -n "selenium-demo" --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:"selenium-demo"
+oc create rolebinding local:scc:restricted -n selenium-demo --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:selenium-demo
 ``` 
 
 
