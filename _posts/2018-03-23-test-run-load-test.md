@@ -34,7 +34,7 @@ last_modified_at: 2023-03-01 15:22:00
 
 3. Click the **Import** button.
 
-4. Click **Hiring Sample** from the project list and enter the project dashboard.
+4. Click **_Hring Sample**  from the project list and enter the project dashboard.
 
    ![][test_hiring_sample_project]
 
@@ -48,7 +48,7 @@ last_modified_at: 2023-03-01 15:22:00
 
    ![][edit_project]
 
-2. Click **Advanced** and type the following parameter in **Engine Properties**:
+2. Click **Advance** and type the following parameter in **Engine Properties**:
 
    ![][enable_load_test]{:width="60%"}
 

@@ -23,8 +23,8 @@ In the Test project dashboard page, you can click any test case link to see the 
 
   In the process diagram execution flow, you can see two lines.
 
-  The **blue** line stands for the expected process execution flow.
-  The **red** line stands for the actual execution flow.
+  The **blue** line stands for the expected process execution flow.\
+  The **red** line stands for the actual execution flow.\
   You can adjust your test case based on the difference between the "actual flow" and the "expected flow" process diagram.
 
   ![][test_BPD_test_case_diagram]
