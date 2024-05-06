@@ -71,7 +71,7 @@ If pushed, there will be a button on the panel on the right.
 
 ![][merge-report-script-pushed-buttons]
 
-Click the ![][merge-report-script-original]{:width="10%"} button, and the Original Script modal will show, allowing the user to check the original script.
+Click the **Original Script** button, and the Original Script modal will show, allowing the user to check the original script.
 
 ![][merge-report-script-original-click]{:width="60%"}
 
@@ -101,7 +101,6 @@ After pushing successfully, the ![][merge-report-artifact-report-revert]{:width=
 [merge-report-script-overwrite]: ../images/snapshot-comparison/merge-report-script-overwrite.png
 [merge-report-script-reload]: ../images/snapshot-comparison/merge-report-script-reload.png
 [merge-report-script-edit]: ../images/snapshot-comparison/merge-report-script-edit.png
-[merge-report-script-original]: ../images/snapshot-comparison/merge-report-script-original.png
 [merge-report-script-left-arrow-click]: ../images/snapshot-comparison/merge-report-script-left-arrow-click.png
 [merge-report-script-overwrite-click]: ../images/snapshot-comparison/merge-report-script-overwrite-click.png
 [merge-report-script-reload-click]: ../images/snapshot-comparison/merge-report-script-reload-click.png
