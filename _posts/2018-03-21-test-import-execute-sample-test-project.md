@@ -51,4 +51,4 @@ last_modified_at: 2019-07-29 15:22:00
 [test_hiring_sample_project]: ../images/test/test_hiring_sample_project.PNG
 [1]: ../administration/administration-baw-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
-[3]: test-case-report.html
+[3]: test-test-report.html
