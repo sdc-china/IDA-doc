@@ -554,7 +554,7 @@ Response
 ```
 
 ### Response Status
-The [Trigger Pipeline Build](#trigger-pipeline-build) and [Get Pipeline Build Status](#get-pipeline-build-status) REST APIs' response will be returned with one of the following statuses:
+The [Trigger Pipeline Build](#trigger-pipeline-build) and [Get Pipeline Build Status](#get-pipeline-build-status) REST APIs' response will be returned with one of the following status:
 
 **Build Status:**
 * `Running` The pipeline build is running.

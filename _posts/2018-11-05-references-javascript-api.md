@@ -8,7 +8,7 @@ last_modified_at: 2019-07-29 16:44:00
 # JavaScript API
 ***
 
-## Out-of-the-Box JavaScript API
+## OOTB JavaScript API
 
 | JS API |      Parameters    |       Comments            |       Example            | Callback Command|
 |----------|:-------------:|:------|:------|:------|
@@ -27,7 +27,7 @@ last_modified_at: 2019-07-29 16:44:00
 | bta.util.fireEvent | element(DOM Element), eventType(string) |Fire event of the DOM element|  bta.util.fireEvent(element, "keyup"); |No|  
 
 **Notes**
-Besides these out-of-the-box JS APIs, users can also use standard BPM coach view JS APIs when writing custom JavaScript. e.g.:
+Besides these OOTB JS APIs, users can also use standard BPM coach view JS APIs when writing custom JavaScript. e.g.:
 - var rows = tableCoachView.context.element.querySelectorAll("div.SPARKTable table.table tbody tr");     
 
 You can also reference internal variables, e.g.:    
