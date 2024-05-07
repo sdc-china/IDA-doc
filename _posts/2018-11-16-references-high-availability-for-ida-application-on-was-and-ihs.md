@@ -181,7 +181,7 @@ ORG_QUARTZ_JOBSTORE_DRIVERDELEGATECLASS | org.quartz.impl.jdbcjobstore.PostgreSQ
   ![][was-new-app-step-2]
   ![][was-after-apply]
 
- 6.6 There is nothing to change in step 3. And step 4 is used to configure values for context roots in web modules, we should set the **Context Root** as **/ida** as shown below.
+ 6.6 There is nothing to change in step 3. And step 4 is used to configure values for context root in web modules, we should set the **Context Root** as **/ida** as shown below.
 
    ![][wassetcontextroot]
 

@@ -69,7 +69,7 @@ This argument only works under headless mode.
 
 ```
 arguments:
-## Change window size
+## Change windows size
 - "window-size=1920,1080"
 ```  
 

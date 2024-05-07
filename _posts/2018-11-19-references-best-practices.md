@@ -14,7 +14,7 @@ last_modified_at: 2019-07-29 16:52:00
 * The **waitElement** command:
 	* **Type**: The value could be Visible, Hidden, Enabled, and Disabled.
 	* **Timeout**: The waiting time in seconds.
-	* **Element ID/Element CSS/XPath**: These values can be used to locate the AJAX loading indicator HTML element on the UI page.
+	* **Element ID/Element CSS/XPATH**: These values can be used to locate the AJAX loading indicator HTML element on the UI page.
 
    ![][references-wait-element]
 

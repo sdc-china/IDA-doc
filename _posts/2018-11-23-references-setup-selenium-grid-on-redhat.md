@@ -150,7 +150,7 @@ kill -9 $(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print $2}')
 ## Supports Firefox and Chrome
 arguments:
 - "--headless"
-## Change window size
+## Change windows size
 - "window-size=1920,1080"
 ```
 
@@ -165,7 +165,7 @@ Please note that the argument **--no-sandbox** is added for Chrome, which allows
 arguments:
 - "--headless"
 - "--no-sandbox"
-## Change window size
+## Change windows size
 - "window-size=1920,1080"
 ```
 
