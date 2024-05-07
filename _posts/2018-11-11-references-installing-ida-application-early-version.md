@@ -257,7 +257,7 @@ We might need a proxy server to visit the application. The proxy settings can be
 **Notes**
 
 Below is the reference link for how to set up Selenium Grid. It includes detailed parameter setting explanations.   
-- [Selenium Grid Setup Guidance](https://github.com/
+- [Selenium Grid Setup Guidance](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
 
 ## Installing on WAS V9
 
