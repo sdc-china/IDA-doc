@@ -103,31 +103,31 @@ Here is a sample:
 
 ![][administrator_k8s_setting_sample]{:width="100%"}
 
-If you use OpenShift, you can get the Server URL through the command:
+The commands to get ingress host, server url and token:
 
-```
+``` 
+# Command to get ingress host
+oc get ingresses.config cluster --output jsonpath={.spec.domain}
+
+# Command to get server url
 oc whoami --show-server
-```
 
-If you use OpenShift, you can get the Ingress Host from the console URL:
-
-![][administrator_k8s_ocp_ingress_host]{:width="100%"}
-
-The steps to create a service account and get the token:
-
-```
+# Commands to get user token
 oc new-project selenium-demo
 oc create sa ida-selenium-sa
 oc adm policy add-role-to-user admin -z ida-selenium-sa
 TOKENNAME=`oc describe sa/ida-selenium-sa | grep Tokens | awk '{print $2}'`
 TOKEN=`oc get secret $TOKENNAME -o jsonpath='{.data.token}' | base64 --decode`
 echo $TOKEN
-```
+
+# Allow users using the "restricted" SCC in selenium grid namespace
+oc create rolebinding local:scc:restricted -n selenium-demo --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:selenium-demo
+``` 
+
 
 [administrator_settings]: ../images/administrator/Administrator_settings.png
 [administrator_k8s_setting]: ../images/administrator/administrator_k8s_setting.png
 [administrator_k8s_setting_sample]: ../images/administrator/administrator_k8s_setting_sample.png
-[administrator_k8s_ocp_ingress_host]: ../images/administrator/administrator_k8s_ocp_ingress_host.png
 [General]: ../images/administrator/General.png
 [Test]: ../images/administrator/Test.png
 [Pipeline]: ../images/administrator/Pipeline.png

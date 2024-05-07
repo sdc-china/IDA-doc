@@ -39,7 +39,7 @@ If the server is created successfully, you will receive the message: Server SERV
 
 **2. Configure server.xml**  
 
-Edit **server.xml** from the *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* folder. You could use the below sample server.xml to override your **server.xml** and update *httpPort*, *httpsPort*, and *keyStore password*, and enable *features ssl,websocket*.
+Edit **server.xml** from *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>* folder. You could use the below sample server.xml to override your  **server.xml** and update *httpPort*, *httpsPort* and *keyStore password* and enable *features ssl, websocket*.
 
 IDA supports JNDI datasource. You can configure a data source and JDBC provider for database connectivity.
 
@@ -218,7 +218,7 @@ Refer to [Database connections with TLS](https://openliberty.io/blog/2021/06/04/
 
 **3. Configure jvm.options**
 
-Create **jvm.options** from the *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* directory.
+Create **jvm.options** from *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>* directory.
 
 Set the maximum heap size to 8192m. If the heap size is not big enough, IDA checkstyle may crash with an out-of-memory exception thrown. Increasing the heap size and restarting the server can fix this issue.
 
@@ -237,9 +237,9 @@ You might also need to set a proxy server, then add the following lines to **jvm
 
 **4. Configure server.env (Optional)**
 
-Create **server.env** from the *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>* directory.
+Create **server.env** from *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>* directory.
 
-The default IDA data folder is **/var/ida/data**. If the default value is not applicable, then add the following environment variable to **server.env** for your IDA data folder:
+The default IDA data folder is **/var/ida/data**. If the default value is not writable or not applicable, then add the following environment variable to **server.env** for your IDA data folder:
 
 ```
 ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
@@ -247,7 +247,7 @@ ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
 
 **5. Copy the ida-web.war to the apps directory**
 
-Copy the **ida-web.war** to the *<path_to_liberty>/wlp/usr/servers/<SERVER_NAME>/apps* directory.
+Copy the **ida-web.war** to *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>/apps* directory.
 
 **6. Start the Liberty server**
 
@@ -292,7 +292,7 @@ IDA uses the Spring Boot websocket feature, which is not supported by WebSphere 
 
 **Setting environment entries on WAS Console (Optional)**
 
-The default IDA data folder is **/var/ida/data**. If the default value is not applicable, then follow the below steps to change the IDA data folder:
+The default IDA data folder is **/var/ida/data**. If the default value is not writable or not applicable, then follow the below steps to change the IDA data folder:
 
 1. In the left navigation bar, click the **Servers >  Server Types > WebSphere application servers > server_name > Java and Process Management > Process Definition > Environment Entries > New**
 
@@ -442,21 +442,21 @@ BAW Version | IDA Toolkit Version
 ## Step 3: Installing IDA Browser Plug-in
 
 ### Chrome plugin
-- Open the URL <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
-- Click the "Add to Chrome" button to install the plug-in.
-- The Chrome plugin offline installation package: [ida-24.1.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/ida-24.1.crx)
-- For the Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of the HTTP session on the liberty server.xml or WAS console. See the docs above.
+- Open the url <a href="https://chromewebstore.google.com/search/IBM%20IDA" target="_blank">https://chromewebstore.google.com/search/IBM%20IDA</a>
+- Click "Add to Chrome" button to install plug-in.
+- The Chrome plugin offline installation package. [ida-24.2.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/ida-24.2.crx)
+- For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
   
 ### Edge plugin
 - The same IDA Chrome plugin can also be installed in Edge.
-- Enable "Allow extensions from other stores" in the Edge Extensions settings page.
-- Open the URL <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
-- Click the "Get" button, then click the "Add extension" button to install the plug-in.
+- Enable "Allow extensions from other stores." in the Edge Extensions settings page.
+- Open the url <a href="https://chromewebstore.google.com/search/IBM%20IDA" target="_blank">https://chromewebstore.google.com/search/IBM%20IDA</a>
+- Click "Get" button, then click "Add extension" button to install plug-in.
 
 ### Firefox plugin
-- Download the Firefox plugin [ida-24.1.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-24.1.xpi)
-- Drag the downloaded plugin file into the Firefox window.
-- Click the "Add" button.
+- Download Firefox plugin [ida-24.2.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-24.2.xpi)
+- Drag the downloaded plugin file into firefox window.
+- Click "Add" button.
 
 ### Plug-in Configuration
 
