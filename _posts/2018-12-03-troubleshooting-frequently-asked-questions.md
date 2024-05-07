@@ -24,14 +24,14 @@ last_modified_at: 2024-02-19 12:53:00
     - Answer: NO. The recording feature only supports Chrome or Firefox. IE could be used to replay the recorded test case. Just need to set up a Selenium server on Windows to run regression testing.
 7. FAQ: Could we import Selenium test projects to IDA?
     - Answer: NO.     
-8. FAQ: Does IDA support BPM adv (BPEL) testing and static analysis?
+8. FAQ: Does IDA support BPM adv (BPEL) testing and static analytic?
     - Answer: NO. The testing and checkstyle of IDA only supports BPM std (BPMN).    
 9. FAQ: Does IDA support IBM BAW v18?
     - Answer: YES. Refer to *Software Prerequisites* in [System Requirement doc](../installation/installation-system-requirement.html)     
 10. FAQ: Can we customize the rules of Checkstyle?
     - Answer: YES. Refer to the doc [Customize Checkstyle Rules](../checkstyle/checkstyle-customize-checkstyle-rules.html) and [Architecture doc](../references/references-architecture.html) about integration.   
 11. FAQ: Does the CheckStyle feature detect issues that cannot be detected by the Process Designer code validation?
-    - Answer: YES. Checkstyle is BAW code static analysis. The PD validation is to do "compiling validation".   
+    - Answer: YES. Checkstyle is BAW code static analytic. The PD validation is to do "compiling validation".   
 12. FAQ: Could IDA test process definitions in toolkits or just the ones in process applications?   
     - Answer: YES. The user could select a toolkit when creating a test case. See [doc](../test/test-test-case-management.html)
 13. FAQ: If the team built some AngularJS code inside the coaches, can IDA support its testing?
@@ -102,11 +102,6 @@ last_modified_at: 2024-02-19 12:53:00
 
 33. Can I run test/checkstyle against tip/default in the pipeline?
     - Answer: Yes. If the tip option is checked in the test/checkstyle step, then it will always run against the tip/default.
-
-[1]: ../test/test-test-case-data-binding.html
-[loginbpmoc]: ../images/loginbpmoc.png
-[add-permission-1]: ../images/add-permission-1.png
-[add-permission-2]: ../images/add-permission-2.png
 
 1. Can I specify a PS as the first stage of a pipeline?
     - Answer: Yes. The first stage can be either PC or PS.
