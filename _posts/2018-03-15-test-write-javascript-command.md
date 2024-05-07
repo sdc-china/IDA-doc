@@ -1,54 +1,54 @@
 ---
-title: "Write a Javascript Command"
+title: "Write a JavaScript Command"
 category: test
 date: 2018-03-15 15:17:55
 last_modified_at: 2021-05-06 11:48:00
 ---
 
-# Write a Javascript Command
+# Write a JavaScript Command
 ***
 
-## Create a javascript command
+## Create a JavaScript command
 
-1. Navigate to **Custom Command** in the left-side menu bar, click + button to generate a group command.
+1. Navigate to **Custom Command** in the left-side menu bar, click the + button to generate a group command.
 
    ![][test_js_command]
 
-2. Enter the javascript command info.
+2. Enter the JavaScript command information.
 
-   **Notes** The scope field has two options, the private means the command can be used only in current project, the public means the command can be used in other projects. By default, the value is private. You can input the {Parameters.XXX} as verbalization. The parameter is defined in this JS. XXX is the parameter key name you defined in this custom js.
+   **Note:** The scope field has two options: private means the command can be used only in the current project, and public means the command can be used in other projects. By default, the value is private. You can input the {Parameters.XXX} as a verbalization. The parameter is defined in this JavaScript. XXX is the parameter key name you defined in this custom JavaScript.
 
    ![][test_js_command_info]{:width="60%"}
 
-3. Define the javascript command parameter. You can refer these parameters' value through verbalization.
-For example: {Parameters.myKey}. You can configure a list of possible values of the parameter, separated by comma.
+3. Define the JavaScript command parameter. You can refer to these parameters' values through verbalization.
+For example: {Parameters.myKey}. You can configure a list of possible values for the parameter, separated by commas.
 
    ![][test_js_command_parameter]{:width="80%"}
 
-4. Define your javascript command content.
+4. Define your JavaScript command content.
 
    ![][test_js_command_logic]
 
 
-5. Add your javascript command in your test case. If you have configured the list of possible values of the parameter, you can select from the parameter dropdown list.
+5. Add your JavaScript command to your test case. If you have configured a list of possible values for the parameter, you can select from the parameter dropdown list.
 
    ![][test_add_js_command]{:width="60%"}
 
-6. You can  refer js variable in the case step.
+6. You can refer to JavaScript variables in the case step.
 
    ![][test_js_casestep]{:width="60%"}
    ![][test_js_commandlist]
 
 
-7. Refer to [Javascript API Reference](../references/references-javascript-api.html) for OOTB
-Javascript functions   
+7. Refer to [JavaScript API Reference](../references/references-javascript-api.html) for OOTB
+JavaScript functions   
 
-## Javascript Command sample
-   In Hiring sample Standard_HR_Open_New_Position/case2, we will change the number of employees to value 3 if we choose Position Request Department as **Sales**.
+## JavaScript Command sample
+   In the Hiring sample Standard_HR_Open_New_Position/case2, we will change the number of employees to the value 3 if we choose the Position Request Department as **Sales**.
 
    Here are the steps:
-1. We create a js testCommand named **change sales number**    
-2. Copy the below js command content into this js command.
+1. We create a JavaScript command named **change sales number**    
+2. Copy the below JavaScript command content into this command.
 
 ```
 var controlId='Section1.Section4.Requisition_CV1.Section1.Single_Select2';   
@@ -81,18 +81,18 @@ if (coachView) {
 return bta.util.callback();
 
 ```
-3. Insert this js command in the **Submit position request**  task UI.
+3. Insert this JavaScript command in the **Submit position request** task UI.
 
    ![][test_js_commandsample]
 
-4. When you record/replay this case again, you will find when you select the department value as **sales** , the number of employee value is **3**.
+4. When you record/replay this case again, you will find that when you select the department value as **Sales**, the number of employees value is **3**.
 
    ![][test_js_commandresult]
 
 
-### Post Custom JS Command
+### Post Custom JavaScript Command
 
-  This feature allow you to inject a custom JS command to the case steps in bulk.
+  This feature allows you to inject a custom JavaScript command to the case steps in bulk.
 
   The classic use case:
 
@@ -100,24 +100,24 @@ return bta.util.callback();
   In some user interface test cases, you may need to request data from the server. If the response time is too long, it will block the later case steps and cause the test case to fail.
 
   Solution:
-  Add a customized javascript which waits for the request to complete as post script and insert it after the case steps that trigger the request.
+  Add a customized JavaScript which waits for the request to complete as a post script and insert it after the case steps that trigger the request.
 
-Here is the steps:
-1. Post Script function is disable by default and user should enble it in project configuration.
+Here are the steps:
+1. The Post Script function is disabled by default, and the user should enable it in the project configuration.
 
-   Step1: Edit the project
+   Step 1: Edit the project
 
-   Step2: Add **"post_script":true** in Engine Properties.
+   Step 2: Add **"post_script":true** in Engine Properties.
 
    ![][post_script_eanble]
 
 2. Create Post Custom Command:
 
-   Global level: Create a javascript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will shown in the case step edit table. And allow all projects of your system to insert post script after UI/JS commands.
+   Global level: Create a JavaScript command named `ida_post_script` in **Administration -> Custom Command**. Then the post script toggle will be shown in the case step edit table. It will allow all projects in your system to insert a post script after UI/JavaScript commands.
 
-   Project level: Create a javascript command named `ida_post_script` in one project. Then the post script toggle will shown in the case step edit table of this project. And allow this project to insert post script after UI/JS commands. It will overwrite the global level post script.
+   Project level: Create a JavaScript command named `ida_post_script` in one project. Then the post script toggle will be shown in the case step edit table of this project. It will allow this project to insert a post script after UI/JavaScript commands. It will overwrite the global level post script.
 
-   Test Case level: Create a javascript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post script toggle will shown in the case step edit table of this test case. And allow this test case to insert post script after UI/JS commands. It will overwrite global level and project level post script.
+   Test Case level: Create a JavaScript command named `ida_post_script_[project Id]_[test Case Id]` in one project. Then the post script toggle will be shown in the case step edit table of this test case. It will allow this test case to insert a post script after UI/JavaScript commands. It will overwrite the global level and project level post scripts.
 
    Default post script:
 
@@ -150,13 +150,13 @@ Here is the steps:
 
    ```
 
-   You can configure **timeout**, **interval**, **elementId**, **elementCss** and **xpath** as you need.The default sample
-   will wait some time util  loading icon(img[alt='Loading']) disapper(Usually it is located on right top of the UI).It    applys for long loading ajax      service or Long time UI loaing.
+   You can configure **timeout**, **interval**, **elementId**, **elementCss**, and **xpath** as needed. The default sample
+   will wait for some time until the loading icon (img[alt='Loading']) disappears (Usually it is located in the right top of the UI). It applies for long loading AJAX services or long-time UI loading.
 
    ![][test_post_script_sampleUI]
 
-   Also you can change the post script to meet your needs.It will run js after every command you apply for ida_post_script.
-   When you replay the test case you can open the web console to debug your test case.For example:
+   You can also change the post script to meet your needs. It will run JavaScript after every command you apply for ida_post_script.
+   When you replay the test case, you can open the web console to debug your test case. For example:
 
    ```
 	console.log("Start to run post script!");
@@ -164,15 +164,15 @@ Here is the steps:
     ```
 3. Insert Post Script to Case Step
 
-   If you have created any level of the post script then the layout of case step table:
+   If you have created any level of the post script, then the layout of the case step table will be:
 
    ![][test_post_script_look]
 
-   Click the toggle can insert post script after the command.
+   Click the toggle to insert a post script after the command.
 
    Batch operation:
 
-   Select the case steps, right click then click **On**/**Off** button.
+   Select the case steps, right-click, then click the **On**/**Off** button.
 
    ![][test_operation_post_script]
 

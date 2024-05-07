@@ -6,39 +6,38 @@ last_modified_at: 2021-12-10 09:17:55
 ---
 
 # Migrating IDA from v2.7.x to v21.0.0
-**Important:** If you run IDA with WAS, please refer to [Installing IDA Application][2] to check your WAS version. IDA may occur some problems if the WAS version is below 9.0.5.4!
+**Important:** If you run IDA with WAS, please refer to [Installing IDA Application][2] to check your WAS version. IDA may encounter some problems if the WAS version is below 9.0.5.4!
 
 ## 1. Migrating IDA with a datasource connection
 
-**Important:** Please backup your database before migration!
+**Important:** Please back up your database before migration!
 
-1.1 Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
+1.1 Edit [IDA_HOME]/conf/**ida.properties** under the **conf** folder.
 
-This properties file contains three main sections. Please set **spring.datasource.driver-class-name**, **spring.datasource.url**, **spring.datasource.username**, **spring.datasource.password** field. If you want to encode your database password. Please refer to [Repacking IDA Application][1].
+This properties file contains three main sections. Please set the **spring.datasource.driver-class-name**, **spring.datasource.url**, **spring.datasource.username**, **spring.datasource.password** fields. If you want to encode your database password, please refer to [Repacking IDA Application][1].
 
-**Important:** Please comment spring.datasource.jndi-name if you do not use a JNDI datasource.
+**Important:** Please comment out spring.datasource.jndi-name if you do not use a JNDI datasource.
 
 **JNDI Configuration**
 
-*  **spring.datasource.jndi-name** : JNDI NAME
-
+*  **spring.datasource.jndi-name**: JNDI NAME
 
 **Datasource Configuration**
 
-*  **spring.datasource.driver-class-name** : Dirver Class Name
-*  **spring.datasource.url** : Datasource url
-*  **spring.datasource.username** : User Name
-*  **spring.datasource.password** : Password
+*  **spring.datasource.driver-class-name**: Driver Class Name
+*  **spring.datasource.url**: Datasource URL
+*  **spring.datasource.username**: User Name
+*  **spring.datasource.password**: Password
 
 **Jasypt Configuration**
 
-*  **jasypt.encryptor.password** : Jasypt secret key for Encrypt datasource passwords
+*  **jasypt.encryptor.password**: Jasypt secret key for encrypting datasource passwords
 
-1.2 Repacking ida-web.war with configuration
+1.2 Repackaging ida-web.war with configuration
 
-The purpose of repackage is to update your application-product.yaml in the war to make sure it loads the recent configuration.Once all the properties in [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file. 
+The purpose of repackaging is to update your application-product.yaml in the war to ensure it loads the recent configuration. Once all the properties in the [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.
 
-Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the JAVA_HOME environment variable and make ensure that [JAVA_HOME]/bin is included in the variable. Once the environment variable is set , you can then execute the package shell command to repackage the **ida-web.war**.
+Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh**, you will need to set the JAVA_HOME environment variable and ensure that [JAVA_HOME]/bin is included in the PATH variable. Once the environment variable is set, you can then execute the package shell command to repackage the **ida-web.war**.
 
 1.3 Stop your running IDA Application
 
@@ -49,48 +48,48 @@ For example:
 
 1.4 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
 
-**Notes:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in DB2 database.
+**Note:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in a DB2 database.
 
 1.5 Add ```<httpSession cookieSameSite="None"/>``` to server.xml
 
-1.6 Replace ida-web.war and Restart your server.
+1.6 Replace ida-web.war and restart your server.
 
-**Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
+**Note:** Please refer to the documentation [references-migrating-and-updating-your-application][3].
 
-1.7 Migrate the values from your old conf/ida.properties to 'Settings' page. The below table lists all the filed need to be migrated:
+1.7 Migrate the values from your old conf/ida.properties to the 'Settings' page. The table below lists all the fields that need to be migrated:
 
-- General Settings: 
-  
+- General Settings:
+
     ![][General]
 
     Settings -> General | conf/ida.properties
     --- | ---
-    General -> Trace Level | loggerLevel 
-    General -> Enable LDAP Authentication | ldap.enable 
-    General -> Url | ldap.url 
-    General -> User Name | ldap.username 
-    General -> Password | ldap.password 
-    General -> Base DN | ldap.basedn 
-    General -> User Filter | ldap.user.filter 
-    General -> Default Role | ldap.default.role 
-    General -> User Name Case Insensitive | ldap.username.case-insensitive 
+    General -> Trace Level | loggerLevel
+    General -> Enable LDAP Authentication | ldap.enable
+    General -> URL | ldap.url
+    General -> User Name | ldap.username
+    General -> Password | ldap.password
+    General -> Base DN | ldap.basedn
+    General -> User Filter | ldap.user.filter
+    General -> Default Role | ldap.default.role
+    General -> User Name Case Insensitive | ldap.username.case-insensitive
 
-- Testing Settings: 
-  
+- Testing Settings:
+
     ![][Test]
 
     Settings -> Test | conf/ida.properties
     --- | ---
-    Test -> Connection Timeout(seconds) | engine-config.connection-timeout
-    Test -> Wait Timeout(seconds) | engine-config.wait-timeout 
-    Test -> Default Retry Times | engine-config.default-retry-times 
-    Test -> Default Retry Interval(seconds) | engine-config.default-retry-interval
+    Test -> Connection Timeout (seconds) | engine-config.connection-timeout
+    Test -> Wait Timeout (seconds) | engine-config.wait-timeout
+    Test -> Default Retry Times | engine-config.default-retry-times
+    Test -> Default Retry Interval (seconds) | engine-config.default-retry-interval
     Test -> Data Path | engine-config.data-dir
     Test -> Enable Test Case History | enable_case_history
     Test -> Max Number of Test Case History | max_case_history
     Test -> Threshold of New Test Case | default_total_case
 
-- Checkstyle Settings: 
+- Checkstyle Settings:
 
     ![][Checkstyle]
 
@@ -101,9 +100,9 @@ For example:
     Checkstyle -> Decision Server Password | resPassword
     Checkstyle -> Decision Server URL | resUrl
     Checkstyle -> Decision Server Port | resPort
-    Checkstyle -> Rest Url | restUrl
+    Checkstyle -> Rest URL | restUrl
 
-- Pipeline Settings: 
+- Pipeline Settings:
 
     ![][Pipeline]
 
@@ -113,47 +112,43 @@ For example:
     Pipeline -> Host | smtp.host
     Pipeline -> Port | smtp.port
     Pipeline -> Sender Email | email.from
-    Pipeline -> Deployment Timeout(seconds) | deployment.timeout
-    Pipeline -> Deployment Check Interval(seconds) | deployment.interval
-    Pipeline -> Interval for Trigger by New Snapshot(seconds) | pipeline.snapshot.trigger.interval
+    Pipeline -> Deployment Timeout (seconds) | deployment.timeout
+    Pipeline -> Deployment Check Interval (seconds) | deployment.interval
+    Pipeline -> Interval for Trigger by New Snapshot (seconds) | pipeline.snapshot.trigger.interval
 
+1.8 Restart the IDA server
 
-1.8 Restart IDA server
-
-Restart IDA server to make your changes effective.
-
-
+Restart the IDA server to make your changes effective.
 
 ## 2. Migrating IDA with a JNDI datasource connection
 
-**Important:** Please backup your database before migration!
+**Important:** Please back up your database before migration!
 
-2.1 Please refer to section 1.1 to edit [IDA_HOME]/conf/**ida.properties** under **conf** folder.
+2.1 Please refer to section 1.1 to edit the [IDA_HOME]/conf/**ida.properties** file under the **conf** folder.
 
-**Notes:** Please comment spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password and jasypt.encryptor.password fileds.
+**Note:** Please comment out the spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password, and jasypt.encryptor.password fields.
 
-2.2 Please refer to 1.2 to repack ida-web.war
+2.2 Please refer to 1.2 to repack the ida-web.war
 
-**Notes:** Please refer the doc [references-migrating-and-updating-your-application][3].
+**Note:** Please refer to the documentation [references-migrating-and-updating-your-application][3].
 
 2.3 Please refer to 1.3 to stop your running IDA Application
 
-2.4 Please refer to the doc [Installing IDA Application][2] to config the server.xml file.
+2.4 Please refer to the documentation [Installing IDA Application][2] to configure the server.xml file.
 
-2.5 Please copy you database driver to the folder according the library field configuration in server.xml.
+2.5 Please copy your database driver to the folder according to the library field configuration in server.xml.
 
 2.6 Execute migrate-\<DATABASE_TYPE\>-v2.7.x-v21.0.0.sql
 
-**Notes:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in DB2 database.
+**Note:** Please execute ```call sysproc.admin_cmd('reorg table <TABLE_NAME>');``` after altering a table in a DB2 database.
 
-2.7 Replace ida-web.war and Restart your liberty server.
+2.7 Replace ida-web.war and restart your Liberty server.
 
 2.8 Add ```<httpSession cookieSameSite="None"/>``` to server.xml
 
-2.9 Please refer to 1.6 to migrate conf/ida.properties old values to 'Settings' page
+2.9 Please refer to 1.7 to migrate the old values from conf/ida.properties to the 'Settings' page
 
-2.10 Restart IDA server to make your changes effective.
-
+2.10 Restart the IDA server to make your changes effective.
 
 [1]: ../references/references-repacking-ida-application-early-version.html
 [2]: ../installation/installation-installing-ida-application.html

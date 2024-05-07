@@ -8,45 +8,46 @@ last_modified_at: 2019-07-29 15:29:00
 # Checkstyle Report
 ***
 
-## Summary & Statistic
+## Summary & Statistics
 
-### Warnings summary
+### Warnings Summary
 
-   After finishing the analysis, a comprehensive mark named **HEALTH SCORE** would be given in this section to evaluate the selected process application's code is good or bad according the coding standard. More details, see the following screenshot.
+After finishing the analysis, a comprehensive score named **HEALTH SCORE** would be given in this section to evaluate whether the selected process application's code is good or bad according to the coding standard. More details are provided in the following screenshot.
 
-   ![][checkstyle_healthScore]
+![][checkstyle_healthScore]
 
-   Lower score means that the code of this process application is closer to to the coding standard, and higher score means that the code needs to refactor.  
+A lower score means that the code of this process application is closer to the coding standard, and a higher score means that the code needs to be refactored.
 
-   The warnings are calculated from **Documentation**, **Implementation**, **Maintenance**, **Migration**, **Performance**, **Redundant** etc. dimensions and the dimension will not be displayed when there is no warning that belongs to this dimension. Warnings of each dimension  will be counted in three level : **critical**, **Major** and **Minor**. Developers can find the modification advises for each application artifacts, so that it can continuously improve the coding quality.  
+The warnings are calculated from dimensions such as **Documentation**, **Implementation**, **Maintenance**, **Migration**, **Performance**, and **Redundancy**. A dimension will not be displayed if there are no warnings belonging to that dimension. Warnings for each dimension will be counted at three levels: **critical**, **Major**, and **Minor**. Developers can find modification advice for each application artifact, so that they can continuously improve the coding quality.
 
-   ![][checkstyle_statistic]
-###  Artifact Warning Summary
-   In this part, it makes statistics based on dimensions of category, sub-category and artifact. You can click **CATETORY** column to see its sub-category, click **SUB-CATEGORY** to show its artifacts and the number in the red circle is the number of warnings that sub-category or artifact you select. Click **ARTIFACT** entry to get warning details.(Refer to **Check Result Details**)
+![][checkstyle_statistic]
 
-   ![][checkstyle_category]
+### Artifact Warning Summary
+In this part, statistics are made based on dimensions of category, sub-category, and artifact. You can click the **CATEGORY** column to see its sub-categories, click the **SUB-CATEGORY** to show its artifacts, and the number in the red circle is the number of warnings for the sub-category or artifact you select. Click the **ARTIFACT** entry to get warning details (refer to **Check Result Details**).
 
-## Basic Info
+![][checkstyle_category]
 
-   The basic information for this application will be displayed in this section, including dependencies and BPMN artifact summary. The number on the right of the BPMN artifact summary indicates the number of applications applied to the left artifact. More details, see the following screenshot.
+## Basic Information
 
-   ![][checkstyle_basicInfo]
+The basic information for this application will be displayed in this section, including dependencies and a BPMN artifact summary. The number on the right of the BPMN artifact summary indicates the number of applications applied to the left artifact. More details are provided in the following screenshot.
+
+![][checkstyle_basicInfo]
 
 ## Analysis
 
-   This section is the pie chart and bar chart of the **SUMMARY & STATISTIC** part that calculated from different dimensions. More details, see the following screenshot.
+This section contains the pie chart and bar chart of the **SUMMARY & STATISTICS** part, calculated from different dimensions. More details are provided in the following screenshot.
 
-   ![][checkstyle_chart]
+![][checkstyle_chart]
 
-## Check result details
+## Check Result Details
 
-   You can see more detailed information about checkstyle warnings. It supports to filter through different dimensions like level and category. You can type in **Symptom**, **Best Practice**, **Reference** and **Artifact** to make a more accurate search. **Symptom** provides the description of warnings, **Best Practice** offers suggestions for improvement, **Reference** gives a reference source for suggestions, and **Artifact** indicates the location of artifact that causes warnings so that you can fix them easily.
+You can see more detailed information about Checkstyle warnings in this section. It supports filtering through different dimensions like level and category. You can type in **Symptom**, **Best Practice**, **Reference**, and **Artifact** to perform a more accurate search. **Symptom** provides the description of warnings, **Best Practice** offers suggestions for improvement, **Reference** gives a reference source for suggestions, and **Artifact** indicates the location of the artifact that causes warnings so that you can fix them easily.
 
-   If you fixed one warning, you can hover the mouse over the row and click the **Refresh** icon to re-check the warning.
+If you have fixed a warning, you can hover the mouse over the row and click the **Refresh** icon to re-check the warning.
 
-   ![][checkstyle_checkresultDetailed]
-   
-   ![][checkstyle_checkresultDetailed_refresh]
+![][checkstyle_checkresultDetailed]
+
+![][checkstyle_checkresultDetailed_refresh]
 
 [checkstyle_healthScore]: ../images/checkstyle/checkstyle_healthScore.PNG
 [checkstyle_basicInfo]: ../images/checkstyle/checkstyle_basicInfo.PNG

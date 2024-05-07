@@ -14,17 +14,17 @@ last_modified_at: 2019-07-29 15:22:00
 
       ![][test_import_form]{:width="60%"}
 
-  2. Fill import form according to following table.
+  2. Fill in the import form according to the following table.
 
        |   Parameter   | Description    |
        | ------------- |----------------|
        | [Server][1]   |Server environment|
        | Process App   |Process app list of the selected server, default value is "Hiring Sample"|
-       | [Default Browser][2]  |Support chrome, firefox selenium node|
+       | [Default Browser][2]  |Supports Chrome, Firefox, and Selenium node|
 
-   3. Click **Import** button.
+   3. Click the **Import** button.
 
-   4. Click **_Hring Sample** from project list and enter into project dashboard.
+   4. Click **_Hiring Sample** from the project list and enter the project dashboard.
 
        ![][test_hiring_sample_project]
 
@@ -34,15 +34,15 @@ last_modified_at: 2019-07-29 15:22:00
 
 ##  Execute a sample test project
 
-  1. Select all the test cases in the dashboard and click **Run** button.
+  1. Select all the test cases in the dashboard and click the **Run** button.
 
      ![][test_import_run]
 
-     The test result and basic information of hiring sample project can be viewed in project dashboard.
+     The test results and basic information of the hiring sample project can be viewed in the project dashboard.
 
      ![][test_import_project_info]
 
-  2. You can see report of a test case by clicking case name ,then clicking **report**.[More details.][3]
+  2. You can see the report of a test case by clicking the case name, then clicking **Report**. [More details.][3]
 
 [test_import_form]: ../images/test/test_import_form.PNG
 [test_import_project_info]: ../images/test/test_import_project_info.PNG
@@ -51,4 +51,4 @@ last_modified_at: 2019-07-29 15:22:00
 [test_hiring_sample_project]: ../images/test/test_hiring_sample_project.PNG
 [1]: ../administration/administration-baw-configuration.html
 [2]: ../administration/administration-selenium-hub-configuration.html
-[3]: test-case-report.html
+[3]: test-test-report.html

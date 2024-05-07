@@ -8,17 +8,15 @@ last_modified_at: 2019-07-29 16:52:00
 # Best Practices
 ***
 
-## Long load time AJAX call
-* As we know, the modern web application always load data by AJAX call. Sometime, it may needs a long time to get the AJAX call result. The automation test case become not stable in this case. It's because that, the test case run the test steps without waiting the AJAX call end.
-* Normally, there is a loading indicator on the HTML to indicate a AJAX call is completed or not. We could resolve the problem by adding the **waitElement** command after the AJAX call test step. So that the system will wait a certain seconds until the loading indicator element becomes **visible/hidden/enabled/disable**.
+## Long Load Time for AJAX Calls
+* As we know, modern web applications always load data by AJAX calls. Sometimes, it may take a long time to get the AJAX call result. The automation test case becomes unstable in this case, because the test case runs the test steps without waiting for the AJAX call to end.
+* Normally, there is a loading indicator on the HTML to indicate whether an AJAX call is completed or not. We could resolve the problem by adding the **waitElement** command after the AJAX call test step. So that the system will wait for a certain number of seconds until the loading indicator element becomes **visible/hidden/enabled/disabled**.
 * The **waitElement** command:
-	* **Type**: The value could be Visible, Hidden, Enabled and Disable.
-	* **Timeout**: The waiting seconds.
+	* **Type**: The value could be Visible, Hidden, Enabled, and Disabled.
+	* **Timeout**: The waiting time in seconds.
 	* **Element ID/Element CSS/XPATH**: These values can be used to locate the AJAX loading indicator HTML element on the UI page.
 
    ![][references-wait-element]
-
-
 
   [references-wait-element]: ../images/references/references-wait-element.png
   [references-idarecorder]: ../images/references/IDARecorder.png

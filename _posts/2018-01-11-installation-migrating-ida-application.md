@@ -7,7 +7,7 @@ last_modified_at: 2024-04-29 16:44:00
 
 # Migrating IDA Application
 
-If you have previously installed IDA in your environment and now you want to update IDA to the new version, please read the following content. 
+If you have previously installed IDA in your environment and now you want to update IDA to the new version, please read the following content.
 
 Below are example steps to migrate IDA application from v21.0.0 to v24.0.3+. For migrating applications from and to early versions of IDA, see references below:
  - [Migrating and Updating IDA Application v2.x](../references/references-migrating-and-updating-ida-application-v2.x.html)
@@ -23,7 +23,7 @@ Starting from version 24.0.3, IDA automatically checks for database schema migra
 
 ## Preparing your migration
 
-Compared to the previous version, the new version of IDA will have some changes in database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:  
+Compared to the previous version, the new version of IDA will have some changes in the database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:
 
 1. Download the lastest IDA installation file. The migration scripts come from the installation file. The file name is ida-web-xxx.zip.(xxx is the IDA version)
 2. Stop Libery server.  
@@ -32,7 +32,7 @@ Compared to the previous version, the new version of IDA will have some changes 
 
 ## Step 1: Update IDA.war
 
-You need to update IDA.war by the following steps:
+You need to update IDA.war by following these steps:
 
 1. [Configure Liberty server.xml](../installation/installation-installing-ida-application.html#installing-on-liberty).
 2. Remove all the files from <LIBERTY_FOLDER>\usr\servers\default\apps folder.     
@@ -65,18 +65,20 @@ Choose one of the following options to migrate database schema when necessary.
  
 ## Step 3: Update IDA BAW Toolkit    
 
-To update IDA BAW Toolkit, take the following steps:
+## Step 3: Update IDA BAW Toolkit
 
-BAW Version | IDA Toolkit Version  
+To update the IDA BAW Toolkit, take the following steps:
+
+BAW Version | IDA Toolkit Version
      ----------------------|-------------------
       19.0.0.3 |  IDA_Toolkit - 8.6.0_v1.5.twx
-      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [excuteSQL](../references/references-test-command.html#executesql)**.
+      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [executeSQL](../references/references-test-command.html#executesql)**.
       above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
 
-1. Import corresponding **IDA_Toolkit - 8.6.x.x.twx** which is below forder /toolkit of release package into your process center.
+1. Import the corresponding **IDA_Toolkit - 8.6.x.x.twx** which is in the /toolkit folder of the release package into your Process Center.
 
-2. Open your process app by web process designer from process center. 
- 
+2. Open your process app by the web process designer from the Process Center.
+
 3. Upgrade the toolkit.
 
     ![][toolkit-upgrade-1-v21]{:height="60%" width="60%"}
@@ -85,12 +87,12 @@ BAW Version | IDA Toolkit Version
 
     ![][toolkit-upgrade-2]{:height="60%" width="60%"}
 
-5. Click **Services** below **IDA Toolkit**. Right click the **IDA Utility** service flow and copy the item to your process app.
+5. Click **Services** below **IDA Toolkit**. Right-click the **IDA Utility** service flow and copy the item to your process app.
 
     ![][toolkit-upgrade-3-v21]{:height="60%" width="60%"}
 
     ![][toolkit-upgrade-4]{:height="30%" width="30%"}
-   
+
 [ida_version]: ../images/install/ida_version.png
 [toolkit-upgrade-1-v21]: ../images/references/IDAbpmToolkitUpgrade_1-v21.png
 [toolkit-upgrade-2]: ../images/references/IDAbpmToolkitUpgrade_2.png

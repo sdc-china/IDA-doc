@@ -1,131 +1,124 @@
 ---
-title: "Repacking IDA Application(v3.x, v2.x)"
+title: "Repacking IDA Application (v3.x, v2.x)"
 category: references
 date: 2018-11-09 15:17:56
 last_modified_at: 2021-12-10 21:34:00
 ---
 
-# Repacking IDA v3.x Application
+# Repacking IDA Application (v3.x, v2.x)
 ***
-
 
 ## Properties Configuration
 
-**Configure IDA properties** 
+**Configure IDA properties**
 
-Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
+Edit [IDA_HOME]/conf/**ida.properties** under the **conf** folder.
 
-This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password field. If you want to encode your database password. Please refer to Notes 2 below.
+This properties file contains three main sections. Please set spring.datasource.driver-class-name, spring.datasource.url, spring.datasource.username, spring.datasource.password fields. If you want to encode your database password, please refer to Notes 2 below.
 
-**Notes 1:** Please add JNDI or Datasource configuration. Only one type of configuration is needed and please comment out the other configuration. We recommend using JNDI configuraion and the JNDI datasource name should be configured on your application server. See sample JNDI datasource configuration in Liberty server in [installation doc](../installation/installation-installing-ida-application.html#installing-on-liberty).
+**Note 1:** Please add JNDI or Datasource configuration. Only one type of configuration is needed, and please comment out the other configuration. We recommend using JNDI configuration, and the JNDI datasource name should be configured on your application server. See the sample JNDI datasource configuration in the Liberty server in the [installation doc](../installation/installation-installing-ida-application.html#installing-on-liberty).
 
 **JNDI Configuration**
 
-*  **spring.datasource.jndi-name** : JNDI NAME
-
+*  **spring.datasource.jndi-name**: JNDI NAME
 
 **Datasource Configuration**
 
-*  **spring.datasource.driver-class-name** : Dirver Class Name
-*  **spring.datasource.url** : Datasource url
-*  **spring.datasource.username** : User Name
-*  **spring.datasource.password** : Password
+*  **spring.datasource.driver-class-name**: Driver Class Name
+*  **spring.datasource.url**: Datasource URL
+*  **spring.datasource.username**: User Name
+*  **spring.datasource.password**: Password
 
 **Jasypt Configuration**
 
-*  **jasypt.encryptor.password** : Jasypt secret key for Encrypt datasource passwords
+*  **jasypt.encryptor.password**: Jasypt secret key for encrypting datasource passwords
 
-**Notes 2:** 
-If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
-You can use [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generate encrypted password.    
+**Note 2:**
+If you want to use an encrypted database password in **spring.datasource.password**, you need to generate the encrypted password. There are two ways to generate it. The secret key is defined in **jasypt.encryptor.password**.
+You can use the [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generate an encrypted password.
 
 ![][onlineencrypt]
 
 [onlineencrypt]: ../images/install/online.png
 
-Also you can use command line tool from [jasypt](http://www.jasypt.org/download.html) to generate.
+Also, you can use the command-line tool from [jasypt](http://www.jasypt.org/download.html) to generate it.
 
 ## Repacking IDA-web with configuration
 
-The purpose of repackage  is to update your application-product.yaml in the war to make sure it loads the recent configuration.Once all the properties in [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
+The purpose of repacking is to update your application-product.yaml in the war to ensure it loads the recent configuration. Once all the properties in [IDA_HOME]/conf/ida.properties have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.
 
-Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the JAVA_HOME environment variable and make ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set , you can then execute the package shell command to repackage the **ida-web.war**.
+Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh**, you will need to set the JAVA_HOME environment variable and ensure that [JAVA_HOME]/bin is included in the PATH variable. Once the environment variable is set, you can then execute the package shell command to repackage the **ida-web.war**.
 
 # Repacking IDA v2.x Application
 
 ## Properties Configuration
 
-
-Edit [IDA_HOME]/conf/**ida.properties** under **conf** folder. 
+Edit [IDA_HOME]/conf/**ida.properties** under the **conf** folder.
 
 This properties file contains three main sections.
- 
-**application configuration**
-   
-*  **spring.datasource.username** : Database connection username  
-*  **spring.datasource.password** : Database connection password  
-*  **spring.datasource.url** : Database connection URL. If you want to configure specific data schema to db2, change your url like this: 
-	```
-	# for DB2
-	spring.datasource.url:jdbc:db2://[ip]:[port]/[database-name]?currentSchema=[schema-name]
-	
-	```
-*  **server.host** :  IDA server IP or host name
-*  **server.context-path** : default as  "/ida"  
-*  **http.port** : Liberty http port defined in the server.xml
-*  **https.port** : Liberty https port defined in the server.xml
-*  **engine-config.connection-timeout** :  page load timeout
-*  **engine-config.wait-timeout** :  default wait timeout, used in waitTextPresent and waitElement commands    
-*  **engine-config.default-retry-times** :  the default retry times of the failed command. Can be overwritten by project properties.
-*  **engine-config.default-retry-interval** : the default interval time between the retry. If not be set, the default is 3. Can be overwritten by project properties.    
-*  **engine-config.data-dir** :  Temp folder to keep resouces like screenshot,checkstyle,twx etc 
-*  **engine-config.installation-package-remote-dir** :  Temp folder to keep exported installation packages in PC/PS server
-*  **smtp.host** : SMTP host    
-*  **smtp.port** : SMTP port    
-*  **email.from** : Sender Email address 
-*  **spring.activemq.broker-url** : IP and Port of embedded ActiveMQ. It is only needed when you integrate IDA with BAW DEF[1] to have the monitoring feature. By default this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace the localhost with the actual IP address of the IDA deployment server.
-*  **deployment.timeout** : The timeout in seconds for REST API call to check if snapshot is installed on PS and set as default snapshot
-*  **deployment.interval** : The interval in seconds for REST API call to check if snapshot is installed on PS and set as default snapshot
-*  **jasypt.encryptor.password** : default value password  
-*  **enable_case_history** : Enable save test case history function, default value is true.  
-*  **max_case_history** : Set latest test case history max number of each test case, default value is 100.    
 
+**Application Configuration**
 
-**Notes** 
-If you want to use encrypt database password in the **spring.datasource.password**.You need to generate the encrypt password.There are two ways to generate it.The secret key is define in the **jasypt.encryptor.password**.
-You can use [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generate encrypted password.    
+*  **spring.datasource.username**: Database connection username
+*  **spring.datasource.password**: Database connection password
+*  **spring.datasource.url**: Database connection URL. If you want to configure a specific data schema for DB2, change your URL like this:
+    ```
+    # for DB2
+    spring.datasource.url:jdbc:db2://[ip]:[port]/[database-name]?currentSchema=[schema-name]
+    ```
+*  **server.host**: IDA server IP or hostname
+*  **server.context-path**: Default is "/ida"
+*  **http.port**: Liberty HTTP port defined in the server.xml
+*  **https.port**: Liberty HTTPS port defined in the server.xml
+*  **engine-config.connection-timeout**: Page load timeout
+*  **engine-config.wait-timeout**: Default wait timeout, used in waitTextPresent and waitElement commands
+*  **engine-config.default-retry-times**: The default retry times for the failed command. Can be overwritten by project properties.
+*  **engine-config.default-retry-interval**: The default interval time between retries. If not set, the default is 3. Can be overwritten by project properties.
+*  **engine-config.data-dir**: Temp folder to keep resources like screenshots, checkstyle, twx, etc.
+*  **engine-config.installation-package-remote-dir**: Temp folder to keep exported installation packages in PC/PS server
+*  **smtp.host**: SMTP host
+*  **smtp.port**: SMTP port
+*  **email.from**: Sender Email address
+*  **spring.activemq.broker-url**: IP and Port of embedded ActiveMQ. It is only needed when you integrate IDA with BAW DEF[1] to have the monitoring feature. By default, this property is commented out. You can leave it as-is if you don't need the monitoring feature. If you need it, you can uncomment it and replace localhost with the actual IP address of the IDA deployment server.
+*  **deployment.timeout**: The timeout in seconds for REST API calls to check if a snapshot is installed on PS and set as the default snapshot
+*  **deployment.interval**: The interval in seconds for REST API calls to check if a snapshot is installed on PS and set as the default snapshot
+*  **jasypt.encryptor.password**: Default value password
+*  **enable_case_history**: Enable saving test case history function, default value is true.
+*  **max_case_history**: Set the maximum number of latest test case histories for each test case, default value is 100.
+
+**Note**
+If you want to use an encrypted database password in **spring.datasource.password**, you need to generate the encrypted password. There are two ways to generate it. The secret key is defined in **jasypt.encryptor.password**.
+You can use the [online web tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption) to generate an encrypted password.
 
 ![][onlineencrypt]
 
 [onlineencrypt]: ../images/install/online.png
 
-Also you can use command line tool from [jasypt](http://www.jasypt.org/download.html) to generate.
-
+Also, you can use the command-line tool from [jasypt](http://www.jasypt.org/download.html) to generate it.
 
 ![][offlineencrypt]
 
 [offlineencrypt]: ../images/install/offline.png
 
-Once you get the encrypt password,you need to change spring.datasource.password like below format.As a general rule, jasypt expects encrypted configuration parameters to appear surrounded by "ENC(...)".    
-spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)   
+Once you get the encrypted password, you need to change spring.datasource.password to the following format. As a general rule, jasypt expects encrypted configuration parameters to appear surrounded by "ENC(...)".
+spring.datasource.password: ENC(Yasd1hzrpo05EdNTzlifQ22+8LUNAgcT)
 
+**LDAP Properties Configuration**
 
-**LDAP properties configuration**
+*  **ldap.enable**: If set to true, it will authenticate the IDA users by LDAP protocol.
+*  **ldap.url**: Set the LDAP server URL.
+*  **ldap.username**: Set the LDAP server login username.
+*  **ldap.password**: Set the LDAP server login user password.
+*  **ldap.basedn**: Set the LDAP server base DN.
+*  **ldap.user.filter**: Set the LDAP server user filter pattern, use '#' to split multiple user filter patterns.
+*  **ldap.default.role**: Set the default LDAP user role name.
+*  **ldap.username.case-insensitive**: Set whether the LDAP server is case-insensitive or not.
 
-*  **ldap.enable** : If set flag to true, it will authenticate the ida users by ldap protocol.    
-*  **ldap.url** : Set LDAP server url.    
-*  **ldap.username** : Set LDAP server login user name.    
-*  **ldap.password** : Set LDAP server login user password.    
-*  **ldap.basedn** : Set LDAP server base dn.    
-*  **ldap.user.filter** : Set LDAP server user fileter pattern, use '#' to split multiple user filter patterns.   
-*  **ldap.default.role** : Set the default LDAP user role name.  
-*  **ldap.username.case-insensitive** : Set LDAP server is case insensitive or not.
+**Note**
 
-**Notes** 
-
-- If you enable LDAP authencation configuration, You could not add users by idaAdmin.    
-- When a user sign in IDA at the first time, the user is not belong to any teams. The user need to ask the idaAdmin to assign him/her to a team, then the user could create projects and pipelines.  
-- Do not create user idaAdmin(case insensitive) in LDAP server because it is a reserved user.
+- If you enable LDAP authentication configuration, you cannot add users by idaAdmin.
+- When a user signs in to IDA for the first time, the user does not belong to any teams. The user needs to ask the idaAdmin to assign them to a team, then the user can create projects and pipelines.
+- Do not create a user named idaAdmin (case-insensitive) in the LDAP server because it is a reserved user.
 
 **LDAP Configuration Example**
 
@@ -141,66 +134,65 @@ cn: Ben Alex
 sn: Alex
 uid: ben
 ```
-You LDAP server configuration may like this:
+Your LDAP server configuration may look like this:
 
 ```
 #Ldap Server configuration
-#If set flag to true, it will authenticate the ida users by ldap protocol
+#If set to true, it will authenticate the IDA users by LDAP protocol
 ldap.enable: true
-#Ldap server url
+#Ldap server URL
 ldap.url: "ldap://<IP_Address>:<port>/"
-#Ldap server user name
-ldap.username: "cn=admin,dc=example,dc=org"   
+#Ldap server username
+ldap.username: "cn=admin,dc=example,dc=org"
 #Ldap server user password
 ldap.password: "admin"
 #The root of data information trees
 ldap.basedn: "dc=example,dc=org"
-#Ldap user filter pattern, use '#' to split multiple user filter pattern. If you want to use "uid=ben,ou=people,dc=example,dc=org" to login IDA. Just input "ben" for the username field and input the corresponding password field on the login form.
+#Ldap user filter pattern, use '#' to split multiple user filter patterns. If you want to use "uid=ben,ou=people,dc=example,dc=org" to login to IDA, just input "ben" for the username field and input the corresponding password field on the login form.
 
-#Specify the organization information when verifying user.
+#Specify the organization information when verifying the user.
 ldap.user.filter: "uid={0},ou=people"
-#Don not specify the organization information when verifying user.
+#Do not specify the organization information when verifying the user.
 ldap.user.filter: "uid={0}"
 
-#Set default 
+#Set the default role
 ldap.default.role: User
-#Ldap server is case insensitive or not.
+#Ldap server is case-insensitive or not.
 ldap.username.case-insensitive: true
 ```
 
- 
-**checkstyle properties configuration**
+**Checkstyle Properties Configuration**
 
-*  **checkstyle.engine**: The checkstyle engine property can be EMBEDDED or ODM. By default, it's *EMBEDDED*. You need configure the following ODM server and rules configuration if you use ODM as checkstyle engine.
-*  **resUser** : rule execution server username  
-*  **resPassword** : rule execution server password  
-*  **resUrl** : rule execution server url  
-*  **resPort** : rule execution server port 
-*  **restUrl** : The checkstyle rule ODM REST url
+*  **checkstyle.engine**: The checkstyle engine property can be EMBEDDED or ODM. By default, it's *EMBEDDED*. You need to configure the following ODM server and rules configuration if you use ODM as the checkstyle engine.
+*  **resUser**: Rule execution server username
+*  **resPassword**: Rule execution server password
+*  **resUrl**: Rule execution server URL
+*  **resPort**: Rule execution server port
+*  **restUrl**: The checkstyle rule ODM REST URL
 
-**monitoring properties configuration (For BAW Monitoring purpose)**
-	
-*  **event_type** : event types to be stored in IDA database  
-*  **track_serviceflow** : default as true  
+**Monitoring Properties Configuration (For BAW Monitoring purpose)**
+
+*  **event_type**: Event types to be stored in the IDA database
+*  **track_serviceflow**: Default is true
 
 It is only needed when you want to configure monitoring[1] to have the monitoring feature. If you don't need it, you can leave them as-is.
 
-**Datasource properties configuration**
-You can uncomment DB2 property configuration and comment MySQL property configuration.
+**Datasource Properties Configuration**
+You can uncomment the DB2 property configuration and comment out the MySQL property configuration.
 
 ![][db2config]
 
 [db2config]: ../images/install/db2configuration.png
 
-**Notes**   
+**Note**
 
-If you want your IDA support Latin alphabet in page,you need to add **useUnicode=yes&characterEncoding=UTF-8** at the end of jdbc url.
+If you want your IDA to support Latin alphabets on pages, you need to add **useUnicode=yes&characterEncoding=UTF-8** at the end of the JDBC URL.
 
 ## Repacking IDA-web with configuration
 
-The purpose of repackage  is to update your application-product.yaml in the war to make sure it loads the recent configuration.Once all the properties in [IDA_HOME]/conf/ida.properties file have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.  
+The purpose of repacking is to update your application-product.yaml in the war to ensure it loads the recent configuration. Once all the properties in [IDA_HOME]/conf/ida.properties have been updated, you can then re-package the [IDA_HOME]/build/**ida-web.war** file.
 
-Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh** you will need to set the JAVA_HOME environment variable and make ensure that [JAVA_HOME]/bin is included in the variable.  Once the environment variable is set , you can then execute the package shell command to repackage the **ida-web.war**.
+Before running the [IDA_HOME]/**package.bat** or [IDA_HOME]/**package.sh**, you will need to set the JAVA_HOME environment variable and ensure that [JAVA_HOME]/bin is included in the PATH variable. Once the environment variable is set, you can then execute the package shell command to repackage the **ida-web.war**.
 
 ![][package]
 

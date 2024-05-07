@@ -8,73 +8,73 @@ last_modified_at: 2019-07-26 16:32:00
 # Record and Replay a Test Case
 ***
 
-## Record a test case
+## Record a Test Case
 
-  1. Click **Edit** button on the right of suite name.
+  1. Click the **Edit** button on the right of the suite name.
   
      ![][test_case_step_table]
   
-  2. Click **Record** button on the right of suite name. You will enter record mode.
+  2. Click the **Record** button on the right of the suite name. You will enter record mode.
   
      ![][test_case_step_table2]
      
-      ![][test_record_page]
+     ![][test_record_page]
   
   3. In the **Debug** step which has ![][test_debug_point] in front of it, the process will be stopped. If you need to resume, you can click ![][test_case_record_resume].
    
      ![][test_case_record_plugin]
   
-  4. Record according to process diagram execution flow, you can see each step you have done in tool bar.
+  4. Record according to the process diagram execution flow, you can see each step you have done in the toolbar.
   
-      ![][test_case_record_plugin2]
+     ![][test_case_record_plugin2]
   
-  5. Click ![][test_record_stop] button to finish the record.The operations you done are showed in case step list table.
+  5. Click the ![][test_record_stop] button to finish the recording. The operations you have done are shown in the case step list table.
   
      ![][test_record_steps]
 
-## Replay a test case 
+## Replay a Test Case 
 
-  1. Click **Record** button on the right of case name to replay it.
+  1. Click the **Record** button on the right of the case name to replay it.
   
-  2. Click ![][test_record_stop] button to finish the replay.
+  2. Click the ![][test_record_stop] button to finish the replay.
   
-  3. In the **Debug** step which has ![][test_debug_point] in front of it, the record will be stopped. You need to click ![][test_case_record_resume] button to resume. 
+  3. In the **Debug** step which has ![][test_debug_point] in front of it, the recording will be stopped. You need to click the ![][test_case_record_resume] button to resume. 
   
-  4. Click **Exit Edit** button on the right of suite name.
+  4. Click the **Exit Edit** button on the right of the suite name.
   
   **Notes**: 
   
-  If you need to record some test steps, you can add **debug** command where you need to record. When replay to the **debug** command, you can record your case steps.
+  If you need to record some test steps, you can add a **debug** command where you need to record. When replaying to the **debug** command, you can record your case steps.
   
-  Here are the description of plugin buttons:
+  Here are the descriptions of the plugin buttons:
   
-   | Button   |Description      |Can click while running|
+   | Button   | Description      | Can click while running|
    |----|---------------------- |-----------------------|
-   |![][test_case_record_resume] |Run test case until break point step.| False, can click on debug steps.|
-   |![][test_case_break_point_button]|Skip all break points.|True|
-   |![][test_case_skip_break_point]|Enable all break points.|True|
-   |![][test_case_disabled_record_button]|Disable record case steps.|False, can click on debug steps.|
-   |![][test_case_enable_record_button]|Enable record case steps.|False, can click on debug steps.|
+   |![][test_case_record_resume] | Run test case until the break point step.| False, can click on debug steps.|
+   |![][test_case_break_point_button]| Skip all break points.| True|
+   |![][test_case_skip_break_point]| Enable all break points.| True|
+   |![][test_case_disabled_record_button]| Disable recording case steps.| False, can click on debug steps.|
+   |![][test_case_enable_record_button]| Enable recording case steps.| False, can click on debug steps.|
   
-## Record a test case with group command
+## Record a Test Case with a Group Command
 
   1. Preparation
   
-     - Prepare group commands that you want to add into test case. Refer to **Create a group command** in **[Group Command Management][1]**. Here is the group command that is ready to be used as example.
+     - Prepare the group commands that you want to add into the test case. Refer to **Create a Group Command** in **[Group Command Management][1]**. Here is the group command that is ready to be used as an example.
           
           ![][test_record_and_replay_example_group_command]
           
-     - Add group command to test case. Refer to **Use a group command** in **[Group Command Management][1]**.
+     - Add the group command to the test case. Refer to **Use a Group Command** in **[Group Command Management][1]**.
     
-     - Add **debug** command following the group command. In case you would like to record after the group command. Take case2 of **Standard HR Open New Position** as an example. After finishing preparation, the case step list will be like that shown in the following screenshot.
+     - Add a **debug** command following the group command, in case you would like to record after the group command. Take case2 of **Standard HR Open New Position** as an example. After finishing the preparation, the case step list will be like the one shown in the following screenshot.
 
          ![][test_record_and_record_group_command]
       
-  2. The recording operation refers to **Record a test case**.
+  2. The recording operation refers to **Record a Test Case**.
   
-## Replay a test case with group command
+## Replay a Test Case with a Group Command
 
-  Refer to **Replay a test case**.
+  Refer to **Replay a Test Case**.
     
     
 [test_case_step_table]: ../images/test/test_case_step_table.PNG

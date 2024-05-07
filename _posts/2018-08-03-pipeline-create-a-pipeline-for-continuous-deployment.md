@@ -10,123 +10,122 @@ last_modified_at: 2022-08-25 15:51:00
 
 ## Create a pipeline
 
-1. Click **Create Pipeline** button in pipeline page.
+1. Click the **Create Pipeline** button on the pipeline page.
 
    ![][pipeline_create]
-   In the **Build Triggers** section, you can configure how to automatically trigger the pipeline build. Select ***Build Periodically*** to configure a timer to trigger the pipeline build. Select ***Trigger By New Snapshot***, then a background job will periodically check new snapshots on PC server of the first stage (see steps below). If a new snapshot is created on PC, a new pipeline build will start. The time interval for the background job to query for new snapshots can be set [in Settings tab](../administration/administration-settings-configuration.html#pipeline-configuration).
+   In the **Build Triggers** section, you can configure how to automatically trigger the pipeline build. Select **Build Periodically** to configure a timer to trigger the pipeline build. Select **Trigger By New Snapshot**, then a background job will periodically check for new snapshots on the PC server of the first stage (see steps below). If a new snapshot is created on the PC, a new pipeline build will start. The time interval for the background job to query for new snapshots can be set [in the Settings tab](../administration/administration-settings-configuration.html#pipeline-configuration).
 
- 2. Click ![][pipeline_add_stage] icon to add a new stage.
+ 2. Click the ![][pipeline_add_stage] icon to add a new stage.
 
     ![][pipeline_first_stage]{:width="60%"}
 
-	The fields to create a stage is explained as below.
+	The fields to create a stage are explained below.
 
      |Label                  | Description
      |---------------------- |-------------
      |Name                   | The stage name
-     |Type                   | The options are Development, Test, Stage, Production and Utility
-     |Server                 | The server environment based on the stage type, the Utility stage type doesn't have server
+     |Type                   | The options are Development, Test, Stage, Production, and Utility
+     |Server                 | The server environment based on the stage type (the Utility stage type doesn't have a server)
      |Process App            | Process apps of the selected server
      |Branch                 | The branch of the selected process app
      |Snapshot               | The snapshot of the selected branch
 
 
- 3. Click ![][pipeline_add_stage] icon below the stage step to add a new step in the stage.
+ 3. Click the ![][pipeline_add_stage] icon below the stage step to add a new step in the stage.
 
     ![][pipeline_create_step]{:width="60%"}
 
-    The fields to create a step is explained as below.
+    The fields to create a step are explained below.
 
      |Label                  | Description
      |---------------------- |-------------
      |Name                   | The stage name
-     |Type                   | The options are Snapshot, Deployment, Checkstyle, Test and Script.
+     |Type                   | The options are Snapshot, Deployment, Checkstyle, Test, and Script.
 
-    In **Development** stage, you can choose the step type as **Snapshot**, **Checkstyle**, **Test** and **Script**.
+    In the **Development** stage, you can choose the step type as **Snapshot**, **Checkstyle**, **Test**, and **Script**.
 
-    In the stages of **Test**, **Stage** and **Production**, you can choose the step type as **Deployment**, **Test** and **Script**.
+    In the stages of **Test**, **Stage**, and **Production**, you can choose the step type as **Deployment**, **Test**, and **Script**.
 
-    In **Utility** stage, you can only choose the step type as **Script**.
+    In the **Utility** stage, you can only choose the step type as **Script**.
 
- 4. Click ![][pipeline_add_stage] icon to add more stages, here's a typical stage's look.
+ 4. Click the ![][pipeline_add_stage] icon to add more stages. Here's a typical stage's appearance.
 
     ![][pipeline_stages]{:width="80%"}
 
-    For the first stage, it's not allowed to change the sequence. However, you can adjust other stages' sequence by dragging and dropping.
+    For the first stage, it's not allowed to change the sequence. However, you can adjust other stages' sequences by dragging and dropping.
 
 
-## Create a pipeline from template
+## Create a pipeline from a template
 
-1. Click **Create Pipeline** button in pipeline page.
+1. Click the **Create Pipeline** button on the pipeline page.
 
    ![][pipeline_create]
 
-2. Click ![][pipeline_import_stage] icon to create a pipeline from a template.
+2. Click the ![][pipeline_import_stage] icon to create a pipeline from a template.
 
-3. There are five build-in templates, you could choose one from the dropdown list.
+3. There are five built-in templates; you could choose one from the dropdown list.
     ![][pipeline_create]
 
-4. Input the missing value labeled by  ![][pipeline_missing_value].
+4. Input the missing values labeled by ![][pipeline_missing_value].
 
 ## Edit a pipeline
 
-1. In the pipeline list page, click ![][pipeline_edit_icon] button.
+1. On the pipeline list page, click the ![][pipeline_edit_icon] button.
 
     ![][pipeline_build]
 
-2. Update pipeline form according to the table shown in creation session.
+2. Update the pipeline form according to the table shown in the creation section.
 
 ## Delete a pipeline
 
-In the pipeline list page, click ![][pipeline_delete_icon] button.
+On the pipeline list page, click the ![][pipeline_delete_icon] button.
 
 ## Run a pipeline
 
-1. You have two ways to run the pipeline. Firstly, click **Run** button at the top right corner of the pipeline section. Secondly, enter the pipeline dashboard page, click **Build** button.
+1. You have two ways to run the pipeline. Firstly, click the **Run** button at the top right corner of the pipeline section. Secondly, enter the pipeline dashboard page and click the **Build** button.
 
     ![][pipeline_dashboard]
 
-    In the statistics section, you could view each build step avg time and ratio of the pipeline completed builds.
+    In the statistics section, you could view the average time for each build step and the ratio of completed pipeline builds.
 
     ![][pipeline_build_statistic]
 
-    When you run the build, the pipeline build history section will appear with building status for each stage. You could see the build status, running step or failed step of each build.
+    When you run the build, the pipeline build history section will appear with the building status for each stage. You could see the build status, running step, or failed step of each build.
 
     ![][pipeline_build_view]   
 
-    Click the ![][pipeline_build_log_icon] at the ending of each row, you will see the build logs in popup dialog.
+    Click the ![][pipeline_build_log_icon] at the end of each row to see the build logs in a pop-up dialog.
 
-2. When the pipeline build is over, the summary information will be appeared in pipeline dashboard. The failed step will not be running and won't have any report. You can click the **build name** link to see the whole report. [Details of the report]
+2. When the pipeline build is over, the summary information will appear in the pipeline dashboard. The failed step will not be running and won't have any report. You can click the **build name** link to see the whole report. [Details of the report]
 
 
 ## Perform deployment from Workflow PC server to PC server
 
 **Note:**
 
-IDA only support to deploy applications from Workflow PC server to PC server between same version.
+IDA only supports deploying applications from a Workflow PC server to a PC server between the same versions.
 
-1. Click **Create Pipeline** button in pipeline page.
+1. Click the **Create Pipeline** button on the pipeline page.
 
    ![][p2p_create_pipeline]{:width="60%"}
    
- 2. Click ![][pipeline_add_stage] icon to add 'Stage1' and select "Deployment" type.
+ 2. Click the ![][pipeline_add_stage] icon to add 'Stage1' and select the "Deployment" type.
 
     ![][p2p_stage_1]{:width="60%"}
 
- 3. Click ![][pipeline_add_stage] icon below the stage step to add 'TakeSnapshot' step in the stage and select "Snapshot" type.
+ 3. Click the ![][pipeline_add_stage] icon below the stage step to add the 'TakeSnapshot' step in the stage and select the "Snapshot" type.
 
     ![][p2p_takeSnapshot]{:width="60%"}
 
- 4. Click ![][pipeline_add_stage] icon to add 'Stage2' and select "Deployment" type, you could select another Workflow PC server with same version of 'Stage1'.
+ 4. Click the ![][pipeline_add_stage] icon to add 'Stage2' and select the "Deployment" type. You could select another Workflow PC server with the same version as 'Stage1'.
 
     ![][p2p_stage2]{:width="60%"}
 
- 5. Click ![][pipeline_add_stage] icon below the stage step to add 'Deploy' step in the stage and select 'Deployment' type.
+ 5. Click the ![][pipeline_add_stage] icon below the stage step to add the 'Deploy' step in the stage and select the 'Deployment' type.
 
     ![][p2p_deployment]{:width="60%"}
 
- 6. Click "Save" button and then you could use the pipeline to make a deployment from PC server to PC server.
-
+ 6. Click the "Save" button, and then you could use the pipeline to make a deployment from the PC server to the PC server.
 
   [pipeline_create]: ../images/pipeline/pipeline_create.png
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png

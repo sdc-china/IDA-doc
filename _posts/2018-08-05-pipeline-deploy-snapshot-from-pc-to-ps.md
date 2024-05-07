@@ -12,42 +12,42 @@ IDA pipeline allows you to deploy your snapshot from Workflow Center to Workflow
 
 ## Define pipeline from Workflow Center to Workflow Server through online deployment
 
-1. Define the pipeline for deployment snapshot from Workflow Center to an online Workflow Server.
+1. Define the pipeline for deploying a snapshot from Workflow Center to an online Workflow Server.
 
    ![][pipeline_pstops]
 
-2. For the Deloyment step, you need to select **Online Install** for it.
+2. For the Deployment step, you need to select **Online Install** for it.
 
    ![][pipeline_online_deploy]{:width="60%"}
 
-3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (Workflow Center) stage will be installed to online Workflow Server. If the snapshot acronym is provided, it means the existing snapshot in DEV (Workflow Center) will be located by snapshot acronym and installed to online Workflow Server.
+3. Run the pipeline, and you will be prompted with a pop-up window to provide the snapshot acronym, which is an optional field. If the snapshot acronym is empty, the snapshot created in the DEV (Workflow Center) stage will be installed to the online Workflow Server. If the snapshot acronym is provided, it means the existing snapshot in the DEV (Workflow Center) will be located by the snapshot acronym and installed to the online Workflow Server.
 
    ![][pipeline_run_online_deploy]{:width="60%"}
 
-4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from Workflow Center to online Workflow Server.
+4. After the pipeline is started, you can check the pipeline build status. If successful, it means the snapshot has been deployed from Workflow Center to the online Workflow Server.
 
 ## Define pipeline from Workflow Center to Workflow Server through offline deployment
 
-1. Define the pipeline for deployment snapshot from Workflow Center to an offline Workflow Server.
+1. Define the pipeline for deploying a snapshot from Workflow Center to an offline Workflow Server.
 
    ![][pipeline_pc_to_ps_offline]
 
-2. For the Deloyment step, you need to select **Offline Install** for it.
+2. For the Deployment step, you need to select **Offline Install** for it.
 
    ![][pipeline_offline_deploy]{:width="60%"}
 
-   The fields to create a step is explained as below.
+   The fields to create a step are explained as below.
 
      |Label                  | Description
      |---------------------- |-------------
-     |Deploy From Local File System Of Process Server                   | Jump over the export step and use the package in Workflow Server server directly
+     |Deploy From Local File System Of Process Server                   | Jump over the export step and use the package in the Workflow Server server directly
      |Clean Old Snapshots | Clean the old snapshots without any running instances or completed tasks referenced by running instances, and the completed instances in the snapshots will be deleted as well.   
      
-3. Run the pipeline, you will be prompted with a popup window to provide the snapshot acronym, which is a optional field. If the snapshot acronym is empty, the snapshot created in DEV (Workflow Center) stage will be installed to offline Workflow Server. If the snapshot acronym is provided, it means the existing snapshot in DEV (Workflow Center) will be located by snapshot acronym and installed to offline Workflow Server.
+3. Run the pipeline, and you will be prompted with a pop-up window to provide the snapshot acronym, which is an optional field. If the snapshot acronym is empty, the snapshot created in the DEV (Workflow Center) stage will be installed to the offline Workflow Server. If the snapshot acronym is provided, it means the existing snapshot in the DEV (Workflow Center) will be located by the snapshot acronym and installed to the offline Workflow Server.
 
    ![][pipeline_run_online_deploy]
 
-4. After the pipeline is started, then you can check the pipeline build status. If sucessful, it means the snapshot is deployed from Workflow Center to offline Workflow Server.
+4. After the pipeline is started, you can check the pipeline build status. If successful, it means the snapshot has been deployed from Workflow Center to the offline Workflow Server.
 
  
 [pipeline_pstops]: ../images/pipeline/pipeline_pctops.png

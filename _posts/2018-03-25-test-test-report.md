@@ -8,53 +8,52 @@ last_modified_at: 2023-07-26 15:50:00
 # Test Report
 ***
 
-IDA offers detailed reports including screenshots, execution process flow and coverage to improve communication between testers and developers on every test case.
+IDA offers detailed reports including screenshots, execution process flow, and coverage to improve communication between testers and developers on every test case.
 
-## Test Case Report  
+## Test Case Report
 
-In the Test project dashboard page,you can click any  test case link to see the detail case report.
-
+In the Test project dashboard page, you can click any test case link to see the detailed case report.
 
   ![][testcase_list]
 
-  Switch the **Report** tab ,check the every step of execution status.  
+  Switch to the **Report** tab, check the execution status of every step.
   Click the **screenshot** image link to see the screenshot if this case step includes UI.
 
   ![][testcase_step_status]
 
-  In process diagram execution flow, You can see two lines.  
+  In the process diagram execution flow, you can see two lines.
 
-  The **blue** line stands for  the expected process execution flow.  
-  The **red** lines stands for the acutal  execution flow.  
-  You can adjust your test case based on the difference between "acutal flow" and "expected flow" process diagram.
-  
+  The **blue** line stands for the expected process execution flow.\
+  The **red** line stands for the actual execution flow.\
+  You can adjust your test case based on the difference between the "actual flow" and the "expected flow" process diagram.
+
   ![][test_BPD_test_case_diagram]
 
 ## Coverage
 
-Coverage is used to display the test coverage of the Process/BPD. It will calculate the coverage rate based on the line information in the **Passed** test case and the line information in the whole Process/BPD.
+Coverage is used to display the test coverage of the Process/BPD. It will calculate the coverage rate based on the line information in the **Passed** test cases and the line information in the whole Process/BPD.
 
   ![][dashboard_coverage]{:width="70%"}
 
-It only works on test suite of **Process** type.
+It only works on test suites of the **Process** type.
 
   ![][generate_test_cases_artifact_type]{:width="70%"}
-  
-Click **Coverage**, it will show the BPD Coverage dialog, you can view detailed information of each **Process** test suite.
+
+Click **Coverage**, it will show the BPD Coverage dialog, where you can view detailed information of each **Process** test suite.
 
   ![][bpd_coverage]{:width="70%"}
 
 
-## Print Report  
+## Print Report
 
-In the Test project dashboard page, you can click ...button -> Print Report to get this project test report in a new tab. 
+In the Test project dashboard page, you can click the ... button -> Print Report to get this project's test report in a new tab.
 
   ![][print_report]{:width="70%"}
 
-The report has 3 parts: test project summary, test suite summary, test case detail.
+The report has three parts: test project summary, test suite summary, and test case details.
     ![][print_repot_summary]{:width="80%"}
-    
-The failed test case will display trace log and screenshot if it has.
+
+The failed test cases will display the trace log and screenshot if available.
 
    ![][print_report_failed]{:width="80%"}
    ![][print_report_failed_2]{:width="80%"}

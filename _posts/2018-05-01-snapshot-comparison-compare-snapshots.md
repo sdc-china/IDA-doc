@@ -10,18 +10,18 @@ Snapshot Comparison allows users to compare two snapshots inside one trace of a 
 
 ## Load Snapshots of a Process App
 
-1. Click **Comparison** tab.
+1. Click the **Comparison** tab.
 
-2. Fill form according to below statement.
+2. Fill out the form according to the following table.
 
 	 Parameter             | Description       
 	 ----------------------|-------------------
 	 [Server][1]           |Server environment.
 	 Process App           |Process apps of the selected server.
-	 Toolkit               |Toolkits of  selected server.
-	 Track                 |The branches of selected process app or toolkit. Multiple select. Will load snapshots of selected branches.
-	 Start Date            |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
-	 End Date              |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
+	 Toolkit               |Toolkits of the selected server.
+	 Track                 |The branches of the selected process app or toolkit. Multiple selections allowed. Will load snapshots of the selected branches.
+	 Start Date            |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
+	 End Date              |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
 	 Include Unnamed Snapshots|Tip it to load unnamed snapshots. 
 	 
 	 ![][snapshot-comparison-form]
@@ -38,9 +38,9 @@ Select two snapshots, then click the **Compare** button.
 
 ![][snapshot-comparison-compare-button]
 
-Waiting for finishing.
+Wait for the process to finish.
 	
-After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will show. Click it to see compared report.
+After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will appear. Click it to see the compared report.
 	
 ![][snapshot-comparison-compare-report-button]
 

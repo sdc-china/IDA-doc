@@ -8,48 +8,40 @@ last_modified_at: 2019-07-29 16:23:00
 # Start and Stop IDA Environment
 ***
 
-##	Starting your environment
+## Starting your environment
 
 ### Start MySQL
 Start the MySQL server by calling the following command:
 
-- Linux: [MYSQL_HOME]/bin/mysqld
+- Linux: `[MYSQL_HOME]/bin/mysqld`
 
-- Windows: [MYSQL_HOME]\bin\mysqld.exe
-
-
-
+- Windows: `[MYSQL_HOME]\bin\mysqld.exe`
 
 ### Start WebSphere Liberty
 Start the WebSphere Liberty server by calling the following command:
 
-- Linux: [IDA_HOME]/bin/server start [SERVER_NAME]
+- Linux: `[IDA_HOME]/bin/server start [SERVER_NAME]`
 
+- Windows: `[IDA_HOME]\bin\server.bat start [SERVER_NAME]`
 
-- Windows: [IDA_HOME]\bin\server.bat start [SERVER_NAME]   
+## Stopping your environment
 
-
-##	Stopping your environment
-
-###	Stop WebSphere Liberty
+### Stop WebSphere Liberty
 Stop the WebSphere Liberty server by calling the following command:
 
-- Linux: [IDA_HOME]/bin/server stop [SERVER_NAME]
+- Linux: `[IDA_HOME]/bin/server stop [SERVER_NAME]`
 
+- Windows: `[IDA_HOME]\bin\server.bat stop [SERVER_NAME]`
 
-- Windows: [IDA_HOME]\bin\server.bat stop [SERVER_NAME]   
+### Stop Selenium Node
+Stop the Selenium Node by terminating the corresponding Java process.
 
-###	Stop Selenium Node
-Stop the Selenium Node by terminating the corresponding java process.
+### Stop Selenium Hub
+Stop the Selenium Grid by terminating the corresponding Java process.
 
-
-###	Stop Selenium Hub
-
-Stop the Selenium Grid by terminating the corresponding java process
-
-###	Stop MySQL
+### Stop MySQL
 Stop the MySQL server by calling the following command:
 
-- Linux: [MYSQL_HOME]/bin/mysqladmin -uroot  shutdown
+- Linux: `[MYSQL_HOME]/bin/mysqladmin -uroot shutdown`
 
-- Windows: [MYSQL_HOME]\bin\mysqladmin.exe -uroot  shutdown
+- Windows: `[MYSQL_HOME]\bin\mysqladmin.exe -uroot shutdown`

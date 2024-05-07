@@ -8,24 +8,24 @@ last_modified_at: 2019-07-29 15:26:00
 # Analyze Workflow Projects with Checkstyle
 ***
 
-## Setting up the Workflow project and perform it.
+## Setting up the Workflow project and performing it
 
-   1. Use BAW server or upload a TWX file to analyze.
+   1. Use the BAW server or upload a TWX file to analyze.
 
-      **Use BAW server**, fill the below field values for the checkstyle form.
+      **Use the BAW server**, fill in the below field values for the Checkstyle form.
 
       ![][checkstyle_checkstyleform]{:width="100%"}
       
       |   Parameter   | Description    |
       | ------------- |----------------|
-      | [Server][1]   |Server environment|
-      | Process App   |Process app list on the selected server|
-      | Toolkit       |Toolkits of  selected server|
-      | Branch        |The branch of selected process app or selected toolkit|
-      |Snapshot       |The snapshot of selected branch|
-      |Tip            |The tip snapshot of the process app|
-      |Ignore Empty Documentation|Ignoring empty documentation check|
-      |Ignore JS Coding Style Check|Ignore JS coding style check check|
+      | [Server][1]   | Server environment|
+      | Process App   | Process app list on the selected server|
+      | Toolkit       | Toolkits of the selected server|
+      | Branch        | The branch of the selected process app or the selected toolkit|
+      | Snapshot      | The snapshot of the selected branch|
+      | Tip           | The tip snapshot of the process app|
+      | Ignore Empty Documentation| Ignoring the empty documentation check|
+      | Ignore JS Coding Style Check| Ignore the JS coding style check|
 
       **Upload a TWX file**, choose the TWX tab.
 
@@ -36,7 +36,7 @@ last_modified_at: 2019-07-29 15:26:00
       ![][checkstyle_checkstyleupload_drop]{:width="40%"}<br>
       ![][checkstyle_checkstyleupload_done]{:width="40%"}
 
-   2. Click **Analyze** Button to see the CheckStyle report.
+   2. Click the **Analyze** Button to see the Checkstyle report.
 
       ![][tutorial_checkstyle_report]{:width="100%"}
 

@@ -11,16 +11,15 @@ On the left is the old snapshot, and on the right is the new snapshot. The name 
 
 ![][snanshot-comparison-name-of-snapshot]
 
-
 ## Menu
 
-There are three types of change,  **Add**,  **Update**,  **Delete**.
+There are three types of changes: **Add**, **Update**, **Delete**.
 
-If it is a add change, there will be a green **A**.
+If it is an add change, there will be a green **A**.
 
 ![][merge-report-menu-add]{:width="40%"}
 
-If it is a update change, there will be a yellow **U**.
+If it is an update change, there will be a yellow **U**.
 
 ![][merge-report-menu-update]{:width="40%"}
 
@@ -28,10 +27,9 @@ If it is a delete change, there will be a red **D**.
 
 ![][merge-report-menu-delete]{:width="40%"}
 
-IDA provides filter button. The user can filter the artifact by **Change Type/Artifact Type/Properties**.
+IDA provides a filter button. The user can filter the artifact by **Change Type/Artifact Type/Properties**.
 
 ![][merge-report-menu-filter]{:width="60%"}
-
 
 ## Change History
 
@@ -43,13 +41,12 @@ Comparative historical results of an artifact from different branches. The modif
 
 ![][change-history-different-branches]
 
-
 ## Process Comparison
 The changes of one artifact are in one panel:
 
 ![][snapshot-comparison-artifact-changes]
 
-The artifact type and artifact name place on the panel header. In this case, **Process** is the artifact type, and **Standard HR Open New Position** is the artifact name.
+The artifact type and artifact name are placed on the panel header. In this case, **Process** is the artifact type, and **Standard HR Open New Position** is the artifact name.
 
 All changes which belong to one block in Web PD will be grouped in one panel in IDA.
 
@@ -57,7 +54,7 @@ All changes which belong to one block in Web PD will be grouped in one panel in 
 
 ![][change-in-ida]
 
-The left side of the semicolon is the path and the right side is the actual value.
+The left side of the semicolon is the path, and the right side is the actual value.
 
 The **plus sign** before the artifact type indicates that the artifact is added in the new snapshot.
 
@@ -65,33 +62,33 @@ The **minus sign** before the artifact type indicates that the artifact has been
 
 ## Coach Comparison
 
-The changes of each coach control are listed in a separate sub-panel under the Human Service. For example in this case, 4 coach controls are changed and listed in 4 sub-panels under Client-Side Human Service **Create Position Request CSHS**.
+The changes of each coach control are listed in separate sub-panels under the Human Service. For example, in this case, 4 coach controls are changed and listed in 4 sub-panels under the Client-Side Human Service **Create Position Request CSHS**.
 
 ![][snapshot-comparison-coach-changes]
 
-The sub-panel title specify the location of a coach control. For exmaple in this case, coach control labeled Position Request inside coach name Create position request is changed.
+The sub-panel title specifies the location of a coach control. For example, in this case, the coach control labeled Position Request inside the coach name "Create position request" is changed.
 
 ![][snapshot-comparison-coach-control-changes]
 
-A new coach control is listed in a sub-panel with a green **plus sign** in the left. For example, control button Cancel is added in the Buttons section of control Position Request:
+A new coach control is listed in a sub-panel with a green **plus sign** on the left. For example, the control button Cancel is added in the Buttons section of the control Position Request:
 
 ![][snapshot-comparison-coach-control-added-webpd]
 
 ![][snapshot-comparison-coach-control-added]
 
-A removed coach control is listed in a sub-panel with a red **minus sign** in the left. For example, control Requisition CV in Section 2 of control Position Request is deleted:
+A removed coach control is listed in a sub-panel with a red **minus sign** on the left. For example, the control Requisition CV in Section 2 of the control Position Request is deleted:
 
 ![][snapshot-comparison-coach-control-deleted]
 
-The configuration/position/event changes of a coach control are listed in content of the sub-panel. For example:
+The configuration/position/event changes of a coach control are listed in the content of the sub-panel. For example:
 
-- The color configuration of control Position Request is updated from Primary to Default:
+- The color configuration of the control Position Request is updated from Primary to Default:
 
   ![][snapshot-comparison-coach-control-config-changes-webpd]
 
   ![][snapshot-comparison-coach-control-config-changes]
 
-- The event scripts of control Requisition number placed in control Position Request is added: 
+- The event scripts of the control Requisition Number placed in the control Position Request are added:
 
   ![][snapshot-comparison-coach-control-event-changes-webpd]
 
@@ -99,8 +96,8 @@ The configuration/position/event changes of a coach control are listed in conten
 
   Notice the green **plus sign** indicates newly added content.
 
-- The poistioning of control Position CV placed in Section 2 of control Position Request is updated to 100:
- 
+- The positioning of the control Position CV placed in Section 2 of the control Position Request is updated to 100:
+
   ![][snapshot-comparison-coach-control-positioning-changes-webpd]
 
   ![][snapshot-comparison-coach-control-positioning-changes]
@@ -111,31 +108,29 @@ The changes of each item on the service flow are listed in sub-panels.
 
   ![][snapshot-comparison-sf-changes]
 
-For example, data mapping change of the service task item Service is listed as follows:
+For example, the data mapping change of the service task item Service is listed as follows:
 
   ![][snapshot-comparison-sf-mapping-changes-webpd]
- 
+
   ![][snapshot-comparison-sf-mapping-changes]
 
-The script changes are listed in separate sub-panels, for example change of line 4 of the script item populateApprovalList is listed as follows:
+The script changes are listed in separate sub-panels. For example, the change of line 4 of the script item populateApprovalList is listed as follows:
 
   ![][snapshot-comparison-sf-script-changes-webpd]
- 
+
   ![][snapshot-comparison-sf-script-changes]
-  
-And the addition of pre-excution script of the service task item Service is listed as follows:
+
+The addition of the pre-execution script of the service task item Service is listed as follows:
 
   ![][snapshot-comparison-sf-prescript-changes-webpd]
- 
+
   ![][snapshot-comparison-sf-prescript-changes]
 
-Sequence flow change is also listed in a separate sub-panel. For example, the name of sequence flow is changed and listed as:
+The sequence flow change is also listed in a separate sub-panel. For example, the name of the sequence flow is changed and listed as:
 
   ![][snapshot-comparison-sf-sequence-changes-webpd]
- 
+
   ![][snapshot-comparison-sf-sequence-changes]
-
-
 
 [bpm-changes]: ../images/snapshot-comparison/bpm-changes.png
 [change-in-ida]: ../images/snapshot-comparison/change-in-ida.png

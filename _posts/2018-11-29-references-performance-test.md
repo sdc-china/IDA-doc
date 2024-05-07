@@ -8,9 +8,9 @@ last_modified_at: 2022-08-07 10:00:00
 # Performance Test
 ***
 
-## Test objectives
+## Test Objectives
 
-The most frequently used modules by users are Testing and Pipeline, IDA needs to be able to handle continuous requests and provide the industry standard level of service in terms of response time and error rate. Average response time should be less than 2 seconds and error rate should be less than 1%.
+The most frequently used modules by users are Testing and Pipeline. IDA needs to be able to handle continuous requests and provide the industry-standard level of service in terms of response time and error rate. The average response time should be less than 2 seconds, and the error rate should be less than 1%.
 
 We expect IDA to have the following capacity:
 
@@ -20,7 +20,7 @@ We expect IDA to have the following capacity:
 
 ## Test Scenario
 
-This scenario is mainly tests the user's usage of Testing and Pipeline. 
+This scenario mainly tests the user's usage of Testing and Pipeline.
 
 User actions in the scenario:
 1. Login
@@ -34,7 +34,7 @@ User actions in the scenario:
 9. Edit Test Case
 10. Get Project Config
 11. Get Command Parameters
-12. Get Command Catagory
+12. Get Command Category
 13. Get Command Options
 14. Save Case Step
 15. Get Test Cases
@@ -43,10 +43,10 @@ User actions in the scenario:
 18. Add Pipelines
 19. View Pipelines Dashboard
 20. View Pipeline List
-22. Get pipeline Id
-23. Run pipelines 
+21. Get Pipeline Id
+22. Run Pipelines
 
-## Tests Result
+## Test Results
 
 Test duration: 1 hour;
 
@@ -56,7 +56,7 @@ System    | Concurrent Users | Total Requests  |Requests/s    | Response Min (ms
      4 core CPU, 8 GB memory | 20 | 32326 | 8.59 | 279| 29919| 1477| 1776| 69.7%| 40.5%
      8 core CPU, 16 GB memory| 40 | 59101 | 15.59 | 284| 38860| 1694| 2486| 65.5%| 36.3%
 
-## Tests Details
+## Test Details
 
 
 ### 2 core CPU, 4 GB memory, Concurrent Users 10
@@ -104,4 +104,3 @@ System    | Concurrent Users | Total Requests  |Requests/s    | Response Min (ms
 [performance-8-16-c-rtpot]: ../images/references/performance-8-16-c-rtpot.png
 [performance-8-16-c-norps]: ../images/references/performance-8-16-c-norps.png
 [performance-8-16-c-noreps]: ../images/references/performance-8-16-c-noreps.png
-

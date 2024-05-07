@@ -9,35 +9,35 @@ last_modified_at: 2022-12-01 20:00:00
 Snapshot merge allows users to compare one snapshot with a trace tip snapshot of a process app. There will be a detailed side-by-side report after this merge operation.
 
 This feature is an experimental function and currently has the following **limitations**:
-- Only support **updated Script** section in **Service Flow/Human Service/Process**
-- Only support deleting the entire artifact.
+- Only supports the **updated Script** section in **Service Flow/Human Service/Process**
+- Only supports deleting the entire artifact.
 
 ## Enable Merge To
 
-Enable the **Snapshot Merge** in Administration Settings. Then **Merge To** button will show in Comparison.
+Enable the **Snapshot Merge** in Administration Settings. Then the **Merge To** button will show in Comparison.
 
 ![][settings-comparison-merge]{:width="100%"}
 
 Field | Description
 --- | ---
-Snapshot Merge | Enable it to enable Merge to in Comparison.
-Snapshot Naming Pattern | This pattern will be used to create snapshot for unnamed tip snapshot during merge. Pattern supports variables {MAJOR.MINOR.PATCH}, {yyyyMMddHHmmss}, {yyyyMMdd}, {TRACK} and {APP_ACRONYM}
+Snapshot Merge | Enable it to enable Merge To in Comparison.
+Snapshot Naming Pattern | This pattern will be used to create a snapshot for an unnamed tip snapshot during merge. The pattern supports variables {MAJOR.MINOR.PATCH}, {yyyyMMddHHmmss}, {yyyyMMdd}, {TRACK}, and {APP_ACRONYM}
 
 
 ## Load Snapshots of a Process App
 
-1. Click **Comparison** tab.
+1. Click the **Comparison** tab.
 
-2. Fill form according to below statement.
+2. Fill out the form according to the following statement.
 
 	 Parameter             | Description       
 	 ----------------------|-------------------
 	 [Server][1]           |Server environment.
 	 Process App           |Process apps of the selected server.
-	 Toolkit               |Toolkits of  selected server.
-	 Track                 |The branches of selected process app or toolkit. Multiple select. Will load snapshots of selected branches.
-	 Start Date            |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
-	 End Date              |Filtration condition. Filter snapshots based on the time at which snapshot was generated.
+	 Toolkit               |Toolkits of the selected server.
+	 Track                 |The branches of the selected process app or toolkit. Multiple selections allowed. Will load snapshots of the selected branches.
+	 Start Date            |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
+	 End Date              |Filtration condition. Filter snapshots based on the time at which the snapshot was generated.
 	 Include Unnamed Snapshots|Tip it to load unnamed snapshots. 
 	 
 	 ![][snapshot-comparison-merge-form]
@@ -50,21 +50,21 @@ Snapshot Naming Pattern | This pattern will be used to create snapshot for unnam
 
 ## Merge Snapshots
 
-Select one snapshots, then click the **Merge To** button. Choose the track to merge.
+Select one snapshot, then click the **Merge To** button. Choose the track to merge.
 
 ![][snapshot-comparison-merge-to-button]
 
-If the current tip snapshot of this track is unnamed, below alert will show and the user need to create a new snapshot. 
+If the current tip snapshot of this track is unnamed, the following alert will show, and the user needs to create a new snapshot. 
 
 ![][merge-create-snapshot]{:width="60%"}
 
-If the current tip snapshot of this track is named, below alert will show.
+If the current tip snapshot of this track is named, the following alert will show.
 
 ![][merge-exist-snapshot]{:width="60%"}
 
-Clock **Create** / **OK** button and wait for finishing.
+Click the **Create** / **OK** button and wait for it to finish.
 	
-After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will show. Click it to see merged report.
+After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will show. Click it to see the merged report.
 	
 ![][snapshot-comparison-merge-report-button]
 

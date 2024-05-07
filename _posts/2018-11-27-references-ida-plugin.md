@@ -9,7 +9,7 @@ last_modified_at: 2021-01-29 15:39:00
 
 ## Login
 
-After installing the IDA plug-in. You need to log in to the plug-in to use it. If you are not logged in, the following information will appear when using the record function in testing.
+After installing the IDA plug-in, you need to log in to the plug-in to use it. If you are not logged in, the following information will appear when using the record function in testing.
 
 ![][plugin_message]{:width="40%"}
 
@@ -20,9 +20,9 @@ After installing the IDA plug-in. You need to log in to the plug-in to use it. I
 
      Parameter             | Description       
 	 ----------------------|-------------------
-	 Server url           |The IDA server url. For example: https://[ida-server-url]/ida
-	 User name            |The IDA server user name
-	 Password             |The IDA server password
+	 Server URL            |The IDA server URL. For example: https://[ida-server-url]/ida
+	 User name             |The IDA server user name
+	 Password              |The IDA server password
 	 
 
 2. After successfully logging in, you will see the following interface.
@@ -33,8 +33,8 @@ After installing the IDA plug-in. You need to log in to the plug-in to use it. I
 	 ----------------------|-------------------
 	 Home                  |IDA home page
 	 Settings              |IDA profile page
-	 Notifications         |notifications messages
-	 Help                  |IDA doc web site
+	 Notifications         |Notifications messages
+	 Help                  |IDA documentation website
 	 
 
 ## Notifications
@@ -49,13 +49,13 @@ After installing the IDA plug-in. You need to log in to the plug-in to use it. I
     
     ![][plugin_settings]{:width="40%"}
     
-2. Enter **Setting** tab and click the **Notifications** left-side menu.
+2. Enter the **Settings** tab and click the **Notifications** left-side menu.
 
     ![][plugin_profile_main]{:width="80%"}
     
-3. Configure according to your needs. If you don't see the notifications configuration page, check with your admin if s/he has enabled notifications on Settings page. See [General Configuration][settings-notifications-step-ref].
+3. Configure according to your needs. If you don't see the notifications configuration page, check with your admin if they have enabled notifications on the Settings page. See [General Configuration][settings-notifications-step-ref].
 
-4. You can turn on/off system notifications popup window on the plugin.
+4. You can turn on/off system notifications popup window on the plug-in.
 
    ![][plugin_notifications]{:width="40%"}
 
@@ -83,7 +83,7 @@ When you install the IDA plug-in and use BAW WebPD, you will find three new tabs
 
 ### CHECKSTYLE
 
-1. Click **CHECKSTYLE** to enter the CheckStyle page. Click refresh button to load the CheckStyle report.
+1. Click **CHECKSTYLE** to enter the CheckStyle page. Click the refresh button to load the CheckStyle report.
 
     ![][plugin_webpd_checkstyle]{:height="100%" width="100%"}
     
@@ -97,11 +97,11 @@ When you install the IDA plug-in and use BAW WebPD, you will find three new tabs
 
 ### COMPARISON
 
-1. Click **COMPARISON** to enter the Comparison page. Click **Load** button to load the snapshots.
+1. Click **COMPARISON** to enter the Comparison page. Click the **Load** button to load the snapshots.
 
     ![][plugin_webpd_comparison]{:height="100%" width="100%"}
     
-2. You can select any two snapshots you want for compare.
+2. You can select any two snapshots you want to compare.
     
     ![][plugin_webpd_comparison_compare_any]{:height="100%" width="100%"}
     
@@ -120,7 +120,7 @@ When you install the IDA plug-in and use BAW WebPD, you will find three new tabs
     
 ### ANALYZER
 
-1. Click **ANALYZER** to enter the Analyzer page. Click refresh button to load the Analyzer report.
+1. Click **ANALYZER** to enter the Analyzer page. Click the refresh button to load the Analyzer report.
 
     ![][plugin_webpd_analyzer]{:height="100%" width="100%"}
     
@@ -161,4 +161,3 @@ When you install the IDA plug-in and use BAW WebPD, you will find three new tabs
 [settings-notifications-step-ref]: ../administration/administration-settings-configuration.html#general-configuration
 [plugin_notifications]: ../images/references/plugin_notifications.png
 [plugin_notifications_popup]: ../images/references/plugin_notifications_popup.png
-
