@@ -25,7 +25,7 @@ last_modified_at: 2024-02-19 12:53:00
 7. FAQ: Could we import Selenium test projects to IDA?
     - Answer: NO.     
 8. FAQ: Does IDA support BPM adv (BPEL) testing and static analytic?
-    - Answer: NO. The testing and checkstyle of IDA only supports BPM std (BPMN).    
+    - Answer: NO. The testing and checkstyle of IDA only supports BPM std.    
 9. FAQ: Does IDA support IBM BAW v18?
     - Answer: YES. Refer to *Software Prerequisites* in [System Requirement doc](../installation/installation-system-requirement.html)     
 10. FAQ: Can we customize the rules of Checkstyle?
