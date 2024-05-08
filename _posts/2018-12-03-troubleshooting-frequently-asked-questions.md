@@ -17,7 +17,7 @@ last_modified_at: 2024-02-19 12:53:00
 3. FAQ: Can Checkstyle or Testing component be integrated individually with the existing external CI/CD pipeline?
     - Answer: YES, you could define Testing only, Checkstyle only pipeline and then leverage REST APIs for integration. More details please refer to [Architecture doc](../references/references-architecture.html) and [IDA REST APIs doc](../references/references-ida-rest-apis.html)
 4. FAQ: Could IDA use Oracle or SQL Server as a DB besides DB2 and MySQL in the supported list?
-    - Answer: Technically all kinds of relational database can be supported by IDA. For now, IDA is tested on MySQL, PostgreSLQ, DB2 and Oracle.
+    - Answer: Technically, all kinds of relational database can be supported by IDA. For now, IDA is tested on MySQL, PostgreSLQ, DB2 and Oracle.
 5. FAQ: Could IDA WAR be deployed on the BAW WAS server?
     - Answer: NO. The BAW WAS server COULD be only used by the Workflow project if it's not a licensed WAS server.
 6. FAQ: Could we use IE to record testing?
