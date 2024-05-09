@@ -2,7 +2,7 @@
 title: "Installing IDA Application"
 category: installation
 date: 2018-01-07 15:17:55
-last_modified_at: 2023-12-27 13:32:00
+last_modified_at: 2024-05-09 13:32:00
 ---
 
 # Installing IDA Application
@@ -69,7 +69,7 @@ Add the below configuration in server.xml to support X-Forwarded-* and Forwarded
 
 ```
   <httpEndpoint id="defaultHttpEndpoint"
-                        host="*" httpPort="9080"
+                        host="*" httpPort="-1"
                         httpsPort="9443">
       <remoteIp useRemoteIpInAccessLog="true"/>
   </httpEndpoint>
@@ -119,7 +119,7 @@ For example:
     <httpSession cookieSameSite="None"/>
 
     <httpEndpoint id="defaultHttpEndpoint"
-                        host="*" httpPort="9080"
+                        host="*" httpPort="-1"
                         httpsPort="9443">
       <remoteIp useRemoteIpInAccessLog="true"/>
     </httpEndpoint>
@@ -255,6 +255,8 @@ Copy the **ida-web.war** to *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>/a
 <path_to_liberty>/wlp/bin/server start SERVER_NAME
 ```
 
+**7. Access IDA web application using HTTPS**, for example, https://\<IDA_HOST\>:9443/ida
+
 [1]: ../installation/installation-integrate-def.html
 
 ### Installing on WAS V9
@@ -383,7 +385,7 @@ After finishing the installation of the fix packs, the next step is to deploy th
 
    ![][wasmoduleclassloadorder]
 
-6. Save the changes and start the IDA web application. When the status of the IDA web application changes to **started**, you can visit the URL like http://serverip:port/ida to access the IDA web application.
+6. Save the changes and start the IDA web application. When the status of the IDA web application changes to **started**, you can visit the URL like https://\<IDA_HOST\>:\<HTTPS_PORT\>/ida to access the IDA web application.
 
    ![][wasstartapp]
 

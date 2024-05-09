@@ -2,7 +2,7 @@
 title: "High Availability for IDA Application on Liberty and HAProxy"
 category: references
 date: 2018-11-16 15:00:00
-last_modified_at: 2023-10-26 20:20:00
+last_modified_at: 2024-05-09 20:20:00
 ---
 
 # High Availability for IDA Application on Liberty and HAProxy
@@ -82,7 +82,7 @@ Add the following configuration in **server.xml**, which supports X-Forwarded-* 
 
 ```
   <httpEndpoint id="defaultHttpEndpoint"
-                        host="*" httpPort="9080"
+                        host="*" httpPort="-1"
                         httpsPort="9443">
       <remoteIp useRemoteIpInAccessLog="true"/>
   </httpEndpoint>
@@ -129,7 +129,7 @@ For example:
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint id="defaultHttpEndpoint"
-                        host="*" httpPort="9080"
+                        host="*" httpPort="-1"
                         httpsPort="9443">
       <remoteIp useRemoteIpInAccessLog="true"/>
     </httpEndpoint>
@@ -291,7 +291,7 @@ systemctl restart haproxy
 
 ### Step 3. Create haproxy.cfg
 
-Add the config file to /etc/haproxy/haproxy.cfg, and change the node IP and port to your IDA nodes.
+Add the config file to /etc/haproxy/haproxy.cfg, and change the node IP and HTTPS port to your IDA nodes.
 
 ```
 global
@@ -338,8 +338,8 @@ frontend ida-fe-https
 backend ida-be-https
     balance source
     mode tcp
-    server ida01 <your first node IP>:<port> check
-    server ida02 <your second node IP>:<port> check
+    server ida01 <your first node IP>:<HTTPS port> check
+    server ida02 <your second node IP>:<HTTPS port> check
 ```
 
 [liberty-ha-topology]: ../images/references/liberty-ha-topology.png
