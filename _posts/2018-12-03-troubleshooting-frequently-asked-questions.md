@@ -2,7 +2,7 @@
 title: "Frequently Asked Questions"
 category: troubleshooting
 date: 2018-12-03 15:17:55
-last_modified_at: 2024-02-19 12:53:00
+last_modified_at: 2024-05-10 12:53:00
 ---
 
 # Frequently Asked Questions
@@ -160,6 +160,10 @@ If the first stage is PS, then you cannot add a snapshot step, and only offline 
 8. How to test a non-exposed human service?
 
    A non-exposed human service can only be tested in a Workflow Center environment. Before testing, assign the process application (or toolkit if the human service is created in a toolkit) Read permission to the test account in Workflow Center. A non-exposed human service cannot be tested in a Workflow Server environment.
+
+8. Can I access IDA web URLs using HTTP?
+
+   No, HTTP access is not supported by IDA. Please access IDA web URLs using HTTPS. If there's proxy server in front, please configure the proxy server to point to HTTPS port of IDA web.
 
 [add-permission-1]: ../images/references/add-permission-1.png
 [loginbpmoc]: ../images/references/loginbpmoc.png
