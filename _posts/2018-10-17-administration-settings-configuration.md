@@ -107,7 +107,7 @@ The commands to get ingress host, server url and token:
 
 ``` 
 # Command to get ingress host
-oc get ingresses.config cluster --output jsonpath={.spec.domain}
+oc get ingresses.config cluster -o  jsonpath='{.spec.domain}{"\n"}'
 
 # Command to get server url
 oc whoami --show-server
