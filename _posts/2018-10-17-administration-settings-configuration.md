@@ -121,6 +121,7 @@ TOKEN=`oc get secret $TOKENNAME -o jsonpath='{.data.token}' | base64 --decode`
 echo $TOKEN
 
 # Allow users using the "restricted" SCC in selenium grid namespace
+# For OpenShift v4.11+ cluster only, and please ensure the logged in user can access the security context constraint (SCC).
 oc create rolebinding local:scc:restricted -n selenium-demo --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:selenium-demo
 ``` 
 
