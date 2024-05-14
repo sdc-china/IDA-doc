@@ -41,10 +41,6 @@ last_modified_at: 2023-10-12 12:00:00
 
      The **Containerized** option is unavailable by default. You need to [configure Kubernetes Setting] before creating this kind of Selenium Grid.
 
-**Known Issues:**
-
-Containerized Firefox hub throws a timeout exception when deployed on OCP 4.11+.
-
 **Notes:**
 
 You can customize the Selenium configuration based on the template. Currently, we support the following types of configuration.  
