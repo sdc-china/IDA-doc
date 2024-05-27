@@ -2,7 +2,7 @@
 title: "Merge Snapshots"
 category: snapshot-comparison
 date: 2018-05-05 15:17:55
-last_modified_at: 2022-12-01 20:00:00
+last_modified_at: 2024-05-27 11:25:00
 ---
 
 # Merge Snapshots
@@ -10,7 +10,9 @@ Snapshot merge allows users to compare one snapshot with a trace tip snapshot of
 
 This feature is an experimental function and currently has the following **limitations**:
 - Only supports the **updated Script** section in **Service Flow/Human Service/Process**
+- Only supports overwriting the entire artifact in **Service Flow/Human Service/Process**
 - Only supports deleting the entire artifact.
+- Only supports adding the entire artifact.
 
 ## Enable Merge To
 
