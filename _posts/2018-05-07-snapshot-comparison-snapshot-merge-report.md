@@ -98,11 +98,11 @@ Click the **Undo All Changes** button, all the scripts changes will be reverted.
 
 ## Push and Revert
 
-Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if there are any scripts update changes, an alert window will show as below. Click **OK**, and all the changes in this artifact will be pushed to the BAW server.
+Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Update** and there are some scripts changes in the **Script Editor**, an alert window will show as below. Click **OK**, and all the changes in this artifact will be pushed to the BAW server.
 
 ![][merge-report-artifact-report-push-alert]{:width="60%"}
 
-Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if there is no scripts update changes, an alert window will show as below. Click **OK**, the artifact will be overwrite in the BAW server.
+Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Update** and there is no scripts changes in the **Script Editor**, an alert window will show as below. Click **OK**, the artifact will be overwrite in the BAW server.
 
 ![][merge-report-artifact-report-push-overwrite-alert]{:width="60%"}
 
