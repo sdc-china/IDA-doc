@@ -106,6 +106,14 @@ Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if there 
 
 ![][merge-report-artifact-report-push-overwrite-alert]{:width="60%"}
 
+Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Add**, an alert window will show as below. Click **OK**, the artifact will be added in the BAW server.
+
+![][merge-report-artifact-report-push-add-alert]{:width="60%"}
+
+Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Delete**, an alert window will show as below. Click **OK**, the artifact will be deleted in the BAW server.
+
+![][merge-report-artifact-report-push-delete-alert]{:width="60%"}
+
 After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="10%"} button will show. Click the ![][merge-report-artifact-report-revert]{:width="10%"} button, and an alert window will show as below. Click **OK**, and all the changes will be reverted.
 
 ![][merge-report-artifact-report-revert-alert]{:width="60%"}
@@ -124,6 +132,8 @@ After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="
 [merge-report-artifact-report-push-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-alert.png
 [merge-report-artifact-report-push-overwrite-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-overwrite-alert.png
 [merge-report-artifact-report-revert-alert]: ../images/snapshot-comparison/merge-report-artifact-report-revert-alert.png
+[merge-report-artifact-report-push-add-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-add-alert.png
+[merge-report-artifact-report-push-delete-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-delete-alert.png
 [merge-report-script-all-buttons]: ../images/snapshot-comparison/merge-report-script-all-buttons.png
 [merge-report-script-left-arrow]: ../images/snapshot-comparison/merge-report-script-left-arrow.png
 [merge-report-script-overwrite]: ../images/snapshot-comparison/merge-report-script-overwrite.png
