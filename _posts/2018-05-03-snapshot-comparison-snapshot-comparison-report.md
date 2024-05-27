@@ -2,7 +2,7 @@
 title: "Snapshot Comparison Report"
 category: snapshot-comparison
 date: 2018-05-03 15:17:55
-last_modified_at: 2022-10-28 15:26:00
+last_modified_at: 2024-05-27 11:03:00
 ---
 
 # Snapshot Comparison Report
@@ -30,6 +30,10 @@ If it is a delete change, there will be a red **D**.
 IDA provides a filter button. The user can filter the artifact by **Change Type/Artifact Type/Properties**.
 
 ![][merge-report-menu-filter]{:width="60%"}
+
+The user can filter the artifact by **Editor**.
+
+![][merge-report-menu-filter-user]{:width="60%"}
 
 ## Change History
 
@@ -139,6 +143,7 @@ The sequence flow change is also listed in a separate sub-panel. For example, th
 [merge-report-menu-update]: ../images/snapshot-comparison/merge-report-menu-update.png
 [merge-report-menu-delete]: ../images/snapshot-comparison/merge-report-menu-delete.png
 [merge-report-menu-filter]: ../images/snapshot-comparison/merge-report-menu-filter.png
+[merge-report-menu-filter-user]: ../images/snapshot-comparison/merge-report-menu-filter-user.png
 [snapshot-comparison-report]: ../images/snapshot-comparison/snapshot-comparison-report.png
 [snanshot-comparison-name-of-snapshot]: ../images/snapshot-comparison/snanshot-comparison-name-of-snapshot.png
 [snapshot-comparison-coach-changes]: ../images/snapshot-comparison/snapshot-comparison-coach-changes.png
