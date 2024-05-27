@@ -2,7 +2,7 @@
 title: "Snapshot Merge Report"
 category: snapshot-comparison
 date: 2018-05-07 15:17:55
-last_modified_at: 2022-12-01 20:00:00
+last_modified_at: 2024-05-27 13:00:00
 ---
 
 # Snapshot Merge Report
@@ -31,7 +31,21 @@ IDA provides a filter button. The user can filter the artifacts by **Change Type
 
 ![][merge-report-menu-filter]{:width="60%"}
 
-## Artifact Comparison Report
+The user can filter the artifact by **Editor**.
+
+![][merge-report-menu-filter-user]{:width="60%"}
+
+## Change History
+
+Comparative historical results of an artifact of the same branch.
+
+![][change-history-same-branch]
+
+Comparative historical results of an artifact from different branches. The modification history of the old snapshot is at the top, and the modification history of the new snapshot is at the bottom.
+
+![][change-history-different-branches]
+
+## Artifact Merge Report
 
 Click the item in the artifacts menu, and the artifact comparison report will change based on the clicked artifact.
 
@@ -75,26 +89,40 @@ Click the **Original Script** button, and the Original Script modal will show, a
 
 ![][merge-report-script-original-click]{:width="60%"}
 
+
+## Undo All Changes
+
+Click the **Undo All Changes** button, all the scripts changes will be reverted.
+
+![][merge-report-script-undo-all-button]
+
 ## Push and Revert
 
-Click the ![][merge-report-artifact-report-push]{:width="10%"} button, and an alert window will show as below. Click **OK**, and all the changes in this artifact will be pushed to the BAW server.
+Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if there are any scripts update changes, an alert window will show as below. Click **OK**, and all the changes in this artifact will be pushed to the BAW server.
 
 ![][merge-report-artifact-report-push-alert]{:width="60%"}
+
+Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if there is no scripts update changes, an alert window will show as below. Click **OK**, the artifact will be overwrite in the BAW server.
+
+![][merge-report-artifact-report-push-overwrite-alert]{:width="60%"}
 
 After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="10%"} button will show. Click the ![][merge-report-artifact-report-revert]{:width="10%"} button, and an alert window will show as below. Click **OK**, and all the changes will be reverted.
 
 ![][merge-report-artifact-report-revert-alert]{:width="60%"}
+
 
 [merge-report-overview]: ../images/snapshot-comparison/merge-report-overview.png
 [merge-report-menu-add]: ../images/snapshot-comparison/merge-report-menu-add.png
 [merge-report-menu-update]: ../images/snapshot-comparison/merge-report-menu-update.png
 [merge-report-menu-delete]: ../images/snapshot-comparison/merge-report-menu-delete.png
 [merge-report-menu-filter]: ../images/snapshot-comparison/merge-report-menu-filter.png
+[merge-report-menu-filter-user]: ../images/snapshot-comparison/merge-report-menu-filter-user.png
 [merge-report-artifact-report]: ../images/snapshot-comparison/merge-report-artifact-report.png
 [merge-report-artifact-report-top]: ../images/snapshot-comparison/merge-report-artifact-report-top.png
 [merge-report-artifact-report-push]: ../images/snapshot-comparison/merge-report-artifact-report-push.png
 [merge-report-artifact-report-revert]: ../images/snapshot-comparison/merge-report-artifact-report-revert.png
 [merge-report-artifact-report-push-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-alert.png
+[merge-report-artifact-report-push-overwrite-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-overwrite-alert.png
 [merge-report-artifact-report-revert-alert]: ../images/snapshot-comparison/merge-report-artifact-report-revert-alert.png
 [merge-report-script-all-buttons]: ../images/snapshot-comparison/merge-report-script-all-buttons.png
 [merge-report-script-left-arrow]: ../images/snapshot-comparison/merge-report-script-left-arrow.png
@@ -107,3 +135,6 @@ After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="
 [merge-report-script-edit-click]: ../images/snapshot-comparison/merge-report-script-edit-click.png
 [merge-report-script-original-click]: ../images/snapshot-comparison/merge-report-script-original-click.png
 [merge-report-script-pushed-buttons]: ../images/snapshot-comparison/merge-report-script-pushed-buttons.png
+[change-history-same-branch]: ../images/snapshot-comparison/change-history-same-branch.png
+[change-history-different-branches]: ../images/snapshot-comparison/change-history-different-branches.png
+[merge-report-script-undo-all-button]: ../images/snapshot-comparison/merge-report-script-undo-all-button.png
