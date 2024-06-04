@@ -111,7 +111,9 @@ If the first stage is PS, then you cannot add a snapshot step, and only offline 
 2. How to enable the JavaScript Expression execution?
     - Answer: Please follow the steps below:
       1. Stop the BAW environment.
-      2. Change the enable-javascript-execution value in the 99Local.xml file. The file path is PROFILE_DMGR_HOME\config\cells\cell_name\nodes\node_name\servers\server_name\process-center\config\system\99Local.xml.
+      2. Change the enable-javascript-execution value in the 99Local.xml file. The file path is 
+      PROFILE_DMGR_HOME\config\cells\cell_name\nodes\node_name\servers\server_name\
+      [process-center|process-server]\config\system\99Local.xml.
       3. Start the BAW environment.
       ![][enable-javascript-execution]
 
