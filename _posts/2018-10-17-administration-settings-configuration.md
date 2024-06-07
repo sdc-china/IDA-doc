@@ -32,6 +32,52 @@ Pipeline Build Failure | Enable notification for pipeline build failure.
 BAW and Selenium Server Down/Up | Enable notification for server status.
 Server Status Check Interval | Time interval in seconds to check the availability of BAW and Selenium servers.
 
+If LDAPS is used, LDAPS server certificates need to be exported and imported into IDA server.
+### Export and Import LDAPS Server Certificates on Liberty
+1. Export LDAPS server certificates using below command:
+```
+echo q | openssl s_client -showcerts -connect <LDAPS server host>:<LDAP server port>
+```
+For example:
+```
+echo q | openssl s_client -showcerts -connect c97721v.fyre.com:636
+```
+From the output that you captured, copy the first certificate into a LDAPS server certificate file, e.g. ldapserver-cert.crt.
+Include the following lines and the information between these lines.
+```
+"-----BEGIN CERTIFICATE-----"
+```
+```
+"-----END CERTIFICATE-----"
+```
+
+2. Import the LDAPS server certificate file from step 1 into Liberty using below command:
+```
+keytool -importcert -file <LDAPS server certificate file> -alias <alias for the LDAPS server certificate> -keystore <Liberty truststore file> -storepass <password for the truststore > -storetype <type of the truststore>
+```
+For example:
+```
+keytool -importcert -file ldapserver-cert.crt -alias ldapserver-cert -keystore /opt/wlp/usr/servers/ida_server/resources/security/key.p12 -storepass idaAdmin -storetype PKCS12
+```
+
+### Export and Import LDAPS Server Certificates on WAS
+1. Log into WAS admin console, and click into Security -> SSL certificate and key management -> Key Stores and certificates
+![][WAS Import Cert1]
+
+2. Click into NodeDefaultTrustStore, then click into Signer certificates
+![][WAS Import Cert2]
+![][WAS Import Cert3]
+
+3. Click into Retrieve from port
+![][WAS Import Cert4]
+
+4. Enter LDAPS server host and port, then click Retrieve signer information. After the certificate info is retrieved, click OK and save the changes.
+![][WAS Import Cert5]
+
+5. Then you'll find the certificate is listed in Signer certificates.
+![][WAS Import Cert6]
+
+
 ## Test Configuration
 
 ![][Test]{:width="100%"}
@@ -134,3 +180,9 @@ oc create rolebinding local:scc:restricted -n selenium-demo --clusterrole=system
 [Pipeline]: ../images/administrator/Pipeline.png
 [Checkstyle]: ../images/administrator/Checkstyle.png
 [Search]: ../images/administrator/Search.png
+[WAS Import Cert1]: ../images/administrator/ldaps_was_import_cert1.png
+[WAS Import Cert2]: ../images/administrator/ldaps_was_import_cert2.png
+[WAS Import Cert3]: ../images/administrator/ldaps_was_import_cert3.png
+[WAS Import Cert4]: ../images/administrator/ldaps_was_import_cert4.png
+[WAS Import Cert5]: ../images/administrator/ldaps_was_import_cert5.png
+[WAS Import Cert6]: ../images/administrator/ldaps_was_import_cert6.png
