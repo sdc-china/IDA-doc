@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-11-03 15:17:55
-last_modified_at: 2023-12-27 13:00:00
+last_modified_at: 2024-06-12 13:00:00
 ---
 
 # Test Commands
@@ -1449,7 +1449,8 @@ Assert the cell value of the table.
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-	| `Column Name` | Required | The name of the column where the value needs to be asserted.|
+	| `Column Name` | Required | The name of the column where the value needs to be asserted. Column Name is used prior to Column Number to match the column.|
+	| `Column Number` | Optional | The number of the column where the value needs to be asserted. Required if Column Name can not be specified.|
 	| `Row Number` | Required | The number of the row where the value needs to be validated.|
 	| `Expected value` | Required | The cell value that needs to be checked. |
 
