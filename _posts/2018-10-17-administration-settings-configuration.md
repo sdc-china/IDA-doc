@@ -34,21 +34,13 @@ Server Status Check Interval | Time interval in seconds to check the availabilit
 
 If LDAPS is used, LDAPS server certificates need to be exported and imported into IDA server.
 ### Export and Import LDAPS Server Certificates on Liberty
-1. Export LDAPS server certificates using below command:
+1. Export LDAPS server certificate into a file using below command:
 ```
-echo q | openssl s_client -showcerts -connect <LDAPS server host>:<LDAP server port>
+openssl s_client -showcerts -connect <LDAPS server host>:<LDAP server port> </dev/null 2>/dev/null|openssl x509 -outform PEM >ldapserver-cert.crt
 ```
 For example:
 ```
-echo q | openssl s_client -showcerts -connect c97721v.fyre.com:636
-```
-From the output that you captured, copy the first certificate into a LDAPS server certificate file, e.g. ldapserver-cert.crt.
-Include the following lines and the information between these lines.
-```
-"-----BEGIN CERTIFICATE-----"
-```
-```
-"-----END CERTIFICATE-----"
+openssl s_client -showcerts -connect c97721v.fyre.com:636 </dev/null 2>/dev/null|openssl x509 -outform PEM >ldapserver-cert.crt
 ```
 
 2. Import the LDAPS server certificate file from step 1 into Liberty using below command:
