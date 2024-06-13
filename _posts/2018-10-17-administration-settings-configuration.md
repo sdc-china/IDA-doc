@@ -32,7 +32,7 @@ Pipeline Build Failure | Enable notification for pipeline build failure.
 BAW and Selenium Server Down/Up | Enable notification for server status.
 Server Status Check Interval | Time interval in seconds to check the availability of BAW and Selenium servers.
 
-If LDAPS is used, LDAPS server certificates need to be exported and imported into IDA server.
+If LDAPS is used, LDAPS server certificate need to be exported and imported into IDA server.
 ### Export and Import LDAPS Server Certificates on Liberty
 1. Export LDAPS server certificate into a file using below command:
 ```
@@ -52,7 +52,7 @@ For example:
 keytool -importcert -file ldapserver-cert.crt -alias ldapserver-cert -keystore /opt/wlp/usr/servers/ida_server/resources/security/key.p12 -storepass idaAdmin -storetype PKCS12
 ```
 
-### Export and Import LDAPS Server Certificates on WAS
+### Export and Import LDAPS Server Certificate on WAS
 1. Log into WAS admin console, and click into Security -> SSL certificate and key management -> Key Stores and certificates
 ![][WAS Import Cert1]
 
