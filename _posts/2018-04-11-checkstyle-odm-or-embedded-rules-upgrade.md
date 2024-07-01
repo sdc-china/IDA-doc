@@ -14,21 +14,25 @@ In each new release of IDA, the rule projects may include some updates. If you h
 
 If you want to migrate your customized rules to the new asset release, you need merge your customized rules with the new release. In general, it need:
 
+1. Unzip the rules zip under <ASSET_HOME>/workspace/odm-checkstyle-rules.zip. Import the four rule projects.
+
 ![][checkstyle-rules-upgrade-odm-projects]
 
-    1. Unzip the rules zip under <ASSET_HOME>/workspace/odm-checkstyle-rules.zip. Import the four rule projects.
-    2. Overwrite the imported checkstyle-rules-customized project with your local updated version and fix any error you’ll see.
-    3. Deploy a new ruleset of the merged rule projects to the ODM server.
+2. Overwrite the imported checkstyle-rules-customized project with your local updated version and fix any error you’ll see.
+
+3. Deploy a new ruleset of the merged rule projects to the ODM server.
 
 ## Embedded Rules Upgrade
 
 If you want to migrate your customized rules to the new asset release, you need merge your customized rules with the new release. In general, it need:
 
+1. Unzip the rules zip under <ASSET_HOME>/workspace/embedded-checkstyle-rules.zip.
+
 ![][checkstyle-rules-upgrade-embedded-projects]
 
-    1. Unzip the rules zip under <ASSET_HOME>/workspace/embedded-checkstyle-rules.zip.
-    2. Rewrite your modifications in the latest release rule package, or update the specified rules to your local updated version according to the **Rules Upgrade Info**.
-    3. Redeploy your rules through the IDA Settings page.
+2. Rewrite your modifications in the latest release rule package, or update the specified rules to your local updated version according to the [Rules Upgrade Info](https://sdc-china.github.io/IDA-doc/checkstyle/checkstyle-odm-or-embedded-rules-upgrade.html#rules-upgrade-info).
+
+3. Deploy your updated rules through the IDA Settings page, more information please refer [Override embedded rules](https://sdc-china.github.io/IDA-doc/checkstyle/checkstyle-customize-checkstyle-rules.html#override-embedded-rules).
 
 ## Rules Upgrade Info
 
