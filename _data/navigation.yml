@@ -83,6 +83,8 @@ docs:
         url: /checkstyle/checkstyle-deploy-checkstyle-ruleset.html
       - title: "Checkstyle Rules Description"
         url: /checkstyle/checkstyle-checkstyle-rules-description.html
+      - title: "Checkstyle ODM/Embedded Rules Upgrade"
+        url: /checkstyle/checkstyle-odm-or-embedded-rules-upgrade.html
         
   - title: Snapshot Comparison
     children:
