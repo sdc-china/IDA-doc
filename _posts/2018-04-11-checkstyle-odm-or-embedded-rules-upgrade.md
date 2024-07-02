@@ -16,7 +16,7 @@ If you want to migrate your customized rules to the new asset release, you need 
 
 1. Unzip the rules zip under <ASSET_HOME>/workspace/odm-checkstyle-rules.zip. Import the four rule projects.
 
-![][checkstyle-rules-upgrade-odm-projects]
+    ![][checkstyle-rules-upgrade-odm-projects]{:width="80%"}
 
 2. Overwrite the imported checkstyle-rules-customized project with your local updated version and fix any error you’ll see.
 
@@ -28,7 +28,7 @@ If you want to migrate your customized rules to the new asset release, you need 
 
 1. Unzip the rules zip under <ASSET_HOME>/workspace/embedded-checkstyle-rules.zip.
 
-![][checkstyle-rules-upgrade-embedded-projects]
+    ![][checkstyle-rules-upgrade-embedded-projects]{:width="80%"}
 
 2. Rewrite your modifications in the latest release rule package, or update the specified rules to your local updated version according to the [Rules Upgrade Info](https://sdc-china.github.io/IDA-doc/checkstyle/checkstyle-odm-or-embedded-rules-upgrade.html#rules-upgrade-info).
 
