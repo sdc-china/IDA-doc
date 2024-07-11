@@ -22,3 +22,4 @@ last_modified_at: 2023-03-23 16:50:00
 - The window-size argument of the Selenium Grid supports headless mode only.
 - Snapshot merge only supports updated Script sections in Service Flow/Human Service/Process.
 - Snapshot comparison may show diff results as deletion + addition if an item in Process/Service is renamed, as the item's ID is a UUID which cannot be relied upon to identify the item.
+- If IDA and BAW are in different time zones, some display results will be inaccurate. The affected functions include Cleanup Unnamed Snapshots and Create Snapshot in the Merge To function.
