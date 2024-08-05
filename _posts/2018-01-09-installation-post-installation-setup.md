@@ -33,7 +33,7 @@ Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distribu
 
 **Local installation**
 
-1. Download the latest Selenium server jar [selenium-server-4.x.x.jar](https://www.selenium.dev/downloads/).
+1. Download the Selenium server jar [selenium-server-4.11.0.jar](https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.11.0/selenium-server-4.11.0.jar).
 2. Download Selenium web drivers and put them under the same folder as the Selenium server jar file.
    - [Firefox Driver](https://github.com/mozilla/geckodriver/releases)
    - [Chrome Driver](https://chromedriver.storage.googleapis.com/index.html)
@@ -41,7 +41,7 @@ Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distribu
    - [IE Driver](https://www.selenium.dev/downloads/)
 3. To quickly start Selenium 4 in standalone mode with default configurations, run the command below. This will set up a 1-node hub with auto-detected web drivers in the same folder as the jar file.
     ```
-    java -jar selenium-server-4.x.x.jar standalone
+    java -jar selenium-server-4.11.0.jar standalone
     ```
     ![][selenium_4_standalone]
 4. To start Selenium 4 in Hub and Node mode with customized node configuration,
@@ -69,7 +69,7 @@ Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distribu
 
   - Run the commands below in different command lines.
    ```
-   java -jar selenium-server-4.x.x.jar standalone --config config.toml
+   java -jar selenium-server-4.11.0.jar standalone --config config.toml
    ```
 
   ![][selenium_4_hub_node]
