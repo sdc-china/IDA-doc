@@ -14,6 +14,8 @@ main:
 docs:
   - title: Installation
     children:
+      - title: "Release Notes"
+        url: /installation/installation-release-notes.html
       - title: "System Requirements"
         url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
