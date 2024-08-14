@@ -14,10 +14,8 @@ main:
 docs:
   - title: Installation
     children:
-      - title: "Latest Release Notes"
-        url: /installation/installation-latest-release-notes.html
-      - title: "Previous Release Notes"
-        url: /installation/installation-previous-release-notes.html
+      - title: "Release Notes"
+        url: /installation/installation-release-notes.html
       - title: "System Requirements"
         url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
@@ -204,6 +202,8 @@ docs:
         url: /references/references-ida-plugin.html
       - title: "Performance Test"
         url: /references/references-performance-test.html
+      - title: "Previous Release Notes"
+        url: /references/references-previous-release-notes.html
 
   - title: "Trouble Shooting"
     children:
