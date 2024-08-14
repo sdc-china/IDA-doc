@@ -202,6 +202,8 @@ docs:
         url: /references/references-ida-plugin.html
       - title: "Performance Test"
         url: /references/references-performance-test.html
+      - title: "Previous Release Notes"
+        url: /references/references-previous-release-notes.html
 
   - title: "Trouble Shooting"
     children:
