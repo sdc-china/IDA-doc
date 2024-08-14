@@ -43,13 +43,13 @@ last_modified_at: 2024-08-14 13:35:00
 - checks/process/check-bpd-subprocess-error-not-fully-implemented
 - checks/service/check-service-subprocess-error-not-fully-implemented
 
-| Component | Description	| Release File	| Installation instructions| 
-|----------|:-------------:|:------|:---------------|
-|IDA release package |For traditional web server (eg: Liberty, WebSphere)	|ida-web-<version>.zip|	https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application.html |
-|IDA web docker image | For docker compose | ida-<version>.tgz | https://github.com/sdc-china/ida-docker |
-|IDA web docker image | Based on Java 11 for docker compose |	ida-<version>-java11.tgz	| |
-|IDA web and operator docker images for Kubernetes platform| |	ida-all-<version>.tgz	| https://github.com/sdc-china/ida-operator |
-|IDA web and operator docker images  based on Java 11 for Kubernetes platform ||	ida-all-<version>-java11.tgz	||
+| Component 	| Release File	| Installation instructions| 
+|:----------------|:------------------------|:---------------|
+| IDA release package for traditional web server (eg: Liberty, WebSphere)	 |ida-web-\<version>.zip|<https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application.html> |
+| IDA web docker image for docker compose | ida-\<version>.tgz | <https://github.com/sdc-china/ida-docker> |
+| IDA web docker image based on Java 11 for docker compose |	ida-\<version>-java11.tgz	| |
+| IDA web and operator docker images for Kubernetes platform |	ida-all-\<version>.tgz	| <https://github.com/sdc-china/ida-operator> |
+| IDA web and operator docker images  based on Java 11 for Kubernetes platform |	ida-all-\<version>-java11.tgz	||
 
 
 ## Previous Releases
