@@ -6,6 +6,7 @@ last_modified_at: 2024-08-02 12:00:00
 ---
 
 # Installing IDA Application
+***
 
 Below are steps to install the IDA application. For installing applications of earlier versions of IDA, see [Installing IDA Application(v3.x, v2.x)](../references/references-installing-ida-application-early-version.html)
 
@@ -14,11 +15,9 @@ There are three components for the IDA application we need to install and config
 - *IDA Browser Plugin*  
 - *IDA BAW toolkit*
 
-## Step 1: Installing IDA Web Application
-
 The IDA Web Application can be installed on WebSphere Application Server (WAS), Liberty, Docker, or Openshift. Please access IDA web URLs using HTTPS.
 
-### Installing on Liberty
+## Installing on Liberty
 
 **1. Create a Liberty server**
 
@@ -259,7 +258,7 @@ Copy the **ida-web.war** to *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>/a
 
 [1]: ../installation/installation-integrate-def.html
 
-### Installing on WAS V9
+## Installing on WAS V9
 
 **Check the WAS version**
 
@@ -390,100 +389,13 @@ After finishing the installation of the fix packs, the next step is to deploy th
    ![][wasstartapp]
 
    
-### Installing on Docker platform
+## Installing on Docker platform
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
-### Installing on Openshift
+## Installing on Openshift
 Refer to [ida-operator](https://github.com/sdc-china/ida-operator) for deployment steps.
-
-## Step 2: Installing IDA BAW Toolkit
-The testing capability can only launch the exposed Business Processes, Human Services, and AJAX Services. If you wish to test other services such as system services, integration services, or business processes which are not exposed directly, you need to install the IDA Toolkit.
-
-
-BAW Version | IDA Toolkit Version  
-     ----------------------|-------------------
-      19.0.0.3 |  IDA_Toolkit - 8.6.0_v1.5.twx
-      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [executeSQL](../references/references-test-command.html#executesql)**.
-      above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
-
-
-1. Import the corresponding **IDA_Toolkit - 8.6.x.x.twx** which is in the folder /toolkit of the release package into your process center.      
-
-2. Open your process app by the web process designer from the process center.
-
-3. Click the **+** button after Toolkits.
-
-	![][click_add_button]
-
-4. Type **ida** in the search box and select **8.6.x.0** below IDA Toolkit. Then the dependency **IDA Toolkit(8.6.x.0)** is added.
-
-	![][ida_toolkit_search]
-
-5. Click **Services** below **IDA Toolkit(8.6.x.0)**. Right-click the **IDA Utility** service flow and copy the item to your process app.
-
-	![][ida_toolkit_copy]
-
-	![][ida_toolkit_copy_to_item]
-
-6. If **IDA Utility** is in the Services of your Process app, the service is installed successfully.
-
-	![][service]
-
-7. Modify toolkit access permission (Optional)
-
-	For security concerns, we suggest disabling the toolkit in the BAW production environment.
-	It allows the user to modify the toolkit access permission by setting up the environment variable "IDA_ACCESS". (true means enable the access, false means disable the access)
-
-	By default, the toolkit can only be invoked on Development, Test, and Stage environments:
-	    ![][default_toolkit_setting]
-
-	You can define the same environment variable "IDA_ACCESS" in your BAW application which will override the default setting in the toolkit, for example:
-	    ![][custom_toolkit_setting]
-
-		
-## Step 3: Installing IDA Browser Plug-in
-
-### Chrome plugin
-- Open the url <a href="https://chromewebstore.google.com/search/IBM%20IDA" target="_blank">https://chromewebstore.google.com/search/IBM%20IDA</a>
-- Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package. [ida-24.6.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/ida-24.6.crx)
-- For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
-  
-### Edge plugin
-- The same IDA Chrome plugin can also be installed in Edge.
-- Enable "Allow extensions from other stores." in the Edge Extensions settings page.
-- Open the url <a href="https://chromewebstore.google.com/search/IBM%20IDA" target="_blank">https://chromewebstore.google.com/search/IBM%20IDA</a>
-- Click "Get" button, then click "Add extension" button to install plug-in.
-
-### Firefox plugin
-- Download Firefox plugin [ida-24.6.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-24.6.xpi)
-- Drag the downloaded plugin file into firefox window.
-- Click "Add" button.
-
-### Plug-in Configuration
-
-To make the plug-in work, you must log in to the IDA server in the plugin login page.
-
-- Click the IDA plugin icon in the browser extension toolbar, then it will pop up the login window.
-
-- Enter the IDA server URL, username, and password.
-
-  ![][plugin_login]
-
-- Click the "Sign in" button, then you will see the screenshot as below.
-
-  ![][plugin_welcome]
-
-- If you see the below sign-in errors, please open the server URL in your web browser to verify that IDA web can be accessed. If IDA web shows an HTTPS/SSL certificate warning, you must accept the warning manually by clicking "Proceed to ..." and then sign in to the IDA plugin.
-
-  ![][plugin_login_error]
-
-  ![][ida_web_cert_error]
   
 [toolkit]: ../images/install/toolkit.png
-[default_toolkit_setting]: ../images/install/default_toolkit_setting.png  
-[custom_toolkit_setting]: ../images/install/custom_toolkit_setting.png  
-[service]: ../images/install/service.png
 [IDA]: ../images/install/IDA.png
 [firefox]: ../images/install/firefox.png
 [seleniumGrid]: ../images/install/seleniumGrid.png
@@ -511,72 +423,21 @@ To make the plug-in work, you must log in to the IDA server in the plugin login 
 [wasenv1]: ../images/install/wasenv1.png
 [wasenv2]: ../images/install/wasenv2.png
 [firefox_custom_setting]: ../images/install/firefox_custom_setting.png
-
-## Self-Signed SSL Certificates Installation
-
-The IDA recorder plugin cannot support websites with self-signed certificates by default. In this case, a warning like this will appear:
-
-![][error]
-
-   This warning will block the recording of test cases. To resolve this problem, we need to make the browsers accept self-signed certificates.    
-
-### Firefox - Add a Security Exception
-
-1. In Firefox, go to Tools -> Options.
-
-    ![][tool]
-
-2. Click the **Privacy & Security** tab, then the **View Certificates** button.
-
-    ![][security_tab]
-
-3. Go to the **Servers** tab and press the **Add Exception** button.
-
-    ![][servers_tab]
-
-4.  Enter the host and port in the **Add Security Exception** dialog, press the **Get Certificate** button, check the box near the bottom **Permanently store this exception**, and press **Confirm Security Exception**.
-
-     ![][add_security]
-
-    From this point on, Firefox won't show SSL-related errors. When visiting the website, it will look like this:
-
-    ![][success]
-
-### Chrome - Visit in unsafe mode
-
-Chrome browsers can save your data for a short time, and the warning page will not appear and block recording if you visit the testing website in unsafe mode before recording.
-
-1. Click **ADVANCED** on the warning page.
-
-    ![][chrome_error]
-
-2. Click **Proceed to 9.30.160.68 (unsafe)**.
-
-    ![][proceed]
-	
-   [error]: ../images/install/installation_self_signed_sertificates_error.png
-   [tool]: ../images/install/installation_self_signed_sertificates_tool.png
-   [security_tab]: ../images/install/installation_self_signed_sertificates_security_tab.png
-   [servers_tab]: ../images/install/installation_self_signed_sertificates_servers_tab.png
-   [add_security]: ../images/install/installation_self_signed_sertificates_add_security.png
-   [success]: ../images/install/installation_self_signed_sertificates_success.png
-   [chrome_error]: ../images/install/installation_self_signed_sertificates_chrome_error.png
-   [proceed]: ../images/install/installation_self_signed_sertificates_proceed.png
-   [click_add_button]: ../images/install/click_add_button.PNG
-   [ida_toolkit_search]: ../images/install/ida_toolkit_search.PNG
-   [ida_toolkit_copy]: ../images/install/ida_toolkit_copy.png
-   [ida_toolkit_copy_to_item]: ../images/install/ida_toolkit_copy_to_item.png
-   [plugin_welcome]: ../images/install/plugin_welcome.png
-   [plugin_login]: ../images/install/plugin_login.png
-   [plugin_login_error]: ../images/install/plugin_login_error.png
-   [ida_web_cert_error]: ../images/install/ida_web_cert_error.png
-   [data_source_new]: ../images/install/was_data_source_new.png
-   [data_source1]: ../images/install/was_data_source1.png
-   [data_source2]: ../images/install/was_data_source2.png
-   [data_source3]: ../images/install/was_data_source3.png
-   [data_source4]: ../images/install/was_data_source4.png
-   [data_source5]: ../images/install/was_data_source5.png
-   [was_db2_user]: ../images/install/was_db2_user.png
-   [was_data_source_test_connection]: ../images/install/was_data_source_test_connection.png
-   [was_server_port]: ../images/install/was_server_port.png
-   [was_virtual_hosts]: ../images/install/was_virtual_hosts.png
+[error]: ../images/install/installation_self_signed_sertificates_error.png
+[tool]: ../images/install/installation_self_signed_sertificates_tool.png
+[security_tab]: ../images/install/installation_self_signed_sertificates_security_tab.png
+[servers_tab]: ../images/install/installation_self_signed_sertificates_servers_tab.png
+[add_security]: ../images/install/installation_self_signed_sertificates_add_security.png
+[success]: ../images/install/installation_self_signed_sertificates_success.png
+[chrome_error]: ../images/install/installation_self_signed_sertificates_chrome_error.png
+[proceed]: ../images/install/installation_self_signed_sertificates_proceed.png
+[data_source_new]: ../images/install/was_data_source_new.png
+[data_source1]: ../images/install/was_data_source1.png
+[data_source2]: ../images/install/was_data_source2.png
+[data_source3]: ../images/install/was_data_source3.png
+[data_source4]: ../images/install/was_data_source4.png
+[data_source5]: ../images/install/was_data_source5.png
+[was_db2_user]: ../images/install/was_db2_user.png
+[was_data_source_test_connection]: ../images/install/was_data_source_test_connection.png
+[was_server_port]: ../images/install/was_server_port.png
+[was_virtual_hosts]: ../images/install/was_virtual_hosts.png

@@ -61,10 +61,6 @@ Choose one of the following options to migrate database schema when necessary.
 
 2. After migration scripts are exectued manually, restart IDA to complete database schema migration.
 
-
- 
-## Step 3: Update IDA BAW Toolkit    
-
 ## Step 3: Update IDA BAW Toolkit
 
 To update the IDA BAW Toolkit, take the following steps:
