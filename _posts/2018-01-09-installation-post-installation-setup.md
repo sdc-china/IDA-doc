@@ -7,9 +7,107 @@ last_modified_at: 2022-04-22 16:39:00
 
 # Post Installation Setup
 
+## Installing IDA BAW Toolkit
+The testing capability can only launch the exposed Business Processes, Human Services, and AJAX Services. If you wish to test other services such as system services, integration services, or business processes which are not exposed directly, you need to install the IDA Toolkit.
+
+
+BAW Version | IDA Toolkit Version  
+     ----------------------|-------------------
+      19.0.0.3 |  IDA_Toolkit - 8.6.0_v1.5.twx
+      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [executeSQL](../references/references-test-command.html#executesql)**.
+      above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
+
+
+1. Import the corresponding **IDA_Toolkit - 8.6.x.x.twx** which is in the folder /toolkit of the release package into your process center.      
+
+2. Open your process app by the web process designer from the process center.
+
+3. Click the **+** button after Toolkits.
+
+  ![][click_add_button]
+
+4. Type **ida** in the search box and select **8.6.x.0** below IDA Toolkit. Then the dependency **IDA Toolkit(8.6.x.0)** is added.
+
+  ![][ida_toolkit_search]
+
+5. Click **Services** below **IDA Toolkit(8.6.x.0)**. Right-click the **IDA Utility** service flow and copy the item to your process app.
+
+  ![][ida_toolkit_copy]
+
+  ![][ida_toolkit_copy_to_item]
+
+6. If **IDA Utility** is in the Services of your Process app, the service is installed successfully.
+
+  ![][service]
+
+7. Modify toolkit access permission (Optional)
+
+  For security concerns, we suggest disabling the toolkit in the BAW production environment.
+  It allows the user to modify the toolkit access permission by setting up the environment variable "IDA_ACCESS". (true means enable the access, false means disable the access)
+
+  By default, the toolkit can only be invoked on Development, Test, and Stage environments:
+      ![][default_toolkit_setting]
+
+  You can define the same environment variable "IDA_ACCESS" in your BAW application which will override the default setting in the toolkit, for example:
+      ![][custom_toolkit_setting]
+
+[click_add_button]: ../images/install/click_add_button.PNG
+[ida_toolkit_search]: ../images/install/ida_toolkit_search.PNG
+[ida_toolkit_copy]: ../images/install/ida_toolkit_copy.png
+[ida_toolkit_copy_to_item]: ../images/install/ida_toolkit_copy_to_item.png
+[default_toolkit_setting]: ../images/install/default_toolkit_setting.png  
+[custom_toolkit_setting]: ../images/install/custom_toolkit_setting.png  
+[service]: ../images/install/service.png
+
+## Installing IDA Browser Plug-in
+
+### Chrome plugin
+- Open the url <a href="https://chromewebstore.google.com/search/IBM%20IDA" target="_blank">https://chromewebstore.google.com/search/IBM%20IDA</a>
+- Click "Add to Chrome" button to install plug-in.
+- The Chrome plugin offline installation package. [ida-24.6.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/ida-24.6.crx)
+- For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
+  
+### Edge plugin
+- The same IDA Chrome plugin can also be installed in Edge.
+- Enable "Allow extensions from other stores." in the Edge Extensions settings page.
+- Open the url <a href="https://chromewebstore.google.com/search/IBM%20IDA" target="_blank">https://chromewebstore.google.com/search/IBM%20IDA</a>
+- Click "Get" button, then click "Add extension" button to install plug-in.
+
+### Firefox plugin
+- Download Firefox plugin [ida-24.6.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-24.6.xpi)
+- Drag the downloaded plugin file into firefox window.
+- Click "Add" button.
+
+### Plug-in Configuration
+
+To make the plug-in work, you must log in to the IDA server in the plugin login page.
+
+- Click the IDA plugin icon in the browser extension toolbar, then it will pop up the login window.
+
+- Enter the IDA server URL, username, and password.
+
+  ![][plugin_login]
+
+- Click the "Sign in" button, then you will see the screenshot as below.
+
+  ![][plugin_welcome]
+
+- If you see the below sign-in errors, please open the server URL in your web browser to verify that IDA web can be accessed. If IDA web shows an HTTPS/SSL certificate warning, you must accept the warning manually by clicking "Proceed to ..." and then sign in to the IDA plugin.
+
+  ![][plugin_login_error]
+
+  ![][ida_web_cert_error]
+
+[plugin_welcome]: ../images/install/plugin_welcome.png
+[plugin_login]: ../images/install/plugin_login.png
+[plugin_login_error]: ../images/install/plugin_login_error.png
+[ida_web_cert_error]: ../images/install/ida_web_cert_error.png
+
+## Installing Selenium Grid Server
+
 IDA integrates with a remote testing automation framework based on Selenium Grid. IDA supports both version 4 and version 3 of Selenium Grid.
 
-## Selenium Grid Sizes
+### Selenium Grid Sizes
 
 Choosing a Grid role depends on what operating systems and browsers need to be supported, how many parallel sessions need to be executed, the number of available machines, and how powerful (CPU, RAM) those machines are.
 
@@ -23,7 +121,7 @@ Note that the default values (**1 CPU/1GB RAM per browser**) are a recommendatio
 
 Grid sizes are relative to the number of supported concurrent sessions and the number of Nodes, and there is no "one size fits all." It is suggested to start with a small grid size, which contains 5 or fewer nodes. More nodes can be added in the future according to actual requirements.
 
-## Selenium Grid v4
+### Installing Selenium Grid v4
 
 **Notes**
 
@@ -154,7 +252,7 @@ docker-compose -f docker-compose-v3.yml down
 
 ![][selenium_4_hub_node_docker]
 
-## Selenium Grid v3
+### Installing Selenium Grid v3
 
 **Notes**
 
