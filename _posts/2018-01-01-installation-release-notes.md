@@ -35,7 +35,6 @@ last_modified_at: 2024-08-14 13:35:00
 - There are database changes from 24.0.5 to 24.0.6, please use the new Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See new doc for [Migrating IDA Application](https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
 - IDA browser Plug-in is updated to version 24.6, please make sure you have installed the latest plug-in.
 - If ODM Checkstyle engine is used, please deploy the latest ODM Checkstyle rule projects to Rule Execution Server.
-- IDA operator is updated to version 24.0.6.
 
 #### The checkstyle rules change details
 [Added rules]
