@@ -389,7 +389,7 @@ After finishing the installation of the fix packs, the next step is to deploy th
    ![][wasstartapp]
 
    
-## Installing on Docker platform
+## Installing on Docker Compose
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
 ## Installing on Openshift
