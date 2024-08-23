@@ -2,7 +2,7 @@
 title: "Post Installation Setup"
 category: installation
 date: 2018-01-09 15:17:55
-last_modified_at: 2022-04-22 16:39:00
+last_modified_at: 2024-08-23 16:39:00
 ---
 
 # Post Installation Setup
@@ -134,7 +134,7 @@ Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distribu
 1. Download the Selenium server jar [selenium-server-4.11.0.jar](https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.11.0/selenium-server-4.11.0.jar).
 2. Download Selenium web drivers and put them under the same folder as the Selenium server jar file.
    - [Firefox Driver](https://github.com/mozilla/geckodriver/releases)
-   - [Chrome Driver](https://chromedriver.storage.googleapis.com/index.html)
+   - [Chrome Driver](https://developer.chrome.com/docs/chromedriver/downloads)([Versions older than 114](https://chromedriver.storage.googleapis.com/index.html))
    - [Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver)
    - [IE Driver](https://www.selenium.dev/downloads/)
 3. To quickly start Selenium 4 in standalone mode with default configurations, run the command below. This will set up a 1-node hub with auto-detected web drivers in the same folder as the jar file.
