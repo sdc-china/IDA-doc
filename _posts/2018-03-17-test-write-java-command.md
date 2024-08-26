@@ -21,9 +21,7 @@ Make sure you have installed **Eclipse IDE** and **Maven** in your local environ
 
 Import CustomJavaCommand Java project
 
-1. Unzip the file **workspace/custom-java-command.zip** in the release package.
-
-   ![][test_java_command_zip]
+1. Unzip the file **workspace/custom-java-command.zip** from [IDA resources page](../administration/administration-resources.html).
 
 2. Import the project **CustomJavaCommand** into **Eclipse**.
 
@@ -306,7 +304,6 @@ Use custom Java command in IDA test case
 
    ![][test_java_command_parameter]{:width="60%"}
 
-  [test_java_command_zip]: ../images/test/test_java_command_zip.png
   [test_import_java_command]: ../images/test/test_import_java_command.png
   [test_maven_update]: ../images/test/test_maven_update.png
   [test_my_java_command]: ../images/test/test_my_java_command.png

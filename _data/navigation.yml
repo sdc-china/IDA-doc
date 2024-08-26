@@ -159,6 +159,8 @@ docs:
         url: /administration/administration-checkstyle-rule-configuration.html
       - title: "Custom Recorder"
         url: /administration/administration-custom-recorder.html
+      - title: "Resources"
+        url: /administration/administration-resources.html
       - title: "Start and Stop IDA Environment"
         url: /administration/administration-start-and-stop-ida-environment.html
       - title: "Settings Configuration"
