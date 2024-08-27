@@ -21,7 +21,7 @@ Make sure you have installed **Eclipse IDE** and **Maven** in your local environ
 
 Import CustomJavaCommand Java project
 
-1. Unzip the file **workspace/custom-java-command.zip** from [IDA resources page](../administration/administration-resources.html).
+1. Unzip the file **workspace/custom-java-command.zip** from [IDA Resources page](../administration/administration-resources.html).
 
 2. Import the project **CustomJavaCommand** into **Eclipse**.
 

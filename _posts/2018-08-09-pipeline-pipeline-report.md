@@ -8,17 +8,19 @@ last_modified_at: 2019-07-29 15:53:00
 # Pipeline Report
 ***
 
-## Pipeline build status
+## Pipeline Build Status
 
 | Build Status 	| Description |
 |:----------------|:------------------------|
-| Queued | Build is waiting for execution. |
-| Running | Build is in progress. |
-| Success | Succeed build.|
-| Failed | Failed build.|
-| Terminated | Cancelled the build or rejected a pending build. |
-| Partial Success| If the checkstyle step or test step set "Halt on failure" to be false, and failed the step, then the build status is partial success.|
-| Pending | The build is wating for approval or resume. |
+| Queued | The build is queued to be executed. |
+| Running | The build is running in progress. |
+| Success | The build is successful.|
+| Failed | The build is failed.|
+| Partial Success| The build is partially failed if it has failed, unchecked Halt on Failure steps(for example on Checkstyle or Test steps).|
+| Pending | The build is pending for approval on a stage or to be resumed on a deployment step due to a missing custom migration policy.|
+| Terminated | The build is cancelled or rejected by a user. |
+
+
 
 
 ## Pipeline Report  
