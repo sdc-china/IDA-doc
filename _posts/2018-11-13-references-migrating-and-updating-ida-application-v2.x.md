@@ -78,7 +78,7 @@ For IDA version migration, you need to update IDA.war, take the following steps:
 
 To update the IDA BAW Toolkit, take the following steps:
 
-1. Import **IDA_Toolkit - 8.6.0_v1.4.twx** from [IDA resources page](../administration/administration-resources.html) into your process center.
+1. Import **IDA_Toolkit - 8.6.0_v1.4.twx** which is in the /toolkit folder of the release package into your process center.
 2. Open your process app by web process designer from the process center.  
 3. Upgrade the toolkit.
 

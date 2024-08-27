@@ -540,7 +540,7 @@ Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment st
 # Step 2: Installing IDA BAW Toolkit
 The testing capability can only launch the exposed Business Processes, Human Services, and AJAX Services. If you wish to test other services such as system services, integration services, or business processes which are not exposed directly, you need to install the IDA Toolkit.
 
-1. Import **IDA_Toolkit - 8.6.0_v1.1.twx** from [IDA resources page](../administration/administration-resources.html) into your process center.
+1. Import **IDA_Toolkit - 8.6.0_v1.1.twx** which is in the /toolkit folder of the release package into your process center.
 
 2. Open your process app by the web process designer from the process center.
 
