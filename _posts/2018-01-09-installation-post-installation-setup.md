@@ -364,21 +364,21 @@ The following link shows a step-by-step introduction to using the official Selen
 You can follow the script below to install the Selenium Hub and Node on Docker. We recommend you install the debug image version so you can visually see what the browser is doing.
 
 ```
-docker pull selenium/hub:3.141.59-palladium
-docker pull selenium/node-firefox:3.141.59-palladium
-docker pull selenium/node-chrome:3.141.59-palladium
+docker pull selenium/hub:3.141.59
+docker pull selenium/node-firefox:3.141.59
+docker pull selenium/node-chrome:3.141.59
 
 docker network create grid
-docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.141.59-palladium
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-palladium
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium
+docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.141.59
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59
 ```
 
 You can run the command below multiple times; it will create multiple Chrome/Firefox nodes for the grid remote testing. It can provide you the ability to run Selenium testing in parallel on the Grid. We recommend creating more than 5 nodes for Chrome/Firefox each.
 
 ```
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-palladium
-docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-palladium
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59
+docker run -d -P --net grid -e HUB_HOST=selenium-hub  -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59
 ```
 
 After that, you can open the browser http://dockerhostIP:4444/grid/console to check the Selenium Grid/Node installation status.
