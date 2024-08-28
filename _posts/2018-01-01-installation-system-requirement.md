@@ -24,9 +24,9 @@ last_modified_at: 2023-12-27 13:35:00
 
 ## Selenium Grid Browsers Support
 
-* Firefox v92+
+* Firefox v92+ (64-bit)
 * Chrome v94+ (64-bit)
-* Edge v96+ (64-bit)
+* Edge v114+ (64-bit)
 * IE v11+ (Supports execution only)
 
 ## Hardware Requirements
