@@ -31,6 +31,7 @@ last_modified_at: 2024-08-14 13:35:00
 - There are database changes from 24.0.6 to 24.0.7, please use the new Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See new doc for Migrating IDA Application(https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
 - IDA browser Plug-in is updated to version 24.7, please make sure you have installed the latest plug-in.
 - Toolkit and workspace folders have been removed from the release package. User can download all the resource files(plugins, toolkits and customization starter projects) from the **Resources** page under menu **Administration**(https://sdc-china.github.io/IDA-doc/administration/administration-resources.html).
+- Because Selenium Java API is upgraded to support the latest Selenium Hub, very old browser versions are no longer supported. Please upgrade the Selenium browsers to the minimum supported versions if needed(https://sdc-china.github.io/IDA-doc/installation/installation-system-requirement.html#selenium-grid-browsers-support).
 
 ## Release Components
 
