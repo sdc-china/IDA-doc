@@ -13,9 +13,9 @@ The testing capability can only launch the exposed Business Processes, Human Ser
 
 BAW Version | IDA Toolkit Version  
      ----------------------|-------------------
-      19.0.0.3 |  IDA_Toolkit - 8.6.0_v1.5.twx
-      20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [executeSQL](../references/references-test-command.html#executesql)**.
-      above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
+      19.0.0.3 | IDA_Toolkit-8.6.1.19003.twx
+      20.0.0.1 | IDA_Toolkit-8.6.2.20001.twx <br> **Due to product limitations, this version does not support [executeSQL](../references/references-test-command.html#executesql)**.
+      20.0.0.2+ | IDA_Toolkit-8.6.2.20002.twx
 
 
 1. Import the corresponding **IDA_Toolkit - 8.6.x.x.twx** from [IDA Resources page](../administration/administration-resources.html) into your process center.      
