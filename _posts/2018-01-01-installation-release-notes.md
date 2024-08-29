@@ -37,8 +37,11 @@ last_modified_at: 2024-08-14 13:35:00
 | Component Description	| Release File	| Installation instructions| 
 |:----------------|:------------------------|:---------------|
 | IDA release package for traditional web server (eg: Liberty, WebSphere)	 |ida-24.0.7.zip|[Installing IDA Application](../installation/installation-installing-ida-application.html) |
-| IDA web and operator docker images |	ida-24.0.7.tgz	| <https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
-| IDA web and operator docker images based on Java 11|	ida-24.0.7-java11.tgz	|<https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
+| IDA web and operator docker images |	ida-24.0.7.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
+| IDA web and operator docker images based on Java 11|	ida-24.0.7-java11.tgz	|<https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
+
+## IDA Supporting Service Subscription
+1-year standard support is provided for each release after its official release date. It's only available with IDA Supporting Service Subscription.
 
 ## Previous Releases
 
