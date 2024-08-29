@@ -8,6 +8,8 @@ last_modified_at: 2019-07-29 15:27:00
 # Customize Checkstyle Rules
 ***
 
+The starter project for customizing Checkstyle rules can be downloaded from [IDA Resources page](../administration/administration-resources.html).
+
 ## ODM Customization
 
 ### Software Prerequisites

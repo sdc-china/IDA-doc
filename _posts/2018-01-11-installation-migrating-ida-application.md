@@ -71,7 +71,7 @@ BAW Version | IDA Toolkit Version
       20.0.0.1 | IDA_Toolkit - 8.6.2.20001_TC.twx <br> **Due to product limitations, this version does not support [executeSQL](../references/references-test-command.html#executesql)**.
       above 20.0.0.1 |IDA_Toolkit - 8.6.2.0_TC.twx
 
-1. Import the corresponding **IDA_Toolkit - 8.6.x.x.twx** which is in the /toolkit folder of the release package into your Process Center.
+1. Import the corresponding **IDA_Toolkit - 8.6.x.x.twx** from [IDA Resources page](../administration/administration-resources.html) into your Process Center.
 
 2. Open your process app by the web process designer from the Process Center.
 
