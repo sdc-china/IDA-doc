@@ -42,4 +42,4 @@ Click the **[Checkstyle Report][2]** card to see the result. The same way to rea
 [pipeline_unitreport]: ../images/pipeline/pipeline_unit_report.png
 [1]: ../test/test-import_execute-sample-test-project.html
 [2]: ../checkstyle/checkstyle-checkstyle-report.html
-[build_status]: ../images/pipeline/build_status.PNG
+[build_status]: ../images/pipeline/build_status.png
