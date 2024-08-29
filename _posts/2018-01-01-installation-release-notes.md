@@ -7,47 +7,38 @@ last_modified_at: 2024-08-14 13:35:00
 
 ## Release Notes
 
-### 24.0.6 - 07/30/2024
-
+### 24.0.7 - 08/29/2024
 #### Enhancements
-- Support CP4BA 24.0.0.
-- Display all IDA time stamp using the same time zone of user browser.
-- [Pipeline] Support to trigger the pipeline build at a specific time or within a time period.
-- [Pipeline] Allow user to add approve/reject/resume pipeline comments.
-- [Pipeline] Add Approved By/Rejected By/Resumed By info to pipeline build stage and step.
-- [Comparison] Add new filter for merged artifacts.
+- [Testing] Draw the actual flow of sub processes in test report.
+- [Testing] Upgrade Selenium Java API to support latest Selenium Hub.
+- [Comparison] Redesign a hierarchical left-side menu bar by nesting child artifacts in parent artifact.
+- [Administration] Add resources page for downloading all IDA resources.
+- [Administration] Able to download the latest embedded rule project from settings page.
 
 #### Bug Fixes
-- Fix inconsistent case_description column definition in database schemas.
-- [Testing] Text command does not properly lose focus on Firefox hub.
-- [Testing] Other selenium grids are not loaded sometimes when project is edited in project detailed page.
-- [Testing] Style is broken when hiding the sub steps at group command second level.
-- [Checkstyle] The "The Error is not implemented" rule fails to check some error handlers.
-- [Pipeline] The imported pipeline from old version should not be saved without completed stage information.
-- [Pipeline] It should do pre-check when user click the resume button in pipeline.
-- [Pipeline] Fix the issue that failed to execute the pipeline test with inactive snapshot on Workflow Center environment.
-- [Comparison] Delete operations also need to display all dependencies.
-- [Comparison] Report generation hungs due to performance issue of comparing very long scripts.
-- [Plugin] Not able to record Start workflow on Workplace.
-- [Plugin] Websocket connection was not stable in IDA plugin.
+- [Testing] "Enter" event should not be triggered after text command.
+- [Testing] Failed to upload docx and csv files using bpmFileDropzone command.
+- [Testing] The test coverage diagram is not properly scaled in some cases.
+- [Testing] Show multiple instances data in test report.
+- [Pipeline] Could not commit JPA transaction error is thrown during test step run in pipeline.
+- [Pipeline] Duplicate pipeline build numbers of scheduled pipeline.
+- [Pipeline] Cancel button does not work on pipeline edit page if 'Trigger by New Snapshot' form validation fails.
+- [Pipeline] SKIPPED build step should be not count when the success rate of a pipeline build step is calculated.
+- [Comparison] List reverted artifacts when reverting a delete operation.
+- [Administration] Failed to auto clean pipeline builds when builds are in PARTIAL SUCCESS status.
 
 #### Notes
-- There are database changes from 24.0.5 to 24.0.6, please use the new Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See new doc for [Migrating IDA Application](https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
-- IDA browser Plug-in is updated to version 24.6, please make sure you have installed the latest plug-in.
-- If ODM Checkstyle engine is used, please deploy the latest ODM Checkstyle rule projects to Rule Execution Server.
-
-#### The checkstyle rules change details
-[Added rules]
-- checks/process/check-bpd-subprocess-error-not-fully-implemented
-- checks/service/check-service-subprocess-error-not-fully-implemented
+- There are database changes from 24.0.6 to 24.0.7, please use the new Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See new doc for Migrating IDA Application(https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
+- IDA browser Plug-in is updated to version 24.7, please make sure you have installed the latest plug-in.
+- Toolkit and workspace folders have been removed from the release package. User can download all the resource files(plugins, toolkits and customization starter projects) from the **Resources** page under menu **Administration**(https://sdc-china.github.io/IDA-doc/administration/administration-resources.html).
 
 ## Release Components
 
 | Component Description	| Release File	| Installation instructions| 
 |:----------------|:------------------------|:---------------|
-| IDA release package for traditional web server (eg: Liberty, WebSphere)	 |ida-web-24.0.6.zip|[Installing IDA Application](../installation/installation-installing-ida-application.html) |
-| IDA web and operator docker images |	ida-all-24.0.6.tgz	| <https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
-| IDA web and operator docker images based on Java 11|	ida-all-24.0.6-java11.tgz	|<https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
+| IDA release package for traditional web server (eg: Liberty, WebSphere)	 |ida-24.0.7.zip|[Installing IDA Application](../installation/installation-installing-ida-application.html) |
+| IDA web and operator docker images |	ida-24.0.7.tgz	| <https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
+| IDA web and operator docker images based on Java 11|	ida-24.0.7-java11.tgz	|<https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
 
 ## Previous Releases
 
