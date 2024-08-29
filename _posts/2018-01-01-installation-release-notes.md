@@ -46,10 +46,8 @@ last_modified_at: 2024-08-14 13:35:00
 | Component Description	| Release File	| Installation instructions| 
 |:----------------|:------------------------|:---------------|
 | IDA release package for traditional web server (eg: Liberty, WebSphere)	 |ida-web-24.0.6.zip|[Installing IDA Application](../installation/installation-installing-ida-application.html) |
-| IDA web docker image for docker compose | ida-24.0.6.tgz | <https://github.com/sdc-china/ida-docker> |
-| IDA web docker image based on Java 11 for docker compose |	ida-24.0.6-java11.tgz	| <https://github.com/sdc-china/ida-docker> |
-| IDA web and operator docker images for Kubernetes platform |	ida-all-24.0.6.tgz	| <https://github.com/sdc-china/ida-operator> |
-| IDA web and operator docker images  based on Java 11 for Kubernetes platform |	ida-all-24.0.6-java11.tgz	| <https://github.com/sdc-china/ida-operator> |
+| IDA web and operator docker images |	ida-all-24.0.6.tgz	| <https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
+| IDA web and operator docker images based on Java 11|	ida-all-24.0.6-java11.tgz	|<https://github.com/sdc-china/ida-docker> <https://github.com/sdc-china/ida-operator> |
 
 ## Previous Releases
 
