@@ -132,7 +132,7 @@ The Kubernetes configuration is used to create a Containerized Selenium Grid Ser
 
 | Field | Description |
 | --- | --- |
-| Ingress Host | The subdomain to use for exposed routes. For OpenShift, it should be in the format of `apps.<cluster_name>.<base_domain>`. The `<cluster_name>` and `<base_domain>` come from the installation config file. |
+| Ingress Host | The subdomain to use for exposed services. For OpenShift, it should be in the format of `apps.<cluster_name>.<base_domain>`. The `<cluster_name>` and `<base_domain>` come from the installation config file. |
 | Server URL | Cluster API address. For OpenShift, it should be in the format of `https://api.<cluster_name>.<base_domain>:6443`. The `<cluster_name>` and `<base_domain>` come from the installation config file. |
 | Namespace | The namespace/project that you want to use to create your containerized grid. |
 | User Token | Token of the service account. |
@@ -142,6 +142,8 @@ Here is a sample:
 ![][administrator_k8s_setting_sample]{:width="100%"}
 
 The commands to get ingress host, server url and token:
+
+- For OpenShift:
 
 ``` 
 # Command to get ingress host
@@ -161,6 +163,33 @@ echo $TOKEN
 # Allow users using the "restricted" SCC in selenium grid namespace
 # For OpenShift v4.11+ cluster only, and please ensure the logged in user can access the security context constraint (SCC).
 oc create rolebinding local:scc:restricted -n selenium-demo --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:selenium-demo
+``` 
+
+- For Kubernetes:
+
+``` 
+# Command to get server url
+kubectl cluster-info
+
+# Commands to get user token
+kubectl create namespace selenium-demo
+kubectl config set-context --current --namespace=selenium-demo
+kubectl create sa selenium-installer-sa
+kubectl create rolebinding selenium-installer-rolebinding --clusterrole=admin --serviceaccount=selenium-demo:selenium-installer-sa
+
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: Secret
+metadata:
+  name: selenium-installer-secret
+  annotations:
+    kubernetes.io/service-account.name: selenium-installer-sa
+type: kubernetes.io/service-account-token
+EOF
+
+TOKEN=`kubectl get secret selenium-installer-secret -o jsonpath={.data.token} | base64 -d`
+echo $TOKEN
+
 ``` 
 
 
