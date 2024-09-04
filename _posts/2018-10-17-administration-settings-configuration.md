@@ -163,6 +163,10 @@ echo $TOKEN
 # Allow users using the "restricted" SCC in selenium grid namespace
 # For OpenShift v4.11+ cluster only, and please ensure the logged in user can access the security context constraint (SCC).
 oc create rolebinding local:scc:restricted -n selenium-demo --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:selenium-demo
+
+#Please execute below commmands if you want to customize the containered selenium images registry.
+oc create secret docker-registry ida-selenium-pull-secret --docker-server=<docker_registry>  --docker-username=<docker_username> --docker-password=<docker_password>
+oc patch serviceaccount default -p '{"imagePullSecrets": [{"name": "ida-selenium-pull-secret"}]}'
 ``` 
 
 - For Kubernetes:
@@ -189,6 +193,10 @@ EOF
 
 TOKEN=`kubectl get secret selenium-installer-secret -o jsonpath={.data.token} | base64 -d`
 echo $TOKEN
+
+#Please execute below commmands if you want to customize the containered selenium images registry.
+kubectl create secret docker-registry ida-selenium-pull-secret --docker-server=<docker_registry>  --docker-username=<docker_username> --docker-password=<docker_password>
+kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "ida-selenium-pull-secret"}]}'
 
 ``` 
 
