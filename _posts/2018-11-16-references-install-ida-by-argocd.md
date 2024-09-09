@@ -326,5 +326,6 @@ kubectl patch Deployment argocd-repo-server --type='json' -p='[{"op": "add", "pa
 kubectl patch Deployment argocd-repo-server --type='json' -p='[{"op": "add", "path": "/spec/template/spec/containers/0/volumeMounts/0", "value": {"mountPath": "/etc/ssl/certs", "name": "tls-certs-workaround"}}]'
 ```
 
-[https://github.com/argoproj/argo-cd/issues/13154](https://github.com/argoproj/argo-cd/issues/13154)
-[https://github.com/argoproj/argo-cd/issues/6477](https://github.com/argoproj/argo-cd/issues/6477)
+References:
+- [https://github.com/argoproj/argo-cd/issues/13154](https://github.com/argoproj/argo-cd/issues/13154)
+- [https://github.com/argoproj/argo-cd/issues/6477](https://github.com/argoproj/argo-cd/issues/6477)
