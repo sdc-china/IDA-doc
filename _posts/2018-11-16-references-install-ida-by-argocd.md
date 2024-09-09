@@ -254,8 +254,6 @@ firefoxNode:
   deploymentEnabled: false
   service:
     enabled: false
-  service:
-    enabled: false
 ```
 
 ### Create Kustomization.yaml for ArgoCD project
