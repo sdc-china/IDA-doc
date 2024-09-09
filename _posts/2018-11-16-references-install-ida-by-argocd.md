@@ -21,7 +21,7 @@ More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/k
 
 ### Setup private IDA Helm Charts Repository
 
-1. The helm charts repository can be hosted by any web server (), the layout of the repository looks like this:
+- The helm charts repository can be hosted by any web server (), the layout of the repository looks like this:
 
 ```
 charts/
@@ -33,11 +33,11 @@ charts/
   |- selenium-grid-0.28.4.tgz
 ```
 
-2. Download [idaweb-helm-24.0.7.tgz](https://github.com/sdc-china/ida-operator/releases/download/24.0.7/idaweb-helm-24.0.7.tgz), and upload it to your private repository.
+- Download [idaweb-helm-24.0.7.tgz](https://github.com/sdc-china/ida-operator/releases/download/24.0.7/idaweb-helm-24.0.7.tgz), and upload it to your private repository.
 
-3. Download [selenium-grid-0.28.4.tgz](https://github.com/SeleniumHQ/docker-selenium/releases/download/selenium-grid-0.28.4/selenium-grid-0.28.4.tgz), and upload it to your private repository.
+- Download [selenium-grid-0.28.4.tgz](https://github.com/SeleniumHQ/docker-selenium/releases/download/selenium-grid-0.28.4/selenium-grid-0.28.4.tgz), and upload it to your private repository.
 
-4. Create **index.yaml**, and then upload it to your private repository. Example:
+- Create **index.yaml**, and then upload it to your private repository. Example:
 
 ```
 apiVersion: v1
