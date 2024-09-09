@@ -200,6 +200,9 @@ resources:
 
 patches:
 - path: cloud-sql-proxy.yaml
+  target:
+    kind: Deployment
+    name: idaweb-helm-ida-web
 
 helmCharts:
 - name: idaweb-helm
@@ -213,45 +216,40 @@ helmCharts:
 ### Example of cloud-sql-proxy.yaml which enable the sidecar container in IDA deployment.
 
 ```
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: idaweb-helm-ida-web
-spec:
-  template:
-    spec:
-      containers:
-        - name: cloud-sql-proxy
-          # It is recommended to use the latest version of the Cloud SQL proxy
-          # Make sure to update on a regular schedule!
-          image: nexus3.systems.uk.hsbc:18080/com/hsbc/group/itid/es/safe/cloud-sql-proxy:2.11.0
-          imagePullPolicy: IfNotPresent
-          args:
-            # If connecting from a VPC-native GKE cluster, you can use the
-            # following flag to have the proxy connect over private IP
-            - "--private-ip"
-            # Replace DB_PORT with the port the proxy should listen on
-            - "--port=5432"
-            - "xxx"
-            - "--auto-iam-authn"          
-          ports:
-          - name: tcp-db
-            containerPort: 5432
-          securityContext:
-            allowPrivilegeEscalation: false
-            readOnlyRootFilesystem: true
-            capabilities:
-              drop:
-              - all
-            runAsNonRoot: true
-            runAsUser: 1000
-          resources:
-            limits:
-              cpu: 1
-              memory: 1Gi
-            requests:
-              memory: 256Mi
-              cpu: 100m
+- op: "add"
+  path: "/spec/template/spec/containers/0"
+  value:
+    name: cloud-sql-proxy
+    # It is recommended to use the latest version of the Cloud SQL proxy
+    # Make sure to update on a regular schedule!
+    image: nexus3.systems.uk.hsbc:18080/com/hsbc/group/itid/es/safe/cloud-sql-proxy:2.11.0
+    imagePullPolicy: IfNotPresent
+    args:
+      # If connecting from a VPC-native GKE cluster, you can use the
+      # following flag to have the proxy connect over private IP
+      - "--private-ip"
+      # Replace DB_PORT with the port the proxy should listen on
+      - "--port=5432"
+      - "xxx"
+      - "--auto-iam-authn"          
+    ports:
+    - name: tcp-db
+      containerPort: 5432
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+        - all
+      runAsNonRoot: true
+      runAsUser: 1000
+    resources:
+      limits:
+        cpu: 1
+        memory: 1Gi
+      requests:
+        memory: 256Mi
+        cpu: 100m
 ```
 
 ## Selenium Installation
