@@ -21,7 +21,7 @@ More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/k
 
 ### Setup private IDA Helm Charts Repository
 
-1. The helm charts repository can be hosted by any web server, the layout of the repository looks like this:
+1. The helm charts repository can be hosted by any web server (), the layout of the repository looks like this:
 
 ```
 charts/
@@ -44,7 +44,7 @@ apiVersion: v1
 entries:
   idaweb-helm:
   - apiVersion: v2
-    appVersion: 24.0.7
+    appVersion: 1.16.0
     created: "2024-09-06T04:01:18.106366179-07:00"
     description: A Helm chart for creating a IDA Web Server in Kubernetes
     digest: 46479ea5108923c0ceff6d5b78e25380f3354951ac1ea67749f05bfdf9e87a8a
@@ -305,3 +305,12 @@ helmCharts:
   namespace: <NAMESPACE>
   valuesFile: values.yaml
 ```
+
+## Trouble Shooting
+
+### Failed to deploy helm chart by private helm charts repository with self-signed certification
+
+The ArgoCD server can't recognize the self-signed certification of private helm charts repository. The workaround is manually add the self-signed certification to argocd deployments.
+
+[https://github.com/argoproj/argo-cd/issues/13154](https://github.com/argoproj/argo-cd/issues/13154)
+[https://github.com/argoproj/argo-cd/issues/6477](https://github.com/argoproj/argo-cd/issues/6477)
