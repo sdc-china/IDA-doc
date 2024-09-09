@@ -7,9 +7,9 @@ last_modified_at: 2023-10-26 11:20:00
 
 # Install IDA and Selenium with ArgoCD + Kustomize + Helm Charts
 
-## Prerequisites
+## 1. Prerequisites
 
-### Enable helm build option in ArgoCD
+### 1.1 Enable helm build option in ArgoCD
 
 Patch config map **argocd-cm** of your ArgoCD deployment.
 
@@ -19,12 +19,12 @@ kubectl patch configmap/argocd-cm --type merge -p '{"data":{"kustomize.buildOpti
 
 More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts)
 
-### Public helm charts repository
+### 1.2 Public helm charts repository
 
 - IDA Helm Charts Repository: [https://sdc-china.github.io/ida-operator](https://sdc-china.github.io/ida-operator)
 - Selenium Helm Charts Repository: [https://www.selenium.dev/docker-selenium](https://www.selenium.dev/docker-selenium)
 
-### Setup private helm charts repository (Optional)
+### 1.3 Setup private helm charts repository (Optional)
 
 If the public helm charts repository is not available in your network, then you can setup private helm charts repository.
 
@@ -84,24 +84,24 @@ More details please refer to doc [https://helm.sh/docs/topics/chart_repository](
 
 **Note:** If self-signed certification is used by the private chart repository, then you will need to customize argocd, more details please refert to [Touble Shooting](#trouble-shooting).
 
-## IDA Installation
+## 2. IDA Installation
 
-### Initial IDA Database
+### 2.1 Initial IDA Database
 
 Please refer to doc 
 [https://sdc-china.github.io/IDA-doc/installation/installation-database-installation-and-configuration.html#install-and-configure-postgresql-db](https://sdc-china.github.io/IDA-doc/installation/installation-database-installation-and-configuration.html#install-and-configure-postgresql-db)
 
-### Push IDA docker images to your private docker registry
+### 2.2 Push IDA docker images to your private docker registry
 
 Please refer to doc [https://github.com/sdc-china/ida-operator?tab=readme-ov-file#before-you-begin](https://github.com/sdc-china/ida-operator?tab=readme-ov-file#before-you-begin)
 
-### Create docker registry secret
+### 2.3 Create docker registry secret
 
 ```
 kubectl create secret docker-registry ida-docker-secret --docker-server=<PRIVATE_DOCKER_REGISTRY> --docker-username=<USERNAME> --docker-password=<PASSWORD>
 ```
 
-### Create ida-external-db-credential.yaml for DB secrets
+### 2.4 Create ida-external-db-credential.yaml for DB secrets
 
 ```
 apiVersion: v1
@@ -113,7 +113,7 @@ stringData:
   DATABASE_PASSWORD: "password"
 ```
 
-### create ida-data-pvc.yaml
+### 2.5 create ida-data-pvc.yaml
 
 To enable IDA high availability topology, please use ReadWriteMany accessMode storage.
 
@@ -152,7 +152,7 @@ spec:
 More details about storage access mode, please refer to [https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
 
 
-### Create values.yaml for IDA helm charts parameters
+### 2.6 Create values.yaml for IDA helm charts parameters
 
 ```
 # IDA chart values
@@ -190,7 +190,7 @@ idaWeb:
   serviceType: ClusterIP
 ```
 
-### Create Kustomization.yaml for ArgoCD project
+### 2.7 Create Kustomization.yaml for ArgoCD project
 
 The resources that are not managed by IDA helm charts can be added to the **resources** section.
 The customization for existing IDA helm charts resources can be added to the **patches** section.
@@ -218,7 +218,7 @@ helmCharts:
   valuesFile: values.yaml
 ```
 
-### Example of cloud-sql-proxy.yaml which enable the sidecar container in IDA deployment.
+### 2.8 Example of cloud-sql-proxy.yaml which enable the sidecar container in IDA deployment.
 
 ```
 - op: "add"
@@ -228,9 +228,9 @@ helmCharts:
     image: <CLOUD_SQL_IMAGE>
 ```
 
-## Selenium Installation
+## 3. Selenium Installation
 
-### Create values.yaml for IDA helm charts parameters
+### 3.1 Create values.yaml for IDA helm charts parameters
 
 ```
 global:
@@ -263,7 +263,7 @@ firefoxNode:
     enabled: false
 ```
 
-### Create Kustomization.yaml for ArgoCD project
+### 3.2 Create Kustomization.yaml for ArgoCD project
 
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
@@ -278,9 +278,9 @@ helmCharts:
   valuesFile: values.yaml
 ```
 
-## Trouble Shooting
+## 4. Trouble Shooting
 
-### Failed to deploy helm chart by private helm charts repository with self-signed certification
+### 4.1 Failed to deploy helm chart by private helm charts repository with self-signed certification
 
 The ArgoCD server can't recognize the self-signed certification of private helm charts repository. The workaround is manually add the self-signed certification to argocd deployments.
 
