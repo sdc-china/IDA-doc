@@ -113,7 +113,7 @@ stringData:
   DATABASE_PASSWORD: "password"
 ```
 
-### 2.5 create ida-data-pvc.yaml
+### 2.5 Create ida-data-pvc.yaml
 
 To enable IDA high availability topology, please use ReadWriteMany accessMode storage.
 
