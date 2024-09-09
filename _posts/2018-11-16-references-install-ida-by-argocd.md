@@ -26,7 +26,7 @@ More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/k
 
 ### Setup private helm charts repository (Optional)
 
-If the public helm charts repository is not available in your network, then you can setup your private helm charts repository.
+If the public helm charts repository is not available in your network, then you can setup private helm charts repository.
 
 - The helm charts repository can be hosted by any web server, the layout of the repository looks like this:
 
