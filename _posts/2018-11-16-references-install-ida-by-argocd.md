@@ -21,8 +21,8 @@ More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/k
 
 ### Public helm charts repository
 
-IDA Helm Charts Repository: [https://sdc-china.github.io/ida-operator](https://sdc-china.github.io/ida-operator)
-Selenium Helm Charts Repository: [https://www.selenium.dev/docker-selenium](https://www.selenium.dev/docker-selenium)
+- IDA Helm Charts Repository: [https://sdc-china.github.io/ida-operator](https://sdc-china.github.io/ida-operator)
+- Selenium Helm Charts Repository: [https://www.selenium.dev/docker-selenium](https://www.selenium.dev/docker-selenium)
 
 ### Setup private helm charts repository (Optional)
 
@@ -284,7 +284,8 @@ helmCharts:
 
 The ArgoCD server can't recognize the self-signed certification of private helm charts repository. The workaround is manually add the self-signed certification to argocd deployments.
 
-Add TLS certification of the private repo by Settings page of ArgoCD UI, then patch the following resources.
+- Add TLS certification of the private repo by Settings page of ArgoCD UI.
+- Patch the following resources.
 
 ```
 kubectl patch StatefulSet argocd-application-controller --type='json' -p='[{"op": "add", "path": "/spec/template/spec/volumes/0", "value": {"name": "tls-certs-workaround", "configMap": {"name": "argocd-tls-certs-cm", "items": [{"key": "<PRIVATE_REPO_HOST>", "path": "ca-certificates.crt"}]}}}]'
