@@ -19,7 +19,7 @@ kubectl patch configmap/argocd-cm --type merge -p '{"data":{"kustomize.buildOpti
 
 More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts)
 
-### Setup private IDA Helm Charts Repository
+### Setup private helm charts repository
 
 - The helm charts repository can be hosted by any web server, the layout of the repository looks like this:
 
