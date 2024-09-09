@@ -224,7 +224,7 @@ helmCharts:
     name: cloud-sql-proxy
     # It is recommended to use the latest version of the Cloud SQL proxy
     # Make sure to update on a regular schedule!
-    image: nexus3.systems.uk.hsbc:18080/com/hsbc/group/itid/es/safe/cloud-sql-proxy:2.11.0
+    image: cloud-sql-proxy:2.11.0
     imagePullPolicy: IfNotPresent
     args:
       # If connecting from a VPC-native GKE cluster, you can use the
