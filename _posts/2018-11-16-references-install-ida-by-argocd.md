@@ -75,6 +75,8 @@ generated: "2024-09-06T04:01:17.548051179-07:00"
 
 More details please refer to doc [https://helm.sh/docs/topics/chart_repository](https://helm.sh/docs/topics/chart_repository).
 
+**Note:** If self-signed certification is used by the private chart repository, then you will need to customize argocd, more details please refert to [Touble Shooting](#trouble-shooting).
+
 ## IDA Installation
 
 ### Initial IDA Database
