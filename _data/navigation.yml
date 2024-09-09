@@ -190,6 +190,8 @@ docs:
         url: /references/references-high-availability-for-ida-application-on-was-and-ihs.html
       - title: "High Availability for IDA Application on Liberty and HAProxy"
         url: /references/references-high-availability-for-ida-application-on-liberty-and-haproxy.html
+      - title: "Install IDA and Selenium with ArgoCD + Kustomize + Helm Charts"
+        url: /references/references-install-ida-by-argocd.html
       - title: "Samples"
         url: /references/references-samples.html
       - title: "Best Practices"
