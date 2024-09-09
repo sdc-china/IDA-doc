@@ -195,10 +195,6 @@ kind: Kustomization
 resources:
 - ida-external-db-credential.yaml
 - ida-data-pvc.yaml
-- cloud-sql-sa.yaml
-- dns.yaml
-- dns-proxy.yaml
-- ingress_gke.yaml
 
 patches:
 - path: cloud-sql-proxy.yaml
@@ -222,36 +218,7 @@ helmCharts:
   path: "/spec/template/spec/containers/0"
   value:
     name: cloud-sql-proxy
-    # It is recommended to use the latest version of the Cloud SQL proxy
-    # Make sure to update on a regular schedule!
-    image: cloud-sql-proxy:2.11.0
-    imagePullPolicy: IfNotPresent
-    args:
-      # If connecting from a VPC-native GKE cluster, you can use the
-      # following flag to have the proxy connect over private IP
-      - "--private-ip"
-      # Replace DB_PORT with the port the proxy should listen on
-      - "--port=5432"
-      - "xxx"
-      - "--auto-iam-authn"          
-    ports:
-    - name: tcp-db
-      containerPort: 5432
-    securityContext:
-      allowPrivilegeEscalation: false
-      readOnlyRootFilesystem: true
-      capabilities:
-        drop:
-        - all
-      runAsNonRoot: true
-      runAsUser: 1000
-    resources:
-      limits:
-        cpu: 1
-        memory: 1Gi
-      requests:
-        memory: 256Mi
-        cpu: 100m
+    image: <CLOUD_SQL_IMAGE>
 ```
 
 ## Selenium Installation
