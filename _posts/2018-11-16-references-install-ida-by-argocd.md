@@ -310,5 +310,20 @@ helmCharts:
 
 The ArgoCD server can't recognize the self-signed certification of private helm charts repository. The workaround is manually add the self-signed certification to argocd deployments.
 
+
+```
+kubectl patch StatefulSet argocd-application-controller --type='json' -p='[{"op": "add", "path": "/spec/template/spec/volumes/0", "value": {"name": "tls-certs-workaround", "configMap": {"name": "argocd-tls-certs-cm", "items": [{"key": "9.30.255.155", "path": "ca-certificates.crt"}]}}}]'
+
+kubectl patch StatefulSet argocd-application-controller --type='json' -p='[{"op": "add", "path": "/spec/template/spec/containers/0/volumeMounts/0", "value": {"mountPath": "/etc/ssl/certs", "name": "tls-certs-workaround"}}]'
+
+kubectl patch Deployment argocd-server --type='json' -p='[{"op": "add", "path": "/spec/template/spec/volumes/0", "value": {"name": "tls-certs-workaround", "configMap": {"name": "argocd-tls-certs-cm", "items": [{"key": "9.30.255.155", "path": "ca-certificates.crt"}]}}}]'
+
+kubectl patch Deployment argocd-server --type='json' -p='[{"op": "add", "path": "/spec/template/spec/containers/0/volumeMounts/0", "value": {"mountPath": "/etc/ssl/certs", "name": "tls-certs-workaround"}}]'
+
+kubectl patch Deployment argocd-repo-server --type='json' -p='[{"op": "add", "path": "/spec/template/spec/volumes/0", "value": {"name": "tls-certs-workaround", "configMap": {"name": "argocd-tls-certs-cm", "items": [{"key": "9.30.255.155", "path": "ca-certificates.crt"}]}}}]'
+
+kubectl patch Deployment argocd-repo-server --type='json' -p='[{"op": "add", "path": "/spec/template/spec/containers/0/volumeMounts/0", "value": {"mountPath": "/etc/ssl/certs", "name": "tls-certs-workaround"}}]'
+```
+
 [https://github.com/argoproj/argo-cd/issues/13154](https://github.com/argoproj/argo-cd/issues/13154)
 [https://github.com/argoproj/argo-cd/issues/6477](https://github.com/argoproj/argo-cd/issues/6477)
