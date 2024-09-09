@@ -21,7 +21,7 @@ More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/k
 
 ### Setup private IDA Helm Charts Repository
 
-- The helm charts repository can be hosted by any web server (), the layout of the repository looks like this:
+- The helm charts repository can be hosted by any web server, the layout of the repository looks like this:
 
 ```
 charts/
