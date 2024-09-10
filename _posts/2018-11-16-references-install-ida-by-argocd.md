@@ -19,14 +19,12 @@ kubectl patch configmap/argocd-cm --type merge -p '{"data":{"kustomize.buildOpti
 
 More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts)
 
-### 1.2 Public helm charts repository
-
+### 1.2 Setup private helm charts repository (Optional)
+If internet is available in your network, you can deploy IDA and Selenium by the following public helm charts repositories:
 - IDA Helm Charts Repository: [https://sdc-china.github.io/ida-operator](https://sdc-china.github.io/ida-operator)
 - Selenium Helm Charts Repository: [https://www.selenium.dev/docker-selenium](https://www.selenium.dev/docker-selenium)
 
-### 1.3 Setup private helm charts repository (Optional)
-
-If the public helm charts repository is not available in your network, then you can setup private helm charts repository.
+Otherwise, you can setup private helm charts repository in your intranet as below:
 
 - The helm charts repository can be hosted by any web server, the layout of the repository looks like this:
 
