@@ -35,7 +35,7 @@ Description | Hardware Requirements | Max Concurrent Users
 ------------|----------------------|---------------------
 Minimum Requirement | 2 core CPU, 4 GB memory, 20 GB disk | 10
 Recommended Requirement | 4 core CPU, 8 GB memory, 50 GB disk | 20
-Optimal Requirement | 8 core CPU, 16 GB memory, 100 GB disk | 40
+Optimal Requirement | 8 core CPU, 16 GB memory, 80 GB disk | 40
 
 **Notes**:
 *Using Checkstyle/Analyzer/Comparison/Search will consume more memory. If the TWX size is greater than 100MB, then at least **8G memory** is required.*
