@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
-last_modified_at: 2024-03-07 11:28:00
+last_modified_at: 2024-09-10 11:28:00
 ---
 
 # Settings Configuration
@@ -15,22 +15,23 @@ last_modified_at: 2024-03-07 11:28:00
 Field | Description
 --- | ---
 Trace Level | The value of the trace level, by default it has five levels (TRACE, DEBUG, WARN, INFO, ERROR).
+Database Version | IDA database version.
 Data Path | IDA working directory data path.
+Host Name | Host name of the current IDA instance.
 Enable LDAP Authentication | Login to IDA with LDAP configuration.
 URL | LDAP server URL.
-User Name | LDAP server user name.
-Password | LDAP server password.
+Bind DN | LDAP server Bind DN.
+Bind DN Password | LDAP server Bind DN Password.
 Base DN | LDAP base DN for filtering users.
 User Filter | LDAP user filter pattern, use '#' to split multiple user filter patterns.
 Default Role | Default role for LDAP users used in IDA.
 User Name Case Insensitive | Whether the LDAP server is case insensitive or not, default value is true.
-Enable Notifications | Global setting to enable/disable notifications. Enabled notifications can be further configured on each user profile page.
-Test Case Created | Enable notification for test case creation.
-Test Case Modified | Enable notification for test case modification.
-Pipeline Build Success | Enable notification for pipeline build success.
-Pipeline Build Failure | Enable notification for pipeline build failure.
-BAW and Selenium Server Down/Up | Enable notification for server status.
-Server Status Check Interval | Time interval in seconds to check the availability of BAW and Selenium servers.
+Enable Auto Clean | Enable disk cache auto clean. Pipeline auto clean settings overwrite general auto clean settings. For all the disk cache information, check the **Clean Disk Cache** page under menu **Administration**. 
+Days to keep disk cache | If not empty, disk cache is only kept up to this number of days.
+Max # of builds to keep | If not empty, only up to this number of builds are kept.
+Days to keep builds | If not empty, builds are only kept up to this number of days.
+
+
 
 If LDAPS is used, LDAPS server certificate need to be exported and imported into IDA server.
 ### Export and Import LDAPS Server Certificates on Liberty
