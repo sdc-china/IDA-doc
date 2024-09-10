@@ -34,7 +34,7 @@ last_modified_at: 2023-12-27 13:35:00
 Description | Hardware Requirements | Max Concurrent Users
 ------------|----------------------|---------------------
 Minimum Requirement | 2 core CPU, 4 GB memory, 50 GB disk | 10
-Recommended Requirement | 4 core CPU, 8 GB memory, 200 GB disk | 20
+Recommended Requirement | 4 core CPU, 8 GB memory, 100 GB disk | 20
 Optimal Requirement | 8 core CPU, 16 GB memory, 200 GB disk | 40
 
 **Notes**:
