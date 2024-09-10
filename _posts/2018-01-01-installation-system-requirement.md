@@ -44,7 +44,7 @@ For more information on performance, please refer to [Performance Test Report](.
 
 ## Disk Usage
 
-We recommend at least **20G** reserved disk space, and **50G** reserved disk space is recommended. You can also enable "auto clean" in IDA [Settings Page](../administration/administration-settings-configuration.html#general-configuration)
+We recommend at least **20G** reserved disk space, and **50G** reserved disk space is recommended. You can also enable "Auto Clean" in IDA [Settings Page](../administration/administration-settings-configuration.html#general-configuration)
  for saving disk space.
 
 The following table provides the data stored by IDA and the approximate size of each type of data. You can estimate the required capacity according to your needs. This table does not include the size of IDA itself, logs, attachments, avatars, and temporary data, please add an additional 5GB when estimating.
