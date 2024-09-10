@@ -33,9 +33,9 @@ last_modified_at: 2023-12-27 13:35:00
 
 Description | Hardware Requirements | Max Concurrent Users
 ------------|----------------------|---------------------
-Minimum Requirement | 2 core CPU, 4 GB memory, 50 GB disk | 10
-Recommended Requirement | 4 core CPU, 8 GB memory, 100 GB disk | 20
-Optimal Requirement | 8 core CPU, 16 GB memory, 200 GB disk | 40
+Minimum Requirement | 2 core CPU, 4 GB memory, 20 GB disk | 10
+Recommended Requirement | 4 core CPU, 8 GB memory, 50 GB disk | 20
+Optimal Requirement | 8 core CPU, 16 GB memory, 100 GB disk | 40
 
 **Notes**:
 *Using Checkstyle/Analyzer/Comparison/Search will consume more memory. If the TWX size is greater than 100MB, then at least **8G memory** is required.*
@@ -44,9 +44,9 @@ For more information on performance, please refer to [Performance Test Report](.
 
 ## Disk Usage
 
-We recommend at least **50G** reserved disk space, and **100G** reserved disk space is recommended.
+We recommend at least **20G** reserved disk space, and **50G** reserved disk space is recommended.
 
-The following table provides the data stored by IDA and the approximate size of each type of data. You can estimate the required capacity according to your needs. This table does not include the size of IDA itself, logs, attachments, avatars, and temporary data, please add an additional **10GB** when estimating.
+The following table provides the data stored by IDA and the approximate size of each type of data. You can estimate the required capacity according to your needs. This table does not include the size of IDA itself, logs, attachments, avatars, and temporary data, please add an additional 5GB when estimating.
 
 File | Description | Average size of each file
 -----|--------------|---------------------------
