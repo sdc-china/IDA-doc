@@ -17,7 +17,8 @@ Patch config map **argocd-cm** of your ArgoCD deployment.
 kubectl patch configmap/argocd-cm --type merge -p '{"data":{"kustomize.buildOptions":"--enable-helm"}}'
 ```
 
-More details refer to doc [https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts)
+References:
+- [https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts)
 
 ### 1.2 Setup private helm charts repository (Optional)
 If internet is available in your network, you can deploy IDA and Selenium by the following public helm charts repositories:
@@ -78,20 +79,22 @@ entries:
 generated: "2024-09-06T04:01:17.548051179-07:00"
 ```
 
-More details please refer to doc [https://helm.sh/docs/topics/chart_repository](https://helm.sh/docs/topics/chart_repository).
-
 **Note:** If self-signed certification is used by the private chart repository, then you will need to customize argocd, more details please refert to [Touble Shooting](#trouble-shooting).
+
+References:
+- [https://helm.sh/docs/topics/chart_repository](https://helm.sh/docs/topics/chart_repository).
 
 ## 2. IDA Installation
 
 ### 2.1 Initial IDA Database
 
-Please refer to doc 
-[https://sdc-china.github.io/IDA-doc/installation/installation-database-installation-and-configuration.html#install-and-configure-postgresql-db](https://sdc-china.github.io/IDA-doc/installation/installation-database-installation-and-configuration.html#install-and-configure-postgresql-db)
+References:
+- [https://sdc-china.github.io/IDA-doc/installation/installation-database-installation-and-configuration.html#install-and-configure-postgresql-db](https://sdc-china.github.io/IDA-doc/installation/installation-database-installation-and-configuration.html#install-and-configure-postgresql-db)
 
 ### 2.2 Push IDA docker images to your private docker registry
 
-Please refer to doc [https://github.com/sdc-china/ida-operator?tab=readme-ov-file#before-you-begin](https://github.com/sdc-china/ida-operator?tab=readme-ov-file#before-you-begin)
+References:
+- [https://github.com/sdc-china/ida-operator?tab=readme-ov-file#before-you-begin](https://github.com/sdc-china/ida-operator?tab=readme-ov-file#before-you-begin)
 
 ### 2.3 Create docker registry secret
 
@@ -147,7 +150,8 @@ spec:
       storage: 50Gi
 ```
 
-More details about storage access mode, please refer to [https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+References:
+- [https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
 
 
 ### 2.6 Create values.yaml for IDA helm charts parameters
