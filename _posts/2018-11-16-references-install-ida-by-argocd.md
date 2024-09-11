@@ -9,7 +9,7 @@ last_modified_at: 2023-10-26 11:20:00
 
 ## 1. Prerequisites
 
-### 1.1 Enable helm build option in ArgoCD
+### 1.1 Enable kustomize build option for helm charts in ArgoCD
 
 Patch config map **argocd-cm** of your ArgoCD deployment.
 
