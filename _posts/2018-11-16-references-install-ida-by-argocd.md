@@ -84,9 +84,6 @@ entries:
     version: 0.28.4
 generated: "2024-09-06T04:01:17.548051179-07:00"
 ```
-
-**Note:** If self-signed certification is used by the private chart repository, then you will need to customize argocd, more details please refert to [Touble Shooting](#trouble-shooting).
-
 References:
 - [https://helm.sh/docs/topics/chart_repository](https://helm.sh/docs/topics/chart_repository).
 
