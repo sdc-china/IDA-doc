@@ -30,7 +30,7 @@ If internet is available in your network, you can deploy IDA and Selenium by the
 - IDA Helm Charts Repository: [https://sdc-china.github.io/ida-operator](https://sdc-china.github.io/ida-operator)
 - Selenium Helm Charts Repository: [https://www.selenium.dev/docker-selenium](https://www.selenium.dev/docker-selenium)
 
-#### 1.2.2 Offline installtion - use private helm charts repository for offline installtion
+#### 1.2.2 Offline installtion - use private helm charts repository
 You can setup private helm charts repository in your intranet as below:
 
 - The helm charts repository can be hosted by any web server, the layout of the repository looks like this:
