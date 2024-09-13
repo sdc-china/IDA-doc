@@ -20,12 +20,18 @@ kubectl patch configmap/argocd-cm --type merge -p '{"data":{"kustomize.buildOpti
 References:
 - [https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/#kustomizing-helm-charts)
 
-### 1.2 Setup private helm charts repository (Optional)
+### 1.2 Setup helm charts
+
+You can setup helm charts by either of the following steps.
+
+#### 1.2.1 Online installtion - use public helm charts repository
+
 If internet is available in your network, you can deploy IDA and Selenium by the following public helm charts repositories:
 - IDA Helm Charts Repository: [https://sdc-china.github.io/ida-operator](https://sdc-china.github.io/ida-operator)
 - Selenium Helm Charts Repository: [https://www.selenium.dev/docker-selenium](https://www.selenium.dev/docker-selenium)
 
-Otherwise, you can setup private helm charts repository in your intranet as below:
+#### 1.2.2 Offline installtion - use private helm charts repository for offline installtion
+You can setup private helm charts repository in your intranet as below:
 
 - The helm charts repository can be hosted by any web server, the layout of the repository looks like this:
 
@@ -84,6 +90,27 @@ generated: "2024-09-06T04:01:17.548051179-07:00"
 References:
 - [https://helm.sh/docs/topics/chart_repository](https://helm.sh/docs/topics/chart_repository).
 
+#### 1.2.3 Offline installtion - use helm charts by local folder
+
+Unzip and upload the helm chart to the same github repository of your argocd application deployment yamls, the layout of the repository looks like this:
+
+```
+charts/
+  |
+  |- idaweb-helm-24.0.7
+  |    |- files
+  |    |- templates
+  |    |- Chart.yaml
+  |    |- values.yaml
+  |
+  |- selenium-grid-0.28.4
+  |    |- certs
+  |    |- configs
+  |    |- templates
+  |    |- Chart.yaml
+  |    |- values.yaml
+```
+
 ## 2. IDA Installation
 
 ### 2.1 Initial IDA Database
@@ -102,13 +129,13 @@ References:
 kubectl create secret docker-registry ida-docker-secret --docker-server=<PRIVATE_DOCKER_REGISTRY> --docker-username=<USERNAME> --docker-password=<PASSWORD>
 ```
 
-### 2.4 Create ida-external-db-credential.yaml for DB secrets
+### 2.4 Create ida-db-credential.yaml for DB secrets
 
 ```
 apiVersion: v1
 kind: Secret
 metadata:
-  name: "ida-external-db-credential"
+  name: "ida-db-credential"
 stringData:
   DATABASE_USER: "postgres"
   DATABASE_PASSWORD: "password"
@@ -202,7 +229,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- ida-external-db-credential.yaml
+- ida-db-credential.yaml
 - ida-data-pvc.yaml
 
 patches:
