@@ -225,6 +225,7 @@ The resources that are not managed by IDA helm charts can be added to the **reso
 The customization for existing IDA helm charts resources can be added to the **patches** section.
 
 - By helm charts repository
+  
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -248,6 +249,7 @@ helmCharts:
 ```
 
 - By helm charts local folder
+  
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -320,6 +322,7 @@ firefoxNode:
 ### 3.2 Create Kustomization.yaml for ArgoCD project
 
 - By helm charts repository
+  
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -333,6 +336,7 @@ helmCharts:
 ```
 
 - By helm charts local folder
+  
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
