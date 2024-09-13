@@ -224,6 +224,7 @@ idaWeb:
 The resources that are not managed by IDA helm charts can be added to the **resources** section.
 The customization for existing IDA helm charts resources can be added to the **patches** section.
 
+- By helm charts repository
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -243,7 +244,31 @@ helmCharts:
   repo: https://<YOUR_PRIVATE_REPO_HOST>/charts
   version: 24.0.7
   releaseName: idaweb-helm
-  namespace: <NAMESPACE>
+  valuesFile: values.yaml
+```
+
+- By helm charts local folder
+```
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- ida-db-credential.yaml
+- ida-data-pvc.yaml
+
+patches:
+- path: cloud-sql-proxy.yaml
+  target:
+    kind: Deployment
+    name: idaweb-helm-ida-web
+
+helmGlobals:
+  chartHome: ../charts
+
+helmCharts:
+- name: idaweb-helm-24.0.7
+  version: 24.0.7
+  releaseName: idaweb-helm
   valuesFile: values.yaml
 ```
 
@@ -294,6 +319,7 @@ firefoxNode:
 
 ### 3.2 Create Kustomization.yaml for ArgoCD project
 
+- By helm charts repository
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -303,7 +329,21 @@ helmCharts:
   repo: https://<YOUR_PRIVATE_REPO_HOST>/charts
   version: 0.28.4
   releaseName: selenium-grid
-  namespace: <NAMESPACE>
+  valuesFile: values.yaml
+```
+
+- By helm charts local folder
+```
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmGlobals:
+  chartHome: ../charts
+
+helmCharts:
+- name: selenium-grid-0.28.4
+  version: 0.28.4
+  releaseName: selenium-grid
   valuesFile: values.yaml
 ```
 
