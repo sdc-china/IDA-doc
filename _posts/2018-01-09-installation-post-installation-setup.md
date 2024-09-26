@@ -131,7 +131,7 @@ Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distribu
 
 **Local installation**
 
-1. Download the Selenium server jar [selenium-server-4.11.0.jar](https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.11.0/selenium-server-4.11.0.jar).
+1. Download the Selenium server jar [selenium-server-4.10.0.jar](https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.10.0/selenium-server-4.10.0.jar).
 2. Download Selenium web drivers and put them under the same folder as the Selenium server jar file.
    - [Firefox Driver](https://github.com/mozilla/geckodriver/releases)
    - [Chrome Driver](https://developer.chrome.com/docs/chromedriver/downloads)([Versions older than 114](https://chromedriver.storage.googleapis.com/index.html))
@@ -184,7 +184,7 @@ Docker Compose is the simplest way to start a Grid.
 version: "3"
 services:
   chrome:
-    image: selenium/node-chrome:4.10.0-20230607
+    image: selenium/node-chrome:4.10.0
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -199,7 +199,7 @@ services:
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   firefox:
-    image: selenium/node-firefox:4.10.0-20230607
+    image: selenium/node-firefox:4.10.0
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -214,7 +214,7 @@ services:
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   edge:
-    image: selenium/node-edge:4.10.0-20230607
+    image: selenium/node-edge:4.10.0
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -229,7 +229,7 @@ services:
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   selenium-hub:
-    image: selenium/hub:4.10.0-20230607
+    image: selenium/hub:4.10.0
     container_name: selenium-hub
     ports:
       - "4442:4442"
