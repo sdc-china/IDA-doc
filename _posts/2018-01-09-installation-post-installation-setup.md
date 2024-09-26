@@ -139,7 +139,7 @@ Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distribu
    - [IE Driver](https://www.selenium.dev/downloads/)
 3. To quickly start Selenium 4 in standalone mode with default configurations, run the command below. This will set up a 1-node hub with auto-detected web drivers in the same folder as the jar file.
     ```
-    java -jar selenium-server-4.11.0.jar standalone
+    java -jar selenium-server-4.10.0.jar standalone
     ```
     ![][selenium_4_standalone]
 4. To start Selenium 4 in Hub and Node mode with customized node configuration,
@@ -167,7 +167,7 @@ Selenium Grid 4 can be set up in several modes: Standalone/Hub and Node/Distribu
 
   - Run the commands below in different command lines.
    ```
-   java -jar selenium-server-4.11.0.jar standalone --config config.toml
+   java -jar selenium-server-4.10.0.jar standalone --config config.toml
    ```
 
   ![][selenium_4_hub_node]
