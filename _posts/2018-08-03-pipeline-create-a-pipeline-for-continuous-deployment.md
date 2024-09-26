@@ -2,7 +2,7 @@
 title: "Create a Pipeline for Continuous Deployment"
 category: pipeline
 date: 2018-08-03 15:17:55
-last_modified_at: 2022-08-25 15:51:00
+last_modified_at: 2024-09-26 10:00:00
 ---
 
 # Create a Pipeline for Continuous Deployment
@@ -13,7 +13,7 @@ last_modified_at: 2022-08-25 15:51:00
 1. Click the **Create Pipeline** button on the pipeline page.
 
    ![][pipeline_create]
-   In the **Build Triggers** section, you can configure how to automatically trigger the pipeline build. Select **Build Periodically** to configure a timer to trigger the pipeline build. Select **Trigger By New Snapshot**, then a background job will periodically check for new snapshots on the PC server of the first stage (see steps below). If a new snapshot is created on the PC, a new pipeline build will start. The time interval for the background job to query for new snapshots can be set [in the Settings tab](../administration/administration-settings-configuration.html#pipeline-configuration).
+   In the **Build Triggers** section, you can configure how to automatically trigger the pipeline build. Schedule the pipeline build at a specific time by setting the **Start Time** and schedule periodical builds by setting the **Repeat Pattern**. Select **Trigger By New Snapshot**, then a background job will periodically check for new snapshots on the PC server of the first stage (see steps below). If a new snapshot is created on the PC, a new pipeline build will start. The time interval for the background job to query for new snapshots can be set [in the Settings tab](../administration/administration-settings-configuration.html#pipeline-configuration).
 
  2. Click the ![][pipeline_add_stage] icon to add a new stage.
 
@@ -64,7 +64,7 @@ last_modified_at: 2022-08-25 15:51:00
 2. Click the ![][pipeline_import_stage] icon to create a pipeline from a template.
 
 3. There are five built-in templates; you could choose one from the dropdown list.
-    ![][pipeline_create]
+    ![][pipeline_template]
 
 4. Input the missing values labeled by ![][pipeline_missing_value].
 
@@ -128,6 +128,7 @@ IDA only supports deploying applications from a Workflow PC server to a PC serve
  6. Click the "Save" button, and then you could use the pipeline to make a deployment from the PC server to the PC server.
 
   [pipeline_create]: ../images/pipeline/pipeline_create.png
+  [pipeline_template]: ../images/pipeline/pipeline_template.png
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
   [pipeline_import_stage]: ../images/pipeline/pipeline_import_stage.png
   [pipeline_templates]: ../images/pipeline/pipeline_templates.png
