@@ -64,7 +64,7 @@ last_modified_at: 2024-09-26 10:00:00
 2. Click the ![][pipeline_import_stage] icon to create a pipeline from a template.
 
 3. There are five built-in templates; you could choose one from the dropdown list.
-    ![][pipeline_template]
+    ![][pipeline_templates]
 
 4. Input the missing values labeled by ![][pipeline_missing_value].
 
@@ -128,7 +128,7 @@ IDA only supports deploying applications from a Workflow PC server to a PC serve
  6. Click the "Save" button, and then you could use the pipeline to make a deployment from the PC server to the PC server.
 
   [pipeline_create]: ../images/pipeline/pipeline_create.png
-  [pipeline_template]: ../images/pipeline/pipeline_template.png
+  [pipeline_templates]: ../images/pipeline/pipeline_templates.png
   [pipeline_add_stage]: ../images/pipeline/pipeline_add_stage.png
   [pipeline_import_stage]: ../images/pipeline/pipeline_import_stage.png
   [pipeline_templates]: ../images/pipeline/pipeline_templates.png
