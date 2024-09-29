@@ -529,9 +529,6 @@ For example (IDA v3.x):
 8\. You could visit the URL like http://serverip:port/ida to access the IDA web application.
 
 
-## Installing on Docker platform
-Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
-
 [toolkit]: ../images/install/toolkit.png
 [default_toolkit_setting]: ../images/install/default_toolkit_setting.png  
 [custom_toolkit_setting]: ../images/install/custom_toolkit_setting.png  
