@@ -7,11 +7,6 @@ last_modified_at: 2023-09-18 17:40:00
 
 # Installing IDA Application(v3.x, v2.x)
 
-There are three components for the IDA application we need to install and configure, including:
-- *IDA web application*
-- *IDA Browser Plugin*  
-- *IDA BAW toolkit*
-
 For the installation of the IDA v2.x Application, please ensure to repack the IDA Application first, please refer to [Repacking IDA v2.x Application](https://sdc-china.github.io/IDA-doc/references/references-repacking-ida-application-early-version.html#repacking-ida-v2x-application).
 
 # Step 1: Installing IDA Web Application
@@ -537,78 +532,6 @@ For example (IDA v3.x):
 ## Installing on Docker platform
 Refer to [ida-docker](https://github.com/sdc-china/ida-docker) for deployment steps.
 
-# Step 2: Installing IDA BAW Toolkit
-The testing capability can only launch the exposed Business Processes, Human Services, and AJAX Services. If you wish to test other services such as system services, integration services, or business processes which are not exposed directly, you need to install the IDA Toolkit.
-
-1. Import **IDA_Toolkit - 8.6.0_v1.1.twx** which is in the /toolkit folder of the release package into your process center.
-
-2. Open your process app by the web process designer from the process center.
-
-3. Click the **+** button after Toolkits.
-
-	![][click_add_button]
-
-4. Type **ida** in the search box and select **8.6.0 V1.1** below IDA Toolkit. Then the dependency **IDA Toolkit(8.6.0 v1.1)** is added.
-
-	![][ida_toolkit_search]
-
-5. Click **Services** below **IDA Toolkit(8.6.0 v1.1)**. Right-click the **IDA Utility** service flow and copy the item to your process app.
-
-	![][ida_toolkit_copy]
-
-	![][ida_toolkit_copy_to_item]
-
-6. If **IDA Utility** is in the Services of your Process app, the service is installed successfully.
-
-	![][service]
-
-7. Modify toolkit access permission (Optional)
-
-	For security concerns, we suggest disabling the toolkit in the BAW production environment.
-	It allows users to modify the toolkit access permission by setting up the environment variable "BPMTAT_ACCESS". (true means enable the access, false means disable the access)
-
-	By default, the toolkit can only be invoked on Development and Test environments:
-	    ![][default_toolkit_setting]
-
-	You can define the same environment variable "BPMTAT_ACCESS" in your BAW application, which will override the default setting in the toolkit, for example:
-	    ![][custom_toolkit_setting]
-
-
-
-
-
-# Step 3: Installing IDA Browser Plug-in
-
-## Chrome plugin
-- Open the URL <a href="https://chrome.google.com/webstore/search/IDA%20IBM" target="_blank">https://chrome.google.com/webstore/search/IDA%20IBM</a>
-- Click the "Add to Chrome" button to install the plug-in.
-- The Chrome plugin offline installation package: [IDA-21.7.crx](https://github.com/sdc-china/IDA-plugin/raw/master/chrome/IDA-21.7.crx)
-
-## Firefox plugin
-- Download the Firefox plugin [ida-21.7-fx.xpi](https://github.com/sdc-china/IDA-plugin/raw/master/firefox/ida-21.7-fx.xpi)
-- Drag the "ida-21.7-fx.xpi" file into the Firefox window.
-- Click the "Add" button.
-
-## Plug-in Configuration
-
-To make the plug-in work, you must log in to the IDA server in the plugin login page.
-
-- Click the IDA plugin icon in the browser extension toolbar, then it will pop up the login window.
-
-- Enter the IDA server URL, username, and password.
-
-  ![][plugin_login]
-
-- Click the "Sign in" button, then you will see the screenshot as below.
-
-  ![][plugin_welcome]
-
-- If you see the below sign-in errors, please open the server URL in your web browser to verify that IDA web can be accessed. If IDA web shows an HTTPS/SSL certificate warning, you must accept the warning manually by clicking "Proceed to ..." and then sign in to the IDA plugin.
-
-  ![][plugin_login_error]
-
-  ![][ida_web_cert_error]
-
 [toolkit]: ../images/install/toolkit.png
 [default_toolkit_setting]: ../images/install/default_toolkit_setting.png  
 [custom_toolkit_setting]: ../images/install/custom_toolkit_setting.png  
@@ -638,52 +561,6 @@ To make the plug-in work, you must log in to the IDA server in the plugin login 
 [wassessionmgr2]: ../images/install/wassessionmgr2.png
 [wassessionmgr3]: ../images/install/wassessionmgr3.png
 [firefox_custom_setting]: ../images/install/firefox_custom_setting.png
-
-## Self-Signed SSL Certificates Installation
-
-The IDA recorder plugin can't support websites with self-signed certificates by default. In this case, a warning like this:
-
-![][error]
-
-   This warning will block the recording of test cases. To resolve this problem, we need to make the browsers accept self-signed certificates.    
-
-### FireFox - Add a Security Exception
-
-1. In FireFox, go to Tools -> Options.
-
-    ![][tool]
-
-2. Click the **Privacy & Security** tab, then the **View Certificates** button.
-
-    ![][security_tab]
-
-3. Go to the **Servers** tab and press the **Add Exception** button.
-
-    ![][servers_tab]
-
-4.  Enter the host and port in the **Add Security Exception** dialog, press the **Get Certificate** button, check the box near the bottom **Permanently store this exception**, and press **Confirm Security Exception**.
-
-     ![][add_security]
-
-    From this point on, FireFox won't show SSL-related errors. When visiting the website, it will look like this:
-
-    ![][success]
-
-### Chrome - Visit in unsafe mode
-
-Chrome browsers can save your data for a short time, and the warning page will not appear and block recording if you visit the testing website in unsafe mode before recording.
-
-1. Click **ADVANCE** on the warning page.
-
-    ![][chrome_error]
-
-2. Click **Proceed to 9.30.160.68(unsafe)**.
-
-    ![][proceed]
-
-
-
-
 
    [error]: ../images/install/installation_self_signed_sertificates_error.png
    [tool]: ../images/install/installation_self_signed_sertificates_tool.png
