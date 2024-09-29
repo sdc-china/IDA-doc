@@ -7,9 +7,10 @@ last_modified_at: 2023-09-18 17:40:00
 
 # Installing IDA Application(v3.x, v2.x)
 
-For the installation of the IDA v2.x Application, please ensure to repack the IDA Application first, please refer to [Repacking IDA v2.x Application](https://sdc-china.github.io/IDA-doc/references/references-repacking-ida-application-early-version.html#repacking-ida-v2x-application).
+# Repackage IDA WAR
+Modify IDA configuration by repackaging IDA WAR, more details please refer to [Repacking IDA v2.x Application](https://sdc-china.github.io/IDA-doc/references/references-repacking-ida-application-early-version.html#repacking-ida-v2x-application).
 
-# Step 1: Installing IDA Web Application
+# Installing IDA Web Application
 
 The IDA Web Application can be installed on WebSphere Application Server (WAS), Liberty, or Docker. Let's introduce the way to install IDA on Liberty first.
 
