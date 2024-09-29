@@ -10,11 +10,6 @@ last_modified_at: 2024-08-02 12:00:00
 
 Below are steps to install the IDA application. For installing applications of earlier versions of IDA, see [Installing IDA Application(v3.x, v2.x)](../references/references-installing-ida-application-early-version.html)
 
-There are three components for the IDA application we need to install and configure, including:
-- *IDA web application*
-- *IDA Browser Plugin*  
-- *IDA BAW toolkit*
-
 The IDA Web Application can be installed on WebSphere Application Server (WAS), Liberty, Docker, or Openshift. Please access IDA web URLs using HTTPS.
 
 ## Installing on Liberty
