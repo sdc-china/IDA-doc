@@ -7,6 +7,33 @@ last_modified_at: 2024-08-14 13:35:00
 
 ## Previous Release Notes
 
+### 24.0.8.1 - 10/10/2024
+
+#### Bug Fixes
+- [Pipeline] Fix wrong snapshot is used in pipeline steps.
+- [Container] Fix operator docker image security issues.
+
+### 24.0.8 - 09/27/2024
+
+#### Enhancements
+- [Testing] Able to update expected flow in Flow diagram.
+- [Testing] Display custom command change updater and update time in test case history.
+- [Container] Support container resources settings in CR.
+- [Container] Support SSL certification secret.
+
+#### Bug Fixes
+- [Testing] Fix actual flow for multiple nodes of the same linked process in a process.
+- [Testing] Fix blank diagram in test case report.
+- [Testing] Enable Record button even there's plugin compatibility warning.
+- [Checkstyle] Variables used by activities in subprocess throws wrong unused warnings.
+- [Pipeline] Fix the issue that cannot trigger the pipeline using REST API with another container and branch name.
+- [Comparison] Fix no artifacts are shown in the report, after clearing the "Modified by" filter.
+- [Operations Tool] Fix warning display issue for clean unnamed snapshots.
+- [Container] Fix Docker image security issues.
+
+#### Notes
+- There are database changes from 24.0.7 to 24.0.8, please use the new Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See new doc for Migrating IDA Application(https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
+
 ### 24.0.7 - 08/29/2024
 #### Enhancements
 - [Testing] Draw the actual flow of sub processes in test report.
