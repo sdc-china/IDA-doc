@@ -43,8 +43,8 @@ last_modified_at: 2024-08-14 13:35:00
 | IDA web and operator docker images |	ida-24.0.8.1.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
 | IDA web and operator docker images based on Java 11|	ida-24.0.8.1-java11.tgz	|<https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
 
-## IDA Supporting Service Subscription
-1-year standard support is provided for each release after its official release date. It's only available with IDA Supporting Service Subscription.
+## IDA Supporting Subscription Service
+1-year standard support is provided for each release after its official release date. It's only available with IDA Supporting Subscription Service.
 
 ## Previous Releases
 
