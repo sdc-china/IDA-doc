@@ -2,7 +2,7 @@
 title: "IDA REST APIs"
 category: references
 date: 2018-11-07 15:17:55
-last_modified_at: 2024-03-25 16:44:00
+last_modified_at: 2024-10-29 16:44:00
 ---
 
 # IDA REST APIs
@@ -129,29 +129,33 @@ Response
             "ignoreDocCheck": true,
             "ignoreJsCheck": true,
             "ignoreToolkitsCheck": true,
-            "haltOnFailure": false
+            "haltOnFailure": true
           }
         },
         {
           "name": "Test",
           "params": {
-            "testProjectId": 1,
-            "tip": false
+            "testProjectId": 4,
+            "tip": true,
+            "haltOnFailure": true
           }
         }
-      ]
+      ],
+      "serverName": "BAW2301 Dev Server"
     },
     {
-      "name": "QA",
+      "name": "Test",
       "steps": [
         {
           "name": "Test",
           "params": {
-            "testProjectId": 1,
-            "tip": false
+            "testProjectId": 4,
+            "tip": true,
+            "haltOnFailure": true
           }
         }
-      ]
+      ],
+      "serverName": "BAW2301 QA Server"
     }
   ]
 }
@@ -176,17 +180,17 @@ Start a pipeline build by pipeline id or name. Specify either pipeline id or nam
 |----------------|------------|--------------|
 | `pipelineId`   | No          | Pipeline ID. <br>You could get the pipeline ID from the [Get Pipeline List REST API](#get-pipeline-list). |
 | `pipelineName` | No          | Pipeline name. <br>You could get the pipeline name from the [Get Pipeline List REST API](#get-pipeline-list). |
-| `pipelineRestInput`   | No          |  Parameter used to overwrite some pipeline definition, for example: <br>**container:** the acronym of a process application/toolkit used to trigger a build.<br>**snapshotAcronym:** the snapshot acronym of the process app/toolkit.<br>**branchName:** the track name of the process app/toolkit. <br>Either snapshotAcronym or branchName can be specified. If branchName is specified, the latest snapshot on that branch will be used to start the build. If no **container**/**snapshotAcronym**/**branchName**, the snapshot configured in the pipeline definition will be used to start the build.<br>**installFileName:** the Workflow installation package file name to be deployed.<br><br>For a Snapshot step, **namingConvention** can be overwritten.<br>For a Checkstyle step, all Checkstyle options e.g. **tip**, **healthScoreThreshold**, **warningsThreshold**, **ignoreDocCheck**, **ignoreJsCheck**, **ignoreToolkitsCheck**, **haltOnFailure** can be overwritten.<br>For a Test step, **tip** and **testProjectId** can be overwritten. Specify a test project ID of the triggering process app/toolkit.|
+| `pipelineRestInput`   | No          |  **Please copy response from the [Get Pipeline Metadata REST API](#get-pipeline-metadata) and then overwrite parameter values if needed.** Parameter values that can be overwritten include: <br>**container:** the acronym of a process application/toolkit used to trigger a build.<br>**snapshotAcronym:** the snapshot acronym of the process app/toolkit.<br>**branchName:** the track name of the process app/toolkit. <br>Either snapshotAcronym or branchName can be specified. If branchName is specified, the latest snapshot on that branch will be used to start the build. If no **container**/**snapshotAcronym**/**branchName**, the snapshot configured in the pipeline definition will be used to start the build.<br>**installFileName:** the Workflow installation package file name to be deployed.<br><br>For a pipeline stage, **serverName** can be overwritten. Please note a valid serverName must be selectable when you manually edit the pipeline.<br><br>For a Snapshot step, **namingConvention** can be overwritten.<br>For a Checkstyle step, all Checkstyle options e.g. **tip**, **healthScoreThreshold**, **warningsThreshold**, **ignoreDocCheck**, **ignoreJsCheck**, **ignoreToolkitsCheck**, **haltOnFailure** can be overwritten.<br>For a Test step, **tip**, **testProjectId** and **haltOnFailure** can be overwritten. Specify a test project ID of the triggering process app/toolkit.|
 
 **Example:**
 
 Request
 ```
-	curl -X POST "https://[serverhost]:[port]/ida/rest/v2/pipelines/builds?pipelineId=1" -H "accept: application/json;charset=UTF-8" -H "Content-Type: application/json" -d "{ \"container\": \"ISA\", \"snapshotAcronym\": \"0.00.06\", \"branchName\": \"\", \"installFileName\": \"\", \"stages\": [ { \"name\": \"Development\", \"steps\": [ { \"name\": \"Snapshot\", \"params\": { \"namingConvention\": \"{MAJOR.MINOR.PATCH} - {APP_ACRONYM} {TRACK} {yyyyMMddHHmmss}\" } }, { \"name\": \"Checkstyle\", \"params\": { \"tip\": true, \"healthScoreThreshold\": 20, \"warningsThreshold\": 200, \"ignoreDocCheck\": true, \"ignoreJsCheck\": true, \"ignoreToolkitsCheck\": true, \"haltOnFailure\": false } }, { \"name\": \"Test\", \"params\": { \"testProjectId\": 65, \"tip\": false } } ] }, { \"name\": \"QA\", \"steps\": [ { \"name\": \"Test\", \"params\": { \"testProjectId\": 65, \"tip\": false } } ] } ]}"
+  curl -X POST "https://[serverhost]:[port]/ida/rest/v2/pipelines/builds?pipelineId=1" -H "accept: application/json;charset=UTF-8" -H "Content-Type: application/json" -d "{\"container\":\"ISA\", \"snapshotAcronym\":\"0.00.06\", \"branchName\":\"\", \"installFileName\":\"\", \"stages\":[{\"name\":\"Development\", \"steps\":[{\"name\":\"Snapshot\", \"params\":{\"namingConvention\":\"{MAJOR.MINOR.PATCH} - {APP_ACRONYM} {TRACK} {yyyyMMddHHmmss}\"}}, {\"name\":\"Checkstyle\", \"params\":{\"tip\":false, \"healthScoreThreshold\":20, \"warningsThreshold\":200, \"ignoreDocCheck\":true, \"ignoreJsCheck\":true, \"ignoreToolkitsCheck\":true, \"haltOnFailure\":false}}, {\"name\":\"Test\", \"params\":{\"testProjectId\":56, \"tip\":true, \"haltOnFailure\":true}}], \"serverName\":\"BAW2301 Dev Server\"}, {\"name\":\"Test\", \"steps\":[{\"name\":\"Test\", \"params\":{\"testProjectId\":56, \"tip\":true, \"haltOnFailure\":true}}], \"serverName\":\"BAW2302 QA Server\"}]}"
 ```
   or
 ```
-  curl -X POST "https://[serverhost]:[port]/ida/rest/v2/pipelines/builds?pipelineName=HSS%20Pipeline" -H "accept: application/json;charset=UTF-8" -H "Content-Type: application/json" -d "{ \"container\": \"ISA\", \"snapshotAcronym\": \"0.00.06\", \"branchName\": \"\", \"installFileName\": \"\", \"stages\": [ { \"name\": \"Development\", \"steps\": [ { \"name\": \"Snapshot\", \"params\": { \"namingConvention\": \"{MAJOR.MINOR.PATCH} - {APP_ACRONYM} {TRACK} {yyyyMMddHHmmss}\" } }, { \"name\": \"Checkstyle\", \"params\": { \"tip\": true, \"healthScoreThreshold\": 20, \"warningsThreshold\": 200, \"ignoreDocCheck\": true, \"ignoreJsCheck\": true, \"ignoreToolkitsCheck\": true, \"haltOnFailure\": false } }, { \"name\": \"Test\", \"params\": { \"testProjectId\": 65, \"tip\": false } } ] }, { \"name\": \"QA\", \"steps\": [ { \"name\": \"Test\", \"params\": { \"testProjectId\": 65, \"tip\": false } } ] } ]}"
+  curl -X POST "https://[serverhost]:[port]/ida/rest/v2/pipelines/builds?pipelineName=HSS%20Pipeline" -H "accept: application/json;charset=UTF-8" -H "Content-Type: application/json" -d "{\"container\":\"ISA\", \"snapshotAcronym\":\"0.00.06\", \"branchName\":\"\", \"installFileName\":\"\", \"stages\":[{\"name\":\"Development\", \"steps\":[{\"name\":\"Snapshot\", \"params\":{\"namingConvention\":\"{MAJOR.MINOR.PATCH} - {APP_ACRONYM} {TRACK} {yyyyMMddHHmmss}\"}}, {\"name\":\"Checkstyle\", \"params\":{\"tip\":false, \"healthScoreThreshold\":20, \"warningsThreshold\":200, \"ignoreDocCheck\":true, \"ignoreJsCheck\":true, \"ignoreToolkitsCheck\":true, \"haltOnFailure\":false}}, {\"name\":\"Test\", \"params\":{\"testProjectId\":56, \"tip\":true, \"haltOnFailure\":true}}], \"serverName\":\"BAW2301 Dev Server\"}, {\"name\":\"Test\", \"steps\":[{\"name\":\"Test\", \"params\":{\"testProjectId\":56, \"tip\":true, \"haltOnFailure\":true}}], \"serverName\":\"BAW2302 QA Server\"}]}"
 ```
 
 Response
@@ -218,7 +222,7 @@ Operate on a pipeline build by build ID.
 | Name | Required                        | Description        |
 |----------------|------------|--------------|
 | `buildId`   | Yes          | Build ID. <br>You could get the build ID from the response of the [Trigger Pipeline Build REST API](#trigger-pipeline-build). |
-| `action`   | Yes          | Supported actions: approve, reject.|
+| `action`   | Yes          | Supported actions: approve, reject, resume.|
 
 **Example:**
 
