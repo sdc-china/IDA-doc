@@ -39,9 +39,10 @@ last_modified_at: 2024-08-14 13:35:00
 
 | Component Description	| Release File	| Installation instructions| 
 |:----------------|:------------------------|:---------------|
-| IDA release package for traditional web server (eg: Liberty, WebSphere)	 |ida-24.0.8.1.zip|[Installing IDA Application](../installation/installation-installing-ida-application.html) |
-| IDA web and operator docker images |	ida-24.0.8.1.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
-| IDA web and operator docker images based on Java 11|	ida-24.0.8.1-java11.tgz	|<https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
+| IDA release package for traditional web server (eg: Liberty, WebSphere)	| ida-24.0.8.1.zip | [Installing IDA Application](../installation/installation-installing-ida-application.html) |
+| IDA web and operator docker images | ida-24.0.8.1.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
+| IDA web and operator docker images based on Java 11| ida-24.0.8.1-java11.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
+| IDA Helm Charts | idaweb-helm-24.0.8.1.tgz	| Helm Charts Repo: <https://sdc-china.github.io/ida-operator> <br/> Binary Releases: <https://github.com/sdc-china/ida-operator/releases/download/24.0.8.1/idaweb-helm-24.0.8.1.tgz> |
 
 ## IDA Supporting Subscription Service
 1-year standard support is provided for each release after its official release date. It's only available with IDA Supporting Subscription Service.
