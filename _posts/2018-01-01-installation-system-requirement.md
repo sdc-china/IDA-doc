@@ -44,21 +44,21 @@ For more information on performance, please refer to [Performance Test Report](.
 
 ## Hardware Requirements for Kubernetes Deployment
 
-### Small profile:
+### Small profile
 
 Component | CPU Request (m) | CPU Limit (m) | Memory Request (Mi) | Memory Limit (Mi) | Disk space (Gi) | Access mode | Number of replicas
 --- | --- | --- | --- | --- | --- | --- | ---
 IDA Operator | 100 | 500 | 256 | 512 |  |  | 1
 IDA Web | 1000 | 2000 | 2048 | 4096 | 20 | ReadWriteOnce(RWO) <br/> ReadWriteMany(RWX) | 1
 
-### Medium profile:
+### Medium profile
 
 Component | CPU Request (m) | CPU Limit (m) | Memory Request (Mi) | Memory Limit (Mi) | Disk space (Gi) | Access mode | Number of replicas
 --- | --- | --- | --- | --- | --- | --- | ---
 IDA Operator | 100 | 500 | 256 | 512 |  |  | 1
 IDA Web | 2000 | 4000 | 4096 | 8192 | 50 | ReadWriteMany(RWX) | 2
 
-### Large profile:
+### Large profile
 
 Component | CPU Request (m) | CPU Limit (m) | Memory Request (Mi) | Memory Limit (Mi) | Disk space (Gi) | Access mode | Number of replicas
 --- | --- | --- | --- | --- | --- | --- | ---
