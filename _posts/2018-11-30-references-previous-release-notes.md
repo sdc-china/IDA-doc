@@ -7,6 +7,26 @@ last_modified_at: 2024-08-14 13:35:00
 
 ## Previous Release Notes
 
+### 24.0.9 - 10/31/2024
+
+#### Enhancements
+- [Testing] Calculation of test suite coverage should include subprocess actual flows.
+- [Testing] Able to fail the test case when actual flow is not the same as the expected flow.
+- [Pipeline] Able to overwrite pipeline stage server info in pipeline REST API.
+- [Pipeline] Hide My Pending Approvals section on Home page when there are no pending approvals.
+- [Pipeline] Add input validation for Trigger Pipeline Build REST API.
+
+#### Bug Fixes
+- [Testing] Should not show expected flow if flow diagram cannot be loaded.
+- [Testing] Cannot draw actual flow when the same linked process is attached in different subprocesses.
+- [Testing] Custom command change is not highlighted in the second test case version.
+- [Testing] Unique index constraint violation is thrown when restoring test case version with changes in custom command parameters.
+- [Testing] Clear Import Project selection when the modal is displayed.
+- [Testing] Display all time stamps in test case histories using the same time zone of user browser.
+- [Pipeline] The imported pipeline has a null schedule time, causing the pipeline to run automatically.
+- [Administration] User should not be redirected to migration page if the database version was set to a previous hotfix version, when no database migration or IDA upgrade is needed.
+- [Database] Fix inconsistent database schema.
+
 ### 24.0.8.1 - 10/10/2024
 
 #### Bug Fixes
