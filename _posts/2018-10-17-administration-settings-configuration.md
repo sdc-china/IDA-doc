@@ -113,10 +113,10 @@ Deployment Timeout (seconds) | Timeout for checking if the snapshot is installed
 Deployment Check Interval (seconds) | Interval for checking if the snapshot is installed on PS and set as the default snapshot.
 Max # of builds to keep | If not empty, only up to this number of builds are kept.
 Days to keep builds | If not empty, builds are only kept up to this number of days.
-Host | SMTP host.
-Port | SMTP port.
-Sender Email | Sender email.
-Sender Password | Sender Password.
+Host | Enter your SMTP email server hostname.
+Port | Enter your SMTP email server port.
+Sender Email | Enter your SMTP email server sender account email.
+Sender Password | Enter your SMTP email server sender account password.
 
 ## Search Configuration
 ![][Search]{:width="100%"}
