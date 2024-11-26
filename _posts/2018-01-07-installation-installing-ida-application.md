@@ -54,7 +54,7 @@ For example:
       <connectionManager maxPoolSize="50"/>
       <jdbcDriver libraryRef="DBLib" />
       <properties.postgresql serverName="localhost" portNumber="5432"
-        databaseName="IDADB" user="postgres" password="password" />
+        databaseName="idadb" user="idadbadmin" password="idadbadmin" />
   </dataSource>
 ```
 3\. Support for X-Forwarded-* and Forwarded headers
@@ -143,7 +143,7 @@ For example:
       <connectionManager maxPoolSize="50"/>
       <jdbcDriver libraryRef="PostgresSQLLib" />
       <properties.postgresql serverName="localhost" portNumber="5432"
-        databaseName="IDADB" user="postgres" password="password" />
+        databaseName="idadb" user="idadbadmin" password="idadbadmin" />
   </dataSource>
   <!-- PostgreSQL Example End-->
 

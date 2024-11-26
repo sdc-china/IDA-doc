@@ -176,6 +176,8 @@ docs:
         url: /references/references-javascript-api.html
       - title: "IDA REST APIs"
         url: /references/references-ida-rest-apis.html
+      - title: "Database Installation and Configuration from Release Package"
+        url: /references/references-database-installation-and-configuration-from-release-package.html
       - title: "Repacking IDA Application (v3.x, v2.x)"
         url: /references/references-repacking-ida-application-early-version.html
       - title: "Installing IDA Application(v3.x, v2.x)"
