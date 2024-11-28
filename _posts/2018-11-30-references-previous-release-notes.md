@@ -2,10 +2,31 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2024-08-14 13:35:00
+last_modified_at: 2024-11-27 13:35:00
 ---
 
 ## Previous Release Notes
+
+### 24.0.10 - 11/27/2024
+
+#### Enhancements
+- [Pipeline] Add Queued status on Total Number of Builds chart on Pipeline Overview.
+- [Comparison] New UI for snapshot comparison and snapshot merge.
+- [Comparison] Support batch push in snapshot merge report.
+- [Administration] Support database tables creation for new IDA instance on IDA startup.
+- [Administration] Able to recreate containerized selenium grid if it is down.
+- [Container] Add resource requests and limits configrations for containerized selenium grid.
+
+#### Bug Fixes
+- [Testing] Slow loading of project dashboard and test case detail page.
+- [Testing] Cannot record control ECM File Uploader in IDA Recorder.
+- [Testing] Process diagram is not properly scaled on Process Coverage modal on Firefox.
+- [Pipeline] Exception warning is thrown when pipeline build is approved.
+- [Pipeline] Not able to click Stop or ...Menu button on the pipeline build table when build is run or completed.
+- [Comparison] The inline scripts of coach views are the same but the comparison report shows there are changes.
+- [Comparison] The data mappings of process(subprocess) tasks are the same but the comparison report shows there are changes.
+- [Comparison] Changes in line links in human service are not shown in comparison result.
+- [Administration] Unexpected exception is thrown when creating user if LDAP server is down.
 
 ### 24.0.9 - 10/31/2024
 
