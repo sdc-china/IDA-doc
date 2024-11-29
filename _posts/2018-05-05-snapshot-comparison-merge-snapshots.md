@@ -52,12 +52,9 @@ Snapshot Naming Pattern | This pattern will be used to create a snapshot for an 
 
 ## Merge Snapshots
 
-1. Click **Merge** button, select the new snapshot and the base branch you want to merge, then click the **Generate Report** button.
+1. Click **Merge** button, select the new snapshot and the base branch you want to merge, then click the **Generate Report** button. If the current tip snapshot of this track is unnamed, the following alert will show, and the user needs to create a new snapshot. 
 
     ![][snapshot-comparison-merge-button]
-
-
-If the current tip snapshot of this track is unnamed, the following alert will show, and the user needs to create a new snapshot. 
 
 
     ![][merge-create-snapshot]
