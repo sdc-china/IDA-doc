@@ -96,28 +96,57 @@ Click the **Undo All Changes** button, all the scripts changes will be reverted.
 
 ![][merge-report-script-undo-all-button]
 
-## Push and Revert
+## Commit And Undo
 
-Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Update** and there are some scripts changes in the **Script Editor**, an alert window will show as below. Click **OK**, and all the changes in this artifact will be pushed to the BAW server.
+Click the ![][merge-report-artifact-report-commit]{:width="10%"} button, if the change type is **Update** and there are some scripts changes in the **Script Editor**, an alert window will show as below. Click **OK**, and all the changes in this artifact will be saved to local.
 
 ![][merge-report-artifact-report-push-alert]{:width="60%"}
 
-Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Update** and there is no scripts changes in the **Script Editor**, an alert window will show as below. Click **OK**, the artifact will be overwrite in the BAW server.
+Click the ![][merge-report-artifact-report-commit]{:width="10%"} button, if the change type is **Update** and there is no scripts changes in the **Script Editor**, an alert window will show as below. Click **OK**, the artifact will be overwritten and the changes will be saved to local.
 
 ![][merge-report-artifact-report-push-overwrite-alert]{:width="60%"}
 
-Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Add**, an alert window will show as below. Click **OK**, the artifact will be added in the BAW server.
+Click the ![][merge-report-artifact-report-commit]{:width="10%"} button, if the change type is **Add**, an alert window will show as below. Click **OK**, the artifact will be added and the changes will be saved to local.
 
 ![][merge-report-artifact-report-push-add-alert]{:width="60%"}
 
-Click the ![][merge-report-artifact-report-push]{:width="10%"} button, if the change type is **Delete**, an alert window will show as below. Click **OK**, the artifact will be deleted in the BAW server.
+Click the ![][merge-report-artifact-report-commit]{:width="10%"} button, if the change type is **Delete**, an alert window will show as below. Click **OK**, the artifact will be deleted and the changes will be saved to local.
 
 ![][merge-report-artifact-report-push-delete-alert]{:width="60%"}
 
-After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="10%"} button will show. Click the ![][merge-report-artifact-report-revert]{:width="10%"} button, and an alert window will show as below. Click **OK**, and all the changes will be reverted.
+After committed successfully, the ![][merge-report-artifact-report-undo]{:width="10%"} button will show. Click the ![][merge-report-artifact-report-undo]{:width="10%"} button, and an alert window will show as below. Click **OK**, and all the changes will be reverted.
 
 ![][merge-report-artifact-report-revert-alert]{:width="60%"}
 
+
+## Merge
+
+After completing the commit operations, click the name of the application and we can return to the commit details page. If you want to submit all commits in the **Artifacts Committed** tab page to the BAW server, click the ![][merge-report-artifact-report-merge]{:width="10%"} button, a confirm window will pop up, and you can modify the name and comments of the snapshot created after the merge is successfully completed.
+
+![][merge-report-artifact-report-merge-details]
+
+![][merge-report-artifact-report-merge-comments]
+
+After the merge is completed, you can switch between the **Artifacts Merged** tab and the **Snapshots Created** tab to view the information.
+
+![][merge-report-artifact-report-merge-details-merged]
+
+![][merge-report-artifact-report-merge-details-history]
+
+
+## Close And Reopen
+
+Click the **Close** button to close the report. After the report is closed, commit and merge operations can no longer be performed.
+
+![][merge-report-artifact-report-close]
+
+![][merge-report-artifact-report-close-warning]
+
+The closed report can be opened by clicking **Reopen** button.
+
+![][merge-report-artifact-report-reopen]
+    
+    
 
 [merge-report-overview]: ../images/snapshot-comparison/merge-report-overview.png
 [merge-report-menu-add]: ../images/snapshot-comparison/merge-report-menu-add.png
@@ -127,8 +156,8 @@ After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="
 [merge-report-menu-filter-user]: ../images/snapshot-comparison/merge-report-menu-filter-user.png
 [merge-report-artifact-report]: ../images/snapshot-comparison/merge-report-artifact-report.png
 [merge-report-artifact-report-top]: ../images/snapshot-comparison/merge-report-artifact-report-top.png
-[merge-report-artifact-report-push]: ../images/snapshot-comparison/merge-report-artifact-report-push.png
-[merge-report-artifact-report-revert]: ../images/snapshot-comparison/merge-report-artifact-report-revert.png
+[merge-report-artifact-report-commit]: ../images/snapshot-comparison/merge-report-artifact-report-commit.png
+[merge-report-artifact-report-undo]: ../images/snapshot-comparison/merge-report-artifact-report-undo.png
 [merge-report-artifact-report-push-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-alert.png
 [merge-report-artifact-report-push-overwrite-alert]: ../images/snapshot-comparison/merge-report-artifact-report-push-overwrite-alert.png
 [merge-report-artifact-report-revert-alert]: ../images/snapshot-comparison/merge-report-artifact-report-revert-alert.png
@@ -148,3 +177,11 @@ After pushed successfully, the ![][merge-report-artifact-report-revert]{:width="
 [change-history-same-branch]: ../images/snapshot-comparison/change-history-same-branch.png
 [change-history-different-branches]: ../images/snapshot-comparison/change-history-different-branches.png
 [merge-report-script-undo-all-button]: ../images/snapshot-comparison/merge-report-script-undo-all-button.png
+[merge-report-artifact-report-merge]: ../images/snapshot-comparison/merge-report-artifact-report-merge.png
+[merge-report-artifact-report-close]: ../images/snapshot-comparison/merge-report-artifact-report-close.png
+[merge-report-artifact-report-close-warning]: ../images/snapshot-comparison/merge-report-artifact-report-close-warning.png
+[merge-report-artifact-report-reopen]: ../images/snapshot-comparison/merge-report-artifact-report-reopen.png
+[merge-report-artifact-report-merge-comments]: ../images/snapshot-comparison/merge-report-artifact-report-merge-comments.png
+[merge-report-artifact-report-merge-details]: ../images/snapshot-comparison/merge-report-artifact-report-merge-details.png
+[merge-report-artifact-report-merge-details-merged]: ../images/snapshot-comparison/merge-report-artifact-report-merge-details-merged.png
+[merge-report-artifact-report-merge-details-history]: ../images/snapshot-comparison/merge-report-artifact-report-merge-details-history.png
