@@ -56,9 +56,11 @@ Snapshot Naming Pattern | This pattern will be used to create a snapshot for an 
 
     ![][snapshot-comparison-merge-button]
 
+
 If the current tip snapshot of this track is unnamed, the following alert will show, and the user needs to create a new snapshot. 
 
-    ![][merge-create-snapshot]{:width="60%"}
+
+    ![][merge-create-snapshot]
 
 
  2. Wait for the process to finish.
