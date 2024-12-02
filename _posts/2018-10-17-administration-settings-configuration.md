@@ -81,10 +81,13 @@ Stop After Assert Failure | If not checked, the test case will keep running when
 Enable Test Case History | Enable saving test case history function.
 Max Number of Test Case History | Set the maximum number of test case history for each test case, default value is 100.
 Threshold of New Test Case | Threshold for generating test cases per process.
+Enable BAW Test Coverage | Generate and show Test Coverage report on project dashboard.
+Enable Expected/Actual Flow Match | If enabled, the test case will fail if expected and actual flow do not match.
 Default Wait Timeout (seconds) | Default wait timeout for test commands and finding web elements, default value is 60.
 Page Load Timeout (seconds) | Default page load timeout for opening and loading pages, default value is 10.
 Default Retry Interval (seconds) | Default value of retry interval.
 Default Retry Times | Default value of retry times.
+Gatling Home Path   | Gatling executable home path.
 
 ## Checkstyle Configuration
 
