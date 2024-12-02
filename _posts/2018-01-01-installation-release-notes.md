@@ -7,6 +7,11 @@ last_modified_at: 2024-11-27 13:35:00
 
 ## Release Notes
 
+### 24.0.10.1 - 12/02/2024
+
+#### Bug Fixes
+- Database migration execution from v24.0.8 to v24.0.10 is hung on DB2.
+
 ### 24.0.10 - 11/27/2024
 
 #### Enhancements
