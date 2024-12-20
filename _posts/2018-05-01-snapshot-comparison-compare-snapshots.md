@@ -2,7 +2,7 @@
 title: "Compare Snapshots"
 category: snapshot-comparison
 date: 2018-05-01 15:17:55
-last_modified_at: 2024-11-28 18:00:00
+last_modified_at: 2024-12-03 18:00:00
 ---
 
 # Compare Snapshots

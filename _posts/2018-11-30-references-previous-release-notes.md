@@ -7,10 +7,37 @@ last_modified_at: 2024-11-27 13:35:00
 
 ## Previous Release Notes
 
+### 24.0.11 - 12/20/2024
+
+#### Enhancements
+- [Pipeline] Allow user to change process app and snapshot acronym while triggering a new pipeline build.
+- [Comparison] Allow selection of unnamed snapshots in new UI for snapshot comparison.
+
+#### Bug Fixes
+- [Testing] The "Exit Edit" button on test case page sometimes does not work.
+- [Testing] Attributes are missing from auto generated process input parameters when attribute types are referenced multiple times.
+- [Checkstyle] Checkstyle rule "the attribute number of business object is more than 50" throws dead loop exception.
+- [Checkstyle] Expected Execution Flow icons should not be shown in comparison or checkstyle report.
+- [Checkstyle] Checkstyle warning "system lane activity uses multi-instance loops" is reported by embedded rule engine but not by ODM rule engine.
+- [Pipeline] The Log Details section keeps refreshing and blocking the build details page.
+- [Comparison] Missing subprocess changes in snapshot comparison results.
+- [Administration] Error is thrown when idaAdmin re-logs in or clicks Home page after executing tables creation scripts.
+
+#### Notes
+- Starting from version 24.0.10, IDA supports database tables creation after new IDA instance is installed and started up. Please use the new Create Database Tables page to execute tables creation scripts or ask DBA to execute the corresponding tables creation scripts. See new doc for Database Installation and Configuration(https://sdc-china.github.io/IDA-doc/installation/installation-database-installation-and-configuration.html).
+
+
+### 24.0.10-2 - 12/03/2024
+
+#### Bug Fixes
+- Comparison page doesn't work for non-admin user.
+
+
 ### 24.0.10.1 - 12/02/2024
 
 #### Bug Fixes
 - Database migration execution from v24.0.8 to v24.0.10 is hung on DB2.
+
 
 ### 24.0.10 - 11/27/2024
 
@@ -33,6 +60,7 @@ last_modified_at: 2024-11-27 13:35:00
 - [Comparison] Changes in line links in human service are not shown in comparison result.
 - [Administration] Unexpected exception is thrown when creating user if LDAP server is down.
 
+
 ### 24.0.9 - 10/31/2024
 
 #### Enhancements
@@ -53,11 +81,13 @@ last_modified_at: 2024-11-27 13:35:00
 - [Administration] User should not be redirected to migration page if the database version was set to a previous hotfix version, when no database migration or IDA upgrade is needed.
 - [Database] Fix inconsistent database schema.
 
+
 ### 24.0.8.1 - 10/10/2024
 
 #### Bug Fixes
 - [Pipeline] Fix wrong snapshot is used in pipeline steps.
 - [Container] Fix operator docker image security issues.
+
 
 ### 24.0.8 - 09/27/2024
 
@@ -80,7 +110,9 @@ last_modified_at: 2024-11-27 13:35:00
 #### Notes
 - There are database changes from 24.0.7 to 24.0.8, please use the new Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See new doc for Migrating IDA Application(https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
 
+
 ### 24.0.7 - 08/29/2024
+
 #### Enhancements
 - [Testing] Draw the actual flow of sub processes in test report.
 - [Testing] Upgrade Selenium Java API to support latest Selenium Hub.
@@ -105,6 +137,7 @@ last_modified_at: 2024-11-27 13:35:00
 - IDA browser Plug-in is updated to version 24.7, please make sure you have installed the latest plug-in.
 - Toolkit and workspace folders have been removed from the release package. User can download all the resource files(plugins, toolkits and customization starter projects) from the **Resources** page under menu **Administration**(https://sdc-china.github.io/IDA-doc/administration/administration-resources.html).
 - Because Selenium Java API is upgraded to support the latest Selenium Hub, very old browser versions are no longer supported. Please upgrade the Selenium browsers to the minimum supported versions if needed(https://sdc-china.github.io/IDA-doc/installation/installation-system-requirement.html#selenium-grid-browsers-support).
+
 
 ### 24.0.6 - 07/30/2024
 
