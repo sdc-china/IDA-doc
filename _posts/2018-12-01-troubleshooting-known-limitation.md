@@ -2,7 +2,7 @@
 title: "Known Limitations"
 category: troubleshooting
 date: 2018-12-01 15:17:55
-last_modified_at: 2024-01-14 16:50:00
+last_modified_at: 2025-01-22 12:00:00
 ---
 
 # Known Limitations
@@ -24,3 +24,4 @@ last_modified_at: 2024-01-14 16:50:00
 - Snapshot comparison may show diff results as deletion + addition if an item in Process/Service is renamed, as the item's ID is a UUID which cannot be relied upon to identify the item.
 - If IDA and BAW are in different time zones, some display results will be inaccurate. The affected functions include Cleanup Unnamed Snapshots and Create Snapshot in the Merge To function.
 - Due to product limitation, test reports for client side human services and service flows run on Workflow Server of Cloud Pak for Business Automation may not contain diagram information.
+- Non exposed async service flow is not supported.
