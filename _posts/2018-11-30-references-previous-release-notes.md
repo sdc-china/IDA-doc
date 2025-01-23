@@ -2,10 +2,37 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2024-11-27 13:35:00
+last_modified_at: 2025-01-23 16:15:00
 ---
 
 ## Previous Release Notes
+
+### 25.0.1 - 01/23/2025
+
+#### Enhancements
+- [Testing] Support testing TX service flow and exposed async service flow on Cloud Pak for Business Automation.
+- [Checkstyle] The parsing of subprocess data nested at more than two levels is incomplete.
+- [Comparison] Able to regenerate report by clicking a refresh button on the comparison/merge results table row.
+- [Comparison] Sort the results in comparison report.
+- [Pipeline] Allow user to set a target deployment time of the pipeline deployment step before pipeline build is run.
+- [Pipeline] Add cancel with comments option to all queued/running/pending builds.
+- [Administration] Add version number to embedded rules.
+- [Administration] Validate LDAP user filter when testing connection of LDAP server.
+
+#### Bug Fixes
+- [Comparison] It should show dependency tree when overwriting an artifact with sub-artifacts.
+- [Comparison] Left-side menu is missing for sub-artifacts in comparison report when only sub-artifacts are changed.
+- [Comparison] Sub-artifact changes cannot be committed in merge report when only sub-artifacts are changed.
+- [Operations Tool] The snapshot status is not accurate in Clean Snapshot search results.
+- [Administration] Change fields REST User Name/REST User Display Name to readonly in Edit BAW Server modal.
+
+#### Notes
+- There are database changes from 24.0.11 to 25.0.1, please use the new Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See new doc for Migrating IDA Application(https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
+
+#### The checkstyle rules change details
+[Updated rules]
+- checks/process/check-delete-completed-task
+
 
 ### 24.0.11 - 12/20/2024
 
