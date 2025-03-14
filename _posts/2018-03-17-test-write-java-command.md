@@ -2,7 +2,7 @@
 title: "Write a Java Command"
 category: test
 date: 2018-03-17 15:17:55
-last_modified_at: 2019-07-29 15:19:00
+last_modified_at: 2025-03-14 15:19:00
 ---
 
 # Write a Java Command
@@ -263,6 +263,14 @@ Unit test custom Java command
 
    ![][test_unit_test_java_command]
 
+   **[Java 17]** You may encounter error below when running JUnit test in Java 17 environment. To fix the error, add the JVM argument below to JUnit run configuration.
+   ```
+   --add-opens=java.base/java.lang=ALL-UNNAMED
+   ```
+   ![][test_unit_test_java_command_junit_error]
+   ![][test_unit_test_java_command_junit_config]{:width="80%"}
+   ![][test_unit_test_java_command_jvm_arg]
+
 
 Package custom Java command
 
@@ -318,3 +326,6 @@ Use custom Java command in IDA test case
   [test_upload_java_command_3]: ../images/test/test_upload_java_command_3.png
   [test_insert_java_command]: ../images/test/test_insert_java_command.png
   [test_java_command_parameter]: ../images/test/test_java_command_parameter.png
+  [test_unit_test_java_command_junit_error]: ../images/test/test_unit_test_java_command_junit_error.png
+  [test_unit_test_java_command_junit_config]: ../images/test/test_unit_test_java_command_junit_config.png
+  [test_unit_test_java_command_jvm_arg]: ../images/test/test_unit_test_java_command_jvm_arg.png
