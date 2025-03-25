@@ -44,7 +44,7 @@ last_modified_at: 2025-01-23 16:15:00
 | IDA Helm Charts | idaweb-helm-25.0.1.tgz	| Helm Charts Repo: <https://sdc-china.github.io/ida-operator> <br/> Binary Releases: <https://github.com/sdc-china/ida-operator/releases/download/25.0.1/idaweb-helm-25.0.1.tgz> |
 
 ## IDA Supporting Subscription Service
-1-year standard support is provided for each release after its official release date. It's only available with IDA Supporting Subscription Service.
+1-year standard support is provided for each major release after its official release date. It's only available with IDA Supporting Subscription Service.
 
 ## Previous Releases
 
