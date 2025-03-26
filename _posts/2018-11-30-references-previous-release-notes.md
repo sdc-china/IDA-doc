@@ -2,10 +2,50 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2025-01-23 16:15:00
+last_modified_at: 2025-03-26 16:15:00
 ---
 
 ## Previous Release Notes
+
+### 25.0.3 - 03/27/2025
+
+#### Enhancements
+- Support Spring Framework v6 based on Java 17.
+
+#### Bug Fixes
+- [Security] Upgrade jQuery Validation to v1.21.0.
+- [Security] Validate the twx file format once the file is uploaded to IDA server.
+- [Checkstyle] Checkstyle hangs when generating report.
+- [Checkstyle] Variables used in event subprocess is incorrectly reported as unused variables.
+- [Administration] Cannot download Chrome plugin v3(ida3-24.7.crx) from Resources page.
+
+#### Notes
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check new doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
+#### The checkstyle rules change details
+[Updated rules]
+- check-bpd-component-contains-inner-table-in-script
+- check-service-item-contains-inner-table-in-script
+- check-bpd-component-sql-injection-in-script
+- check-service-item-sql-injection-in-script
+- check-bpd-unused-variables
+
+
+### 25.0.2 - 02/27/2025
+
+#### Bug Fixes
+- [Testing] Instance name shown on test case report is not correct.
+- [Testing] Recorded test cases are being saved with incorrect encoding.
+- [Comparison] Missing Alias name changes of process Visible Variables in snapshot comparison report.
+- [Comparison] Comparison result of decision gateway in service is not accurate.
+- [Security] Remove version numbers in comments in resource files.
+- [Security] Upgrade jQuery Validation to v1.19.5.
+- [Security] Upgrade jQuery DataTables to v1.11.3.
+- [Security] Request with rogue characters should return 400 bad request instead of 500 internal server error.
+- [Security] Remove the detailed error trace from the error messages shown on UI.
+- [Security] Remove restclient.jar from IDA Toolkit.
+- [Security] Remove SSH private keys in sample project data.
+
 
 ### 25.0.1 - 01/23/2025
 
