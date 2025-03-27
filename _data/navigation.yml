@@ -20,7 +20,9 @@ docs:
         url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
         url: /installation/installation-database-installation-and-configuration.html
-      - title: "Installing IDA Application"
+      - title: "Installing IDA Application on Java 17(Recommended)"
+        url: /installation/installation-installing-ida-application-java17.html
+      - title: "Installing IDA Application on Java 8"
         url: /installation/installation-installing-ida-application.html
       - title: "Post Installation Setup"
         url: /installation/installation-post-installation-setup.html
