@@ -2,7 +2,7 @@
 title: "Write a Java Command"
 category: test
 date: 2018-03-17 15:17:55
-last_modified_at: 2025-03-14 15:19:00
+last_modified_at: 2025-03-27 15:19:00
 ---
 
 # Write a Java Command
@@ -15,7 +15,17 @@ last_modified_at: 2025-03-14 15:19:00
 
 ## Prerequisite
 
-Make sure you have installed **Eclipse IDE** and **Maven** in your local environment.
+- Make sure you have installed **Eclipse IDE** and **Maven** in your local environment.
+- If your Eclipse IDE's default JRE is Java 17, please add the JVM argument below to its Default VM Arguments. Make sure your CustomJavaCommand Java project uses the default JRE that is configured.
+   ```
+   --add-opens=java.base/java.lang=ALL-UNNAMED
+   ```
+   ![][test_unit_test_java_command_jre_config]
+
+   ![][test_unit_test_java_command_jvm_arg]
+
+   ![][test_unit_test_java_command_project_jre_config]
+
 
 ## Java command customization
 
@@ -263,14 +273,9 @@ Unit test custom Java command
 
    ![][test_unit_test_java_command]
 
-   **[Java 17]** You may encounter error below when running JUnit test in Java 17 environment. To fix the error, add the JVM argument below to JUnit run configuration.
-   ```
-   --add-opens=java.base/java.lang=ALL-UNNAMED
-   ```
-   ![][test_unit_test_java_command_junit_error]
-   ![][test_unit_test_java_command_junit_config]{:width="80%"}
-   ![][test_unit_test_java_command_jvm_arg]
-
+   **[Java 17]** You may encounter error below when running JUnit test in Java 17 environment. To fix the error, configure your CustomJavaCommand Java project's JRE Default VM Arguments according to [Prerequisites](../test/test-write-java-command.html#prerequisite).
+	
+	![][test_unit_test_java_command_junit_error]
 
 Package custom Java command
 
@@ -327,5 +332,6 @@ Use custom Java command in IDA test case
   [test_insert_java_command]: ../images/test/test_insert_java_command.png
   [test_java_command_parameter]: ../images/test/test_java_command_parameter.png
   [test_unit_test_java_command_junit_error]: ../images/test/test_unit_test_java_command_junit_error.png
-  [test_unit_test_java_command_junit_config]: ../images/test/test_unit_test_java_command_junit_config.png
+  [test_unit_test_java_command_jre_config]: ../images/test/test_unit_test_java_command_jre_config.png
   [test_unit_test_java_command_jvm_arg]: ../images/test/test_unit_test_java_command_jvm_arg.png
+  [test_unit_test_java_command_project_jre_config]: ../images/test/test_unit_test_java_command_project_jre_config.png
