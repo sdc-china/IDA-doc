@@ -17,7 +17,7 @@ The IDA Web Application can be installed on Liberty, Docker, or Openshift. Pleas
 **Prerequisites**
 
 - Java 17 is installed on server.
-- Download Liberty installation package: [Open Liberty v24.0.0.3+ or WebSphere Liberty v24.0.0.3+](../installation/installation-system-requirement.html#software-prerequisites).
+- Download Liberty installation package: [Open Liberty v24.0.0.3+](https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/24.0.0.3/openliberty-24.0.0.3.zip), [WebSphere Liberty v24.0.0.3+](https://www.ibm.com/support/pages/node/7142064).
 
 **1. Create a Liberty server**
 
