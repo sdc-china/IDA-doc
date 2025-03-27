@@ -36,10 +36,9 @@ last_modified_at: 2025-03-26 16:15:00
 | Component Description	| Release File	| Installation instructions| 
 |:----------------|:------------------------|:---------------|
 | IDA release package for traditional web server based on Java 8(eg: Liberty, WebSphere)	| ida-25.0.3-java8.zip | [Installing IDA Application on Java 8](../installation/installation-installing-ida-application.html) |
-| IDA release package for traditional web server based on Java 17(eg: Liberty, WebSphere)	| ida-25.0.3-java17.zip | [Installing IDA Application on Java 17](../installation/installation-installing-ida-application-java17.html) |
-| IDA web and operator docker images based on Java 8| ida-25.0.3-java8.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
+| IDA release package for traditional web server based on Java 17(eg: Liberty)	| ida-25.0.3-java17.zip | [Installing IDA Application on Java 17](../installation/installation-installing-ida-application-java17.html) |
 | IDA web and operator docker images based on Java 17| ida-25.0.3-java17.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
-| IDA Helm Charts | idaweb-helm-25.0.3.tgz	| Helm Charts Repo: <https://sdc-china.github.io/ida-operator> <br/> Binary Releases: <https://github.com/sdc-china/ida-operator/releases/download/25.0.3/idaweb-helm-25.0.3.tgz> |
+| IDA Helm Charts for Kubernetes platform | idaweb-helm-25.0.3.tgz	| Helm Charts Repo: <https://sdc-china.github.io/ida-operator> <br/> Binary Releases: <https://github.com/sdc-china/ida-operator/releases/download/25.0.3/idaweb-helm-25.0.3.tgz> |
 
 ## IDA Supporting Subscription Service
 1-year standard support is provided for each major release after its official release date. It's only available with IDA Supporting Subscription Service.
