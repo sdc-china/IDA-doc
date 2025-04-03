@@ -16,7 +16,7 @@ For migrating IDA application from 2.x to 21.0.0, see references below:
 
 ## From 21.0.0+ to latest version
 For migrating IDA application by release package, see references below. **This option can be used if you require DBA to execute database schema migration scripts to update database, before updating IDA application to the latest version.**
- - [Migrating IDA from v21.0.0+ by Release Package](../references/references-migrating-ida-from-v21.0.0-by-release-package.html).
+ - [Migrating IDA from v21.0.0+ by Release Package](../references/references-migrating-ida-from-v21.0.0-by-release-package.html)
 
 ## From v22.1.7+ to latest version
 For migrating IDA application on IDA startup, see steps below. 
