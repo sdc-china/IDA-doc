@@ -127,7 +127,9 @@ The Firefox and Chrome driver version should align with the installed browser ve
 
 For Firefox, you can download the latest firefox driver version from the link: https://github.com/mozilla/geckodriver/releases
 
-For Chrome, you can search the installed Chrome version in the JSON (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json), then download the corresponding chrome driver version. Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome driver v135.0.7049.84.
+For Chrome, you can search the installed Chrome version in the JSON (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json), then download the corresponding chrome driver version.
+
+Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome driver v135.0.7049.84.
 
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
