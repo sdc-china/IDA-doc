@@ -133,7 +133,7 @@ Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome 
 
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
-tar -zxvf geckodriver-v0.36.0-linux64.tar.gz
+tar -zxvf geckodriver-v0.36.0-linux64.tar.gz -C ~/selenium/
 
 wget https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/linux64/chromedriver-linux64.zip
 unzip chromedriver-linux64.zip
