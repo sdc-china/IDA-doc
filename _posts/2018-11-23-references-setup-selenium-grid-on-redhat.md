@@ -15,9 +15,8 @@ Please note that the old version of Firefox installed on RedHat may not support 
 sudo yum remove firefox
 unlink /usr/bin/firefox
 
-cd /usr/local
 wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
-tar xvf firefox-137.0.1.tar.xz
+tar xvf firefox-137.0.1.tar.xz -C /usr/local/
 sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 
 firefox --version
