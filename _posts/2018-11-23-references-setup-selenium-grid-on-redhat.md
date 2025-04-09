@@ -35,17 +35,24 @@ google-chrome --version
 
 ## Setup Selenium Grid Server
 
-### Download Selenium Grid JAR
+### Create folder for Selenium Grid Server
+We use **~/selenium** folder as an example, you can change it any other folder path.
 
 ```
 mkdir ~/selenium
+cd ~/selenium
+```
 
+### Download Selenium Grid JAR
+
+```
 wget https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar
 ```
 
-### Create hubconfig.json:
+### Create hubconfig.json
 
 ```
+cat > hubconfig.json<< EOF
 {
   "port": 4444,
   "newSessionWaitTimeout": 10000,
@@ -61,11 +68,13 @@ wget https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/
   "browserTimeout": 60,
   "timeout": 60
 }
+EOF
 ```
 
 ### Create nodeconfig.json
 
 ```
+cat > nodeconfig.json<< EOF
 {
   "capabilities":
   [
@@ -99,6 +108,7 @@ wget https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/
   "browserTimeout": 60,
   "timeout": 60
 }
+EOF
 ```
 
 ### Create starthub.sh
@@ -109,10 +119,8 @@ echo "java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hub
 
 ### Create startnode.sh
 
-Please note that the argument **-Dwebdriver.chrome.whitelistedIps=** is added in the command line, that allows the Chrome driver to assign a port for the WebDriver.
-
 ```
-echo "java -Dwebdriver.chrome.whitelistedIps= -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json" > startnode.sh
+echo "java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json" > startnode.sh
 ```
 
 ### Download Firefox and Chrome WebDriver
@@ -120,12 +128,10 @@ echo "java -Dwebdriver.chrome.whitelistedIps= -jar selenium-server-standalone-3.
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
 tar -zxvf geckodriver-v0.36.0-linux64.tar.gz
-chmod +x geckodriver
 
 wget https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/linux64/chromedriver-linux64.zip
 unzip chromedriver-linux64.zip
 mv chromedriver-linux64/chromedriver ~/selenium/
-chmod +x chromedriver
 ```
 
 ### Start Selenium Grid Server in Background
