@@ -35,7 +35,7 @@ google-chrome --version
 ## Setup Selenium Grid Server
 
 ### Create folder for Selenium Grid Server
-We use **~/selenium** folder as an example, you can change it to any other folder path.
+We use **~/selenium** folder as an example, you can change it to any other folder.
 
 ```
 mkdir ~/selenium
