@@ -313,21 +313,18 @@ Below are the reference links for how to set up Selenium Grid. They include deta
          "browserName": "firefox",
          "marionette": true,
          "maxInstances": 5,
-         "seleniumProtocol": "WebDriver",
-         "version": 67
+         "seleniumProtocol": "WebDriver"
        },
        {
          "browserName": "chrome",
          "maxInstances": 5,
-         "seleniumProtocol": "WebDriver",
-         "version": 75
+         "seleniumProtocol": "WebDriver"
        },
        {
          "browserName": "internet explorer",
          "platform": "WINDOWS",
          "maxInstances": 1,
-         "seleniumProtocol": "WebDriver",
-         "version": 11
+         "seleniumProtocol": "WebDriver"
        }
      ],
      "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
