@@ -16,8 +16,8 @@ sudo yum remove firefox
 unlink /usr/bin/firefox
 
 cd /usr/local
-wget http://ftp.mozilla.org/pub/firefox/releases/81.0/linux-x86_64/en-US/firefox-81.0.tar.bz2
-tar xvjf firefox-81.0.tar.bz2
+wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
+tar xvf firefox-137.0.1.tar.xz
 sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 
 firefox --version
@@ -27,7 +27,7 @@ firefox --version
 
 ```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-yum -y install redhat-lsb libXScrnSaver
+yum -y install libXScrnSaver
 yum -y localinstall google-chrome-stable_current_x86_64.rpm
 
 google-chrome --version
@@ -38,7 +38,9 @@ google-chrome --version
 ### Download Selenium Grid JAR
 
 ```
-wget https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar
+mkdir ~/selenium
+
+wget https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar
 ```
 
 ### Create hubconfig.json:
@@ -102,7 +104,7 @@ wget https://selenium-release.storage.googleapis.com/3.141/selenium-server-stand
 ### Create starthub.sh
 
 ```
-java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json
+echo "java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json" > starthub.sh
 ```
 
 ### Create startnode.sh
@@ -110,18 +112,19 @@ java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig
 Please note that the argument **-Dwebdriver.chrome.whitelistedIps=** is added in the command line, that allows the Chrome driver to assign a port for the WebDriver.
 
 ```
-java -Dwebdriver.chrome.whitelistedIps= -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json
+echo "java -Dwebdriver.chrome.whitelistedIps= -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json" > startnode.sh
 ```
 
 ### Download Firefox and Chrome WebDriver
 
 ```
-wget https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-linux64.tar.gz
-tar -zxvf geckodriver-v0.27.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+tar -zxvf geckodriver-v0.36.0-linux64.tar.gz
 chmod +x geckodriver
 
-wget https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip
-unzip chromedriver_linux64.zip
+wget https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/linux64/chromedriver-linux64.zip
+unzip chromedriver-linux64.zip
+mv chromedriver-linux64/chromedriver ~/selenium/
 chmod +x chromedriver
 ```
 
@@ -129,10 +132,10 @@ chmod +x chromedriver
 
 ```
 chmod +x starthub.sh
-nohup /root/selenium/starthub.sh > /root/selenium/hub.log 2>&1 &
+nohup ~/selenium/starthub.sh > ~/selenium/hub.log 2>&1 &
 
 chmod +x startnode.sh
-nohup /root/selenium/startnode.sh > /root/selenium/node.log 2>&1 &
+nohup ~/selenium/startnode.sh > ~/selenium/node.log 2>&1 &
 ```
 
 ### Stop Selenium Grid Server
