@@ -17,10 +17,16 @@ Use Firefox v137.0.1 as example:
 ## Unlink previous version of firefox
 unlink /usr/bin/firefox
 
+## Download Firefox installation package
 wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
+
+## Uncompress installation package to /usr/local/ folder
 tar xvf firefox-137.0.1.tar.xz -C /usr/local/
+
+## Create link for Firefox binary file
 sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 
+## Check Firefox version
 firefox --version
 ```
 
@@ -34,10 +40,16 @@ Use Chrome v134.0.6998.165 as example:
 ## Unlink previous version of google
 unlink /usr/bin/google-chrome
 
+## Download Chrome installation package
 wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chrome-linux64.zip
+
+## Uncompress installation package to /usr/local/ folder
 unzip chrome-linux64.zip -d /usr/local/
+
+## Create link for Chrome binary file
 sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
 
+## Check Chrome version
 google-chrome --version
 ```
 
@@ -123,12 +135,16 @@ EOF
 
 ```
 echo "java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json" > starthub.sh
+
+chmod +x starthub.sh
 ```
 
 ### Create startnode.sh
 
 ```
 echo "java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json" > startnode.sh
+
+chmod +x startnode.sh
 ```
 
 ### Download Firefox and Chrome WebDriver
@@ -152,10 +168,7 @@ mv chromedriver-linux64/chromedriver ~/selenium/
 ### Start Selenium Grid Server in Background
 
 ```
-chmod +x starthub.sh
 nohup ~/selenium/starthub.sh > ~/selenium/hub.log 2>&1 &
-
-chmod +x startnode.sh
 nohup ~/selenium/startnode.sh > ~/selenium/node.log 2>&1 &
 ```
 
