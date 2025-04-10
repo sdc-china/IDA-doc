@@ -26,8 +26,19 @@ firefox --version
 
 ```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-yum -y install libXScrnSaver
 yum -y localinstall google-chrome-stable_current_x86_64.rpm
+
+google-chrome --version
+```
+
+## Install specific Chrome version for testing
+Search Chrome package by version in the link: [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)
+We use Chrome v134.0.6998.165 as example:
+
+```
+wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chrome-linux64.zip
+unzip chrome-linux64.zip -d /usr/local/
+sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
 
 google-chrome --version
 ```
@@ -129,13 +140,13 @@ For Firefox, you can download the latest firefox driver version from the link: [
 
 For Chrome, you can search the installed Chrome version in the JSON ([https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)), then download the corresponding chrome driver version.
 
-Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome driver v135.0.7049.84.
+Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome driver v134.0.6998.165.
 
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
 tar -zxvf geckodriver-v0.36.0-linux64.tar.gz -C ~/selenium/
 
-wget https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.84/linux64/chromedriver-linux64.zip
+wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
 unzip chromedriver-linux64.zip
 mv chromedriver-linux64/chromedriver ~/selenium/
 ```
