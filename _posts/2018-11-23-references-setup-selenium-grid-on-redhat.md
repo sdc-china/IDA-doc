@@ -35,7 +35,7 @@ google-chrome --version
 
 Search Chrome package download link by version from [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json).
 
-We use Chrome v134.0.6998.165 as example:
+Use Chrome v134.0.6998.165 as example:
 
 ```
 wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chrome-linux64.zip
