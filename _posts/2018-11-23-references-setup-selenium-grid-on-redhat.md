@@ -171,14 +171,14 @@ echo "java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig n
 chmod +x startnode.sh
 ```
 
-### Start Selenium Grid Server in Background
+### Start Selenium Grid Server Hub and Node in Background
 
 ```
 nohup ~/selenium/starthub.sh > ~/selenium/hub.log 2>&1 &
 nohup ~/selenium/startnode.sh > ~/selenium/node.log 2>&1 &
 ```
 
-### Stop Selenium Grid Server
+### Stop Selenium Grid Server Hub and Node
 
 ```
 kill -9 $(ps -aux|grep hubconfig.json | grep -v grep| awk '{print $2}')
