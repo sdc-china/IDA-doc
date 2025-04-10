@@ -69,6 +69,30 @@ cd ~/selenium
 wget https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar
 ```
 
+### Download Firefox and Chrome WebDriver
+The Firefox and Chrome driver version should align with the installed browser version.
+
+For Firefox, you can download the latest firefox driver version from the link: [https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
+
+For Chrome, you can search the installed Chrome version in the JSON ([https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)), then download the corresponding chrome driver version.
+
+Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome driver v134.0.6998.165.
+
+```
+## Download Firefox geckodriver
+wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+
+## Uncompress geckodriver to selenium install folder
+tar -zxvf geckodriver-v0.36.0-linux64.tar.gz -C ~/selenium/
+
+## Download Chrome driver
+wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
+
+## Uncompress chromedriver to selenium install folder
+unzip chromedriver-linux64.zip
+mv chromedriver-linux64/chromedriver ~/selenium/
+```
+
 ### Create hubconfig.json
 
 ```
@@ -145,24 +169,6 @@ chmod +x starthub.sh
 echo "java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json" > startnode.sh
 
 chmod +x startnode.sh
-```
-
-### Download Firefox and Chrome WebDriver
-The Firefox and Chrome driver version should align with the installed browser version.
-
-For Firefox, you can download the latest firefox driver version from the link: [https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
-
-For Chrome, you can search the installed Chrome version in the JSON ([https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)), then download the corresponding chrome driver version.
-
-Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome driver v134.0.6998.165.
-
-```
-wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
-tar -zxvf geckodriver-v0.36.0-linux64.tar.gz -C ~/selenium/
-
-wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
-unzip chromedriver-linux64.zip
-mv chromedriver-linux64/chromedriver ~/selenium/
 ```
 
 ### Start Selenium Grid Server in Background
