@@ -7,12 +7,14 @@ last_modified_at: 2020-10-27 15:39:00
 
 # Setup Selenium Grid on RedHat
 
-## Install Latest Firefox
+## Install specific Firefox version for testing
 
-Please note that the old version of Firefox installed on RedHat may not support headless well, so we'd better install the latest Firefox.
+Search Firefox install package by version from [http://ftp.mozilla.org/pub/firefox/releases/](http://ftp.mozilla.org/pub/firefox/releases/). We suggest to install the latest version of Firefox.
+
+Use Firefox v137.0.1 as example:
 
 ```
-sudo yum remove firefox
+## Unlink previous version of firefox
 unlink /usr/bin/firefox
 
 wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
@@ -22,22 +24,16 @@ sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 firefox --version
 ```
 
-## Install Latest Chrome
-
-```
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-yum -y localinstall google-chrome-stable_current_x86_64.rpm
-
-google-chrome --version
-```
-
 ## Install specific Chrome version for testing
 
-Search Chrome package download link by version from [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json).
+Search Chrome install package by version from [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json). We suggest to install the latest version of Chrome.
 
 Use Chrome v134.0.6998.165 as example:
 
 ```
+## Unlink previous version of google
+unlink /usr/bin/google-chrome
+
 wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chrome-linux64.zip
 unzip chrome-linux64.zip -d /usr/local/
 sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
