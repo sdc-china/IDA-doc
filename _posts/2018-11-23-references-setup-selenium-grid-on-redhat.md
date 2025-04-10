@@ -14,7 +14,7 @@ Search Firefox install package by version from [http://ftp.mozilla.org/pub/firef
 Use Firefox v137.0.1 as example:
 
 ```
-## Unlink previous version of firefox
+## Unlink previous version of Firefox
 unlink /usr/bin/firefox
 
 ## Download Firefox installation package
@@ -37,7 +37,7 @@ Search Chrome install package by version from [https://googlechromelabs.github.i
 Use Chrome v134.0.6998.165 as example:
 
 ```
-## Unlink previous version of google
+## Unlink previous version of Chrome
 unlink /usr/bin/google-chrome
 
 ## Download Chrome installation package
