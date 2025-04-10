@@ -32,7 +32,7 @@ google-chrome --version
 ```
 
 ## Install specific Chrome version for testing
-Search Chrome package by version in the link: [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)
+Search Chrome package download link by version from [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)
 We use Chrome v134.0.6998.165 as example:
 
 ```
