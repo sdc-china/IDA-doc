@@ -56,17 +56,17 @@ google-chrome --version
 ## Setup Selenium Grid Server
 
 ### Create folder for Selenium Grid Server
-We use **~/selenium** folder as an example, you can change it to any other folder.
+We use **/opt/selenium** folder as an example, you can change it to any other folder.
 
 ```
-mkdir ~/selenium
-cd ~/selenium
+mkdir /opt/selenium
+cd /opt/selenium
 ```
 
 ### Download Selenium Grid JAR
 
 ```
-wget https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar
+wget -O /opt/selenium/selenium-server-standalone-3.141.59.jar https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar
 ```
 
 ### Download Firefox and Chrome WebDriver
@@ -83,20 +83,20 @@ Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome 
 wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
 
 ## Uncompress geckodriver to selenium install folder
-tar -zxvf geckodriver-v0.36.0-linux64.tar.gz -C ~/selenium/
+tar -zxvf geckodriver-v0.36.0-linux64.tar.gz -C /opt/selenium/
 
 ## Download Chrome driver
 wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
 
 ## Uncompress chromedriver to selenium install folder
 unzip chromedriver-linux64.zip
-mv chromedriver-linux64/chromedriver ~/selenium/
+mv chromedriver-linux64/chromedriver /opt/selenium/
 ```
 
 ### Create hubconfig.json
 
 ```
-cat > hubconfig.json<< EOF
+cat > /opt/selenium/hubconfig.json<< EOF
 {
   "port": 4444,
   "newSessionWaitTimeout": 10000,
@@ -118,7 +118,7 @@ EOF
 ### Create nodeconfig.json
 
 ```
-cat > nodeconfig.json<< EOF
+cat > /opt/selenium/nodeconfig.json<< EOF
 {
   "capabilities":
   [
@@ -158,24 +158,30 @@ EOF
 ### Create starthub.sh
 
 ```
-echo "java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json" > starthub.sh
+cat > /opt/selenium/starthub.sh<< EOF
+#!/bin/bash
+java -jar /opt/selenium/selenium-server-standalone-3.141.59.jar -role hub -hubConfig /opt/selenium/hubconfig.json
+EOF
 
-chmod +x starthub.sh
+chmod +x /opt/selenium/starthub.sh
 ```
 
 ### Create startnode.sh
 
 ```
-echo "java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig nodeconfig.json" > startnode.sh
+cat > /opt/selenium/startnode.sh<< EOF
+#!/bin/bash
+java -jar /opt/selenium/selenium-server-standalone-3.141.59.jar -role node -nodeConfig /opt/selenium/nodeconfig.json
+EOF
 
-chmod +x startnode.sh
+chmod +x /opt/selenium/startnode.sh
 ```
 
 ### Start Selenium Grid Server Hub and Node in Background
 
 ```
-nohup ~/selenium/starthub.sh > ~/selenium/hub.log 2>&1 &
-nohup ~/selenium/startnode.sh > ~/selenium/node.log 2>&1 &
+nohup /opt/selenium/starthub.sh > ~/selenium/hub.log 2>&1 &
+nohup /opt/selenium/startnode.sh > ~/selenium/node.log 2>&1 &
 ```
 
 ### Stop Selenium Grid Server Hub and Node
