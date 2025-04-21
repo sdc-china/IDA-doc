@@ -76,9 +76,11 @@ Please download the Jar file to the folder **/opt/selenium**.
 The Firefox and Chrome driver version should align with the installed browser version.
 
 For Firefox, you can download the latest firefox driver version from the link: [https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
+
 Eg: Firefox geckodriver v0.36.0 download link: [https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz](https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz)
 
 For Chrome, you can search the installed Chrome version in the JSON ([https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)), then download the corresponding chrome driver version.
+
 Eg: Chrome driver v134.0.6998.165 download link: [https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip](https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip)
 
 Please download and uncompress the webdriver files(the file names are **geckodriver** and **chromedriver**) to the folder **/opt/selenium**.
