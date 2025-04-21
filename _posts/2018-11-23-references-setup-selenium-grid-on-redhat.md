@@ -191,6 +191,64 @@ kill -9 $(ps -aux|grep hubconfig.json | grep -v grep| awk '{print $2}')
 kill -9 $(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print $2}')
 ```
 
+### Register as backend service (Optional)
+
+Register hub service
+
+```
+cat > /etc/systemd/system/hub.service<< EOF
+[Unit]
+Description=selenium hub service
+After=network.target
+
+[Service]
+ExecStart=/opt/selenium/starthub.sh
+# uncomment below rows for speicific user or group
+#User=selenium
+#Group=selenium
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl enable hub
+```
+
+Register node service
+
+```
+cat > /etc/systemd/system/node.service<< EOF
+[Unit]
+Description=selenium node service
+After=network.target
+
+[Service]
+ExecStart=/opt/selenium/startnode.sh
+# uncomment below rows for speicific user or group
+#User=selenium
+#Group=selenium
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl enable node
+```
+
+Start Hub and Node services
+
+```
+systemctl start hub
+systemctl start node
+```
+
+Stop Hub and Node services
+
+```
+systemctl stop hub
+systemctl stop node
+```
+
 ## Configure Selenium Grid on IDA and Enable Headless Mode
 
 ### Firefox Selenium Grid Configuration
