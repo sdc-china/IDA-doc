@@ -180,8 +180,8 @@ chmod +x /opt/selenium/startnode.sh
 ### Start Selenium Grid Server Hub and Node in Background
 
 ```
-nohup /opt/selenium/starthub.sh > ~/selenium/hub.log 2>&1 &
-nohup /opt/selenium/startnode.sh > ~/selenium/node.log 2>&1 &
+nohup /opt/selenium/starthub.sh > /opt/selenium/hub.log 2>&1 &
+nohup /opt/selenium/startnode.sh > /opt/selenium/node.log 2>&1 &
 ```
 
 ### Stop Selenium Grid Server Hub and Node
