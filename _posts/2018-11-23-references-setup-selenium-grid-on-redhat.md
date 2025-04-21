@@ -179,6 +179,10 @@ chmod +x /opt/selenium/stop.sh
 /opt/selenium/stop.sh
 ```
 
+### The full example of the selenium server scripts
+
+You can download the full example of the selenium server scripts from [https://github.com/sdc-china/IDA-doc/releases/download/25.0.3/selenium-server-linux64-3.141.59.zip](https://github.com/sdc-china/IDA-doc/releases/download/25.0.3/selenium-server-linux64-3.141.59.zip)
+
 ## Configure Selenium Grid on IDA and Enable Headless Mode
 
 ### Firefox Selenium Grid Configuration
