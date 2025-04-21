@@ -59,8 +59,10 @@ google-chrome --version
 We use **/opt/selenium** folder as an example, you can change it to any other folder.
 
 ```
-mkdir /opt/selenium
+mkdir -p /opt/selenium
 cd /opt/selenium
+mkdir -p /opt/selenium/conf
+mkdir -p /opt/selenium/logs
 ```
 
 ### Download Selenium Grid Jar
