@@ -160,7 +160,8 @@ EOF
 ```
 cat > /opt/selenium/starthub.sh<< EOF
 #!/bin/bash
-java -jar /opt/selenium/selenium-server-standalone-3.141.59.jar -role hub -hubConfig /opt/selenium/hubconfig.json
+BASEDIR="$( cd "$(dirname "$0")" ; pwd -P )"
+java -jar ${BASEDIR}/selenium-server-standalone-3.141.59.jar -role hub -hubConfig ${BASEDIR}/hubconfig.json
 EOF
 
 chmod +x /opt/selenium/starthub.sh
@@ -171,7 +172,8 @@ chmod +x /opt/selenium/starthub.sh
 ```
 cat > /opt/selenium/startnode.sh<< EOF
 #!/bin/bash
-java -jar /opt/selenium/selenium-server-standalone-3.141.59.jar -role node -nodeConfig /opt/selenium/nodeconfig.json
+BASEDIR="$( cd "$(dirname "$0")" ; pwd -P )"
+java -jar ${BASEDIR}/selenium-server-standalone-3.141.59.jar -role node -nodeConfig ${BASEDIR}/nodeconfig.json
 EOF
 
 chmod +x /opt/selenium/startnode.sh
