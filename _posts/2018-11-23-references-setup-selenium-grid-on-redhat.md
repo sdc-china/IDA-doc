@@ -63,40 +63,28 @@ mkdir /opt/selenium
 cd /opt/selenium
 ```
 
-### Download Selenium Grid JAR
+### Download Selenium Grid Jar
 
-```
-wget -O /opt/selenium/selenium-server-standalone-3.141.59.jar https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar
-```
+Selenium Grid Server v3.141.59 Jar can be download from the link: [https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar](https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar)
 
-### Download Firefox and Chrome WebDriver
+Please download the Jar file to the folder **/opt/selenium**.
+
+### Download Firefox and Chrome WebDrivers
+
 The Firefox and Chrome driver version should align with the installed browser version.
 
 For Firefox, you can download the latest firefox driver version from the link: [https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
+Eg: Firefox geckodriver v0.36.0 download link: [https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz](https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz)
 
 For Chrome, you can search the installed Chrome version in the JSON ([https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)), then download the corresponding chrome driver version.
+Eg: Chrome driver v134.0.6998.165 download link: [https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip](https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip)
 
-Below is the example scripts to download Firefox geckodriver v0.36.0 and Chrome driver v134.0.6998.165.
-
-```
-## Download Firefox geckodriver
-wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
-
-## Uncompress geckodriver to selenium install folder
-tar -zxvf geckodriver-v0.36.0-linux64.tar.gz -C /opt/selenium/
-
-## Download Chrome driver
-wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
-
-## Uncompress chromedriver to selenium install folder
-unzip chromedriver-linux64.zip
-mv chromedriver-linux64/chromedriver /opt/selenium/
-```
+Please download and uncompress the webdriver files(the file names are **geckodriver** and **chromedriver**) to the folder **/opt/selenium**.
 
 ### Create hubconfig.json
 
 ```
-cat > /opt/selenium/hubconfig.json<< EOF
+cat > /opt/selenium/conf/hubconfig.json<< EOF
 {
   "port": 4444,
   "newSessionWaitTimeout": 10000,
@@ -118,7 +106,7 @@ EOF
 ### Create nodeconfig.json
 
 ```
-cat > /opt/selenium/nodeconfig.json<< EOF
+cat > /opt/selenium/conf/nodeconfig.json<< EOF
 {
   "capabilities":
   [
@@ -155,42 +143,38 @@ cat > /opt/selenium/nodeconfig.json<< EOF
 EOF
 ```
 
-### Create starthub.sh
+### Create start/stop shell scripts
 
 ```
-cat > /opt/selenium/starthub.sh<< EOF
+cat > /opt/selenium/start.sh<< EOF
 #!/bin/bash
-BASEDIR="$( cd "$(dirname "$0")" ; pwd -P )"
-java -jar ${BASEDIR}/selenium-server-standalone-3.141.59.jar -role hub -hubConfig ${BASEDIR}/hubconfig.json
+BASEDIR="\$( cd "\$(dirname "\$0")" ; pwd -P )"
+mkdir -p \${BASEDIR}/logs
+nohup java -jar \${BASEDIR}/selenium-server-standalone-3.141.59.jar -role hub -hubConfig \${BASEDIR}/conf/hubconfig.json > \${BASEDIR}/logs/hub.log 2>&1 &
+nohup java -jar \${BASEDIR}/selenium-server-standalone-3.141.59.jar -role node -nodeConfig \${BASEDIR}/conf/nodeconfig.json > \${BASEDIR}/logs/node.log 2>&1 &
 EOF
 
-chmod +x /opt/selenium/starthub.sh
-```
+chmod +x /opt/selenium/start.sh
 
-### Create startnode.sh
-
-```
-cat > /opt/selenium/startnode.sh<< EOF
+cat > /opt/selenium/stop.sh<< EOF
 #!/bin/bash
-BASEDIR="$( cd "$(dirname "$0")" ; pwd -P )"
-java -jar ${BASEDIR}/selenium-server-standalone-3.141.59.jar -role node -nodeConfig ${BASEDIR}/nodeconfig.json
+kill -9 \$(ps -aux|grep hubconfig.json | grep -v grep| awk '{print \$2}')
+kill -9 \$(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print \$2}')
 EOF
 
-chmod +x /opt/selenium/startnode.sh
+chmod +x /opt/selenium/stop.sh
 ```
 
 ### Start Selenium Grid Server Hub and Node in Background
 
 ```
-nohup /opt/selenium/starthub.sh > /opt/selenium/hub.log 2>&1 &
-nohup /opt/selenium/startnode.sh > /opt/selenium/node.log 2>&1 &
+/opt/selenium/start.sh
 ```
 
 ### Stop Selenium Grid Server Hub and Node
 
 ```
-kill -9 $(ps -aux|grep hubconfig.json | grep -v grep| awk '{print $2}')
-kill -9 $(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print $2}')
+/opt/selenium/stop.sh
 ```
 
 ## Configure Selenium Grid on IDA and Enable Headless Mode
