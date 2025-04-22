@@ -51,16 +51,25 @@ sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
 
 ## Check Chrome version
 google-chrome --version
+
+## Test Chrome
+google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
 ## Install Latest Chrome by RPM
 
 ```
+## Download latest Chrome RPM installation package
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-yum -y install libXScrnSaver
+
+## Install Chrome by RPM
 yum -y localinstall google-chrome-stable_current_x86_64.rpm
 
+## Check Chrome version
 google-chrome --version
+
+## Test Chrome
+google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
 ## Setup Selenium Grid Server
