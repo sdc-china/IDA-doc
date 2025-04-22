@@ -49,6 +49,11 @@ unzip chrome-linux64.zip -d /usr/local/
 ## Create link for Chrome binary file
 sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
 
+## Chrome Dependencies for Redhat 8.10
+yum install at-spi2-atk
+yum install mesa-libgbm
+yum install alsa-lib
+
 ## Check Chrome version
 google-chrome --version
 
