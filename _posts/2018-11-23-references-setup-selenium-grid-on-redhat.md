@@ -53,6 +53,16 @@ sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
 google-chrome --version
 ```
 
+## Install Latest Chrome by RPM
+
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+yum -y install libXScrnSaver
+yum -y localinstall google-chrome-stable_current_x86_64.rpm
+
+google-chrome --version
+```
+
 ## Setup Selenium Grid Server
 
 ### Create folder for Selenium Grid Server
