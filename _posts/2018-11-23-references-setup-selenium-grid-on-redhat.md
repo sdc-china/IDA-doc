@@ -211,7 +211,7 @@ chmod +x /opt/selenium/stop.sh
 /opt/selenium/stop.sh
 ```
 
-### Register Selenium Grid Server as System Service
+### Register Selenium Grid Server as System Service to enable to start on boot
 
 ```
 ## Create selenium system service configuration file
