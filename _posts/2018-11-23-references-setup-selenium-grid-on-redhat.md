@@ -113,10 +113,13 @@ Eg: Chrome driver v134.0.6998.165 download link: [https://storage.googleapis.com
 
 Please download and uncompress the webdriver files(the file names are **geckodriver** and **chromedriver**) to the folder **/opt/selenium**.
 
-### Create hubconfig.json
+### Configure Selenium Grid Scripts
 
 ```
-cat > /opt/selenium/conf/hubconfig.json<< EOF
+SELENIUM_HOME=/opt/selenium
+
+## Create hubconfig.json
+cat > ${SELENIUM_HOME}/conf/hubconfig.json<< EOF
 {
   "port": 4444,
   "newSessionWaitTimeout": 10000,
@@ -133,12 +136,9 @@ cat > /opt/selenium/conf/hubconfig.json<< EOF
   "timeout": 60
 }
 EOF
-```
 
-### Create nodeconfig.json
-
-```
-cat > /opt/selenium/conf/nodeconfig.json<< EOF
+## Create nodeconfig.json
+cat > ${SELENIUM_HOME}/conf/nodeconfig.json<< EOF
 {
   "capabilities":
   [
@@ -173,13 +173,9 @@ cat > /opt/selenium/conf/nodeconfig.json<< EOF
   "timeout": 60
 }
 EOF
-```
 
-### Create start/stop shell scripts
-
-```
 ## Create start script
-cat > /opt/selenium/start.sh<< EOF
+cat > ${SELENIUM_HOME}/start.sh<< EOF
 #!/bin/bash
 BASEDIR="\$( cd "\$(dirname "\$0")" ; pwd -P )"
 mkdir -p \${BASEDIR}/logs
@@ -188,27 +184,27 @@ nohup java -Dwebdriver.chrome.driver=\${BASEDIR}/chromedriver -Dwebdriver.gecko.
 EOF
 
 ## Add execution permission for start script
-chmod +x /opt/selenium/start.sh
+chmod +x ${SELENIUM_HOME}/start.sh
 
 ## Create stop scropt
-cat > /opt/selenium/stop.sh<< EOF
+cat > ${SELENIUM_HOME}/stop.sh<< EOF
 #!/bin/bash
 kill -9 \$(ps -aux|grep hubconfig.json | grep -v grep| awk '{print \$2}')
 kill -9 \$(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print \$2}')
 EOF
 
 ## Add execution permission for stop script
-chmod +x /opt/selenium/stop.sh
+chmod +x ${SELENIUM_HOME}/stop.sh
 ```
 
 ### Start/Stop Selenium Grid Server Hub and Node by shell script
 
 ```
 ## Start selenium
-/opt/selenium/start.sh
+${SELENIUM_HOME}/start.sh
 
 ## Stop selenium
-/opt/selenium/stop.sh
+${SELENIUM_HOME}/stop.sh
 ```
 
 ### Register Selenium Grid Server as System Service to enable to start on boot
