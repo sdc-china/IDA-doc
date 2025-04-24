@@ -84,7 +84,7 @@ google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ## Setup Selenium Grid Server
 
 ### Create Home Folder for Selenium Grid Server
-We use **/opt/selenium** folder as SELENIUM_HOME, you can change it to any other folder.
+We use **/opt/selenium** folder as **SELENIUM_HOME**, you can change it to any other folder.
 
 ```
 ## Set selenium home folder
@@ -114,7 +114,7 @@ Eg: Chrome driver v134.0.6998.165 download link: [https://storage.googleapis.com
 
 Please download and uncompress the webdriver files(the file names are **geckodriver** and **chromedriver**) to the folder **${SELENIUM_HOME}**.
 
-### Configure Selenium Grid Scripts
+### Configure Selenium Grid Server Scripts
 
 ```
 ## Set selenium home folder
