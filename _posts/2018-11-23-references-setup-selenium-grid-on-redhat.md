@@ -88,9 +88,9 @@ We use **/opt/selenium** folder as an example, you can change it to any other fo
 
 ```
 mkdir -p /opt/selenium
-cd /opt/selenium
 mkdir -p /opt/selenium/conf
 mkdir -p /opt/selenium/logs
+cd /opt/selenium
 ```
 
 ### Download Selenium Grid Jar
