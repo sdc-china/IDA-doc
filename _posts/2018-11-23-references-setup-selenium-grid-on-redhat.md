@@ -83,20 +83,22 @@ google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 
 ## Setup Selenium Grid Server
 
-### Create folder for Selenium Grid Server
-We use **/opt/selenium** folder as an example, you can change it to any other folder.
+### Create Home Folder for Selenium Grid Server
+We use **/opt/selenium** folder as SELENIUM_HOME, you can change it to any other folder.
 
 ```
-mkdir -p /opt/selenium
-mkdir -p /opt/selenium/conf
-cd /opt/selenium
+## Set selenium home folder
+SELENIUM_HOME=/opt/selenium
+
+## Create selenium home folder
+mkdir -p ${SELENIUM_HOME}
 ```
 
 ### Download Selenium Grid Jar
 
 Selenium Grid Server v3.141.59 Jar can be download from the link: [https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar](https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-server-standalone-3.141.59.jar)
 
-Please download the Jar file to the folder **/opt/selenium**.
+Please download the Jar file to the folder **${SELENIUM_HOME}**.
 
 ### Download Firefox and Chrome WebDrivers
 
@@ -110,12 +112,16 @@ For Chrome, you can search the installed Chrome version in the JSON ([https://go
 
 Eg: Chrome driver v134.0.6998.165 download link: [https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip](https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip)
 
-Please download and uncompress the webdriver files(the file names are **geckodriver** and **chromedriver**) to the folder **/opt/selenium**.
+Please download and uncompress the webdriver files(the file names are **geckodriver** and **chromedriver**) to the folder **${SELENIUM_HOME}**.
 
 ### Configure Selenium Grid Scripts
 
 ```
+## Set selenium home folder
 SELENIUM_HOME=/opt/selenium
+
+## Create conf folder
+mkdir -p ${SELENIUM_HOME}/conf
 
 ## Create hubconfig.json
 cat > ${SELENIUM_HOME}/conf/hubconfig.json<< EOF
@@ -199,8 +205,11 @@ chmod +x ${SELENIUM_HOME}/stop.sh
 ### Start/Stop Selenium Grid Server Hub and Node by shell script
 
 ```
+## Set selenium home folder
+SELENIUM_HOME=/opt/selenium
+
 ## Start selenium
-/opt/selenium/start.sh
+${SELENIUM_HOME}/start.sh
 
 ## Stop selenium
 /opt/selenium/stop.sh
@@ -209,6 +218,9 @@ chmod +x ${SELENIUM_HOME}/stop.sh
 ### Register Selenium Grid Server as System Service to enable to start on boot
 
 ```
+## Set selenium home folder
+SELENIUM_HOME=/opt/selenium
+
 ## Create selenium system service configuration file
 cat > /etc/systemd/system/selenium.service<< EOF
 [Unit]
@@ -216,8 +228,8 @@ Description = Selenium Service
 After = network.target
 
 [Service]
-ExecStart = /opt/selenium/start.sh
-ExecStop = /opt/selenium/stop.sh
+ExecStart = ${SELENIUM_HOME}/start.sh
+ExecStop = ${SELENIUM_HOME}/stop.sh
 RemainAfterExit = yes
 #Uncomment below rows to run service by specific user or group
 #User=selenium
