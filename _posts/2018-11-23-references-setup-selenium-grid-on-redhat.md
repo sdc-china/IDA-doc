@@ -200,15 +200,13 @@ chmod +x /opt/selenium/stop.sh
 ### Start Selenium Grid Server Hub and Node in Background
 
 ```
-cd /opt/selenium
-./start.sh
+/opt/selenium/start.sh
 ```
 
 ### Stop Selenium Grid Server Hub and Node
 
 ```
-cd /opt/selenium
-./stop.sh
+/opt/selenium/stop.sh
 ```
 
 ### The full example of the selenium server scripts
