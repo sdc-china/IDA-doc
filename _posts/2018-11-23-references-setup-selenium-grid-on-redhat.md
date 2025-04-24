@@ -183,7 +183,7 @@ cat > /opt/selenium/start.sh<< EOF
 BASEDIR="\$( cd "\$(dirname "\$0")" ; pwd -P )"
 mkdir -p \${BASEDIR}/logs
 nohup java -jar \${BASEDIR}/selenium-server-standalone-3.141.59.jar -role hub -hubConfig \${BASEDIR}/conf/hubconfig.json > \${BASEDIR}/logs/hub.log 2>&1 &
-nohup java -jar \${BASEDIR}/selenium-server-standalone-3.141.59.jar -role node -nodeConfig \${BASEDIR}/conf/nodeconfig.json > \${BASEDIR}/logs/node.log 2>&1 &
+nohup java -Dwebdriver.chrome.driver=\${BASEDIR}/chromedriver -Dwebdriver.gecko.driver=\${BASEDIR}/geckodriver -jar \${BASEDIR}/selenium-server-standalone-3.141.59.jar -role node -nodeConfig \${BASEDIR}/conf/nodeconfig.json > \${BASEDIR}/logs/node.log 2>&1 &
 EOF
 
 chmod +x /opt/selenium/start.sh
