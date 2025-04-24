@@ -28,6 +28,7 @@ sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 
 ## Firefox Dependency
 yum install gtk3 -y
+yum install alsa-lib -y
 
 ## Check Firefox version
 firefox --version
