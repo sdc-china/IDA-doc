@@ -27,7 +27,7 @@ tar xvf firefox-137.0.1.tar.xz -C /usr/local/
 sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 
 ## Firefox Dependency
-yum install gtk3
+yum install gtk3 -y
 
 ## Check Firefox version
 firefox --version
@@ -53,9 +53,9 @@ unzip chrome-linux64.zip -d /usr/local/
 sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
 
 ## Chrome Dependencies for Redhat 8.10
-yum install at-spi2-atk
-yum install mesa-libgbm
-yum install alsa-lib
+yum install at-spi2-atk -y
+yum install mesa-libgbm -y
+yum install alsa-lib -y
 
 ## Check Chrome version
 google-chrome --version
