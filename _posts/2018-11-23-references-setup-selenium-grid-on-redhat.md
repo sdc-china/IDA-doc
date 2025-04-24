@@ -201,10 +201,10 @@ chmod +x ${SELENIUM_HOME}/stop.sh
 
 ```
 ## Start selenium
-${SELENIUM_HOME}/start.sh
+/opt/selenium/start.sh
 
 ## Stop selenium
-${SELENIUM_HOME}/stop.sh
+/opt/selenium/stop.sh
 ```
 
 ### Register Selenium Grid Server as System Service to enable to start on boot
