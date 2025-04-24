@@ -26,6 +26,9 @@ tar xvf firefox-137.0.1.tar.xz -C /usr/local/
 ## Create link for Firefox binary file
 sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 
+## Firefox Dependency
+yum install gtk3
+
 ## Check Firefox version
 firefox --version
 ```
