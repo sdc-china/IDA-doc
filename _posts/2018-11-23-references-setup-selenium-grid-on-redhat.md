@@ -149,14 +149,11 @@ cat > ${SELENIUM_HOME}/conf/nodeconfig.json<< EOF
   [
     {
       "browserName": "firefox",
-      "marionette": true,
-      "maxInstances": 5,
-      "seleniumProtocol": "WebDriver"
+      "maxInstances": 5
     },
     {
       "browserName": "chrome",
-      "maxInstances": 5,
-      "seleniumProtocol": "WebDriver"
+      "maxInstances": 5
     }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
