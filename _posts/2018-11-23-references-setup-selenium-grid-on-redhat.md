@@ -178,6 +178,7 @@ EOF
 ### Create start/stop shell scripts
 
 ```
+## Create start script
 cat > /opt/selenium/start.sh<< EOF
 #!/bin/bash
 BASEDIR="\$( cd "\$(dirname "\$0")" ; pwd -P )"
@@ -186,27 +187,66 @@ nohup java -jar \${BASEDIR}/selenium-server-standalone-3.141.59.jar -role hub -h
 nohup java -Dwebdriver.chrome.driver=\${BASEDIR}/chromedriver -Dwebdriver.gecko.driver=\${BASEDIR}/geckodriver -jar \${BASEDIR}/selenium-server-standalone-3.141.59.jar -role node -nodeConfig \${BASEDIR}/conf/nodeconfig.json > \${BASEDIR}/logs/node.log 2>&1 &
 EOF
 
+## Add execution permission for start script
 chmod +x /opt/selenium/start.sh
 
+## Create stop scropt
 cat > /opt/selenium/stop.sh<< EOF
 #!/bin/bash
 kill -9 \$(ps -aux|grep hubconfig.json | grep -v grep| awk '{print \$2}')
 kill -9 \$(ps -aux|grep nodeconfig.json| grep -v grep| awk '{print \$2}')
 EOF
 
+## Add execution permission for stop script
 chmod +x /opt/selenium/stop.sh
 ```
 
-### Start Selenium Grid Server Hub and Node in Background
+### Start/Stop Selenium Grid Server Hub and Node by shell script
 
 ```
+## Start selenium
 /opt/selenium/start.sh
-```
 
-### Stop Selenium Grid Server Hub and Node
-
-```
+## Stop selenium
 /opt/selenium/stop.sh
+```
+
+### Register Selenium Grid Server as System Service
+
+```
+## Create selenium system service configuration file
+cat > /etc/systemd/system/selenium.service<< EOF
+[Unit]
+Description = Selenium Service
+After = network.target
+
+[Service]
+ExecStart = /opt/selenium/start.sh
+ExecStop = /opt/selenium/stop.sh
+RemainAfterExit = yes
+#Uncomment below rows to run service by specific user or group
+#User=selenium
+#Group=selenium
+
+[Install]
+WantedBy = multi-user.target
+EOF
+
+## Enable selenium system service
+chmod a+x /etc/systemd/system/selenium.service
+systemctl enable selenium
+systemctl daemon-reload
+
+```
+
+### Start/Stop Selenium Grid Server Hub and Node by System Service
+
+```
+## Start selenium system service
+systemctl start selenium
+
+## Stop selenium system service
+systemctl stop selenium
 ```
 
 ### The full example of the selenium server scripts
