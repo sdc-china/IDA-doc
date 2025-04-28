@@ -7,6 +7,23 @@ last_modified_at: 2025-03-26 16:15:00
 
 ## Previous Release Notes
 
+### 25.0.4 - 04/29/2025
+
+#### Enhancements
+- [Pipeline] Able to reschedule deployment time when approving pipeline build.
+- [Pipeline] Support scheduling/rescheduling deployment steps in group pipeline.
+
+#### Bug Fixes
+- [Checkstyle] The characters after "//" in the URL are ignored as comments.
+- [Pipeline] Pipeline job Trigger by New Snapshot is not scheduled within Start Time and End Time of pipeline build trigger.
+- [Comparison] Auto tracked fields changes are not shown in snapshot comparison report.
+- [Comparison] Comparison results of complex type BO shows irrelevant simple type attributes.
+- [Container] Missing JVM arguments for container environment deployed by Java 17 docker image when the number of pod replicas is set to 1.
+
+#### Notes
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check new doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
+
 ### 25.0.3 - 03/27/2025
 
 #### Enhancements
