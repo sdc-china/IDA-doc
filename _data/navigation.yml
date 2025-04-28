@@ -20,7 +20,9 @@ docs:
         url: /installation/installation-system-requirement.html
       - title: "Database Installation and Configuration"
         url: /installation/installation-database-installation-and-configuration.html
-      - title: "Installing IDA Application"
+      - title: "Installing IDA Application on Java 17(Recommended)"
+        url: /installation/installation-installing-ida-application-java17.html
+      - title: "Installing IDA Application on Java 8"
         url: /installation/installation-installing-ida-application.html
       - title: "Post Installation Setup"
         url: /installation/installation-post-installation-setup.html
@@ -186,8 +188,8 @@ docs:
         url: /references/references-migrating-and-updating-ida-application-v2.x.html
       - title: "Migrating IDA from v2.7.x to v21.0.0"
         url: /references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html
-      - title: "Migrating IDA from v21.0.0 to v24.0.2"
-        url: /references/references-migrating-ida-from-v21.0.0-to-v24.0.2.html
+      - title: "Migrating IDA from v21.0.0 by Release Package"
+        url: /references/references-migrating-ida-from-v21.0.0-by-release-package.html
       - title: "High availability for IDA application on WAS and IHS"
         url: /references/references-high-availability-for-ida-application-on-was-and-ihs.html
       - title: "High Availability for IDA Application on Liberty and HAProxy"

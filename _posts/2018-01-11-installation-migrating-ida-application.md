@@ -2,28 +2,31 @@
 title: "Migrating IDA Application"
 category: installation
 date: 2018-01-11 15:17:56
-last_modified_at: 2024-04-29 16:44:00
+last_modified_at: 2025-04-02 16:44:00
 ---
 
 # Migrating IDA Application
 
 If you have previously installed IDA in your environment and now you want to update IDA to the new version, please read the following content.
 
-Below are example steps to migrate IDA application from v22.1.3 to v24.0.3+. For migrating applications from and to early versions of IDA, see references below:
+## From 2.x to 21.0.0
+For migrating IDA application from 2.x to 21.0.0, see references below:
  - [Migrating and Updating IDA Application v2.x](../references/references-migrating-and-updating-ida-application-v2.x.html)
  - [Migrating IDA from v2.7.x to v21.0.0](../references/references-migrating-ida-from-v2.7.x-to-v21.0.0.html)
- - [Migrating IDA from v21.0.0 to v24.0.2](../references/references-migrating-ida-from-v21.0.0-to-v24.0.2.html).
 
-Note, if you want to migrate IDA from v21.0.0 to v24.0.3+. Please first migrate IDA from v21.0.0 to v24.0.2 following the steps in [Migrating IDA from v21.0.0 to v24.0.2](../references/references-migrating-ida-from-v21.0.0-to-v24.0.2.html). Then migrate IDA from v24.0.2 to v24.0.3+ following the steps below.
+## From 21.0.0+ to latest version
+For migrating IDA application by release package, see references below. **This option can be used if you require DBA to execute database schema migration scripts to update database, before updating IDA application to the latest version.**
+ - [Migrating IDA from v21.0.0+ by Release Package](../references/references-migrating-ida-from-v21.0.0-by-release-package.html)
 
-***
+## From v22.1.7+ to latest version
+For migrating IDA application on IDA startup, see steps below. 
 
-## Migrate database schema on IDA startup
+### Migrate database schema on IDA startup
 Starting from version 24.0.3, IDA automatically checks for database schema migration requirements and redirects IDA admin user to the **Migrate Database Schema** page. If the **Database user** shown on the page has been granted schema change privileges, IDA admin user can then execute the migration scripts automatically by clicking **Execute Migration Scripts**. Otherwise, IDA admin user can download the migration scripts by clicking **Download Migration Scripts** and ask DBA to execute them manually. After the migration scripts are executed successfully, IDA admin user can restart IDA to complete database schema migration.
 
 ![][database_schema_migration_page]
 
-## Preparing your migration
+### Preparing your migration
 
 Compared to the previous version, the new version of IDA will have some changes in the database structure, so sometimes IDA updates require database migration. To prepare your migration, take the following steps:
 
@@ -32,7 +35,7 @@ Compared to the previous version, the new version of IDA will have some changes 
 3. Stop database server.  
 4. Backup the database.  
 
-## Step 1: Update IDA.war
+### Step 1: Update IDA.war
 
 You need to update IDA.war by following these steps:
 
@@ -41,10 +44,10 @@ You need to update IDA.war by following these steps:
 3. Copy the **ida-web.war** into the <LIBERTY_FOLDER>\usr\servers\default\apps folder.    
 4. Start Liberty Server.
 
-## Step 2: Update DB
+### Step 2: Update DB
 Choose one of the following options to migrate database schema when necessary.
 
-### Option 1
+#### Option 1
 
 1. Click **Execute Migration Scripts** to execute migration scripts automatically.
 
@@ -54,7 +57,7 @@ Choose one of the following options to migrate database schema when necessary.
 2. Restart IDA to complete database schema migration.
 
 
-### Option 2
+#### Option 2
 
 1. Click **Download Migration Scripts** to download the migration scripts and send the migration scripts SQL file to DBA to execute them manually.
 
@@ -63,7 +66,7 @@ Choose one of the following options to migrate database schema when necessary.
 
 2. After migration scripts are exectued manually, restart IDA to complete database schema migration.
 
-## Step 3: Update IDA BAW Toolkit
+### Step 3: Update IDA BAW Toolkit
 
 To update the IDA BAW Toolkit, take the following steps:
 
