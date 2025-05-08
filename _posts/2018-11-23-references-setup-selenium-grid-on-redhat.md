@@ -77,6 +77,16 @@ google-chrome --version
 google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
+## Install Firefox by YUM repository
+
+```
+## Install Fire by YUM repository
+yum install firefox -y
+
+## Check Firefox version
+firefox --version
+```
+
 ## Install specific Firefox version for testing
 
 Search Firefox install package by version from [http://ftp.mozilla.org/pub/firefox/releases/](http://ftp.mozilla.org/pub/firefox/releases/). We suggest to install the latest version of Firefox.
