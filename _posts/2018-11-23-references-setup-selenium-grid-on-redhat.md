@@ -109,6 +109,8 @@ sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 ## Firefox Dependency
 yum install gtk3 -y
 yum install alsa-lib -y
+yum install mozilla-filesystem -y
+yum install redhat-indexhtml -y
 
 ## Check Firefox version
 firefox --version
