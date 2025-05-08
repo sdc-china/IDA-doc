@@ -78,9 +78,8 @@ gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
 
-## Install google chrome
+## Install Chrome by YUM repository
 yum install google-chrome-stable
-
 
 ## Check Chrome version
 google-chrome --version
