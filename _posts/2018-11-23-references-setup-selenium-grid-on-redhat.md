@@ -52,7 +52,7 @@ gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
 
 ## Install Chrome by YUM repository
-yum install google-chrome-stable
+yum install google-chrome-stable -y
 
 ## Check Chrome version
 google-chrome --version
