@@ -7,37 +7,6 @@ last_modified_at: 2020-10-27 15:39:00
 
 # Setup Selenium Grid on RedHat
 
-## Install specific Chrome version for testing
-
-Search Chrome install package by version from [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json). We suggest to install the latest version of Chrome.
-
-Use Chrome v134.0.6998.165 as example:
-
-```
-## Unlink previous version of Chrome
-unlink /usr/bin/google-chrome
-
-## Download Chrome installation package
-wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chrome-linux64.zip
-
-## Uncompress installation package to /usr/local/ folder
-unzip chrome-linux64.zip -d /usr/local/
-
-## Create link for Chrome binary file
-sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
-
-## Chrome Dependencies for Redhat 8.10
-yum install at-spi2-atk -y
-yum install mesa-libgbm -y
-yum install alsa-lib -y
-
-## Check Chrome version
-google-chrome --version
-
-## Test Chrome
-google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
-```
-
 ## Install stable version Chrome by YUM repository
 
 ```
@@ -69,6 +38,37 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
 ## Install Chrome by RPM
 yum -y localinstall google-chrome-stable_current_x86_64.rpm
+
+## Check Chrome version
+google-chrome --version
+
+## Test Chrome
+google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+```
+
+## Install specific Chrome version for testing
+
+Search Chrome install package by version from [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json). We suggest to install the latest version of Chrome.
+
+Use Chrome v134.0.6998.165 as example:
+
+```
+## Unlink previous version of Chrome
+unlink /usr/bin/google-chrome
+
+## Download Chrome installation package
+wget https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chrome-linux64.zip
+
+## Uncompress installation package to /usr/local/ folder
+unzip chrome-linux64.zip -d /usr/local/
+
+## Create link for Chrome binary file
+sudo ln -s /usr/local/chrome-linux64/chrome /usr/bin/google-chrome
+
+## Chrome Dependencies for Redhat 8.10
+yum install at-spi2-atk -y
+yum install mesa-libgbm -y
+yum install alsa-lib -y
 
 ## Check Chrome version
 google-chrome --version
