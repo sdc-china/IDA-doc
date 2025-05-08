@@ -65,7 +65,31 @@ google-chrome --version
 google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
-## Install Latest Chrome by RPM
+## Install stable Chrome by YUM repository
+
+```
+## Create google-chrome.repo file
+cat > /etc/yum.repos.d/google-chrome.repo<< EOF
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+EOF
+
+## Install google chrome
+yum install google-chrome-stable
+
+
+## Check Chrome version
+google-chrome --version
+
+## Test Chrome
+google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+```
+
+## Install stable version Chrome by RPM
 
 ```
 ## Download latest Chrome RPM installation package
@@ -80,6 +104,7 @@ google-chrome --version
 ## Test Chrome
 google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
+
 
 ## Setup Selenium Grid Server
 
