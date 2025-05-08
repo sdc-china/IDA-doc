@@ -38,7 +38,7 @@ google-chrome --version
 google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
-## Install stable Chrome by YUM repository
+## Install stable version Chrome by YUM repository
 
 ```
 ## Create google-chrome.repo file
