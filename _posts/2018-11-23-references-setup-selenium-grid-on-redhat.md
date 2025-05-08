@@ -7,33 +7,6 @@ last_modified_at: 2020-10-27 15:39:00
 
 # Setup Selenium Grid on RedHat
 
-## Install specific Firefox version for testing
-
-Search Firefox install package by version from [http://ftp.mozilla.org/pub/firefox/releases/](http://ftp.mozilla.org/pub/firefox/releases/). We suggest to install the latest version of Firefox.
-
-Use Firefox v137.0.1 as example:
-
-```
-## Unlink previous version of Firefox
-unlink /usr/bin/firefox
-
-## Download Firefox installation package
-wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
-
-## Uncompress installation package to /usr/local/ folder
-tar xvf firefox-137.0.1.tar.xz -C /usr/local/
-
-## Create link for Firefox binary file
-sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
-
-## Firefox Dependency
-yum install gtk3 -y
-yum install alsa-lib -y
-
-## Check Firefox version
-firefox --version
-```
-
 ## Install specific Chrome version for testing
 
 Search Chrome install package by version from [https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json). We suggest to install the latest version of Chrome.
@@ -104,6 +77,32 @@ google-chrome --version
 google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
+## Install specific Firefox version for testing
+
+Search Firefox install package by version from [http://ftp.mozilla.org/pub/firefox/releases/](http://ftp.mozilla.org/pub/firefox/releases/). We suggest to install the latest version of Firefox.
+
+Use Firefox v137.0.1 as example:
+
+```
+## Unlink previous version of Firefox
+unlink /usr/bin/firefox
+
+## Download Firefox installation package
+wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
+
+## Uncompress installation package to /usr/local/ folder
+tar xvf firefox-137.0.1.tar.xz -C /usr/local/
+
+## Create link for Firefox binary file
+sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
+
+## Firefox Dependency
+yum install gtk3 -y
+yum install alsa-lib -y
+
+## Check Firefox version
+firefox --version
+```
 
 ## Setup Selenium Grid Server
 
