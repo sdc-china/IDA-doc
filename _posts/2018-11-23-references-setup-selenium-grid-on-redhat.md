@@ -7,31 +7,43 @@ last_modified_at: 2020-10-27 15:39:00
 
 # Setup Selenium Grid on RedHat
 
-## Install specific Firefox version for testing
-
-Search Firefox install package by version from [http://ftp.mozilla.org/pub/firefox/releases/](http://ftp.mozilla.org/pub/firefox/releases/). We suggest to install the latest version of Firefox.
-
-Use Firefox v137.0.1 as example:
+## Install stable version Chrome by YUM repository
 
 ```
-## Unlink previous version of Firefox
-unlink /usr/bin/firefox
+## Create google-chrome.repo file
+cat > /etc/yum.repos.d/google-chrome.repo<< EOF
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+EOF
 
-## Download Firefox installation package
-wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
+## Install Chrome by YUM repository
+yum install google-chrome-stable -y
 
-## Uncompress installation package to /usr/local/ folder
-tar xvf firefox-137.0.1.tar.xz -C /usr/local/
+## Check Chrome version
+google-chrome --version
 
-## Create link for Firefox binary file
-sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
+## Test Chrome
+google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+```
 
-## Firefox Dependency
-yum install gtk3 -y
-yum install alsa-lib -y
+## Install stable version Chrome by RPM
 
-## Check Firefox version
-firefox --version
+```
+## Download latest Chrome RPM installation package
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+
+## Install Chrome by RPM
+yum -y localinstall google-chrome-stable_current_x86_64.rpm
+
+## Check Chrome version
+google-chrome --version
+
+## Test Chrome
+google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
 ## Install specific Chrome version for testing
@@ -65,20 +77,43 @@ google-chrome --version
 google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 ```
 
-## Install Latest Chrome by RPM
+## Install Firefox by YUM repository
 
 ```
-## Download latest Chrome RPM installation package
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+## Install Fire by YUM repository
+yum install firefox -y
 
-## Install Chrome by RPM
-yum -y localinstall google-chrome-stable_current_x86_64.rpm
+## Check Firefox version
+firefox --version
+```
 
-## Check Chrome version
-google-chrome --version
+## Install specific Firefox version for testing
 
-## Test Chrome
-google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+Search Firefox install package by version from [http://ftp.mozilla.org/pub/firefox/releases/](http://ftp.mozilla.org/pub/firefox/releases/). We suggest to install the latest version of Firefox.
+
+Use Firefox v137.0.1 as example:
+
+```
+## Unlink previous version of Firefox
+unlink /usr/bin/firefox
+
+## Download Firefox installation package
+wget http://ftp.mozilla.org/pub/firefox/releases/137.0.1/linux-x86_64/en-US/firefox-137.0.1.tar.xz
+
+## Uncompress installation package to /usr/local/ folder
+tar xvf firefox-137.0.1.tar.xz -C /usr/local/
+
+## Create link for Firefox binary file
+sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
+
+## Firefox Dependency
+yum install gtk3 -y
+yum install alsa-lib -y
+yum install mozilla-filesystem -y
+yum install redhat-indexhtml -y
+
+## Check Firefox version
+firefox --version
 ```
 
 ## Setup Selenium Grid Server
