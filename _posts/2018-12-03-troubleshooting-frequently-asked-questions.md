@@ -169,6 +169,9 @@ If the first stage is PS, then you cannot add a snapshot step, and only offline 
       6. Check **"Test"** feature by importing and executing sample test project (https://sdc-china.github.io/IDA-doc/test/test-import-execute-sample-test-project.html).
       7. Check **"Checkstyle"** feature by analyzing sample BAW application (https://sdc-china.github.io/IDA-doc/checkstyle/checkstyle-analyze-workflow-projects-with-checkstyle.html).
 
+44. Deployment using pipeline fails, and the log shows "Exception was thrown when execute the ssh command: mkdir -p /tmp exception message: Auth fail"?
+    - Answer: This is because the configured SSH user does not have permission to create a directory. Please give the user appropriate permissions.
+
 
 [add-permission-1]: ../images/references/add-permission-1.png
 [loginbpmoc]: ../images/references/loginbpmoc.png
