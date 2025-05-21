@@ -103,7 +103,7 @@ You can add a group command when you want to add some steps that belong to this 
     * Click **Delete** to delete it.
     * Click the **Exit Edit** button.
 
-    ![][test_case_steps_edit]{:width="100%"}
+    ![][test_case_steps_edit]{:width="60%"}
 
 2. Click the ![][test_group_command_delete_button] button on the right of the group command name.
 
@@ -122,7 +122,7 @@ You can add a group command when you want to add some steps that belong to this 
 2. Bind the group parameter for the case step parameter.
 
     * Click the **Edit** button to edit the case step.
-      ![][test_case_step_edit_button]{:width="100%"}
+      ![][test_case_step_edit_button]{:width="60%"}
     * Choose the parameter value from the select box.
     * Click the **Save** button to save the parameter.
 
