@@ -28,7 +28,7 @@ Navigate to **Hiring Sample** -> **Create Position Request CSHS** -> **Case1** t
 
    ![][test_group_command_caselist_table2]{:width="80%"}
 
-7. Click the **Save as Group Command** button.
+7. Click the **Group** button in the right-click context menu.
 
 8. Fill in the group command name and description in the form.
 
@@ -46,8 +46,9 @@ Navigate to **Hiring Sample** -> **Create Position Request CSHS** -> **Case1** t
 
 **Notes:**
 You can also add a group command through the custom command menu.
-![][test_group_command_add]{:width="30%"}<br>
-![][test_group_command_create]{:width="60%"}
+
+   ![][test_group_command_add]{:width="30%"}<br>
+   ![][test_group_command_create]{:width="60%"}
 
 ## Add a Group Command
 
