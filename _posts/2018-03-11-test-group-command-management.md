@@ -56,7 +56,7 @@ You can add a group command when you want to add some steps that belong to this 
 
 1. Click the **Edit** button on the right of the suite name.
 
-2. Click the ![][test_case_step_add_button] button in the operation column of the case step list table where you want to reuse a group command.
+2. Click the ![][test_case_step_add_button] button in the right-click context menu of the case step list table where you want to reuse a group command.
 
 3. Fill out the add case step form according to the table below.
 
@@ -66,9 +66,7 @@ You can add a group command when you want to add some steps that belong to this 
    Assignee | Workflow user who helps you finish the process
    Comment | Comment on the command
 
-   ![][test_group_command_add]{:width="30%"}
-
-4. Click the **Add** button.
+4. Click the **Insert** button.
 
 5. Click the **Exit Edit** button.
 
@@ -103,7 +101,7 @@ You can add a group command when you want to add some steps that belong to this 
     * Click **Delete** to delete it.
     * Click the **Exit Edit** button.
 
-    ![][test_case_steps_edit]{:width="60%"}
+    ![][test_case_steps_edit]{:width="50%"}
 
 2. Click the ![][test_group_command_delete_button] button on the right of the group command name.
 
@@ -112,7 +110,7 @@ You can add a group command when you want to add some steps that belong to this 
 1. Define the group parameter for the group command.
 
     * Click **Group Command** in the left-side menu bar.
-    * Click the **Parameter** button on the top right of the group command page.
+    * Click the **Edit** button on the top right of the group command page.
     * Enter the group parameter key and display name in the group parameter page.
     * Click the **Add** button to add the group parameter.
     * Click the **Cancel** button to exit.
@@ -122,7 +120,7 @@ You can add a group command when you want to add some steps that belong to this 
 2. Bind the group parameter for the case step parameter.
 
     * Click the **Edit** button to edit the case step.
-      ![][test_case_step_edit_button]{:width="60%"}
+      ![][test_case_step_edit_button]{:width="50%"}
     * Choose the parameter value from the select box.
     * Click the **Save** button to save the parameter.
 
