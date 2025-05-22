@@ -2,7 +2,7 @@
 title: "Checkstyle Report"
 category: checkstyle
 date: 2018-04-05 15:17:55
-last_modified_at: 2019-07-29 15:29:00
+last_modified_at: 2025-05-22 15:29:00
 ---
 
 # Checkstyle Report
@@ -47,7 +47,6 @@ If you have fixed a warning, you can hover the mouse over the row and click the 
 
 ![][checkstyle_checkresultDetailed]{:width="100%"}
 
-![][checkstyle_checkresultDetailed_refresh]{:width="100%"}
 
 [checkstyle_healthScore]: ../images/checkstyle/checkstyle_healthScore.PNG
 [checkstyle_basicInfo]: ../images/checkstyle/checkstyle_basicInfo.PNG
@@ -55,4 +54,3 @@ If you have fixed a warning, you can hover the mouse over the row and click the 
 [checkstyle_statistic]: ../images/checkstyle/checkstyle_statistic.PNG
 [checkstyle_category]: ../images/checkstyle/checkstyle_category.PNG
 [checkstyle_checkresultDetailed]: ../images/checkstyle/checkstyle_checkresultDetailed.PNG
-[checkstyle_checkresultDetailed_refresh]: ../images/checkstyle/checkstyle_checkresultDetailed_refresh.PNG

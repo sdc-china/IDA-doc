@@ -2,7 +2,7 @@
 title: "Analyzer - Toolkit References Report"
 category: analyzer
 date: 2018-06-07 14:17:55
-last_modified_at: 2019-11-26 14:50:00
+last_modified_at: 2025-05-22 14:50:00
 ---
 
 # Analyzer - Toolkit References Report
@@ -12,23 +12,23 @@ last_modified_at: 2019-11-26 14:50:00
 
 After finishing the toolkit references analysis, the basic information for this application will be displayed in this section, including app name, branch, snapshot, and report date. See the following screenshot.
 
-![][analyzer_toolkit_references_report_title]
+![][analyzer_toolkit_references_report_title]{:width="60%"}
 
 ## References
 
 This part shows the references of the current process application, the item above the arrow is the name of the current process application/toolkit, the items in the direction indicated by the arrow are the dependencies of the current process application, you can see the toolkit version after the toolkit name. The items can be clicked to filter the References table.
 
-![][analyzer_toolkit_references_report_references]
+![][analyzer_toolkit_references_report_references]{:width="100%"}
 
 Unused toolkits are in gray color and cannot be clicked.
 
-![][analyzer_toolkit_references_report_references_unused]
+![][analyzer_toolkit_references_report_references_unused]{:width="100%"}
 
 ## References Table
 
 This table shows the details of the toolkit references in the current process application.
 
-![][analyzer_toolkit_references_report_references_table]
+![][analyzer_toolkit_references_report_references_table]{:width="100%"}
 
 |   Column                    | Description               |
 | --------------------------- |---------------------------|
@@ -42,13 +42,13 @@ This table shows the details of the toolkit references in the current process ap
 
 When you analyze a toolkit, this part will be displayed. This part shows the applications using the current toolkit, the item below the arrow is the name of the current toolkit, the applications using the current toolkit are displayed at the beginning of the arrow.
 
-![][analyzer_toolkit_references_report_referenced_by]
+![][analyzer_toolkit_references_report_referenced_by]{:width="100%"}
 
 ## Referenced By Table (Toolkit Only)
 
 When you analyze a toolkit, this part will be displayed. This table shows the referenced by details of the current toolkit.
 
-![][analyzer_toolkit_references_report_referenced_by_report]
+![][analyzer_toolkit_references_report_referenced_by_report]{:width="100%"}
 
 |   Column                    | Description               |
 | --------------------------- |---------------------------|
