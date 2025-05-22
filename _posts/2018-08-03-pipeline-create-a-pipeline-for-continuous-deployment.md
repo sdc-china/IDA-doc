@@ -82,9 +82,18 @@ On the pipeline list page, click the ![][pipeline_delete_icon] button.
 
 ## Run a pipeline
 
-1. You have two ways to run the pipeline. Firstly, click the **Run** button at the top right corner of the pipeline section. Secondly, enter the pipeline dashboard page and click the **Build** button.
+1. You have two ways to run the pipeline. Firstly, click the pipeline **Run** button on the pipeline list page. Secondly, enter the pipeline dashboard page and click the **Build** button.
 
     ![][pipeline_dashboard]
+
+    When you run the pipeline, you can select another process app/snapshot to run.
+
+    ![][pipeline_build_snapshot]
+
+    You can also schedule deployment time for any deployment step.
+
+    ![][pipeline_build_schedule_deployment]
+
 
     In the statistics section, you could view the average time for each build step and the ratio of completed pipeline builds.
 
@@ -154,3 +163,5 @@ IDA only supports deploying applications from a Workflow PC server to a PC serve
   [p2p_takeSnapshot]: ../images/pipeline/p2p_takeSnapshot.png
   [p2p_stage2]: ../images/pipeline/p2p_stage2.png
   [p2p_deployment]: ../images/pipeline/p2p_deployment.png
+  [pipeline_build_snapshot]: ../images/pipeline/pipeline_build_snapshot.png
+  [pipeline_build_schedule_deployment]: ../images/pipeline/pipeline_build_schedule_deployment.png

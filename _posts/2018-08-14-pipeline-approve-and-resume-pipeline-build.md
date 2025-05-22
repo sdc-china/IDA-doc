@@ -24,9 +24,16 @@ If a pipeline build is pending on a build stage, stage approvers can approve or 
 2. When a pipeline build is pending on the build stage, one of the approvers can **approve** or **reject** this build by clicking the **...** button of this build.
  ![][pipeline-pending-for-approval]
 3. If the approver approves the build stage, the build will continue to run.
- ![][pipeline-approve-build]
+   
+   ![][pipeline-approve-build]
+   
+   When approving a build, you can also reschedule deployment time for any following deployment steps.
+
+   ![][pipeline-approve-build-schedule-deployment]
+
 4. If the approver rejects the build stage, the build will be terminated.
- ![][pipeline-reject-build]
+ 
+   ![][pipeline-reject-build]
 
 
 ## Resume on Deployment Build Step
@@ -64,3 +71,4 @@ If a pipeline build is pending on a deployment build step due to a missing custo
 [pipeline-confirm-to-resume]: ../images/pipeline/pipeline-confirm-to-resume.png
 [pipeline-cancel-pending-step-build]: ../images/pipeline/pipeline-cancel-pending-step-build.png
 [pipeline-confirm-cancel-pending-build]: ../images/pipeline/pipeline-confirm-cancel-pending-build.png
+[pipeline-approve-build-schedule-deployment]: ../images/pipeline/pipeline-approve-build-schedule-deployment.png
