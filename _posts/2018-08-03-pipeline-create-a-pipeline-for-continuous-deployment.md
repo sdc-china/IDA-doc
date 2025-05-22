@@ -70,7 +70,7 @@ last_modified_at: 2024-09-26 10:00:00
 
 ## Edit a pipeline
 
-1. On the pipeline list page, click the ![][pipeline_edit_icon] button.
+1. On the pipeline list page, click the pipeline Edit button.
 
     ![][pipeline_build]
 
