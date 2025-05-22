@@ -14,7 +14,7 @@ last_modified_at: 2023-03-01 15:22:00
 
 2. Go to the **Settings** configuration page under **Administration**.
 
-3. Type your Gatling installation path in **Gatling Home Path**.
+3. Type your Gatling installation path in **Gatling Home Path** or click **Download Gatling** to download the galting executable.
 
    ![][gatling_home]{:width="80%"}
 
@@ -36,17 +36,17 @@ last_modified_at: 2023-03-01 15:22:00
 
 4. Click **_Hring Sample**  from the project list and enter the project dashboard.
 
-   ![][test_hiring_sample_project]
+   ![][test_hiring_sample_project]{:width="60%"}
 
-   The default sample project contains two suites: **Create Position Request CSHS** and **Standard HR Open New Position**.
+   The default sample project contains some test suites, e.g. **Create Position Request CSHS** and **Standard HR Open New Position**.
 
-   ![][test_import_left_side_bar]
+   ![][test_import_left_side_bar]{:width="60%"}
 
 ## Edit Engine Properties
 
 1. Click the **Edit** button to edit the project.
 
-   ![][edit_project]
+   ![][edit_project]{:width="60%"}
 
 2. Click **Advance** and type the following parameter in **Engine Properties**:
 
@@ -89,11 +89,9 @@ last_modified_at: 2023-03-01 15:22:00
 
 3. Click the **Run** button to start the load test.
 
-4. After the load test finishes, click the small arrow next to the **Load Test** button, and switch the option to **View Report**.
+4. After the load test finishes, switch to view **Performance Report**.
 
    ![][switch_to_view_report]
-
-5. Click the **View Report** button to see the Load Test Report.
 
    ![][view_load_test_report]
 
