@@ -2,7 +2,7 @@
 title: "Search Workflow Projects"
 category: search
 date: 2018-07-01 15:17:55
-last_modified_at: 2022-07-01 15:26:00
+last_modified_at: 2025-05-23 15:26:00
 ---
 
 # Search Workflow Projects
@@ -14,7 +14,7 @@ last_modified_at: 2022-07-01 15:26:00
 
    **Use online configuration**, fill in the below field values on the online tab.
 
-   ![][search_online_form]
+   ![][search_online_form]{:height="100%" width="100%"}
    
    |   Parameter   | Description    |
    | ------------- |----------------|
@@ -27,13 +27,13 @@ last_modified_at: 2022-07-01 15:26:00
 
    **Upload a TWX file**, choose the Offline tab.
 
-   ![][search_offline_form]{:height="80%" width="80%"}
+   ![][search_offline_form]{:height="100%" width="100%"}
 
    You can choose or drop a TWX file.
 
 2. Enter keywords to search, for example, variable name "tw.local.requisition" and click the **Search** Button to search for the variable usage.
 
-   ![][search_keyword]
+   ![][search_keyword]{:height="100%" width="100%"}
 
    You can configure the search depth of Coach/Coach View on [Settings][2].
 
@@ -41,17 +41,17 @@ last_modified_at: 2022-07-01 15:26:00
 
 4. Search results are listed on the page and can be filtered using the Properties Filter or Artifact Type Filter. Entries show the WebPD location of the search results.
 
-   ![][search_results]
+   ![][search_results]{:height="100%" width="100%"}
 
 5. Click to expand each search result entry to show the actual content of the search result. Keywords are highlighted in yellow in the result content.
 
-   ![][search_results_content]
+   ![][search_results_content]{:height="100%" width="100%"}
 
 ## Cleaning up the exported search folders
 
 You can clean up the exported and indexed search data folders on the Clean Disk Cache page under Administration.
 
-![][search_folder_cleanup]
+![][search_folder_cleanup]{:height="100%" width="100%"}
 
 [search_online_form]: ../images/search/search_online_form.PNG
 [search_offline_form]: ../images/search/search_offline_form.PNG
