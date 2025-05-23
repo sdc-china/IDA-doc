@@ -2,7 +2,7 @@
 title: "Compare Snapshots"
 category: snapshot-comparison
 date: 2018-05-01 15:17:55
-last_modified_at: 2024-12-03 18:00:00
+last_modified_at: 2025-05-23 18:00:00
 ---
 
 # Compare Snapshots
@@ -21,30 +21,30 @@ Snapshot Comparison allows users to compare two snapshots of a process app or to
 	 Toolkit               |Toolkits of the selected server.
 		 
 	 
-    ![][snapshot-comparison-form]
+    ![][snapshot-comparison-form]{width="100%"}
 	 
 3. After the form is filled in, the history that meets the conditions will be automatically loaded. You can also click the **Reload** button to reload. 
 
-    ![][history]
+    ![][history]{width="100%"}
 	
 4. After checking, you can click the **Delete** button to delete.
 
-    ![][history-delete]
+    ![][history-delete]{width="100%"}
 	
 
 ## Compare Snapshots
 
  1. Click **Compare** button, select the two snapshots you want to compare, then click the **Generate Report** button.
 
-    ![][snapshot-comparison-compare-button]
+    ![][snapshot-comparison-compare-button]{width="80%"}
 
  2. Wait for the process to finish.
  
-    ![][snapshot-comparison-compare-report-waiting]
+    ![][snapshot-comparison-compare-report-waiting]{width="100%"}
 	
  3. After finishing, the button ![][snapshot-comparison-compare-pre-report-icon] will appear. Click it to see the compared report.
 	
-    ![][snapshot-comparison-compare-report-link]
+    ![][snapshot-comparison-compare-report-link]{width="100%"}
     
 
 
