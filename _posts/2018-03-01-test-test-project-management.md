@@ -52,7 +52,7 @@ last_modified_at: 2019-07-26 16:23:00
   
 ### Edit a Test Project
 
-  1. Click the ![][test_project_edit_button] button on the project list page.
+  1. Click the Edit button on the project dropdown menu on project list page.
   
      ![][tutorial_project_list]
      
@@ -62,7 +62,7 @@ last_modified_at: 2019-07-26 16:23:00
    
 ### Delete a Test Project
 
-  Click the ![][test_project_delete_button] button on the project list page.
+  Click the Delete button on the project dropdown menu on project list page.
   
      
 

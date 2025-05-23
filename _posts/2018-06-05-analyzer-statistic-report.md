@@ -2,7 +2,7 @@
 title: "Analyzer - Statistical Report"
 category: analyzer
 date: 2018-06-05 14:17:55
-last_modified_at: 2019-11-26 14:50:00
+last_modified_at: 2025-05-22 14:50:00
 ---
 
 # Analyzer - Statistical Report
@@ -12,20 +12,20 @@ last_modified_at: 2019-11-26 14:50:00
    
    After finishing the statistical analysis, the basic information for this application will be displayed in this section, including process application details, specific information of branch and snapshot. More details, see the following screenshot.
 
-   ![][basic_info]
+   ![][basic_info]{:width="100%"}
 
   
 ## Dependencies
 
    This part shows the dependencies of the current process application. The item above the arrow is the name of the current process application, and the items in the direction indicated by the arrow are the dependencies of the current process application. You can see the toolkit version after the toolkit name. 
 
-   ![][dependencies]
+   ![][dependencies]{:width="100%"}
 
 ## Artifacts Summary
 
    The number on the right of the BPMN artifact summary indicates the number of applications applied to the left artifact. In this diagram, we can get the number of Processes, Services, Business Objects, and Coach Views, as well as the number of each component under them.
 
-   ![][bpmn_artifacts_summary]
+   ![][bpmn_artifacts_summary]{:width="100%"}
 
 ## Artifacts Statistics
 
@@ -35,7 +35,7 @@ last_modified_at: 2019-11-26 14:50:00
    - In the Business Object table, we can view the number of properties of each business object.
    - In the Coach View table, we can view the number of coach resources, coach views, options, and inline scripts.
 
-   ![][bpmn_artifacts_statistic]
+   ![][bpmn_artifacts_statistic]{:width="100%"}
 
 ## BAW Migration Relevant Statistics
    As we know, there are some features/artifacts that are deprecated since BAW v19 or BAW on Container. In this section, we list all the impacted artifacts during BAW migration and migration suggestions. For example:
@@ -46,21 +46,21 @@ last_modified_at: 2019-11-26 14:50:00
    - In the Coach v8.x and Coach v7.x tables, we can view the number of deprecated coach controls in Coach UI.
    - In the Ajax In Coach table, we can view all Ajax services used in deprecated coach controls, whose signature will be changed in the latest BAW UI toolkit.
 
-   ![][migrate]
+   ![][migrate]{:width="100%"}
 
-   ![][migrate_container]
+   ![][migrate_container]{:width="100%"}
 
 ## Unused Artifacts Statistics
    
    Analyzer lists all the unused artifacts in the application.
 
-   ![][unused_artifacts]
+   ![][unused_artifacts]{:width="100%"}
 
 ## Validation Statistics
    
    Analyzer lists all the validation errors or warnings of the application.
 
-   ![][validation]
+   ![][validation]{:width="100%"}
 
 
 [basic_info]: ../images/analyzer/basic_info.PNG

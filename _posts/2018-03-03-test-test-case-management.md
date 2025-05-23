@@ -22,7 +22,7 @@ last_modified_at: 2019-07-26 16:24:00
 
 ## Create a Test Case
 
-1. Click the **+** button on the right of the suite name.
+1. Click the **Create Test Case** button on the dropdown menu of the suite name.
 
     ![][test_unit_test_suite_list]
      
@@ -30,7 +30,7 @@ last_modified_at: 2019-07-26 16:24:00
 
     ![][test_unit_test_case_add_form]{:width="60%"}
   
-3. Click the **Add** button. You can see the new test case shown in the left-side menu bar. When your mouse hovers over the ![][test_unit_test_case_info_button] button, you can see the description of the test case.
+3. Click the **Save** button. You can see the new test case shown in the left-side menu bar. When your mouse hovers over the test case name, you can see the description of the test case.
 
      ![][test_unit_test_case]{:width="100%"}
 
@@ -38,7 +38,7 @@ last_modified_at: 2019-07-26 16:24:00
 
 ### Edit Test Suite Info
 
-  1. Click the ![][test_group_command_edit_button] button on the right of the suite name.
+  1. Click the **Edit** button on the dropdown menu of the suite name.
 
      ![][test_unit_test_suite_list]
     
@@ -48,7 +48,7 @@ last_modified_at: 2019-07-26 16:24:00
 
 ### Edit Test Case Info
 
-  1. Click the ![][test_group_command_edit_button] button on the right of the case name.
+  1. Click the Edit button on the right of the case name.
   
      ![][test_unit_test_case_list]
      
@@ -196,7 +196,7 @@ A group test case means you could run more than one test case sequentially at a 
   	
      ![][build_from_scratch]{:width="80%"}
 
-  3. In the left-side menu bar, click the **+** button on the right of the **MyGroupTestCases** test suite, then select **Create Group Test Case**.
+  3. In the left-side menu bar, click the **...** button on the right of the **MyGroupTestCases** test suite, then select **Create Group Test Case**.
   	
      ![][create_group_test_case]
 

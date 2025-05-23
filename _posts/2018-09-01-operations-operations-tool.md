@@ -2,7 +2,7 @@
 title: "Operations Tool"
 category: operations
 date: 2018-09-01 15:17:55
-last_modified_at: 2022-10-28 16:16:00
+last_modified_at: 2025-05-23 16:16:00
 ---
 
 # Operations Tool
@@ -31,13 +31,13 @@ In this task, you will use the Workflow operations tools to manage instances: se
 
   3. Click the **Search** button, you will see the instance table as the search result.
 
-     ![][op_search_instance]
+     ![][op_search_instance]{:width="100%"}
 
 ## Migrate Instance
 
   1. Select one or more instances in the search result table, choose a target snapshot from the **Migrate Instance to** drop-down list, then click the **Migrate** button.
 
-     ![][op_migrate_instance]   
+     ![][op_migrate_instance]{:width="100%"}   
 
   2. As a result, the instance is migrated from the source snapshot (snapshot selected in the search form) to the target snapshot (snapshot selected in the **Migrate Instances** drop-down list).
 
@@ -45,36 +45,36 @@ In this task, you will use the Workflow operations tools to manage instances: se
 
   1. Locate the instance row, then click the **Update Task Data** icon in the **Operations** column.  
 
-     ![][op_click_update_task_data]   
+     ![][op_click_update_task_data]{:width="100%"}      
 
   2. In the pop-up window, select the **Task** name. The task information is retrieved from the instance details.
   3. Select the **Variable** name. The variable information is retrieved from the task selected above.
   4. Once the **Variable** is selected, the **Task Data** is retrieved. You can update the task data, then click the **Update Data** button to update the task data.  
 
-      ![][op_update_task_data_form]   
+      ![][op_update_task_data_form]{:width="60%"}   
 
 ## Finish Task
 
   1. Locate the instance row, then click the **Update Task Data** icon in the **Operations** column.  
 
-      ![][op_click_update_task_data]
+      ![][op_click_update_task_data]{:width="100%"}      
 
   2. In the pop-up window, select the **Task** name. The task information is retrieved from the instance details.
   3. Select the **Variable** name. The variable information is retrieved from the task selected above.
   4. Once the **Variable** is selected, the **Task Data** is retrieved. You can update the task data, then click the **Finish Task** button to update the task data and finish the task.
 
-      ![][op_update_task_data_form]
+      ![][op_update_task_data_form]{:width="60%"}   
 
 ## Move Token
 
   1. Locate the instance row, then click the **Move Token** icon in the **Operations** column.  
 
-       ![][op_click_update_task_data]
+       ![][op_click_update_task_data]{:width="100%"}  
 
   2. In the pop-up window, select the **Token** name. The token information is retrieved from the instance details.
   3. Select the **Target Step** name, then click the **Move Token** button to move the instance token to the target step.   
 
-       ![][op_move_token_form]  
+       ![][op_move_token_form]{:width="60%"}     
 
 
 ## Clean Snapshot
@@ -87,15 +87,15 @@ In this task, you will use the Workflow operations tools to manage instances: se
 
   4. In the result table, select any named snapshots and click **Delete** to clean the snapshot. Or click **Cleanup Unnamed Snapshots** to clean up all unnamed snapshots.
       
-     ![][op_clean_snapshot]
+     ![][op_clean_snapshot]{:width="100%"}  
 
   5. Confirm whether you want to clean up all completed tasks.
 
-     ![][op_clean_snapshot_confirm]
+     ![][op_clean_snapshot_confirm]{:width="100%"}  
 
   6. After the snapshot is deleted, a success message is shown.
 
-     ![][op_clean_snapshot_success]
+     ![][op_clean_snapshot_success]{:width="100%"}  
 
 [op_search_instance]: ../images/operation/operation_search_instance.PNG
 [op_migrate_instance]: ../images/operation/operation_migrate_instance.PNG
