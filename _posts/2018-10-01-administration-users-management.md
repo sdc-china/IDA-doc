@@ -2,7 +2,7 @@
 title: "Users Management"
 category: administration
 date: 2018-10-01 15:17:55
-last_modified_at: 2024-11-04 12:00:00
+last_modified_at: 2025-05-26 12:00:00
 ---
 
 # Users Management
@@ -23,7 +23,7 @@ last_modified_at: 2024-11-04 12:00:00
 
      Permissions for each role are shown in the following figure:
 
-     ![][administrator_role_permission]{:width="80%"}
+     ![][administrator_role_permission]{:width="100%"}
 
      **Note:**
 
@@ -31,12 +31,12 @@ last_modified_at: 2024-11-04 12:00:00
 
   4. Click the **Reset Password** button to reset the password of a user. The default password is **123456**.
 
-     ![][administrator_reset_password]{:width="80%"} 
+     ![][administrator_reset_password]{:width="100%"} 
 
 ## Edit a User
   1. Click the **Edit** icon on the right of the user you want to edit.
 
-     ![][administrator_edit_user]{:width="80%"}
+     ![][administrator_edit_user]{:width="100%"}
 
   2. Change the roles of the user. Then click **Save**.
 
@@ -44,7 +44,7 @@ last_modified_at: 2024-11-04 12:00:00
 
    Select users in the **Users Management** table, then click the **Activate** button to activate the selected inactive users. And click the **Deactivate** button to deactivate the selected active users.
 
-   	![][administrator_active_user]{:width="80%"}
+   	![][administrator_active_user]{:width="100%"}
 
 ## User Profile
 
@@ -54,14 +54,14 @@ last_modified_at: 2024-11-04 12:00:00
 
   2. Click the **Profile** button to get basic information about your account.
 
-     ![][administrator_profile_page]{:width="80%"}
+     ![][administrator_profile_page]{:width="100%"}
     
   3. Click the **Team** button to see which teams this user belongs to, you can also see which process apps and Selenium grids each team can access.
   
-     ![][administration_user_team]{:width="80%"}
+     ![][administration_user_team]{:width="100%"}
   4. Click the **Password** button to change your password.
 
-     ![][administrator_password]{:width="80%"}
+     ![][administrator_password]{:width="100%"}
 
 # LDAP Users Management 
 
@@ -69,7 +69,7 @@ last_modified_at: 2024-11-04 12:00:00
 
   2. A user with the admin role could 'Add', 'Deactivate', and 'Activate' users from the Users Management page.
 
-     ![][ldap_user_management]{:width="80%"}
+     ![][ldap_user_management]{:width="100%"}
 
   3. A user with the admin role could edit other users' roles from the edit user modal.
 
