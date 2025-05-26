@@ -2,7 +2,7 @@
 title: "BAW Configuration"
 category: administration
 date: 2018-10-03 15:17:55
-last_modified_at: 2023-02-28 15:30:00
+last_modified_at: 2025-05-26 15:30:00
 ---
 
 # BAW Configuration
@@ -13,7 +13,7 @@ last_modified_at: 2023-02-28 15:30:00
 
   2. Click the ![][add_icon] icon on the right of **BAW Server Configuration** to add a new BAW server.
 
-  3. Fill out the form below. Then click the **Create** button. Optional fields are hidden inside the **Advanced** section. Click **Advanced** to show them.
+  3. Fill out the form below. Then click the **Create** button. Optional fields are hidden inside the **Auth Configuration** and **SSH Configuration** section. Click **Auth Configuration** or **SSH Configuration** to show them.
 
      ![][administrator_bpmserver]{:width="60%"}
 
@@ -50,7 +50,9 @@ If you log in and get a 401 unauthorized error, please check if your function ID
 
 
 ## Delete a BAW server
-  Select the servers in the **BAW Configuration** table, then click the **delete** icon to delete the BAW server.
+  Select the servers in the **BAW Configuration** table, then click the **Delete** icon to delete the BAW server.
+  
+  ![][administrator_delete_bpm_server]{:width="100%"}
 
 ## Test a BAW server
   Select the **Test Connection** icon on the right of the BAW server that you want to test. If the test connection fails, it will pop up a warning message.
@@ -60,7 +62,7 @@ If you log in and get a 401 unauthorized error, please check if your function ID
 ## Add a user to a BAW server
   1. Click the **Manage BAW User** icon on the right. Then you can see the BAW user list for the server.
 
-     ![][administrator_edit_bpm_user]{:width="80%"}
+     ![][administrator_edit_bpm_user]{:width="100%"}
 
   2. Click the ![][add_icon] icon on the right of **BAW User Configuration**. Then fill out the form below to add a new user for the server.
 
@@ -76,7 +78,7 @@ If you log in and get a 401 unauthorized error, please check if your function ID
 
      After adding the user, you can see the user list for this BAW server.
 
-     ![][administrator_bpmuserlist]{:width="80%"}
+     ![][administrator_bpmuserlist]{:width="100%"}
 
   3. If the permission control of your BAW server is controlled by the UMS server, please add your UMS Admin user to IDA and set it as the UMS Admin user by following these steps:
 
@@ -89,7 +91,7 @@ If you log in and get a 401 unauthorized error, please check if your function ID
 **Notes:**
 Please make sure the added user exists in your selected BAW server. Also, you need to well define the **Display name** of the BAW user. You can choose the **Assignee** display name to choose a user for the test case step command.
 
-  ![][administrator_assignee]{:width="80%"}
+  ![][administrator_assignee]{:width="60%"}
 
 Moreover, you can also edit a BAW user in a similar way to editing a user.
 
@@ -124,7 +126,7 @@ If the case functions are installed by default, please refer to the default conf
 
 After adding the Case Object Store, you can see the Case Object Store configuration list for this BAW server.
 
-   ![][administrator_case_object_store_list]{:width="80%"}
+   ![][administrator_case_object_store_list]{:width="100%"}
 
 **Notes:**
 Please make sure the added Case Object Store configurations exist in your selected BAW server. Also, you need to well define the **Display name** of the Case Object Store. You can choose the **Case Object Store** display name to choose a Case Object Store configuration when you create a test project.
@@ -139,9 +141,10 @@ Moreover, you can also edit a case object store configuration in a similar way t
 [administrator_bpmuser]: ../images/administrator/administrator_bpmuser.png
 [administration_set_as_ums_admin_user]: ../images/administrator/administration_set_as_ums_admin_user.png
 [administrator_bpmuserlist]: ../images/administrator/administrator_bpmuserlist.png
-[administrator_assignee]: ../images/administrator/administrator_asignee.png
+[administrator_assignee]: ../images/administrator/administrator_assignee.png
 [add_icon]: ../images/administrator/Administrator_add_icon.png
 [administrator_edit_bpm_server]: ../images/administrator/administrator_edit_bpm_server.png
+[administrator_delete_bpm_server]: ../images/administrator/administrator_delete_bpm_server.png
 [administrator_test_bpm_server]: ../images/administrator/administrator_test_bpm_server.png
 [administrator_edit_bpm_user]: ../images/administrator/administrator_edit_bpm_user.png
 [connected_server_name]: ../images/administrator/connected_server_name.png
