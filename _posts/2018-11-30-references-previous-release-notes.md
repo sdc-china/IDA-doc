@@ -7,6 +7,27 @@ last_modified_at: 2025-03-26 16:15:00
 
 ## Previous Release Notes
 
+### 25.0.5 - 05/29/2025
+
+#### Enhancements
+- Upgrade to Bootstrap 5.
+- Keep filter status of all DataTables.
+- [Comparison] Support toolkit reference update in merge report.
+- [Administration] Allow user to view assigned Selenium Grid Configurations and test their connections.
+- [Administration] Set database schema in auto-generated Create Database Tables and Migration Database Schema SQL scripts for PostgreSQL and DB2.
+
+#### Bug Fixes
+- [Testing] Cannot open test project due to NULL pointer exception in test coverage calculation.
+- [Testing] Edit button sometimes needs to be clicked twice to edit a test case.
+- [Comparison] Cannot commit to add an artifact if it depends on toolkit in merge report.
+- [Comparison] Cannot delete and add artifacts with the same name simultaneously in merge report.
+- [Comparison] Show error message when loading diagram in a deleted snapshot in comparison report.
+- [Administration] Create Database Tables on IDA startup does not work on IDA Java 17 environment.
+
+#### Notes
+- IDA browser Plug-in is updated to version 25.1, please make sure you have installed the latest plug-in.
+
+
 ### 25.0.4 - 04/29/2025
 
 #### Enhancements
