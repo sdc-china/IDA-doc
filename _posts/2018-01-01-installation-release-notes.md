@@ -2,36 +2,40 @@
 title: "Release Notes"
 category: installation
 date: 2018-01-01 10:17:55
-last_modified_at: 2025-03-26 16:15:00
+last_modified_at: 2025-05-27 16:15:00
 ---
 
 ## Release Notes
 
-### 25.0.4 - 04/29/2025
+### 25.0.5 - 05/29/2025
 
 #### Enhancements
-- [Pipeline] Able to reschedule deployment time when approving pipeline build.
-- [Pipeline] Support scheduling/rescheduling deployment steps in group pipeline.
+- Upgrade to Bootstrap 5.
+- Keep filter status of all DataTables.
+- [Comparison] Support toolkit reference update in merge report.
+- [Administration] Allow user to view assigned Selenium Grid Configurations and test their connections.
+- [Administration] Set database schema in auto-generated Create Database Tables and Migration Database Schema SQL scripts for PostgreSQL and DB2.
 
 #### Bug Fixes
-- [Checkstyle] The characters after "//" in the URL are ignored as comments.
-- [Pipeline] Pipeline job Trigger by New Snapshot is not scheduled within Start Time and End Time of pipeline build trigger.
-- [Comparison] Auto tracked fields changes are not shown in snapshot comparison report.
-- [Comparison] Comparison results of complex type BO shows irrelevant simple type attributes.
-- [Container] Missing JVM arguments for container environment deployed by Java 17 docker image when the number of pod replicas is set to 1.
+- [Testing] Cannot open test project due to NULL pointer exception in test coverage calculation.
+- [Testing] Edit button sometimes needs to be clicked twice to edit a test case.
+- [Comparison] Cannot commit to add an artifact if it depends on toolkit in merge report.
+- [Comparison] Cannot delete and add artifacts with the same name simultaneously in merge report.
+- [Comparison] Show error message when loading diagram in a deleted snapshot in comparison report.
+- [Administration] Create Database Tables on IDA startup does not work on IDA Java 17 environment.
 
 #### Notes
-- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check new doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+- IDA browser Plug-in is updated to version 25.1, please make sure you have installed the latest plug-in.
 
 
 ## Release Components
 
 | Component Description	| Release File	| Installation instructions| 
 |:----------------|:------------------------|:---------------|
-| IDA release package for traditional web server based on Java 8(eg: Liberty, WebSphere)	| ida-25.0.4-java8.zip | [Installing IDA Application on Java 8](../installation/installation-installing-ida-application.html) |
-| IDA release package for traditional web server based on Java 17(eg: Liberty)	| ida-25.0.4-java17.zip | [Installing IDA Application on Java 17](../installation/installation-installing-ida-application-java17.html) |
-| IDA web and operator docker images based on Java 17| ida-25.0.4-java17.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
-| IDA Helm Charts for Kubernetes platform | idaweb-helm-25.0.4.tgz	| Helm Charts Repo: <https://sdc-china.github.io/ida-operator> <br/> Binary Releases: <https://github.com/sdc-china/ida-operator/releases/download/25.0.4/idaweb-helm-25.0.4.tgz> |
+| IDA release package for traditional web server based on Java 8(eg: Liberty, WebSphere)	| ida-25.0.5-java8.zip | [Installing IDA Application on Java 8](../installation/installation-installing-ida-application.html) |
+| IDA release package for traditional web server based on Java 17(eg: Liberty)	| ida-25.0.5-java17.zip | [Installing IDA Application on Java 17](../installation/installation-installing-ida-application-java17.html) |
+| IDA web and operator docker images based on Java 17| ida-25.0.5-java17.tgz	| <https://github.com/sdc-china/ida-docker> <br/> <https://github.com/sdc-china/ida-operator> |
+| IDA Helm Charts for Kubernetes platform | idaweb-helm-25.0.5.tgz	| Helm Charts Repo: <https://sdc-china.github.io/ida-operator> <br/> Binary Releases: <https://github.com/sdc-china/ida-operator/releases/download/25.0.5/idaweb-helm-25.0.5.tgz> |
 
 ## IDA Supporting Subscription Service
 1-year standard support is provided for each major release after its official release date. It's only available with IDA Supporting Subscription Service.

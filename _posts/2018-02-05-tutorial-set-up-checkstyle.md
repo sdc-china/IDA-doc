@@ -19,9 +19,9 @@ In this task, you can set up Checkstyle for the project that you created in the 
 
 Set up Checkstyle for a project:
 
-1. Click ![][tutorial_checkstyle_button] button for **Hiring Sample** in the project list page, and the report will be shown in a few seconds. The analysis of Checkstyle is asynchronous, so you could do other things while it is performing the Checkstyle analysis.
+1. Click Checkstyle button for **Hiring Sample** in the project menu to go to Checkstyle page and click Analyze button, and the report will be shown in a few seconds. The analysis of Checkstyle is asynchronous, so you could do other things while it is performing the Checkstyle analysis.
   
-   ![][tutorial_project_list]{:width="100%"}
+   ![][tutorial_checkstyle_button] {:width="100%"}
       
    Then, IDA will redirect from the **Test** to the **Checkstyle** tab.
     

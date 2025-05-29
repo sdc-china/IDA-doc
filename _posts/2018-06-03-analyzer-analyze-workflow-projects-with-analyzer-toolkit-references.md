@@ -2,7 +2,7 @@
 title: "Analyze Workflow Projects with Analyzer Toolkit References"
 category: analyzer
 date: 2018-06-03 14:17:55
-last_modified_at: 2019-11-26 14:50:00
+last_modified_at: 2025-05-22 14:50:00
 ---
 
 # Analyze Workflow Projects with Analyzer Toolkit References

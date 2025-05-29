@@ -2,7 +2,7 @@
 title: "Analyze Workflow Projects with Analyzer Statistics"
 category: analyzer
 date: 2018-06-01 14:17:55
-last_modified_at: 2022-10-28 14:50:00
+last_modified_at: 2025-05-22 14:50:00
 ---
 
 # Analyze Workflow Projects with Analyzer Statistics
@@ -14,7 +14,7 @@ last_modified_at: 2022-10-28 14:50:00
      
       **Use BAW server**, choose the statistics - online tab, fill in the field values for the analyzer statistics form below.
 
-      ![][analyzer_statistic_online]
+      ![][analyzer_statistic_online]{:width="100%"}
       
       |   Parameter   | Description    |
       | ------------- |----------------|
@@ -27,16 +27,18 @@ last_modified_at: 2022-10-28 14:50:00
       | Options       |Check "Ignore Toolkits Analysis" to skip toolkit analysis |
 
       **Upload a TWX file**, choose the statistics - offline tab.
-      
-      ![][analyzer_statistic_offline]{:width="40%"}
-
+       
+      ![][analyzer_statistic_offline]{:width="100%"}
+       
       You can choose or drag and drop a TWX file.
-
+       
+      ![][analyzer_upload_drop]{:width="40%"}
+      
       ![][analyzer_upload_done]{:width="40%"}
 
    2. Click the **Statistic Analyze** Button to see the statistics report.
 
-      ![][analyzer_report]
+      ![][analyzer_report]{:width="100%"}
 
 [analyzer_statistic_online]: ../images/analyzer/analyzer_statistic_online.png
 [analyzer_statistic_offline]: ../images/analyzer/analyzer_statistic_offline.png
