@@ -162,7 +162,7 @@ For example:
           isolationLevel="TRANSACTION_READ_COMMITTED" type="javax.sql.DataSource" transactional="true">
     <connectionManager maxPoolSize="50"/>
     <jdbcDriver libraryRef="DB2Lib"/>
-    <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.DATABASE_SCHEMA}"
+    <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.CURRENT_SCHEMA}"
                 serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}"
                 user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}"/>
    </dataSource>
@@ -210,7 +210,7 @@ For more information about encryption, please refer to [SecurityUtility Command]
 
 If the database requires an SSL connection, set it in the datasource prop, for example, for DB2:
 ```
- <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.DATABASE_SCHEMA}"
+ <properties.db2.jcc databaseName="${env.DATABASE_NAME}" currentSchema="${env.CURRENT_SCHEMA}"
                 serverName="${env.DATABASE_SERVER_NAME}" portNumber="${env.DATABASE_PORT_NUMBER}"
                 user="${env.DATABASE_USER}" password="${env.DATABASE_PASSWORD}" sslConnection="true"/>
 ```
