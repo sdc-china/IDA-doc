@@ -16,7 +16,7 @@ Field | Description
 --- | ---
 Trace Level | The value of the trace level, by default it has five levels (TRACE, DEBUG, WARN, INFO, ERROR).
 Database Version | IDA database version.
-Data Path | IDA working directory data path.
+Data Path | IDA working directory data path, it's read-only when running in a containerized environment.
 Host Name | Host name of the current IDA instance.
 Enable LDAP Authentication | Login to IDA with LDAP configuration.
 URL | LDAP server URL.
