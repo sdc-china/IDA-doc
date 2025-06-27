@@ -7,6 +7,27 @@ last_modified_at: 2025-03-26 16:15:00
 
 ## Previous Release Notes
 
+### 25.0.6 - 06/27/2025
+
+#### Enhancements
+- [Pipeline] Support to overwrite deployment step parameters before pipeline build is run.
+- [Comparison] Sort property entries on artifact change panels.
+- [Comparision] Support to print Comparison report.
+- [Analyzer] Support to print Analyzer report.
+- [Container] Support re-encrypt route to IDA on OCP.
+- Support HTTP/2 protocol for IDA on Java 17.
+
+#### Bug Fixes
+- [Checkstyle] Filtering of warning messages on pop-up window of artifact summary tree node does not work.
+- [Comparison] Line numbers greater than 10 are not displayed correctly on artifact change panels.
+- [Comparison] Converted artifact's old content is displayed as new content after conversion in comparison report.
+- [Comparison] Fix comparison results of some properties for heritage artifacts on Desktop PD.
+ties for Undercover Agent and Team.
+- [Administration] Validate if the user attribute specified in LDAP User Filter exists when testing connection of LDAP server.
+- [Administration] Verify database schema on Create Database Tables page.
+- [Container] IDA data path should be readonly in container environment.
+
+
 ### 25.0.5 - 05/29/2025
 
 #### Enhancements
