@@ -117,7 +117,7 @@ For example:
 
     <httpEndpoint id="defaultHttpEndpoint"
                         host="*" httpPort="-1"
-                        httpsPort="9443" protocolVersion="http/1.1">
+                        httpsPort="9443">
       <remoteIp useRemoteIpInAccessLog="true"/>
     </httpEndpoint>
     <!-- Automatically expand WAR files and EAR files -->
