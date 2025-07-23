@@ -224,11 +224,17 @@ You might also need to set a proxy server, then add the following lines to **jvm
 -Dhttps.proxyPassword=your password
 ```
 
-**4. Configure server.env (Optional)**
+**4. Configure server.env**
 
 Create **server.env** from *\<path_to_liberty>/wlp/usr/servers/\<SERVER_NAME>* directory.
 
-The default IDA data folder is **/var/ida/data**. If the default value is not writable or not applicable, then add the following environment variable to **server.env** for your IDA data folder:
+ 4.1 Add the following line to **server.env**
+
+```
+JDK_JAVA_OPTIONS=--add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED
+```
+
+4.2(Optional) The default IDA data folder is **/var/ida/data**. If the default value is not writable or not applicable, then add the following environment variable to **server.env** for your IDA data folder:
 
 ```
 ENGINE_CONFIG_DATA_DIR=<your_ida_data_path>
