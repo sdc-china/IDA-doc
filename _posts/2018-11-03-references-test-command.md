@@ -2,7 +2,7 @@
 title: "Test Commands"
 category: references
 date: 2018-11-03 15:17:55
-last_modified_at: 2024-06-12 13:00:00
+last_modified_at: 2025-07-24 13:00:00
 ---
 
 # Test Commands
@@ -609,7 +609,23 @@ Get process instance data.
 	![][GetProcessInstanceData_sample]
 	
 ___
+### **GetTaskData**
 
+Get task data of the current process instance.
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+  | `Task Name` | Required |Task Name, select from the drop-down. |
+  |`Json Path`|Optional|Use the JSON path to extract the task data variable or sub-JSON|
+  |`Variable Name`|Optional|Save the task data variable or sub-JSON into memory|
+
+- Example  
+
+	![][GetTaskData_sample]{:width="70%"}
+	
+___
 ## **BPM Assertion**
 
 This category is for asserting server-side components.
@@ -1794,4 +1810,5 @@ ___
 [random_number_key_define]: ../images/command/random_number_key_define.png
 [random_number_key_use]: ../images/command/random_number_key_use.png
 [random_number_key_steps_desc]: ../images/command/random_number_key_steps_desc.png
+[GetTaskData_sample]: ../images/command/GetTaskData.png
 [startBusinessApplication_sample]: ../images/command/startBusinessApplication_sample.png
