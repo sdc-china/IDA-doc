@@ -67,7 +67,7 @@ last_modified_at: 2024-05-10 12:53:00
 27. FAQ: Does IDA support window.confirm in a plugin? If not, what should I do if the result of window.confirm influences the business logic?
     - Answer: No. They aren't supported in IDA plugins and work on the server by adding confirmOk and confirmCancel commands. About replaying in a plugin, you need to click the OK or Cancel button manually.
 28. FAQ: I got errors showing I don't have access permission to the Process App when using Checkstyle and Analyzer, what should I do?
-    - Answer: You should add permissions for your **Rest User** to access the Process App.
+    - Answer: Please make sure the IDA **Rest User** is in the group either tw_authors or tw_admins. If it still doesn't work, you can try to add permissions for your **Rest User** to access the Process App.
 ![][add-permission-1]
 ![][add-permission-2]
 
