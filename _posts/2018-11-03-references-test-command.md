@@ -1264,7 +1264,7 @@ ___
 
 ### **clickActivityFromPortal**
 
-Click an activity from the portal.
+Click an activity from the Process Portal.
 
 - Parameters
 
@@ -1272,11 +1272,12 @@ Click an activity from the portal.
 	|----------------|------------|--------------|
 	| `Activity` | Required | The activity name  |
 	| `Process` | Optional | The process name|
-  | `Track` | Optional | The track name|
+  | `Track` | Optional | The track name displayed on the Process Portal|
+  | `Snapshot` | Optional | The snapshot name displayed on the Process Portal|
 	
 - Example  
 
-	![][clickActivityFromPortal]
+	![][clickActivityFromPortal]{:width="70%"}
 
 ___  
 
