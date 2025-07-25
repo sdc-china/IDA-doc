@@ -38,18 +38,31 @@ At least 1 of the pending stage approvers or pending step resumers must have an 
 <br>
 **${PIPELINE_ID}**: current pipeline ID
 <br>
-**${STAGE_NAME}**: current stage name
-<br>
-**${STEP_NAME}**: current step name
-<br>
 **${BUILD_ID}**: current build ID
+<br>
+**${BUILD_STATUS}**: current build status
+<br>
+**${BUILD_STATUS_DESCRIPTION}**: current build status description
 <br>
 **${BUILD_REPORT_URL}**: current build report URL
 <br>
+**${APP_NAME}**: current processApp name
+<br>
 **${APP_ACRONYM}**: current processApp acronym name
+<br>
+**${SNAPSHOT_NAME}**: current snapshot name
 <br>
 **${SNAPSHOT_ACRONYM}**: current snapshot acronym name
 <br>
+**${CURRENT_STAGE}**: current stage name
+<br>
+**${CURRENT_STEP}**: current step name
+<br>
+**${STAGE*i*_CHECKSTYLE_SCORE}**: checkstyle score from stage *i*, replace *i* with stage index, e.g. ${STAGE1_CHECKSTYLE_SCORE}
+<br>
+**${STAGE*i*_SERVER_NAME}**: configured server name on stage *i*, replace *i* with stage index, e.g. ${STAGE1_SERVER_NAME}
+<br>
+
 
 [pipeline_email_notification_success_failure]: ../images/pipeline/pipeline_email_notification_success_failure.png
 [pipeline_email_notification_pending]: ../images/pipeline/pipeline_email_notification_pending.png
