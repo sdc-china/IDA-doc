@@ -2,10 +2,31 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2025-03-26 16:15:00
+last_modified_at: 2025-07-29 12:00:00
 ---
 
 ## Previous Release Notes
+
+### 25.0.7 - 07/29/2025
+
+#### Enhancements
+- Support BAW 25.0.0.
+- [Testing] Add getTaskData test command.
+- [Testing] Support to set snapshot name for test command clickActivityFromPortal.
+- [Pipeline] Add more build execution context variables for pipeline email notifications.
+- [Comparison] Display artifact icon by artifact type.
+- [Operations Tool] Add an option to force cleanup all running instances in snapshot cleanup tool.
+- [Administration] Support custom SSH port and SOAP host in BAW SSH Configuration.
+
+#### Bug Fixes
+- [Pipeline] Fix Validation Error check on deployment step.
+- [Comparison] Fix comparison results of some properties for service flows.
+- [Plugin] Error icon on IDA recorder is not displayed correctly.
+- DB2 persistence exception is thrown when pipeline build execution results are saved on IDA Java 17 environment.
+
+#### Notes
+- IDA browser Plug-in is updated to version 25.2, please make sure you have installed the latest plug-in.
+
 
 ### 25.0.6 - 06/27/2025
 
