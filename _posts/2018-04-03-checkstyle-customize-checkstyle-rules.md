@@ -2,7 +2,7 @@
 title: "Customize Checkstyle Rules"
 category: checkstyle
 date: 2018-04-03 15:17:55
-last_modified_at: 2019-07-29 15:27:00
+last_modified_at: 2025-08-14 15:30:00
 ---
 
 # Customize Checkstyle Rules
@@ -86,6 +86,14 @@ To rewrite any core checkstyle rule, please do not update the core rule itself. 
 
 ## Embedded Rules Customization
 
+### Download embedded rules package
+
+   Download the package from the **Resources**.
+
+   ![][checkstyle_custom_rules_download_resources]{:width="40%"}
+   ![][checkstyle_custom_rules_download]
+
+
 ### Embedded rules overview
 
    After decompressing the **embedded-checkstyle-rules.zip**, the embedded rules folders include **init**, **checks**, and **score**. 
@@ -126,6 +134,11 @@ Folder | Description
      ![][checkstyle_embedded_custom_settings_upload]
      
   5. Click the **Save** button in Settings to save the configuration and rerun Checkstyle.
+  
+### Upgrade modified embedded rules package
+
+   The modified rule package will not be automatically updated with IDA upgrades. You need to manually update it, such as downloading the latest rule package and re-modifying it, or using some compare tools to help manually update it.
+
 
  [checkstyle_rule_project_relation]: ../images/checkstyle/checkstyle_rule_project_relation.png
  [checkstyle_override_step_one]: ../images/checkstyle/checkstyle_override_step_one.png
@@ -146,3 +159,5 @@ Folder | Description
  [checkstyle_embedded_settings_tab]: ../images/checkstyle/checkstyle_embedded_settings_tab.png
  [checkstyle_embedded_settings]: ../images/checkstyle/checkstyle_embedded_settings.png
  [checkstyle_embedded_custom_settings_upload]: ../images/checkstyle/checkstyle_embedded_custom_settings_upload.png
+ [checkstyle_custom_rules_download_resources]: ../images/checkstyle/checkstyle_custom_rules_download_resources.png
+ [checkstyle_custom_rules_download]: ../images/checkstyle/checkstyle_custom_rules_download.png
