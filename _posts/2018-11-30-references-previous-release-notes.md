@@ -2,10 +2,30 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2025-07-29 12:00:00
+last_modified_at: 2025-08-27 12:00:00
 ---
 
 ## Previous Release Notes
+
+### 25.0.8 - 08/28/2025
+
+#### Enhancements
+- [Testing] Add startRESTService test command to support testing of asynchronous Service flow by Exposed automation services/REST service.
+- [Pipeline] Able to review all build activities(start/approve/reject/resume/reschedule/cancel/comment) on build detail report.
+- [Checkstyle,Analyzer] Show the complete toolkit dependencies tree in Checkstyle and Analyzer reports.
+
+#### Bug Fixes
+- [Testing] Cannot create or edit global custom JavaScript command.
+- [Testing] When test case is viewed from test project sidebar, case history is not updated correctly.
+- [Pipeline] Cannot enter multiple line comments when approving a build.
+- [Pipeline] Missing pipeline template diagram when Dev to Test template is selected to be imported.
+- [Comparison] Missing comparison results of some properties of Service Flow.
+- [Comparison] Missing comparison results of Included Scripts of Coach View.
+
+#### Notes
+- There are database changes from 25.0.7 to 25.0.8, please use the Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See doc for Migrating IDA Application(https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
 
 ### 25.0.7 - 07/29/2025
 
