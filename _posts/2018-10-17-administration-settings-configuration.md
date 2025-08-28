@@ -42,7 +42,6 @@ openssl s_client -connect <LDAPS server host>:<LDAP server port> -showcerts </de
 For example:
 ```
 openssl s_client -connect c97721v.fyre.com:636 -showcerts </dev/null 2>/dev/null | awk '/-----BEGIN CERTIFICATE-----/,/-----END CERTIFICATE-----/' > ldapserver-cert.crt
-
 ```
 
 2. Import the LDAPS server certificate file from step 1 into Liberty using below command:
