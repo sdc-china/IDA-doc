@@ -37,20 +37,21 @@ If LDAPS is used, LDAPS server certificate need to be exported and imported into
 ### Export and Import LDAPS Server Certificates on Liberty
 1. Export LDAPS server certificate into a file using below command:
 ```
-openssl s_client -showcerts -connect <LDAPS server host>:<LDAP server port> </dev/null 2>/dev/null|openssl x509 -outform PEM >ldapserver-cert.crt
+openssl s_client -connect <LDAPS server host>:<LDAP server port> -showcerts </dev/null 2>/dev/null | awk '/-----BEGIN CERTIFICATE-----/,/-----END CERTIFICATE-----/' > ldapserver-cert.crt
 ```
 For example:
 ```
-openssl s_client -showcerts -connect c97721v.fyre.com:636 </dev/null 2>/dev/null|openssl x509 -outform PEM >ldapserver-cert.crt
+openssl s_client -connect c97721v.fyre.com:636 -showcerts </dev/null 2>/dev/null | awk '/-----BEGIN CERTIFICATE-----/,/-----END CERTIFICATE-----/' > ldapserver-cert.crt
+
 ```
 
 2. Import the LDAPS server certificate file from step 1 into Liberty using below command:
 ```
-keytool -importcert -file <LDAPS server certificate file> -alias <alias for the LDAPS server certificate> -keystore <Liberty truststore file> -storepass <password for the truststore > -storetype <type of the truststore>
+keytool -importcert -trustcacerts -file <LDAPS server certificate file> -alias <alias for the LDAPS server certificate> -keystore <Liberty truststore file> -storepass <password for the truststore > -storetype <type of the truststore>  -noprompt
 ```
 For example:
 ```
-keytool -importcert -file ldapserver-cert.crt -alias ldapserver-cert -keystore /opt/wlp/usr/servers/ida_server/resources/security/key.p12 -storepass idaAdmin -storetype PKCS12
+keytool -importcert -trustcacerts -file ldapserver-cert.crt -alias ldapserver-cert -keystore /opt/wlp/usr/servers/ida_server/resources/security/key.p12 -storepass idaAdmin -storetype PKCS12  -noprompt
 ```
 
 ### Export and Import LDAPS Server Certificate on WAS
