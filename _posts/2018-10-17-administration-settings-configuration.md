@@ -83,7 +83,7 @@ Max Number of Test Case History | Set the maximum number of test case history fo
 Threshold of New Test Case | Threshold for generating test cases per process.
 Enable BAW Test Coverage | Generate and show Test Coverage report on project dashboard.
 Enable Expected/Actual Flow Match | If enabled, the test case will fail if expected and actual flow do not match.
-IDA Callback URL  | Callback URL for test command startRESTService's selected asynchronous operation to return result, make sure it is accessible from BAW server
+IDA Callback URL  | Callback URL for test command startRESTService's selected asynchronous operation to return result, make sure it is accessible from BAW server.
 Default Wait Timeout (seconds) | Default wait timeout for test commands and finding web elements, default value is 60.
 Page Load Timeout (seconds) | Default page load timeout for opening and loading pages, default value is 10.
 Default Retry Interval (seconds) | Default value of retry interval.
