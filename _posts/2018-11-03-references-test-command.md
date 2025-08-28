@@ -647,6 +647,7 @@ Start an Exposed automation services/REST Service by REST API developed in Web P
 - Example  
 
 	![][rest_service_sample]
+
 ___
 ## **BPM Assertion**
 
