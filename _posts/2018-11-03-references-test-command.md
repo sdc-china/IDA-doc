@@ -624,7 +624,29 @@ Get task data of the current process instance.
 - Example  
 
 	![][GetTaskData_sample]{:width="70%"}
-	
+
+___
+
+### **startRESTService**
+
+Start an Exposed automation services/REST Service by REST API developed in Web PD. To start an asynchronous REST Service operation, refer to [**IDA Callback URL in Test Configuration**][2].
+
+- Parameters
+
+	| Name | Required | Description |
+	|----------------|------------|--------------|
+    | `Exception` | Optional |Checked means we are expecting to get an error for the test case. Unchecked means we are expecting to get a normal result from the test case. Refer to the common input fields description.|
+	| `Service`   | Yes |  The name of the REST Service. Select from the drop-down.|
+    | `Operation`   | Yes |  The name of the operation of the REST Service to be started. Select from the drop-down.|
+    | `Async`   | Yes |  Indicate whether the selected REST Service operation is invoked asynchronously. Readonly, depends on what REST Service operation is selected.|
+	| `Params`   | Depends on REST Service operation. | Input list in JSON or XML format required to start the REST Service operation.|
+	| `Expected Output`   | If `Exception` is not checked, it is mandatory. Otherwise, you need to keep it empty.| Expected REST Service operation output in JSON. Tip: Click on ![][command_expected_output_refresh_button] button in the Command Editor Dialog to capture the results.|
+    |`Timeout(seconds)`|Optional|Wait timeout|
+
+
+- Example  
+
+	![][rest_service_sample]
 ___
 ## **BPM Assertion**
 
@@ -1695,6 +1717,7 @@ ___
 
 
 [1]: ../administration/administration-baw-configuration.html#add-user-to-a-bpm-server
+[2]: ../administration/administration-settings-configuration.html#test-configuration
 [command_expected_output_refresh_button]: ../images/command/command_expected_output_refresh_button.png
 [command_start_process_editor]: ../images/command/command_start_process_editor.png
 [command_start_process_javascript_API]: ../images/command/command_start_process_javascript_API.png
