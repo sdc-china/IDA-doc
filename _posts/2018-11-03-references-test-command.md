@@ -1837,3 +1837,4 @@ ___
 [random_number_key_steps_desc]: ../images/command/random_number_key_steps_desc.png
 [GetTaskData_sample]: ../images/command/GetTaskData.png
 [startBusinessApplication_sample]: ../images/command/startBusinessApplication_sample.png
+[rest_service_sample]: ../images/command/rest_service_sample.png
