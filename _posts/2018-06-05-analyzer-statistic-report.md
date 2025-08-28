@@ -2,7 +2,7 @@
 title: "Analyzer - Statistical Report"
 category: analyzer
 date: 2018-06-05 14:17:55
-last_modified_at: 2025-05-22 14:50:00
+last_modified_at: 2025-08-28 14:50:00
 ---
 
 # Analyzer - Statistical Report
@@ -15,9 +15,9 @@ last_modified_at: 2025-05-22 14:50:00
    ![][basic_info]{:width="100%"}
 
   
-## Dependencies
+## Toolkit Dependencies
 
-   This part shows the dependencies of the current process application. The item above the arrow is the name of the current process application, and the items in the direction indicated by the arrow are the dependencies of the current process application. You can see the toolkit version after the toolkit name. 
+   This part shows the dependencies of the current process application. The toolkit name will be displayed when the mouse is hovered. Click the circular arrow to show or hide.
 
    ![][dependencies]{:width="100%"}
 

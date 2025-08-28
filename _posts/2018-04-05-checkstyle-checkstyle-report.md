@@ -2,7 +2,7 @@
 title: "Checkstyle Report"
 category: checkstyle
 date: 2018-04-05 15:17:55
-last_modified_at: 2025-05-22 15:29:00
+last_modified_at: 2025-08-28 15:29:00
 ---
 
 # Checkstyle Report
@@ -27,11 +27,16 @@ In this part, statistics are made based on dimensions of category, sub-category,
 
 ![][checkstyle_category]{:width="100%"}
 
-## Basic Information
+## Toolkit Dependencies
+Here mainly displays the hierarchical information of the toolkits. You can see the toolkit version after the toolkit name. Click the circular arrow to show or hide.
 
-The basic information for this application will be displayed in this section, including dependencies and a BPMN artifact summary. The number on the right of the BPMN artifact summary indicates the number of applications applied to the left artifact. More details are provided in the following screenshot.
+![][checkstyle_toolkitdependencies]{:width="100%"}
 
-![][checkstyle_basicInfo]{:width="100%"}
+## Artifacts Summary
+
+This area shows BPMN artifact summary. The number on the right of the BPMN artifact summary indicates the number of applications applied to the left artifact.
+
+![][checkstyle_artifactssummary]{:width="100%"}
 
 ## Analysis
 
@@ -49,7 +54,8 @@ If you have fixed a warning, you can hover the mouse over the row and click the 
 
 
 [checkstyle_healthScore]: ../images/checkstyle/checkstyle_healthScore.PNG
-[checkstyle_basicInfo]: ../images/checkstyle/checkstyle_basicInfo.PNG
+[checkstyle_toolkitdependencies]: ../images/checkstyle/checkstyle_toolkitdependencies.png
+[checkstyle_artifactssummary]: ../images/checkstyle/checkstyle_artifactssummary.png
 [checkstyle_chart]: ../images/checkstyle/checkstyle_checkstyle_chart.PNG
 [checkstyle_statistic]: ../images/checkstyle/checkstyle_statistic.PNG
 [checkstyle_category]: ../images/checkstyle/checkstyle_category.PNG
