@@ -161,17 +161,11 @@ oc whoami --show-server
 oc new-project selenium-demo
 oc create sa ida-selenium-sa
 oc adm policy add-role-to-user admin -z ida-selenium-sa
-TOKENNAME=`oc describe sa/ida-selenium-sa | grep Tokens | awk '{print $2}'`
-TOKEN=`oc get secret $TOKENNAME -o jsonpath='{.data.token}' | base64 --decode`
-echo $TOKEN
+oc create token ida-selenium-sa --duration=4294967296s
 
 # Allow users using the "restricted" SCC in selenium grid namespace
 # For OpenShift v4.11+ cluster only, and please ensure the logged in user can access the security context constraint (SCC).
 oc create rolebinding local:scc:restricted -n selenium-demo --clusterrole=system:openshift:scc:restricted  --group=system:serviceaccounts:selenium-demo
-
-#Please execute below commmands if you want to customize the containered selenium images registry.
-oc create secret docker-registry ida-selenium-pull-secret --docker-server=<docker_registry>  --docker-username=<docker_username> --docker-password=<docker_password>
-oc patch serviceaccount default -p '{"imagePullSecrets": [{"name": "ida-selenium-pull-secret"}]}'
 ``` 
 
 - For Kubernetes:
@@ -183,25 +177,9 @@ kubectl cluster-info
 # Commands to get user token
 kubectl create namespace selenium-demo
 kubectl config set-context --current --namespace=selenium-demo
-kubectl create sa selenium-installer-sa
-kubectl create rolebinding selenium-installer-rolebinding --clusterrole=admin --serviceaccount=selenium-demo:selenium-installer-sa
-
-kubectl apply -f - <<EOF
-apiVersion: v1
-kind: Secret
-metadata:
-  name: selenium-installer-secret
-  annotations:
-    kubernetes.io/service-account.name: selenium-installer-sa
-type: kubernetes.io/service-account-token
-EOF
-
-TOKEN=`kubectl get secret selenium-installer-secret -o jsonpath={.data.token} | base64 -d`
-echo $TOKEN
-
-#Please execute below commmands if you want to customize the containered selenium images registry.
-kubectl create secret docker-registry ida-selenium-pull-secret --docker-server=<docker_registry>  --docker-username=<docker_username> --docker-password=<docker_password>
-kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "ida-selenium-pull-secret"}]}'
+kubectl create sa ida-selenium-sa
+kubectl create rolebinding ida-selenium-rolebinding --clusterrole=admin --serviceaccount=selenium-demo:ida-selenium-sa
+kubectl create token ida-selenium-sa --duration=4294967296s
 
 ``` 
 
