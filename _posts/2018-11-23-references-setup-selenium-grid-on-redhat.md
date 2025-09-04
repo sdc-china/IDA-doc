@@ -27,7 +27,9 @@ yum install google-chrome-stable -y
 google-chrome --version
 
 ## Test Chrome
-google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+google-chrome --headless --disable-gpu --dump-dom about:blank
+
+## The expected output of the above command should end with "<html><head></head><body></body></html>"
 ```
 
 ## Install stable version Chrome by RPM
@@ -43,7 +45,9 @@ yum -y localinstall google-chrome-stable_current_x86_64.rpm
 google-chrome --version
 
 ## Test Chrome
-google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+google-chrome --headless --disable-gpu --dump-dom about:blank
+
+## The expected output of the above command should end with "<html><head></head><body></body></html>"
 ```
 
 ## Install specific Chrome version for testing
@@ -74,7 +78,9 @@ yum install alsa-lib -y
 google-chrome --version
 
 ## Test Chrome
-google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+google-chrome --headless --disable-gpu --dump-dom about:blank
+
+## The expected output of the above command should end with "<html><head></head><body></body></html>"
 ```
 
 ## Install Firefox by YUM repository
