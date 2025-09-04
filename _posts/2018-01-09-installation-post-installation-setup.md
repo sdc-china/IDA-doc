@@ -188,7 +188,6 @@ Docker Compose is the simplest way to start a Grid.
 1. Download [docker-compose-v3.yml](https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v3.yml), and check the execution instructions at the top of each file. You can also edit the file to add more nodes by adding replicas. An example is as follows:
 
 ```
-version: "3"
 services:
   chrome:
     image: selenium/node-chrome:4.10.0
@@ -196,14 +195,12 @@ services:
     depends_on:
       - selenium-hub
     deploy:
-        replicas: 5
+        replicas: 2
     restart: always
     environment:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_MAX_SESSIONS=5
-      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   firefox:
     image: selenium/node-firefox:4.10.0
@@ -211,14 +208,12 @@ services:
     depends_on:
       - selenium-hub
     deploy:
-        replicas: 5
+        replicas: 2
     restart: always
     environment:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_MAX_SESSIONS=5
-      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   edge:
     image: selenium/node-edge:4.10.0
@@ -226,14 +221,12 @@ services:
     depends_on:
       - selenium-hub
     deploy:
-        replicas: 5
+        replicas: 2
     restart: always
     environment:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_MAX_SESSIONS=5
-      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
 
   selenium-hub:
     image: selenium/hub:4.10.0
