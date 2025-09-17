@@ -8,6 +8,38 @@ last_modified_at: 2024-06-04 16:00:00
 # Checkstyle Rules Description
 ***
 
+## Threshold
+   
+| Threshold	| Default Value	|
+|:----------------|:------------------------|
+| TOOLKIT_THRESHOLD	| 25 | 
+| ADVANCED_INTEGRATION_SERVIE_THRESHOLD	| 25 | 
+| AJAX_SERVIE_THRESHOLD	| 25 | 
+| DECISION_SERVICE_THRESHOLD	| 25 | 
+| GENERAL_SYSTEM_SERVICE_THRESHOLD	| 50 | 
+| INTEGRATION_SERVICE_THRESHOLD	| 25 | 
+| HUMAN_SERVICE_THRESHOLD	| 50 | 
+| SERVICE_FLOW_THRESHOLD	| 50 | 
+| WEB_SERVICE_THRESHOLD	| 25 | 
+| BPD_THRESHOLD	| 15 | 
+| REPORT_THRESHOLD	| 15 | 
+| UNDERCOVER_AGENT_THRESHOLD	| 25 | 
+| SERVICE_LEVEL_AGREEMENT_THRESHOLD	| 15 | 
+| BUSINESS_OBJECT_THRESHOLD	| 50 | 
+| ENVIRONMENT_VARIABLE_THRESHOLD	| 25 | 
+| EXPOSED_PROCESS_VARIABLE_THRESHOLD	| 25 | 
+| COACH_THRESHOLD	| 25 | 
+| NESTED_CSHS_THRESHOLD	| 25 | 
+| INPUT_VARIABLE_THRESHOLD	| 15 | 
+| OUTPUT_VARIABLE_THRESHOLD	| 15 | 
+| NESTED_TOOLKIT_LEVEL_THRESHOLD	| 4 | 
+| TOOLKIT_SIZE_THRESHOLD	| 50000000 | 
+| JAVASCRIPT_LINES_MEDIUM_THRESHOLD	| 100 | 
+| JAVASCRIPT_LINES_HIGH_THRESHOLD	| 300 | 
+| SEARCHABLE_FIELD_THRESHOLD	| 25 | 
+| ATTRIBUTE_THRESHOLD	| 50 | 
+| COACH_CONTROL_THRESHOLD	| 500 | 
+
 ## App
 
 | Rule                                               | Level    | Description                                                                                                         | Advice                                                                                                                                                                                                                                                                                                                                                                                         | Tags           |
