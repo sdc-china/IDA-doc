@@ -24,8 +24,10 @@ Bind DN | LDAP server Bind DN.
 Bind DN Password | LDAP server Bind DN Password.
 Base DN | LDAP base DN for filtering users.
 User Filter | LDAP user filter pattern, use '#' to split multiple user filter patterns.
-Default Role | Default role for LDAP users used in IDA.
 User Name Case Insensitive | Whether the LDAP server is case insensitive or not, default value is true.
+Default Role | Default role assigned to LDAP user when user logs in IDA for the first time.
+Default Team | Default team assigned to LDAP user when user logs in IDA for the first time.
+LDAP Group Mappings | Map LDAP groups to IDA roles and teams. When LDAP user logs in IDA for the first time, mappings below are checked to assign roles and teams to the user.
 Enable Auto Clean | Enable disk cache auto clean. Pipeline auto clean settings overwrite general auto clean settings. For all the disk cache information, check the **Clean Disk Cache** page under menu **Administration**. 
 Days to keep disk cache | If not empty, disk cache is only kept up to this number of days.
 Max # of builds to keep | If not empty, only up to this number of builds are kept.
