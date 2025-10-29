@@ -2,7 +2,7 @@
 title: "Release Notes"
 category: installation
 date: 2018-01-01 10:17:55
-last_modified_at: 2025-08-27 12:00:00
+last_modified_at: 2025-10-29 12:00:00
 ---
 
 ## Release Notes
@@ -28,7 +28,7 @@ last_modified_at: 2025-08-27 12:00:00
 - [Checkstyle] Can not view the loop details diagram sometimes.
 - [Checkstyle] Report is not auto scrolled to CHECK RESULT DETAILS when a tag is selected on Firefox.
 - [Analyzer] Incorrect Referenced By is reported on a toolkit snapshot.
-- [Pipeline] When New Snapshot Trigger is enabled in Build Triggers, an snapshot older than the pipeline edit time may trigger the pipeline.
+- [Pipeline] When New Snapshot Trigger is enabled in Build Triggers, a snapshot older than the pipeline edit time may trigger the pipeline.
 - [Administation] When BAW user is edited with wrong password, test connection of the user still passed sometimes.
 - [Administration] Wrong error message is displayed when Gatling download fails.
 
