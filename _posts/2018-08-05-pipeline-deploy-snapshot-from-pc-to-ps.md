@@ -2,7 +2,7 @@
 title: "Deploy Snapshot from Workflow Center to Workflow Server"
 category: pipeline
 date: 2018-08-05 15:17:55
-last_modified_at: 2023-06-09 17:31:00
+last_modified_at: 2025-11-25 12:00:00
 ---
 
 # Deploy Snapshot from Workflow Center to Workflow Server
