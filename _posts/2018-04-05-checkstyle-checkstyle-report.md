@@ -8,6 +8,10 @@ last_modified_at: 2025-08-28 15:29:00
 # Checkstyle Report
 ***
 
+## Floating Icons
+
+![][checkstyle_float_buttons]{:width="100%"}
+
 ## Summary & Statistics
 
 ### Warnings Summary
@@ -52,7 +56,7 @@ If you have fixed a warning, you can hover the mouse over the row and click the 
 
 ![][checkstyle_checkresultDetailed]{:width="100%"}
 
-
+[checkstyle_float_buttons]: ../images/checkstyle/checkstyle_float_buttons.png
 [checkstyle_healthScore]: ../images/checkstyle/checkstyle_healthScore.PNG
 [checkstyle_toolkitdependencies]: ../images/checkstyle/checkstyle_toolkitdependencies.png
 [checkstyle_artifactssummary]: ../images/checkstyle/checkstyle_artifactssummary.png

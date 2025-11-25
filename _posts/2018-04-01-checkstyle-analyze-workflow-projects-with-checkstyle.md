@@ -2,7 +2,7 @@
 title: "Analyze Workflow Projects with Checkstyle"
 category: checkstyle
 date: 2018-04-01 20:17:55
-last_modified_at: 2025-05-22 15:26:00
+last_modified_at: 2025-11-25 12:00:00
 ---
 
 # Analyze Workflow Projects with Checkstyle
