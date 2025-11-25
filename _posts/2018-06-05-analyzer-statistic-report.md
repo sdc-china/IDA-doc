@@ -2,11 +2,15 @@
 title: "Analyzer - Statistical Report"
 category: analyzer
 date: 2018-06-05 14:17:55
-last_modified_at: 2025-08-28 14:50:00
+last_modified_at: 2025-11-25 12:00:00
 ---
 
 # Analyzer - Statistical Report
 ***
+
+## Floating Icons
+
+![][analyzer_float_buttons]{:width="100%"}
 
 ## Basic Information
    
@@ -62,7 +66,7 @@ last_modified_at: 2025-08-28 14:50:00
 
    ![][validation]{:width="100%"}
 
-
+[analyzer_float_buttons]: ../images/analyzer/analyzer_float_buttons.png
 [basic_info]: ../images/analyzer/basic_info.PNG
 [dependencies]: ../images/analyzer/dependencies.PNG
 [bpmn_artifacts_summary]: ../images/analyzer/bpmn_artifacts_summary.PNG

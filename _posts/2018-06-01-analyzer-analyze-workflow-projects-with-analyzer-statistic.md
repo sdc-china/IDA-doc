@@ -2,7 +2,7 @@
 title: "Analyze Workflow Projects with Analyzer Statistics"
 category: analyzer
 date: 2018-06-01 14:17:55
-last_modified_at: 2025-05-22 14:50:00
+last_modified_at: 2025-11-25 12:00:00
 ---
 
 # Analyze Workflow Projects with Analyzer Statistics
