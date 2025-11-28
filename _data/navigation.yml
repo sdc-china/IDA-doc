@@ -145,8 +145,10 @@ docs:
 
   - title: Administration
     children:
-      - title: "Users Management"
+      - title: "User Management"
         url: /administration/administration-users-management.html
+      - title: "Team Manangement"
+        url: /administration/administration-team-configuration.html
       - title: "BAW Configuration"
         url: /administration/administration-baw-configuration.html
       - title: "SSH Configuration"
@@ -155,8 +157,6 @@ docs:
         url: /administration/administration-case-solution-deployment-configuration.html
       - title: "Selenium Hub Configuration"
         url: /administration/administration-selenium-hub-configuration.html
-      - title: "Team Configuration"
-        url: /administration/administration-team-configuration.html
       - title: "Checkstyle Rule Configuration"
         url: /administration/administration-checkstyle-rule-configuration.html
       - title: "Custom Recorder"

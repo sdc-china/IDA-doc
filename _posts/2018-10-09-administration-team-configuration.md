@@ -1,15 +1,15 @@
 ---
-title: "Team Configuration"
+title: "Team Management"
 category: administration
 date: 2018-10-09 15:17:55
-last_modified_at: 2021-08-23 16:21:00
+last_modified_at: 2025-11-28 12:21:00
 ---
 
-# Team Configuration
+# Team Management
 ***
 
 ## Add a team
-  1. Click **Administrator** tab, then switch to **Team Configuration** tab to manage teams.  
+  1. Click **Administrator** tab, then switch to **Team Management** tab to manage teams.  
 
   2. Click ![][add_icon] icon which is on the right of **Team Management**.
 

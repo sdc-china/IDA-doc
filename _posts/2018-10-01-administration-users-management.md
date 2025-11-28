@@ -1,17 +1,17 @@
 ---
-title: "Users Management"
+title: "User Management"
 category: administration
 date: 2018-10-01 15:17:55
-last_modified_at: 2025-05-26 12:00:00
+last_modified_at: 2025-11-28 12:00:00
 ---
 
-# Users Management
+# User Management
 ***
 
 ## Add a New User
   Use the super account (idaAdmin/idaAdmin) to log in to the IDA application.
-  1. Click the **Administrator** tab, then switch to the **Users Management** tab to add users.  
-  2. Click the ![][add_icon] icon on the right of **Users Management** to add new users.
+  1. Click the **Administrator** tab, then switch to the **User Management** tab to add users.  
+  2. Click the ![][add_icon] icon on the right of **User Management** to add new users.
   3. Fill out the form below. Then click the **Create** button.
 
      ![][administrator_add]{:width="60%"}
@@ -42,7 +42,7 @@ last_modified_at: 2025-05-26 12:00:00
 
 ## Activate/Deactivate Users
 
-   Select users in the **Users Management** table, then click the **Activate** button to activate the selected inactive users. And click the **Deactivate** button to deactivate the selected active users.
+   Select users in the **User Management** table, then click the **Activate** button to activate the selected inactive users. And click the **Deactivate** button to deactivate the selected active users.
 
    	![][administrator_active_user]{:width="100%"}
 
@@ -63,11 +63,11 @@ last_modified_at: 2025-05-26 12:00:00
 
      ![][administrator_password]{:width="100%"}
 
-# LDAP Users Management 
+# LDAP User Management 
 
   1. A user would be added to the IDA system automatically if the user passes LDAP authentication from the IDA login page. 
 
-  2. A user with the admin role could 'Add', 'Deactivate', and 'Activate' users from the Users Management page.
+  2. A user with the admin role could 'Add', 'Deactivate', and 'Activate' users from the User Management page.
 
      ![][ldap_user_management]{:width="100%"}
 
