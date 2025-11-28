@@ -150,7 +150,7 @@ docs:
       - title: "Team Manangement"
         url: /administration/administration-team-configuration.html
       - title: "Role Manangement"
-        url: /administration/administration-role-configuration.html
+        url: /administration/administration-role-management.html
       - title: "BAW Configuration"
         url: /administration/administration-baw-configuration.html
       - title: "SSH Configuration"
