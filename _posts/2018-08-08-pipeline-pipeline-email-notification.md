@@ -2,7 +2,7 @@
 title: "Pipeline Email Notification"
 category: pipeline
 date: 2018-08-08 15:17:55
-last_modified_at: 2024-03-25 16:53:00
+last_modified_at: 2025-11-28 12:53:00
 ---
 
 # Pipeline Email Notification
@@ -62,7 +62,8 @@ At least 1 of the pending stage approvers or pending step resumers must have an 
 <br>
 **${STAGE*i*_SERVER_NAME}**: configured server name on stage *i*, replace *i* with stage index, e.g. ${STAGE1_SERVER_NAME}
 <br>
-
+**${BUILD_TRIGGERER_EMAIL}**: email configured on the Personal Settings page of the user who triggered the build
+<br>
 
 [pipeline_email_notification_success_failure]: ../images/pipeline/pipeline_email_notification_success_failure.png
 [pipeline_email_notification_pending]: ../images/pipeline/pipeline_email_notification_pending.png
