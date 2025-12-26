@@ -2,10 +2,31 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2025-10-29 12:00:00
+last_modified_at: 2025-12-26 12:00:00
 ---
 
 ## Previous Release Notes
+
+### 25.0.12 - 12/30/2025
+
+#### Enhancements
+- [Testing] Add assign task to team option to assignTask test command.
+- [Testing] When generating case step template for subprocess, should generate a complete path not just the first user task step.
+- [Analyzer] Download Toolkit Reference report as CSV.
+- [Pipeline] The snapshot should be marked as installed in Workflow Center if the snapshot is deployed by IDA pipeline.
+- [Comparison] Add Source view in snapshot comparison and merge report.
+- [Administration] Synchronize LDAP email field into IDA user profile when LDAP user logs in.
+
+#### Bug Fixes
+- [Checkstyle] Reference data is not displayed correctly in downloaded CSV report.
+- [Comparison] Fix comparison results of some properties for Coach View.
+- [Comparison] Fix comparison results of some properties for System Task.
+- [Administration] When user is removed from a team, shared resources are not transferred.
+
+#### Notes
+- There are database changes from 25.0.11 to 25.0.12, please use the Migrate Database Schema page to execute migration scripts or ask DBA to execute the corresponding migration scripts. See doc for Migrating IDA Application(https://sdc-china.github.io/IDA-doc/installation/installation-migrating-ida-application.html#migrate-database-schema-on-ida-startup).
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
 
 ### 25.0.11 - 11/27/2025
 
