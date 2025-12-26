@@ -2,7 +2,7 @@
 title: "Settings Configuration"
 category: administration
 date: 2018-10-17 15:17:55
-last_modified_at: 2025-10-30 13:59:00
+last_modified_at: 2025-12-26 13:59:00
 ---
 
 # Settings Configuration
@@ -27,6 +27,7 @@ User Filter | LDAP user filter pattern, use '#' to split multiple user filter pa
 User Name Case Insensitive | Whether the LDAP server is case insensitive or not, default value is true.
 Default Role | Default role assigned to LDAP user when user logs in IDA for the first time.
 Default Team | Default team assigned to LDAP user when user logs in IDA for the first time.
+User Email Attribute | User Email Attribute is used to synchronize LDAP user email into IDA user profile, when LDAP user logs in IDA for the first time.
 LDAP Group Mappings | Map LDAP groups to IDA roles and teams. When LDAP user logs in IDA for the first time, mappings below are checked to assign roles and teams to the user.
 Enable Auto Clean | Enable disk cache auto clean. Pipeline auto clean settings overwrite general auto clean settings. For all the disk cache information, check the **Clean Disk Cache** page under menu **Administration**. 
 Days to keep disk cache | If not empty, disk cache is only kept up to this number of days.

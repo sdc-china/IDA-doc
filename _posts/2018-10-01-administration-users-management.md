@@ -47,7 +47,7 @@ last_modified_at: 2025-12-26 12:00:00
    	![][administrator_active_user]{:width="100%"}
 
 ## Remove a User
-  1. Click the **Edit** icon on the right of the user you want to remove.
+  1. Click the **Remove** icon on the right of the user you want to remove.
 
      ![][administrator_remove_user]{:width="70%"}
 
