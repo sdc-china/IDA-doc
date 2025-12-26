@@ -356,18 +356,21 @@ ___
 
 ### **assignTask**
 
-Assign a task to a specific user. Can only be used in the context of process instance execution.
+Assign a task to a specific user or team. Can only be used in the context of process instance execution.
 
 - Parameters
 
 	| Name | Required | Description |
 	|----------------|------------|--------------|
-    | `Task Name` | Required |The name of the task assigned to the specific user. Select from the drop-down. |
-    | `To User` | Required | Select from the drop-down list of users defined in IDA/BAW Configuration for the target BAW server.|
+    | `Task Name` | Required |The name of the task assigned to the specific user or team. Select from the drop-down. |
+	| `Assignee Type` | Required | Select from User or Team. |
+    | `Assignee` | Required | Select from the drop-down list of assignees, i.e. users defined in IDA/BAW Configuration for the target BAW server, or teams defined in the process application or its toolkits.|
 
 - Example  
 
-	![][assign_task_sample]
+	![][assign_task_sample]{:width="70%"}
+
+	![][assign_task_team_sample]{:width="70%"}
 	
 ___
 
@@ -1751,6 +1754,7 @@ ___
 [runTaskByDisplayName_sample]: ../images/command/runTaskByDisplayName_sample.png
 [run_task_by_display_name_sample]: ../images/command/run_task_by_display_name_sample.png
 [assign_task_sample]: ../images/command/assign_task_sample.png
+[assign_task_team_sample]: ../images/command/assign_task_team_sample.png
 [claim_task_sample]: ../images/command/claim_task_sample.png
 [finish_task_sample]: ../images/command/finish_task_sample.png
 [addInstance]: ../images/command/addInstance.png
