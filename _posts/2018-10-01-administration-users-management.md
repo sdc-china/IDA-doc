@@ -2,7 +2,7 @@
 title: "User Management"
 category: administration
 date: 2018-10-01 15:17:55
-last_modified_at: 2025-11-28 12:00:00
+last_modified_at: 2025-12-26 12:00:00
 ---
 
 # User Management
@@ -45,6 +45,15 @@ last_modified_at: 2025-11-28 12:00:00
    Select users in the **User Management** table, then click the **Activate** button to activate the selected inactive users. And click the **Deactivate** button to deactivate the selected active users.
 
    	![][administrator_active_user]{:width="100%"}
+
+## Remove a User
+  1. Click the **Edit** icon on the right of the user you want to remove.
+
+     ![][administrator_remove_user]{:width="70%"}
+
+  2. Select to whom shared resources if existed will be transferred. Then click **OK**.
+
+     ![][administrator_remove_user_transfer]{:width="70%"}
 
 ## User Profile
 
@@ -92,3 +101,5 @@ last_modified_at: 2025-11-28 12:00:00
 [administration_user_team]: ../images/administrator/administration_user_team.png
 [ldap_user_management]: ../images/administrator/ldap_user_management.png
 [edit_user_modal]: ../images/administrator/edit_user_modal.png
+[administrator_remove_user]: ../images/administrator/administrator_remove_user.png
+[administrator_remove_user_transfer]: ../images/administrator/administrator_remove_user_transfer.png
