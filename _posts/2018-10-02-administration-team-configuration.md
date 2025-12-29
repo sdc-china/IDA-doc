@@ -2,7 +2,7 @@
 title: "Team Management"
 category: administration
 date: 2018-10-02 15:17:55
-last_modified_at: 2025-11-28 12:21:00
+last_modified_at: 2025-12-26 12:21:00
 ---
 
 # Team Management
@@ -48,9 +48,11 @@ last_modified_at: 2025-11-28 12:21:00
 
      ![][administrator_assign_user]{:width="80%"}
 
-  2. The left table of the modal lists the users who do not belong to the team, while the right table lists those who do. You can select users in the left table and click ![][administrator_assign_button] to assign users to the team. Similarly, you can select users in the right table and click ![][administrator_remove_button] to remove users from the team.
+  2. The left table of the modal lists the users who do not belong to the team, while the right table lists those who do. You can select users in the left table and click ![][administrator_assign_button] to assign users to the team. Similarly, you can select users in the right table and click ![][administrator_remove_button] to remove users from the team. When removing users from the team, select to whom shared resources created by users will be transferred, if such resources exist.
 
      ![][administrator_assign]{:width="70%"}
+
+     ![][administrator_assign_remove_user]{:width="70%"}
 
 ## Assign process apps to a team
 
@@ -102,3 +104,4 @@ last_modified_at: 2025-11-28 12:21:00
 [administrator_assign_seleniumgrds]: ../images/administrator/administrator_assign_seleniumgrds.png
 [administrator_assign_process_apps]: ../images/administrator/administrator_assign_process_apps.png
 [administration_super_team]: ../images/administrator/administration_super_team.png
+[administrator_assign_remove_user]: ../images/administrator/administrator_assign_remove_user.png
