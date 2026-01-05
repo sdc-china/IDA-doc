@@ -42,12 +42,17 @@ For BAW server with version prior to v18.0.0.2, it needs to configure an SSH key
 
 ## Verify SSH Key
 
-1. If you are in a Linux environment, you can use the following command to verify the connection.
+If you are in a Linux environment, you can use the following command to verify the connection.
 
     ```     
-   ssh -i /root/.ssh/id_rsa root@BAW_SERVER_HOST
+   ssh -i ~/.ssh/id_rsa USER@BAW_SERVER_HOST
    ```
-2. If you are in a Windows environment, you can use the PuTTY tool to verify it.
+If you are in a Windows environment, you can use the following command to verify the connection.
+
+    ```     
+   ssh -i %USERPROFILE%\.ssh\id_rsa USER@BAW_SERVER_HOST
+   ```
+If you are in a Windows environment, you can use the PuTTY tool to verify it.
 
    PuTTY: https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe   
    PuTTYgen: https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe    
