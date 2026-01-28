@@ -2,7 +2,7 @@
 title: "Post Installation Setup"
 category: installation
 date: 2018-01-09 15:17:55
-last_modified_at: 2024-08-23 16:39:00
+last_modified_at: 2026-01-28 16:39:00
 ---
 
 # Post Installation Setup
@@ -66,13 +66,7 @@ Chrome plugin v3
 - Open the url <a href="https://chromewebstore.google.com/detail/ida3/okfjgkfpccchnedafbkkijfjbfhhjkdf" target="_blank">https://chromewebstore.google.com/detail/ida3/okfjgkfpccchnedafbkkijfjbfhhjkdf</a>
 - Click "Add to Chrome" button to install plug-in.
 - The Chrome plugin offline installation package: **ida3-25.2.crx** can be downloaded from [IDA Resources page](../administration/administration-resources.html).
-- For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
-
-Chrome plugin v2
-- Open the url <a href="https://chromewebstore.google.com/search/IBM%20IDA" target="_blank">https://chromewebstore.google.com/search/IBM%20IDA</a>
-- Click "Add to Chrome" button to install plug-in.
-- The Chrome plugin offline installation package: **ida-25.2.crx** can be downloaded from [IDA Resources page](../administration/administration-resources.html).
-- For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console. See docs above.
+- For Chrome plugin to work on IDA web version >= 22.1.1, please configure the cookieSameSite attribute of http session on liberty server.xml or WAS console.
   
 ### Edge plugin
 - The same IDA Chrome plugin can also be installed in Edge.
