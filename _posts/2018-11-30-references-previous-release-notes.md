@@ -2,10 +2,24 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2025-12-26 12:00:00
+last_modified_at: 2026-02-24 12:00:00
 ---
 
 ## Previous Release Notes
+
+### 26.0.2 - 02/27/2026
+
+#### Enhancements
+- Support BAW 25.0.1.
+- [Administration] Remove Chrome Plugin V2 from Resources page.
+
+#### Bug Fixes
+- [Testing] Fix IDA toolkit is not installed warning.
+- [Comparison] Missing comparison results of data mappings of content integration task in service flow.
+
+#### Notes
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
 
 ### 26.0.1 - 01/28/2026
 
