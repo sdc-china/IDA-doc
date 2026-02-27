@@ -2,7 +2,7 @@
 title: "Release Notes"
 category: installation
 date: 2018-01-01 10:17:55
-last_modified_at: 2026-02-24 12:00:00
+last_modified_at: 2026-02-27 12:00:00
 ---
 
 ## Release Notes
@@ -17,6 +17,7 @@ last_modified_at: 2026-02-24 12:00:00
 
 #### Bug Fixes
 - [Testing] Fix IDA toolkit is not installed warning.
+- [Checkstyle] Fix ClassCastException thrown from potential infinite loop check.
 - [Comparison] Missing comparison results of data mappings of content integration task in service flow.
 
 #### Notes
