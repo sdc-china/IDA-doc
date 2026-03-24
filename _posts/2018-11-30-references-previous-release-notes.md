@@ -2,10 +2,28 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2026-02-27 12:00:00
+last_modified_at: 2026-03-24 18:00:00
 ---
 
 ## Previous Release Notes
+
+
+### 26.0.3 - 03/26/2026
+
+#### Enhancements
+- [Testing] Able to force refresh Params when editing Process/Service/UCA/Case test commands.
+- [Analyzer] Able to drill down for a specific application and find the interdependences within toolkits.
+- [Pipeline] Add data filters and new fields on Pipeline Overview tables.
+
+#### Bug Fixes
+- [Checkstyle] Unused variable in Process is not flagged in the Checkstyle report.
+- [Pipeline] Missing ProcessApp data on Deploy overview table.
+- [Comparison] Fix comparison results of some properties for Sub/Event Sub Process.
+- [Comparison] Missing comparison results of Multi-instance Loop Ordering for Process tasks.
+
+#### Notes
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
 
 ### 26.0.2 - 02/27/2026
 
