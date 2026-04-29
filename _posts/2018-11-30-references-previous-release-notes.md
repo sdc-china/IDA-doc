@@ -2,10 +2,34 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2026-03-24 18:00:00
+last_modified_at: 2026-04-29 18:00:00
 ---
 
 ## Previous Release Notes
+
+### 26.0.4 - 04/30/2026
+
+#### Enhancements
+- [Checkstyle] Disable rule condition evaluation if rule is disabled for EMBEDDED Checkstyle engine.
+- [Pipeline] Able to select custom date range when viewing Pipeline Overview data.
+
+#### Bug Fixes
+- [Checkstyle] For human tasks, "String of Pearls" problem should only be reported on tasks with the same Assignments settings.
+- [Checkstyle] Fix unused service check.
+- [Analyzer] Errors from Toolkit References analysis are not displayed on report.
+- [Comparison] Fix comparison results of some properties for process Gateways.
+
+#### Notes
+- If ODM Checkstyle engine is used, please deploy the latest ODM Checkstyle rule projects to Rule Execution Server.
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
+#### The checkstyle rules change details
+[Added rules]
+- /check/process/check-sequential-systemtask-activities-in-lane
+- /check/process/check-sequential-usertask-activities-in-lane
+
+[Deleted rules]
+- /check/process/check-sequential-activities-in-lane
 
 
 ### 26.0.3 - 03/26/2026
