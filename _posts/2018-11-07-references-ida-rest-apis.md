@@ -264,7 +264,7 @@ Get a pipeline build status by build ID.
 
 Request
 ```
-  curl -X GET "https://[serverhost]:[port]/ida/rest/v2/pipelines/builds/6860" -H "accept: application/json;charset=UTF-8"
+  curl -X GET "https://[serverhost]:[port]/ida/rest/v2/pipelines/builds/6860?parts=all" -H "accept: application/json;charset=UTF-8"
 ```
 Response
 ``` json
