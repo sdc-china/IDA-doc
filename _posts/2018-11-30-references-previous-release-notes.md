@@ -7,6 +7,23 @@ last_modified_at: 2026-04-29 18:00:00
 
 ## Previous Release Notes
 
+### 26.0.5 - 05/28/2026
+
+#### Enhancements
+- [Testing] Add download link for Smart Comparison expected/actual/compare result screenshots.
+- [Checkstyle] Able to view details of nested toolkits with max depth more than 4.
+
+#### Bug Fixes
+- [Checkstyle] "String of Pearls" warning is not displayed on Artifact Details popup from ARTIFACT WARNING SUMMARY.
+- [Comparison] Fix comparison results of some properties for Intermediate and Boundary Events of Process.
+- [Comparison] Change history of artifacts may be missing when comparing snapshots from different branches.
+- [Security] Upgrade log4j to v2.26.0.
+- [Security] Upgrade lang3 to v3.20.0.
+
+#### Notes
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
+
 ### 26.0.4 - 04/30/2026
 
 #### Enhancements
