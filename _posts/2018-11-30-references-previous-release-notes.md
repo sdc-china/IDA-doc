@@ -2,10 +2,25 @@
 title: "Previous Release Notes"
 category: references
 date: 2018-11-30 11:17:55
-last_modified_at: 2026-05-25 18:00:00
+last_modified_at: 2026-06-26 18:00:00
 ---
 
 ## Previous Release Notes
+
+### 26.0.6 - 06/30/2026
+
+#### Enhancements
+- [Checkstyle] Detect External Service calls within a Service Flow where there is no associated exception handling.
+- [Checkstyle] Synchronize the Checkstyle BOM models with the latest XOM models.
+- [Pipeline] Display the deployment response message(status description) associated with the deployment status when hovering over status icons.
+
+#### Bug Fixes
+- [Comparison] Remove Boundary Event(Tracking) from comparison result.
+- [Security] Fix security issues and upgrade libs in IDA codebase.
+
+#### Notes
+- IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
+
 
 ### 26.0.5 - 05/28/2026
 
