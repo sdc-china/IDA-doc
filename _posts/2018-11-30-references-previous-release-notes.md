@@ -21,6 +21,10 @@ last_modified_at: 2026-06-26 18:00:00
 #### Notes
 - IDA supports Spring Framework v6 based on Java 17 or Spring Framework v5 based on Java 8. To install IDA on Java 17, please check doc in Installing IDA Application on Java 17(https://sdc-china.github.io/IDA-doc/installation/installation-installing-ida-application-java17.html).
 
+#### The checkstyle rules change details
+[Added rules]
+- /checks/service/check-service-item-using-external-service-without-exception-handling
+
 
 ### 26.0.5 - 05/28/2026
 
