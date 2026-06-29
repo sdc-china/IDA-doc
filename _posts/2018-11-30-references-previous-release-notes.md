@@ -23,7 +23,7 @@ last_modified_at: 2026-06-26 18:00:00
 
 #### The checkstyle rules change details
 [Added rules]
-- /checks/service/check-service-item-using-external-service-without-exception-handling(This rule is disabled by default; if you need to use it, please enable it in the Checkstyle Rules Configuration.)
+- /checks/service/check-service-item-using-external-service-without-exception-handling(This rule is disabled by default; if you need to use it, please enable it in Checkstyle Rules Configuration.)
 
 
 ### 26.0.5 - 05/28/2026
